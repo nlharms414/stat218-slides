@@ -1,10 +1,11 @@
 ---
-title: "Welcome to Stat 218!"
-format:
+title: "Presentations in 2025"
+format: 
   html: 
     page-layout: full
-  listing: 
-    contents:
-      - "slides/Chapter 00/chapterP.qmd"
-    type: grid
+listing: 
+  contents: 
+    - "slides/*/*.qmd"
+  type: grid
+  fields: [image, title]
 ---

@@ -1,0 +1,20 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/slides/Chapter 00/chapterP.html",
+      "/slides/Chapter 01/section1.1.html",
+      "/slides/Chapter 01/section1.2.html",
+      "/slides/Chapter 01/section1.3.html",
+      "/slides/Chapter 01/section1.4.html",
+      "/slides/Chapter 01/section1.5.html",
+      "/slides/Chapter 02/section2.1.html",
+      "/slides/Chapter 02/section2.2.html",
+      "/slides/Chapter 02/section2.3.html",
+      "/slides/Chapter 03/section3.1.html",
+      "/slides/Chapter 03/section3.2.html",
+      "/slides/Chapter 03/section3.3.html",
+      "/slides/Chapter 03/section3.4.html"
+    ]
+  }
+]

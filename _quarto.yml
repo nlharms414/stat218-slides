@@ -1,9 +1,9 @@
-project: 
+project:
   type: website
   output-dir: docs
-  
+
 website:
-  title: "STAT 218 Slides"
+  title: "2025 Presentations"
   navbar:
     left:
       - href: index.qmd
