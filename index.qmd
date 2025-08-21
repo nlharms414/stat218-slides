@@ -1,8 +1,10 @@
 ---
 title: "Welcome to Stat 218!"
-format: html
+format:
+  html: 
+    page-layout: full
+  listing: 
+    contents:
+      - "slides/Chapter 00/chapterP.qmd"
+    type: grid
 ---
-
-## Overview
-
-Use the tab on the left to navigate to different slide decks.

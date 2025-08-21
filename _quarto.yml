@@ -2,32 +2,11 @@ project:
   type: website
   output-dir: docs
   
-website: 
-  title: "Stat 218 Slides"
-  sidebar: 
-    style: "docked"
-    search: true
-    contents: 
-      - text: "Home"
-        href: index.qmd
-      - section: "Chapter P Slides"
-        contents: 
-          - slides/Chapter 00/chapterP.qmd
-      - section: "Chapter 1 Slides"
-        contents: 
-          - slides/Chapter 01/section1.1.qmd
-          - slides/Chapter 01/section1.2.qmd
-          - slides/Chapter 01/section1.3.qmd
-          - slides/Chapter 01/section1.4.qmd
-          - slides/Chapter 01/section1.5.qmd
-      - section: "Chapter 2 Slides"
-        contents: 
-          - slides/Chapter 02/section2.1.qmd
-          - slides/Chapter 02/section2.2.qmd
-          - slides/Chapter 02/section2.3.qmd
-      - section: "Chapter 3 Slides"
-        contents: 
-          - slides/Chapter 03/section3.1.qmd
-          - slides/Chapter 03/section3.2.qmd
-          - slides/Chapter 03/section3.3.qmd
-          - slides/Chapter 03/section3.4.qmd
+website:
+  title: "STAT 218 Slides"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+
+format: html
