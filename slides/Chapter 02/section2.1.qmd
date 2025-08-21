@@ -1,0 +1,206 @@
+---
+title: "Section 2.1"
+subtitle: "Generalization: How broadly do the results apply?"
+format: 
+  revealjs: 
+    chalkboard: true
+    theme: simple
+    link-external-newwindow: true
+    link-external-icon: true
+    html-math-method: mathjax
+    logo: logo.jpg
+editor: visual
+---
+
+## Recall... {.center}
+
+-   [**Population:**]{.underline} The complete collection of **all** objects that are of interest for a given scenario
+
+    -   Ex: People, animals, basketball games- can be anything, really!
+
+-   [**Sample:**]{.underline} A subset of observational units from the population of interest
+
+## Recall... {.center}
+
+-   Goal: Generaliztion
+
+    -   Describe the sample
+
+    -   Extend to a larger population
+
+# Sampling
+
+## Representative Sample {.center}
+
+A sample that is similar to or representative of a larger population.
+
+-   Ex: Would our class data be representative of all UNL students?
+
+## Bias {.center}
+
+A sample that consistently underestimates or overestimates a population parameter of interest
+
+-   Ex: Would the UNL volleyball team be representative of the average height of all female UNL students?
+
+## Visual of Population vs. Sample
+
+![](images/1_popvsamp.png){fig-alt="asdf" fig-align="center"}
+
+## How should we sample? {.center}
+
+## Convenience Sampling ❌ {.center}
+
+-   Not a good method
+
+-   "Hand picking" a sample
+
+-   Creates bias
+
+-   Ex: Interested in all Nebraska adults but only taking a sample of those living in Lincoln.
+
+## Simple Random Sampling ✅ {.center}
+
+-   Every population member has an equal chance to be chosen
+
+-   Can generalize our results to entire population
+
+-   Choose from a sampling frame
+
+-   [**Sampling frame:**]{.underline} a list of all individuals in a population of interest
+
+    -   Ex: List of all students from UNL registrar
+
+## More Symbols! {.center}
+
+In some situations, we are interested in the **long run average**
+
+-   As opposed to the **long run proportion**, in the last chapter
+
+## More Symbols! {.center}
+
+-   Sample mean: $\bar{x}$
+-   Sample Standard Deviation: $s$
+-   Population Mean: $\mu$
+-   Population Standard Deviation: $\sigma$
+
+## Symbol Comparison {.center}
+
+<br> Symbols we use depend on our variable type:
+
+|                |                          |                           |
+|----------------|:------------------------:|:-------------------------:|
+|                | **Categorical Variable** | **Quantitative Variable** |
+| **Population** |          $\pi$           |           $\mu$           |
+| **Sample**     |        $\hat{p}$         |         $\bar{x}$         |
+
+. . .
+
+<br>
+
+Note: We only use sample standard deviation and standard deviation symbols ($s$, $\sigma$) when we are dealing with **quantitative variables.**
+
+# Examples
+
+## Example 1 {.center style="font-size: 32px"}
+
+::::: columns
+::: {.column width="55%"}
+-   Population:
+
+-   Sample:
+
+-   Biased or Representative?
+
+-   Variable of interest?
+
+-   Categorical or quantitative?
+
+-   Population symbol:
+
+-   Sample symbol:
+:::
+
+::: {.column width="45%"}
+| Scenario |
+|:----------------------------------------------------------------------:|
+| Suppose you want to investigate the long run proportion of students at UNL who are morning people. You ask everyone in your 8am class if they are a morning or night person. |
+:::
+:::::
+
+## Example 1 {.center}
+
+-   Population: [**All UNL students**]{.fragment}
+
+-   Sample: [**Students in your 8am class**]{.fragment}
+
+-   Biased or Representative? [**Biased**]{.fragment}
+
+-   Variable of interest? [**Morning or night person**]{.fragment}
+
+-   Categorical or quantitative? [**Categorical**]{.fragment}
+
+-   Population symbol: [$\pi$]{.fragment}
+
+-   Sample symbol: [$\hat{p}$]{.fragment}
+
+## Example 2 {.center style="font-size: 32px"}
+
+::::: columns
+::: {.column width="55%"}
+-   Population:
+
+-   Sample:
+
+-   Biased or Representative?
+
+-   Variable of interest?
+
+-   Categorical or quantitative?
+
+-   Population symbol:
+
+-   Sample symbol:
+:::
+
+::: {.column width="45%"}
+| Scenario |
+|:----------------------------------------------------------------------:|
+| A researcher wants to investigate the average lifespan of a new fish, of which only three schools are known to exist. From the three schools, she randomly selects 30 fish to track the lifespans of. |
+:::
+:::::
+
+## Example 2 {.center}
+
+-   Population: [**All of the known schools of fish**]{.fragment}
+
+-   Sample: [**The 30 selected fish**]{.fragment}
+
+-   Biased or Representative? [**Representative**]{.fragment}
+
+-   Variable of interest? [**Lifespan**]{.fragment}
+
+-   Categorical or quantitative? [**Numerical**]{.fragment}
+
+-   Population symbol: [$\mu$]{.fragment}
+
+-   Sample symbol: [$\bar{x}$]{.fragment}
+
+# Exploration: Sampling Words
+
+##  {.center}
+
+::::: columns
+::: {.column width="50%"}
+<br> <br>
+
+-   Complete the "Sampling Words" exploration
+
+-   Submit to Canvas when done
+
+-   Extra time can be used for homework
+:::
+
+::: {.column width="50%"}
+![](images/1_gettys.png){fig-alt="Gettysburg Address with a picture of Abraham Lincoln."}
+:::
+:::::

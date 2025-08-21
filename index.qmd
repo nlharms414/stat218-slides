@@ -1,0 +1,8 @@
+---
+title: "Welcome to Stat 218!"
+format: html
+---
+
+## Overview
+
+Use the tab on the left to navigate to different slide decks.

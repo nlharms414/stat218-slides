@@ -1,0 +1,184 @@
+---
+title: "Daily Journal"
+author: "N. Harms"
+format: 
+  html:
+    code-link: true
+editor: visual
+---
+
+"code-link" option includes link to code documentation.
+
+## Libraries
+
+```{r}
+library(ggplot2)
+library(ggthemes)
+```
+
+```{r}
+#| eval: false
+scale_color_colorblind()
+```
+
+## 6/4
+
+-   Collab meeting
+
+## 6/5
+
+-   Started training- Intro-part of module 2
+
+## 6/7
+
+-   Finished module 2 of training
+
+## 6/9
+
+-   Worked on training
+
+## 6/10
+
+-   Finished training
+
+## 6/11
+
+-   Meeting with Susan & Toma at 12
+-   Group meeting at 2
+
+## 6/12
+
+-   Worked on write-up
+
+## 6/17
+
+-   Finish up write-up
+-   Created a markdown file of WCAG 2.1 AA guidelines (to have a concise easy-access list)
+
+## 6/18
+
+-   Meeting at 2
+-   Quarto/Pandoc research
+-   Ask Susan about HTML/Quarto/Pandoc/all the things materials
+
+## 6/19
+
+-   Emailed Reka about Help Desk materials
+
+## 6/23
+
+-   Accessibility check on 850 book
+-   Notes (started on Part IV: Advanced Topics):
+    -   Noticed that the keyboard cannot access the tabs (demonstrating how to run things in R, Python, etc.). Not sure if this is necessary, wanted to mention.
+    -   Not accessibility related, but noticed a "nubmers" typo in section 31.3.1 :)
+    -   Could perhaps implement a way to skip over the page navigation if so desired (skip to content)
+    -   Cannot visibly tell when you're on a code chunk to copy it for some reason
+
+## 6/24
+
+-   fig-alt: adds alt text to figures on output (for accessibility)
+-   scale_color_colorblind() from ggplot
+
+## 6/25
+
+-   Group meeting
+-   Explore quarto slide (revealjs) features
+
+## 6/27
+
+-   Meeting with Reka
+
+## 6/30
+
+-   Played with quarto slide features
+
+## 7/1
+
+-   Worked on quarto test slides
+-   Set up meeting with Susan
+
+## 7/2
+
+-   Met with Susan about next project steps
+-   Forked Github 850 book repository
+
+## 7/3
+
+-   Typo pull request
+-   IBM extension checking
+-   
+
+## 7/7
+
+-   Test slides
+
+## 7/8
+
+-   Meeting with Toma
+    -   Went over pull requests
+-   Test slides
+-   Worked with IBM checker
+    -   Not entirely sure how to read changes
+
+## 7/9
+
+-   Meeting today
+    -   Accessibility checks to the 850 book
+    -   Pull requests and such
+    -   Continued working on slides to test/get familiarized with features
+    -   IBM accessibility checker
+        -   Figuring out how to implement suggested changes via Quarto
+    -   This week/next:
+        -   Work on slide templates for 218
+
+## 7/16
+
+-   Meeting today
+    -   Got started on making slides for 218
+    -   Current slides are in revealjs format, but toyed with the idea of creating beamer slides as well? (for people who prefer pdf)
+        -   Could also just print html slides to pdf
+    -   make note of alt text, show in html coding of the page
+
+## Last week (7/21-7/25)
+
+-   Created slide templates for 218 (Chapter P & Chapter 1)
+
+## This week and next:
+
+-   Continue making 218 slides
+
+-   Accessibility checks
+
+-   Work on orientation week presentation
+
+## Resources and such
+
+-   [Mine-Cetinkaya](https://mine-cr.com/about/)
+-   [Understanding Techniques for WCAG Success Criteria](https://www.w3.org/TR/2014/NOTE-UNDERSTANDING-WCAG20-20140916/understanding-techniques.html#understanding-techniques)
+
+## Orientation Presentation
+
+Outline:
+
+-   Intro: what is Title II? Give high level overview of the main standards that need compliance.
+-   What I've been working on
+-   Best practices
+    -   Ways to check accessibility/resources
+    -   Less is more
+    -   Color schemes
+    -   Closed captioning
+    -   Canvas should now give an overview
+        -   Not 100% reliable but gives a good idea of where your materials are at
+    -   No "checker" is 100% reliable
+    -   Manual keyboard checks are good.
+    -   Links
+    -   For PDFs, Adobe has a built in accessibility checker.
+    -   Emojis have built in alt text
+    -   If you annotate slides those will need to be made accessible before distribution to students
+-   Probably need to include a bunch of examples of things
+
+## Other thoughts...
+
+-   Perhaps create a website with finished materials?
+    -   Like slide templates
+-   Easy to follow "guidelines" for department use

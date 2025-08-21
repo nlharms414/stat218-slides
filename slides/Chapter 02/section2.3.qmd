@@ -1,0 +1,181 @@
+---
+title: "Section 2.3"
+subtitle: "Inference for a Single Quantitative Variable"
+format: 
+  revealjs: 
+    chalkboard: true
+    theme: simple
+    link-external-newwindow: true
+    link-external-icon: true
+    html-math-method: mathjax
+    logo: logo.jpg
+editor: visual
+---
+
+## Up until now... {.center}
+
+-   We have been working with proportions
+    -   We use proportions for **categorical (qualitative) data**
+-   What if our data is **qualitative (numerical)**?
+
+Examples: Height, weight, time, measurement of length
+
+## Symbol Review
+
+In section 2.1, we introduced some new symbols we use with numerical data:
+
+-   Sample mean: $\bar{x}$
+-   Sample Standard Deviation: $s$
+-   Population Mean: $\mu$
+-   Population Standard Deviation: $\sigma$
+
+## Symbol Comparison
+
+<br> Symbols we use depend on our variable type:
+
+|                |                          |                           |
+|----------------|:------------------------:|:-------------------------:|
+|                | **Categorical Variable** | **Quantitative Variable** |
+| **Population** |          $\pi$           |           $\mu$           |
+| **Sample**     |        $\hat{p}$         |         $\bar{x}$         |
+
+. . .
+
+<br>
+
+Note: We only use sample standard deviation and standard deviation symbols ($s$, $\sigma$) when we are dealing with **quantitative variables.**
+
+## Strength of Evidence with a Single Quantitative Variable {.center}
+
+Essentially the same process, but now we're working with averages
+
+-   **Variable of Interest:** some numerical measure
+
+-   **Parameter:** The long run average ($\mu$)
+
+-   **Observed statistic:** Average calculated from the sample ($\bar{x}$)
+
+## Strength of Evidence with a Single Quantitative Variable {.center}
+
+Hypotheses in words:
+
+-   Null: The long run average is equal to (average in context of the problem)
+-   Alt: The long run average is (less than/greater than/not equal to the average in the context of the problem)
+
+## Strength of Evidence with a Single Quantitative Variable {.center}
+
+Hypotheses in symbols:
+
+-   $H_{0}$: $\mu$ = previously known number
+-   $H_{A}$: $\mu$ \>,\<,≠ previously known number
+
+## CEO Example
+
+::::: columns
+::: {.column width="65%"}
+-   Variable of interest: [\# of emails in a day]{.fragment}
+
+-   Parameter: [long run average number of emails received in a day ($\mu$)]{.fragment}
+
+-   Hypotheses in symbols:
+
+    -   [$H_{0}$: $\mu$ = 8]{.fragment}
+    -   [$H_{A}$: $\mu$ \> 8]{.fragment}
+:::
+
+::: {.column width="35%"}
+| Scenario |
+|:----------------------------------------------------------------------:|
+| You are interested in whether the number of emails the CEO of Apple receives each day is more than 8. |
+:::
+:::::
+
+## Simulation {.center}
+
+-   For categorical data:
+
+    -   Coin tosses
+    -   Die rolls
+    -   Spinners
+
+## Simulation {.center}
+
+-   For numerical data:
+
+    -   We can't use those methods
+    -   The book simulates large, hypothetical data
+
+-   So, we can't use the Applet to simulate
+
+-   We will use the thoery-based approach
+
+## Theory Based Approach (Quantitative Variable) {.center}
+
+Validity conditions:
+
+-   The variable of interest should have a symmetric distribution, or,
+
+-   n ≥ 20 and not strongly skewed
+
+## Theory Based Approach (Quantitative Variable) {.center}
+
+-   With numerical data, we can find $s$ (sample standard deviation)
+
+-   This changes our standardized statistic calculation
+
+$$SE=\frac{s}{\sqrt{n}}$$
+
+## Theory Based Approach (Quantitative Variable) {.center}
+
+-   With numerical data, we use "$t$" instead of "$z$" to describe our standardized statistic
+
+$$Standardized\: Statistic\:= t=\frac{\bar{x}-\mu}{SE}=\frac{\bar{x}-\mu}{\frac{s}{\sqrt{n}}}$$
+
+## Drawing Conclusions {.center}
+
+-   Same as categorical data
+
+    -   "Outside the twos" = reject the null
+    -   Otherwise fail to reject (FTR)
+
+## Drawing Conclusions {.center}
+
+Conclusions take the same form:
+
+-   Restate the alt. hypothesis
+
+    -   “We have enough evidence to conclude that the long-run average is (greater than/less than/not equal to) \_\_\_\_\_.”
+    -   “We do not have enough evidence to conclude that the long-run average is (greater than/less than/not equal to) \_\_\_\_\_.”
+
+## CEO Example {.center style="font-size: 32px"}
+
+::::: columns
+::: {.column width="55%"}
+<br>
+
+-   Sample size: [**n=30**]{.fragment}
+-   Can we use the theory based approach? [**Yes**]{.fragment}
+-   Observed statistic: [$\bar{x}$**=10.2**]{.fragment}
+-   Sample standard deviation: [$s$**=2.091**]{.fragment}
+:::
+
+::: {.column width="45%"}
+| Scenario |
+|:----------------------------------------------------------------------:|
+| You are interested in whether the number of emails the CEO of Apple receives each day is more than 8. Suppose you observe 30 days and find that the average number of emails is 10.2, with a sample S.D. of 2.091. The distribution is not strongly skewed. |
+:::
+:::::
+
+## CEO Example {.center}
+
+Standard error:
+
+$$SE=\frac{s}{\sqrt{n}}=\frac{2.091}{\sqrt{30}}=0.38$$
+
+Standardized statistic:
+
+$$ t=\frac{\bar{x}-\mu}{SE}=\frac{10.2-8}{0.38}=5.78$$
+
+## CEO Example Conclusion {.center}
+
+"We have enough evidence to conclude that the long run average number of emails the CEO receives in a day is greater than 8."

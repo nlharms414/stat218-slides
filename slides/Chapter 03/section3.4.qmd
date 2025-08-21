@@ -1,0 +1,13 @@
+---
+title: "Section 3.4"
+subtitle: ""
+format: 
+  revealjs: 
+    chalkboard: true
+    theme: simple
+    link-external-newwindow: true
+    link-external-icon: true
+    html-math-method: mathjax
+    logo: logo.jpg
+editor: visual
+---

@@ -1,0 +1,123 @@
+---
+title: "WCAG 2.1 AA Standards"
+format: pdf
+editor: visual
+---
+
+Includes **2.1 level AA guidelines only.** These are the guidelines that need to be met for all content created as part of this project.
+
+# Principle 1 - Perceivable
+
+Information and user interface components must be presentable to users in ways they can perceive.
+
+## Time-Based Media - Guideline 1.2
+
+Provide alternatives for time-based media.
+
+-   **1.2.4 Captions (Live):** Captions are provided for all live audio content in synchronized media.
+
+-   **1.2.5 Audio Description (Prerecorded):** Audio description is provided for all prerecorded video content in synchronized media.
+
+## Adaptable - Guideline 1.3
+
+Create content that can be presented in different ways (for example simpler layout) without losing information or structure.
+
+-   **1.3.4 Orientation:** Content does not restrict its view and operation to a single display orientation, such as portrait or landscape, unless a specific display orientation is essential.
+
+-   **1.3.5 Identify Input Purpose:** The purpose of each input field collecting information about the user can be programmatically determined when:
+
+    -   The input field serves a purpose identified in the Input Purposes for User Interface Components section (link); and
+    -   The content is implemented using technologies with support for identifying the expected meaning for form input data.
+
+## Distinguishable - Guideline 1.4
+
+Make it easier for users to see and hear content including separating foreground from background.
+
+-   **1.4.3 Contrast (Minimum):** The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following:
+
+    -   **Large Text:** Large-scale text and images of large-scale text have a contrast ratio of at least 3:1;
+    -   **Incidental:** Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.
+    -   **Logotypes:** Text that is part of a logo or brand name has no contrast requirement.
+
+-   **1.4.4 Resize Text:** Except for captions and immages of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality.
+
+-   **1.4.5 Images of Text:** If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text except for the following:
+
+    -   **Customizable:** The image of text can be visually customized to the user's requirements;
+    -   **Essential:** A particular presentation of text is essential to the information being conveyed.
+
+-   **1.4.10 Reflow:** Content can be presented without loss of information or functionality, and without requiring scrolling in two dimensions for:
+
+    -   Vertical scrolling content at a width equivalent to 320 CSS pixels;
+    -   Horizontal scrolling content at a height equivalent to 256 CSS pixels;
+
+    Except for the parts of the content which require two-dimensional layout for usage or meaning.
+
+-   **1.4.11 Non-text Contrast:** The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent color(s):
+
+    -   **User Interface Components:** Visual information required to identify user interface components and states, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author;
+    -   **Graphical Objects:** Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed.
+
+-   **1.4.12 Text Spacing:** In content implemented using markup languages that support the following text style properties, no loss of content or functionality occurs by setting all of the following and by changing no other style property:
+
+    -   Line height (line spacing) to at least 1.5 times the font size;
+    -   Spacing following paragraphs to at least 2 times the font size;
+    -   Letter spacing (tracking) to at least 0.12 times the font size;
+    -   Word spacing to at least 0.16 times the font size.
+
+-   **1.4.13 Content on Hover or Focus:** Where receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, the following are true:
+
+    -   **Dismissible:** A mechanism is available to dismiss the additional content without moving pointer hover or keyboard focus, unless the additional content communicates an input error or does not obscure or replace other content;
+    -   **Hoverable:** If pointer hover can trigger the additional content, then the pointer can be moved over the additional content without the additional content disappearing;
+    -   **Persistent:** The additional content remains visible until the hover or focus trigger is removed, the user dismisses it, or its information is no longer valid. Exception: The visual presentation of the additional content is controlled by the user agent and is not modified by the author.
+
+# Principle 2 - Operable
+
+User interface components and navigation must be operable.
+
+## Navigable - Guideline 2.4
+
+Provide ways to help users navigate, find content, and determine where they are.
+
+-   **2.4.5 Multiple Ways:** More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process.
+-   **2.4.6 Headings and Labels:** Headings and labels describe topic or purpose.
+-   **2.4.7 Focus Visible:** Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.
+
+# Principle 3 - Understandable
+
+Information and the operation of the user interface must be understandable.
+
+## Readable - Guideline 3.1
+
+Make text content readable and understandable.
+
+-   **3.1.2 Language of Parts:** The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.
+
+## Predictable - Guideline 3.2
+
+Make Web pages appear and operate in predictable ways.
+
+-   **3.2.3 Consistent Navigation:** Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.
+-   **3.2.4 Consistent Identification:** Components that have the same functionality within a set of Web pages are identified consistently.
+
+## Input Assistance - Guideline 3.3
+
+Help users avoid and correct mistakes.
+
+-   **3.3.3 Error Suggestion:** If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.
+
+-   **3.3.4 Error Prevention (Legal, Financial, Data):** For Web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true:
+
+    -   **Reversible:** Submissions are reversible.
+    -   **Checked:** Data entered by the user is checked for input errors and the user is provided an opportunity to correct them.
+    -   **Confirmed:** A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.
+
+# Principle 4 - Robust
+
+Content must be robust enough that it can be interpreted by a wide variety of user agents, including assistive technologies.
+
+## Compatible - Guideline 4.1
+
+Maximize compatibility with current and future user agents, including assistive technologies.
+
+-   **4.1.3 Status Message:** In content implemented using markup languages, status messages can be programmatically determined through role or properties such that they can be presented to the user by assistive technologies without receiving focus.

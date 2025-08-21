@@ -1,0 +1,343 @@
+[
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#section",
+    "href": "slides/Chapter 00/chapterP.html#section",
+    "title": "Chapter P",
+    "section": "",
+    "text": "What do you think of when you hear the word “statistics”?",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#anecdotal-evidence",
+    "href": "slides/Chapter 00/chapterP.html#anecdotal-evidence",
+    "title": "Chapter P",
+    "section": "Anecdotal Evidence",
+    "text": "Anecdotal Evidence\n“I will never start jogging because my friend’s dad jogged his whole life, but he died at age 46 from a heart attack.”  “Don’t get your child vaccinated. I had my child vaccinated and now he is autistic.”  “My friend tried a new diet and lost weight so quickly- that diet must work really well.”",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#section-1",
+    "href": "slides/Chapter 00/chapterP.html#section-1",
+    "title": "Chapter P",
+    "section": "",
+    "text": "Statistics allow us to estimate something about a broad population.",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#helper-vs.-hinderer",
+    "href": "slides/Chapter 00/chapterP.html#helper-vs.-hinderer",
+    "title": "Chapter P",
+    "section": "Helper vs. Hinderer",
+    "text": "Helper vs. Hinderer\n\n\n \nLink to Helper vs Hinderer Video\n\nIn a study reported in a November 2007 issue of Nature, researchers investigated whether infants take into account an individual’s actions towards others in evaluating that individual as appealing or aversive, perhaps laying the foundation for social interaction (Hamlin, Wynn, and Bloom, 2007).\nThe video describes the study that was done to test this theory, using “helper” and “hinderer” toys.",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#the-six-step-method-overview",
+    "href": "slides/Chapter 00/chapterP.html#the-six-step-method-overview",
+    "title": "Chapter P",
+    "section": "The Six-Step Method Overview",
+    "text": "The Six-Step Method Overview\n\nAsk a research question\nDesign a study and collect data\nExplore the data\nDraw inferences beyond the data\nFormulate conclusions\nLook back and ahead",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#ask-a-research-question",
+    "href": "slides/Chapter 00/chapterP.html#ask-a-research-question",
+    "title": "Chapter P",
+    "section": "1. Ask a research question",
+    "text": "1. Ask a research question\n\nWhat do you want to know or investigate?\nIt does not have to be super specific\n\nHelper vs. Hinderer example:\n\nDo babies show a preference for the helper toy or the hinderer toy after being shown a puppet show?\n\nWe’re REALLY investigating nature vs. nurture",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#design-a-study-and-collect-data",
+    "href": "slides/Chapter 00/chapterP.html#design-a-study-and-collect-data",
+    "title": "Chapter P",
+    "section": "2. Design a study and collect data",
+    "text": "2. Design a study and collect data\n\nHow will you test for your question?\nWhat kind of data should be collected?\n\nHelper vs. Hinderer example:\n\nRecruit babies\nShow each baby the puppet show\nRecord which toy the baby chooses",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#explore-the-data",
+    "href": "slides/Chapter 00/chapterP.html#explore-the-data",
+    "title": "Chapter P",
+    "section": "3. Explore the data",
+    "text": "3. Explore the data\n\nVisually: Create boxplots, histograms, other graphs/charts\nNumerically: Compute a number\n\nHelper vs. Hinderer example:\n\n14 picked the helper, 2 picked the hinderer\n\nProportionally: 14/16 = 0.875",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#draw-inferences-beyond-the-data",
+    "href": "slides/Chapter 00/chapterP.html#draw-inferences-beyond-the-data",
+    "title": "Chapter P",
+    "section": "4. Draw inferences beyond the data",
+    "text": "4. Draw inferences beyond the data\n\nWhat might our results imply?\nDid our data result from chance alone?\nIs there an underlying cause?\n\nHelper vs. Hinderer example:\n\nIs 14/16 large enough to conclude babies prefer the helper toy?\nDid 14 choose the helper by chance?\n\nPerhaps the puppet show had an influence.",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#formulate-conclusions",
+    "href": "slides/Chapter 00/chapterP.html#formulate-conclusions",
+    "title": "Chapter P",
+    "section": "5. Formulate conclusions",
+    "text": "5. Formulate conclusions\n\nStrong evidence = form a conclusion\nWeak evidence = data was inconclusive\nCan often generalize to a population\n\nHelper vs. Hinderer example\n\nConclusion: Babies preferred the helper toy over the hinderer toy, when shown the puppet show.\nCan we say this about all babies?",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#look-back-and-ahead",
+    "href": "slides/Chapter 00/chapterP.html#look-back-and-ahead",
+    "title": "Chapter P",
+    "section": "6. Look back and ahead",
+    "text": "6. Look back and ahead\n\nWhat was good about the experiment?\nWhat could be improved?\nFuture research?\n\nHelper vs. Hinderer example:\n\nRecruit more babies",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#four-pillars-of-statistical-evidence",
+    "href": "slides/Chapter 00/chapterP.html#four-pillars-of-statistical-evidence",
+    "title": "Chapter P",
+    "section": "Four Pillars of Statistical Evidence",
+    "text": "Four Pillars of Statistical Evidence\n\nSignificance: How strong is the evidence of an effect?\nEstimation: What is the size of the effect?\nGeneralization: How broadly do conclusions apply?\nCausation: Can we say what caused the observed difference?\n\n\nTypically, the pillars apply during step 4 or 5 of the six-step process.",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#basic-definitions",
+    "href": "slides/Chapter 00/chapterP.html#basic-definitions",
+    "title": "Chapter P",
+    "section": "Basic Definitions",
+    "text": "Basic Definitions",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#data",
+    "href": "slides/Chapter 00/chapterP.html#data",
+    "title": "Chapter P",
+    "section": "Data",
+    "text": "Data\nValues measured or categories recorded on individual entities of interest.",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#observational-units",
+    "href": "slides/Chapter 00/chapterP.html#observational-units",
+    "title": "Chapter P",
+    "section": "Observational Units",
+    "text": "Observational Units\nThe individual entities on which the data is recorded.",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#variables",
+    "href": "slides/Chapter 00/chapterP.html#variables",
+    "title": "Chapter P",
+    "section": "Variables",
+    "text": "Variables\nThe recorded characteristics of the observational units.",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#quantitative-or-numerical-data",
+    "href": "slides/Chapter 00/chapterP.html#quantitative-or-numerical-data",
+    "title": "Chapter P",
+    "section": "Quantitative (or Numerical) Data",
+    "text": "Quantitative (or Numerical) Data\nVariables which take on numerical values\n\nEx: Height, age, number of pets, 40-yard dash time",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#qualitative-or-categorical-data",
+    "href": "slides/Chapter 00/chapterP.html#qualitative-or-categorical-data",
+    "title": "Chapter P",
+    "section": "Qualitative (or Categorical) Data",
+    "text": "Qualitative (or Categorical) Data\nVariables which take on category designations\n\nEx: Hair color, marital status, selecting A, B, or C on a multiple-choice question",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#helper-vs.-hinderer-example",
+    "href": "slides/Chapter 00/chapterP.html#helper-vs.-hinderer-example",
+    "title": "Chapter P",
+    "section": "Helper vs. Hinderer Example",
+    "text": "Helper vs. Hinderer Example\n\nWhat were the observational units?\n\nEach baby\n\nWhat variable was being observed?\n\nWhether the baby chose the helper or hinderer\n\nWas the variable numerical or categorical?\n\nCategorical",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#describing-data",
+    "href": "slides/Chapter 00/chapterP.html#describing-data",
+    "title": "Chapter P",
+    "section": "Describing Data",
+    "text": "Describing Data",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#distribution",
+    "href": "slides/Chapter 00/chapterP.html#distribution",
+    "title": "Chapter P",
+    "section": "Distribution",
+    "text": "Distribution\nDescribes the pattern of value/category outcomes for a variable.\n\nSix-sided die example with 3 sides being 3, 2 being two and 1 being one.",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#describing-a-distribution",
+    "href": "slides/Chapter 00/chapterP.html#describing-a-distribution",
+    "title": "Chapter P",
+    "section": "Describing a Distribution",
+    "text": "Describing a Distribution",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#shape",
+    "href": "slides/Chapter 00/chapterP.html#shape",
+    "title": "Chapter P",
+    "section": "Shape",
+    "text": "Shape\nSymmetric, mound-shaped, skewed? How many ”peaks”?",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#center",
+    "href": "slides/Chapter 00/chapterP.html#center",
+    "title": "Chapter P",
+    "section": "Center",
+    "text": "Center\nWhere does the center of the pattern appear?\n\nGenerally refers to mean or mode",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#variability",
+    "href": "slides/Chapter 00/chapterP.html#variability",
+    "title": "Chapter P",
+    "section": "Variability",
+    "text": "Variability\nHow spread out is the distribution?\n\nGenerally described in terms of standard deviation\nVariability will be a big topic in this class!",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#unusual-data",
+    "href": "slides/Chapter 00/chapterP.html#unusual-data",
+    "title": "Chapter P",
+    "section": "Unusual Data",
+    "text": "Unusual Data\n\nOutliers\nOutliers can affect results- so we need to be aware of them.",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#national-anthem-example",
+    "href": "slides/Chapter 00/chapterP.html#national-anthem-example",
+    "title": "Chapter P",
+    "section": "National Anthem Example",
+    "text": "National Anthem Example\n\n\n\nYear\nSuper Bowl\nPerformer\nGenre\nTime (sec)\n\n\n\n\n2019\n53\nGladys Knight\nR&B/Soul\n121\n\n\n2018\n52\nPink\nPop\n113\n\n\n2017\n51\nLuke Bryant\nCountry\n124\n\n\n2016\n50\nLady Gaga\nPop\n129\n\n\n2015\n49\nIdina Menzel\nPop\n124\n\n\n2014\n48\nRenee Fleming\nOpera\n114\n\n\n2013\n47\nAlicia Keys\nPop\n155\n\n\n2012\n46\nKelly Clarkson\nPop\n94\n\n\n2011\n45\nChristina Aguilera\nPop\n114\n\n\n2010\n44\nCarrie Underwood\nCountry\n107",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#national-anthem-example-cont.",
+    "href": "slides/Chapter 00/chapterP.html#national-anthem-example-cont.",
+    "title": "Chapter P",
+    "section": "National Anthem Example (cont.)",
+    "text": "National Anthem Example (cont.)\nDot plot of National Anthem length:",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#national-anthem-example-cont.-1",
+    "href": "slides/Chapter 00/chapterP.html#national-anthem-example-cont.-1",
+    "title": "Chapter P",
+    "section": "National Anthem Example (cont.)",
+    "text": "National Anthem Example (cont.)\n\n\nHow would you describe the distribution?\n\nShape:\nCenter:\nVariability:\nStandard Deviation:\nOutliers:\n\n\n\n\n\nHistogram of song length",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#in-the-long-run",
+    "href": "slides/Chapter 00/chapterP.html#in-the-long-run",
+    "title": "Chapter P",
+    "section": "In the long run…",
+    "text": "In the long run…\n\nBeneficial to run many experiments\nSimulations come in handy\nCan observe long term patterns or “behavior”\nInterest in long-run (long term) probability of an outcome",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#cars-vs.-goats-exploration",
+    "href": "slides/Chapter 00/chapterP.html#cars-vs.-goats-exploration",
+    "title": "Chapter P",
+    "section": "Cars vs. Goats Exploration",
+    "text": "Cars vs. Goats Exploration\n\n\n\nInspired by the classic Monty Hall problem from Let’s Make a Deal!\nThree doors; two goats, one car\nAfter one door is revealed, should you switch or stay with your choice?\nGoal: Use simulation to determine a long-run trend\nMonty Hall Applet demo",
+    "crumbs": [
+      "Chapter P Slides",
+      "Chapter P"
+    ]
+  }
+]
