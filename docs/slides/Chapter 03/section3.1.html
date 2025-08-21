@@ -10,7 +10,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.56">
 
-  <title>2025 Presentations – Section 3.4</title>
+  <title>STAT 218 – Section 3.1</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -327,14 +327,375 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Section 3.4</h1>
+  <h1 class="title">Section 3.1</h1>
+  <p class="subtitle">Statistical Inference: Confidence Intervals</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section class="slide level2">
+<section id="recap" class="slide level2">
+<h2>Recap</h2>
+<p>Interested in determining if a value for the parameter is <u>plausible</u>.</p>
+<ul>
+<li><p>Parameter = long run proportion OR long run mean</p></li>
+<li><p>Set up hypothesis test</p></li>
+<li><p>Use a method to determine strength of evidence:</p>
+<div>
+<ul>
+<li class="fragment">P-value</li>
+<li class="fragment">Standardized statistic</li>
+<li class="fragment">Theory-based approach</li>
+</ul>
+</div></li>
+</ul>
+</section>
+<section id="recap-1" class="slide level2 center">
+<h2>Recap</h2>
+<ul>
+<li><p>We don’t know our parameter</p>
+<ul>
+<li>Difficult or impossible to obtain</li>
+</ul></li>
+<li><p>Goal: know which parameter values are plausible</p></li>
+<li><p>Need a range</p></li>
+</ul>
+</section>
+<section>
+<section id="intro-to-confidence-intervals" class="title-slide slide level1 center">
+<h1>Intro to Confidence Intervals</h1>
 
+</section>
+<section id="confidence-intervals" class="slide level2 center">
+<h2>Confidence Intervals</h2>
+<ul>
+<li><p><u><strong>Confidence Interval:</strong></u> A range of likely values for our parameter of interest</p></li>
+<li><p>Helps us estimate the true value of <span class="math inline">\(\mu\)</span> or <span class="math inline">\(\pi\)</span></p></li>
+<li><p>Remember: We don’t know the true value of <span class="math inline">\(\mu\)</span> or <span class="math inline">\(\pi\)</span></p></li>
+</ul>
+</section>
+<section id="hypothesis-testing-review" class="slide level2 center">
+<h2>Hypothesis Testing Review</h2>
+<p>Example Hypotheses:</p>
+<ul>
+<li><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\pi\)</span> = 0.5</li>
+<li><span class="math inline">\(H_{A}\)</span>: <span class="math inline">\(\pi\)</span> ≠ 0.5</li>
+</ul>
+<p>Pi is <strong>NOT</strong> actually equal to 0.5!!</p>
+<ul>
+<li><p>This is what we <em>hypothesize</em> pi is based on random chance</p></li>
+<li><p>A confidence interval tells us if 0.5 is plausible or not</p></li>
+</ul>
+</section>
+<section id="hypothesis-testing-review-1" class="slide level2 center">
+<h2>Hypothesis Testing Review</h2>
+<p>Example Hypotheses:</p>
+<ul>
+<li><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\pi\)</span> = 0.5</li>
+<li><span class="math inline">\(H_{A}\)</span>: <span class="math inline">\(\pi\)</span> ≠ 0.5</li>
+</ul>
+<p>Recall:</p>
+<div>
+<ul>
+<li class="fragment">If we reject <span class="math inline">\(H_{0}\)</span>, we’re saying pi cannot be 0.5 (not plausible)</li>
+<li class="fragment">If we fail to reject <span class="math inline">\(H_{0}\)</span>, we’re saying pi could be 0.5 (plausible)</li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="example-legalization-of-medical-marijuana" class="title-slide slide level1 center">
+<h1>Example: Legalization of Medical Marijuana</h1>
+
+</section>
+<section id="scenario" class="slide level2 center">
+<h2>Scenario</h2>
+<p>In February of 2014, a Star Tribune Minnesota poll asked a random sample of adults in Minnesota, “Do you support or oppose legalizing marijuana for medical purposes in Minnesota?” Of the 800 adults surveyed, 408 (51%) answered that they would support this.</p>
+<div class="fragment">
+<p><strong>We want to estimate the true proportion of adults that feel medical marijuana should be legalized.</strong></p>
+<aside class="notes">
+<p>Write questions from the next slide on the board</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
+</section>
+<section id="legalizing-medical-marijuana" class="slide level2">
+<h2>Legalizing Medical Marijuana</h2>
+<ul>
+<li><p>Population of Interest: <strong>All Minnesota adults</strong></p></li>
+<li><p>Parameter of Interest: <span class="fragment"><span class="math inline">\(\pi\)</span>=</span><strong>Long run proportion of Minnesota adults that feel marijuana should be legalized</strong></p></li>
+<li><p>Sample/sample size: <strong>n = 800 surveyed Minnesota adults</strong></p></li>
+<li><p>Observed Statistic: <span class="fragment"><span class="math inline">\(\hat{p}=\frac{408}{800}=0.51\)</span></span></p></li>
+</ul>
+<div class="fragment">
+<p>Note: We may also refer to the observed statistic as a <u><strong>point estimation</strong></u></p>
+</div>
+<div class="fragment">
+<p><strong>What if we took a different sample of 800 adults?</strong></p>
+</div>
+</section>
+<section id="legalizing-medical-marijuana-activity" class="slide level2">
+<h2>Legalizing Medical Marijuana Activity</h2>
+<ul>
+<li><p>Use the <strong>Theory Based Inference Applet</strong></p></li>
+<li><p>Work with people around you to test different values of <span class="math inline">\(\pi\)</span></p></li>
+<li><p>For each value of <span class="math inline">\(\pi\)</span> record:</p>
+<ol type="1">
+<li>P-value</li>
+<li>Should you reject (R) or fail to reject (FTR) the null hypothesis?</li>
+<li>Is the hypothesized value for <span class="math inline">\(\pi\)</span> plausible or not?</li>
+</ol></li>
+</ul>
+</section>
+<section id="activity-results" class="slide level2" style="font-size: 22px">
+<h2>Activity Results</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(H_{0}:\pi=\)</span></td>
+<td style="text-align: center;">0.41</td>
+<td style="text-align: center;">0.42</td>
+<td style="text-align: center;">0.43</td>
+<td style="text-align: center;">0.44</td>
+<td style="text-align: center;">0.45</td>
+<td style="text-align: center;">0.46</td>
+<td style="text-align: center;">0.47</td>
+<td style="text-align: center;">0.48</td>
+<td style="text-align: center;">0.49</td>
+<td style="text-align: center;">0.50</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>P-value</strong></td>
+<td style="text-align: center;">&gt;0.0001</td>
+<td style="text-align: center;">&gt;0.0001</td>
+<td style="text-align: center;">&gt;0.0001</td>
+<td style="text-align: center;">0.0001</td>
+<td style="text-align: center;">0.0006</td>
+<td style="text-align: center;">0.0045</td>
+<td style="text-align: center;">0.0234</td>
+<td style="text-align: center;">0.0894</td>
+<td style="text-align: center;">0.2578</td>
+<td style="text-align: center;">0.5716</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>R/FTR</strong></td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">FTR</td>
+<td style="text-align: center;">FTR</td>
+<td style="text-align: center;">FTR</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Plausible?</strong></td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+</tbody>
+</table>
+<p><br><br></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(H_{0}:\pi=\)</span></td>
+<td style="text-align: center;">0.51</td>
+<td style="text-align: center;">0.52</td>
+<td style="text-align: center;">0.53</td>
+<td style="text-align: center;">0.54</td>
+<td style="text-align: center;">0.55</td>
+<td style="text-align: center;">0.56</td>
+<td style="text-align: center;">0.57</td>
+<td style="text-align: center;">0.58</td>
+<td style="text-align: center;">0.59</td>
+<td style="text-align: center;">0.60</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>P-value</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0.5713</td>
+<td style="text-align: center;">0.2570</td>
+<td style="text-align: center;">0.0887</td>
+<td style="text-align: center;">0.0230</td>
+<td style="text-align: center;">0.0044</td>
+<td style="text-align: center;">0.0006</td>
+<td style="text-align: center;">0.0001</td>
+<td style="text-align: center;">&gt;0.0001</td>
+<td style="text-align: center;">&gt;0.0001</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>R/FTR</strong></td>
+<td style="text-align: center;">FTR</td>
+<td style="text-align: center;">FTR</td>
+<td style="text-align: center;">FTR</td>
+<td style="text-align: center;">FTR</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Plausible?</strong></td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<ul>
+<li>What trends do you notice?</li>
+<li>What is our range of plausible values?</li>
+</ul>
+</section>
+<section id="confidence-interval-interpretation" class="slide level2 center">
+<h2>Confidence Interval Interpretation</h2>
+<ul>
+<li><p>0.48 to 0.54 is also known as our confidence interval!</p>
+<ul>
+<li>Can be written as (0.48, 0.54)</li>
+</ul></li>
+<li><p>We are 95% confident that the true value of <span class="math inline">\(\pi\)</span> is between 0.48 and 0.54</p>
+<ul>
+<li>This is a general interpretation</li>
+<li>Put this in context of the given problem</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<p>“We are 95% confident that the long-run proportion of Minnesota adults who feel medical marijuana should be legalized is between 0.48 and 0.54</p>
+</div>
+</section>
+<section id="confidence-intervals-general-form" class="slide level2 center" style="text-align: center;">
+<h2>Confidence Intervals: General Form</h2>
+<p>Confidence Interval (CI) = (Lower Bound, Upper Bound)</p>
+<p>= Observed statistic ± margin of error</p>
+</section>
+<section id="medical-marijuana-example" class="slide level2 center">
+<h2>Medical Marijuana Example</h2>
+<ul>
+<li><span class="math inline">\(\hat{p}\)</span> = 0.51</li>
+<li>CI = (0.48, 0.54)</li>
+<li>Alternatively, could write: 0.51 ± 0.03</li>
+</ul>
+
+<img data-src="images/1_minnesota.png" class="quarto-figure quarto-figure-center r-stretch" alt="Article snippet: The polly surveyed 800 Minnesota adults between Feb. 10 and 12 and has a margin of sampling error of plus or minus 3.5 percentage points."></section></section>
+<section>
+<section id="significance-levels" class="title-slide slide level1 center">
+<h1>Significance Levels</h1>
+
+</section>
+<section id="significance-level" class="slide level2 center">
+<h2>Significance Level</h2>
+<p>P-value cutoff for rejecting/failing to reject the null</p>
+<ul>
+<li><p>Denoted by <span class="math inline">\(\alpha\)</span></p></li>
+<li><p>More “mathematical” reason we reject <span class="math inline">\(H_{0}\)</span> if p-value is less than 0.05</p></li>
+<li><p>Significance level + confidence level = 100%</p></li>
+</ul>
+</section>
+<section id="common-significance-levels-alpha-0.10" class="slide level2 center">
+<h2>Common Significance Levels: <span class="math inline">\(\alpha\)</span> = 0.10</h2>
+<ul>
+<li><p>90% confidence level</p></li>
+<li><p>Reject when p-value &lt; 0.10</p></li>
+<li><p>Reject null more often</p></li>
+<li><p>Narrower confidence interval</p></li>
+<li><p>More Type I errors, less Type II errors</p></li>
+</ul>
+</section>
+<section id="common-significance-levels-alpha-0.05" class="slide level2 center">
+<h2>Common Significance Levels: <span class="math inline">\(\alpha\)</span> = 0.05</h2>
+<ul>
+<li><p>95% confidence level</p></li>
+<li><p>Reject when p-value &lt; 0.10</p></li>
+<li><p>Standard Practice</p></li>
+</ul>
+</section>
+<section id="common-significance-levels-alpha-0.01" class="slide level2 center">
+<h2>Common Significance Levels: <span class="math inline">\(\alpha\)</span> = 0.01</h2>
+<ul>
+<li><p>99% confidence level</p></li>
+<li><p>Reject when p-value &lt; 0.01</p></li>
+<li><p>Reject null less often</p></li>
+<li><p>Wider confidence interval</p></li>
+<li><p>Less Type I errors, more Type II errors</p></li>
+</ul>
+</section>
+<section id="confidence-level" class="slide level2 center">
+<h2>Confidence Level</h2>
+<p>Percent of samples expected to generate a confidence interval containing the true parameter.</p>
+<ul>
+<li>Recall: the confidence interval generated is based on the observed statistic!</li>
+</ul>
+</section>
+<section id="confidence-level-1" class="slide level2 center">
+<h2>Confidence Level</h2>
+<p>Ex: 95% confidence level</p>
+<ul>
+<li>If we sampled from the same population 20 times, we would expect 19 samples (95%) to contain the true population parameter</li>
+</ul>
+</section>
+<section id="confidence-level-2" class="slide level2 center">
+<h2>Confidence Level</h2>
+
+<img data-src="images/1_cl.png" class="quarto-figure quarto-figure-center r-stretch" alt="Graphic depicting the concept of confidence level."></section>
+<section id="general-confidence-interval-interpretation" class="slide level2 center">
+<h2>General Confidence Interval Interpretation</h2>
+<p>“We are (confidence level)% confident that the (problem context) is between (lower bound) and (upper bound).”</p>
 
 <div class="quarto-auto-generated-content">
 <p><img src="logo.jpg" class="slide-logo"></p>
@@ -342,7 +703,7 @@
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 

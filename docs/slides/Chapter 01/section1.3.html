@@ -10,7 +10,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.56">
 
-  <title>2025 Presentations – Section 1.2</title>
+  <title>STAT 218 – Section 1.3</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -327,95 +327,41 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Section 1.2</h1>
-  <p class="subtitle">Measuring the Strength of Evidence</p>
+  <h1 class="title">Section 1.3</h1>
+  <p class="subtitle">Alternative Measure of Strength of Evidence</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="rock-paper-scissors" class="slide level2">
-<h2>Rock, Paper, Scissors</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Consider a classic game of Rock, Paper, Scissors</p>
-<ul>
-<li>Studies suggest scissors are chosen least</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/2_rps.png" alt="Rock, paper, and scissors clip art."></p>
-</div></div>
-<p>Let’s put this to the test!</p>
-</section>
-<section id="rock-paper-scissors-cont." class="slide level2">
-<h2>Rock, Paper, Scissors (cont.)</h2>
-<p>In a game of Rock, Paper, Scissors…</p>
-<ul>
-<li><p>What are the observational units?</p></li>
-<li><p>What is the variable of interest?</p></li>
-</ul>
-<p>Do we still have a binary outcome?</p>
-<div class="fragment">
-<ul>
-<li>Yes: <em>Scissors or not</em></li>
-</ul>
-</div>
-</section>
-<section id="but-first-symbols" class="slide level2 center">
-<h2>But first, symbols!</h2>
-<ul>
-<li><span class="math inline">\(\pi\)</span> (pi) represents the <strong>parameter</strong>: The long run <strong>proportion</strong></li>
-<li><span class="math inline">\(\hat{p}\)</span> (p-hat) represents the <strong>observed statistic</strong>: The value we observe from our <strong>sample</strong></li>
-<li><strong>n</strong> is the <strong>sample size</strong>: The number of trials in an experiment (recall from last section)</li>
-</ul>
-</section>
-<section id="helper-vs.-hinderer-symbols-example" class="slide level2 center">
-<h2>Helper vs.&nbsp;Hinderer Symbols Example</h2>
-<ul>
-<li><p>Parameter (<span class="math inline">\(\pi\)</span>) = The long run proportion of times a baby choses the helper toy.</p>
-<ul>
-<li>Remember, this is unknown!!</li>
-</ul></li>
-<li><p>Observed Statistic (<span class="math inline">\(\hat{p}\)</span>) = 14/16</p></li>
-<li><p>Sample size (n) = 16</p></li>
-</ul>
-</section>
-<section id="rock-paper-scissors-activity" class="slide level2">
-<h2>Rock, Paper, Scissors Activity</h2>
-<p>With a partner, play 20 games of rock paper scissors. Identify the following:</p>
-<ul>
-<li>Observational units: <span class="fragment"><strong>Each game you play</strong></span></li>
-<li>Sample: <span class="fragment"><strong>Games played between you and your partner</strong></span></li>
-<li>Sample size (n): <span class="fragment"><strong>20</strong></span></li>
-<li>Categorical variable of interest: <span class="fragment"><strong>Scissors or not</strong></span></li>
-<li>Parameter (<span class="math inline">\(\pi\)</span>): <span class="fragment"><strong>Long run proportion of scissors</strong></span></li>
-<li>Your observed statistic (<span class="math inline">\(\hat{p}\)</span>)</li>
-<li>Your partner’s observed statistic (<span class="math inline">\(\hat{p}\)</span>)</li>
-</ul>
-</section>
-<section id="rock-paper-scissors-activity-cont." class="slide level2 center">
-<h2>Rock, Paper, Scissors Activity (cont.)</h2>
-<ul>
-<li><p>How many times did you expect your partner to throw scissors?</p></li>
-<li><p>Did your observed statistic match your partner’s?</p></li>
-</ul>
-</section>
 <section>
-<section id="intro.-to-hypothesis-testing" class="title-slide slide level1 center">
-<h1>Intro. to Hypothesis Testing</h1>
+<section id="review" class="title-slide slide level1 center">
+<h1>Review</h1>
 
 </section>
-<section id="hypothesis-testing" class="slide level2 center">
-<h2>Hypothesis Testing</h2>
+<section id="wait-what-is-it-were-trying-to-do" class="slide level2 center">
+<h2>Wait, what is it we’re trying to do?</h2>
+<p><strong>Goal:</strong> Test if we have evidence in favor of our research question.</p>
 <ul>
-<li>Allows us to summarize and refine our research question.</li>
-<li>Step 1 in the six-step process</li>
+<li><p>To do this, we design a study</p></li>
+<li><p>We collect and test our data</p></li>
 </ul>
 </section>
-<section id="hypothesis-testing-cont." class="slide level2 center">
-<h2>Hypothesis Testing (cont.)</h2>
+<section id="hypothesis-testing-review" class="slide level2">
+<h2>Hypothesis Testing Review</h2>
 <ul>
-<li><p>Two hypotheses</p></li>
+<li><p>Hypotheses refine our research question</p></li>
+<li><p>Give us a precise idea of what we want to test</p></li>
+<li><p>We have two hypotheses:</p>
+<ul>
+<li>Null hypothesis</li>
+<li>Alternative hypothesis</li>
+</ul></li>
+</ul>
+</section>
+<section id="hypothesis-testing-review-1" class="slide level2">
+<h2>Hypothesis Testing Review</h2>
+<ul>
 <li><p>Null hypothesis (<span class="math inline">\(H_{0}\)</span>):</p>
 <ul>
 <li>The chance explanation.</li>
@@ -429,237 +375,348 @@
 </ul>
 <p>We can either write our hypotheses in words or symbols.</p>
 </section>
-<section id="hypothesis-testing-cont.-1" class="slide level2 center">
-<h2>Hypothesis Testing (cont.)</h2>
-<p>In words:</p>
+<section id="p-value-review" class="slide level2">
+<h2>P-value Review</h2>
+<p>Once we have our hypotheses, we can test them.</p>
 <ul>
-<li>Null Hypothesis: The long run proportion of (<em>variable of interest</em>) is equal to (<em>hypothesized proportion</em>).</li>
-<li>Alt. Hypothesis: The long run proportion of (<em>variable of interest</em>) is (<em>less than/greater than/not equal to hypothesized proportion</em>).</li>
+<li>P-value gives the probability of <span class="math inline">\(\hat{p}\)</span> occurring <em>if we assume</em> <span class="math inline">\(H_{0}\)</span> is true</li>
 </ul>
+<div class="fragment">
+<p>We go by the following rules:</p>
+<ul>
+<li><p>If p-value &gt; .05, fail to reject the null</p></li>
+<li><p>If p-value ≤ .05, reject the null, accept alternative</p></li>
+</ul>
+<p>Then we interpret our results based on the context of the problem.</p>
+</div>
 </section>
-<section id="hypothesis-testing-cont.-2" class="slide level2 center">
-<h2>Hypothesis Testing (cont.)</h2>
-<p>In symbols:</p>
-<ul>
-<li><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\pi\)</span> = (<em>hypothesized proportion</em>)</li>
-<li><span class="math inline">\(H_{A}\)</span>: <span class="math inline">\(\pi\)</span> &gt;,&lt;,≠ (<em>hypothesized proportion</em>)</li>
-</ul>
-<p>Note that our hypothesized proportion <em>will not be the same as our observed statistic!</em></p>
-</section>
-<section id="helper-vs.-hinderer-hypothesis-testing" class="slide level2">
-<h2>Helper vs.&nbsp;Hinderer: Hypothesis Testing</h2>
-<p>In words:</p>
-<ul>
-<li>Null: The long run proportion of times a baby chooses the helper toy is equal to 0.5</li>
-<li>Alternative: The long run proportion of times a baby chooses the helper toy is greater than 0.5</li>
-</ul>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p>In symbols:</p>
-<ul>
-<li><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\pi\)</span> = 0.5</li>
-<li><span class="math inline">\(H_{A}\)</span>: <span class="math inline">\(\pi\)</span> = 0.5</li>
-</ul>
-</div><div class="column" style="width:60%;">
-<p><br> <br> <span class="fragment">Where does 0.5 (1/2) come from?</span></p>
-</div></div>
-</section>
-<section id="rock-paper-scissors-hypothesis-testing" class="slide level2 center">
-<h2>Rock, Paper, Scissors: Hypothesis Testing</h2>
-<p><strong>Research Question:</strong> Is scissors thrown less often than rock or paper?</p>
-<ul>
-<li><p>We’re interested in <span class="math inline">\(\pi\)</span>, the long run proportion of times someone picks scissors.</p></li>
-<li><p>What might a good hypothesized value for <span class="math inline">\(\pi\)</span> be?</p></li>
-</ul>
-</section>
-<section id="rock-paper-scissors-hypothesis-testing-1" class="slide level2 center">
-<h2>Rock, Paper, Scissors: Hypothesis Testing</h2>
-<p>In words:</p>
-<ul>
-<li><p>Null: The long run proportion of times a person throws scissors is equal to 1/3.</p></li>
-<li><p>Alt: The long run proportion of times a person throws scissors is less than 1/3.</p></li>
-</ul>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>In symbols:</p>
-<ul>
-<li><span class="math inline">\(H_{0}: \pi = \frac{1}{3}\)</span></li>
-<li><span class="math inline">\(H_{A}: \pi &lt; \frac{1}{3}\)</span></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><br> <br> <span class="fragment">Why are we using “&lt;”?</span></p>
-</div></div>
-</section>
-<section id="rock-paper-scissors-three-s-strategy" class="slide level2 center">
-<h2>Rock, Paper, Scissors: Three S Strategy</h2>
-<ul>
-<li><strong>Statistic:</strong> How many times was scissors thrown? (Out of 20 games?)</li>
-</ul>
-</section>
-<section id="rock-paper-scissors-three-s-strategy-1" class="slide level2 center">
-<h2>Rock, Paper, Scissors: Three S Strategy</h2>
-<ul>
-<li><p><strong>Simulate:</strong> Using the Applet, simulate the chance model 1000 times.</p>
-<ul>
-<li>Compuare your observed statistic to the simulation.</li>
-</ul></li>
-</ul>
-</section>
-<section id="rock-paper-scissors-three-s-strategy-2" class="slide level2 center">
-<h2>Rock, Paper, Scissors: Three S Strategy</h2>
-<ul>
-<li><p><strong>Strength of Evidence:</strong> How likely is your observed statistic against the simulation?</p>
-<ul>
-<li>“Eyeballing it” is not reliable</li>
-<li>Need a concrete method</li>
-<li>Enter p-value…</li>
-</ul></li>
-</ul>
+<section id="however-p-values-are-just-one-way-we-can-test-for-statistical-significance" class="slide level2 center">
+<h2>However, p-values are just one way we can test for statistical significance!</h2>
 </section></section>
 <section>
-<section id="p-value" class="title-slide slide level1 center">
-<h1>P-value</h1>
+<section id="heart-transplant-example" class="title-slide slide level1 center">
+<h1>Heart Transplant Example</h1>
 
 </section>
-<section id="p-value-1" class="slide level2">
-<h2>P-value</h2>
+<section id="key-information" class="slide level2 center" style="font-size: 30px">
+<h2>Key Information</h2>
 <div class="columns">
 <div class="column" style="width:60%;">
 <ul>
-<li><p>Reliable way to measure strength of evidence</p></li>
-<li><p><u><strong>P-value:</strong></u> The probability of obtaining a simulated value of the statistic as or more extreme than the observed statistic when the null hypothesis is true.</p></li>
+<li><p>St.&nbsp;George’s Hospital in London noticed an increased mortality rate after heart transplants</p></li>
+<li><p>Of last 10 heart transplants, 80% died within 30 days of surgery</p></li>
+<li><p>Historical data reports the normal mortality rate as 15%</p></li>
+<li><p>Want to investigate if St.&nbsp;George exceeds the national rate</p></li>
 </ul>
 </div><div class="column" style="width:40%;">
-<p><br> <img data-src="images/2_pmeme.png" alt="Meme captioned 'Me trying to understand what all the p's represent in statistics.'"></p>
+<p><img data-src="images/3_heart.png" alt="Art of a human heart."></p>
 </div></div>
 </section>
-<section id="p-value-2" class="slide level2">
-<h2>P-value</h2>
+<section id="heart-transplant-example-1" class="slide level2" style="font-size: 32px">
+<h2>Heart Transplant Example</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:60%;">
+<p>Let’s identify the following:</p>
 <ul>
-<li><p>Always between 1 and 0</p></li>
-<li><p>Represents the proportion of simulated statistics as or more extreme than the observed statistic, in the direction of the alternative hypothesis</p></li>
-<li><p>Smaller p-value = stronger evidence <u><strong>against</strong></u> the null</p>
+<li><p>Research question:</p></li>
+<li><p>Observational units:</p></li>
+<li><p>Variable of interest:</p>
 <ul>
-<li>(Aka, in favor of our alternative!)</li>
+<li>Categorical or Numerical?</li>
 </ul></li>
+<li><p>Parameter (<span class="math inline">\(\pi\)</span>):</p></li>
+<li><p>Observed statistic (<span class="math inline">\(\hat{p}\)</span>):</p></li>
+<li><p>Hypotheses (in symbols):</p></li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><br> <img data-src="images/2_normal.png" alt="Meme captioned 'Me trying to understand what all the p's represent in statistics.'"></p>
-</div></div>
-</section>
-<section id="p-value-cutoffs" class="slide level2">
-<h2>P-value Cutoffs</h2>
+</div><div class="column" style="width:40%;">
 <table class="caption-top">
 <colgroup>
-<col style="width: 23%">
-<col style="width: 19%">
-<col style="width: 56%">
+<col style="width: 101%">
 </colgroup>
+<thead>
+<tr class="header">
+<th>Key Information</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
-<td>P –value &gt; .10</td>
-<td></td>
-<td>Not much evidence against the null hypothesis</td>
+<td><ul>
+<li><p>80% of 10 transplants resulted in deaths within 30 days of the transplant</p></li>
+<li><p>Historical data suggests a 15% mortality rate</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</section>
+<section id="heart-transplant-example-2" class="slide level2" style="font-size: 32px">
+<h2>Heart Transplant Example</h2>
+<p>Let’s identify the following:</p>
+<ul>
+<li><p>Research question: <span class="fragment"><strong>Is St.&nbsp;George’s mortality rate for heart transplants higher than the national average?</strong></span></p></li>
+<li><p>Observational units: <span class="fragment"><strong>Each heart transplant (n=10)</strong></span></p></li>
+<li><p>Variable of interest: <span class="fragment"><strong>Live or die</strong></span></p>
+<ul>
+<li>Categorical or Numerical? <span class="fragment"><strong>Categorical</strong></span></li>
+</ul></li>
+<li><p>Parameter (<span class="math inline">\(\pi\)</span>): <span class="fragment"><strong>Long run proportion of patients who die within 30 days of a heart transplant at St.&nbsp;George.</strong></span></p></li>
+<li><p>Observed statistic (<span class="math inline">\(\hat{p}\)</span>): <span class="fragment"><strong>8/10 = 80%</strong></span></p></li>
+<li><p>Hypotheses (in symbols):</p>
+<ul>
+<li><span class="fragment"><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\pi\)</span> = 0.15</span></li>
+<li><span class="fragment"><span class="math inline">\(H_{A}\)</span>: <span class="math inline">\(\pi\)</span> ≠ 0.15</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="heart-transplant-example-p-value" class="slide level2">
+<h2>Heart Transplant Example: P-value</h2>
+<p>Let’s find the p-value!</p>
+<ul>
+<li><p>Open up the One Proportion Applet</p>
+<ul>
+<li><a href="">Link to One Proportion Applet</a></li>
+</ul></li>
+<li><p>Enter data from previous slides</p></li>
+<li><p>Run simulation 1000 times</p></li>
+<li><p>Find p-value</p>
+<ul>
+<li>Here, the p-value is the number of simulated values under the null hypothesis that are ____ than ____.</li>
+</ul></li>
+</ul>
+</section>
+<section id="heart-transplant-example-p-value-1" class="slide level2">
+<h2>Heart Transplant Example: P-value</h2>
+<p>Hopefully, you got something that looks like this.</p>
+
+<img data-src="images/3_applet1.png" class="quarto-figure quarto-figure-center r-stretch" alt="Null distribution that peaks at 0.15. A red line is drawn at 0.8."><p>Should we accept or reject the null?</p>
+<ul>
+<li>P-value = 0 ?</li>
+</ul>
+</section></section>
+<section>
+<section id="standardized-statistic-method" class="title-slide slide level1 center">
+<h1>Standardized Statistic Method</h1>
+
+</section>
+<section id="standardized-statistic-method-1" class="slide level2 center">
+<h2>Standardized Statistic Method</h2>
+<ul>
+<li><p>A second method for determining strength of evidence</p></li>
+<li><p>Standardizes <span class="math inline">\(\hat{p}\)</span> to a <strong>standard normal distribution</strong></p></li>
+<li><p><strong>Standard normal distribution</strong> = Normal distribution with mean of 0 and standard deviation of 1</p></li>
+</ul>
+</section>
+<section id="standard-deviation" class="slide level2 center">
+<h2>Standard Deviation</h2>
+<p>Measure of how spread out data points are from the center.</p>
+</section>
+<section id="standardized-statistic" class="slide level2 center">
+<h2>Standardized Statistic</h2>
+<p>How many standard deviations an observed statistic is from the mean of the null distribution; denoted by <span class="math inline">\(z\)</span></p>
+</section>
+<section id="calculating-the-standardized-statistic" class="slide level2 center">
+<h2>Calculating the Standardized Statistic</h2>
+<p><span class="math display">\[z=\frac{Observed\: Statistic - Hypothesized\: Value}{Standard\: Deviation\: under\: the\: null}\]</span></p>
+</section>
+<section id="calculating-the-standardized-statistic-1" class="slide level2 center">
+<h2>Calculating the Standardized Statistic</h2>
+<p>Can alternatively be written as:</p>
+<p><span class="math display">\[z=\frac{Observed\: Statistic - Mean\: under\: the\: null}{Standard\: Deviation\: under\: the\: null}\]</span></p>
+<p>Note: “Hypothesized value” and “mean under the null” refer to the same value</p>
+</section>
+<section id="standardized-statistic-1" class="slide level2 center">
+<h2>Standardized Statistic</h2>
+<ul>
+<li><span class="math inline">\(z\)</span> can be negative OR positive</li>
+<li><span class="math inline">\(z\)</span> represents the number of standard deviations the observed statistic is from the mean of the null distribution</li>
+<li>The higher the absolute value of <span class="math inline">\(z\)</span> is, the more evidence we have in favor of <span class="math inline">\(H_{A}\)</span></li>
+<li>Absolute value =
+<ul>
+<li>Positive values stay the same</li>
+<li>Negative values become their positive counterpart</li>
+</ul></li>
+</ul>
+</section>
+<section id="standard-deviation-s.d.-formula" class="slide level2">
+<h2>Standard Deviation (S.D.) Formula</h2>
+<p><span class="math display">\[\sigma = \sqrt{\frac{\sum_{i=0}^n (x_{i}-\bar{x})^2}{n}}\]</span></p>
+<p>Thankfully, you won’t need to know this formula for this course, but some of you might find it nice to know how this magical number is calculated.</p>
+<ul>
+<li>Instead, we can get our s.d. using the Applet. (Phew!)</li>
+</ul>
+</section>
+<section id="obtaining-standard-deviation" class="slide level2">
+<h2>Obtaining Standard Deviation</h2>
+<p>Check “summary statistics” box to obtain the S.D.</p>
+
+<img data-src="images/3_applet2.png" class="quarto-figure quarto-figure-center r-stretch" alt="Null distribution that peaks at 0.15. A red line is drawn at 0.8. 'Summary Statistics' box is checked."><p>Note: Your s.d. won’t be the same every time. How come?</p>
+</section>
+<section id="heart-transplant-example-3" class="slide level2">
+<h2>Heart Transplant Example</h2>
+<ul>
+<li>Observed statistic (<span class="math inline">\(\hat{p}\)</span>) = 0.8</li>
+<li>Hypothesized value (<span class="math inline">\(\pi\)</span>) = 0.15</li>
+<li>Standard Deviation under the null = 0.116 (from previous slide)</li>
+</ul>
+<p><span class="math display">\[z=\frac{0.8 - 0.15}{0.116}=5.60\]</span></p>
+<p>Cool, but what does this tell us?</p>
+</section>
+<section id="evidence-based-on-the-standardized-statistic" class="slide level2 center">
+<h2>Evidence Based on the Standardized Statistic</h2>
+<ul>
+<li><p>Like the p-value, we have criteria for rejecting or failing to reject the null based on the standardized statistic (s.s.)</p></li>
+<li><p>Reject <span class="math inline">\(H_{0}\)</span> when the s.s. is below -2 or above 2</p></li>
+<li><p>“Outside the twos”</p></li>
+</ul>
+</section>
+<section id="evidence-based-on-the-standardized-statistic-1" class="slide level2 center">
+<h2>Evidence Based on the Standardized Statistic</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Standardized Statistic</th>
+<th style="text-align: center;">Evidence Against Null</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Between -1.5 and 1.5</td>
+<td style="text-align: center;">Not much</td>
 </tr>
 <tr class="even">
-<td>.05 &lt; p-value ≤ .10</td>
-<td></td>
-<td>Moderate evidence against the null hypothesis</td>
+<td style="text-align: left;">Below -1.5 or above 1.5</td>
+<td style="text-align: center;">Moderate</td>
 </tr>
 <tr class="odd">
-<td>.01 &lt; p-value ≤ .05</td>
-<td></td>
-<td>Strong evidence against the null hypothesis</td>
+<td style="text-align: left;"><strong>Below -2 or above 2</strong></td>
+<td style="text-align: center;"><strong>Strong</strong></td>
 </tr>
 <tr class="even">
-<td>.01 ≤ p-value</td>
-<td></td>
-<td>Very strong evidence against the null hypothesis</td>
+<td style="text-align: left;"><strong>Below -3 or above 3</strong></td>
+<td style="text-align: center;"><strong>Very strong</strong></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="hypothesis-testing-and-the-null-distribution" class="slide level2">
-<h2>Hypothesis Testing and the Null Distribution</h2>
-<p>The Applet generates a null distribution</p>
+<section id="evidence-based-on-the-standardized-statistic-2" class="slide level2 center">
+<h2>Evidence Based on the Standardized Statistic</h2>
+
+<img data-src="images/3_normaldist.png" class="quarto-figure quarto-figure-center r-stretch" alt="Standard normal distribution with red lines at -2 and 2 on the x axis, dividing the distribution into three zones. The middle zone says 'fail to reject null' and the outer zones say 'reject null'."></section>
+<section id="heart-transplant-example-new-data" class="slide level2">
+<h2>Heart Transplant Example: New Data</h2>
+<p>Now say we collected more data.</p>
 <ul>
-<li><p><u><strong>Null Distribution:</strong></u> Simulated trials under the chance model</p></li>
-<li><p>Will center at hypothesized value</p></li>
+<li>New simulation:</li>
 </ul>
-<p><a href="">Link to One Proportion Applet</a></p>
+
+<img data-src="images/3_applet3.png" class="quarto-figure quarto-figure-center r-stretch" alt="Simulated null distribution with a red line at 0.1967 on the x axis. The distribution mean is 0.15 and standard deviation of 0.019."><p>Note that our p-value is still significant.</p>
 </section>
-<section id="hypothesis-testing-and-the-null-distribution-cont." class="slide level2" style="font-size: 30px">
-<h2>Hypothesis Testing and the Null Distribution (cont.)</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p>Rock, paper, scissors simulation example</p>
+<section id="heart-transplant-example-new-data-1" class="slide level2">
+<h2>Heart Transplant Example: New Data</h2>
 <ul>
-<li><p>Observed statistic (<span class="math inline">\(\hat{p}\)</span>): 2/20</p></li>
-<li><p>P-value = 0.02</p></li>
-</ul>
-<p><span class="fragment">Based on this p-value, we would <u>reject the null hypothesis.</u></span></p>
-</div><div class="column" style="width:60%;">
-<p><img data-src="images/sim_2.png" alt="Screenshot of a simulation ran using the One Proportion Applet."></p>
-</div></div>
-</section>
-<section id="drawing-conclusions-from-the-p-value" class="slide level2">
-<h2>Drawing Conclusions from the P-value</h2>
-<div class="columns">
-<div class="column" style="width:70%;">
-<p>Remember, we start out assuming our null hypothesis is true.</p>
-</div><div class="column" style="width:30%;">
-<p><img data-src="images/2_pedro.png" alt="P-value meme."></p>
-</div></div>
-</section>
-<section id="drawing-conclusions-from-the-p-value-1" class="slide level2 center">
-<h2>Drawing Conclusions from the P-value</h2>
-<p>If p-value ≤ .05:</p>
+<li>Our new observed statistic is: (<span class="math inline">\(\hat{p}\)</span>) = 71/361 = 0.1967
 <ul>
-<li>Reject the null hypothesis</li>
-<li>Observed statistic likely didn’t occur by chance</li>
-</ul>
-</section>
-<section id="drawing-conclusions-from-the-p-value-2" class="slide level2 center">
-<h2>Drawing Conclusions from the P-value</h2>
-<p>If p-value &gt; .05:</p>
-<ul>
-<li>Fail to reject the null hypothesis</li>
-<li>Observed statistic could have happened by chance</li>
-</ul>
-</section>
-<section id="putting-it-into-words" class="slide level2 center">
-<h2>Putting it into words</h2>
-<p>If we reject our null hypothesis (p-value ≤ 0.05):</p>
-<ul>
-<li>We have enough evidence to conclude (insert alternative hypothesis here).</li>
-</ul>
-</section>
-<section id="putting-it-into-words-1" class="slide level2 center">
-<h2>Putting it into words</h2>
-<p>If we fail to reject our null hypothesis (p-value &gt; 0.05):</p>
-<ul>
-<li>We do not have enough evidence to conclude (insert alternative hypothesis here).</li>
-</ul>
-</section>
-<section id="rock-paper-scissors-conclusion" class="slide level2 center">
-<h2>Rock, Paper, Scissors Conclusion</h2>
-<ul>
-<li>Run a simulation using the Applet</li>
-<li>Will everyone have the same p-value?
-<ul>
-<li>Why/why not?</li>
+<li>Note the change in sample size</li>
 </ul></li>
-<li>Draw a conclusion based on your p-value</li>
+<li>Hypothesized value (<span class="math inline">\(\pi\)</span>) = 0.15</li>
+<li>Standard Deviation under the null = 0.019</li>
 </ul>
+<p><span class="math display">\[z=\frac{0.1967 - 0.15}{0.019}=2.45\]</span></p>
 </section>
-<section id="rock-paper-scissors-conclusion-1" class="slide level2 center">
-<h2>Rock, Paper, Scissors Conclusion</h2>
-<p>Will conclude one of the following:</p>
+<section id="comparing-the-two-scenarios" class="slide level2 center">
+<h2>Comparing the two scenarios</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;">Scenario 1</th>
+<th style="text-align: center;">Scenario 2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\hat{p}\)</span></td>
+<td style="text-align: center;">0.80</td>
+<td style="text-align: center;">0.1967</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">p-value</td>
+<td style="text-align: center;"><span class="math inline">\(\approx\)</span> 0</td>
+<td style="text-align: center;">0.01</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(z\)</span></td>
+<td style="text-align: center;">5.60</td>
+<td style="text-align: center;">2.45</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Outcome</td>
+<td style="text-align: center;">Reject null</td>
+<td style="text-align: center;">Reject null</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="comparing-the-two-scenarios-1" class="slide level2 center">
+<h2>Comparing the two scenarios</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;"><strong>Scenario 1</strong></th>
+<th style="text-align: center;">Scenario 2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\hat{p}\)</span></td>
+<td style="text-align: center;"><strong>0.80</strong></td>
+<td style="text-align: center;">0.1967</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">p-value</td>
+<td style="text-align: center;"><span class="math inline">\(\approx\)</span> <strong>0</strong></td>
+<td style="text-align: center;">0.01</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(z\)</span></td>
+<td style="text-align: center;"><strong>5.60</strong></td>
+<td style="text-align: center;">2.45</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Outcome</td>
+<td style="text-align: center;"><strong>Reject null</strong></td>
+<td style="text-align: center;">Reject null</td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<p>We reject the null in both scenarios, but in scenario 1 we have stronger evidence.</p>
+</div>
+</section>
+<section id="method-comparison" class="slide level2">
+<h2>Method comparison</h2>
+<p><br></p>
+<table class="caption-top">
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>Method</strong></td>
+<td style="text-align: center;"><strong>When to Reject Null</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">P-value</td>
+<td style="text-align: center;">p-value ≤ 0.05</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Standardized Statistic</td>
+<td style="text-align: center;"><span class="math inline">\(z\)</span> &gt; 2 or <span class="math inline">\(z\)</span> &lt; -2</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
 <ul>
-<li><p>“We have enough evidence to conclude that the long run proportion of people who chose scissors is less than 1/3.”</p></li>
-<li><p>“We do not have enough evidence to conclude that the long run proportion of people who chose scissors is less than 1/3.”</p></li>
+<li>Reject null = evidence to conclude alternative</li>
+<li>Otherwise, we fail to reject the null</li>
 </ul>
 
 <div class="quarto-auto-generated-content">

@@ -3,10 +3,9 @@ project:
   output-dir: docs
 
 website:
-  title: "2025 Presentations"
+  title: "STAT 218"
   navbar:
     left:
       - href: index.qmd
-        text: Home
 
 format: html

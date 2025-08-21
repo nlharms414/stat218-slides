@@ -1,5 +1,5 @@
 ---
-title: "Presentations in 2025"
+title: "STAT 218 Slides"
 format: 
   html: 
     page-layout: full
