@@ -1,0 +1,17 @@
+---
+title: "Section 3.2"
+subtitle: "2SD and Theory-Based Confidence Intervals for a Single Proportion"
+format: 
+  revealjs: 
+    chalkboard: true
+    theme: simple
+    link-external-newwindow: true
+    link-external-icon: true
+    html-math-method: mathjax
+    logo: logo.jpg
+editor: visual
+---
+
+## Recall: Confidence Intervals
+
+Give us a range of

@@ -3,7 +3,8 @@ project:
   output-dir: docs
 
 website:
-  title: "STAT 218"
+  search: false
+  title: "STAT 218" 
   navbar:
     left:
       - href: index.qmd
