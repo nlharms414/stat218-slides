@@ -1,6 +1,6 @@
 ---
-title: "Section 3.2"
-subtitle: "2SD and Theory-Based Confidence Intervals for a Single Proportion"
+title: "Section 6.2"
+subtitle: ""
 format: 
   revealjs: 
     chalkboard: true
@@ -12,6 +12,4 @@ format:
 editor: visual
 ---
 
-## Recall: Confidence Intervals
-
-Give us a range of
+## 
