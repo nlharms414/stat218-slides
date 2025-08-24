@@ -1,0 +1,447 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrartcl}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={WCAG 2.1 AA Standards},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{WCAG 2.1 AA Standards}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+
+Includes \textbf{2.1 level AA guidelines only.} These are the guidelines
+that need to be met for all content created as part of this project.
+
+\section{Principle 1 - Perceivable}\label{principle-1---perceivable}
+
+Information and user interface components must be presentable to users
+in ways they can perceive.
+
+\subsection{Time-Based Media - Guideline
+1.2}\label{time-based-media---guideline-1.2}
+
+Provide alternatives for time-based media.
+
+\begin{itemize}
+\item
+  \textbf{1.2.4 Captions (Live):} Captions are provided for all live
+  audio content in synchronized media.
+\item
+  \textbf{1.2.5 Audio Description (Prerecorded):} Audio description is
+  provided for all prerecorded video content in synchronized media.
+\end{itemize}
+
+\subsection{Adaptable - Guideline 1.3}\label{adaptable---guideline-1.3}
+
+Create content that can be presented in different ways (for example
+simpler layout) without losing information or structure.
+
+\begin{itemize}
+\item
+  \textbf{1.3.4 Orientation:} Content does not restrict its view and
+  operation to a single display orientation, such as portrait or
+  landscape, unless a specific display orientation is essential.
+\item
+  \textbf{1.3.5 Identify Input Purpose:} The purpose of each input field
+  collecting information about the user can be programmatically
+  determined when:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The input field serves a purpose identified in the Input Purposes
+    for User Interface Components section (link); and
+  \item
+    The content is implemented using technologies with support for
+    identifying the expected meaning for form input data.
+  \end{itemize}
+\end{itemize}
+
+\subsection{Distinguishable - Guideline
+1.4}\label{distinguishable---guideline-1.4}
+
+Make it easier for users to see and hear content including separating
+foreground from background.
+
+\begin{itemize}
+\item
+  \textbf{1.4.3 Contrast (Minimum):} The visual presentation of text and
+  images of text has a contrast ratio of at least 4.5:1, except for the
+  following:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Large Text:} Large-scale text and images of large-scale text
+    have a contrast ratio of at least 3:1;
+  \item
+    \textbf{Incidental:} Text or images of text that are part of an
+    inactive user interface component, that are pure decoration, that
+    are not visible to anyone, or that are part of a picture that
+    contains significant other visual content, have no contrast
+    requirement.
+  \item
+    \textbf{Logotypes:} Text that is part of a logo or brand name has no
+    contrast requirement.
+  \end{itemize}
+\item
+  \textbf{1.4.4 Resize Text:} Except for captions and immages of text,
+  text can be resized without assistive technology up to 200 percent
+  without loss of content or functionality.
+\item
+  \textbf{1.4.5 Images of Text:} If the technologies being used can
+  achieve the visual presentation, text is used to convey information
+  rather than images of text except for the following:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Customizable:} The image of text can be visually customized
+    to the user's requirements;
+  \item
+    \textbf{Essential:} A particular presentation of text is essential
+    to the information being conveyed.
+  \end{itemize}
+\item
+  \textbf{1.4.10 Reflow:} Content can be presented without loss of
+  information or functionality, and without requiring scrolling in two
+  dimensions for:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Vertical scrolling content at a width equivalent to 320 CSS pixels;
+  \item
+    Horizontal scrolling content at a height equivalent to 256 CSS
+    pixels;
+  \end{itemize}
+
+  Except for the parts of the content which require two-dimensional
+  layout for usage or meaning.
+\item
+  \textbf{1.4.11 Non-text Contrast:} The visual presentation of the
+  following have a contrast ratio of at least 3:1 against adjacent
+  color(s):
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{User Interface Components:} Visual information required to
+    identify user interface components and states, except for inactive
+    components or where the appearance of the component is determined by
+    the user agent and not modified by the author;
+  \item
+    \textbf{Graphical Objects:} Parts of graphics required to understand
+    the content, except when a particular presentation of graphics is
+    essential to the information being conveyed.
+  \end{itemize}
+\item
+  \textbf{1.4.12 Text Spacing:} In content implemented using markup
+  languages that support the following text style properties, no loss of
+  content or functionality occurs by setting all of the following and by
+  changing no other style property:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Line height (line spacing) to at least 1.5 times the font size;
+  \item
+    Spacing following paragraphs to at least 2 times the font size;
+  \item
+    Letter spacing (tracking) to at least 0.12 times the font size;
+  \item
+    Word spacing to at least 0.16 times the font size.
+  \end{itemize}
+\item
+  \textbf{1.4.13 Content on Hover or Focus:} Where receiving and then
+  removing pointer hover or keyboard focus triggers additional content
+  to become visible and then hidden, the following are true:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Dismissible:} A mechanism is available to dismiss the
+    additional content without moving pointer hover or keyboard focus,
+    unless the additional content communicates an input error or does
+    not obscure or replace other content;
+  \item
+    \textbf{Hoverable:} If pointer hover can trigger the additional
+    content, then the pointer can be moved over the additional content
+    without the additional content disappearing;
+  \item
+    \textbf{Persistent:} The additional content remains visible until
+    the hover or focus trigger is removed, the user dismisses it, or its
+    information is no longer valid. Exception: The visual presentation
+    of the additional content is controlled by the user agent and is not
+    modified by the author.
+  \end{itemize}
+\end{itemize}
+
+\section{Principle 2 - Operable}\label{principle-2---operable}
+
+User interface components and navigation must be operable.
+
+\subsection{Navigable - Guideline 2.4}\label{navigable---guideline-2.4}
+
+Provide ways to help users navigate, find content, and determine where
+they are.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{2.4.5 Multiple Ways:} More than one way is available to locate
+  a Web page within a set of Web pages except where the Web Page is the
+  result of, or a step in, a process.
+\item
+  \textbf{2.4.6 Headings and Labels:} Headings and labels describe topic
+  or purpose.
+\item
+  \textbf{2.4.7 Focus Visible:} Any keyboard operable user interface has
+  a mode of operation where the keyboard focus indicator is visible.
+\end{itemize}
+
+\section{Principle 3 -
+Understandable}\label{principle-3---understandable}
+
+Information and the operation of the user interface must be
+understandable.
+
+\subsection{Readable - Guideline 3.1}\label{readable---guideline-3.1}
+
+Make text content readable and understandable.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{3.1.2 Language of Parts:} The human language of each passage
+  or phrase in the content can be programmatically determined except for
+  proper names, technical terms, words of indeterminate language, and
+  words or phrases that have become part of the vernacular of the
+  immediately surrounding text.
+\end{itemize}
+
+\subsection{Predictable - Guideline
+3.2}\label{predictable---guideline-3.2}
+
+Make Web pages appear and operate in predictable ways.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{3.2.3 Consistent Navigation:} Navigational mechanisms that are
+  repeated on multiple Web pages within a set of Web pages occur in the
+  same relative order each time they are repeated, unless a change is
+  initiated by the user.
+\item
+  \textbf{3.2.4 Consistent Identification:} Components that have the
+  same functionality within a set of Web pages are identified
+  consistently.
+\end{itemize}
+
+\subsection{Input Assistance - Guideline
+3.3}\label{input-assistance---guideline-3.3}
+
+Help users avoid and correct mistakes.
+
+\begin{itemize}
+\item
+  \textbf{3.3.3 Error Suggestion:} If an input error is automatically
+  detected and suggestions for correction are known, then the
+  suggestions are provided to the user, unless it would jeopardize the
+  security or purpose of the content.
+\item
+  \textbf{3.3.4 Error Prevention (Legal, Financial, Data):} For Web
+  pages that cause legal commitments or financial transactions for the
+  user to occur, that modify or delete user-controllable data in data
+  storage systems, or that submit user test responses, at least one of
+  the following is true:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Reversible:} Submissions are reversible.
+  \item
+    \textbf{Checked:} Data entered by the user is checked for input
+    errors and the user is provided an opportunity to correct them.
+  \item
+    \textbf{Confirmed:} A mechanism is available for reviewing,
+    confirming, and correcting information before finalizing the
+    submission.
+  \end{itemize}
+\end{itemize}
+
+\section{Principle 4 - Robust}\label{principle-4---robust}
+
+Content must be robust enough that it can be interpreted by a wide
+variety of user agents, including assistive technologies.
+
+\subsection{Compatible - Guideline
+4.1}\label{compatible---guideline-4.1}
+
+Maximize compatibility with current and future user agents, including
+assistive technologies.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{4.1.3 Status Message:} In content implemented using markup
+  languages, status messages can be programmatically determined through
+  role or properties such that they can be presented to the user by
+  assistive technologies without receiving focus.
+\end{itemize}
+
+
+
+
+\end{document}
