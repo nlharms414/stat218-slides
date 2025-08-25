@@ -1774,8 +1774,8 @@
     "objectID": "slides/Chapter 03/section3.3.html#sd-95-confidence-interval-for-proportions",
     "href": "slides/Chapter 03/section3.3.html#sd-95-confidence-interval-for-proportions",
     "title": "Section 3.3",
-    "section": "2SD 95% Confidence Interval for Proportions",
-    "text": "2SD 95% Confidence Interval for Proportions\n\\[CI=\\hat{p}±2*\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}\\]\n\\[=(Lower\\:Bound,Upper\\:Bound)\\]\n\nWhat do you think changes if we’re dealing with a mean rather than a proportion?"
+    "section": "2SD (95%) Confidence Interval for Proportions",
+    "text": "2SD (95%) Confidence Interval for Proportions\n\\[CI=\\hat{p}±2*\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}\\]\n\\[=(Lower\\:Bound,Upper\\:Bound)\\]\n\nWhat do you think changes if we’re dealing with a mean rather than a proportion?"
   },
   {
     "objectID": "slides/Chapter 03/section3.3.html#sd-confidence-interval-for-single-means",

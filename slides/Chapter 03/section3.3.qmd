@@ -28,7 +28,7 @@ editor: visual
 
 -   Margin of Error = Multiplier \* Standard Error
 
-## 2SD 95% Confidence Interval for Proportions {.center}
+## 2SD (95%) Confidence Interval for Proportions {.center}
 
 $$CI=\hat{p}±2*\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}$$
 
