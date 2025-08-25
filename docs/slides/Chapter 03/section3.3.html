@@ -333,8 +333,125 @@
 </div>
 
 </section>
-<section class="slide level2">
+<section>
+<section id="review" class="title-slide slide level1 center">
+<h1>Review</h1>
 
+</section>
+<section id="confidence-intervals" class="slide level2">
+<h2>Confidence Intervals</h2>
+<ul>
+<li><p>Gives us range of <strong>plausible values</strong> for our parameter of interest</p>
+<ul>
+<li>Either <span class="math inline">\(\mu\)</span> or <span class="math inline">\(\pi\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="confidence-intervals-general-form" class="slide level2 center" style="text-align: center;">
+<h2>Confidence Intervals: General Form</h2>
+<p><br> Confidence Interval (CI) = (Lower Bound, Upper Bound)</p>
+<p>= Observed statistic ± margin of error</p>
+<ul>
+<li>Margin of Error = Multiplier * Standard Error</li>
+</ul>
+</section>
+<section id="sd-95-confidence-interval-for-proportions" class="slide level2 center">
+<h2>2SD 95% Confidence Interval for Proportions</h2>
+<p><span class="math display">\[CI=\hat{p}±2*\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}\]</span></p>
+<p><span class="math display">\[=(Lower\:Bound,Upper\:Bound)\]</span></p>
+<div class="fragment">
+<p>What do you think changes if we’re dealing with a mean rather than a proportion?</p>
+</div>
+</section></section>
+<section>
+<section id="confidence-intervals-for-single-means" class="title-slide slide level1 center">
+<h1>Confidence Intervals for Single Means</h1>
+
+</section>
+<section id="formulas" class="slide level2 center">
+<h2>Formulas</h2>
+<p>Standard error for means:</p>
+<p><span class="math display">\[SE=\frac{s}{\sqrt{n}}\]</span></p>
+<p>2SD (95%) Confidence Interval for Means:</p>
+<p><span class="math display">\[CI=\bar{x}±2*\frac{s}{\sqrt{n}}\]</span></p>
+<div class="fragment">
+<p>Why does it make sense that we use <span class="math inline">\(\bar{x}\)</span> now?</p>
+</div>
+</section>
+<section id="validity-conditions-for-single-mean" class="slide level2 center">
+<h2>Validity Conditions for Single Mean</h2>
+<p>We must meet the validity conditions for the theory-based approach:</p>
+<ul>
+<li><p>Sample size ≥ 20</p></li>
+<li><p>Distribution not strongly skewed</p></li>
+</ul>
+</section></section>
+<section>
+<section id="example" class="title-slide slide level1 center">
+<h1>Example</h1>
+
+</section>
+<section id="used-hondas" class="slide level2">
+<h2>Used Hondas</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><br> <img data-src="images/3_honda.jpg" alt="Histogram of price data for 102 used Honda Civics. Bins range from 2000 to 22000 and peak around 14000. The distribution is not strongly skewed."></p>
+</div><div class="column" style="width:40%;">
+<p>Price data from a random sample of 102 used Honda Civics for sale on the internet is displayed on the histogram. The sample mean of the data was $13,292 with a standard deviation of $4,535.</p>
+</div></div>
+<div class="fragment">
+<p>Is the criteria met to use the confidence interval approach?</p>
+</div>
+</section>
+<section id="calculating-the-confidence-interval" class="slide level2 center">
+<h2>Calculating the Confidence Interval</h2>
+<div>
+<ul>
+<li class="fragment"><span class="math inline">\(\bar{x}=13292\)</span></li>
+<li class="fragment"><span class="math inline">\(n=102\)</span></li>
+<li class="fragment"><span class="math inline">\(s=4535\)</span></li>
+<li class="fragment"><span class="math inline">\(SE=\frac{s}{\sqrt{n}}=\frac{4535}{\sqrt{102}}=449.03\)</span></li>
+<li class="fragment"><span class="math inline">\(CI=\bar{x}±2*SE=13292±2*449.03\)</span></li>
+<li class="fragment">Lower Bound: <span class="math inline">\(13292-2*449.03=12393.94\)</span></li>
+<li class="fragment">Upper Bound: <span class="math inline">\(13292+2*449.03=14190.06\)</span></li>
+</ul>
+</div>
+</section>
+<section id="interpreting-the-confidence-interval" class="slide level2 center">
+<h2>Interpreting the Confidence Interval</h2>
+<p>“We are 95% confident that the long run mean of all used Honda Civics for sale on the internet is between $12,393.94 and $14,190.06.”</p>
+</section>
+<section id="conclusions-from-a-confidence-interval" class="slide level2 center">
+<h2>Conclusions from a Confidence Interval</h2>
+<ul>
+<li><p>If our null hypothesis value is OUTSIDE our confidence interval:</p>
+<ul>
+<li><p>Reject the null</p></li>
+<li><p>It’s not a plausible value</p></li>
+</ul></li>
+<li><p>If our null hypothesis is INSIDE the confidence interval:</p>
+<ul>
+<li><p>Fail to reject the null</p></li>
+<li><p>It’s a plausible value</p></li>
+</ul></li>
+</ul>
+<div class="fragment">
+<p>Note that this example doesn’t have a hypothesized value! We are simply interpreting the interval.</p>
+</div>
+</section>
+<section id="statistical-significance-methods" class="slide level2 center">
+<h2>Statistical Significance Methods</h2>
+<p>We can use the same three methods with a single mean:</p>
+<ol type="1">
+<li><p>P-value</p></li>
+<li><p>Standardized Statistic</p></li>
+<li><p>Confidence Interval</p></li>
+</ol>
+<div class="fragment">
+<p>Remember that all three methods will agree with each other!</p>
+<ul>
+<li>All either reject or fail to reject <span class="math inline">\(H_{0}\)</span></li>
+</ul>
 
 <div class="quarto-auto-generated-content">
 <p><img src="logo.jpg" class="slide-logo"></p>
@@ -342,7 +459,8 @@
 
 </div>
 </div>
-</section>
+</div>
+</section></section>
     </div>
   </div>
 

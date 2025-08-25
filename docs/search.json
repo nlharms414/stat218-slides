@@ -1755,5 +1755,82 @@
     "title": "Section 3.2",
     "section": "All methods should agree with each other!",
     "text": "All methods should agree with each other!"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.3.html#confidence-intervals",
+    "href": "slides/Chapter 03/section3.3.html#confidence-intervals",
+    "title": "Section 3.3",
+    "section": "Confidence Intervals",
+    "text": "Confidence Intervals\n\nGives us range of plausible values for our parameter of interest\n\nEither \\(\\mu\\) or \\(\\pi\\)"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.3.html#confidence-intervals-general-form",
+    "href": "slides/Chapter 03/section3.3.html#confidence-intervals-general-form",
+    "title": "Section 3.3",
+    "section": "Confidence Intervals: General Form",
+    "text": "Confidence Intervals: General Form\n Confidence Interval (CI) = (Lower Bound, Upper Bound)\n= Observed statistic ± margin of error\n\nMargin of Error = Multiplier * Standard Error"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.3.html#sd-95-confidence-interval-for-proportions",
+    "href": "slides/Chapter 03/section3.3.html#sd-95-confidence-interval-for-proportions",
+    "title": "Section 3.3",
+    "section": "2SD 95% Confidence Interval for Proportions",
+    "text": "2SD 95% Confidence Interval for Proportions\n\\[CI=\\hat{p}±2*\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}\\]\n\\[=(Lower\\:Bound,Upper\\:Bound)\\]\n\nWhat do you think changes if we’re dealing with a mean rather than a proportion?"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.3.html#sd-confidence-interval-for-single-means",
+    "href": "slides/Chapter 03/section3.3.html#sd-confidence-interval-for-single-means",
+    "title": "Section 3.3",
+    "section": "2SD Confidence Interval for Single Means",
+    "text": "2SD Confidence Interval for Single Means"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.3.html#formulas",
+    "href": "slides/Chapter 03/section3.3.html#formulas",
+    "title": "Section 3.3",
+    "section": "Formulas",
+    "text": "Formulas\nStandard error for means:\n\\[SE=\\frac{s}{\\sqrt{n}}\\]\n2SD (95%) Confidence Interval for Means:\n\\[CI=\\bar{x}±2*\\frac{s}{\\sqrt{n}}\\]\n\nWhy does it make sense that we use \\(\\bar{x}\\) now?"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.3.html#validity-conditions-for-single-mean",
+    "href": "slides/Chapter 03/section3.3.html#validity-conditions-for-single-mean",
+    "title": "Section 3.3",
+    "section": "Validity Conditions for Single Mean",
+    "text": "Validity Conditions for Single Mean\nWe must meet the validity conditions for the theory-based approach:\n\nSample size ≥ 20\nDistribution not strongly skewed"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.3.html#used-hondas",
+    "href": "slides/Chapter 03/section3.3.html#used-hondas",
+    "title": "Section 3.3",
+    "section": "Used Hondas",
+    "text": "Used Hondas\n\n\n \n\nPrice data from a random sample of 102 used Honda Civics for sale on the internet is displayed on the histogram. The sample mean of the data was $13,292 with a standard deviation of $4,535.\n\n\nIs the criteria met to use the confidence interval approach?"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.3.html#calculating-the-confidence-interval",
+    "href": "slides/Chapter 03/section3.3.html#calculating-the-confidence-interval",
+    "title": "Section 3.3",
+    "section": "Calculating the Confidence Interval",
+    "text": "Calculating the Confidence Interval\n\n\n\\(\\bar{x}=13292\\)\n\\(n=102\\)\n\\(s=4535\\)\n\\(SE=\\frac{s}{\\sqrt{n}}=\\frac{4535}{\\sqrt{102}}=449.03\\)\n\\(CI=\\bar{x}±2*SE=13292±2*449.03\\)\nLower Bound: \\(13292-2*449.03=12393.94\\)\nUpper Bound: \\(13292+2*449.03=14190.06\\)"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.3.html#interpreting-the-confidence-interval",
+    "href": "slides/Chapter 03/section3.3.html#interpreting-the-confidence-interval",
+    "title": "Section 3.3",
+    "section": "Interpreting the Confidence Interval",
+    "text": "Interpreting the Confidence Interval\n“We are 95% confident that the long run mean of all used Honda Civics for sale on the internet is between $12,393.94 and $14,190.06.”"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.3.html#conclusions-from-a-confidence-interval",
+    "href": "slides/Chapter 03/section3.3.html#conclusions-from-a-confidence-interval",
+    "title": "Section 3.3",
+    "section": "Conclusions from a Confidence Interval",
+    "text": "Conclusions from a Confidence Interval\n\nIf our null hypothesis value is OUTSIDE our confidence interval:\n\nReject the null\nIt’s not a plausible value\n\nIf our null hypothesis is INSIDE the confidence interval:\n\nFail to reject the null\nIt’s a plausible value\n\n\n\nNote that this example doesn’t have a hypothesized value! We are simply interpreting the interval."
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.3.html#statistical-significance-methods",
+    "href": "slides/Chapter 03/section3.3.html#statistical-significance-methods",
+    "title": "Section 3.3",
+    "section": "Statistical Significance Methods",
+    "text": "Statistical Significance Methods\nWe can use the same three methods with a single mean:\n\nP-value\nStandardized Statistic\nConfidence Interval\n\n\nRemember that all three methods will agree with each other!\n\nAll either reject or fail to reject \\(H_{0}\\)"
   }
 ]
