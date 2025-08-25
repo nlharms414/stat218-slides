@@ -1832,5 +1832,96 @@
     "title": "Section 3.3",
     "section": "Statistical Significance Methods",
     "text": "Statistical Significance Methods\nWe can use the same three methods with a single mean:\n\nP-value\nStandardized Statistic\nConfidence Interval\n\n\nRemember that all three methods will agree with each other!\n\nAll either reject or fail to reject \\(H_{0}\\)"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#confidence-intervals",
+    "href": "slides/Chapter 03/section3.4.html#confidence-intervals",
+    "title": "Section 3.4",
+    "section": "Confidence Intervals",
+    "text": "Confidence Intervals\n\nGives us range of plausible values for our parameter of interest\n\nEither \\(\\mu\\) or \\(\\pi\\)"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#confidence-intervals-general-form",
+    "href": "slides/Chapter 03/section3.4.html#confidence-intervals-general-form",
+    "title": "Section 3.4",
+    "section": "Confidence Intervals: General Form",
+    "text": "Confidence Intervals: General Form\n Confidence Interval (CI) = (Lower Bound, Upper Bound)\n= Observed statistic ± margin of error\n\nMargin of Error = Multiplier * Standard Error"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#sd-95-confidence-interval-for-proportions",
+    "href": "slides/Chapter 03/section3.4.html#sd-95-confidence-interval-for-proportions",
+    "title": "Section 3.4",
+    "section": "2SD (95%) Confidence Interval for Proportions",
+    "text": "2SD (95%) Confidence Interval for Proportions\n\\[CI=\\hat{p}±2*\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}\\]\n\\[=(Lower\\:Bound,Upper\\:Bound)\\]"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#sd-95-confidence-interval-for-means",
+    "href": "slides/Chapter 03/section3.4.html#sd-95-confidence-interval-for-means",
+    "title": "Section 3.4",
+    "section": "2SD (95%) Confidence Interval for Means",
+    "text": "2SD (95%) Confidence Interval for Means\n\\[CI=\\bar{x}±2*\\frac{s}{\\sqrt{n}}\\]\n\\[=(Lower\\:Bound,Upper\\:Bound)\\]"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#three-factors-that-affect-width",
+    "href": "slides/Chapter 03/section3.4.html#three-factors-that-affect-width",
+    "title": "Section 3.4",
+    "section": "Three factors that affect width",
+    "text": "Three factors that affect width\n\nConfidence level\nSample size\nStandard error"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#confidence-level",
+    "href": "slides/Chapter 03/section3.4.html#confidence-level",
+    "title": "Section 3.4",
+    "section": "1. Confidence Level",
+    "text": "1. Confidence Level\nRecall, significance level (\\(\\alpha\\)) + confidence level = 100%\n\nSignificance level (\\(\\alpha\\)) = p-value threshold for rejecting/failing to reject the null hypothesis (\\(H_{0}\\))\nCommon values for \\(\\alpha\\): 0.01, 0.05, 0.10\nUsing 0.05 is common practice\n\nThis is generally what we will use for this class\n\nThus, common confidence levels are 99%, 95%, and 90%, respectively"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#confidence-level-1",
+    "href": "slides/Chapter 03/section3.4.html#confidence-level-1",
+    "title": "Section 3.4",
+    "section": "1. Confidence Level",
+    "text": "1. Confidence Level\nSince significance level + confidence level = 100%…\n\nAs significance level increases, confidence level decreases\n\n\nHigher significance level = reject the null more often\nReject the null more often = fewer plausible parameter values\nFewer plausible parameter values = smaller confidence interval"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#confidence-level-2",
+    "href": "slides/Chapter 03/section3.4.html#confidence-level-2",
+    "title": "Section 3.4",
+    "section": "1. Confidence Level",
+    "text": "1. Confidence Level\nSince significance level + confidence level = 100%…\n\nAs significance level decreases, confidence level increases\n\n\nLower significance level = reject the null less often\nReject the null less often = more plausible parameter values\nMore plausible parameter values = larger confidence interval"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#what-factors-affect-confidence-interval-width",
+    "href": "slides/Chapter 03/section3.4.html#what-factors-affect-confidence-interval-width",
+    "title": "Section 3.4",
+    "section": "What factors affect confidence interval width?",
+    "text": "What factors affect confidence interval width?\n\nConfidence level\nSample size\nStandard error"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#sample-size",
+    "href": "slides/Chapter 03/section3.4.html#sample-size",
+    "title": "Section 3.4",
+    "section": "2. Sample Size",
+    "text": "2. Sample Size\nA larger sample size (\\(n\\)) is ALWAYS (!!!) better!\n\nIf \\(n\\) increases:\n\nGenerally less variability in data\nSmaller standard error (smaller confidence interval)\n\nIf \\(n\\) increases:\n\nLikely more variability in data\nLarger standard error (larger confidence interval)"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#standard-error",
+    "href": "slides/Chapter 03/section3.4.html#standard-error",
+    "title": "Section 3.4",
+    "section": "3. Standard Error",
+    "text": "3. Standard Error\nRecall: CI = Observed statistic ± multiplier * standard error\n\nMultiplier * standard error = margin of error\n\nAs standard error increases:\n\nMargin of error increases\nCI gets larger"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#standard-error-1",
+    "href": "slides/Chapter 03/section3.4.html#standard-error-1",
+    "title": "Section 3.4",
+    "section": "3. Standard Error",
+    "text": "3. Standard Error\nRecall: CI = Observed statistic ± multiplier * standard error\n\nMultiplier * standard error = margin of error\n\nAs standard error decreases:\n\nMargin of error decreases\nCI gets smaller"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#summary-of-factors-affecting-the-confidence-interval-width",
+    "href": "slides/Chapter 03/section3.4.html#summary-of-factors-affecting-the-confidence-interval-width",
+    "title": "Section 3.4",
+    "section": "Summary of Factors Affecting the Confidence Interval Width",
+    "text": "Summary of Factors Affecting the Confidence Interval Width\n\n\n\n\nMakes CI Smaller\nMakes CI Larger\n\n\n\n\nConfidence level decreases\nConfidence level increases\n\n\nSample size increases\nSample size decreases\n\n\nStandard error decreases\nStandard error increases"
   }
 ]

@@ -1,6 +1,6 @@
 ---
 title: "Section 3.4"
-subtitle: ""
+subtitle: "Factors that Affect the Width of a Confidence Interval"
 format: 
   revealjs: 
     chalkboard: true
@@ -11,3 +11,127 @@ format:
     logo: logo.jpg
 editor: visual
 ---
+
+# Review
+
+## Confidence Intervals {.center}
+
+-   Gives us range of **plausible values** for our parameter of interest
+
+    -   Either $\mu$ or $\pi$
+
+## Confidence Intervals: General Form {.center style="text-align: center;"}
+
+<br> Confidence Interval (CI) = (Lower Bound, Upper Bound)
+
+= Observed statistic ± margin of error
+
+-   Margin of Error = Multiplier \* Standard Error
+
+## 2SD (95%) Confidence Interval for Proportions {.center}
+
+$$CI=\hat{p}±2*\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}$$
+
+$$=(Lower\:Bound,Upper\:Bound)$$
+
+## 2SD (95%) Confidence Interval for Means {.center}
+
+$$CI=\bar{x}±2*\frac{s}{\sqrt{n}}$$
+
+$$=(Lower\:Bound,Upper\:Bound)$$
+
+# Changing the Width of a Confidence Interval
+
+## What factors affect confidence interval width? {.center}
+
+1.  Confidence level
+
+2.  Sample size
+
+3.  Standard error
+
+## 1. Confidence Level {.center}
+
+Recall, significance level ($\alpha$) + confidence level = 100%
+
+-   **Significance level (**$\alpha$) = p-value threshold for rejecting/failing to reject the null hypothesis ($H_{0}$)
+
+-   Common values for $\alpha$: 0.01, 0.05, 0.10
+
+-   Using 0.05 is common practice
+
+    -   This is generally what we will use for this class
+
+-   Thus, common confidence levels are 99%, 95%, and 90%, respectively
+
+## 1. Confidence Level {.center}
+
+Since significance level + confidence level = 100%...
+
+-   As significance level [**increases**]{.underline}, confidence level [**decreases**]{.underline}
+
+    ::: incremental
+    -   Higher significance level = reject the null more often
+    -   Reject the null more often = fewer plausible parameter values
+    -   Fewer plausible parameter values = smaller confidence interval
+    :::
+
+## 1. Confidence Level {.center}
+
+Since significance level + confidence level = 100%...
+
+-   As significance level [**decreases**]{.underline}, confidence level [**increases**]{.underline}
+
+    ::: incremental
+    -   Lower significance level = reject the null less often
+    -   Reject the null less often = more plausible parameter values
+    -   More plausible parameter values = larger confidence interval
+    :::
+
+## 2. Sample Size {.center}
+
+A larger sample size ($n$) is ALWAYS (!!!) better!
+
+-   If $n$ increases:
+
+    -   Generally less variability in data
+    -   Smaller standard error (smaller confidence interval)
+
+-   If $n$ increases:
+
+    -   Likely more variability in data
+    -   Larger standard error (larger confidence interval)
+
+## 3. Standard Error {.center}
+
+Recall: CI = Observed statistic ± multiplier \* **standard error**
+
+-   Multiplier \* standard error = margin of error
+
+As standard error [**increases:**]{.underline}
+
+-   Margin of error increases
+
+-   CI gets larger
+
+## 3. Standard Error {.center}
+
+Recall: CI = Observed statistic ± multiplier \* **standard error**
+
+-   Multiplier \* standard error = margin of error
+
+As standard error [**decreases:**]{.underline}
+
+-   Margin of error decreases
+
+-   CI gets smaller
+
+## Summary of Factors Affecting the Confidence Interval Width {.center}
+
+<br>
+
+|      Makes CI Smaller      |      Makes CI Larger       |
+|:--------------------------:|:--------------------------:|
+| Confidence level decreases | Confidence level increases |
+|   Sample size increases    |   Sample size decreases    |
+|  Standard error decreases  |  Standard error increases  |

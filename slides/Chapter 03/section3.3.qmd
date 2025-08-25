@@ -14,7 +14,7 @@ editor: visual
 
 # Review
 
-## Confidence Intervals
+## Confidence Intervals {.center}
 
 -   Gives us range of **plausible values** for our parameter of interest
 

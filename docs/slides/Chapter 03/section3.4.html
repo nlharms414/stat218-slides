@@ -328,13 +328,163 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Section 3.4</h1>
+  <p class="subtitle">Factors that Affect the Width of a Confidence Interval</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section class="slide level2">
+<section>
+<section id="review" class="title-slide slide level1 center">
+<h1>Review</h1>
 
+</section>
+<section id="confidence-intervals" class="slide level2 center">
+<h2>Confidence Intervals</h2>
+<ul>
+<li><p>Gives us range of <strong>plausible values</strong> for our parameter of interest</p>
+<ul>
+<li>Either <span class="math inline">\(\mu\)</span> or <span class="math inline">\(\pi\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="confidence-intervals-general-form" class="slide level2 center" style="text-align: center;">
+<h2>Confidence Intervals: General Form</h2>
+<p><br> Confidence Interval (CI) = (Lower Bound, Upper Bound)</p>
+<p>= Observed statistic ± margin of error</p>
+<ul>
+<li>Margin of Error = Multiplier * Standard Error</li>
+</ul>
+</section>
+<section id="sd-95-confidence-interval-for-proportions" class="slide level2 center">
+<h2>2SD (95%) Confidence Interval for Proportions</h2>
+<p><span class="math display">\[CI=\hat{p}±2*\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}\]</span></p>
+<p><span class="math display">\[=(Lower\:Bound,Upper\:Bound)\]</span></p>
+</section>
+<section id="sd-95-confidence-interval-for-means" class="slide level2 center">
+<h2>2SD (95%) Confidence Interval for Means</h2>
+<p><span class="math display">\[CI=\bar{x}±2*\frac{s}{\sqrt{n}}\]</span></p>
+<p><span class="math display">\[=(Lower\:Bound,Upper\:Bound)\]</span></p>
+</section></section>
+<section>
+<section id="changing-the-width-of-a-confidence-interval" class="title-slide slide level1 center">
+<h1>Changing the Width of a Confidence Interval</h1>
+
+</section>
+<section id="what-factors-affect-confidence-interval-width" class="slide level2 center">
+<h2>What factors affect confidence interval width?</h2>
+<ol type="1">
+<li><p>Confidence level</p></li>
+<li><p>Sample size</p></li>
+<li><p>Standard error</p></li>
+</ol>
+</section>
+<section id="confidence-level" class="slide level2 center">
+<h2>1. Confidence Level</h2>
+<p>Recall, significance level (<span class="math inline">\(\alpha\)</span>) + confidence level = 100%</p>
+<ul>
+<li><p><strong>Significance level (</strong><span class="math inline">\(\alpha\)</span>) = p-value threshold for rejecting/failing to reject the null hypothesis (<span class="math inline">\(H_{0}\)</span>)</p></li>
+<li><p>Common values for <span class="math inline">\(\alpha\)</span>: 0.01, 0.05, 0.10</p></li>
+<li><p>Using 0.05 is common practice</p>
+<ul>
+<li>This is generally what we will use for this class</li>
+</ul></li>
+<li><p>Thus, common confidence levels are 99%, 95%, and 90%, respectively</p></li>
+</ul>
+</section>
+<section id="confidence-level-1" class="slide level2 center">
+<h2>1. Confidence Level</h2>
+<p>Since significance level + confidence level = 100%…</p>
+<ul>
+<li><p>As significance level <u><strong>increases</strong></u>, confidence level <u><strong>decreases</strong></u></p>
+<div>
+<ul>
+<li class="fragment">Higher significance level = reject the null more often</li>
+<li class="fragment">Reject the null more often = fewer plausible parameter values</li>
+<li class="fragment">Fewer plausible parameter values = smaller confidence interval</li>
+</ul>
+</div></li>
+</ul>
+</section>
+<section id="confidence-level-2" class="slide level2 center">
+<h2>1. Confidence Level</h2>
+<p>Since significance level + confidence level = 100%…</p>
+<ul>
+<li><p>As significance level <u><strong>decreases</strong></u>, confidence level <u><strong>increases</strong></u></p>
+<div>
+<ul>
+<li class="fragment">Lower significance level = reject the null less often</li>
+<li class="fragment">Reject the null less often = more plausible parameter values</li>
+<li class="fragment">More plausible parameter values = larger confidence interval</li>
+</ul>
+</div></li>
+</ul>
+</section>
+<section id="sample-size" class="slide level2 center">
+<h2>2. Sample Size</h2>
+<p>A larger sample size (<span class="math inline">\(n\)</span>) is ALWAYS (!!!) better!</p>
+<ul>
+<li><p>If <span class="math inline">\(n\)</span> increases:</p>
+<ul>
+<li>Generally less variability in data</li>
+<li>Smaller standard error (smaller confidence interval)</li>
+</ul></li>
+<li><p>If <span class="math inline">\(n\)</span> increases:</p>
+<ul>
+<li>Likely more variability in data</li>
+<li>Larger standard error (larger confidence interval)</li>
+</ul></li>
+</ul>
+</section>
+<section id="standard-error" class="slide level2 center">
+<h2>3. Standard Error</h2>
+<p>Recall: CI = Observed statistic ± multiplier * <strong>standard error</strong></p>
+<ul>
+<li>Multiplier * standard error = margin of error</li>
+</ul>
+<p>As standard error <u><strong>increases:</strong></u></p>
+<ul>
+<li><p>Margin of error increases</p></li>
+<li><p>CI gets larger</p></li>
+</ul>
+</section>
+<section id="standard-error-1" class="slide level2 center">
+<h2>3. Standard Error</h2>
+<p>Recall: CI = Observed statistic ± multiplier * <strong>standard error</strong></p>
+<ul>
+<li>Multiplier * standard error = margin of error</li>
+</ul>
+<p>As standard error <u><strong>decreases:</strong></u></p>
+<ul>
+<li><p>Margin of error decreases</p></li>
+<li><p>CI gets smaller</p></li>
+</ul>
+</section>
+<section id="summary-of-factors-affecting-the-confidence-interval-width" class="slide level2 center">
+<h2>Summary of Factors Affecting the Confidence Interval Width</h2>
+<p><br></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Makes CI Smaller</th>
+<th style="text-align: center;">Makes CI Larger</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Confidence level decreases</td>
+<td style="text-align: center;">Confidence level increases</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Sample size increases</td>
+<td style="text-align: center;">Sample size decreases</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Standard error decreases</td>
+<td style="text-align: center;">Standard error increases</td>
+</tr>
+</tbody>
+</table>
 
 <div class="quarto-auto-generated-content">
 <p><img src="logo.jpg" class="slide-logo"></p>
@@ -342,7 +492,7 @@
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
