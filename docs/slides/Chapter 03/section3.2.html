@@ -334,9 +334,459 @@
 </div>
 
 </section>
-<section id="recall-confidence-intervals" class="slide level2">
-<h2>Recall: Confidence Intervals</h2>
-<p>Give us a range of</p>
+<section>
+<section id="review" class="title-slide slide level1 center">
+<h1>Review</h1>
+
+</section>
+<section id="confidence-intervals" class="slide level2 center">
+<h2>Confidence Intervals</h2>
+<p>Give us a range of likely values for our parameter (<span class="math inline">\(\mu\)</span> or <span class="math inline">\(\pi\)</span>)</p>
+<ul>
+<li><p>True parameter is never known!!!</p></li>
+<li><p>But, we get an idea of what it might be</p></li>
+</ul>
+</section>
+<section id="confidence-intervals-general-form" class="slide level2 center" style="text-align: center;">
+<h2>Confidence Intervals: General Form</h2>
+<p><br> Confidence Interval (CI) = (Lower Bound, Upper Bound)</p>
+<p>= Observed statistic ± margin of error</p>
+<ul>
+<li>Margin of Error = Multiplier * Standard Error</li>
+</ul>
+</section>
+<section id="null-distribution-and-hypothesis-testing" class="slide level2 center">
+<h2>Null Distribution and Hypothesis Testing</h2>
+<ul>
+<li><p><u><strong>Null distribution</strong></u>: Simulated by the chance model</p>
+<ul>
+<li>What we <em>expect</em> to happen</li>
+</ul></li>
+<li><p>Center of null distribution is our hypothesized value for our parameter of interest (<span class="math inline">\(\mu\)</span> or <span class="math inline">\(\pi\)</span>)</p></li>
+</ul>
+<p>Example Hypotheses:</p>
+<ul>
+<li><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\pi\)</span> = 0.5</li>
+<li><span class="math inline">\(H_{A}\)</span>: <span class="math inline">\(\pi\)</span> ≠ 0.5</li>
+</ul>
+</section>
+<section id="p-value" class="slide level2 center">
+<h2>P-value</h2>
+<p>Number of simulated statistics in the null distribution that are <u>as or more extreme than what we observed in real life</u></p>
+<ul>
+<li><p>P-value is essentially a percentage</p></li>
+<li><p>Since our goal is to reject our null hypothesis, we want this percentage to be low!</p></li>
+</ul>
+</section>
+<section id="example-null-distribution" class="slide level2">
+<h2>Example Null Distribution</h2>
+
+<img data-src="images/2_sim.png" class="quarto-figure quarto-figure-center r-stretch" alt="Null distribution with 100 simulated statistics. Each statistic represents the number of heads in 10 coin flips. The distribution is centered around 5, and the probability of heads (hypothesized value) is 0.5. The p-value is 0.05, or 5/100 simulated statistics being greater than or equal to our observed statistic."></section>
+<section id="medical-marijuana-activity" class="slide level2 center" style="font-size: 22px">
+<h2>Medical Marijuana Activity</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(H_{0}:\pi=\)</span></td>
+<td style="text-align: center;">0.41</td>
+<td style="text-align: center;">0.42</td>
+<td style="text-align: center;">0.43</td>
+<td style="text-align: center;">0.44</td>
+<td style="text-align: center;">0.45</td>
+<td style="text-align: center;">0.46</td>
+<td style="text-align: center;">0.47</td>
+<td style="text-align: center;">0.48</td>
+<td style="text-align: center;">0.49</td>
+<td style="text-align: center;">0.50</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>P-value</strong></td>
+<td style="text-align: center;">&gt;0.0001</td>
+<td style="text-align: center;">&gt;0.0001</td>
+<td style="text-align: center;">&gt;0.0001</td>
+<td style="text-align: center;">0.0001</td>
+<td style="text-align: center;">0.0006</td>
+<td style="text-align: center;">0.0045</td>
+<td style="text-align: center;">0.0234</td>
+<td style="text-align: center;">0.0894</td>
+<td style="text-align: center;">0.2578</td>
+<td style="text-align: center;">0.5716</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>R/FTR</strong></td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">FTR</td>
+<td style="text-align: center;">FTR</td>
+<td style="text-align: center;">FTR</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Plausible?</strong></td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+</tbody>
+</table>
+<p><br><br></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(H_{0}:\pi=\)</span></td>
+<td style="text-align: center;">0.51</td>
+<td style="text-align: center;">0.52</td>
+<td style="text-align: center;">0.53</td>
+<td style="text-align: center;">0.54</td>
+<td style="text-align: center;">0.55</td>
+<td style="text-align: center;">0.56</td>
+<td style="text-align: center;">0.57</td>
+<td style="text-align: center;">0.58</td>
+<td style="text-align: center;">0.59</td>
+<td style="text-align: center;">0.60</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>P-value</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0.5713</td>
+<td style="text-align: center;">0.2570</td>
+<td style="text-align: center;">0.0887</td>
+<td style="text-align: center;">0.0230</td>
+<td style="text-align: center;">0.0044</td>
+<td style="text-align: center;">0.0006</td>
+<td style="text-align: center;">0.0001</td>
+<td style="text-align: center;">&gt;0.0001</td>
+<td style="text-align: center;">&gt;0.0001</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>R/FTR</strong></td>
+<td style="text-align: center;">FTR</td>
+<td style="text-align: center;">FTR</td>
+<td style="text-align: center;">FTR</td>
+<td style="text-align: center;">FTR</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Plausible?</strong></td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="medical-marijuana-example" class="slide level2 center">
+<h2>Medical Marijuana Example</h2>
+<ul>
+<li><p>Essentially we ran 20 different hypothesis tests of the form:</p>
+<ul>
+<li><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\pi\)</span> = x</li>
+<li><span class="math inline">\(H_{A}\)</span>: <span class="math inline">\(\pi\)</span> ≠ x</li>
+</ul></li>
+<li><p>Our confidence interval is derived based on the tests we rejected or failed to reject <span class="math inline">\(H_{0}\)</span></p>
+<ul>
+<li>Reject <span class="math inline">\(H_{0}\)</span> = not a plausible value for <span class="math inline">\(\pi\)</span></li>
+<li>Fail to reject <span class="math inline">\(H_{0}\)</span> = a plausible value for <span class="math inline">\(\pi\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="how-does-significance-level-affect-things" class="slide level2 center" style="font-size: 22px">
+<h2>How does significance level affect things?</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(H_{0}:\pi=\)</span></td>
+<td style="text-align: center;">0.41</td>
+<td style="text-align: center;">0.42</td>
+<td style="text-align: center;">0.43</td>
+<td style="text-align: center;">0.44</td>
+<td style="text-align: center;">0.45</td>
+<td style="text-align: center;">0.46</td>
+<td style="text-align: center;">0.47</td>
+<td style="text-align: center;">0.48</td>
+<td style="text-align: center;">0.49</td>
+<td style="text-align: center;">0.50</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>P-value</strong></td>
+<td style="text-align: center;">&gt;0.0001</td>
+<td style="text-align: center;">&gt;0.0001</td>
+<td style="text-align: center;">&gt;0.0001</td>
+<td style="text-align: center;">0.0001</td>
+<td style="text-align: center;">0.0006</td>
+<td style="text-align: center;">0.0045</td>
+<td style="text-align: center;">0.0234</td>
+<td style="text-align: center;">0.0894</td>
+<td style="text-align: center;">0.2578</td>
+<td style="text-align: center;">0.5716</td>
+</tr>
+</tbody>
+</table>
+<p><br><br></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(H_{0}:\pi=\)</span></td>
+<td style="text-align: center;">0.51</td>
+<td style="text-align: center;">0.52</td>
+<td style="text-align: center;">0.53</td>
+<td style="text-align: center;">0.54</td>
+<td style="text-align: center;">0.55</td>
+<td style="text-align: center;">0.56</td>
+<td style="text-align: center;">0.57</td>
+<td style="text-align: center;">0.58</td>
+<td style="text-align: center;">0.59</td>
+<td style="text-align: center;">0.60</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>P-value</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0.5713</td>
+<td style="text-align: center;">0.2570</td>
+<td style="text-align: center;">0.0887</td>
+<td style="text-align: center;">0.0230</td>
+<td style="text-align: center;">0.0044</td>
+<td style="text-align: center;">0.0006</td>
+<td style="text-align: center;">0.0001</td>
+<td style="text-align: center;">&gt;0.0001</td>
+<td style="text-align: center;">&gt;0.0001</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<div>
+<ul>
+<li class="fragment"><span class="math inline">\(\alpha=0.01\)</span>: CI = (0.47,0.55)</li>
+<li class="fragment"><span class="math inline">\(\alpha=0.05\)</span>: CI = (0.48,0.54)</li>
+<li class="fragment"><span class="math inline">\(\alpha=0.10\)</span>: CI = (0.49,0.53)</li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="sd-confidence-interval-approach" class="title-slide slide level1 center">
+<h1>2SD Confidence Interval Approach</h1>
+
+</section>
+<section id="sd-confidence-intervals-for-proportions" class="slide level2 center">
+<h2>2SD Confidence Intervals for Proportions</h2>
+<p>Standard error for proportions:</p>
+<p><span class="math display">\[SE=\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}\]</span> For a 95% confidence interval, multiplier = 2</p>
+</section>
+<section id="sd-confidence-intervals-for-proportions-1" class="slide level2 center">
+<h2>2SD Confidence Intervals for Proportions</h2>
+<p>By plugging those values into our general confidence interval formula, we get:</p>
+<p><span class="math display">\[CI=\hat{p}±2*\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}\]</span></p>
+<p><span class="math display">\[=(Lower\:Bound,Upper\:Bound)\]</span></p>
+<p>Check that theory-based criteria are met:</p>
+<ul>
+<li>At least 10 successes and 10 failures</li>
+</ul>
+</section>
+<section id="standard-deviation-vs.-standard-error" class="slide level2 center">
+<h2>Standard Deviation vs.&nbsp;Standard Error</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="standard-deviation-sd">Standard Deviation (SD)</h3>
+<ul>
+<li><p>Average distance data points are from the mean, OR</p></li>
+<li><p>Average distance sample means/proportions are from the center of the distribution</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="standard-error-se">Standard Error (SE)</h3>
+<ul>
+<li><p>An estimate of SD, based on the data</p></li>
+<li><p>Formula differs for numerical vs.&nbsp;categorical data</p></li>
+</ul>
+</div></div>
+</section></section>
+<section>
+<section id="medical-marijuana-example-1" class="title-slide slide level1 center">
+<h1>Medical Marijuana Example</h1>
+
+</section>
+<section id="calculating-a-2sd-confidence-interval" class="slide level2 center">
+<h2>Calculating a 2SD Confidence Interval</h2>
+<div>
+<ul>
+<li class="fragment"><span class="math inline">\(\hat{p}=\frac{408}{800}=0.51\)</span></li>
+<li class="fragment"><span class="math inline">\(n=800\)</span></li>
+<li class="fragment"><span class="math inline">\(SE=\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}=\sqrt{\frac{0.15*(1-0.51)}{800}}=0.0177\)</span></li>
+<li class="fragment"><span class="math inline">\(CI=\hat{p}±2*SE=0.51±2*0.0177\)</span></li>
+<li class="fragment">Lower Bound: <span class="math inline">\(0.51-2*0.0177=0.47\)</span></li>
+<li class="fragment">Upper Bound: <span class="math inline">\(0.51+2*0.0177=0.55\)</span></li>
+</ul>
+</div>
+<div class="fragment">
+<p>Note that this is really close to what we got earlier!</p>
+</div>
+</section>
+<section id="interpreting-a-confidence-interval" class="slide level2 center">
+<h2>Interpreting a Confidence Interval</h2>
+<p>“We are 95% confident that the long run proportion of (context) falls between (lower bound) and (upper bound).”</p>
+<div class="fragment">
+<p>Here we are not concluding anything! We’re simply <em>interpreting</em> what the confidence interval means.</p>
+</div>
+</section>
+<section id="conclusions-from-a-confidence-interval" class="slide level2 center">
+<h2>Conclusions from a Confidence Interval</h2>
+<ul>
+<li><p>If our null hypothesis value is OUTSIDE our confidence interval:</p>
+<ul>
+<li><p>Reject the null</p></li>
+<li><p>It’s not a plausible value</p></li>
+</ul></li>
+<li><p>If our null hypothesis is INSIDE the confidence interval:</p>
+<ul>
+<li><p>Fail to reject the null</p></li>
+<li><p>It’s a plausible value</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="conclusions-from-a-confidence-interval-1" class="slide level2 center">
+<h2>Conclusions from a Confidence Interval</h2>
+<p>Conclusion in context:</p>
+<ul>
+<li>“We (do/do not) have enough evidence to conclude (insert alt. hypothesis).”</li>
+</ul>
+</section>
+<section id="legalization-of-medical-marijuana" class="slide level2 center">
+<h2>Legalization of Medical Marijuana</h2>
+<p>Research question: Do a majority of Minnesota adults feel medical marijuana should be legalized?</p>
+<ul>
+<li>Majority = more than 50%</li>
+</ul>
+</section>
+<section id="legalization-of-medical-marijuana-1" class="slide level2 center">
+<h2>Legalization of Medical Marijuana</h2>
+<p>Hypotheses:</p>
+<ul>
+<li><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\pi\)</span> = 0.5</li>
+<li><span class="math inline">\(H_{A}\)</span>: <span class="math inline">\(\pi\)</span> ≠ 0.5</li>
+</ul>
+<p>CI = (0.47, 0.55)</p>
+<ul>
+<li>Fail to reject since 0.5 is in the interval</li>
+</ul>
+</section>
+<section id="interpretation-in-context" class="slide level2 center">
+<h2>Interpretation in Context</h2>
+<p>“We are 95% confident that the long run proportion of Minnesotan adults who support the legalization of medical marijuana is between 47% and 55%.”</p>
+</section>
+<section id="conclusion-in-context" class="slide level2 center">
+<h2>Conclusion in Context</h2>
+<p>“We do not have enough evidence to conclude that the long run proportion of Minnesotan adults who feel medical marijuana should be legalized is different from 0.50.”</p>
+</section></section>
+<section>
+<section id="methods-for-determining-statistical-significance" class="title-slide slide level1 center">
+<h1>Methods for Determining Statistical Significance</h1>
+
+</section>
+<section id="recall" class="slide level2 center">
+<h2>Recall…</h2>
+<ul>
+<li><p><strong>Rejecting</strong> the null hypothesis means we have statistical significance in favor of <span class="math inline">\(H_{A}\)</span></p></li>
+<li><p><strong>Failing to reject</strong> the null hypothesis means we do not have statistical significance in favor of <span class="math inline">\(H_{A}\)</span></p></li>
+</ul>
+</section>
+<section id="p-value-1" class="slide level2 center">
+<h2>1. P-value</h2>
+<ul>
+<li><p>P-value &lt; 0.05: Reject the null hypothesis</p></li>
+<li><p>P-value ≥ 0.05: Fail to reject the null hypothesis</p></li>
+</ul>
+</section>
+<section id="standardized-statistic-ss" class="slide level2 center">
+<h2>2. Standardized Statistic (SS)</h2>
+<ul>
+<li><p>If SS is “outside the twos”, reject the null hypothesis</p></li>
+<li><p>If SS is “inside the twos”, fail to reject the null hypothesis</p></li>
+</ul>
+</section>
+<section id="confidence-interval-ci" class="slide level2 center">
+<h2>3. Confidence Interval (CI)</h2>
+<ul>
+<li><p>If hypothesized value is outside the CI, reject the null hypothesis</p></li>
+<li><p>If hypothesized value is inside the CI, fail to reject the null hypothesis</p></li>
+</ul>
+</section>
+<section id="all-methods-should-agree-with-each-other" class="slide level2 center">
+<h2>All methods should agree with each other!</h2>
 
 <div class="quarto-auto-generated-content">
 <p><img src="logo.jpg" class="slide-logo"></p>
@@ -344,7 +794,7 @@
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 

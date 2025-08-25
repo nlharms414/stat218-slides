@@ -1075,7 +1075,7 @@
     "href": "slides/Chapter 03/section3.2.html#recall-confidence-intervals",
     "title": "Section 3.2",
     "section": "Recall: Confidence Intervals",
-    "text": "Recall: Confidence Intervals\nGive us a range of"
+    "text": "Recall: Confidence Intervals\nGive us a range of likely values for our parameter (\\(\\mu\\) or \\(\\pi\\))\n\nTrue parameter is never known!!!\nBut, we get an idea of what it might be"
   },
   {
     "objectID": "slides/Chapter 01/section1.2.html#rock-paper-scissors",
@@ -1587,5 +1587,173 @@
     "title": "Chapter P",
     "section": "Cars vs. Goats Exploration",
     "text": "Cars vs. Goats Exploration\n\n\n\nInspired by the classic Monty Hall problem from Let’s Make a Deal!\nThree doors; two goats, one car\nAfter one door is revealed, should you switch or stay with your choice?\nGoal: Use simulation to determine a long-run trend\nMonty Hall Applet demo"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#confidence-intervals-general-form",
+    "href": "slides/Chapter 03/section3.2.html#confidence-intervals-general-form",
+    "title": "Section 3.2",
+    "section": "Confidence Intervals: General Form",
+    "text": "Confidence Intervals: General Form\n Confidence Interval (CI) = (Lower Bound, Upper Bound)\n= Observed statistic ± margin of error\n\nMargin of Error = Multiplier * Standard Error"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#confidence-intervals",
+    "href": "slides/Chapter 03/section3.2.html#confidence-intervals",
+    "title": "Section 3.2",
+    "section": "Confidence Intervals",
+    "text": "Confidence Intervals\nGive us a range of likely values for our parameter (\\(\\mu\\) or \\(\\pi\\))\n\nTrue parameter is never known!!!\nBut, we get an idea of what it might be"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#null-distribution-and-hypothesis-testing",
+    "href": "slides/Chapter 03/section3.2.html#null-distribution-and-hypothesis-testing",
+    "title": "Section 3.2",
+    "section": "Null Distribution and Hypothesis Testing",
+    "text": "Null Distribution and Hypothesis Testing\n\nNull distribution: Simulated by the chance model\n\nWhat we expect to happen\n\nCenter of null distribution is our hypothesized value for our parameter of interest (\\(\\mu\\) or \\(\\pi\\))\n\nExample Hypotheses:\n\n\\(H_{0}\\): \\(\\pi\\) = 0.5\n\\(H_{A}\\): \\(\\pi\\) ≠ 0.5"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#p-value",
+    "href": "slides/Chapter 03/section3.2.html#p-value",
+    "title": "Section 3.2",
+    "section": "P-value",
+    "text": "P-value\nNumber of simulated statistics in the null distribution that are as or more extreme than what we observed in real life\n\nP-value is essentially a percentage\nSince our goal is to reject our null hypothesis, we want this percentage to be low!"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#example-null-distribution",
+    "href": "slides/Chapter 03/section3.2.html#example-null-distribution",
+    "title": "Section 3.2",
+    "section": "Example Null Distribution",
+    "text": "Example Null Distribution"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#medical-marijuana-activity",
+    "href": "slides/Chapter 03/section3.2.html#medical-marijuana-activity",
+    "title": "Section 3.2",
+    "section": "Medical Marijuana Activity",
+    "text": "Medical Marijuana Activity\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(H_{0}:\\pi=\\)\n0.41\n0.42\n0.43\n0.44\n0.45\n0.46\n0.47\n0.48\n0.49\n0.50\n\n\nP-value\n&gt;0.0001\n&gt;0.0001\n&gt;0.0001\n0.0001\n0.0006\n0.0045\n0.0234\n0.0894\n0.2578\n0.5716\n\n\nR/FTR\nR\nR\nR\nR\nR\nR\nR\nFTR\nFTR\nFTR\n\n\nPlausible?\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nYes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(H_{0}:\\pi=\\)\n0.51\n0.52\n0.53\n0.54\n0.55\n0.56\n0.57\n0.58\n0.59\n0.60\n\n\nP-value\n1\n0.5713\n0.2570\n0.0887\n0.0230\n0.0044\n0.0006\n0.0001\n&gt;0.0001\n&gt;0.0001\n\n\nR/FTR\nFTR\nFTR\nFTR\nFTR\nR\nR\nR\nR\nR\nR\n\n\nPlausible?\nYes\nYes\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#medical-marijuana-example",
+    "href": "slides/Chapter 03/section3.2.html#medical-marijuana-example",
+    "title": "Section 3.2",
+    "section": "Medical Marijuana Example",
+    "text": "Medical Marijuana Example\n\nEssentially we ran 20 different hypothesis tests of the form:\n\n\\(H_{0}\\): \\(\\pi\\) = x\n\\(H_{A}\\): \\(\\pi\\) ≠ x\n\nOur confidence interval is derived based on the tests we rejected or failed to reject \\(H_{0}\\)\n\nReject \\(H_{0}\\) = not a plausible value for \\(\\pi\\)\nFail to reject \\(H_{0}\\) = a plausible value for \\(\\pi\\)"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#how-does-significance-level-affect-things",
+    "href": "slides/Chapter 03/section3.2.html#how-does-significance-level-affect-things",
+    "title": "Section 3.2",
+    "section": "How does significance level affect things?",
+    "text": "How does significance level affect things?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(H_{0}:\\pi=\\)\n0.41\n0.42\n0.43\n0.44\n0.45\n0.46\n0.47\n0.48\n0.49\n0.50\n\n\nP-value\n&gt;0.0001\n&gt;0.0001\n&gt;0.0001\n0.0001\n0.0006\n0.0045\n0.0234\n0.0894\n0.2578\n0.5716\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(H_{0}:\\pi=\\)\n0.51\n0.52\n0.53\n0.54\n0.55\n0.56\n0.57\n0.58\n0.59\n0.60\n\n\nP-value\n1\n0.5713\n0.2570\n0.0887\n0.0230\n0.0044\n0.0006\n0.0001\n&gt;0.0001\n&gt;0.0001\n\n\n\n\n\n\n\\(\\alpha=0.01\\): CI = (0.47,0.55)\n\\(\\alpha=0.05\\): CI = (0.48,0.54)\n\\(\\alpha=0.10\\): CI = (0.49,0.53)"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#sd-confidence-intervals-for-proportions",
+    "href": "slides/Chapter 03/section3.2.html#sd-confidence-intervals-for-proportions",
+    "title": "Section 3.2",
+    "section": "2SD Confidence Intervals for Proportions",
+    "text": "2SD Confidence Intervals for Proportions\nStandard error for proportions:\n\\[SE=\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}\\] For a 95% confidence interval, multiplier = 2"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#sd-confidence-intervals-for-proportions-1",
+    "href": "slides/Chapter 03/section3.2.html#sd-confidence-intervals-for-proportions-1",
+    "title": "Section 3.2",
+    "section": "2SD Confidence Intervals for Proportions",
+    "text": "2SD Confidence Intervals for Proportions\nBy plugging those values into our general confidence interval formula, we get:\n\\[CI=\\hat{p}±2*\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}\\]\n\\[=(Lower\\:Bound,Upper\\:Bound)\\]\nCheck that theory-based criteria are met:\n\nAt least 10 successes and 10 failures"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#standard-deviation-vs.-standard-error",
+    "href": "slides/Chapter 03/section3.2.html#standard-deviation-vs.-standard-error",
+    "title": "Section 3.2",
+    "section": "Standard Deviation vs. Standard Error",
+    "text": "Standard Deviation vs. Standard Error\n\n\n\nStandard Deviation (SD)\n\nAverage distance data points are from the mean, OR\nAverage distance sample means/proportions are from the center of the distribution\n\n\nStandard Error (SE)\n\nAn estimate of SD, based on the data\nFormula differs for numerical vs. categorical data"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#calculating-a-2sd-confidence-interval",
+    "href": "slides/Chapter 03/section3.2.html#calculating-a-2sd-confidence-interval",
+    "title": "Section 3.2",
+    "section": "Calculating a 2SD Confidence Interval",
+    "text": "Calculating a 2SD Confidence Interval\n\n\n\\(\\hat{p}=\\frac{408}{800}=0.51\\)\n\\(n=800\\)\n\\(SE=\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}=\\sqrt{\\frac{0.15*(1-0.51)}{800}}=0.0177\\)\n\\(CI=\\hat{p}±2*SE=0.51±2*0.0177\\)\nLower Bound: \\(0.51-2*0.0177=0.47\\)\nUpper Bound: \\(0.51+2*0.0177=0.55\\)\n\n\n\nNote that this is really close to what we got earlier!"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#interpreting-a-confidence-interval",
+    "href": "slides/Chapter 03/section3.2.html#interpreting-a-confidence-interval",
+    "title": "Section 3.2",
+    "section": "Interpreting a Confidence Interval",
+    "text": "Interpreting a Confidence Interval\n“We are 95% confident that the long run proportion of (context) falls between (lower bound) and (upper bound).”\n\nHere we are not concluding anything! We’re simply interpreting what the confidence interval means."
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#conclusions-from-a-confidence-interval",
+    "href": "slides/Chapter 03/section3.2.html#conclusions-from-a-confidence-interval",
+    "title": "Section 3.2",
+    "section": "Conclusions from a Confidence Interval",
+    "text": "Conclusions from a Confidence Interval\n\nIf our null hypothesis value is OUTSIDE our confidence interval:\n\nReject the null\nIt’s not a plausible value\n\nIf our null hypothesis is INSIDE the confidence interval:\n\nFail to reject the null\nIt’s a plausible value"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#conclusions-from-a-confidence-interval-1",
+    "href": "slides/Chapter 03/section3.2.html#conclusions-from-a-confidence-interval-1",
+    "title": "Section 3.2",
+    "section": "Conclusions from a Confidence Interval",
+    "text": "Conclusions from a Confidence Interval\nConclusion in context:\n\n“We (do/do not) have enough evidence to conclude (insert alt. hypothesis).”"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#legalization-of-medical-marijuana",
+    "href": "slides/Chapter 03/section3.2.html#legalization-of-medical-marijuana",
+    "title": "Section 3.2",
+    "section": "Legalization of Medical Marijuana",
+    "text": "Legalization of Medical Marijuana\nResearch question: Do a majority of Minnesota adults feel medical marijuana should be legalized?\n\nMajority = more than 50%"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#legalization-of-medical-marijuana-1",
+    "href": "slides/Chapter 03/section3.2.html#legalization-of-medical-marijuana-1",
+    "title": "Section 3.2",
+    "section": "Legalization of Medical Marijuana",
+    "text": "Legalization of Medical Marijuana\nHypotheses:\n\n\\(H_{0}\\): \\(\\pi\\) = 0.5\n\\(H_{A}\\): \\(\\pi\\) ≠ 0.5\n\nCI = (0.47, 0.55)\n\nFail to reject since 0.5 is in the interval"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#interpretation-in-context",
+    "href": "slides/Chapter 03/section3.2.html#interpretation-in-context",
+    "title": "Section 3.2",
+    "section": "Interpretation in Context",
+    "text": "Interpretation in Context\n“We are 95% confident that the long run proportion of Minnesotan adults who support the legalization of medical marijuana is between 47% and 55%.”"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#conclusion-in-context",
+    "href": "slides/Chapter 03/section3.2.html#conclusion-in-context",
+    "title": "Section 3.2",
+    "section": "Conclusion in Context",
+    "text": "Conclusion in Context\n“We do not have enough evidence to conclude that the long run proportion of Minnesotan adults who feel medical marijuana should be legalized is different from 0.50.”"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#recall",
+    "href": "slides/Chapter 03/section3.2.html#recall",
+    "title": "Section 3.2",
+    "section": "Recall…",
+    "text": "Recall…\n\nRejecting the null hypothesis means we have statistical significance in favor of \\(H_{A}\\)\nFailing to reject the null hypothesis means we do not have statistical significance in favor of \\(H_{A}\\)"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#p-value-1",
+    "href": "slides/Chapter 03/section3.2.html#p-value-1",
+    "title": "Section 3.2",
+    "section": "1. P-value",
+    "text": "1. P-value\n\nP-value &lt; 0.05: Reject the null hypothesis\nP-value ≥ 0.05: Fail to reject the null hypothesis"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#standardized-statistic-ss",
+    "href": "slides/Chapter 03/section3.2.html#standardized-statistic-ss",
+    "title": "Section 3.2",
+    "section": "2. Standardized Statistic (SS)",
+    "text": "2. Standardized Statistic (SS)\n\nIf SS is “outside the twos”, reject the null hypothesis\nIf SS is “inside the twos”, fail to reject the null hypothesis"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#confidence-interval-ci",
+    "href": "slides/Chapter 03/section3.2.html#confidence-interval-ci",
+    "title": "Section 3.2",
+    "section": "3. Confidence Interval (CI)",
+    "text": "3. Confidence Interval (CI)\n\nIf hypothesized value is outside the CI, reject the null hypothesis\nIf hypothesized value is inside the CI, fail to reject the null hypothesis"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#all-methods-should-agree-with-each-other",
+    "href": "slides/Chapter 03/section3.2.html#all-methods-should-agree-with-each-other",
+    "title": "Section 3.2",
+    "section": "All methods should agree with each other!",
+    "text": "All methods should agree with each other!"
   }
 ]
