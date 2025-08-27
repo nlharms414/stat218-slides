@@ -11,6 +11,14 @@ format:
 editor: visual
 ---
 
+## Chapter P Learning Objectives {.center}
+
+-   Understand the 6-step process.
+-   Be able to classify variables as quantitative or qualitative.
+-   Be able to interpret a histogram.
+-   Understand the difference between a skewed and symmetric distribution.
+-   Know how to measure the center of data using either a mean or median.
+
 ##  {.center style="font-size: 72px;"}
 
 ::: r-stack

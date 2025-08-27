@@ -12,6 +12,12 @@ format:
 editor: visual
 ---
 
+## Section 2.3 Learning Objectives {.center}
+
+-   Conduct a simulation-based analysis to conduct a single test involving the mean of a single quantitative variable.
+
+-   Carry out a theory-based analysis (one-sample t-test) involving the mean of a single quantitative variable, including checking relevant validity conditions.
+
 ## Up until now... {.center}
 
 -   We have been working with proportions

@@ -12,6 +12,12 @@ format:
 editor: visual
 ---
 
+## Section 3.2 Learning Objectives {.center}
+
+-   Compute and write a confidence interval in terms of a center point plus or minus the margin of error.
+
+-   Calculate a confidence interval for a single proportion using the 2SD method and the theory-based approach.
+
 # Review
 
 ## Confidence Intervals {.center}
@@ -237,8 +243,7 @@ CI = (0.47, 0.55)
 
 -   If SS is "outside the twos", reject the null hypothesis
 
--   If SS is "inside the twos", fail to reject the null
-hypothesis
+-   If SS is "inside the twos", fail to reject the null hypothesis
 
 ## 3. Confidence Interval (CI) {.center}
 

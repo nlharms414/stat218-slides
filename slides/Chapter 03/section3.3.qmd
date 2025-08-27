@@ -12,6 +12,10 @@ format:
 editor: visual
 ---
 
+## Section 3.3 Learning Objectives {.center}
+
+-   Calculate a confidence interval for a single mean using the 2SD method and the theory-based approach.
+
 # Review
 
 ## Confidence Intervals {.center}
@@ -68,8 +72,7 @@ We must meet the validity conditions for the theory-based approach:
 
 ::::: columns
 ::: {.column width="60%"}
-<br>
-![](images/3_honda.jpg){fig-alt="Histogram of price data for 102 used Honda Civics. Bins range from 2000 to 22000 and peak around 14000. The distribution is not strongly skewed."}
+<br> ![](images/3_honda.jpg){fig-alt="Histogram of price data for 102 used Honda Civics. Bins range from 2000 to 22000 and peak around 14000. The distribution is not strongly skewed."}
 :::
 
 ::: {.column width="40%"}
@@ -77,7 +80,7 @@ Price data from a random sample of 102 used Honda Civics for sale on the interne
 :::
 :::::
 
-. . . 
+. . .
 
 Is the criteria met to use the confidence interval approach?
 
@@ -95,7 +98,7 @@ Is the criteria met to use the confidence interval approach?
 
 ## Interpreting the Confidence Interval {.center}
 
-“We are 95% confident that the long run mean of all used Honda Civics for sale on the internet is between \$12,393.94 and \$14,190.06.” 
+“We are 95% confident that the long run mean of all used Honda Civics for sale on the internet is between \$12,393.94 and \$14,190.06.”
 
 ## Conclusions from a Confidence Interval {.center}
 
@@ -109,9 +112,9 @@ Is the criteria met to use the confidence interval approach?
 
     -   Fail to reject the null
 
-    -   It's a plausible value 
-    
-. . . 
+    -   It's a plausible value
+
+. . .
 
 Note that this example doesn't have a hypothesized value! We are simply interpreting the interval.
 
@@ -119,11 +122,11 @@ Note that this example doesn't have a hypothesized value! We are simply interpre
 
 We can use the same three methods with a single mean:
 
-1. P-value
+1.  P-value
 
-2. Standardized Statistic
+2.  Standardized Statistic
 
-3. Confidence Interval
+3.  Confidence Interval
 
 . . .
 

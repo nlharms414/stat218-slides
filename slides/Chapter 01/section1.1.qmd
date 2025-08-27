@@ -12,6 +12,12 @@ format:
 editor: visual
 ---
 
+## Section 1.1 Learning Objectives {.center}
+
+-   Know the difference between a parameter and a statistic.
+
+-   Identify whether or not study results are statistically significant and whether or not the chance model is a plausible explanation for the data.
+
 ## Recall...
 
 -   Statistics allow us to estimate something about a large population

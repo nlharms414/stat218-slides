@@ -12,6 +12,14 @@ format:
 editor: visual
 ---
 
+## Section 3.4 Learning Objectives {.center}
+
+-   Understand how changing the confidence level affects a confidence interval.
+
+-   Understand why a larger sample size decreases a confidence interval.
+
+-   Recognize other factors that might affect the size of a confidence interval.
+
 # Review
 
 ## Confidence Intervals {.center}

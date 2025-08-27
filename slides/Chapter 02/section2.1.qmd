@@ -12,6 +12,12 @@ format:
 editor: visual
 ---
 
+## Section 2.1 Learning Objectives {.center}
+
+-   Describe how to select a random sample and recognize that a random sample is that it is likely to be representative of the population regardless of sample size.
+
+-   Identify parameters (long-run proportion) and statistics (sample proportion) in a statistical study.
+
 ## Recall... {.center}
 
 -   [**Population:**]{.underline} The complete collection of **all** objects that are of interest for a given scenario
@@ -122,7 +128,7 @@ Note: We only use sample standard deviation and standard deviation symbols ($s$,
 
 ::: {.column width="45%"}
 | Scenario |
-|:--:|
+|:----------------------------------------------------------------------:|
 | Suppose you want to investigate the long run proportion of students at UNL who are morning people. You ask everyone in your 8am class if they are a morning or night person. |
 :::
 :::::
@@ -164,7 +170,7 @@ Note: We only use sample standard deviation and standard deviation symbols ($s$,
 
 ::: {.column width="45%"}
 | Scenario |
-|:--:|
+|:----------------------------------------------------------------------:|
 | A researcher wants to investigate the average lifespan of a new fish, of which only three schools are known to exist. From the three schools, she randomly selects 30 fish to track the lifespans of. |
 :::
 :::::

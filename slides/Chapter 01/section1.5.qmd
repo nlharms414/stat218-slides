@@ -12,6 +12,12 @@ format:
 editor: visual
 ---
 
+## Section 1.5 Learning Objectives {.center}
+
+-   Describe the sampling distribution of a statistic and define the standard error.
+
+-   Know when/why simulation and theory will yield different results.
+
 ## Simulation
 
 So far, we've used a simulation-based approach to gather strength of evidence.

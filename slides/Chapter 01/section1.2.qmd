@@ -12,6 +12,16 @@ format:
 editor: visual
 ---
 
+## Section 1.2 Learning Objectives {.center}
+
+-   Understand that not all outcomes in an experiment are equally likely.
+
+-   Understand what a null hypothesis represents.
+
+-   Be able to represent a null hypothesis in both words and symbols.
+
+-   Be able to interpret the p-value.
+
 ## Rock, Paper, Scissors
 
 ::::: columns
@@ -219,7 +229,7 @@ In symbols:
 ## P-value Cutoffs
 
 |                      |     |                                                  |
-|----------------------|-----|--------------------------------------------------|
+|-----------------|-----------------|---------------------------------------|
 | P –value \> .10      |     | Not much evidence against the null hypothesis    |
 | .05 \< p-value ≤ .10 |     | Moderate evidence against the null hypothesis    |
 | .01 \< p-value ≤ .05 |     | Strong evidence against the null hypothesis      |

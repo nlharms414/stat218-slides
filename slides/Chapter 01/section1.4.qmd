@@ -12,6 +12,12 @@ format:
 editor: visual
 ---
 
+## Section 1.4 Learning Objectives {.center}
+
+-   Understand how and why certain factors affect the p-value.
+
+-   Recognize when to use a two-sided hypothesis test.
+
 ## Hypothesis Testing Review
 
 -   Hypotheses refine our research question

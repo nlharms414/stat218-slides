@@ -12,6 +12,12 @@ format:
 editor: visual
 ---
 
+## Section 1.3 Learning Objectives {.center}
+
+-   Be able to find and interpret a standardized statistic based on the observed number of successes.
+
+-   Draw conclusions on the null hypothesis based on the magnitude of the standardized statistic.
+
 # Review
 
 ## Wait, what is it we're trying to do? {.center}

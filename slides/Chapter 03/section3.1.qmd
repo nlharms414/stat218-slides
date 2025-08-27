@@ -12,6 +12,12 @@ format:
 editor: visual
 ---
 
+## Section 3.1 Learning Objectives {.center}
+
+-   Calculate a range of plausible values for the population parameter based on a series of two-sided hypothesis tests where different null hypothesis values are tested.
+
+-   Be able to interpret a confidence interval in the context of a problem, and understand what it represents.
+
 ## Recap
 
 Interested in determining if a value for the parameter is [plausible]{.underline}.
@@ -158,8 +164,8 @@ Note: We may also refer to the observed statistic as a [**point estimation**]{.u
 "We are 95% confident that the long-run proportion of Minnesota adults who feel medical marijuana should be legalized is between 0.48 and 0.54
 
 ## Confidence Intervals: General Form {.center style="text-align: center;"}
-<br>
-Confidence Interval (CI) = (Lower Bound, Upper Bound)
+
+<br> Confidence Interval (CI) = (Lower Bound, Upper Bound)
 
 = Observed statistic ± margin of error
 

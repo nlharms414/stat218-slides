@@ -12,6 +12,14 @@ format:
 editor: visual
 ---
 
+## Section 2.2 Learning Objectives {.center}
+
+-   Describe the distribution of a quantitative variable in terms of shape, center, variability, and unusual observations.
+
+-   Identify parameters (such as long-run/population means or medians) and statistics (such as sample means or sample medians) in a statistical study.
+
+-   Know the difference between a Type I and Type II error and what the implications/consequences are.
+
 ## Up until now... {.center}
 
 -   We have been working with proportions
