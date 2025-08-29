@@ -753,7 +753,7 @@
     "href": "index.html",
     "title": "STAT 218 Slides",
     "section": "",
-    "text": "Chapter P\n\n\n\n\n\n\n\n\n\n\n\nSection 1.1\n\n\n\n\n\n\n\n\n\n\n\nSection 1.2\n\n\n\n\n\n\n\n\n\n\n\nSection 1.3\n\n\n\n\n\n\n\n\n\n\n\nSection 1.4\n\n\n\n\n\n\n\n\n\n\n\nSection 1.5\n\n\n\n\n\n\n\n\n\n\n\nSection 11.1\n\n\n\n\n\n\n\n\n\n\n\nSection 11.2\n\n\n\n\n\n\n\n\n\n\n\nSection 11.3\n\n\n\n\n\n\n\n\n\n\n\nSection 2.1\n\n\n\n\n\n\n\n\n\n\n\nSection 2.2\n\n\n\n\n\n\n\n\n\n\n\nSection 2.3\n\n\n\n\n\n\n\n\n\n\n\nSection 3.1\n\n\n\n\n\n\n\n\n\n\n\nSection 3.2\n\n\n\n\n\n\n\n\n\n\n\nSection 3.3\n\n\n\n\n\n\n\n\n\n\n\nSection 3.4\n\n\n\n\n\n\n\n\n\n\n\nSection 4.1\n\n\n\n\n\n\n\n\n\n\n\nSection 4.2\n\n\n\n\n\n\n\n\n\n\n\nSection 4.3\n\n\n\n\n\n\n\n\n\n\n\nSection 5.1\n\n\n\n\n\n\n\n\n\n\n\nSection 5.2\n\n\n\n\n\n\n\n\n\n\n\nSection 5.3\n\n\n\n\n\n\n\n\n\n\n\nSection 6.1\n\n\n\n\n\n\n\n\n\n\n\nSection 6.2\n\n\n\n\n\n\n\n\n\n\n\nSection 6.3\n\n\n\n\n\n\n\n\n\n\n\nSection 7.1\n\n\n\n\n\n\n\n\n\n\n\nSection 7.2\n\n\n\n\n\n\n\n\n\n\n\nSection 7.3\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Chapter P\n\n\n\n\n\n\n\n\n\n\n\nSection 1.1\n\n\n\n\n\n\n\n\n\n\n\nSection 1.2\n\n\n\n\n\n\n\n\n\n\n\nSection 1.3\n\n\n\n\n\n\n\n\n\n\n\nSection 1.4\n\n\n\n\n\n\n\n\n\n\n\nSection 1.5\n\n\n\n\n\n\n\n\n\n\n\nSection 11.1\n\n\n\n\n\n\n\n\n\n\n\nSection 11.2\n\n\n\n\n\n\n\n\n\n\n\nSection 11.3\n\n\n\n\n\n\n\n\n\n\n\nSection 2.1\n\n\n\n\n\n\n\n\n\n\n\nSection 2.2\n\n\n\n\n\n\n\n\n\n\n\nSection 2.3\n\n\n\n\n\n\n\n\n\n\n\nSection 3.1\n\n\n\n\n\n\n\n\n\n\n\nSection 3.2\n\n\n\n\n\n\n\n\n\n\n\nSection 3.3\n\n\n\n\n\n\n\n\n\n\n\nSection 3.4\n\n\n\n\n\n\n\n\n\n\n\nSection 4.1\n\n\n\n\n\n\n\n\n\n\n\nSection 4.2\n\n\n\n\n\n\n\n\n\n\n\nSection 5.1\n\n\n\n\n\n\n\n\n\n\n\nSection 5.2\n\n\n\n\n\n\n\n\n\n\n\nSection 5.3\n\n\n\n\n\n\n\n\n\n\n\nSection 6.1\n\n\n\n\n\n\n\n\n\n\n\nSection 6.2\n\n\n\n\n\n\n\n\n\n\n\nSection 6.3\n\n\n\n\n\n\n\n\n\n\n\nSection 7.1\n\n\n\n\n\n\n\n\n\n\n\nSection 7.2\n\n\n\n\n\n\n\n\n\n\n\nSection 7.3\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/Chapter 02/section2.1.html#recall",
@@ -1923,5 +1923,145 @@
     "title": "Section 3.4",
     "section": "Summary of Factors Affecting the Confidence Interval Width",
     "text": "Summary of Factors Affecting the Confidence Interval Width\n\n\n\n\nMakes CI Smaller\nMakes CI Larger\n\n\n\n\nConfidence level decreases\nConfidence level increases\n\n\nSample size increases\nSample size decreases\n\n\nStandard error decreases\nStandard error increases"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.1.html#section-4.1-learning-objectives",
+    "href": "slides/Chapter 04/section4.1.html#section-4.1-learning-objectives",
+    "title": "Section 4.1",
+    "section": "Section 4.1 Learning Objectives",
+    "text": "Section 4.1 Learning Objectives\n\nUnderstand and be able to calculate conditional proportions.\nBe able to determine which variable is the explanatory variable and which is the response variable in a given context.\nUnderstand what a confounding variable is and how it can affect association assumptions."
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.1.html#recap",
+    "href": "slides/Chapter 04/section4.1.html#recap",
+    "title": "Section 4.1",
+    "section": "Recap",
+    "text": "Recap\n\nChapters P-3: Is there an effect? How big is the effect?\nWe do this by:\n\nAsking a research question.\nSetting up a hypothesis test.\nTesting our hypothesis for significance of evidence by:\n\nP-value\nStandardized statistic\nConfidence intervals"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.1.html#overview",
+    "href": "slides/Chapter 04/section4.1.html#overview",
+    "title": "Section 4.1",
+    "section": "Overview",
+    "text": "Overview\nPreviously, research questions focused on one proportion or mean\n\nWhat proportion of the time did Buzz choose the right button?\nWhat is the average time of an Olympic bobsleigh team?"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.1.html#overview-1",
+    "href": "slides/Chapter 04/section4.1.html#overview-1",
+    "title": "Section 4.1",
+    "section": "Overview",
+    "text": "Overview\nNow, we want to compare two groups\n\nAre smokers more likely than nonsmokers to develop lung cancer?\nAre children who used night lights as infants more likely to need glasses than those who didn’t use night lights?"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.1.html#explanatory-variable-independent-variable",
+    "href": "slides/Chapter 04/section4.1.html#explanatory-variable-independent-variable",
+    "title": "Section 4.1",
+    "section": "Explanatory Variable (Independent Variable)",
+    "text": "Explanatory Variable (Independent Variable)\nVariable we think is “explaining” the response variable.\n\nResearchers manipulate this variable"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.1.html#response-variable-dependent-variable",
+    "href": "slides/Chapter 04/section4.1.html#response-variable-dependent-variable",
+    "title": "Section 4.1",
+    "section": "Response Variable (Dependent Variable)",
+    "text": "Response Variable (Dependent Variable)\nVariable that is being impacted or changed by the explanatory variable.\n\n“Depends on” or “responds to” the explanatory variable"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.1.html#example",
+    "href": "slides/Chapter 04/section4.1.html#example",
+    "title": "Section 4.1",
+    "section": "Example",
+    "text": "Example\nWe may think that if we eat and apple a day (explanatory variable) then we’ll have to go to the doctor (response variable) less!"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.1.html#role-of-variables-activity",
+    "href": "slides/Chapter 04/section4.1.html#role-of-variables-activity",
+    "title": "Section 4.1",
+    "section": "Role of Variables Activity",
+    "text": "Role of Variables Activity\nFor each of the variable pairs, identify which you think is the explanatory and which is the response\n\nSmoking and lung cancer\nHeart disease and diet\nExam score and hours studied\nVitamin C and colds\nHair color and eye color"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.1.html#associated-variables",
+    "href": "slides/Chapter 04/section4.1.html#associated-variables",
+    "title": "Section 4.1",
+    "section": "Associated Variables",
+    "text": "Associated Variables\nAssociated: When one variable gives valuable information about the other\nEx:\n\nHours of studying before an exam could give information on how well you’ll do\nHow many apples you eat could give information about how often you’ll go to the doctor"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.1.html#cause-and-effect",
+    "href": "slides/Chapter 04/section4.1.html#cause-and-effect",
+    "title": "Section 4.1",
+    "section": "Cause and effect?",
+    "text": "Cause and effect?\nBut, can we say that our explanatory variable causes our response variable? No!\n\nAssociation does NOT mean causation\nIf you remember anything from this class, let it be this!!"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.1.html#confounding-variable",
+    "href": "slides/Chapter 04/section4.1.html#confounding-variable",
+    "title": "Section 4.1",
+    "section": "Confounding Variable",
+    "text": "Confounding Variable\nA variable that is related to both the explanatory variable and response variable in such a way that its effects cannot be separated from the effects of the explanatory."
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.1.html#using-proportions",
+    "href": "slides/Chapter 04/section4.1.html#using-proportions",
+    "title": "Section 4.1",
+    "section": "Using Proportions",
+    "text": "Using Proportions\n\nCan we determine association using proportions?\n\nExample (next slide):\n\nIs political ideology associated with views on the moral acceptability of cloning animals?\nWhat about the importance of religion?"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.1.html#cloning-animals",
+    "href": "slides/Chapter 04/section4.1.html#cloning-animals",
+    "title": "Section 4.1",
+    "section": "Cloning Animals",
+    "text": "Cloning Animals"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.1.html#ice-cream-sold-vs-drownings",
+    "href": "slides/Chapter 04/section4.1.html#ice-cream-sold-vs-drownings",
+    "title": "Section 4.1",
+    "section": "Ice Cream Sold vs Drownings",
+    "text": "Ice Cream Sold vs Drownings"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.1.html#ice-cream-sold-vs-drownings-1",
+    "href": "slides/Chapter 04/section4.1.html#ice-cream-sold-vs-drownings-1",
+    "title": "Section 4.1",
+    "section": "Ice Cream Sold vs Drownings",
+    "text": "Ice Cream Sold vs Drownings"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.1.html#confounding-variable-month",
+    "href": "slides/Chapter 04/section4.1.html#confounding-variable-month",
+    "title": "Section 4.1",
+    "section": "Confounding Variable: Month",
+    "text": "Confounding Variable: Month"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.1.html#all-nighters-gpas",
+    "href": "slides/Chapter 04/section4.1.html#all-nighters-gpas",
+    "title": "Section 4.1",
+    "section": "All-Nighters & GPAs",
+    "text": "All-Nighters & GPAs\n\n\nClaim:\nExplanatory variable:\n\nCategorical or quantitative?\n\nResponse variable:\n\nCategorical or quantitative?\n\nPotential confounding variable(s):\n\n\n\n\n\n\n\nScenario\n\n\n\n\nResearchers found that students who claim to have never pulled an all-nighter have an average GPA of 3.1, while students who have pulled an all-nighter have an average GPA of 2.9."
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.1.html#all-nighters-gpas-1",
+    "href": "slides/Chapter 04/section4.1.html#all-nighters-gpas-1",
+    "title": "Section 4.1",
+    "section": "All-Nighters & GPAs",
+    "text": "All-Nighters & GPAs\n\nClaim: All-nighters cause lower GPAs.\nExplanatory variable: Pulling an all-nighter or not; Categorical\nResponse variable: GPA; Quantitative\nPotential confounding variable(s):"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.1.html#tvs-lifespan",
+    "href": "slides/Chapter 04/section4.1.html#tvs-lifespan",
+    "title": "Section 4.1",
+    "section": "TV’s & Lifespan",
+    "text": "TV’s & Lifespan\n\n\nClaim:\nExplanatory variable:\n\nCategorical or quantitative?\n\nResponse variable:\n\nCategorical or quantitative?\n\nPotential confounding variable(s):\n\n\n\n\n\n\n\nScenario\n\n\n\n\nResearchers found that countries that have more TVs per 1000 people have a higher average lifespan."
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.1.html#tvs-lifespan-1",
+    "href": "slides/Chapter 04/section4.1.html#tvs-lifespan-1",
+    "title": "Section 4.1",
+    "section": "TV’s & Lifespan",
+    "text": "TV’s & Lifespan\n\nClaim: TVs increase lifespan.\nExplanatory variable: Number of TVs per 1000 people; Qualitative\nResponse variable: Average lifespan; Quantitative\nPotential confounding variable(s):"
   }
 ]
