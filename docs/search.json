@@ -2063,5 +2063,187 @@
     "title": "Section 4.1",
     "section": "TV’s & Lifespan",
     "text": "TV’s & Lifespan\n\nClaim: TVs increase lifespan.\nExplanatory variable: Number of TVs per 1000 people; Qualitative\nResponse variable: Average lifespan; Quantitative\nPotential confounding variable(s):"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#section-4.2-learning-objectives",
+    "href": "slides/Chapter 04/section4.2.html#section-4.2-learning-objectives",
+    "title": "Section 4.2",
+    "section": "Section 4.2 Learning Objectives",
+    "text": "Section 4.2 Learning Objectives\n\nDetermine if a study is observational or experimental.\nUnderstand why random assignment allows for a cause and effect conclusion.\nDetermine whether a study used random assignment and/or random sampling and how each affects the conclusions that can be drawn."
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#variable-types",
+    "href": "slides/Chapter 04/section4.2.html#variable-types",
+    "title": "Section 4.2",
+    "section": "Variable Types",
+    "text": "Variable Types\n\nExplanatory (independent) variable\n\n“Explains” the response variable\n\nResponse (dependent) variable\n\n“Responds” to the explanatory variable\n\nConfounding variable\n\nRelated to both\n\nAssociation does NOT mean causation\n\nThere is always potential for a confounding variable"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip",
+    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip",
+    "title": "Section 4.2",
+    "section": "Have a Nice Trip",
+    "text": "Have a Nice Trip\nAn area of research in biomechanics and gerontology concerns falls and fall related injuries, especially for old people. Recent studies have focused on how individuals respond to large postural disturbances (like slipping or tripping). One question is whether subjects can be instructed to improve their recovery from such disturbances."
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-1",
+    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-1",
+    "title": "Section 4.2",
+    "section": "Have a Nice Trip",
+    "text": "Have a Nice Trip\nResearchers want to compare two strategies:\n\nLowering: Quickly stepping down with the front leg and then raising the back leg over the object\nElevating: Lifting the front leg over the object"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-2",
+    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-2",
+    "title": "Section 4.2",
+    "section": "Have a Nice Trip",
+    "text": "Have a Nice Trip\n24 subjects agreed to participate in a study:\n\n8 Females\n16 Males"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-3",
+    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-3",
+    "title": "Section 4.2",
+    "section": "Have a Nice Trip",
+    "text": "Have a Nice Trip\nIdentify the following:\n\nExplanatory variable: Strategy used (lowering or elevating)\nResponse variable: Fall or not\nPotential confounding variables"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#intro",
+    "href": "slides/Chapter 04/section4.2.html#intro",
+    "title": "Section 4.2",
+    "section": "Intro",
+    "text": "Intro\nHow do we reduce the risk of confounding variables?\n\nConfounding variables add bias\nBias = consistently over- or under-estimating the parameter of interest\n\nMain ideas:\n\nObservational studies vs experimental studies\nRandom sampling vs random assignment"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#observational-study",
+    "href": "slides/Chapter 04/section4.2.html#observational-study",
+    "title": "Section 4.2",
+    "section": "Observational Study",
+    "text": "Observational Study\nComparing two groups that are “just there”\n\nObserve subjects and collect their data\nResearchers cannot manipulate anything\n\nExamples:\n\n\nSurveys\nTeacher evaluations"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#experimental-study",
+    "href": "slides/Chapter 04/section4.2.html#experimental-study",
+    "title": "Section 4.2",
+    "section": "Experimental Study",
+    "text": "Experimental Study\nYou choose the conditions for the experimental units\n\nAssign experimental units to groups\nResearchers can manipulate\n\nExamples:\n\n\nAssign one group to a diet group and the other to an exercise program. Then measure the weight loss in each group\nStudents are told to listen to either country or classical music before an exam. Their exam results are compared."
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#side-note",
+    "href": "slides/Chapter 04/section4.2.html#side-note",
+    "title": "Section 4.2",
+    "section": "Side note!",
+    "text": "Side note!\nIn experiments, we refer to observational units as experimental units!"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#example-scenario",
+    "href": "slides/Chapter 04/section4.2.html#example-scenario",
+    "title": "Section 4.2",
+    "section": "Example Scenario",
+    "text": "Example Scenario\nResearchers want to set up an observational OR experimental study to answer the research question, “Does exercise help prevent against colds and the flu?”\n\n\nHow could we make this an observational study?\nHow could we make this an experimental study?"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#randomized-experiment",
+    "href": "slides/Chapter 04/section4.2.html#randomized-experiment",
+    "title": "Section 4.2",
+    "section": "Randomized Experiment",
+    "text": "Randomized Experiment\n\nUse a method of chance to assign experimental units to groups\nThis allows us to balance out confounding variables\nBest way to avoid bias!"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-4",
+    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-4",
+    "title": "Section 4.2",
+    "section": "Have a Nice Trip",
+    "text": "Have a Nice Trip\n\nComparing lowering and elevating strategies for fall prevention\n24 subjects: 8 females, 16 males\nExplanatory variable: Strategy used\nResponse variable: Fall or recover\nPotential confounding variable: Gender"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-5",
+    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-5",
+    "title": "Section 4.2",
+    "section": "Have a Nice Trip",
+    "text": "Have a Nice Trip\nResearchers could assign females to the lowering strategy, and males to the elevating strategy.\n\n\nIs this reasonable?"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-6",
+    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-6",
+    "title": "Section 4.2",
+    "section": "Have a Nice Trip",
+    "text": "Have a Nice Trip\n\nCould assign half females and half males to each strategy\nThen could we say gender is confounding?\nCould a different variable still be confounding?"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-7",
+    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-7",
+    "title": "Section 4.2",
+    "section": "Have a Nice Trip",
+    "text": "Have a Nice Trip\n\nThere are always more confounding variables than we are aware of!\nNeed a method to decide who uses which strategy\nEnter: Random assignment!"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-8",
+    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-8",
+    "title": "Section 4.2",
+    "section": "Have a Nice Trip",
+    "text": "Have a Nice Trip\nSuppose we randomly draw 12 names from a hat to use the lowering strategy\n\nWhat proportion would we expect to be male?\nWhat about female?\nWill males always have an 8 and 8 split? Or females 4 and 4?\nRandomizing Subjects Applet"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-9",
+    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-9",
+    "title": "Section 4.2",
+    "section": "Have a Nice Trip",
+    "text": "Have a Nice Trip\n\nMain idea: Randomizing gives the best chance to even out ANY confounding variables\nIn theory, all confounding variables are equally distributed and should not be confounding"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#random-sampling-vs-random-assignment",
+    "href": "slides/Chapter 04/section4.2.html#random-sampling-vs-random-assignment",
+    "title": "Section 4.2",
+    "section": "Random Sampling vs Random Assignment",
+    "text": "Random Sampling vs Random Assignment\n\nNot the same thing\nDifferently affect the conclusions we can make"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#random-sampling",
+    "href": "slides/Chapter 04/section4.2.html#random-sampling",
+    "title": "Section 4.2",
+    "section": "Random Sampling",
+    "text": "Random Sampling\nRepresentative sample from a population\n\nAllows us to extend conclusions to a larger population"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#random-sampling-visual",
+    "href": "slides/Chapter 04/section4.2.html#random-sampling-visual",
+    "title": "Section 4.2",
+    "section": "Random Sampling Visual",
+    "text": "Random Sampling Visual\n\n\n\nRandom sample:\n\nCan generalize\n\n\nNo random sample:\n\nCannot generalize"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#random-assignment",
+    "href": "slides/Chapter 04/section4.2.html#random-assignment",
+    "title": "Section 4.2",
+    "section": "Random Assignment",
+    "text": "Random Assignment\nRandomly produce similar groups\n\nAllows us to claim a “cause and effect” relationship between the explanatory and response variables"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#random-sampling-visual-1",
+    "href": "slides/Chapter 04/section4.2.html#random-sampling-visual-1",
+    "title": "Section 4.2",
+    "section": "Random Sampling Visual",
+    "text": "Random Sampling Visual\n\n\n\nRandom assignment:\n\nExperimental study\nCan determine causation\n\n\nNo random assignment:\n\nObservational study\nCan only determine causation"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#random-assignment-vs-random-sampling-visual",
+    "href": "slides/Chapter 04/section4.2.html#random-assignment-vs-random-sampling-visual",
+    "title": "Section 4.2",
+    "section": "Random Assignment vs Random Sampling Visual",
+    "text": "Random Assignment vs Random Sampling Visual"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#summary-table",
+    "href": "slides/Chapter 04/section4.2.html#summary-table",
+    "title": "Section 4.2",
+    "section": "Summary Table",
+    "text": "Summary Table\n\n\n\n\n\n\n\n\n\nRandom Assignment\nNo Random Assignment\n\n\nRandom Sampling\nRandom sample from a population that is randomly assigned to groups (ideal!)\nRandom sample from a population that are already in pre-existing groups. (Smokers vs non-smokers survey.)\n\n\nNo Random Sampling\nA group of study units is selected non-randomly from a population and randomly assigned to groups. (Splitting our class into random groups.)\nCollections of available units from two distinct groups are examined. (Splitting our class into male and female groups.)"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#summary-table-1",
+    "href": "slides/Chapter 04/section4.2.html#summary-table-1",
+    "title": "Section 4.2",
+    "section": "Summary Table",
+    "text": "Summary Table\n\n\n\n\n\n\n\n\n\nRandom Assignment\nNo Random Assignment\n\n\nRandom Sampling\nCan generalize to the population; Causation conclusion\nCan generalize to the population; Association conclusion\n\n\nNo Random Sampling\nCannot generalize to the population; Causation conclusion\nCannot generalize to the population; Association conclusion"
   }
 ]
