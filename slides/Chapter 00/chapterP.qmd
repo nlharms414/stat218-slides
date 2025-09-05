@@ -201,7 +201,7 @@ Symmetric, mound-shaped, skewed? How many ”peaks”?
 
 Where does the center of the pattern appear?
 
--   Generally refers to mean or mode
+-   Generally refers to mean or median
 
 ## Variability {.center}
 

@@ -223,8 +223,6 @@ Doris and Buzz example:
 
 How might we simulate Doris and Buzz's experiment?
 
-## Pause; What the heck is a distribution?
-
 ## 3. Strength of Evidence {.center}
 
 Based on our simulated values, **is our observed statistic likely?**
