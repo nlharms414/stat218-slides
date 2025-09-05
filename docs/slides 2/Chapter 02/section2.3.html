@@ -10,7 +10,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.56">
 
-  <title>STAT 218 – Section 3.3</title>
+  <title>STAT 218 – Section 2.3</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -327,132 +327,235 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Section 3.3</h1>
-  <p class="subtitle">2SD and Theory-Based Confidence Intervals for a Single Mean</p>
+  <h1 class="title">Section 2.3</h1>
+  <p class="subtitle">Inference for a Single Quantitative Variable</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section>
-<section id="review" class="title-slide slide level1 center">
-<h1>Review</h1>
-
+<section id="section-2.3-learning-objectives" class="slide level2 center">
+<h2>Section 2.3 Learning Objectives</h2>
+<ul>
+<li><p>Conduct a simulation-based analysis to conduct a single test involving the mean of a single quantitative variable.</p></li>
+<li><p>Carry out a theory-based analysis (one-sample t-test) involving the mean of a single quantitative variable, including checking relevant validity conditions.</p></li>
+</ul>
 </section>
-<section id="confidence-intervals" class="slide level2 center">
-<h2>Confidence Intervals</h2>
+<section id="up-until-now" class="slide level2 center">
+<h2>Up until now…</h2>
 <ul>
-<li><p>Gives us range of <strong>plausible values</strong> for our parameter of interest</p>
+<li>We have been working with proportions
 <ul>
-<li>Either <span class="math inline">\(\mu\)</span> or <span class="math inline">\(\pi\)</span></li>
+<li>We use proportions for <strong>categorical (qualitative) data</strong></li>
 </ul></li>
+<li>What if our data is <strong>qualitative (numerical)</strong>?</li>
 </ul>
+<p>Examples: Height, weight, time, measurement of length</p>
 </section>
-<section id="confidence-intervals-general-form" class="slide level2 center" style="text-align: center;">
-<h2>Confidence Intervals: General Form</h2>
-<p><br> Confidence Interval (CI) = (Lower Bound, Upper Bound)</p>
-<p>= Observed statistic ± margin of error</p>
+<section id="symbol-review" class="slide level2">
+<h2>Symbol Review</h2>
+<p>In section 2.1, we introduced some new symbols we use with numerical data:</p>
 <ul>
-<li>Margin of Error = Multiplier * Standard Error</li>
+<li>Sample mean: <span class="math inline">\(\bar{x}\)</span></li>
+<li>Sample Standard Deviation: <span class="math inline">\(s\)</span></li>
+<li>Population Mean: <span class="math inline">\(\mu\)</span></li>
+<li>Population Standard Deviation: <span class="math inline">\(\sigma\)</span></li>
 </ul>
 </section>
-<section id="sd-95-confidence-interval-for-proportions" class="slide level2 center">
-<h2>2SD (95%) Confidence Interval for Proportions</h2>
-<p><span class="math display">\[CI=\hat{p}±2*\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}\]</span></p>
-<p><span class="math display">\[=(Lower\:Bound,Upper\:Bound)\]</span></p>
+<section id="symbol-comparison" class="slide level2">
+<h2>Symbol Comparison</h2>
+<p><br> Symbols we use depend on our variable type:</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 37%">
+<col style="width: 39%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td></td>
+<td style="text-align: center;"><strong>Categorical Variable</strong></td>
+<td style="text-align: center;"><strong>Quantitative Variable</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Population</strong></td>
+<td style="text-align: center;"><span class="math inline">\(\pi\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\mu\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Sample</strong></td>
+<td style="text-align: center;"><span class="math inline">\(\hat{p}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\bar{x}\)</span></td>
+</tr>
+</tbody>
+</table>
 <div class="fragment">
-<p>What do you think changes if we’re dealing with a mean rather than a proportion?</p>
-</div>
-</section></section>
-<section>
-<section id="confidence-intervals-for-single-means" class="title-slide slide level1 center">
-<h1>Confidence Intervals for Single Means</h1>
-
-</section>
-<section id="formulas" class="slide level2 center">
-<h2>Formulas</h2>
-<p>Standard error for means:</p>
-<p><span class="math display">\[SE=\frac{s}{\sqrt{n}}\]</span></p>
-<p>2SD (95%) Confidence Interval for Means:</p>
-<p><span class="math display">\[CI=\bar{x}±2*\frac{s}{\sqrt{n}}\]</span></p>
-<div class="fragment">
-<p>Why does it make sense that we use <span class="math inline">\(\bar{x}\)</span> now?</p>
+<p><br></p>
+<p>Note: We only use sample standard deviation and standard deviation symbols (<span class="math inline">\(s\)</span>, <span class="math inline">\(\sigma\)</span>) when we are dealing with <strong>quantitative variables.</strong></p>
 </div>
 </section>
-<section id="validity-conditions-for-single-mean" class="slide level2 center">
-<h2>Validity Conditions for Single Mean</h2>
-<p>We must meet the validity conditions for the theory-based approach:</p>
+<section id="strength-of-evidence-with-a-single-quantitative-variable" class="slide level2 center">
+<h2>Strength of Evidence with a Single Quantitative Variable</h2>
+<p>Essentially the same process, but now we’re working with averages</p>
 <ul>
-<li><p>Sample size ≥ 20</p></li>
-<li><p>Distribution not strongly skewed</p></li>
+<li><p><strong>Variable of Interest:</strong> some numerical measure</p></li>
+<li><p><strong>Parameter:</strong> The long run average (<span class="math inline">\(\mu\)</span>)</p></li>
+<li><p><strong>Observed statistic:</strong> Average calculated from the sample (<span class="math inline">\(\bar{x}\)</span>)</p></li>
 </ul>
-</section></section>
-<section>
-<section id="example" class="title-slide slide level1 center">
-<h1>Example</h1>
-
 </section>
-<section id="used-hondas" class="slide level2">
-<h2>Used Hondas</h2>
+<section id="strength-of-evidence-with-a-single-quantitative-variable-1" class="slide level2 center">
+<h2>Strength of Evidence with a Single Quantitative Variable</h2>
+<p>Hypotheses in words:</p>
+<ul>
+<li>Null: The long run average is equal to (average in context of the problem)</li>
+<li>Alt: The long run average is (less than/greater than/not equal to the average in the context of the problem)</li>
+</ul>
+</section>
+<section id="strength-of-evidence-with-a-single-quantitative-variable-2" class="slide level2 center">
+<h2>Strength of Evidence with a Single Quantitative Variable</h2>
+<p>Hypotheses in symbols:</p>
+<ul>
+<li><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\mu\)</span> = previously known number</li>
+<li><span class="math inline">\(H_{A}\)</span>: <span class="math inline">\(\mu\)</span> &gt;,&lt;,≠ previously known number</li>
+</ul>
+</section>
+<section id="ceo-example" class="slide level2">
+<h2>CEO Example</h2>
 <div class="columns">
-<div class="column" style="width:60%;">
-<p><br> <img data-src="images/3_honda.jpg" alt="Histogram of price data for 102 used Honda Civics. Bins range from 2000 to 22000 and peak around 14000. The distribution is not strongly skewed."></p>
-</div><div class="column" style="width:40%;">
-<p>Price data from a random sample of 102 used Honda Civics for sale on the internet is displayed on the histogram. The sample mean of the data was $13,292 with a standard deviation of $4,535.</p>
+<div class="column" style="width:65%;">
+<ul>
+<li><p>Variable of interest: <span class="fragment"># of emails in a day</span></p></li>
+<li><p>Parameter: <span class="fragment">long run average number of emails received in a day (<span class="math inline">\(\mu\)</span>)</span></p></li>
+<li><p>Hypotheses in symbols:</p>
+<ul>
+<li><span class="fragment"><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\mu\)</span> = 8</span></li>
+<li><span class="fragment"><span class="math inline">\(H_{A}\)</span>: <span class="math inline">\(\mu\)</span> &gt; 8</span></li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:35%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Scenario</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">You are interested in whether the number of emails the CEO of Apple receives each day is more than 8.</td>
+</tr>
+</tbody>
+</table>
 </div></div>
-<div class="fragment">
-<p>Is the criteria met to use the confidence interval approach?</p>
-</div>
 </section>
-<section id="calculating-the-confidence-interval" class="slide level2 center">
-<h2>Calculating the Confidence Interval</h2>
-<div>
+<section id="simulation" class="slide level2 center">
+<h2>Simulation</h2>
 <ul>
-<li class="fragment"><span class="math inline">\(\bar{x}=13292\)</span></li>
-<li class="fragment"><span class="math inline">\(n=102\)</span></li>
-<li class="fragment"><span class="math inline">\(s=4535\)</span></li>
-<li class="fragment"><span class="math inline">\(SE=\frac{s}{\sqrt{n}}=\frac{4535}{\sqrt{102}}=449.03\)</span></li>
-<li class="fragment"><span class="math inline">\(CI=\bar{x}±2*SE=13292±2*449.03\)</span></li>
-<li class="fragment">Lower Bound: <span class="math inline">\(13292-2*449.03=12393.94\)</span></li>
-<li class="fragment">Upper Bound: <span class="math inline">\(13292+2*449.03=14190.06\)</span></li>
-</ul>
-</div>
-</section>
-<section id="interpreting-the-confidence-interval" class="slide level2 center">
-<h2>Interpreting the Confidence Interval</h2>
-<p>“We are 95% confident that the long run mean of all used Honda Civics for sale on the internet is between $12,393.94 and $14,190.06.”</p>
-</section>
-<section id="conclusions-from-a-confidence-interval" class="slide level2 center">
-<h2>Conclusions from a Confidence Interval</h2>
+<li><p>For categorical data:</p>
 <ul>
-<li><p>If our null hypothesis value is OUTSIDE our confidence interval:</p>
-<ul>
-<li><p>Reject the null</p></li>
-<li><p>It’s not a plausible value</p></li>
-</ul></li>
-<li><p>If our null hypothesis is INSIDE the confidence interval:</p>
-<ul>
-<li><p>Fail to reject the null</p></li>
-<li><p>It’s a plausible value</p></li>
+<li>Coin tosses</li>
+<li>Die rolls</li>
+<li>Spinners</li>
 </ul></li>
 </ul>
-<div class="fragment">
-<p>Note that this example doesn’t have a hypothesized value! We are simply interpreting the interval.</p>
-</div>
 </section>
-<section id="statistical-significance-methods" class="slide level2 center">
-<h2>Statistical Significance Methods</h2>
-<p>We can use the same three methods with a single mean:</p>
-<ol type="1">
-<li><p>P-value</p></li>
-<li><p>Standardized Statistic</p></li>
-<li><p>Confidence Interval</p></li>
-</ol>
-<div class="fragment">
-<p>Remember that all three methods will agree with each other!</p>
+<section id="simulation-1" class="slide level2 center">
+<h2>Simulation</h2>
 <ul>
-<li>All either reject or fail to reject <span class="math inline">\(H_{0}\)</span></li>
+<li><p>For numerical data:</p>
+<ul>
+<li>We can’t use those methods</li>
+<li>The book simulates large, hypothetical data</li>
+</ul></li>
+<li><p>So, we can’t use the Applet to simulate</p></li>
+<li><p>We will use the thoery-based approach</p></li>
 </ul>
+</section>
+<section id="theory-based-approach-quantitative-variable" class="slide level2 center">
+<h2>Theory Based Approach (Quantitative Variable)</h2>
+<p>Validity conditions:</p>
+<ul>
+<li><p>The variable of interest should have a symmetric distribution, or,</p></li>
+<li><p>n ≥ 20 and not strongly skewed</p></li>
+</ul>
+</section>
+<section id="theory-based-approach-quantitative-variable-1" class="slide level2 center">
+<h2>Theory Based Approach (Quantitative Variable)</h2>
+<ul>
+<li><p>With numerical data, we can find <span class="math inline">\(s\)</span> (sample standard deviation)</p></li>
+<li><p>This changes our standardized statistic calculation</p></li>
+</ul>
+<p><span class="math display">\[SE=\frac{s}{\sqrt{n}}\]</span></p>
+</section>
+<section id="theory-based-approach-quantitative-variable-2" class="slide level2 center">
+<h2>Theory Based Approach (Quantitative Variable)</h2>
+<ul>
+<li>With numerical data, we use “<span class="math inline">\(t\)</span>” instead of “<span class="math inline">\(z\)</span>” to describe our standardized statistic</li>
+</ul>
+<p><span class="math display">\[Standardized\: Statistic\:= t=\frac{\bar{x}-\mu}{SE}=\frac{\bar{x}-\mu}{\frac{s}{\sqrt{n}}}\]</span></p>
+</section>
+<section id="drawing-conclusions" class="slide level2 center">
+<h2>Drawing Conclusions</h2>
+<ul>
+<li><p>Same as categorical data</p>
+<ul>
+<li>“Outside the twos” = reject the null</li>
+<li>Otherwise fail to reject (FTR)</li>
+</ul></li>
+</ul>
+</section>
+<section id="drawing-conclusions-1" class="slide level2 center">
+<h2>Drawing Conclusions</h2>
+<p>Conclusions take the same form:</p>
+<ul>
+<li><p>Restate the alt. hypothesis</p>
+<ul>
+<li>“We have enough evidence to conclude that the long-run average is (greater than/less than/not equal to) _____.”</li>
+<li>“We do not have enough evidence to conclude that the long-run average is (greater than/less than/not equal to) _____.”</li>
+</ul></li>
+</ul>
+</section>
+<section id="ceo-example-1" class="slide level2 center" style="font-size: 32px">
+<h2>CEO Example</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><br></p>
+<ul>
+<li>Sample size: <span class="fragment"><strong>n=30</strong></span></li>
+<li>Can we use the theory based approach? <span class="fragment"><strong>Yes</strong></span></li>
+<li>Observed statistic: <span class="fragment"><span class="math inline">\(\bar{x}\)</span><strong>=10.2</strong></span></li>
+<li>Sample standard deviation: <span class="fragment"><span class="math inline">\(s\)</span><strong>=2.091</strong></span></li>
+</ul>
+</div><div class="column" style="width:45%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Scenario</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">You are interested in whether the number of emails the CEO of Apple receives each day is more than 8. Suppose you observe 30 days and find that the average number of emails is 10.2, with a sample S.D. of 2.091. The distribution is not strongly skewed.</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</section>
+<section id="ceo-example-2" class="slide level2 center">
+<h2>CEO Example</h2>
+<p>Standard error:</p>
+<p><span class="math display">\[SE=\frac{s}{\sqrt{n}}=\frac{2.091}{\sqrt{30}}=0.38\]</span></p>
+<p>Standardized statistic:</p>
+<p><span class="math display">\[ t=\frac{\bar{x}-\mu}{SE}=\frac{10.2-8}{0.38}=5.78\]</span></p>
+</section>
+<section id="ceo-example-conclusion" class="slide level2 center">
+<h2>CEO Example Conclusion</h2>
+<p>“We have enough evidence to conclude that the long run average number of emails the CEO receives in a day is greater than 8.”</p>
 
 <div class="quarto-auto-generated-content">
 <p><img src="logo.jpg" class="slide-logo"></p>
@@ -460,8 +563,7 @@
 
 </div>
 </div>
-</div>
-</section></section>
+</section>
     </div>
   </div>
 

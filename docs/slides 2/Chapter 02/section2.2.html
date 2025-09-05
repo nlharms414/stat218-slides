@@ -10,7 +10,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.56">
 
-  <title>STAT 218 – Section 1.4</title>
+  <title>STAT 218 – Section 2.2</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -327,144 +327,341 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Section 1.4</h1>
-  <p class="subtitle">What impacts strength of evidence?</p>
+  <h1 class="title">Section 2.2</h1>
+  <p class="subtitle">Inference for a Single Quantitative Variable</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="hypothesis-testing-review" class="slide level2">
-<h2>Hypothesis Testing Review</h2>
+<section id="section-2.2-learning-objectives" class="slide level2 center">
+<h2>Section 2.2 Learning Objectives</h2>
 <ul>
-<li><p>Hypotheses refine our research question</p></li>
-<li><p>We have two hypotheses:</p>
+<li><p>Describe the distribution of a quantitative variable in terms of shape, center, variability, and unusual observations.</p></li>
+<li><p>Identify parameters (such as long-run/population means or medians) and statistics (such as sample means or sample medians) in a statistical study.</p></li>
+<li><p>Know the difference between a Type I and Type II error and what the implications/consequences are.</p></li>
+</ul>
+</section>
+<section id="up-until-now" class="slide level2 center">
+<h2>Up until now…</h2>
 <ul>
-<li>Null hypothesis = what is believed to be true</li>
-<li>Alternative hypothesis = what we think is <em>actually</em> true</li>
+<li>We have been working with proportions
+<ul>
+<li>We use proportions for <strong>categorical (qualitative) data</strong></li>
 </ul></li>
-<li><p>Notation:</p>
-<ul>
-<li><span class="math inline">\(H_{0}: \pi = hypothesized\: value\)</span></li>
-<li><span class="math inline">\(H_{A}: \pi &gt;,&lt;,≠ hypothesized\: value\)</span></li>
-</ul></li>
+<li>What if our data is qualitative (numerical)?</li>
 </ul>
-</section>
-<section id="p-value-review" class="slide level2 center">
-<h2>P-value Review</h2>
-<ul>
-<li>Tests for evidence in favor of <span class="math inline">\(H_{A}\)</span></li>
-<li>Gives probability of observed statistic (<span class="math inline">\(\hat{p}\)</span>) under null hypothesis</li>
-<li>Calculating the p-value:
-<ul>
-<li>Count the # of simulated statistics as or more extreme than <span class="math inline">\(\hat{p}\)</span> in the direction of the null hypothesis</li>
-<li>Divide by total number of simulated statistics</li>
-</ul></li>
-</ul>
-</section>
-<section id="p-value-review-1" class="slide level2 center">
-<h2>P-value Review</h2>
-<ul>
-<li>If p-value &gt; .05, fail to reject the null</li>
-<li>If p-value ≤ .05, reject the null, accept alternative</li>
-<li>Interpret based on context</li>
-</ul>
-</section>
-<section id="standardized-statistic-review" class="slide level2 center">
-<h2>Standardized Statistic Review</h2>
-<ul>
-<li>Another way to test for strength of evidence in favor of <span class="math inline">\(H_{A}\)</span></li>
-<li>Obtain the standard deviation (SD)</li>
-<li>Calculate the standardized statistic (<span class="math inline">\(z\)</span>) by:</li>
-</ul>
-<p><span class="math display">\[z=\frac{Observed\: Statistic - Hypothesized\: Value}{Standard\: Deviation\: under\: the\: null}\]</span></p>
-</section>
-<section id="standardized-statistic-review-1" class="slide level2 center">
-<h2>Standardized Statistic Review</h2>
-<ul>
-<li>If <span class="math inline">\(z\)</span> &gt; 2 or <span class="math inline">\(z\)</span> &lt; -2, reject the null, accept alternative</li>
-<li>Interpret based on context of the problem</li>
-</ul>
+<p>Examples: Height, weight, time, measurement of length</p>
 </section>
 <section>
-<section id="what-can-impact-strength-of-evidence" class="title-slide slide level1 center">
-<h1>What can impact strength of evidence?</h1>
+<section id="distributions" class="title-slide slide level1 center">
+<h1>Distributions</h1>
+<p>Recall: Describing a distribution</p>
+</section>
+<section id="shape" class="slide level2 center">
+<h2>Shape</h2>
+<p>Symmetric, mound-shaped, skewed? How many ”peaks”?</p>
+</section>
+<section id="center" class="slide level2 center">
+<h2>Center</h2>
+<p>Where does the center of the pattern appear?</p>
+<ul>
+<li>Generally refers to mean or mode</li>
+</ul>
+</section>
+<section id="variability" class="slide level2 center">
+<h2>Variability</h2>
+<p>How spread out is the distribution?</p>
+<ul>
+<li>Generally described in terms of <u><strong>standard deviation</strong></u></li>
+<li>Variability will be a big topic in this class!</li>
+</ul>
+</section>
+<section id="unusual-data" class="slide level2 center">
+<h2>Unusual Data</h2>
+<ul>
+<li>Outliers</li>
+<li>Outliers can affect results- so we need to be aware of them.</li>
+</ul>
+</section>
+<section id="example-data-distribution" class="slide level2 center">
+<h2>Example Data Distribution</h2>
 
+<img data-src="images/2_gpa.png" class="quarto-figure quarto-figure-center r-stretch" alt="Dot plot distribution of Cumulative GPA data from a sample of size 30."></section>
+<section id="whats-the-difference" class="slide level2 center">
+<h2>What’s the difference?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/2_ddist.png" alt="Histogram of cumulative GPA that is skewed left. Mean is 3.288, standard deviation is 0.551, and sample size is 2919."></p>
+<figcaption>Data Distribution</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/2_sdist.png" alt="A centered histogram of simulated sample means with a mean of 3.285 and standard deviation of 0.104."></p>
+<figcaption>Sampling Distribution</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
-<section id="section" class="slide level2 center">
-<h2></h2>
+<section id="data-distribution" class="slide level2 center">
+<h2>Data Distribution</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/2_ddist.png" class="quarto-figure quarto-figure-center" alt="Histogram of cumulative GPA that is skewed left. Mean is 3.288, standard deviation is 0.551, and sample size is 2919."></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
 <ul>
-<li>We always want stronger evidence against the null</li>
-<li>Smaller p-value = stronger evidence</li>
-<li>Larger standardized statistic absolute value = stronger evidence</li>
-</ul>
-</section>
-<section id="factors-that-impact-evidence-strength" class="slide level2 center">
-<h2>Factors that impact evidence strength</h2>
-<ol type="1">
-<li>Distance between observed statistic &amp; null value</li>
-<li>Sample size (n)</li>
-<li>One-sided or two-sided hypothesis test</li>
-</ol>
-</section>
-<section id="distance-from-the-null-value" class="slide level2 center">
-<h2>1. Distance from the null value</h2>
-<p><strong>Recall:</strong> The null value is what we expect based on chance alone</p>
+<li><p>This is data from a study</p></li>
+<li><p>Then, we plot it</p></li>
+<li><p>Here a histogram is used</p>
 <ul>
-<li>Is the center of the null distribution</li>
-</ul>
-</section>
-<section id="distance-from-the-null-value-1" class="slide level2 center">
-<h2>1. Distance from the null value</h2>
-<p>Consider <span class="math inline">\(\hat{p}\)</span>.</p>
-<ul>
-<li>Further from null value = less likely null value is plausible
-<ul>
-<li>P-value is smaller, standardized statistic absolute value is larger</li>
+<li>Could use other vices: dot plot, box plot, etc.</li>
 </ul></li>
-<li>Closer to the null value = more likely null value is plausible
+</ul>
+</div></div>
+</section>
+<section id="sampling-distribution" class="slide level2 center">
+<h2>Sampling Distribution</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/2_sdist.png" class="quarto-figure quarto-figure-center" alt="A centered histogram of simulated sample means with a mean of 3.285 and standard deviation of 0.104."></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
 <ul>
-<li>P-value is larger, standardized statistic absolute value is smaller</li>
+<li><p>Each data point represents one simulation of our study</p></li>
+<li><p>The more simulations the better!</p></li>
+<li><p>Generally, this is best plotted using a histogram or dot plot.</p></li>
+</ul>
+</div></div>
+</section>
+<section id="summary-statistics" class="slide level2 center">
+<h2>Summary Statistics</h2>
+<p>Sometimes it is helpful to summarize quantitative data with numerical values</p>
+</section>
+<section id="mean" class="slide level2 center">
+<h2>Mean</h2>
+<p>Add up all the values and divide by the total number of values</p>
+</section>
+<section id="median" class="slide level2">
+<h2>Median</h2>
+<p>Half of the data is above the middle, half of the data is below the middle.</p>
+<ul>
+<li>“Middle” is found when the data is ordered from lowest to highest</li>
+</ul>
+</section>
+<section id="outliers" class="slide level2">
+<h2>Outliers</h2>
+<p>Unusual data points</p>
+<ul>
+<li><p>Easy to pick out using visualizations</p></li>
+<li><p>Can be found if the data is ordered too</p>
+<ul>
+<li>“Eyeballing” it</li>
 </ul></li>
 </ul>
 </section>
-<section id="distance-from-the-null-value-2" class="slide level2 center">
-<h2>1. Distance from the null value</h2>
-
-<img data-src="images/4_distfromnull.png" class="quarto-figure quarto-figure-center r-stretch" alt="Two null distributions with different values for p-hat. P-hat on the right is closer to the null, resulting in a larger p-value."></section>
-<section id="sample-size" class="slide level2 center">
-<h2>2. Sample Size</h2>
+<section id="mean-and-median-example" class="slide level2 center">
+<h2>Mean and Median Example</h2>
+<p><br> Suppose we observe the following data:</p>
+<table class="caption-top">
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">9</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
 <ul>
-<li>Increasing sample size increases strength of evidence</li>
-<li>Decreasing sample size decreases strength of evidence</li>
+<li><p>Mean: <strong>10</strong></p></li>
+<li><p>Median: <strong>9.5</strong></p></li>
+</ul>
+</section></section>
+<section>
+<section id="type-i-and-type-ii-errors" class="title-slide slide level1 center">
+<h1>Type I and Type II Errors</h1>
+
+</section>
+<section id="time-for-a-detour" class="slide level2 center">
+<h2>Time for a detour…</h2>
+<p>Recall our hypotheses</p>
+<ul>
+<li><p><span class="math inline">\(H_{0}\)</span>: What’s expected to happen; chance explanation</p></li>
+<li><p><span class="math inline">\(H_{A}\)</span>: Wait, something different happened!</p></li>
 </ul>
 </section>
-<section id="sample-size-1" class="slide level2 center">
-<h2>2. Sample Size</h2>
-
-<img data-src="images/4_samplesize.png" class="quarto-figure quarto-figure-center r-stretch" alt="Distributions with different sample sizes and values indicating more strength of evidence as sample size increases."></section>
-<section id="one-sided-or-two-sided-hypothesis-test" class="slide level2 center">
-<h2>3. One-sided or two-sided hypothesis test</h2>
-<p>One-sided test:</p>
+<section id="time-for-a-detour-1" class="slide level2 center">
+<h2>Time for a detour…</h2>
+<p>We want strength of evidence in favor of <span class="math inline">\(H_{A}\)</span></p>
 <ul>
-<li>Researchers think observed data will be greater than/less than the null model</li>
+<li><p>So far, we have two methods to obtain strength of evidence:</p>
+<ul>
+<li><p><u><strong>Standardized statistic</strong></u></p></li>
+<li><p><u><strong>P-value</strong></u></p></li>
+</ul></li>
 </ul>
-<p>Two-sided test:</p>
+<p>But, what happens if these methods are wrong?</p>
+</section>
+<section id="time-for-a-detour-2" class="slide level2 center">
+<h2>Time for a detour…</h2>
 <ul>
-<li>Researchers don’t know; just looking for a difference</li>
+<li><p>P-value:</p>
+<ul>
+<li>Derived using simulation or theory</li>
+<li>Based on the null model (random chance), so it could be wrong</li>
+</ul></li>
+<li><p>Standardized statistic:</p>
+<ul>
+<li>Calculated using hypothesized null value</li>
+<li>Again, based on null model and could be wrong</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<p>Goes back to the idea of random chance!</p>
+</div>
+</section>
+<section id="buzz-and-doris" class="slide level2 center">
+<h2>Buzz and Doris</h2>
+<p>Recall the Buzz and Doris example. (Investigating if dolphins can communicate.) <br><br> Hypotheses:</p>
+<ul>
+<li><p><strong>Null:</strong> Buzz is just guessing (50% chance of guessing correctly)</p></li>
+<li><p><strong>Alt:</strong> Buzz is communicating with Doris (Greater than 50% chance of guessing correctly.)</p></li>
 </ul>
 </section>
-<section id="one-sided-or-two-sided-hypothesis-test-1" class="slide level2">
-<h2>3. One-sided or two-sided hypothesis test</h2>
-<p>One-sided or two-sided refers to the form <span class="math inline">\(H_{A}\)</span> takes.</p>
+<section id="buzz-and-doris-1" class="slide level2 center">
+<h2>Buzz and Doris</h2>
+<p>In this context, what does it mean if…</p>
 <ul>
-<li>One-sided test takes the form:</li>
+<li><p>We reject the null hypothesis</p></li>
+<li><p>We fail to reject the null hypothesis</p></li>
 </ul>
-<p><span class="math display">\[H_{A}: \pi &gt; OR &lt; hypothesized\: value\]</span></p>
+</section>
+<section id="type-i-error" class="slide level2 center">
+<h2>Type I Error</h2>
 <ul>
-<li>Two-sided test takes the form:</li>
+<li>We reject the null hypothesis, but it is actually true</li>
+<li>“False alarm”</li>
+<li>In the Buzz and Doris example:
+<ul>
+<li>We conclude that Buzz is communicating with Doris, but he is guessing</li>
+</ul></li>
 </ul>
-<p><span class="math display">\[H_{A}: \pi ≠ hypothesized\: value\]</span></p>
+</section>
+<section id="type-ii-error" class="slide level2 center">
+<h2>Type II Error</h2>
+<ul>
+<li>We fail to reject the null hypothesis, but it is actually false</li>
+<li>“Missed opportunity”</li>
+<li>In the Buzz and Doris example:
+<ul>
+<li>We conclude that Buzz is just guessing, but really, he is communicating with Doris</li>
+</ul></li>
+</ul>
+</section>
+<section id="the-boy-who-cried-wolf" class="slide level2 center">
+<h2>The Boy Who Cried Wolf</h2>
+<p>Let’s look at an example using the classic fairy tale: <br><br> Null: There is no wolf</p>
+<p>Alt: There is a wolf</p>
+</section>
+<section id="the-boy-who-cried-wolf-1" class="slide level2 center">
+<h2>The Boy Who Cried Wolf</h2>
+<ul>
+<li><p>Rejecting the null means there is a wolf, the boy cries wolf and the villagers believe there is a wolf</p></li>
+<li><p>Failing to reject the null means there is no wolf, the boy does not cry wolf and the villagers believe there is no wolf</p></li>
+</ul>
+</section>
+<section id="the-boy-who-cried-wolf-2" class="slide level2 center">
+<h2>The Boy Who Cried Wolf</h2>
+<ul>
+<li><p><strong>Type I Error:</strong> The boy cries wolf and the villagers believe him, but there is no wolf.</p></li>
+<li><p><strong>Type II Error:</strong> The boy does not cry wolf and the villagers believe him, but there’s actually a wolf.</p></li>
+</ul>
+<aside class="notes">
+<p>Draw a punnett square here</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="implications-of-errors" class="slide level2 center">
+<h2>Implications of Errors</h2>
+<p>What does it mean when we make an error?</p>
+<ul>
+<li><p>If a Type I Error is made:</p>
+<ul>
+<li>We’re claiming we have a significant result, when we don’t</li>
+</ul></li>
+<li><p>If a Type II Error is made:</p>
+<ul>
+<li>We have missed a potentially important result</li>
+</ul></li>
+</ul>
+</section>
+<section id="which-type-of-error-is-worse" class="slide level2 center">
+<h2>Which type of error is worse?</h2>
+<p>Well, it depends!</p>
+<ul>
+<li><p>Context is everything</p></li>
+<li><p>Depending on the scenario, one error might be worse to have than the other</p></li>
+<li><p>Sometimes neither error is the “end of the world”</p></li>
+</ul>
+</section></section>
+<section>
+<section id="heart-transplant-example-revisited" class="title-slide slide level1 center">
+<h1>Heart Transplant Example (Revisited)</h1>
+
+</section>
+<section id="heart-transplant-example" class="slide level2 center">
+<h2>Heart Transplant Example</h2>
+<ul>
+<li><p>80% of 10 transplants resulted in deaths within 30 days of the transplant</p></li>
+<li><p>Historical data suggests a 15% mortality rate</p></li>
+</ul>
+</section>
+<section id="heart-transplant-example-1" class="slide level2 center">
+<h2>Heart Transplant Example</h2>
+<ul>
+<li><p>Null: The long run proportion of patients at St.&nbsp;George who die after receiving a heart transplant is greater than 15%</p></li>
+<li><p>Alt: The long run proportion of patients at St.&nbsp;George who die after receiving a heart transplant is greater than 15%</p></li>
+</ul>
+<div class="fragment">
+<p>What does it mean to reject the null?</p>
+</div>
+<div class="fragment">
+<p>What does it mean to fail to reject the null?</p>
+</div>
+</section>
+<section id="heart-transplant-example-2" class="slide level2">
+<h2>Heart Transplant Example</h2>
+<div>
+<ul>
+<li class="fragment"><p>What is the consequence of a Type I Error?</p></li>
+<li class="fragment"><p>What is the consequence of a Type II Error?</p></li>
+</ul>
+</div>
 
 <div class="quarto-auto-generated-content">
 <p><img src="logo.jpg" class="slide-logo"></p>

@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "slides/Chapter 01/section1.5.html#section-1.5-learning-objectives",
+    "href": "slides/Chapter 01/section1.5.html#section-1.5-learning-objectives",
+    "title": "Section 1.5",
+    "section": "Section 1.5 Learning Objectives",
+    "text": "Section 1.5 Learning Objectives\n\nDescribe the sampling distribution of a statistic and define the standard error.\nKnow when/why simulation and theory will yield different results."
+  },
+  {
     "objectID": "slides/Chapter 01/section1.5.html#simulation",
     "href": "slides/Chapter 01/section1.5.html#simulation",
     "title": "Section 1.5",
@@ -117,6 +124,13 @@
     "title": "Section 1.5",
     "section": "Halloween Treats Conclusion",
     "text": "Halloween Treats Conclusion\nSince our standardized statistic using either approach is not outside the twos, we conclude the following:  “We do not have enough evidence to conclude that the long-run proportion of kids who choose candy differs from 0.5.”"
+  },
+  {
+    "objectID": "slides/Chapter 01/section1.3.html#section-1.3-learning-objectives",
+    "href": "slides/Chapter 01/section1.3.html#section-1.3-learning-objectives",
+    "title": "Section 1.3",
+    "section": "Section 1.3 Learning Objectives",
+    "text": "Section 1.3 Learning Objectives\n\nBe able to find and interpret a standardized statistic based on the observed number of successes.\nDraw conclusions on the null hypothesis based on the magnitude of the standardized statistic."
   },
   {
     "objectID": "slides/Chapter 01/section1.3.html#wait-what-is-it-were-trying-to-do",
@@ -308,6 +322,13 @@
     "text": "Method comparison\n\n\n\n\nMethod\nWhen to Reject Null\n\n\nP-value\np-value ≤ 0.05\n\n\nStandardized Statistic\n\\(z\\) &gt; 2 or \\(z\\) &lt; -2\n\n\n\n\n\nReject null = evidence to conclude alternative\nOtherwise, we fail to reject the null"
   },
   {
+    "objectID": "slides/Chapter 01/section1.1.html#section-1.1-learning-objectives",
+    "href": "slides/Chapter 01/section1.1.html#section-1.1-learning-objectives",
+    "title": "Section 1.1",
+    "section": "Section 1.1 Learning Objectives",
+    "text": "Section 1.1 Learning Objectives\n\nKnow the difference between a parameter and a statistic.\nIdentify whether or not study results are statistically significant and whether or not the chance model is a plausible explanation for the data."
+  },
+  {
     "objectID": "slides/Chapter 01/section1.1.html#recall",
     "href": "slides/Chapter 01/section1.1.html#recall",
     "title": "Section 1.1",
@@ -448,13 +469,6 @@
     "text": "2. Simulate\n\nDevelop a “chance model” (aka, a null model)\nChance model = what we would expect to happen at random, assuming there is no underlying cause\nUnder the chance models, repeatedly simulate values for our observed statistic.\nThis develops a sampling distribution (aka, a null distribution)\n\n\nHow might we simulate Doris and Buzz’s experiment?"
   },
   {
-    "objectID": "slides/Chapter 01/section1.1.html#pause-what-the-heck-is-a-distribution",
-    "href": "slides/Chapter 01/section1.1.html#pause-what-the-heck-is-a-distribution",
-    "title": "Section 1.1",
-    "section": "Pause; What the heck is a distribution?",
-    "text": "Pause; What the heck is a distribution?"
-  },
-  {
     "objectID": "slides/Chapter 01/section1.1.html#strength-of-evidence-1",
     "href": "slides/Chapter 01/section1.1.html#strength-of-evidence-1",
     "title": "Section 1.1",
@@ -488,6 +502,13 @@
     "title": "Section 1.1",
     "section": "Simulation using the Applet",
     "text": "Simulation using the Applet\n\n\nAt what point would we be convinced Buzz isn’t guessing?\nIf Buzz correctly guessed…\n\n\n10/16 times?\n12/16 times?\n14/16 times?"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.1.html#section-3.1-learning-objectives",
+    "href": "slides/Chapter 03/section3.1.html#section-3.1-learning-objectives",
+    "title": "Section 3.1",
+    "section": "Section 3.1 Learning Objectives",
+    "text": "Section 3.1 Learning Objectives\n\nCalculate a range of plausible values for the population parameter based on a series of two-sided hypothesis tests where different null hypothesis values are tested.\nBe able to interpret a confidence interval in the context of a problem, and understand what it represents."
   },
   {
     "objectID": "slides/Chapter 03/section3.1.html#recap",
@@ -564,7 +585,7 @@
     "href": "slides/Chapter 03/section3.1.html#confidence-intervals-general-form",
     "title": "Section 3.1",
     "section": "Confidence Intervals: General Form",
-    "text": "Confidence Intervals: General Form\nConfidence Interval (CI) = (Lower Bound, Upper Bound)\n= Observed statistic ± margin of error"
+    "text": "Confidence Intervals: General Form\n Confidence Interval (CI) = (Lower Bound, Upper Bound)\n= Observed statistic ± margin of error"
   },
   {
     "objectID": "slides/Chapter 03/section3.1.html#medical-marijuana-example",
@@ -630,242 +651,228 @@
     "text": "General Confidence Interval Interpretation\n“We are (confidence level)% confident that the (problem context) is between (lower bound) and (upper bound).”"
   },
   {
-    "objectID": "slides/Chapter 02/section2.3.html#up-until-now",
-    "href": "slides/Chapter 02/section2.3.html#up-until-now",
-    "title": "Section 2.3",
-    "section": "Up until now…",
-    "text": "Up until now…\n\nWe have been working with proportions\n\nWe use proportions for categorical (qualitative) data\n\nWhat if our data is qualitative (numerical)?\n\nExamples: Height, weight, time, measurement of length"
+    "objectID": "slides/Chapter 03/section3.3.html#section-3.3-learning-objectives",
+    "href": "slides/Chapter 03/section3.3.html#section-3.3-learning-objectives",
+    "title": "Section 3.3",
+    "section": "Section 3.3 Learning Objectives",
+    "text": "Section 3.3 Learning Objectives\n\nCalculate a confidence interval for a single mean using the 2SD method and the theory-based approach."
   },
   {
-    "objectID": "slides/Chapter 02/section2.3.html#symbol-review",
-    "href": "slides/Chapter 02/section2.3.html#symbol-review",
-    "title": "Section 2.3",
-    "section": "Symbol Review",
-    "text": "Symbol Review\nIn section 2.1, we introduced some new symbols we use with numerical data:\n\nSample mean: \\(\\bar{x}\\)\nSample Standard Deviation: \\(s\\)\nPopulation Mean: \\(\\mu\\)\nPopulation Standard Deviation: \\(\\sigma\\)"
+    "objectID": "slides/Chapter 03/section3.3.html#confidence-intervals",
+    "href": "slides/Chapter 03/section3.3.html#confidence-intervals",
+    "title": "Section 3.3",
+    "section": "Confidence Intervals",
+    "text": "Confidence Intervals\n\nGives us range of plausible values for our parameter of interest\n\nEither \\(\\mu\\) or \\(\\pi\\)"
   },
   {
-    "objectID": "slides/Chapter 02/section2.3.html#symbol-comparison",
-    "href": "slides/Chapter 02/section2.3.html#symbol-comparison",
-    "title": "Section 2.3",
-    "section": "Symbol Comparison",
-    "text": "Symbol Comparison\n Symbols we use depend on our variable type:\n\n\n\n\n\n\n\n\n\nCategorical Variable\nQuantitative Variable\n\n\nPopulation\n\\(\\pi\\)\n\\(\\mu\\)\n\n\nSample\n\\(\\hat{p}\\)\n\\(\\bar{x}\\)\n\n\n\n\n\nNote: We only use sample standard deviation and standard deviation symbols (\\(s\\), \\(\\sigma\\)) when we are dealing with quantitative variables."
+    "objectID": "slides/Chapter 03/section3.3.html#confidence-intervals-general-form",
+    "href": "slides/Chapter 03/section3.3.html#confidence-intervals-general-form",
+    "title": "Section 3.3",
+    "section": "Confidence Intervals: General Form",
+    "text": "Confidence Intervals: General Form\n Confidence Interval (CI) = (Lower Bound, Upper Bound)\n= Observed statistic ± margin of error\n\nMargin of Error = Multiplier * Standard Error"
   },
   {
-    "objectID": "slides/Chapter 02/section2.3.html#strength-of-evidence-with-a-single-quantitative-variable",
-    "href": "slides/Chapter 02/section2.3.html#strength-of-evidence-with-a-single-quantitative-variable",
-    "title": "Section 2.3",
-    "section": "Strength of Evidence with a Single Quantitative Variable",
-    "text": "Strength of Evidence with a Single Quantitative Variable\nEssentially the same process, but now we’re working with averages\n\nVariable of Interest: some numerical measure\nParameter: The long run average (\\(\\mu\\))\nObserved statistic: Average calculated from the sample (\\(\\bar{x}\\))"
+    "objectID": "slides/Chapter 03/section3.3.html#sd-95-confidence-interval-for-proportions",
+    "href": "slides/Chapter 03/section3.3.html#sd-95-confidence-interval-for-proportions",
+    "title": "Section 3.3",
+    "section": "2SD (95%) Confidence Interval for Proportions",
+    "text": "2SD (95%) Confidence Interval for Proportions\n\\[CI=\\hat{p}±2*\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}\\]\n\\[=(Lower\\:Bound,Upper\\:Bound)\\]\n\nWhat do you think changes if we’re dealing with a mean rather than a proportion?"
   },
   {
-    "objectID": "slides/Chapter 02/section2.3.html#strength-of-evidence-with-a-single-quantitative-variable-1",
-    "href": "slides/Chapter 02/section2.3.html#strength-of-evidence-with-a-single-quantitative-variable-1",
-    "title": "Section 2.3",
-    "section": "Strength of Evidence with a Single Quantitative Variable",
-    "text": "Strength of Evidence with a Single Quantitative Variable\nHypotheses in words:\n\nNull: The long run average is equal to (average in context of the problem)\nAlt: The long run average is (less than/greater than/not equal to the average in the context of the problem)"
+    "objectID": "slides/Chapter 03/section3.3.html#formulas",
+    "href": "slides/Chapter 03/section3.3.html#formulas",
+    "title": "Section 3.3",
+    "section": "Formulas",
+    "text": "Formulas\nStandard error for means:\n\\[SE=\\frac{s}{\\sqrt{n}}\\]\n2SD (95%) Confidence Interval for Means:\n\\[CI=\\bar{x}±2*\\frac{s}{\\sqrt{n}}\\]\n\nWhy does it make sense that we use \\(\\bar{x}\\) now?"
   },
   {
-    "objectID": "slides/Chapter 02/section2.3.html#strength-of-evidence-with-a-single-quantitative-variable-2",
-    "href": "slides/Chapter 02/section2.3.html#strength-of-evidence-with-a-single-quantitative-variable-2",
-    "title": "Section 2.3",
-    "section": "Strength of Evidence with a Single Quantitative Variable",
-    "text": "Strength of Evidence with a Single Quantitative Variable\nHypotheses in symbols:\n\n\\(H_{0}\\): \\(\\mu\\) = previously known number\n\\(H_{A}\\): \\(\\mu\\) &gt;,&lt;,≠ previously known number"
+    "objectID": "slides/Chapter 03/section3.3.html#validity-conditions-for-single-mean",
+    "href": "slides/Chapter 03/section3.3.html#validity-conditions-for-single-mean",
+    "title": "Section 3.3",
+    "section": "Validity Conditions for Single Mean",
+    "text": "Validity Conditions for Single Mean\nWe must meet the validity conditions for the theory-based approach:\n\nSample size ≥ 20\nDistribution not strongly skewed"
   },
   {
-    "objectID": "slides/Chapter 02/section2.3.html#ceo-example",
-    "href": "slides/Chapter 02/section2.3.html#ceo-example",
-    "title": "Section 2.3",
-    "section": "CEO Example",
-    "text": "CEO Example\n\n\n\nVariable of interest: # of emails in a day\nParameter: long run average number of emails received in a day (\\(\\mu\\))\nHypotheses in symbols:\n\n\\(H_{0}\\): \\(\\mu\\) = 8\n\\(H_{A}\\): \\(\\mu\\) &gt; 8\n\n\n\n\n\n\n\n\n\nScenario\n\n\n\n\nYou are interested in whether the number of emails the CEO of Apple receives each day is more than 8."
+    "objectID": "slides/Chapter 03/section3.3.html#used-hondas",
+    "href": "slides/Chapter 03/section3.3.html#used-hondas",
+    "title": "Section 3.3",
+    "section": "Used Hondas",
+    "text": "Used Hondas\n\n\n \n\nPrice data from a random sample of 102 used Honda Civics for sale on the internet is displayed on the histogram. The sample mean of the data was $13,292 with a standard deviation of $4,535.\n\n\nIs the criteria met to use the confidence interval approach?"
   },
   {
-    "objectID": "slides/Chapter 02/section2.3.html#simulation",
-    "href": "slides/Chapter 02/section2.3.html#simulation",
-    "title": "Section 2.3",
-    "section": "Simulation",
-    "text": "Simulation\n\nFor categorical data:\n\nCoin tosses\nDie rolls\nSpinners"
+    "objectID": "slides/Chapter 03/section3.3.html#calculating-the-confidence-interval",
+    "href": "slides/Chapter 03/section3.3.html#calculating-the-confidence-interval",
+    "title": "Section 3.3",
+    "section": "Calculating the Confidence Interval",
+    "text": "Calculating the Confidence Interval\n\n\n\\(\\bar{x}=13292\\)\n\\(n=102\\)\n\\(s=4535\\)\n\\(SE=\\frac{s}{\\sqrt{n}}=\\frac{4535}{\\sqrt{102}}=449.03\\)\n\\(CI=\\bar{x}±2*SE=13292±2*449.03\\)\nLower Bound: \\(13292-2*449.03=12393.94\\)\nUpper Bound: \\(13292+2*449.03=14190.06\\)"
   },
   {
-    "objectID": "slides/Chapter 02/section2.3.html#simulation-1",
-    "href": "slides/Chapter 02/section2.3.html#simulation-1",
-    "title": "Section 2.3",
-    "section": "Simulation",
-    "text": "Simulation\n\nFor numerical data:\n\nWe can’t use those methods\nThe book simulates large, hypothetical data\n\nSo, we can’t use the Applet to simulate\nWe will use the thoery-based approach"
+    "objectID": "slides/Chapter 03/section3.3.html#interpreting-the-confidence-interval",
+    "href": "slides/Chapter 03/section3.3.html#interpreting-the-confidence-interval",
+    "title": "Section 3.3",
+    "section": "Interpreting the Confidence Interval",
+    "text": "Interpreting the Confidence Interval\n“We are 95% confident that the long run mean of all used Honda Civics for sale on the internet is between $12,393.94 and $14,190.06.”"
   },
   {
-    "objectID": "slides/Chapter 02/section2.3.html#theory-based-approach-quantitative-variable",
-    "href": "slides/Chapter 02/section2.3.html#theory-based-approach-quantitative-variable",
-    "title": "Section 2.3",
-    "section": "Theory Based Approach (Quantitative Variable)",
-    "text": "Theory Based Approach (Quantitative Variable)\nValidity conditions:\n\nThe variable of interest should have a symmetric distribution, or,\nn ≥ 20 and not strongly skewed"
+    "objectID": "slides/Chapter 03/section3.3.html#conclusions-from-a-confidence-interval",
+    "href": "slides/Chapter 03/section3.3.html#conclusions-from-a-confidence-interval",
+    "title": "Section 3.3",
+    "section": "Conclusions from a Confidence Interval",
+    "text": "Conclusions from a Confidence Interval\n\nIf our null hypothesis value is OUTSIDE our confidence interval:\n\nReject the null\nIt’s not a plausible value\n\nIf our null hypothesis is INSIDE the confidence interval:\n\nFail to reject the null\nIt’s a plausible value\n\n\n\nNote that this example doesn’t have a hypothesized value! We are simply interpreting the interval."
   },
   {
-    "objectID": "slides/Chapter 02/section2.3.html#theory-based-approach-quantitative-variable-1",
-    "href": "slides/Chapter 02/section2.3.html#theory-based-approach-quantitative-variable-1",
-    "title": "Section 2.3",
-    "section": "Theory Based Approach (Quantitative Variable)",
-    "text": "Theory Based Approach (Quantitative Variable)\n\nWith numerical data, we can find \\(s\\) (sample standard deviation)\nThis changes our standardized statistic calculation\n\n\\[SE=\\frac{s}{\\sqrt{n}}\\]"
+    "objectID": "slides/Chapter 03/section3.3.html#statistical-significance-methods",
+    "href": "slides/Chapter 03/section3.3.html#statistical-significance-methods",
+    "title": "Section 3.3",
+    "section": "Statistical Significance Methods",
+    "text": "Statistical Significance Methods\nWe can use the same three methods with a single mean:\n\nP-value\nStandardized Statistic\nConfidence Interval\n\n\nRemember that all three methods will agree with each other!\n\nAll either reject or fail to reject \\(H_{0}\\)"
   },
   {
-    "objectID": "slides/Chapter 02/section2.3.html#theory-based-approach-quantitative-variable-2",
-    "href": "slides/Chapter 02/section2.3.html#theory-based-approach-quantitative-variable-2",
-    "title": "Section 2.3",
-    "section": "Theory Based Approach (Quantitative Variable)",
-    "text": "Theory Based Approach (Quantitative Variable)\n\nWith numerical data, we use “\\(t\\)” instead of “\\(z\\)” to describe our standardized statistic\n\n\\[Standardized\\: Statistic\\:= t=\\frac{\\bar{x}-\\mu}{SE}=\\frac{\\bar{x}-\\mu}{\\frac{s}{\\sqrt{n}}}\\]"
+    "objectID": "slides/Chapter 04/section4.1.html#section-4.1-learning-objectives",
+    "href": "slides/Chapter 04/section4.1.html#section-4.1-learning-objectives",
+    "title": "Section 4.1",
+    "section": "Section 4.1 Learning Objectives",
+    "text": "Section 4.1 Learning Objectives\n\nUnderstand and be able to calculate conditional proportions.\nBe able to determine which variable is the explanatory variable and which is the response variable in a given context.\nUnderstand what a confounding variable is and how it can affect association assumptions."
   },
   {
-    "objectID": "slides/Chapter 02/section2.3.html#drawing-conclusions",
-    "href": "slides/Chapter 02/section2.3.html#drawing-conclusions",
-    "title": "Section 2.3",
-    "section": "Drawing Conclusions",
-    "text": "Drawing Conclusions\n\nSame as categorical data\n\n“Outside the twos” = reject the null\nOtherwise fail to reject (FTR)"
+    "objectID": "slides/Chapter 04/section4.1.html#recap",
+    "href": "slides/Chapter 04/section4.1.html#recap",
+    "title": "Section 4.1",
+    "section": "Recap",
+    "text": "Recap\n\nChapters P-3: Is there an effect? How big is the effect?\nWe do this by:\n\nAsking a research question.\nSetting up a hypothesis test.\nTesting our hypothesis for significance of evidence by:\n\nP-value\nStandardized statistic\nConfidence intervals"
   },
   {
-    "objectID": "slides/Chapter 02/section2.3.html#drawing-conclusions-1",
-    "href": "slides/Chapter 02/section2.3.html#drawing-conclusions-1",
-    "title": "Section 2.3",
-    "section": "Drawing Conclusions",
-    "text": "Drawing Conclusions\nConclusions take the same form:\n\nRestate the alt. hypothesis\n\n“We have enough evidence to conclude that the long-run average is (greater than/less than/not equal to) _____.”\n“We do not have enough evidence to conclude that the long-run average is (greater than/less than/not equal to) _____.”"
+    "objectID": "slides/Chapter 04/section4.1.html#overview",
+    "href": "slides/Chapter 04/section4.1.html#overview",
+    "title": "Section 4.1",
+    "section": "Overview",
+    "text": "Overview\nPreviously, research questions focused on one proportion or mean\n\nWhat proportion of the time did Buzz choose the right button?\nWhat is the average time of an Olympic bobsleigh team?"
   },
   {
-    "objectID": "slides/Chapter 02/section2.3.html#ceo-example-1",
-    "href": "slides/Chapter 02/section2.3.html#ceo-example-1",
-    "title": "Section 2.3",
-    "section": "CEO Example",
-    "text": "CEO Example\n\n\n\n\nSample size: n=30\nCan we use the theory based approach? Yes\nObserved statistic: \\(\\bar{x}\\)=10.2\nSample standard deviation: \\(s\\)=2.091\n\n\n\n\n\n\n\n\nScenario\n\n\n\n\nYou are interested in whether the number of emails the CEO of Apple receives each day is more than 8. Suppose you observe 30 days and find that the average number of emails is 10.2, with a sample S.D. of 2.091. The distribution is not strongly skewed."
+    "objectID": "slides/Chapter 04/section4.1.html#overview-1",
+    "href": "slides/Chapter 04/section4.1.html#overview-1",
+    "title": "Section 4.1",
+    "section": "Overview",
+    "text": "Overview\nNow, we want to compare two groups\n\nAre smokers more likely than nonsmokers to develop lung cancer?\nAre children who used night lights as infants more likely to need glasses than those who didn’t use night lights?"
   },
   {
-    "objectID": "slides/Chapter 02/section2.3.html#ceo-example-2",
-    "href": "slides/Chapter 02/section2.3.html#ceo-example-2",
-    "title": "Section 2.3",
-    "section": "CEO Example",
-    "text": "CEO Example\nStandard error:\n\\[SE=\\frac{s}{\\sqrt{n}}=\\frac{2.091}{\\sqrt{30}}=0.38\\]\nStandardized statistic:\n\\[ t=\\frac{\\bar{x}-\\mu}{SE}=\\frac{10.2-8}{0.38}=5.78\\]"
+    "objectID": "slides/Chapter 04/section4.1.html#explanatory-variable-independent-variable",
+    "href": "slides/Chapter 04/section4.1.html#explanatory-variable-independent-variable",
+    "title": "Section 4.1",
+    "section": "Explanatory Variable (Independent Variable)",
+    "text": "Explanatory Variable (Independent Variable)\nVariable we think is “explaining” the response variable.\n\nResearchers manipulate this variable"
   },
   {
-    "objectID": "slides/Chapter 02/section2.3.html#ceo-example-conclusion",
-    "href": "slides/Chapter 02/section2.3.html#ceo-example-conclusion",
-    "title": "Section 2.3",
-    "section": "CEO Example Conclusion",
-    "text": "CEO Example Conclusion\n“We have enough evidence to conclude that the long run average number of emails the CEO receives in a day is greater than 8.”"
+    "objectID": "slides/Chapter 04/section4.1.html#response-variable-dependent-variable",
+    "href": "slides/Chapter 04/section4.1.html#response-variable-dependent-variable",
+    "title": "Section 4.1",
+    "section": "Response Variable (Dependent Variable)",
+    "text": "Response Variable (Dependent Variable)\nVariable that is being impacted or changed by the explanatory variable.\n\n“Depends on” or “responds to” the explanatory variable"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "STAT 218 Slides",
-    "section": "",
-    "text": "Chapter P\n\n\n\n\n\n\n\n\n\n\n\nSection 1.1\n\n\n\n\n\n\n\n\n\n\n\nSection 1.2\n\n\n\n\n\n\n\n\n\n\n\nSection 1.3\n\n\n\n\n\n\n\n\n\n\n\nSection 1.4\n\n\n\n\n\n\n\n\n\n\n\nSection 1.5\n\n\n\n\n\n\n\n\n\n\n\nSection 11.1\n\n\n\n\n\n\n\n\n\n\n\nSection 11.2\n\n\n\n\n\n\n\n\n\n\n\nSection 11.3\n\n\n\n\n\n\n\n\n\n\n\nSection 2.1\n\n\n\n\n\n\n\n\n\n\n\nSection 2.2\n\n\n\n\n\n\n\n\n\n\n\nSection 2.3\n\n\n\n\n\n\n\n\n\n\n\nSection 3.1\n\n\n\n\n\n\n\n\n\n\n\nSection 3.2\n\n\n\n\n\n\n\n\n\n\n\nSection 3.3\n\n\n\n\n\n\n\n\n\n\n\nSection 3.4\n\n\n\n\n\n\n\n\n\n\n\nSection 4.1\n\n\n\n\n\n\n\n\n\n\n\nSection 4.2\n\n\n\n\n\n\n\n\n\n\n\nSection 5.1\n\n\n\n\n\n\n\n\n\n\n\nSection 5.2\n\n\n\n\n\n\n\n\n\n\n\nSection 5.3\n\n\n\n\n\n\n\n\n\n\n\nSection 6.1\n\n\n\n\n\n\n\n\n\n\n\nSection 6.2\n\n\n\n\n\n\n\n\n\n\n\nSection 6.3\n\n\n\n\n\n\n\n\n\n\n\nSection 7.1\n\n\n\n\n\n\n\n\n\n\n\nSection 7.2\n\n\n\n\n\n\n\n\n\n\n\nSection 7.3\n\n\n\n\n\n\n\nNo matching items"
+    "objectID": "slides/Chapter 04/section4.1.html#example",
+    "href": "slides/Chapter 04/section4.1.html#example",
+    "title": "Section 4.1",
+    "section": "Example",
+    "text": "Example\nWe may think that if we eat and apple a day (explanatory variable) then we’ll have to go to the doctor (response variable) less!"
   },
   {
-    "objectID": "slides/Chapter 02/section2.1.html#recall",
-    "href": "slides/Chapter 02/section2.1.html#recall",
-    "title": "Section 2.1",
-    "section": "Recall…",
-    "text": "Recall…\n\nPopulation: The complete collection of all objects that are of interest for a given scenario\n\nEx: People, animals, basketball games- can be anything, really!\n\nSample: A subset of observational units from the population of interest"
+    "objectID": "slides/Chapter 04/section4.1.html#role-of-variables-activity",
+    "href": "slides/Chapter 04/section4.1.html#role-of-variables-activity",
+    "title": "Section 4.1",
+    "section": "Role of Variables Activity",
+    "text": "Role of Variables Activity\nFor each of the variable pairs, identify which you think is the explanatory and which is the response\n\nSmoking and lung cancer\nHeart disease and diet\nExam score and hours studied\nVitamin C and colds\nHair color and eye color"
   },
   {
-    "objectID": "slides/Chapter 02/section2.1.html#recall-1",
-    "href": "slides/Chapter 02/section2.1.html#recall-1",
-    "title": "Section 2.1",
-    "section": "Recall…",
-    "text": "Recall…\n\nGoal: Generaliztion\n\nDescribe the sample\nExtend to a larger population"
+    "objectID": "slides/Chapter 04/section4.1.html#associated-variables",
+    "href": "slides/Chapter 04/section4.1.html#associated-variables",
+    "title": "Section 4.1",
+    "section": "Associated Variables",
+    "text": "Associated Variables\nAssociated: When one variable gives valuable information about the other\nEx:\n\nHours of studying before an exam could give information on how well you’ll do\nHow many apples you eat could give information about how often you’ll go to the doctor"
   },
   {
-    "objectID": "slides/Chapter 02/section2.1.html#representative-sample",
-    "href": "slides/Chapter 02/section2.1.html#representative-sample",
-    "title": "Section 2.1",
-    "section": "Representative Sample",
-    "text": "Representative Sample\nA sample that is similar to or representative of a larger population.\n\nEx: Would our class data be representative of all UNL students?"
+    "objectID": "slides/Chapter 04/section4.1.html#cause-and-effect",
+    "href": "slides/Chapter 04/section4.1.html#cause-and-effect",
+    "title": "Section 4.1",
+    "section": "Cause and effect?",
+    "text": "Cause and effect?\nBut, can we say that our explanatory variable causes our response variable? No!\n\nAssociation does NOT mean causation\nIf you remember anything from this class, let it be this!!"
   },
   {
-    "objectID": "slides/Chapter 02/section2.1.html#bias",
-    "href": "slides/Chapter 02/section2.1.html#bias",
-    "title": "Section 2.1",
-    "section": "Bias",
-    "text": "Bias\nA sample that consistently underestimates or overestimates a population parameter of interest\n\nEx: Would the UNL volleyball team be representative of the average height of all female UNL students?"
+    "objectID": "slides/Chapter 04/section4.1.html#confounding-variable",
+    "href": "slides/Chapter 04/section4.1.html#confounding-variable",
+    "title": "Section 4.1",
+    "section": "Confounding Variable",
+    "text": "Confounding Variable\nA variable that is related to both the explanatory variable and response variable in such a way that its effects cannot be separated from the effects of the explanatory."
   },
   {
-    "objectID": "slides/Chapter 02/section2.1.html#visual-of-population-vs.-sample",
-    "href": "slides/Chapter 02/section2.1.html#visual-of-population-vs.-sample",
-    "title": "Section 2.1",
-    "section": "Visual of Population vs. Sample",
-    "text": "Visual of Population vs. Sample"
+    "objectID": "slides/Chapter 04/section4.1.html#using-proportions",
+    "href": "slides/Chapter 04/section4.1.html#using-proportions",
+    "title": "Section 4.1",
+    "section": "Using Proportions",
+    "text": "Using Proportions\n\nCan we determine association using proportions?\n\nExample (next slide):\n\nIs political ideology associated with views on the moral acceptability of cloning animals?\nWhat about the importance of religion?"
   },
   {
-    "objectID": "slides/Chapter 02/section2.1.html#how-should-we-sample",
-    "href": "slides/Chapter 02/section2.1.html#how-should-we-sample",
-    "title": "Section 2.1",
-    "section": "How should we sample?",
-    "text": "How should we sample?"
+    "objectID": "slides/Chapter 04/section4.1.html#cloning-animals",
+    "href": "slides/Chapter 04/section4.1.html#cloning-animals",
+    "title": "Section 4.1",
+    "section": "Cloning Animals",
+    "text": "Cloning Animals"
   },
   {
-    "objectID": "slides/Chapter 02/section2.1.html#convenience-sampling",
-    "href": "slides/Chapter 02/section2.1.html#convenience-sampling",
-    "title": "Section 2.1",
-    "section": "Convenience Sampling ❌",
-    "text": "Convenience Sampling ❌\n\nNot a good method\n“Hand picking” a sample\nCreates bias\nEx: Interested in all Nebraska adults but only taking a sample of those living in Lincoln."
+    "objectID": "slides/Chapter 04/section4.1.html#ice-cream-sold-vs-drownings",
+    "href": "slides/Chapter 04/section4.1.html#ice-cream-sold-vs-drownings",
+    "title": "Section 4.1",
+    "section": "Ice Cream Sold vs Drownings",
+    "text": "Ice Cream Sold vs Drownings"
   },
   {
-    "objectID": "slides/Chapter 02/section2.1.html#simple-random-sampling",
-    "href": "slides/Chapter 02/section2.1.html#simple-random-sampling",
-    "title": "Section 2.1",
-    "section": "Simple Random Sampling ✅",
-    "text": "Simple Random Sampling ✅\n\nEvery population member has an equal chance to be chosen\nCan generalize our results to entire population\nChoose from a sampling frame\nSampling frame: a list of all individuals in a population of interest\n\nEx: List of all students from UNL registrar"
+    "objectID": "slides/Chapter 04/section4.1.html#ice-cream-sold-vs-drownings-1",
+    "href": "slides/Chapter 04/section4.1.html#ice-cream-sold-vs-drownings-1",
+    "title": "Section 4.1",
+    "section": "Ice Cream Sold vs Drownings",
+    "text": "Ice Cream Sold vs Drownings"
   },
   {
-    "objectID": "slides/Chapter 02/section2.1.html#more-symbols",
-    "href": "slides/Chapter 02/section2.1.html#more-symbols",
-    "title": "Section 2.1",
-    "section": "More Symbols!",
-    "text": "More Symbols!\nIn some situations, we are interested in the long run average\n\nAs opposed to the long run proportion, in the last chapter"
+    "objectID": "slides/Chapter 04/section4.1.html#confounding-variable-month",
+    "href": "slides/Chapter 04/section4.1.html#confounding-variable-month",
+    "title": "Section 4.1",
+    "section": "Confounding Variable: Month",
+    "text": "Confounding Variable: Month"
   },
   {
-    "objectID": "slides/Chapter 02/section2.1.html#more-symbols-1",
-    "href": "slides/Chapter 02/section2.1.html#more-symbols-1",
-    "title": "Section 2.1",
-    "section": "More Symbols!",
-    "text": "More Symbols!\n\nSample mean: \\(\\bar{x}\\)\nSample Standard Deviation: \\(s\\)\nPopulation Mean: \\(\\mu\\)\nPopulation Standard Deviation: \\(\\sigma\\)"
+    "objectID": "slides/Chapter 04/section4.1.html#all-nighters-gpas",
+    "href": "slides/Chapter 04/section4.1.html#all-nighters-gpas",
+    "title": "Section 4.1",
+    "section": "All-Nighters & GPAs",
+    "text": "All-Nighters & GPAs\n\n\nClaim:\nExplanatory variable:\n\nCategorical or quantitative?\n\nResponse variable:\n\nCategorical or quantitative?\n\nPotential confounding variable(s):\n\n\n\n\n\n\n\nScenario\n\n\n\n\nResearchers found that students who claim to have never pulled an all-nighter have an average GPA of 3.1, while students who have pulled an all-nighter have an average GPA of 2.9."
   },
   {
-    "objectID": "slides/Chapter 02/section2.1.html#symbol-comparison",
-    "href": "slides/Chapter 02/section2.1.html#symbol-comparison",
-    "title": "Section 2.1",
-    "section": "Symbol Comparison",
-    "text": "Symbol Comparison\n Symbols we use depend on our variable type:\n\n\n\n\n\n\n\n\n\nCategorical Variable\nQuantitative Variable\n\n\nPopulation\n\\(\\pi\\)\n\\(\\mu\\)\n\n\nSample\n\\(\\hat{p}\\)\n\\(\\bar{x}\\)\n\n\n\n\n\nNote: We only use sample standard deviation and standard deviation symbols (\\(s\\), \\(\\sigma\\)) when we are dealing with quantitative variables."
+    "objectID": "slides/Chapter 04/section4.1.html#all-nighters-gpas-1",
+    "href": "slides/Chapter 04/section4.1.html#all-nighters-gpas-1",
+    "title": "Section 4.1",
+    "section": "All-Nighters & GPAs",
+    "text": "All-Nighters & GPAs\n\nClaim: All-nighters cause lower GPAs.\nExplanatory variable: Pulling an all-nighter or not; Categorical\nResponse variable: GPA; Quantitative\nPotential confounding variable(s):"
   },
   {
-    "objectID": "slides/Chapter 02/section2.1.html#example-1",
-    "href": "slides/Chapter 02/section2.1.html#example-1",
-    "title": "Section 2.1",
-    "section": "Example 1",
-    "text": "Example 1\n\n\n\nPopulation:\nSample:\nBiased or Representative?\nVariable of interest?\nCategorical or quantitative?\nPopulation symbol:\nSample symbol:\n\n\n\n\n\n\n\n\nScenario\n\n\n\n\nSuppose you want to investigate the long run proportion of students at UNL who are morning people. You ask everyone in your 8am class if they are a morning or night person."
+    "objectID": "slides/Chapter 04/section4.1.html#tvs-lifespan",
+    "href": "slides/Chapter 04/section4.1.html#tvs-lifespan",
+    "title": "Section 4.1",
+    "section": "TV’s & Lifespan",
+    "text": "TV’s & Lifespan\n\n\nClaim:\nExplanatory variable:\n\nCategorical or quantitative?\n\nResponse variable:\n\nCategorical or quantitative?\n\nPotential confounding variable(s):\n\n\n\n\n\n\n\nScenario\n\n\n\n\nResearchers found that countries that have more TVs per 1000 people have a higher average lifespan."
   },
   {
-    "objectID": "slides/Chapter 02/section2.1.html#example-1-1",
-    "href": "slides/Chapter 02/section2.1.html#example-1-1",
-    "title": "Section 2.1",
-    "section": "Example 1",
-    "text": "Example 1\n\nPopulation: All UNL students\nSample: Students in your 8am class\nBiased or Representative? Biased\nVariable of interest? Morning or night person\nCategorical or quantitative? Categorical\nPopulation symbol: \\(\\pi\\)\nSample symbol: \\(\\hat{p}\\)"
+    "objectID": "slides/Chapter 04/section4.1.html#tvs-lifespan-1",
+    "href": "slides/Chapter 04/section4.1.html#tvs-lifespan-1",
+    "title": "Section 4.1",
+    "section": "TV’s & Lifespan",
+    "text": "TV’s & Lifespan\n\nClaim: TVs increase lifespan.\nExplanatory variable: Number of TVs per 1000 people; Quantitative\nResponse variable: Average lifespan; Quantitative\nPotential confounding variable(s):"
   },
   {
-    "objectID": "slides/Chapter 02/section2.1.html#example-2",
-    "href": "slides/Chapter 02/section2.1.html#example-2",
-    "title": "Section 2.1",
-    "section": "Example 2",
-    "text": "Example 2\n\n\n\nPopulation:\nSample:\nBiased or Representative?\nVariable of interest?\nCategorical or quantitative?\nPopulation symbol:\nSample symbol:\n\n\n\n\n\n\n\n\nScenario\n\n\n\n\nA researcher wants to investigate the average lifespan of a new fish, of which only three schools are known to exist. From the three schools, she randomly selects 30 fish to track the lifespans of."
-  },
-  {
-    "objectID": "slides/Chapter 02/section2.1.html#example-2-1",
-    "href": "slides/Chapter 02/section2.1.html#example-2-1",
-    "title": "Section 2.1",
-    "section": "Example 2",
-    "text": "Example 2\n\nPopulation: All of the known schools of fish\nSample: The 30 selected fish\nBiased or Representative? Representative\nVariable of interest? Lifespan\nCategorical or quantitative? Numerical\nPopulation symbol: \\(\\mu\\)\nSample symbol: \\(\\bar{x}\\)"
-  },
-  {
-    "objectID": "slides/Chapter 02/section2.1.html#section",
-    "href": "slides/Chapter 02/section2.1.html#section",
-    "title": "Section 2.1",
-    "section": "",
-    "text": "Complete the “Sampling Words” exploration\nSubmit to Canvas when done\nExtra time can be used for homework"
+    "objectID": "slides/Chapter 02/section2.2.html#section-2.2-learning-objectives",
+    "href": "slides/Chapter 02/section2.2.html#section-2.2-learning-objectives",
+    "title": "Section 2.2",
+    "section": "Section 2.2 Learning Objectives",
+    "text": "Section 2.2 Learning Objectives\n\nDescribe the distribution of a quantitative variable in terms of shape, center, variability, and unusual observations.\nIdentify parameters (such as long-run/population means or medians) and statistics (such as sample means or sample medians) in a statistical study.\nKnow the difference between a Type I and Type II error and what the implications/consequences are."
   },
   {
     "objectID": "slides/Chapter 02/section2.2.html#up-until-now",
@@ -1071,11 +1078,711 @@
     "text": "Heart Transplant Example\n\n\nWhat is the consequence of a Type I Error?\nWhat is the consequence of a Type II Error?"
   },
   {
-    "objectID": "slides/Chapter 03/section3.2.html#recall-confidence-intervals",
-    "href": "slides/Chapter 03/section3.2.html#recall-confidence-intervals",
+    "objectID": "slides/Chapter 02/section2.1.html#section-2.1-learning-objectives",
+    "href": "slides/Chapter 02/section2.1.html#section-2.1-learning-objectives",
+    "title": "Section 2.1",
+    "section": "Section 2.1 Learning Objectives",
+    "text": "Section 2.1 Learning Objectives\n\nDescribe how to select a random sample and recognize that a random sample is that it is likely to be representative of the population regardless of sample size.\nIdentify parameters (long-run proportion) and statistics (sample proportion) in a statistical study."
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.1.html#recall",
+    "href": "slides/Chapter 02/section2.1.html#recall",
+    "title": "Section 2.1",
+    "section": "Recall…",
+    "text": "Recall…\n\nPopulation: The complete collection of all objects that are of interest for a given scenario\n\nEx: People, animals, basketball games- can be anything, really!\n\nSample: A subset of observational units from the population of interest"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.1.html#recall-1",
+    "href": "slides/Chapter 02/section2.1.html#recall-1",
+    "title": "Section 2.1",
+    "section": "Recall…",
+    "text": "Recall…\n\nGoal: Generaliztion\n\nDescribe the sample\nExtend to a larger population"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.1.html#representative-sample",
+    "href": "slides/Chapter 02/section2.1.html#representative-sample",
+    "title": "Section 2.1",
+    "section": "Representative Sample",
+    "text": "Representative Sample\nA sample that is similar to or representative of a larger population.\n\nEx: Would our class data be representative of all UNL students?"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.1.html#bias",
+    "href": "slides/Chapter 02/section2.1.html#bias",
+    "title": "Section 2.1",
+    "section": "Bias",
+    "text": "Bias\nA sample that consistently underestimates or overestimates a population parameter of interest\n\nEx: Would the UNL volleyball team be representative of the average height of all female UNL students?"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.1.html#visual-of-population-vs.-sample",
+    "href": "slides/Chapter 02/section2.1.html#visual-of-population-vs.-sample",
+    "title": "Section 2.1",
+    "section": "Visual of Population vs. Sample",
+    "text": "Visual of Population vs. Sample"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.1.html#how-should-we-sample",
+    "href": "slides/Chapter 02/section2.1.html#how-should-we-sample",
+    "title": "Section 2.1",
+    "section": "How should we sample?",
+    "text": "How should we sample?"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.1.html#convenience-sampling",
+    "href": "slides/Chapter 02/section2.1.html#convenience-sampling",
+    "title": "Section 2.1",
+    "section": "Convenience Sampling ❌",
+    "text": "Convenience Sampling ❌\n\nNot a good method\n“Hand picking” a sample\nCreates bias\nEx: Interested in all Nebraska adults but only taking a sample of those living in Lincoln."
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.1.html#simple-random-sampling",
+    "href": "slides/Chapter 02/section2.1.html#simple-random-sampling",
+    "title": "Section 2.1",
+    "section": "Simple Random Sampling ✅",
+    "text": "Simple Random Sampling ✅\n\nEvery population member has an equal chance to be chosen\nCan generalize our results to entire population\nChoose from a sampling frame\nSampling frame: a list of all individuals in a population of interest\n\nEx: List of all students from UNL registrar"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.1.html#more-symbols",
+    "href": "slides/Chapter 02/section2.1.html#more-symbols",
+    "title": "Section 2.1",
+    "section": "More Symbols!",
+    "text": "More Symbols!\nIn some situations, we are interested in the long run average\n\nAs opposed to the long run proportion, in the last chapter"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.1.html#more-symbols-1",
+    "href": "slides/Chapter 02/section2.1.html#more-symbols-1",
+    "title": "Section 2.1",
+    "section": "More Symbols!",
+    "text": "More Symbols!\n\nSample mean: \\(\\bar{x}\\)\nSample Standard Deviation: \\(s\\)\nPopulation Mean: \\(\\mu\\)\nPopulation Standard Deviation: \\(\\sigma\\)"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.1.html#symbol-comparison",
+    "href": "slides/Chapter 02/section2.1.html#symbol-comparison",
+    "title": "Section 2.1",
+    "section": "Symbol Comparison",
+    "text": "Symbol Comparison\n Symbols we use depend on our variable type:\n\n\n\n\n\n\n\n\n\nCategorical Variable\nQuantitative Variable\n\n\nPopulation\n\\(\\pi\\)\n\\(\\mu\\)\n\n\nSample\n\\(\\hat{p}\\)\n\\(\\bar{x}\\)\n\n\n\n\n\nNote: We only use sample standard deviation and standard deviation symbols (\\(s\\), \\(\\sigma\\)) when we are dealing with quantitative variables."
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.1.html#example-1",
+    "href": "slides/Chapter 02/section2.1.html#example-1",
+    "title": "Section 2.1",
+    "section": "Example 1",
+    "text": "Example 1\n\n\n\nPopulation:\nSample:\nBiased or Representative?\nVariable of interest?\nCategorical or quantitative?\nPopulation symbol:\nSample symbol:\n\n\n\n\n\n\n\n\nScenario\n\n\n\n\nSuppose you want to investigate the long run proportion of students at UNL who are morning people. You ask everyone in your 8am class if they are a morning or night person."
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.1.html#example-1-1",
+    "href": "slides/Chapter 02/section2.1.html#example-1-1",
+    "title": "Section 2.1",
+    "section": "Example 1",
+    "text": "Example 1\n\nPopulation: All UNL students\nSample: Students in your 8am class\nBiased or Representative? Biased\nVariable of interest? Morning or night person\nCategorical or quantitative? Categorical\nPopulation symbol: \\(\\pi\\)\nSample symbol: \\(\\hat{p}\\)"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.1.html#example-2",
+    "href": "slides/Chapter 02/section2.1.html#example-2",
+    "title": "Section 2.1",
+    "section": "Example 2",
+    "text": "Example 2\n\n\n\nPopulation:\nSample:\nBiased or Representative?\nVariable of interest?\nCategorical or quantitative?\nPopulation symbol:\nSample symbol:\n\n\n\n\n\n\n\n\nScenario\n\n\n\n\nA researcher wants to investigate the average lifespan of a new fish, of which only three schools are known to exist. From the three schools, she randomly selects 30 fish to track the lifespans of."
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.1.html#example-2-1",
+    "href": "slides/Chapter 02/section2.1.html#example-2-1",
+    "title": "Section 2.1",
+    "section": "Example 2",
+    "text": "Example 2\n\nPopulation: All of the known schools of fish\nSample: The 30 selected fish\nBiased or Representative? Representative\nVariable of interest? Lifespan\nCategorical or quantitative? Numerical\nPopulation symbol: \\(\\mu\\)\nSample symbol: \\(\\bar{x}\\)"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.1.html#section",
+    "href": "slides/Chapter 02/section2.1.html#section",
+    "title": "Section 2.1",
+    "section": "",
+    "text": "Complete the “Sampling Words” exploration\nSubmit to Canvas when done\nExtra time can be used for homework"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "STAT 218 Slides",
+    "section": "",
+    "text": "Chapter P\n\n\n\n\n\n\n\n\n\n\n\nSection 1.1\n\n\n\n\n\n\n\n\n\n\n\nSection 1.2\n\n\n\n\n\n\n\n\n\n\n\nSection 1.3\n\n\n\n\n\n\n\n\n\n\n\nSection 1.4\n\n\n\n\n\n\n\n\n\n\n\nSection 1.5\n\n\n\n\n\n\n\n\n\n\n\nSection 11.1\n\n\n\n\n\n\n\n\n\n\n\nSection 11.2\n\n\n\n\n\n\n\n\n\n\n\nSection 11.3\n\n\n\n\n\n\n\n\n\n\n\nSection 2.1\n\n\n\n\n\n\n\n\n\n\n\nSection 2.2\n\n\n\n\n\n\n\n\n\n\n\nSection 2.3\n\n\n\n\n\n\n\n\n\n\n\nSection 3.1\n\n\n\n\n\n\n\n\n\n\n\nSection 3.2\n\n\n\n\n\n\n\n\n\n\n\nSection 3.3\n\n\n\n\n\n\n\n\n\n\n\nSection 3.4\n\n\n\n\n\n\n\n\n\n\n\nSection 4.1\n\n\n\n\n\n\n\n\n\n\n\nSection 4.2\n\n\n\n\n\n\n\n\n\n\n\nSection 5.1\n\n\n\n\n\n\n\n\n\n\n\nSection 5.2\n\n\n\n\n\n\n\n\n\n\n\nSection 5.3\n\n\n\n\n\n\n\n\n\n\n\nSection 6.1\n\n\n\n\n\n\n\n\n\n\n\nSection 6.2\n\n\n\n\n\n\n\n\n\n\n\nSection 6.3\n\n\n\n\n\n\n\n\n\n\n\nSection 7.1\n\n\n\n\n\n\n\n\n\n\n\nSection 7.2\n\n\n\n\n\n\n\n\n\n\n\nSection 7.3\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.3.html#section-2.3-learning-objectives",
+    "href": "slides/Chapter 02/section2.3.html#section-2.3-learning-objectives",
+    "title": "Section 2.3",
+    "section": "Section 2.3 Learning Objectives",
+    "text": "Section 2.3 Learning Objectives\n\nConduct a simulation-based analysis to conduct a single test involving the mean of a single quantitative variable.\nCarry out a theory-based analysis (one-sample t-test) involving the mean of a single quantitative variable, including checking relevant validity conditions."
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.3.html#up-until-now",
+    "href": "slides/Chapter 02/section2.3.html#up-until-now",
+    "title": "Section 2.3",
+    "section": "Up until now…",
+    "text": "Up until now…\n\nWe have been working with proportions\n\nWe use proportions for categorical (qualitative) data\n\nWhat if our data is qualitative (numerical)?\n\nExamples: Height, weight, time, measurement of length"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.3.html#symbol-review",
+    "href": "slides/Chapter 02/section2.3.html#symbol-review",
+    "title": "Section 2.3",
+    "section": "Symbol Review",
+    "text": "Symbol Review\nIn section 2.1, we introduced some new symbols we use with numerical data:\n\nSample mean: \\(\\bar{x}\\)\nSample Standard Deviation: \\(s\\)\nPopulation Mean: \\(\\mu\\)\nPopulation Standard Deviation: \\(\\sigma\\)"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.3.html#symbol-comparison",
+    "href": "slides/Chapter 02/section2.3.html#symbol-comparison",
+    "title": "Section 2.3",
+    "section": "Symbol Comparison",
+    "text": "Symbol Comparison\n Symbols we use depend on our variable type:\n\n\n\n\n\n\n\n\n\nCategorical Variable\nQuantitative Variable\n\n\nPopulation\n\\(\\pi\\)\n\\(\\mu\\)\n\n\nSample\n\\(\\hat{p}\\)\n\\(\\bar{x}\\)\n\n\n\n\n\nNote: We only use sample standard deviation and standard deviation symbols (\\(s\\), \\(\\sigma\\)) when we are dealing with quantitative variables."
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.3.html#strength-of-evidence-with-a-single-quantitative-variable",
+    "href": "slides/Chapter 02/section2.3.html#strength-of-evidence-with-a-single-quantitative-variable",
+    "title": "Section 2.3",
+    "section": "Strength of Evidence with a Single Quantitative Variable",
+    "text": "Strength of Evidence with a Single Quantitative Variable\nEssentially the same process, but now we’re working with averages\n\nVariable of Interest: some numerical measure\nParameter: The long run average (\\(\\mu\\))\nObserved statistic: Average calculated from the sample (\\(\\bar{x}\\))"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.3.html#strength-of-evidence-with-a-single-quantitative-variable-1",
+    "href": "slides/Chapter 02/section2.3.html#strength-of-evidence-with-a-single-quantitative-variable-1",
+    "title": "Section 2.3",
+    "section": "Strength of Evidence with a Single Quantitative Variable",
+    "text": "Strength of Evidence with a Single Quantitative Variable\nHypotheses in words:\n\nNull: The long run average is equal to (average in context of the problem)\nAlt: The long run average is (less than/greater than/not equal to the average in the context of the problem)"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.3.html#strength-of-evidence-with-a-single-quantitative-variable-2",
+    "href": "slides/Chapter 02/section2.3.html#strength-of-evidence-with-a-single-quantitative-variable-2",
+    "title": "Section 2.3",
+    "section": "Strength of Evidence with a Single Quantitative Variable",
+    "text": "Strength of Evidence with a Single Quantitative Variable\nHypotheses in symbols:\n\n\\(H_{0}\\): \\(\\mu\\) = previously known number\n\\(H_{A}\\): \\(\\mu\\) &gt;,&lt;,≠ previously known number"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.3.html#ceo-example",
+    "href": "slides/Chapter 02/section2.3.html#ceo-example",
+    "title": "Section 2.3",
+    "section": "CEO Example",
+    "text": "CEO Example\n\n\n\nVariable of interest: # of emails in a day\nParameter: long run average number of emails received in a day (\\(\\mu\\))\nHypotheses in symbols:\n\n\\(H_{0}\\): \\(\\mu\\) = 8\n\\(H_{A}\\): \\(\\mu\\) &gt; 8\n\n\n\n\n\n\n\n\n\nScenario\n\n\n\n\nYou are interested in whether the number of emails the CEO of Apple receives each day is more than 8."
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.3.html#simulation",
+    "href": "slides/Chapter 02/section2.3.html#simulation",
+    "title": "Section 2.3",
+    "section": "Simulation",
+    "text": "Simulation\n\nFor categorical data:\n\nCoin tosses\nDie rolls\nSpinners"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.3.html#simulation-1",
+    "href": "slides/Chapter 02/section2.3.html#simulation-1",
+    "title": "Section 2.3",
+    "section": "Simulation",
+    "text": "Simulation\n\nFor numerical data:\n\nWe can’t use those methods\nThe book simulates large, hypothetical data\n\nSo, we can’t use the Applet to simulate\nWe will use the thoery-based approach"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.3.html#theory-based-approach-quantitative-variable",
+    "href": "slides/Chapter 02/section2.3.html#theory-based-approach-quantitative-variable",
+    "title": "Section 2.3",
+    "section": "Theory Based Approach (Quantitative Variable)",
+    "text": "Theory Based Approach (Quantitative Variable)\nValidity conditions:\n\nThe variable of interest should have a symmetric distribution, or,\nn ≥ 20 and not strongly skewed"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.3.html#theory-based-approach-quantitative-variable-1",
+    "href": "slides/Chapter 02/section2.3.html#theory-based-approach-quantitative-variable-1",
+    "title": "Section 2.3",
+    "section": "Theory Based Approach (Quantitative Variable)",
+    "text": "Theory Based Approach (Quantitative Variable)\n\nWith numerical data, we can find \\(s\\) (sample standard deviation)\nThis changes our standardized statistic calculation\n\n\\[SE=\\frac{s}{\\sqrt{n}}\\]"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.3.html#theory-based-approach-quantitative-variable-2",
+    "href": "slides/Chapter 02/section2.3.html#theory-based-approach-quantitative-variable-2",
+    "title": "Section 2.3",
+    "section": "Theory Based Approach (Quantitative Variable)",
+    "text": "Theory Based Approach (Quantitative Variable)\n\nWith numerical data, we use “\\(t\\)” instead of “\\(z\\)” to describe our standardized statistic\n\n\\[Standardized\\: Statistic\\:= t=\\frac{\\bar{x}-\\mu}{SE}=\\frac{\\bar{x}-\\mu}{\\frac{s}{\\sqrt{n}}}\\]"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.3.html#drawing-conclusions",
+    "href": "slides/Chapter 02/section2.3.html#drawing-conclusions",
+    "title": "Section 2.3",
+    "section": "Drawing Conclusions",
+    "text": "Drawing Conclusions\n\nSame as categorical data\n\n“Outside the twos” = reject the null\nOtherwise fail to reject (FTR)"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.3.html#drawing-conclusions-1",
+    "href": "slides/Chapter 02/section2.3.html#drawing-conclusions-1",
+    "title": "Section 2.3",
+    "section": "Drawing Conclusions",
+    "text": "Drawing Conclusions\nConclusions take the same form:\n\nRestate the alt. hypothesis\n\n“We have enough evidence to conclude that the long-run average is (greater than/less than/not equal to) _____.”\n“We do not have enough evidence to conclude that the long-run average is (greater than/less than/not equal to) _____.”"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.3.html#ceo-example-1",
+    "href": "slides/Chapter 02/section2.3.html#ceo-example-1",
+    "title": "Section 2.3",
+    "section": "CEO Example",
+    "text": "CEO Example\n\n\n\n\nSample size: n=30\nCan we use the theory based approach? Yes\nObserved statistic: \\(\\bar{x}\\)=10.2\nSample standard deviation: \\(s\\)=2.091\n\n\n\n\n\n\n\n\nScenario\n\n\n\n\nYou are interested in whether the number of emails the CEO of Apple receives each day is more than 8. Suppose you observe 30 days and find that the average number of emails is 10.2, with a sample S.D. of 2.091. The distribution is not strongly skewed."
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.3.html#ceo-example-2",
+    "href": "slides/Chapter 02/section2.3.html#ceo-example-2",
+    "title": "Section 2.3",
+    "section": "CEO Example",
+    "text": "CEO Example\nStandard error:\n\\[SE=\\frac{s}{\\sqrt{n}}=\\frac{2.091}{\\sqrt{30}}=0.38\\]\nStandardized statistic:\n\\[ t=\\frac{\\bar{x}-\\mu}{SE}=\\frac{10.2-8}{0.38}=5.78\\]"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.3.html#ceo-example-conclusion",
+    "href": "slides/Chapter 02/section2.3.html#ceo-example-conclusion",
+    "title": "Section 2.3",
+    "section": "CEO Example Conclusion",
+    "text": "CEO Example Conclusion\n“We have enough evidence to conclude that the long run average number of emails the CEO receives in a day is greater than 8.”"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#section-4.2-learning-objectives",
+    "href": "slides/Chapter 04/section4.2.html#section-4.2-learning-objectives",
+    "title": "Section 4.2",
+    "section": "Section 4.2 Learning Objectives",
+    "text": "Section 4.2 Learning Objectives\n\nDetermine if a study is observational or experimental.\nUnderstand why random assignment allows for a cause and effect conclusion.\nDetermine whether a study used random assignment and/or random sampling and how each affects the conclusions that can be drawn."
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#variable-types",
+    "href": "slides/Chapter 04/section4.2.html#variable-types",
+    "title": "Section 4.2",
+    "section": "Variable Types",
+    "text": "Variable Types\n\nExplanatory (independent) variable\n\n“Explains” the response variable\n\nResponse (dependent) variable\n\n“Responds” to the explanatory variable\n\nConfounding variable\n\nRelated to both\n\nAssociation does NOT mean causation\n\nThere is always potential for a confounding variable"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip",
+    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip",
+    "title": "Section 4.2",
+    "section": "Have a Nice Trip",
+    "text": "Have a Nice Trip\nAn area of research in biomechanics and gerontology concerns falls and fall related injuries, especially for old people. Recent studies have focused on how individuals respond to large postural disturbances (like slipping or tripping). One question is whether subjects can be instructed to improve their recovery from such disturbances."
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-1",
+    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-1",
+    "title": "Section 4.2",
+    "section": "Have a Nice Trip",
+    "text": "Have a Nice Trip\nResearchers want to compare two strategies:\n\nLowering: Quickly stepping down with the front leg and then raising the back leg over the object\nElevating: Lifting the front leg over the object"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-2",
+    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-2",
+    "title": "Section 4.2",
+    "section": "Have a Nice Trip",
+    "text": "Have a Nice Trip\n24 subjects agreed to participate in a study:\n\n8 Females\n16 Males"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-3",
+    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-3",
+    "title": "Section 4.2",
+    "section": "Have a Nice Trip",
+    "text": "Have a Nice Trip\nIdentify the following:\n\nExplanatory variable: Strategy used (lowering or elevating)\nResponse variable: Fall or not\nPotential confounding variables"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#intro",
+    "href": "slides/Chapter 04/section4.2.html#intro",
+    "title": "Section 4.2",
+    "section": "Intro",
+    "text": "Intro\nHow do we reduce the risk of confounding variables?\n\nConfounding variables add bias\nBias = consistently over- or under-estimating the parameter of interest\n\nMain ideas:\n\nObservational studies vs experimental studies\nRandom sampling vs random assignment"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#observational-study",
+    "href": "slides/Chapter 04/section4.2.html#observational-study",
+    "title": "Section 4.2",
+    "section": "Observational Study",
+    "text": "Observational Study\nComparing two groups that are “just there”\n\nObserve subjects and collect their data\nResearchers cannot manipulate anything\n\nExamples:\n\n\nSurveys\nTeacher evaluations"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#experimental-study",
+    "href": "slides/Chapter 04/section4.2.html#experimental-study",
+    "title": "Section 4.2",
+    "section": "Experimental Study",
+    "text": "Experimental Study\nYou choose the conditions for the experimental units\n\nAssign experimental units to groups\nResearchers can manipulate\n\nExamples:\n\n\nAssign one group to a diet group and the other to an exercise program. Then measure the weight loss in each group\nStudents are told to listen to either country or classical music before an exam. Their exam results are compared."
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#side-note",
+    "href": "slides/Chapter 04/section4.2.html#side-note",
+    "title": "Section 4.2",
+    "section": "Side note!",
+    "text": "Side note!\nIn experiments, we refer to observational units as experimental units!"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#example-scenario",
+    "href": "slides/Chapter 04/section4.2.html#example-scenario",
+    "title": "Section 4.2",
+    "section": "Example Scenario",
+    "text": "Example Scenario\nResearchers want to set up an observational OR experimental study to answer the research question, “Does exercise help prevent against colds and the flu?”\n\n\nHow could we make this an observational study?\nHow could we make this an experimental study?"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#randomized-experiment",
+    "href": "slides/Chapter 04/section4.2.html#randomized-experiment",
+    "title": "Section 4.2",
+    "section": "Randomized Experiment",
+    "text": "Randomized Experiment\n\nUse a method of chance to assign experimental units to groups\nThis allows us to balance out confounding variables\nBest way to avoid bias!"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-4",
+    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-4",
+    "title": "Section 4.2",
+    "section": "Have a Nice Trip",
+    "text": "Have a Nice Trip\n\nComparing lowering and elevating strategies for fall prevention\n24 subjects: 8 females, 16 males\nExplanatory variable: Strategy used\nResponse variable: Fall or recover\nPotential confounding variable: Gender"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-5",
+    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-5",
+    "title": "Section 4.2",
+    "section": "Have a Nice Trip",
+    "text": "Have a Nice Trip\nResearchers could assign females to the lowering strategy, and males to the elevating strategy.\n\n\nIs this reasonable?"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-6",
+    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-6",
+    "title": "Section 4.2",
+    "section": "Have a Nice Trip",
+    "text": "Have a Nice Trip\n\nCould assign half females and half males to each strategy\nThen could we say gender is confounding?\nCould a different variable still be confounding?"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-7",
+    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-7",
+    "title": "Section 4.2",
+    "section": "Have a Nice Trip",
+    "text": "Have a Nice Trip\n\nThere are always more confounding variables than we are aware of!\nNeed a method to decide who uses which strategy\nEnter: Random assignment!"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-8",
+    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-8",
+    "title": "Section 4.2",
+    "section": "Have a Nice Trip",
+    "text": "Have a Nice Trip\nSuppose we randomly draw 12 names from a hat to use the lowering strategy\n\nWhat proportion would we expect to be male?\nWhat about female?\nWill males always have an 8 and 8 split? Or females 4 and 4?\nRandomizing Subjects Applet"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-9",
+    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-9",
+    "title": "Section 4.2",
+    "section": "Have a Nice Trip",
+    "text": "Have a Nice Trip\n\nMain idea: Randomizing gives the best chance to even out ANY confounding variables\nIn theory, all confounding variables are equally distributed and should not be confounding"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#random-sampling-vs-random-assignment",
+    "href": "slides/Chapter 04/section4.2.html#random-sampling-vs-random-assignment",
+    "title": "Section 4.2",
+    "section": "Random Sampling vs Random Assignment",
+    "text": "Random Sampling vs Random Assignment\n\nNot the same thing\nDifferently affect the conclusions we can make"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#random-sampling",
+    "href": "slides/Chapter 04/section4.2.html#random-sampling",
+    "title": "Section 4.2",
+    "section": "Random Sampling",
+    "text": "Random Sampling\nRepresentative sample from a population\n\nAllows us to extend conclusions to a larger population"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#random-sampling-visual",
+    "href": "slides/Chapter 04/section4.2.html#random-sampling-visual",
+    "title": "Section 4.2",
+    "section": "Random Sampling Visual",
+    "text": "Random Sampling Visual\n\n\n\nRandom sample:\n\nCan generalize\n\n\nNo random sample:\n\nCannot generalize"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#random-assignment",
+    "href": "slides/Chapter 04/section4.2.html#random-assignment",
+    "title": "Section 4.2",
+    "section": "Random Assignment",
+    "text": "Random Assignment\nRandomly produce similar groups\n\nAllows us to claim a “cause and effect” relationship between the explanatory and response variables"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#random-sampling-visual-1",
+    "href": "slides/Chapter 04/section4.2.html#random-sampling-visual-1",
+    "title": "Section 4.2",
+    "section": "Random Sampling Visual",
+    "text": "Random Sampling Visual\n\n\n\nRandom assignment:\n\nExperimental study\nCan determine causation\n\n\nNo random assignment:\n\nObservational study\nCan only determine causation"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#random-assignment-vs-random-sampling-visual",
+    "href": "slides/Chapter 04/section4.2.html#random-assignment-vs-random-sampling-visual",
+    "title": "Section 4.2",
+    "section": "Random Assignment vs Random Sampling Visual",
+    "text": "Random Assignment vs Random Sampling Visual"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#summary-table",
+    "href": "slides/Chapter 04/section4.2.html#summary-table",
+    "title": "Section 4.2",
+    "section": "Summary Table",
+    "text": "Summary Table\n\n\n\n\n\n\n\n\n\nRandom Assignment\nNo Random Assignment\n\n\nRandom Sampling\nRandom sample from a population that is randomly assigned to groups (ideal!)\nRandom sample from a population that are already in pre-existing groups. (Smokers vs non-smokers survey.)\n\n\nNo Random Sampling\nA group of study units is selected non-randomly from a population and randomly assigned to groups. (Splitting our class into random groups.)\nCollections of available units from two distinct groups are examined. (Splitting our class into male and female groups.)"
+  },
+  {
+    "objectID": "slides/Chapter 04/section4.2.html#summary-table-1",
+    "href": "slides/Chapter 04/section4.2.html#summary-table-1",
+    "title": "Section 4.2",
+    "section": "Summary Table",
+    "text": "Summary Table\n\n\n\n\n\n\n\n\n\nRandom Assignment\nNo Random Assignment\n\n\nRandom Sampling\nCan generalize to the population; Causation conclusion\nCan generalize to the population; Association conclusion\n\n\nNo Random Sampling\nCannot generalize to the population; Causation conclusion\nCannot generalize to the population; Association conclusion"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#section-3.2-learning-objectives",
+    "href": "slides/Chapter 03/section3.2.html#section-3.2-learning-objectives",
     "title": "Section 3.2",
-    "section": "Recall: Confidence Intervals",
-    "text": "Recall: Confidence Intervals\nGive us a range of likely values for our parameter (\\(\\mu\\) or \\(\\pi\\))\n\nTrue parameter is never known!!!\nBut, we get an idea of what it might be"
+    "section": "Section 3.2 Learning Objectives",
+    "text": "Section 3.2 Learning Objectives\n\nCompute and write a confidence interval in terms of a center point plus or minus the margin of error.\nCalculate a confidence interval for a single proportion using the 2SD method and the theory-based approach."
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#confidence-intervals",
+    "href": "slides/Chapter 03/section3.2.html#confidence-intervals",
+    "title": "Section 3.2",
+    "section": "Confidence Intervals",
+    "text": "Confidence Intervals\nGive us a range of likely values for our parameter (\\(\\mu\\) or \\(\\pi\\))\n\nTrue parameter is never known!!!\nBut, we get an idea of what it might be"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#confidence-intervals-general-form",
+    "href": "slides/Chapter 03/section3.2.html#confidence-intervals-general-form",
+    "title": "Section 3.2",
+    "section": "Confidence Intervals: General Form",
+    "text": "Confidence Intervals: General Form\n Confidence Interval (CI) = (Lower Bound, Upper Bound)\n= Observed statistic ± margin of error\n\nMargin of Error = Multiplier * Standard Error"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#null-distribution-and-hypothesis-testing",
+    "href": "slides/Chapter 03/section3.2.html#null-distribution-and-hypothesis-testing",
+    "title": "Section 3.2",
+    "section": "Null Distribution and Hypothesis Testing",
+    "text": "Null Distribution and Hypothesis Testing\n\nNull distribution: Simulated by the chance model\n\nWhat we expect to happen\n\nCenter of null distribution is our hypothesized value for our parameter of interest (\\(\\mu\\) or \\(\\pi\\))\n\nExample Hypotheses:\n\n\\(H_{0}\\): \\(\\pi\\) = 0.5\n\\(H_{A}\\): \\(\\pi\\) ≠ 0.5"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#p-value",
+    "href": "slides/Chapter 03/section3.2.html#p-value",
+    "title": "Section 3.2",
+    "section": "P-value",
+    "text": "P-value\nNumber of simulated statistics in the null distribution that are as or more extreme than what we observed in real life\n\nP-value is essentially a percentage\nSince our goal is to reject our null hypothesis, we want this percentage to be low!"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#example-null-distribution",
+    "href": "slides/Chapter 03/section3.2.html#example-null-distribution",
+    "title": "Section 3.2",
+    "section": "Example Null Distribution",
+    "text": "Example Null Distribution"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#medical-marijuana-activity",
+    "href": "slides/Chapter 03/section3.2.html#medical-marijuana-activity",
+    "title": "Section 3.2",
+    "section": "Medical Marijuana Activity",
+    "text": "Medical Marijuana Activity\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(H_{0}:\\pi=\\)\n0.41\n0.42\n0.43\n0.44\n0.45\n0.46\n0.47\n0.48\n0.49\n0.50\n\n\nP-value\n&gt;0.0001\n&gt;0.0001\n&gt;0.0001\n0.0001\n0.0006\n0.0045\n0.0234\n0.0894\n0.2578\n0.5716\n\n\nR/FTR\nR\nR\nR\nR\nR\nR\nR\nFTR\nFTR\nFTR\n\n\nPlausible?\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nYes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(H_{0}:\\pi=\\)\n0.51\n0.52\n0.53\n0.54\n0.55\n0.56\n0.57\n0.58\n0.59\n0.60\n\n\nP-value\n1\n0.5713\n0.2570\n0.0887\n0.0230\n0.0044\n0.0006\n0.0001\n&gt;0.0001\n&gt;0.0001\n\n\nR/FTR\nFTR\nFTR\nFTR\nFTR\nR\nR\nR\nR\nR\nR\n\n\nPlausible?\nYes\nYes\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#medical-marijuana-example",
+    "href": "slides/Chapter 03/section3.2.html#medical-marijuana-example",
+    "title": "Section 3.2",
+    "section": "Medical Marijuana Example",
+    "text": "Medical Marijuana Example\n\nEssentially we ran 20 different hypothesis tests of the form:\n\n\\(H_{0}\\): \\(\\pi\\) = x\n\\(H_{A}\\): \\(\\pi\\) ≠ x\n\nOur confidence interval is derived based on the tests we rejected or failed to reject \\(H_{0}\\)\n\nReject \\(H_{0}\\) = not a plausible value for \\(\\pi\\)\nFail to reject \\(H_{0}\\) = a plausible value for \\(\\pi\\)"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#how-does-significance-level-affect-things",
+    "href": "slides/Chapter 03/section3.2.html#how-does-significance-level-affect-things",
+    "title": "Section 3.2",
+    "section": "How does significance level affect things?",
+    "text": "How does significance level affect things?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(H_{0}:\\pi=\\)\n0.41\n0.42\n0.43\n0.44\n0.45\n0.46\n0.47\n0.48\n0.49\n0.50\n\n\nP-value\n&gt;0.0001\n&gt;0.0001\n&gt;0.0001\n0.0001\n0.0006\n0.0045\n0.0234\n0.0894\n0.2578\n0.5716\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(H_{0}:\\pi=\\)\n0.51\n0.52\n0.53\n0.54\n0.55\n0.56\n0.57\n0.58\n0.59\n0.60\n\n\nP-value\n1\n0.5713\n0.2570\n0.0887\n0.0230\n0.0044\n0.0006\n0.0001\n&gt;0.0001\n&gt;0.0001\n\n\n\n\n\n\n\\(\\alpha=0.01\\): CI = (0.47,0.55)\n\\(\\alpha=0.05\\): CI = (0.48,0.54)\n\\(\\alpha=0.10\\): CI = (0.49,0.53)"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#sd-confidence-intervals-for-proportions",
+    "href": "slides/Chapter 03/section3.2.html#sd-confidence-intervals-for-proportions",
+    "title": "Section 3.2",
+    "section": "2SD Confidence Intervals for Proportions",
+    "text": "2SD Confidence Intervals for Proportions\nStandard error for proportions:\n\\[SE=\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}\\] For a 95% confidence interval, multiplier = 2"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#sd-confidence-intervals-for-proportions-1",
+    "href": "slides/Chapter 03/section3.2.html#sd-confidence-intervals-for-proportions-1",
+    "title": "Section 3.2",
+    "section": "2SD Confidence Intervals for Proportions",
+    "text": "2SD Confidence Intervals for Proportions\nBy plugging those values into our general confidence interval formula, we get:\n\\[CI=\\hat{p}±2*\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}\\]\n\\[=(Lower\\:Bound,Upper\\:Bound)\\]\nCheck that theory-based criteria are met:\n\nAt least 10 successes and 10 failures"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#standard-deviation-vs.-standard-error",
+    "href": "slides/Chapter 03/section3.2.html#standard-deviation-vs.-standard-error",
+    "title": "Section 3.2",
+    "section": "Standard Deviation vs. Standard Error",
+    "text": "Standard Deviation vs. Standard Error\n\n\n\nStandard Deviation (SD)\n\nAverage distance data points are from the mean, OR\nAverage distance sample means/proportions are from the center of the distribution\n\n\nStandard Error (SE)\n\nAn estimate of SD, based on the data\nFormula differs for numerical vs. categorical data"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#calculating-a-2sd-confidence-interval",
+    "href": "slides/Chapter 03/section3.2.html#calculating-a-2sd-confidence-interval",
+    "title": "Section 3.2",
+    "section": "Calculating a 2SD Confidence Interval",
+    "text": "Calculating a 2SD Confidence Interval\n\n\n\\(\\hat{p}=\\frac{408}{800}=0.51\\)\n\\(n=800\\)\n\\(SE=\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}=\\sqrt{\\frac{0.15*(1-0.51)}{800}}=0.0177\\)\n\\(CI=\\hat{p}±2*SE=0.51±2*0.0177\\)\nLower Bound: \\(0.51-2*0.0177=0.47\\)\nUpper Bound: \\(0.51+2*0.0177=0.55\\)\n\n\n\nNote that this is really close to what we got earlier!"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#interpreting-a-confidence-interval",
+    "href": "slides/Chapter 03/section3.2.html#interpreting-a-confidence-interval",
+    "title": "Section 3.2",
+    "section": "Interpreting a Confidence Interval",
+    "text": "Interpreting a Confidence Interval\n“We are 95% confident that the long run proportion of (context) falls between (lower bound) and (upper bound).”\n\nHere we are not concluding anything! We’re simply interpreting what the confidence interval means."
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#conclusions-from-a-confidence-interval",
+    "href": "slides/Chapter 03/section3.2.html#conclusions-from-a-confidence-interval",
+    "title": "Section 3.2",
+    "section": "Conclusions from a Confidence Interval",
+    "text": "Conclusions from a Confidence Interval\n\nIf our null hypothesis value is OUTSIDE our confidence interval:\n\nReject the null\nIt’s not a plausible value\n\nIf our null hypothesis is INSIDE the confidence interval:\n\nFail to reject the null\nIt’s a plausible value"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#conclusions-from-a-confidence-interval-1",
+    "href": "slides/Chapter 03/section3.2.html#conclusions-from-a-confidence-interval-1",
+    "title": "Section 3.2",
+    "section": "Conclusions from a Confidence Interval",
+    "text": "Conclusions from a Confidence Interval\nConclusion in context:\n\n“We (do/do not) have enough evidence to conclude (insert alt. hypothesis).”"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#legalization-of-medical-marijuana",
+    "href": "slides/Chapter 03/section3.2.html#legalization-of-medical-marijuana",
+    "title": "Section 3.2",
+    "section": "Legalization of Medical Marijuana",
+    "text": "Legalization of Medical Marijuana\nResearch question: Do a majority of Minnesota adults feel medical marijuana should be legalized?\n\nMajority = more than 50%"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#legalization-of-medical-marijuana-1",
+    "href": "slides/Chapter 03/section3.2.html#legalization-of-medical-marijuana-1",
+    "title": "Section 3.2",
+    "section": "Legalization of Medical Marijuana",
+    "text": "Legalization of Medical Marijuana\nHypotheses:\n\n\\(H_{0}\\): \\(\\pi\\) = 0.5\n\\(H_{A}\\): \\(\\pi\\) ≠ 0.5\n\nCI = (0.47, 0.55)\n\nFail to reject since 0.5 is in the interval"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#interpretation-in-context",
+    "href": "slides/Chapter 03/section3.2.html#interpretation-in-context",
+    "title": "Section 3.2",
+    "section": "Interpretation in Context",
+    "text": "Interpretation in Context\n“We are 95% confident that the long run proportion of Minnesotan adults who support the legalization of medical marijuana is between 47% and 55%.”"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#conclusion-in-context",
+    "href": "slides/Chapter 03/section3.2.html#conclusion-in-context",
+    "title": "Section 3.2",
+    "section": "Conclusion in Context",
+    "text": "Conclusion in Context\n“We do not have enough evidence to conclude that the long run proportion of Minnesotan adults who feel medical marijuana should be legalized is different from 0.50.”"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#recall",
+    "href": "slides/Chapter 03/section3.2.html#recall",
+    "title": "Section 3.2",
+    "section": "Recall…",
+    "text": "Recall…\n\nRejecting the null hypothesis means we have statistical significance in favor of \\(H_{A}\\)\nFailing to reject the null hypothesis means we do not have statistical significance in favor of \\(H_{A}\\)"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#p-value-1",
+    "href": "slides/Chapter 03/section3.2.html#p-value-1",
+    "title": "Section 3.2",
+    "section": "1. P-value",
+    "text": "1. P-value\n\nP-value &lt; 0.05: Reject the null hypothesis\nP-value ≥ 0.05: Fail to reject the null hypothesis"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#standardized-statistic-ss",
+    "href": "slides/Chapter 03/section3.2.html#standardized-statistic-ss",
+    "title": "Section 3.2",
+    "section": "2. Standardized Statistic (SS)",
+    "text": "2. Standardized Statistic (SS)\n\nIf SS is “outside the twos”, reject the null hypothesis\nIf SS is “inside the twos”, fail to reject the null hypothesis"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#confidence-interval-ci",
+    "href": "slides/Chapter 03/section3.2.html#confidence-interval-ci",
+    "title": "Section 3.2",
+    "section": "3. Confidence Interval (CI)",
+    "text": "3. Confidence Interval (CI)\n\nIf hypothesized value is outside the CI, reject the null hypothesis\nIf hypothesized value is inside the CI, fail to reject the null hypothesis"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.2.html#all-methods-should-agree-with-each-other",
+    "href": "slides/Chapter 03/section3.2.html#all-methods-should-agree-with-each-other",
+    "title": "Section 3.2",
+    "section": "All methods should agree with each other!",
+    "text": "All methods should agree with each other!"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#section-3.4-learning-objectives",
+    "href": "slides/Chapter 03/section3.4.html#section-3.4-learning-objectives",
+    "title": "Section 3.4",
+    "section": "Section 3.4 Learning Objectives",
+    "text": "Section 3.4 Learning Objectives\n\nUnderstand how changing the confidence level affects a confidence interval.\nUnderstand why a larger sample size decreases a confidence interval.\nRecognize other factors that might affect the size of a confidence interval."
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#confidence-intervals",
+    "href": "slides/Chapter 03/section3.4.html#confidence-intervals",
+    "title": "Section 3.4",
+    "section": "Confidence Intervals",
+    "text": "Confidence Intervals\n\nGives us range of plausible values for our parameter of interest\n\nEither \\(\\mu\\) or \\(\\pi\\)"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#confidence-intervals-general-form",
+    "href": "slides/Chapter 03/section3.4.html#confidence-intervals-general-form",
+    "title": "Section 3.4",
+    "section": "Confidence Intervals: General Form",
+    "text": "Confidence Intervals: General Form\n Confidence Interval (CI) = (Lower Bound, Upper Bound)\n= Observed statistic ± margin of error\n\nMargin of Error = Multiplier * Standard Error"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#sd-95-confidence-interval-for-proportions",
+    "href": "slides/Chapter 03/section3.4.html#sd-95-confidence-interval-for-proportions",
+    "title": "Section 3.4",
+    "section": "2SD (95%) Confidence Interval for Proportions",
+    "text": "2SD (95%) Confidence Interval for Proportions\n\\[CI=\\hat{p}±2*\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}\\]\n\\[=(Lower\\:Bound,Upper\\:Bound)\\]"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#sd-95-confidence-interval-for-means",
+    "href": "slides/Chapter 03/section3.4.html#sd-95-confidence-interval-for-means",
+    "title": "Section 3.4",
+    "section": "2SD (95%) Confidence Interval for Means",
+    "text": "2SD (95%) Confidence Interval for Means\n\\[CI=\\bar{x}±2*\\frac{s}{\\sqrt{n}}\\]\n\\[=(Lower\\:Bound,Upper\\:Bound)\\]"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#what-factors-affect-confidence-interval-width",
+    "href": "slides/Chapter 03/section3.4.html#what-factors-affect-confidence-interval-width",
+    "title": "Section 3.4",
+    "section": "What factors affect confidence interval width?",
+    "text": "What factors affect confidence interval width?\n\nConfidence level\nSample size\nStandard error"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#confidence-level",
+    "href": "slides/Chapter 03/section3.4.html#confidence-level",
+    "title": "Section 3.4",
+    "section": "1. Confidence Level",
+    "text": "1. Confidence Level\nRecall, significance level (\\(\\alpha\\)) + confidence level = 100%\n\nSignificance level (\\(\\alpha\\)) = p-value threshold for rejecting/failing to reject the null hypothesis (\\(H_{0}\\))\nCommon values for \\(\\alpha\\): 0.01, 0.05, 0.10\nUsing 0.05 is common practice\n\nThis is generally what we will use for this class\n\nThus, common confidence levels are 99%, 95%, and 90%, respectively"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#confidence-level-1",
+    "href": "slides/Chapter 03/section3.4.html#confidence-level-1",
+    "title": "Section 3.4",
+    "section": "1. Confidence Level",
+    "text": "1. Confidence Level\nSince significance level + confidence level = 100%…\n\nAs significance level increases, confidence level decreases\n\n\nHigher significance level = reject the null more often\nReject the null more often = fewer plausible parameter values\nFewer plausible parameter values = smaller confidence interval"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#confidence-level-2",
+    "href": "slides/Chapter 03/section3.4.html#confidence-level-2",
+    "title": "Section 3.4",
+    "section": "1. Confidence Level",
+    "text": "1. Confidence Level\nSince significance level + confidence level = 100%…\n\nAs significance level decreases, confidence level increases\n\n\nLower significance level = reject the null less often\nReject the null less often = more plausible parameter values\nMore plausible parameter values = larger confidence interval"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#sample-size",
+    "href": "slides/Chapter 03/section3.4.html#sample-size",
+    "title": "Section 3.4",
+    "section": "2. Sample Size",
+    "text": "2. Sample Size\nA larger sample size (\\(n\\)) is ALWAYS (!!!) better!\n\nIf \\(n\\) increases:\n\nGenerally less variability in data\nSmaller standard error (smaller confidence interval)\n\nIf \\(n\\) increases:\n\nLikely more variability in data\nLarger standard error (larger confidence interval)"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#standard-error",
+    "href": "slides/Chapter 03/section3.4.html#standard-error",
+    "title": "Section 3.4",
+    "section": "3. Standard Error",
+    "text": "3. Standard Error\nRecall: CI = Observed statistic ± multiplier * standard error\n\nMultiplier * standard error = margin of error\n\nAs standard error increases:\n\nMargin of error increases\nCI gets larger"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#standard-error-1",
+    "href": "slides/Chapter 03/section3.4.html#standard-error-1",
+    "title": "Section 3.4",
+    "section": "3. Standard Error",
+    "text": "3. Standard Error\nRecall: CI = Observed statistic ± multiplier * standard error\n\nMultiplier * standard error = margin of error\n\nAs standard error decreases:\n\nMargin of error decreases\nCI gets smaller"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#summary-of-factors-affecting-the-confidence-interval-width",
+    "href": "slides/Chapter 03/section3.4.html#summary-of-factors-affecting-the-confidence-interval-width",
+    "title": "Section 3.4",
+    "section": "Summary of Factors Affecting the Confidence Interval Width",
+    "text": "Summary of Factors Affecting the Confidence Interval Width\n\n\n\n\nMakes CI Smaller\nMakes CI Larger\n\n\n\n\nConfidence level decreases\nConfidence level increases\n\n\nSample size increases\nSample size decreases\n\n\nStandard error decreases\nStandard error increases"
+  },
+  {
+    "objectID": "slides/Chapter 01/section1.2.html#section-1.2-learning-objectives",
+    "href": "slides/Chapter 01/section1.2.html#section-1.2-learning-objectives",
+    "title": "Section 1.2",
+    "section": "Section 1.2 Learning Objectives",
+    "text": "Section 1.2 Learning Objectives\n\nUnderstand that not all outcomes in an experiment are equally likely.\nUnderstand what a null hypothesis represents.\nBe able to represent a null hypothesis in both words and symbols.\nBe able to interpret the p-value."
   },
   {
     "objectID": "slides/Chapter 01/section1.2.html#rock-paper-scissors",
@@ -1274,6 +1981,13 @@
     "text": "Rock, Paper, Scissors Conclusion\nWill conclude one of the following:\n\n“We have enough evidence to conclude that the long run proportion of people who chose scissors is less than 1/3.”\n“We do not have enough evidence to conclude that the long run proportion of people who chose scissors is less than 1/3.”"
   },
   {
+    "objectID": "slides/Chapter 01/section1.4.html#section-1.4-learning-objectives",
+    "href": "slides/Chapter 01/section1.4.html#section-1.4-learning-objectives",
+    "title": "Section 1.4",
+    "section": "Section 1.4 Learning Objectives",
+    "text": "Section 1.4 Learning Objectives\n\nUnderstand how and why certain factors affect the p-value.\nRecognize when to use a two-sided hypothesis test."
+  },
+  {
     "objectID": "slides/Chapter 01/section1.4.html#hypothesis-testing-review",
     "href": "slides/Chapter 01/section1.4.html#hypothesis-testing-review",
     "title": "Section 1.4",
@@ -1370,6 +2084,13 @@
     "title": "Section 1.4",
     "section": "3. One-sided or two-sided hypothesis test",
     "text": "3. One-sided or two-sided hypothesis test\nOne-sided or two-sided refers to the form \\(H_{A}\\) takes.\n\nOne-sided test takes the form:\n\n\\[H_{A}: \\pi &gt; OR &lt; hypothesized\\: value\\]\n\nTwo-sided test takes the form:\n\n\\[H_{A}: \\pi ≠ hypothesized\\: value\\]"
+  },
+  {
+    "objectID": "slides/Chapter 00/chapterP.html#chapter-p-learning-objectives",
+    "href": "slides/Chapter 00/chapterP.html#chapter-p-learning-objectives",
+    "title": "Chapter P",
+    "section": "Chapter P Learning Objectives",
+    "text": "Chapter P Learning Objectives\n\nUnderstand the 6-step process.\nBe able to classify variables as quantitative or qualitative.\nBe able to interpret a histogram.\nUnderstand the difference between a skewed and symmetric distribution.\nKnow how to measure the center of data using either a mean or median."
   },
   {
     "objectID": "slides/Chapter 00/chapterP.html#section",
@@ -1537,7 +2258,7 @@
     "href": "slides/Chapter 00/chapterP.html#center",
     "title": "Chapter P",
     "section": "Center",
-    "text": "Center\nWhere does the center of the pattern appear?\n\nGenerally refers to mean or mode"
+    "text": "Center\nWhere does the center of the pattern appear?\n\nGenerally refers to mean or median"
   },
   {
     "objectID": "slides/Chapter 00/chapterP.html#variability",
@@ -1587,663 +2308,5 @@
     "title": "Chapter P",
     "section": "Cars vs. Goats Exploration",
     "text": "Cars vs. Goats Exploration\n\n\n\nInspired by the classic Monty Hall problem from Let’s Make a Deal!\nThree doors; two goats, one car\nAfter one door is revealed, should you switch or stay with your choice?\nGoal: Use simulation to determine a long-run trend\nMonty Hall Applet demo"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#confidence-intervals-general-form",
-    "href": "slides/Chapter 03/section3.2.html#confidence-intervals-general-form",
-    "title": "Section 3.2",
-    "section": "Confidence Intervals: General Form",
-    "text": "Confidence Intervals: General Form\n Confidence Interval (CI) = (Lower Bound, Upper Bound)\n= Observed statistic ± margin of error\n\nMargin of Error = Multiplier * Standard Error"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#confidence-intervals",
-    "href": "slides/Chapter 03/section3.2.html#confidence-intervals",
-    "title": "Section 3.2",
-    "section": "Confidence Intervals",
-    "text": "Confidence Intervals\nGive us a range of likely values for our parameter (\\(\\mu\\) or \\(\\pi\\))\n\nTrue parameter is never known!!!\nBut, we get an idea of what it might be"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#null-distribution-and-hypothesis-testing",
-    "href": "slides/Chapter 03/section3.2.html#null-distribution-and-hypothesis-testing",
-    "title": "Section 3.2",
-    "section": "Null Distribution and Hypothesis Testing",
-    "text": "Null Distribution and Hypothesis Testing\n\nNull distribution: Simulated by the chance model\n\nWhat we expect to happen\n\nCenter of null distribution is our hypothesized value for our parameter of interest (\\(\\mu\\) or \\(\\pi\\))\n\nExample Hypotheses:\n\n\\(H_{0}\\): \\(\\pi\\) = 0.5\n\\(H_{A}\\): \\(\\pi\\) ≠ 0.5"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#p-value",
-    "href": "slides/Chapter 03/section3.2.html#p-value",
-    "title": "Section 3.2",
-    "section": "P-value",
-    "text": "P-value\nNumber of simulated statistics in the null distribution that are as or more extreme than what we observed in real life\n\nP-value is essentially a percentage\nSince our goal is to reject our null hypothesis, we want this percentage to be low!"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#example-null-distribution",
-    "href": "slides/Chapter 03/section3.2.html#example-null-distribution",
-    "title": "Section 3.2",
-    "section": "Example Null Distribution",
-    "text": "Example Null Distribution"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#medical-marijuana-activity",
-    "href": "slides/Chapter 03/section3.2.html#medical-marijuana-activity",
-    "title": "Section 3.2",
-    "section": "Medical Marijuana Activity",
-    "text": "Medical Marijuana Activity\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(H_{0}:\\pi=\\)\n0.41\n0.42\n0.43\n0.44\n0.45\n0.46\n0.47\n0.48\n0.49\n0.50\n\n\nP-value\n&gt;0.0001\n&gt;0.0001\n&gt;0.0001\n0.0001\n0.0006\n0.0045\n0.0234\n0.0894\n0.2578\n0.5716\n\n\nR/FTR\nR\nR\nR\nR\nR\nR\nR\nFTR\nFTR\nFTR\n\n\nPlausible?\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nYes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(H_{0}:\\pi=\\)\n0.51\n0.52\n0.53\n0.54\n0.55\n0.56\n0.57\n0.58\n0.59\n0.60\n\n\nP-value\n1\n0.5713\n0.2570\n0.0887\n0.0230\n0.0044\n0.0006\n0.0001\n&gt;0.0001\n&gt;0.0001\n\n\nR/FTR\nFTR\nFTR\nFTR\nFTR\nR\nR\nR\nR\nR\nR\n\n\nPlausible?\nYes\nYes\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#medical-marijuana-example",
-    "href": "slides/Chapter 03/section3.2.html#medical-marijuana-example",
-    "title": "Section 3.2",
-    "section": "Medical Marijuana Example",
-    "text": "Medical Marijuana Example\n\nEssentially we ran 20 different hypothesis tests of the form:\n\n\\(H_{0}\\): \\(\\pi\\) = x\n\\(H_{A}\\): \\(\\pi\\) ≠ x\n\nOur confidence interval is derived based on the tests we rejected or failed to reject \\(H_{0}\\)\n\nReject \\(H_{0}\\) = not a plausible value for \\(\\pi\\)\nFail to reject \\(H_{0}\\) = a plausible value for \\(\\pi\\)"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#how-does-significance-level-affect-things",
-    "href": "slides/Chapter 03/section3.2.html#how-does-significance-level-affect-things",
-    "title": "Section 3.2",
-    "section": "How does significance level affect things?",
-    "text": "How does significance level affect things?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(H_{0}:\\pi=\\)\n0.41\n0.42\n0.43\n0.44\n0.45\n0.46\n0.47\n0.48\n0.49\n0.50\n\n\nP-value\n&gt;0.0001\n&gt;0.0001\n&gt;0.0001\n0.0001\n0.0006\n0.0045\n0.0234\n0.0894\n0.2578\n0.5716\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(H_{0}:\\pi=\\)\n0.51\n0.52\n0.53\n0.54\n0.55\n0.56\n0.57\n0.58\n0.59\n0.60\n\n\nP-value\n1\n0.5713\n0.2570\n0.0887\n0.0230\n0.0044\n0.0006\n0.0001\n&gt;0.0001\n&gt;0.0001\n\n\n\n\n\n\n\\(\\alpha=0.01\\): CI = (0.47,0.55)\n\\(\\alpha=0.05\\): CI = (0.48,0.54)\n\\(\\alpha=0.10\\): CI = (0.49,0.53)"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#sd-confidence-intervals-for-proportions",
-    "href": "slides/Chapter 03/section3.2.html#sd-confidence-intervals-for-proportions",
-    "title": "Section 3.2",
-    "section": "2SD Confidence Intervals for Proportions",
-    "text": "2SD Confidence Intervals for Proportions\nStandard error for proportions:\n\\[SE=\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}\\] For a 95% confidence interval, multiplier = 2"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#sd-confidence-intervals-for-proportions-1",
-    "href": "slides/Chapter 03/section3.2.html#sd-confidence-intervals-for-proportions-1",
-    "title": "Section 3.2",
-    "section": "2SD Confidence Intervals for Proportions",
-    "text": "2SD Confidence Intervals for Proportions\nBy plugging those values into our general confidence interval formula, we get:\n\\[CI=\\hat{p}±2*\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}\\]\n\\[=(Lower\\:Bound,Upper\\:Bound)\\]\nCheck that theory-based criteria are met:\n\nAt least 10 successes and 10 failures"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#standard-deviation-vs.-standard-error",
-    "href": "slides/Chapter 03/section3.2.html#standard-deviation-vs.-standard-error",
-    "title": "Section 3.2",
-    "section": "Standard Deviation vs. Standard Error",
-    "text": "Standard Deviation vs. Standard Error\n\n\n\nStandard Deviation (SD)\n\nAverage distance data points are from the mean, OR\nAverage distance sample means/proportions are from the center of the distribution\n\n\nStandard Error (SE)\n\nAn estimate of SD, based on the data\nFormula differs for numerical vs. categorical data"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#calculating-a-2sd-confidence-interval",
-    "href": "slides/Chapter 03/section3.2.html#calculating-a-2sd-confidence-interval",
-    "title": "Section 3.2",
-    "section": "Calculating a 2SD Confidence Interval",
-    "text": "Calculating a 2SD Confidence Interval\n\n\n\\(\\hat{p}=\\frac{408}{800}=0.51\\)\n\\(n=800\\)\n\\(SE=\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}=\\sqrt{\\frac{0.15*(1-0.51)}{800}}=0.0177\\)\n\\(CI=\\hat{p}±2*SE=0.51±2*0.0177\\)\nLower Bound: \\(0.51-2*0.0177=0.47\\)\nUpper Bound: \\(0.51+2*0.0177=0.55\\)\n\n\n\nNote that this is really close to what we got earlier!"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#interpreting-a-confidence-interval",
-    "href": "slides/Chapter 03/section3.2.html#interpreting-a-confidence-interval",
-    "title": "Section 3.2",
-    "section": "Interpreting a Confidence Interval",
-    "text": "Interpreting a Confidence Interval\n“We are 95% confident that the long run proportion of (context) falls between (lower bound) and (upper bound).”\n\nHere we are not concluding anything! We’re simply interpreting what the confidence interval means."
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#conclusions-from-a-confidence-interval",
-    "href": "slides/Chapter 03/section3.2.html#conclusions-from-a-confidence-interval",
-    "title": "Section 3.2",
-    "section": "Conclusions from a Confidence Interval",
-    "text": "Conclusions from a Confidence Interval\n\nIf our null hypothesis value is OUTSIDE our confidence interval:\n\nReject the null\nIt’s not a plausible value\n\nIf our null hypothesis is INSIDE the confidence interval:\n\nFail to reject the null\nIt’s a plausible value"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#conclusions-from-a-confidence-interval-1",
-    "href": "slides/Chapter 03/section3.2.html#conclusions-from-a-confidence-interval-1",
-    "title": "Section 3.2",
-    "section": "Conclusions from a Confidence Interval",
-    "text": "Conclusions from a Confidence Interval\nConclusion in context:\n\n“We (do/do not) have enough evidence to conclude (insert alt. hypothesis).”"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#legalization-of-medical-marijuana",
-    "href": "slides/Chapter 03/section3.2.html#legalization-of-medical-marijuana",
-    "title": "Section 3.2",
-    "section": "Legalization of Medical Marijuana",
-    "text": "Legalization of Medical Marijuana\nResearch question: Do a majority of Minnesota adults feel medical marijuana should be legalized?\n\nMajority = more than 50%"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#legalization-of-medical-marijuana-1",
-    "href": "slides/Chapter 03/section3.2.html#legalization-of-medical-marijuana-1",
-    "title": "Section 3.2",
-    "section": "Legalization of Medical Marijuana",
-    "text": "Legalization of Medical Marijuana\nHypotheses:\n\n\\(H_{0}\\): \\(\\pi\\) = 0.5\n\\(H_{A}\\): \\(\\pi\\) ≠ 0.5\n\nCI = (0.47, 0.55)\n\nFail to reject since 0.5 is in the interval"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#interpretation-in-context",
-    "href": "slides/Chapter 03/section3.2.html#interpretation-in-context",
-    "title": "Section 3.2",
-    "section": "Interpretation in Context",
-    "text": "Interpretation in Context\n“We are 95% confident that the long run proportion of Minnesotan adults who support the legalization of medical marijuana is between 47% and 55%.”"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#conclusion-in-context",
-    "href": "slides/Chapter 03/section3.2.html#conclusion-in-context",
-    "title": "Section 3.2",
-    "section": "Conclusion in Context",
-    "text": "Conclusion in Context\n“We do not have enough evidence to conclude that the long run proportion of Minnesotan adults who feel medical marijuana should be legalized is different from 0.50.”"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#recall",
-    "href": "slides/Chapter 03/section3.2.html#recall",
-    "title": "Section 3.2",
-    "section": "Recall…",
-    "text": "Recall…\n\nRejecting the null hypothesis means we have statistical significance in favor of \\(H_{A}\\)\nFailing to reject the null hypothesis means we do not have statistical significance in favor of \\(H_{A}\\)"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#p-value-1",
-    "href": "slides/Chapter 03/section3.2.html#p-value-1",
-    "title": "Section 3.2",
-    "section": "1. P-value",
-    "text": "1. P-value\n\nP-value &lt; 0.05: Reject the null hypothesis\nP-value ≥ 0.05: Fail to reject the null hypothesis"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#standardized-statistic-ss",
-    "href": "slides/Chapter 03/section3.2.html#standardized-statistic-ss",
-    "title": "Section 3.2",
-    "section": "2. Standardized Statistic (SS)",
-    "text": "2. Standardized Statistic (SS)\n\nIf SS is “outside the twos”, reject the null hypothesis\nIf SS is “inside the twos”, fail to reject the null hypothesis"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#confidence-interval-ci",
-    "href": "slides/Chapter 03/section3.2.html#confidence-interval-ci",
-    "title": "Section 3.2",
-    "section": "3. Confidence Interval (CI)",
-    "text": "3. Confidence Interval (CI)\n\nIf hypothesized value is outside the CI, reject the null hypothesis\nIf hypothesized value is inside the CI, fail to reject the null hypothesis"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.2.html#all-methods-should-agree-with-each-other",
-    "href": "slides/Chapter 03/section3.2.html#all-methods-should-agree-with-each-other",
-    "title": "Section 3.2",
-    "section": "All methods should agree with each other!",
-    "text": "All methods should agree with each other!"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.3.html#confidence-intervals",
-    "href": "slides/Chapter 03/section3.3.html#confidence-intervals",
-    "title": "Section 3.3",
-    "section": "Confidence Intervals",
-    "text": "Confidence Intervals\n\nGives us range of plausible values for our parameter of interest\n\nEither \\(\\mu\\) or \\(\\pi\\)"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.3.html#confidence-intervals-general-form",
-    "href": "slides/Chapter 03/section3.3.html#confidence-intervals-general-form",
-    "title": "Section 3.3",
-    "section": "Confidence Intervals: General Form",
-    "text": "Confidence Intervals: General Form\n Confidence Interval (CI) = (Lower Bound, Upper Bound)\n= Observed statistic ± margin of error\n\nMargin of Error = Multiplier * Standard Error"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.3.html#sd-95-confidence-interval-for-proportions",
-    "href": "slides/Chapter 03/section3.3.html#sd-95-confidence-interval-for-proportions",
-    "title": "Section 3.3",
-    "section": "2SD (95%) Confidence Interval for Proportions",
-    "text": "2SD (95%) Confidence Interval for Proportions\n\\[CI=\\hat{p}±2*\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}\\]\n\\[=(Lower\\:Bound,Upper\\:Bound)\\]\n\nWhat do you think changes if we’re dealing with a mean rather than a proportion?"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.3.html#sd-confidence-interval-for-single-means",
-    "href": "slides/Chapter 03/section3.3.html#sd-confidence-interval-for-single-means",
-    "title": "Section 3.3",
-    "section": "2SD Confidence Interval for Single Means",
-    "text": "2SD Confidence Interval for Single Means"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.3.html#formulas",
-    "href": "slides/Chapter 03/section3.3.html#formulas",
-    "title": "Section 3.3",
-    "section": "Formulas",
-    "text": "Formulas\nStandard error for means:\n\\[SE=\\frac{s}{\\sqrt{n}}\\]\n2SD (95%) Confidence Interval for Means:\n\\[CI=\\bar{x}±2*\\frac{s}{\\sqrt{n}}\\]\n\nWhy does it make sense that we use \\(\\bar{x}\\) now?"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.3.html#validity-conditions-for-single-mean",
-    "href": "slides/Chapter 03/section3.3.html#validity-conditions-for-single-mean",
-    "title": "Section 3.3",
-    "section": "Validity Conditions for Single Mean",
-    "text": "Validity Conditions for Single Mean\nWe must meet the validity conditions for the theory-based approach:\n\nSample size ≥ 20\nDistribution not strongly skewed"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.3.html#used-hondas",
-    "href": "slides/Chapter 03/section3.3.html#used-hondas",
-    "title": "Section 3.3",
-    "section": "Used Hondas",
-    "text": "Used Hondas\n\n\n \n\nPrice data from a random sample of 102 used Honda Civics for sale on the internet is displayed on the histogram. The sample mean of the data was $13,292 with a standard deviation of $4,535.\n\n\nIs the criteria met to use the confidence interval approach?"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.3.html#calculating-the-confidence-interval",
-    "href": "slides/Chapter 03/section3.3.html#calculating-the-confidence-interval",
-    "title": "Section 3.3",
-    "section": "Calculating the Confidence Interval",
-    "text": "Calculating the Confidence Interval\n\n\n\\(\\bar{x}=13292\\)\n\\(n=102\\)\n\\(s=4535\\)\n\\(SE=\\frac{s}{\\sqrt{n}}=\\frac{4535}{\\sqrt{102}}=449.03\\)\n\\(CI=\\bar{x}±2*SE=13292±2*449.03\\)\nLower Bound: \\(13292-2*449.03=12393.94\\)\nUpper Bound: \\(13292+2*449.03=14190.06\\)"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.3.html#interpreting-the-confidence-interval",
-    "href": "slides/Chapter 03/section3.3.html#interpreting-the-confidence-interval",
-    "title": "Section 3.3",
-    "section": "Interpreting the Confidence Interval",
-    "text": "Interpreting the Confidence Interval\n“We are 95% confident that the long run mean of all used Honda Civics for sale on the internet is between $12,393.94 and $14,190.06.”"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.3.html#conclusions-from-a-confidence-interval",
-    "href": "slides/Chapter 03/section3.3.html#conclusions-from-a-confidence-interval",
-    "title": "Section 3.3",
-    "section": "Conclusions from a Confidence Interval",
-    "text": "Conclusions from a Confidence Interval\n\nIf our null hypothesis value is OUTSIDE our confidence interval:\n\nReject the null\nIt’s not a plausible value\n\nIf our null hypothesis is INSIDE the confidence interval:\n\nFail to reject the null\nIt’s a plausible value\n\n\n\nNote that this example doesn’t have a hypothesized value! We are simply interpreting the interval."
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.3.html#statistical-significance-methods",
-    "href": "slides/Chapter 03/section3.3.html#statistical-significance-methods",
-    "title": "Section 3.3",
-    "section": "Statistical Significance Methods",
-    "text": "Statistical Significance Methods\nWe can use the same three methods with a single mean:\n\nP-value\nStandardized Statistic\nConfidence Interval\n\n\nRemember that all three methods will agree with each other!\n\nAll either reject or fail to reject \\(H_{0}\\)"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.4.html#confidence-intervals",
-    "href": "slides/Chapter 03/section3.4.html#confidence-intervals",
-    "title": "Section 3.4",
-    "section": "Confidence Intervals",
-    "text": "Confidence Intervals\n\nGives us range of plausible values for our parameter of interest\n\nEither \\(\\mu\\) or \\(\\pi\\)"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.4.html#confidence-intervals-general-form",
-    "href": "slides/Chapter 03/section3.4.html#confidence-intervals-general-form",
-    "title": "Section 3.4",
-    "section": "Confidence Intervals: General Form",
-    "text": "Confidence Intervals: General Form\n Confidence Interval (CI) = (Lower Bound, Upper Bound)\n= Observed statistic ± margin of error\n\nMargin of Error = Multiplier * Standard Error"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.4.html#sd-95-confidence-interval-for-proportions",
-    "href": "slides/Chapter 03/section3.4.html#sd-95-confidence-interval-for-proportions",
-    "title": "Section 3.4",
-    "section": "2SD (95%) Confidence Interval for Proportions",
-    "text": "2SD (95%) Confidence Interval for Proportions\n\\[CI=\\hat{p}±2*\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}\\]\n\\[=(Lower\\:Bound,Upper\\:Bound)\\]"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.4.html#sd-95-confidence-interval-for-means",
-    "href": "slides/Chapter 03/section3.4.html#sd-95-confidence-interval-for-means",
-    "title": "Section 3.4",
-    "section": "2SD (95%) Confidence Interval for Means",
-    "text": "2SD (95%) Confidence Interval for Means\n\\[CI=\\bar{x}±2*\\frac{s}{\\sqrt{n}}\\]\n\\[=(Lower\\:Bound,Upper\\:Bound)\\]"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.4.html#three-factors-that-affect-width",
-    "href": "slides/Chapter 03/section3.4.html#three-factors-that-affect-width",
-    "title": "Section 3.4",
-    "section": "Three factors that affect width",
-    "text": "Three factors that affect width\n\nConfidence level\nSample size\nStandard error"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.4.html#confidence-level",
-    "href": "slides/Chapter 03/section3.4.html#confidence-level",
-    "title": "Section 3.4",
-    "section": "1. Confidence Level",
-    "text": "1. Confidence Level\nRecall, significance level (\\(\\alpha\\)) + confidence level = 100%\n\nSignificance level (\\(\\alpha\\)) = p-value threshold for rejecting/failing to reject the null hypothesis (\\(H_{0}\\))\nCommon values for \\(\\alpha\\): 0.01, 0.05, 0.10\nUsing 0.05 is common practice\n\nThis is generally what we will use for this class\n\nThus, common confidence levels are 99%, 95%, and 90%, respectively"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.4.html#confidence-level-1",
-    "href": "slides/Chapter 03/section3.4.html#confidence-level-1",
-    "title": "Section 3.4",
-    "section": "1. Confidence Level",
-    "text": "1. Confidence Level\nSince significance level + confidence level = 100%…\n\nAs significance level increases, confidence level decreases\n\n\nHigher significance level = reject the null more often\nReject the null more often = fewer plausible parameter values\nFewer plausible parameter values = smaller confidence interval"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.4.html#confidence-level-2",
-    "href": "slides/Chapter 03/section3.4.html#confidence-level-2",
-    "title": "Section 3.4",
-    "section": "1. Confidence Level",
-    "text": "1. Confidence Level\nSince significance level + confidence level = 100%…\n\nAs significance level decreases, confidence level increases\n\n\nLower significance level = reject the null less often\nReject the null less often = more plausible parameter values\nMore plausible parameter values = larger confidence interval"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.4.html#what-factors-affect-confidence-interval-width",
-    "href": "slides/Chapter 03/section3.4.html#what-factors-affect-confidence-interval-width",
-    "title": "Section 3.4",
-    "section": "What factors affect confidence interval width?",
-    "text": "What factors affect confidence interval width?\n\nConfidence level\nSample size\nStandard error"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.4.html#sample-size",
-    "href": "slides/Chapter 03/section3.4.html#sample-size",
-    "title": "Section 3.4",
-    "section": "2. Sample Size",
-    "text": "2. Sample Size\nA larger sample size (\\(n\\)) is ALWAYS (!!!) better!\n\nIf \\(n\\) increases:\n\nGenerally less variability in data\nSmaller standard error (smaller confidence interval)\n\nIf \\(n\\) increases:\n\nLikely more variability in data\nLarger standard error (larger confidence interval)"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.4.html#standard-error",
-    "href": "slides/Chapter 03/section3.4.html#standard-error",
-    "title": "Section 3.4",
-    "section": "3. Standard Error",
-    "text": "3. Standard Error\nRecall: CI = Observed statistic ± multiplier * standard error\n\nMultiplier * standard error = margin of error\n\nAs standard error increases:\n\nMargin of error increases\nCI gets larger"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.4.html#standard-error-1",
-    "href": "slides/Chapter 03/section3.4.html#standard-error-1",
-    "title": "Section 3.4",
-    "section": "3. Standard Error",
-    "text": "3. Standard Error\nRecall: CI = Observed statistic ± multiplier * standard error\n\nMultiplier * standard error = margin of error\n\nAs standard error decreases:\n\nMargin of error decreases\nCI gets smaller"
-  },
-  {
-    "objectID": "slides/Chapter 03/section3.4.html#summary-of-factors-affecting-the-confidence-interval-width",
-    "href": "slides/Chapter 03/section3.4.html#summary-of-factors-affecting-the-confidence-interval-width",
-    "title": "Section 3.4",
-    "section": "Summary of Factors Affecting the Confidence Interval Width",
-    "text": "Summary of Factors Affecting the Confidence Interval Width\n\n\n\n\nMakes CI Smaller\nMakes CI Larger\n\n\n\n\nConfidence level decreases\nConfidence level increases\n\n\nSample size increases\nSample size decreases\n\n\nStandard error decreases\nStandard error increases"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.1.html#section-4.1-learning-objectives",
-    "href": "slides/Chapter 04/section4.1.html#section-4.1-learning-objectives",
-    "title": "Section 4.1",
-    "section": "Section 4.1 Learning Objectives",
-    "text": "Section 4.1 Learning Objectives\n\nUnderstand and be able to calculate conditional proportions.\nBe able to determine which variable is the explanatory variable and which is the response variable in a given context.\nUnderstand what a confounding variable is and how it can affect association assumptions."
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.1.html#recap",
-    "href": "slides/Chapter 04/section4.1.html#recap",
-    "title": "Section 4.1",
-    "section": "Recap",
-    "text": "Recap\n\nChapters P-3: Is there an effect? How big is the effect?\nWe do this by:\n\nAsking a research question.\nSetting up a hypothesis test.\nTesting our hypothesis for significance of evidence by:\n\nP-value\nStandardized statistic\nConfidence intervals"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.1.html#overview",
-    "href": "slides/Chapter 04/section4.1.html#overview",
-    "title": "Section 4.1",
-    "section": "Overview",
-    "text": "Overview\nPreviously, research questions focused on one proportion or mean\n\nWhat proportion of the time did Buzz choose the right button?\nWhat is the average time of an Olympic bobsleigh team?"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.1.html#overview-1",
-    "href": "slides/Chapter 04/section4.1.html#overview-1",
-    "title": "Section 4.1",
-    "section": "Overview",
-    "text": "Overview\nNow, we want to compare two groups\n\nAre smokers more likely than nonsmokers to develop lung cancer?\nAre children who used night lights as infants more likely to need glasses than those who didn’t use night lights?"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.1.html#explanatory-variable-independent-variable",
-    "href": "slides/Chapter 04/section4.1.html#explanatory-variable-independent-variable",
-    "title": "Section 4.1",
-    "section": "Explanatory Variable (Independent Variable)",
-    "text": "Explanatory Variable (Independent Variable)\nVariable we think is “explaining” the response variable.\n\nResearchers manipulate this variable"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.1.html#response-variable-dependent-variable",
-    "href": "slides/Chapter 04/section4.1.html#response-variable-dependent-variable",
-    "title": "Section 4.1",
-    "section": "Response Variable (Dependent Variable)",
-    "text": "Response Variable (Dependent Variable)\nVariable that is being impacted or changed by the explanatory variable.\n\n“Depends on” or “responds to” the explanatory variable"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.1.html#example",
-    "href": "slides/Chapter 04/section4.1.html#example",
-    "title": "Section 4.1",
-    "section": "Example",
-    "text": "Example\nWe may think that if we eat and apple a day (explanatory variable) then we’ll have to go to the doctor (response variable) less!"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.1.html#role-of-variables-activity",
-    "href": "slides/Chapter 04/section4.1.html#role-of-variables-activity",
-    "title": "Section 4.1",
-    "section": "Role of Variables Activity",
-    "text": "Role of Variables Activity\nFor each of the variable pairs, identify which you think is the explanatory and which is the response\n\nSmoking and lung cancer\nHeart disease and diet\nExam score and hours studied\nVitamin C and colds\nHair color and eye color"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.1.html#associated-variables",
-    "href": "slides/Chapter 04/section4.1.html#associated-variables",
-    "title": "Section 4.1",
-    "section": "Associated Variables",
-    "text": "Associated Variables\nAssociated: When one variable gives valuable information about the other\nEx:\n\nHours of studying before an exam could give information on how well you’ll do\nHow many apples you eat could give information about how often you’ll go to the doctor"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.1.html#cause-and-effect",
-    "href": "slides/Chapter 04/section4.1.html#cause-and-effect",
-    "title": "Section 4.1",
-    "section": "Cause and effect?",
-    "text": "Cause and effect?\nBut, can we say that our explanatory variable causes our response variable? No!\n\nAssociation does NOT mean causation\nIf you remember anything from this class, let it be this!!"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.1.html#confounding-variable",
-    "href": "slides/Chapter 04/section4.1.html#confounding-variable",
-    "title": "Section 4.1",
-    "section": "Confounding Variable",
-    "text": "Confounding Variable\nA variable that is related to both the explanatory variable and response variable in such a way that its effects cannot be separated from the effects of the explanatory."
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.1.html#using-proportions",
-    "href": "slides/Chapter 04/section4.1.html#using-proportions",
-    "title": "Section 4.1",
-    "section": "Using Proportions",
-    "text": "Using Proportions\n\nCan we determine association using proportions?\n\nExample (next slide):\n\nIs political ideology associated with views on the moral acceptability of cloning animals?\nWhat about the importance of religion?"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.1.html#cloning-animals",
-    "href": "slides/Chapter 04/section4.1.html#cloning-animals",
-    "title": "Section 4.1",
-    "section": "Cloning Animals",
-    "text": "Cloning Animals"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.1.html#ice-cream-sold-vs-drownings",
-    "href": "slides/Chapter 04/section4.1.html#ice-cream-sold-vs-drownings",
-    "title": "Section 4.1",
-    "section": "Ice Cream Sold vs Drownings",
-    "text": "Ice Cream Sold vs Drownings"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.1.html#ice-cream-sold-vs-drownings-1",
-    "href": "slides/Chapter 04/section4.1.html#ice-cream-sold-vs-drownings-1",
-    "title": "Section 4.1",
-    "section": "Ice Cream Sold vs Drownings",
-    "text": "Ice Cream Sold vs Drownings"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.1.html#confounding-variable-month",
-    "href": "slides/Chapter 04/section4.1.html#confounding-variable-month",
-    "title": "Section 4.1",
-    "section": "Confounding Variable: Month",
-    "text": "Confounding Variable: Month"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.1.html#all-nighters-gpas",
-    "href": "slides/Chapter 04/section4.1.html#all-nighters-gpas",
-    "title": "Section 4.1",
-    "section": "All-Nighters & GPAs",
-    "text": "All-Nighters & GPAs\n\n\nClaim:\nExplanatory variable:\n\nCategorical or quantitative?\n\nResponse variable:\n\nCategorical or quantitative?\n\nPotential confounding variable(s):\n\n\n\n\n\n\n\nScenario\n\n\n\n\nResearchers found that students who claim to have never pulled an all-nighter have an average GPA of 3.1, while students who have pulled an all-nighter have an average GPA of 2.9."
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.1.html#all-nighters-gpas-1",
-    "href": "slides/Chapter 04/section4.1.html#all-nighters-gpas-1",
-    "title": "Section 4.1",
-    "section": "All-Nighters & GPAs",
-    "text": "All-Nighters & GPAs\n\nClaim: All-nighters cause lower GPAs.\nExplanatory variable: Pulling an all-nighter or not; Categorical\nResponse variable: GPA; Quantitative\nPotential confounding variable(s):"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.1.html#tvs-lifespan",
-    "href": "slides/Chapter 04/section4.1.html#tvs-lifespan",
-    "title": "Section 4.1",
-    "section": "TV’s & Lifespan",
-    "text": "TV’s & Lifespan\n\n\nClaim:\nExplanatory variable:\n\nCategorical or quantitative?\n\nResponse variable:\n\nCategorical or quantitative?\n\nPotential confounding variable(s):\n\n\n\n\n\n\n\nScenario\n\n\n\n\nResearchers found that countries that have more TVs per 1000 people have a higher average lifespan."
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.1.html#tvs-lifespan-1",
-    "href": "slides/Chapter 04/section4.1.html#tvs-lifespan-1",
-    "title": "Section 4.1",
-    "section": "TV’s & Lifespan",
-    "text": "TV’s & Lifespan\n\nClaim: TVs increase lifespan.\nExplanatory variable: Number of TVs per 1000 people; Qualitative\nResponse variable: Average lifespan; Quantitative\nPotential confounding variable(s):"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#section-4.2-learning-objectives",
-    "href": "slides/Chapter 04/section4.2.html#section-4.2-learning-objectives",
-    "title": "Section 4.2",
-    "section": "Section 4.2 Learning Objectives",
-    "text": "Section 4.2 Learning Objectives\n\nDetermine if a study is observational or experimental.\nUnderstand why random assignment allows for a cause and effect conclusion.\nDetermine whether a study used random assignment and/or random sampling and how each affects the conclusions that can be drawn."
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#variable-types",
-    "href": "slides/Chapter 04/section4.2.html#variable-types",
-    "title": "Section 4.2",
-    "section": "Variable Types",
-    "text": "Variable Types\n\nExplanatory (independent) variable\n\n“Explains” the response variable\n\nResponse (dependent) variable\n\n“Responds” to the explanatory variable\n\nConfounding variable\n\nRelated to both\n\nAssociation does NOT mean causation\n\nThere is always potential for a confounding variable"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip",
-    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip",
-    "title": "Section 4.2",
-    "section": "Have a Nice Trip",
-    "text": "Have a Nice Trip\nAn area of research in biomechanics and gerontology concerns falls and fall related injuries, especially for old people. Recent studies have focused on how individuals respond to large postural disturbances (like slipping or tripping). One question is whether subjects can be instructed to improve their recovery from such disturbances."
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-1",
-    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-1",
-    "title": "Section 4.2",
-    "section": "Have a Nice Trip",
-    "text": "Have a Nice Trip\nResearchers want to compare two strategies:\n\nLowering: Quickly stepping down with the front leg and then raising the back leg over the object\nElevating: Lifting the front leg over the object"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-2",
-    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-2",
-    "title": "Section 4.2",
-    "section": "Have a Nice Trip",
-    "text": "Have a Nice Trip\n24 subjects agreed to participate in a study:\n\n8 Females\n16 Males"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-3",
-    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-3",
-    "title": "Section 4.2",
-    "section": "Have a Nice Trip",
-    "text": "Have a Nice Trip\nIdentify the following:\n\nExplanatory variable: Strategy used (lowering or elevating)\nResponse variable: Fall or not\nPotential confounding variables"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#intro",
-    "href": "slides/Chapter 04/section4.2.html#intro",
-    "title": "Section 4.2",
-    "section": "Intro",
-    "text": "Intro\nHow do we reduce the risk of confounding variables?\n\nConfounding variables add bias\nBias = consistently over- or under-estimating the parameter of interest\n\nMain ideas:\n\nObservational studies vs experimental studies\nRandom sampling vs random assignment"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#observational-study",
-    "href": "slides/Chapter 04/section4.2.html#observational-study",
-    "title": "Section 4.2",
-    "section": "Observational Study",
-    "text": "Observational Study\nComparing two groups that are “just there”\n\nObserve subjects and collect their data\nResearchers cannot manipulate anything\n\nExamples:\n\n\nSurveys\nTeacher evaluations"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#experimental-study",
-    "href": "slides/Chapter 04/section4.2.html#experimental-study",
-    "title": "Section 4.2",
-    "section": "Experimental Study",
-    "text": "Experimental Study\nYou choose the conditions for the experimental units\n\nAssign experimental units to groups\nResearchers can manipulate\n\nExamples:\n\n\nAssign one group to a diet group and the other to an exercise program. Then measure the weight loss in each group\nStudents are told to listen to either country or classical music before an exam. Their exam results are compared."
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#side-note",
-    "href": "slides/Chapter 04/section4.2.html#side-note",
-    "title": "Section 4.2",
-    "section": "Side note!",
-    "text": "Side note!\nIn experiments, we refer to observational units as experimental units!"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#example-scenario",
-    "href": "slides/Chapter 04/section4.2.html#example-scenario",
-    "title": "Section 4.2",
-    "section": "Example Scenario",
-    "text": "Example Scenario\nResearchers want to set up an observational OR experimental study to answer the research question, “Does exercise help prevent against colds and the flu?”\n\n\nHow could we make this an observational study?\nHow could we make this an experimental study?"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#randomized-experiment",
-    "href": "slides/Chapter 04/section4.2.html#randomized-experiment",
-    "title": "Section 4.2",
-    "section": "Randomized Experiment",
-    "text": "Randomized Experiment\n\nUse a method of chance to assign experimental units to groups\nThis allows us to balance out confounding variables\nBest way to avoid bias!"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-4",
-    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-4",
-    "title": "Section 4.2",
-    "section": "Have a Nice Trip",
-    "text": "Have a Nice Trip\n\nComparing lowering and elevating strategies for fall prevention\n24 subjects: 8 females, 16 males\nExplanatory variable: Strategy used\nResponse variable: Fall or recover\nPotential confounding variable: Gender"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-5",
-    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-5",
-    "title": "Section 4.2",
-    "section": "Have a Nice Trip",
-    "text": "Have a Nice Trip\nResearchers could assign females to the lowering strategy, and males to the elevating strategy.\n\n\nIs this reasonable?"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-6",
-    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-6",
-    "title": "Section 4.2",
-    "section": "Have a Nice Trip",
-    "text": "Have a Nice Trip\n\nCould assign half females and half males to each strategy\nThen could we say gender is confounding?\nCould a different variable still be confounding?"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-7",
-    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-7",
-    "title": "Section 4.2",
-    "section": "Have a Nice Trip",
-    "text": "Have a Nice Trip\n\nThere are always more confounding variables than we are aware of!\nNeed a method to decide who uses which strategy\nEnter: Random assignment!"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-8",
-    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-8",
-    "title": "Section 4.2",
-    "section": "Have a Nice Trip",
-    "text": "Have a Nice Trip\nSuppose we randomly draw 12 names from a hat to use the lowering strategy\n\nWhat proportion would we expect to be male?\nWhat about female?\nWill males always have an 8 and 8 split? Or females 4 and 4?\nRandomizing Subjects Applet"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#have-a-nice-trip-9",
-    "href": "slides/Chapter 04/section4.2.html#have-a-nice-trip-9",
-    "title": "Section 4.2",
-    "section": "Have a Nice Trip",
-    "text": "Have a Nice Trip\n\nMain idea: Randomizing gives the best chance to even out ANY confounding variables\nIn theory, all confounding variables are equally distributed and should not be confounding"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#random-sampling-vs-random-assignment",
-    "href": "slides/Chapter 04/section4.2.html#random-sampling-vs-random-assignment",
-    "title": "Section 4.2",
-    "section": "Random Sampling vs Random Assignment",
-    "text": "Random Sampling vs Random Assignment\n\nNot the same thing\nDifferently affect the conclusions we can make"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#random-sampling",
-    "href": "slides/Chapter 04/section4.2.html#random-sampling",
-    "title": "Section 4.2",
-    "section": "Random Sampling",
-    "text": "Random Sampling\nRepresentative sample from a population\n\nAllows us to extend conclusions to a larger population"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#random-sampling-visual",
-    "href": "slides/Chapter 04/section4.2.html#random-sampling-visual",
-    "title": "Section 4.2",
-    "section": "Random Sampling Visual",
-    "text": "Random Sampling Visual\n\n\n\nRandom sample:\n\nCan generalize\n\n\nNo random sample:\n\nCannot generalize"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#random-assignment",
-    "href": "slides/Chapter 04/section4.2.html#random-assignment",
-    "title": "Section 4.2",
-    "section": "Random Assignment",
-    "text": "Random Assignment\nRandomly produce similar groups\n\nAllows us to claim a “cause and effect” relationship between the explanatory and response variables"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#random-sampling-visual-1",
-    "href": "slides/Chapter 04/section4.2.html#random-sampling-visual-1",
-    "title": "Section 4.2",
-    "section": "Random Sampling Visual",
-    "text": "Random Sampling Visual\n\n\n\nRandom assignment:\n\nExperimental study\nCan determine causation\n\n\nNo random assignment:\n\nObservational study\nCan only determine causation"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#random-assignment-vs-random-sampling-visual",
-    "href": "slides/Chapter 04/section4.2.html#random-assignment-vs-random-sampling-visual",
-    "title": "Section 4.2",
-    "section": "Random Assignment vs Random Sampling Visual",
-    "text": "Random Assignment vs Random Sampling Visual"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#summary-table",
-    "href": "slides/Chapter 04/section4.2.html#summary-table",
-    "title": "Section 4.2",
-    "section": "Summary Table",
-    "text": "Summary Table\n\n\n\n\n\n\n\n\n\nRandom Assignment\nNo Random Assignment\n\n\nRandom Sampling\nRandom sample from a population that is randomly assigned to groups (ideal!)\nRandom sample from a population that are already in pre-existing groups. (Smokers vs non-smokers survey.)\n\n\nNo Random Sampling\nA group of study units is selected non-randomly from a population and randomly assigned to groups. (Splitting our class into random groups.)\nCollections of available units from two distinct groups are examined. (Splitting our class into male and female groups.)"
-  },
-  {
-    "objectID": "slides/Chapter 04/section4.2.html#summary-table-1",
-    "href": "slides/Chapter 04/section4.2.html#summary-table-1",
-    "title": "Section 4.2",
-    "section": "Summary Table",
-    "text": "Summary Table\n\n\n\n\n\n\n\n\n\nRandom Assignment\nNo Random Assignment\n\n\nRandom Sampling\nCan generalize to the population; Causation conclusion\nCan generalize to the population; Association conclusion\n\n\nNo Random Sampling\nCannot generalize to the population; Causation conclusion\nCannot generalize to the population; Association conclusion"
   }
 ]

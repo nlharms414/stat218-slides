@@ -10,7 +10,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.56">
 
-  <title>STAT 218 – Section 1.5</title>
+  <title>STAT 218 – Section 3.4</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -327,202 +327,172 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Section 1.5</h1>
-  <p class="subtitle">Theory Based Approach</p>
+  <h1 class="title">Section 3.4</h1>
+  <p class="subtitle">Factors that Affect the Width of a Confidence Interval</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="simulation" class="slide level2">
-<h2>Simulation</h2>
-<p>So far, we’ve used a simulation-based approach to gather strength of evidence.</p>
+<section id="section-3.4-learning-objectives" class="slide level2 center">
+<h2>Section 3.4 Learning Objectives</h2>
 <ul>
-<li>Effective</li>
-<li>Relatively easy</li>
-</ul>
-<p>But…</p>
-<ul>
-<li>Can be tedious</li>
-<li>Not always practical in real life</li>
-<li>Enter: Theory!</li>
+<li><p>Understand how changing the confidence level affects a confidence interval.</p></li>
+<li><p>Understand why a larger sample size decreases a confidence interval.</p></li>
+<li><p>Recognize other factors that might affect the size of a confidence interval.</p></li>
 </ul>
 </section>
-<section id="the-theory-based-approach" class="slide level2 center">
-<h2>The Theory-Based Approach</h2>
-<ul>
-<li>Used when computers weren’t a thing</li>
-<li>Allows prediction of the null distribution shape (aka, pattern)</li>
-<li>Gives us p-values and standardized statistics</li>
-<li>Should get the same or similar results as simulation</li>
-</ul>
+<section>
+<section id="review" class="title-slide slide level1 center">
+<h1>Review</h1>
+
 </section>
-<section id="the-null-distribution-in-depth" class="slide level2 center">
-<h2>The Null Distribution (in depth!)</h2>
+<section id="confidence-intervals" class="slide level2 center">
+<h2>Confidence Intervals</h2>
 <ul>
-<li>Sometimes, data follows a known distribution</li>
-<li>Commonly, we assume data follows the <strong>normal distribution</strong></li>
-<li>The <strong>normal distribution</strong> is one of many known patterns that data can follow</li>
-<li>In this class, we always assume the null distribution is normally distributed</li>
-</ul>
-</section>
-<section id="the-null-distribution-in-depth-1" class="slide level2 center">
-<h2>The Null Distribution (in depth!)</h2>
-<p>Since we know the null distribution is normally distributed, we know the following:</p>
+<li><p>Gives us range of <strong>plausible values</strong> for our parameter of interest</p>
 <ul>
-<li>Bell shaped</li>
-<li>Centered at <span class="math inline">\(\pi\)</span></li>
-<li>Can predict standard deviation
-<ul>
-<li>Without the Applet!</li>
+<li>Either <span class="math inline">\(\mu\)</span> or <span class="math inline">\(\pi\)</span></li>
 </ul></li>
 </ul>
 </section>
-<section id="example-null-distribution" class="slide level2">
-<h2>Example Null Distribution</h2>
-
-<img data-src="5_null.png" class="quarto-figure quarto-figure-center r-stretch" alt="Example null distribution."></section>
-<section id="why-does-sample-size-matter" class="slide level2 center">
-<h2>Why does sample size matter?</h2>
-<p>If sample size is too small:</p>
+<section id="confidence-intervals-general-form" class="slide level2 center" style="text-align: center;">
+<h2>Confidence Intervals: General Form</h2>
+<p><br> Confidence Interval (CI) = (Lower Bound, Upper Bound)</p>
+<p>= Observed statistic ± margin of error</p>
 <ul>
-<li>Theory-based approach will not be accurate</li>
-<li>Curve might not be bell-shaped</li>
-</ul>
-<p>Theory-based “rule of thumb”:</p>
-<ul>
-<li>Need at least 10 successes and 10 failures</li>
+<li>Margin of Error = Multiplier * Standard Error</li>
 </ul>
 </section>
-<section id="to-illustrate" class="slide level2">
-<h2>To illustrate…</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="5_small.png" class="quarto-figure quarto-figure-center" alt="Normal distribution where n=30. Mound shaped with gaps."></p>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="5_large.png" class="quarto-figure quarto-figure-center" alt="Normal distribution where n=300. Mound shaped and completely filled in."></p>
-</figure>
-</div>
-</div></div>
-<ul>
-<li>Both are centered at 0.50</li>
-<li>Left graph n = 30</li>
-<li>Right graph n = 300</li>
-</ul>
+<section id="sd-95-confidence-interval-for-proportions" class="slide level2 center">
+<h2>2SD (95%) Confidence Interval for Proportions</h2>
+<p><span class="math display">\[CI=\hat{p}±2*\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}\]</span></p>
+<p><span class="math display">\[=(Lower\:Bound,Upper\:Bound)\]</span></p>
 </section>
-<section id="central-limit-theorem" class="slide level2">
-<h2>Central Limit Theorem</h2>
-<ul>
-<li>“Backbone” of statistics</li>
-</ul>
-<p>Definition:</p>
-<ul>
-<li>If the sample size (n) is large enough, the distribution of the sample proportions will be bell-shaped (approximately normal), centered at the long run probability (<span class="math inline">\(\pi\)</span>), with a standard deviation:</li>
-</ul>
-<p><span class="math display">\[standard\: deviation\: of\: the\: null=\sqrt{\frac{\pi(1-\pi)}{n}}\]</span></p>
-</section>
-<section id="using-theory-for-standardized-values" class="slide level2 center">
-<h2>Using Theory for Standardized Values</h2>
-<p>Replace S.D. with theory-based calculation</p>
-<p><span class="math display">\[z=\frac{Observed\: Statistic - Hypothesized\: Value}{Standard\: Deviation\: under\: the\: null}\]</span></p>
-<p><span class="math display">\[=\frac{\hat{p}-\pi}{\sqrt{\frac{\pi(1-\pi)}{n}}}\]</span></p>
-</section>
-<section id="using-the-applet" class="slide level2">
-<h2>Using the Applet</h2>
-<p>We can still use the One Proportion Applet for the theory-based approach</p>
-<ul>
-<li>Check “Normal Approximation” box</li>
-<li>Applet fits a normal curve to the data</li>
-</ul>
-<p>In more advanced classes, we use calculus to get these values.</p>
-</section>
-<section id="using-the-applet-1" class="slide level2">
-<h2>Using the Applet</h2>
-
-<img data-src="5_normalapp.png" class="quarto-figure quarto-figure-center r-stretch" alt="Screenshot of the One Proportion Applet used to find values using the theory based approach."></section>
+<section id="sd-95-confidence-interval-for-means" class="slide level2 center">
+<h2>2SD (95%) Confidence Interval for Means</h2>
+<p><span class="math display">\[CI=\bar{x}±2*\frac{s}{\sqrt{n}}\]</span></p>
+<p><span class="math display">\[=(Lower\:Bound,Upper\:Bound)\]</span></p>
+</section></section>
 <section>
-<section id="example-halloween-treats" class="title-slide slide level1 center">
-<h1>Example: Halloween Treats</h1>
+<section id="changing-the-width-of-a-confidence-interval" class="title-slide slide level1 center">
+<h1>Changing the Width of a Confidence Interval</h1>
 
 </section>
-<section id="halloween-treats" class="slide level2" style="font-size: 32px">
-<h2>Halloween Treats</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<p>Let’s identify the following:</p>
+<section id="what-factors-affect-confidence-interval-width" class="slide level2 center">
+<h2>What factors affect confidence interval width?</h2>
+<ol type="1">
+<li><p>Confidence level</p></li>
+<li><p>Sample size</p></li>
+<li><p>Standard error</p></li>
+</ol>
+</section>
+<section id="confidence-level" class="slide level2 center">
+<h2>1. Confidence Level</h2>
+<p>Recall, significance level (<span class="math inline">\(\alpha\)</span>) + confidence level = 100%</p>
 <ul>
-<li><p>Sample &amp; size:</p></li>
-<li><p>Variable of interest:</p></li>
-<li><p>Parameter &amp; symbol:</p></li>
-<li><p>Observed statistic &amp; symbol:</p></li>
-<li><p>Hypotheses (in symbols):</p></li>
+<li><p><strong>Significance level (</strong><span class="math inline">\(\alpha\)</span>) = p-value threshold for rejecting/failing to reject the null hypothesis (<span class="math inline">\(H_{0}\)</span>)</p></li>
+<li><p>Common values for <span class="math inline">\(\alpha\)</span>: 0.01, 0.05, 0.10</p></li>
+<li><p>Using 0.05 is common practice</p>
+<ul>
+<li>This is generally what we will use for this class</li>
+</ul></li>
+<li><p>Thus, common confidence levels are 99%, 95%, and 90%, respectively</p></li>
 </ul>
-<p>Do we meet the criteria for the theory-based approach?</p>
-</div><div class="column" style="width:40%;">
+</section>
+<section id="confidence-level-1" class="slide level2 center">
+<h2>1. Confidence Level</h2>
+<p>Since significance level + confidence level = 100%…</p>
+<ul>
+<li><p>As significance level <u><strong>increases</strong></u>, confidence level <u><strong>decreases</strong></u></p>
+<div>
+<ul>
+<li class="fragment">Higher significance level = reject the null more often</li>
+<li class="fragment">Reject the null more often = fewer plausible parameter values</li>
+<li class="fragment">Fewer plausible parameter values = smaller confidence interval</li>
+</ul>
+</div></li>
+</ul>
+</section>
+<section id="confidence-level-2" class="slide level2 center">
+<h2>1. Confidence Level</h2>
+<p>Since significance level + confidence level = 100%…</p>
+<ul>
+<li><p>As significance level <u><strong>decreases</strong></u>, confidence level <u><strong>increases</strong></u></p>
+<div>
+<ul>
+<li class="fragment">Lower significance level = reject the null less often</li>
+<li class="fragment">Reject the null less often = more plausible parameter values</li>
+<li class="fragment">More plausible parameter values = larger confidence interval</li>
+</ul>
+</div></li>
+</ul>
+</section>
+<section id="sample-size" class="slide level2 center">
+<h2>2. Sample Size</h2>
+<p>A larger sample size (<span class="math inline">\(n\)</span>) is ALWAYS (!!!) better!</p>
+<ul>
+<li><p>If <span class="math inline">\(n\)</span> increases:</p>
+<ul>
+<li>Generally less variability in data</li>
+<li>Smaller standard error (smaller confidence interval)</li>
+</ul></li>
+<li><p>If <span class="math inline">\(n\)</span> increases:</p>
+<ul>
+<li>Likely more variability in data</li>
+<li>Larger standard error (larger confidence interval)</li>
+</ul></li>
+</ul>
+</section>
+<section id="standard-error" class="slide level2 center">
+<h2>3. Standard Error</h2>
+<p>Recall: CI = Observed statistic ± multiplier * <strong>standard error</strong></p>
+<ul>
+<li>Multiplier * standard error = margin of error</li>
+</ul>
+<p>As standard error <u><strong>increases:</strong></u></p>
+<ul>
+<li><p>Margin of error increases</p></li>
+<li><p>CI gets larger</p></li>
+</ul>
+</section>
+<section id="standard-error-1" class="slide level2 center">
+<h2>3. Standard Error</h2>
+<p>Recall: CI = Observed statistic ± multiplier * <strong>standard error</strong></p>
+<ul>
+<li>Multiplier * standard error = margin of error</li>
+</ul>
+<p>As standard error <u><strong>decreases:</strong></u></p>
+<ul>
+<li><p>Margin of error decreases</p></li>
+<li><p>CI gets smaller</p></li>
+</ul>
+</section>
+<section id="summary-of-factors-affecting-the-confidence-interval-width" class="slide level2 center">
+<h2>Summary of Factors Affecting the Confidence Interval Width</h2>
+<p><br></p>
 <table class="caption-top">
-<colgroup>
-<col style="width: 100%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>Scenario:</th>
+<th style="text-align: center;">Makes CI Smaller</th>
+<th style="text-align: center;">Makes CI Larger</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Researchers investigated whether children might be as tempted by toys as by candy for Halloween treats. Test households offered two plates to children: one with candy and one with a small toy. They observed the selections of 283 children that night and found that 148 of the kids chose candy.</td>
+<td style="text-align: center;">Confidence level decreases</td>
+<td style="text-align: center;">Confidence level increases</td>
 </tr>
 <tr class="even">
-<td></td>
+<td style="text-align: center;">Sample size increases</td>
+<td style="text-align: center;">Sample size decreases</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Standard error decreases</td>
+<td style="text-align: center;">Standard error increases</td>
 </tr>
 </tbody>
 </table>
-</div></div>
-</section>
-<section id="halloween-treats-1" class="slide level2">
-<h2>Halloween Treats</h2>
-<ul>
-<li><p>Sample &amp; size: <span class="fragment"><strong>n = 283 kids</strong></span></p></li>
-<li><p>Variable of interest: <span class="fragment"><strong>Chose candy or not</strong></span></p></li>
-<li><p>Parameter &amp; symbol: <span class="fragment"><span class="math inline">\(\pi\)</span> <strong>= long run proportion of kids that chose candy</strong></span></p></li>
-<li><p>Observed statistic &amp; symbol: <span class="fragment"><span class="math inline">\(\hat{p} = \frac{148}{283}\)</span></span></p></li>
-<li><p>Hypotheses (in symbols):</p>
-<ul>
-<li><span class="fragment"><span class="math inline">\(H_{0}\)</span><strong>:</strong> <span class="math inline">\(\pi\)</span> <strong>= 0.5</strong></span></li>
-<li><span class="fragment"><span class="math inline">\(H_{A}\)</span><strong>:</strong> <span class="math inline">\(\pi\)</span> <strong>≠ 0.5</strong></span></li>
-</ul></li>
-</ul>
-<p>Do we meet the criteria for the theory-based approach? <span class="fragment"><strong>Yes! More than 10 failures &amp; successes.</strong></span></p>
-</section>
-<section id="halloween-treats-2" class="slide level2 center">
-<h2>Halloween Treats</h2>
-<p>Standard deviation using theory:</p>
-<p><span class="math display">\[standard\: deviation\: of\: the\: null=\sqrt{\frac{\pi(1-\pi)}{n}}\]</span></p>
-<p><span class="math display">\[=\sqrt{\frac{0.5(1-0.5)}{283}}=0.0297\]</span></p>
-</section>
-<section id="halloween-treats-3" class="slide level2 center">
-<h2>Halloween Treats</h2>
-<p>Then, we use the calculated standard deviation to obtain the standardized statistic:</p>
-<p><span class="math display">\[standardized\: statistic\: =\frac{0.523-0.5}{0.0297}=0.774\]</span></p>
-</section>
-<section id="halloween-treats-4" class="slide level2 center">
-<h2>Halloween Treats</h2>
-<p>Now we find the standardized statistic with the simulation approach:</p>
-<p><span class="math display">\[standardized\: statistic\: =\frac{0.523-0.5}{0.02}=0.793\]</span></p>
-<p>Notice, we get nearly the same number!</p>
-</section>
-<section id="halloween-treats-conclusion" class="slide level2 center">
-<h2>Halloween Treats Conclusion</h2>
-<p>Since our standardized statistic using either approach is not outside the twos, we conclude the following: <br><br> <em>“We do not have enough evidence to conclude that the long-run proportion of kids who choose candy differs from 0.5.”</em></p>
-</section></section>
-<section id="investigation-tire-story-falls-flat" class="title-slide slide level1 center">
-<h1>Investigation: Tire Story Falls Flat</h1>
 
 <div class="quarto-auto-generated-content">
 <p><img src="logo.jpg" class="slide-logo"></p>
@@ -530,7 +500,7 @@
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 

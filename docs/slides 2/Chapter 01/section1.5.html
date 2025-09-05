@@ -10,7 +10,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.56">
 
-  <title>STAT 218 – Section 2.2</title>
+  <title>STAT 218 – Section 1.5</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -327,333 +327,209 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Section 2.2</h1>
-  <p class="subtitle">Inference for a Single Quantitative Variable</p>
+  <h1 class="title">Section 1.5</h1>
+  <p class="subtitle">Theory Based Approach</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="up-until-now" class="slide level2 center">
-<h2>Up until now…</h2>
+<section id="section-1.5-learning-objectives" class="slide level2 center">
+<h2>Section 1.5 Learning Objectives</h2>
 <ul>
-<li>We have been working with proportions
+<li><p>Describe the sampling distribution of a statistic and define the standard error.</p></li>
+<li><p>Know when/why simulation and theory will yield different results.</p></li>
+</ul>
+</section>
+<section id="simulation" class="slide level2">
+<h2>Simulation</h2>
+<p>So far, we’ve used a simulation-based approach to gather strength of evidence.</p>
 <ul>
-<li>We use proportions for <strong>categorical (qualitative) data</strong></li>
+<li>Effective</li>
+<li>Relatively easy</li>
+</ul>
+<p>But…</p>
+<ul>
+<li>Can be tedious</li>
+<li>Not always practical in real life</li>
+<li>Enter: Theory!</li>
+</ul>
+</section>
+<section id="the-theory-based-approach" class="slide level2 center">
+<h2>The Theory-Based Approach</h2>
+<ul>
+<li>Used when computers weren’t a thing</li>
+<li>Allows prediction of the null distribution shape (aka, pattern)</li>
+<li>Gives us p-values and standardized statistics</li>
+<li>Should get the same or similar results as simulation</li>
+</ul>
+</section>
+<section id="the-null-distribution-in-depth" class="slide level2 center">
+<h2>The Null Distribution (in depth!)</h2>
+<ul>
+<li>Sometimes, data follows a known distribution</li>
+<li>Commonly, we assume data follows the <strong>normal distribution</strong></li>
+<li>The <strong>normal distribution</strong> is one of many known patterns that data can follow</li>
+<li>In this class, we always assume the null distribution is normally distributed</li>
+</ul>
+</section>
+<section id="the-null-distribution-in-depth-1" class="slide level2 center">
+<h2>The Null Distribution (in depth!)</h2>
+<p>Since we know the null distribution is normally distributed, we know the following:</p>
+<ul>
+<li>Bell shaped</li>
+<li>Centered at <span class="math inline">\(\pi\)</span></li>
+<li>Can predict standard deviation
+<ul>
+<li>Without the Applet!</li>
 </ul></li>
-<li>What if our data is qualitative (numerical)?</li>
-</ul>
-<p>Examples: Height, weight, time, measurement of length</p>
-</section>
-<section>
-<section id="distributions" class="title-slide slide level1 center">
-<h1>Distributions</h1>
-<p>Recall: Describing a distribution</p>
-</section>
-<section id="shape" class="slide level2 center">
-<h2>Shape</h2>
-<p>Symmetric, mound-shaped, skewed? How many ”peaks”?</p>
-</section>
-<section id="center" class="slide level2 center">
-<h2>Center</h2>
-<p>Where does the center of the pattern appear?</p>
-<ul>
-<li>Generally refers to mean or mode</li>
 </ul>
 </section>
-<section id="variability" class="slide level2 center">
-<h2>Variability</h2>
-<p>How spread out is the distribution?</p>
-<ul>
-<li>Generally described in terms of <u><strong>standard deviation</strong></u></li>
-<li>Variability will be a big topic in this class!</li>
-</ul>
-</section>
-<section id="unusual-data" class="slide level2 center">
-<h2>Unusual Data</h2>
-<ul>
-<li>Outliers</li>
-<li>Outliers can affect results- so we need to be aware of them.</li>
-</ul>
-</section>
-<section id="example-data-distribution" class="slide level2 center">
-<h2>Example Data Distribution</h2>
+<section id="example-null-distribution" class="slide level2">
+<h2>Example Null Distribution</h2>
 
-<img data-src="images/2_gpa.png" class="quarto-figure quarto-figure-center r-stretch" alt="Dot plot distribution of Cumulative GPA data from a sample of size 30."></section>
-<section id="whats-the-difference" class="slide level2 center">
-<h2>What’s the difference?</h2>
+<img data-src="5_null.png" class="quarto-figure quarto-figure-center r-stretch" alt="Example null distribution."></section>
+<section id="why-does-sample-size-matter" class="slide level2 center">
+<h2>Why does sample size matter?</h2>
+<p>If sample size is too small:</p>
+<ul>
+<li>Theory-based approach will not be accurate</li>
+<li>Curve might not be bell-shaped</li>
+</ul>
+<p>Theory-based “rule of thumb”:</p>
+<ul>
+<li>Need at least 10 successes and 10 failures</li>
+</ul>
+</section>
+<section id="to-illustrate" class="slide level2">
+<h2>To illustrate…</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/2_ddist.png" alt="Histogram of cumulative GPA that is skewed left. Mean is 3.288, standard deviation is 0.551, and sample size is 2919."></p>
-<figcaption>Data Distribution</figcaption>
+<p><img data-src="5_small.png" class="quarto-figure quarto-figure-center" alt="Normal distribution where n=30. Mound shaped with gaps."></p>
 </figure>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/2_sdist.png" alt="A centered histogram of simulated sample means with a mean of 3.285 and standard deviation of 0.104."></p>
-<figcaption>Sampling Distribution</figcaption>
+<p><img data-src="5_large.png" class="quarto-figure quarto-figure-center" alt="Normal distribution where n=300. Mound shaped and completely filled in."></p>
 </figure>
 </div>
 </div></div>
+<ul>
+<li>Both are centered at 0.50</li>
+<li>Left graph n = 30</li>
+<li>Right graph n = 300</li>
+</ul>
 </section>
-<section id="data-distribution" class="slide level2 center">
-<h2>Data Distribution</h2>
+<section id="central-limit-theorem" class="slide level2">
+<h2>Central Limit Theorem</h2>
+<ul>
+<li>“Backbone” of statistics</li>
+</ul>
+<p>Definition:</p>
+<ul>
+<li>If the sample size (n) is large enough, the distribution of the sample proportions will be bell-shaped (approximately normal), centered at the long run probability (<span class="math inline">\(\pi\)</span>), with a standard deviation:</li>
+</ul>
+<p><span class="math display">\[standard\: deviation\: of\: the\: null=\sqrt{\frac{\pi(1-\pi)}{n}}\]</span></p>
+</section>
+<section id="using-theory-for-standardized-values" class="slide level2 center">
+<h2>Using Theory for Standardized Values</h2>
+<p>Replace S.D. with theory-based calculation</p>
+<p><span class="math display">\[z=\frac{Observed\: Statistic - Hypothesized\: Value}{Standard\: Deviation\: under\: the\: null}\]</span></p>
+<p><span class="math display">\[=\frac{\hat{p}-\pi}{\sqrt{\frac{\pi(1-\pi)}{n}}}\]</span></p>
+</section>
+<section id="using-the-applet" class="slide level2">
+<h2>Using the Applet</h2>
+<p>We can still use the One Proportion Applet for the theory-based approach</p>
+<ul>
+<li>Check “Normal Approximation” box</li>
+<li>Applet fits a normal curve to the data</li>
+</ul>
+<p>In more advanced classes, we use calculus to get these values.</p>
+</section>
+<section id="using-the-applet-1" class="slide level2">
+<h2>Using the Applet</h2>
+
+<img data-src="5_normalapp.png" class="quarto-figure quarto-figure-center r-stretch" alt="Screenshot of the One Proportion Applet used to find values using the theory based approach."></section>
+<section>
+<section id="example-halloween-treats" class="title-slide slide level1 center">
+<h1>Example: Halloween Treats</h1>
+
+</section>
+<section id="halloween-treats" class="slide level2" style="font-size: 32px">
+<h2>Halloween Treats</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/2_ddist.png" class="quarto-figure quarto-figure-center" alt="Histogram of cumulative GPA that is skewed left. Mean is 3.288, standard deviation is 0.551, and sample size is 2919."></p>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
+<div class="column" style="width:60%;">
+<p>Let’s identify the following:</p>
 <ul>
-<li><p>This is data from a study</p></li>
-<li><p>Then, we plot it</p></li>
-<li><p>Here a histogram is used</p>
-<ul>
-<li>Could use other vices: dot plot, box plot, etc.</li>
-</ul></li>
+<li><p>Sample &amp; size:</p></li>
+<li><p>Variable of interest:</p></li>
+<li><p>Parameter &amp; symbol:</p></li>
+<li><p>Observed statistic &amp; symbol:</p></li>
+<li><p>Hypotheses (in symbols):</p></li>
 </ul>
-</div></div>
-</section>
-<section id="sampling-distribution" class="slide level2 center">
-<h2>Sampling Distribution</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/2_sdist.png" class="quarto-figure quarto-figure-center" alt="A centered histogram of simulated sample means with a mean of 3.285 and standard deviation of 0.104."></p>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<ul>
-<li><p>Each data point represents one simulation of our study</p></li>
-<li><p>The more simulations the better!</p></li>
-<li><p>Generally, this is best plotted using a histogram or dot plot.</p></li>
-</ul>
-</div></div>
-</section>
-<section id="summary-statistics" class="slide level2 center">
-<h2>Summary Statistics</h2>
-<p>Sometimes it is helpful to summarize quantitative data with numerical values</p>
-</section>
-<section id="mean" class="slide level2 center">
-<h2>Mean</h2>
-<p>Add up all the values and divide by the total number of values</p>
-</section>
-<section id="median" class="slide level2">
-<h2>Median</h2>
-<p>Half of the data is above the middle, half of the data is below the middle.</p>
-<ul>
-<li>“Middle” is found when the data is ordered from lowest to highest</li>
-</ul>
-</section>
-<section id="outliers" class="slide level2">
-<h2>Outliers</h2>
-<p>Unusual data points</p>
-<ul>
-<li><p>Easy to pick out using visualizations</p></li>
-<li><p>Can be found if the data is ordered too</p>
-<ul>
-<li>“Eyeballing” it</li>
-</ul></li>
-</ul>
-</section>
-<section id="mean-and-median-example" class="slide level2 center">
-<h2>Mean and Median Example</h2>
-<p><br> Suppose we observe the following data:</p>
+<p>Do we meet the criteria for the theory-based approach?</p>
+</div><div class="column" style="width:40%;">
 <table class="caption-top">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Scenario:</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">8</td>
-<td style="text-align: center;">10</td>
-<td style="text-align: center;">11</td>
-<td style="text-align: center;">12</td>
-<td style="text-align: center;">15</td>
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">8</td>
-<td style="text-align: center;">9</td>
+<td>Researchers investigated whether children might be as tempted by toys as by candy for Halloween treats. Test households offered two plates to children: one with candy and one with a small toy. They observed the selections of 283 children that night and found that 148 of the kids chose candy.</td>
+</tr>
+<tr class="even">
+<td></td>
 </tr>
 </tbody>
 </table>
-<p><br></p>
+</div></div>
+</section>
+<section id="halloween-treats-1" class="slide level2">
+<h2>Halloween Treats</h2>
 <ul>
-<li><p>Mean: <strong>10</strong></p></li>
-<li><p>Median: <strong>9.5</strong></p></li>
+<li><p>Sample &amp; size: <span class="fragment"><strong>n = 283 kids</strong></span></p></li>
+<li><p>Variable of interest: <span class="fragment"><strong>Chose candy or not</strong></span></p></li>
+<li><p>Parameter &amp; symbol: <span class="fragment"><span class="math inline">\(\pi\)</span> <strong>= long run proportion of kids that chose candy</strong></span></p></li>
+<li><p>Observed statistic &amp; symbol: <span class="fragment"><span class="math inline">\(\hat{p} = \frac{148}{283}\)</span></span></p></li>
+<li><p>Hypotheses (in symbols):</p>
+<ul>
+<li><span class="fragment"><span class="math inline">\(H_{0}\)</span><strong>:</strong> <span class="math inline">\(\pi\)</span> <strong>= 0.5</strong></span></li>
+<li><span class="fragment"><span class="math inline">\(H_{A}\)</span><strong>:</strong> <span class="math inline">\(\pi\)</span> <strong>≠ 0.5</strong></span></li>
+</ul></li>
 </ul>
+<p>Do we meet the criteria for the theory-based approach? <span class="fragment"><strong>Yes! More than 10 failures &amp; successes.</strong></span></p>
+</section>
+<section id="halloween-treats-2" class="slide level2 center">
+<h2>Halloween Treats</h2>
+<p>Standard deviation using theory:</p>
+<p><span class="math display">\[standard\: deviation\: of\: the\: null=\sqrt{\frac{\pi(1-\pi)}{n}}\]</span></p>
+<p><span class="math display">\[=\sqrt{\frac{0.5(1-0.5)}{283}}=0.0297\]</span></p>
+</section>
+<section id="halloween-treats-3" class="slide level2 center">
+<h2>Halloween Treats</h2>
+<p>Then, we use the calculated standard deviation to obtain the standardized statistic:</p>
+<p><span class="math display">\[standardized\: statistic\: =\frac{0.523-0.5}{0.0297}=0.774\]</span></p>
+</section>
+<section id="halloween-treats-4" class="slide level2 center">
+<h2>Halloween Treats</h2>
+<p>Now we find the standardized statistic with the simulation approach:</p>
+<p><span class="math display">\[standardized\: statistic\: =\frac{0.523-0.5}{0.02}=0.793\]</span></p>
+<p>Notice, we get nearly the same number!</p>
+</section>
+<section id="halloween-treats-conclusion" class="slide level2 center">
+<h2>Halloween Treats Conclusion</h2>
+<p>Since our standardized statistic using either approach is not outside the twos, we conclude the following: <br><br> <em>“We do not have enough evidence to conclude that the long-run proportion of kids who choose candy differs from 0.5.”</em></p>
 </section></section>
-<section>
-<section id="type-i-and-type-ii-errors" class="title-slide slide level1 center">
-<h1>Type I and Type II Errors</h1>
-
-</section>
-<section id="time-for-a-detour" class="slide level2 center">
-<h2>Time for a detour…</h2>
-<p>Recall our hypotheses</p>
-<ul>
-<li><p><span class="math inline">\(H_{0}\)</span>: What’s expected to happen; chance explanation</p></li>
-<li><p><span class="math inline">\(H_{A}\)</span>: Wait, something different happened!</p></li>
-</ul>
-</section>
-<section id="time-for-a-detour-1" class="slide level2 center">
-<h2>Time for a detour…</h2>
-<p>We want strength of evidence in favor of <span class="math inline">\(H_{A}\)</span></p>
-<ul>
-<li><p>So far, we have two methods to obtain strength of evidence:</p>
-<ul>
-<li><p><u><strong>Standardized statistic</strong></u></p></li>
-<li><p><u><strong>P-value</strong></u></p></li>
-</ul></li>
-</ul>
-<p>But, what happens if these methods are wrong?</p>
-</section>
-<section id="time-for-a-detour-2" class="slide level2 center">
-<h2>Time for a detour…</h2>
-<ul>
-<li><p>P-value:</p>
-<ul>
-<li>Derived using simulation or theory</li>
-<li>Based on the null model (random chance), so it could be wrong</li>
-</ul></li>
-<li><p>Standardized statistic:</p>
-<ul>
-<li>Calculated using hypothesized null value</li>
-<li>Again, based on null model and could be wrong</li>
-</ul></li>
-</ul>
-<div class="fragment">
-<p>Goes back to the idea of random chance!</p>
-</div>
-</section>
-<section id="buzz-and-doris" class="slide level2 center">
-<h2>Buzz and Doris</h2>
-<p>Recall the Buzz and Doris example. (Investigating if dolphins can communicate.) <br><br> Hypotheses:</p>
-<ul>
-<li><p><strong>Null:</strong> Buzz is just guessing (50% chance of guessing correctly)</p></li>
-<li><p><strong>Alt:</strong> Buzz is communicating with Doris (Greater than 50% chance of guessing correctly.)</p></li>
-</ul>
-</section>
-<section id="buzz-and-doris-1" class="slide level2 center">
-<h2>Buzz and Doris</h2>
-<p>In this context, what does it mean if…</p>
-<ul>
-<li><p>We reject the null hypothesis</p></li>
-<li><p>We fail to reject the null hypothesis</p></li>
-</ul>
-</section>
-<section id="type-i-error" class="slide level2 center">
-<h2>Type I Error</h2>
-<ul>
-<li>We reject the null hypothesis, but it is actually true</li>
-<li>“False alarm”</li>
-<li>In the Buzz and Doris example:
-<ul>
-<li>We conclude that Buzz is communicating with Doris, but he is guessing</li>
-</ul></li>
-</ul>
-</section>
-<section id="type-ii-error" class="slide level2 center">
-<h2>Type II Error</h2>
-<ul>
-<li>We fail to reject the null hypothesis, but it is actually false</li>
-<li>“Missed opportunity”</li>
-<li>In the Buzz and Doris example:
-<ul>
-<li>We conclude that Buzz is just guessing, but really, he is communicating with Doris</li>
-</ul></li>
-</ul>
-</section>
-<section id="the-boy-who-cried-wolf" class="slide level2 center">
-<h2>The Boy Who Cried Wolf</h2>
-<p>Let’s look at an example using the classic fairy tale: <br><br> Null: There is no wolf</p>
-<p>Alt: There is a wolf</p>
-</section>
-<section id="the-boy-who-cried-wolf-1" class="slide level2 center">
-<h2>The Boy Who Cried Wolf</h2>
-<ul>
-<li><p>Rejecting the null means there is a wolf, the boy cries wolf and the villagers believe there is a wolf</p></li>
-<li><p>Failing to reject the null means there is no wolf, the boy does not cry wolf and the villagers believe there is no wolf</p></li>
-</ul>
-</section>
-<section id="the-boy-who-cried-wolf-2" class="slide level2 center">
-<h2>The Boy Who Cried Wolf</h2>
-<ul>
-<li><p><strong>Type I Error:</strong> The boy cries wolf and the villagers believe him, but there is no wolf.</p></li>
-<li><p><strong>Type II Error:</strong> The boy does not cry wolf and the villagers believe him, but there’s actually a wolf.</p></li>
-</ul>
-<aside class="notes">
-<p>Draw a punnett square here</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="implications-of-errors" class="slide level2 center">
-<h2>Implications of Errors</h2>
-<p>What does it mean when we make an error?</p>
-<ul>
-<li><p>If a Type I Error is made:</p>
-<ul>
-<li>We’re claiming we have a significant result, when we don’t</li>
-</ul></li>
-<li><p>If a Type II Error is made:</p>
-<ul>
-<li>We have missed a potentially important result</li>
-</ul></li>
-</ul>
-</section>
-<section id="which-type-of-error-is-worse" class="slide level2 center">
-<h2>Which type of error is worse?</h2>
-<p>Well, it depends!</p>
-<ul>
-<li><p>Context is everything</p></li>
-<li><p>Depending on the scenario, one error might be worse to have than the other</p></li>
-<li><p>Sometimes neither error is the “end of the world”</p></li>
-</ul>
-</section></section>
-<section>
-<section id="heart-transplant-example-revisited" class="title-slide slide level1 center">
-<h1>Heart Transplant Example (Revisited)</h1>
-
-</section>
-<section id="heart-transplant-example" class="slide level2 center">
-<h2>Heart Transplant Example</h2>
-<ul>
-<li><p>80% of 10 transplants resulted in deaths within 30 days of the transplant</p></li>
-<li><p>Historical data suggests a 15% mortality rate</p></li>
-</ul>
-</section>
-<section id="heart-transplant-example-1" class="slide level2 center">
-<h2>Heart Transplant Example</h2>
-<ul>
-<li><p>Null: The long run proportion of patients at St.&nbsp;George who die after receiving a heart transplant is greater than 15%</p></li>
-<li><p>Alt: The long run proportion of patients at St.&nbsp;George who die after receiving a heart transplant is greater than 15%</p></li>
-</ul>
-<div class="fragment">
-<p>What does it mean to reject the null?</p>
-</div>
-<div class="fragment">
-<p>What does it mean to fail to reject the null?</p>
-</div>
-</section>
-<section id="heart-transplant-example-2" class="slide level2">
-<h2>Heart Transplant Example</h2>
-<div>
-<ul>
-<li class="fragment"><p>What is the consequence of a Type I Error?</p></li>
-<li class="fragment"><p>What is the consequence of a Type II Error?</p></li>
-</ul>
-</div>
+<section id="investigation-tire-story-falls-flat" class="title-slide slide level1 center">
+<h1>Investigation: Tire Story Falls Flat</h1>
 
 <div class="quarto-auto-generated-content">
 <p><img src="logo.jpg" class="slide-logo"></p>
@@ -661,7 +537,7 @@
 
 </div>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 

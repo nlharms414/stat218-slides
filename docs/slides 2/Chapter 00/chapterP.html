@@ -10,7 +10,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.56">
 
-  <title>STAT 218 – Section 2.1</title>
+  <title>STAT 218 – Chapter P</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -327,236 +327,395 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Section 2.1</h1>
-  <p class="subtitle">Generalization: How broadly do the results apply?</p>
+  <h1 class="title">Chapter P</h1>
+  <p class="subtitle">The Preliminaries</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="recall" class="slide level2 center">
-<h2>Recall…</h2>
+<section id="chapter-p-learning-objectives" class="slide level2 center">
+<h2>Chapter P Learning Objectives</h2>
 <ul>
-<li><p><u><strong>Population:</strong></u> The complete collection of <strong>all</strong> objects that are of interest for a given scenario</p>
-<ul>
-<li>Ex: People, animals, basketball games- can be anything, really!</li>
-</ul></li>
-<li><p><u><strong>Sample:</strong></u> A subset of observational units from the population of interest</p></li>
+<li>Understand the 6-step process.</li>
+<li>Be able to classify variables as quantitative or qualitative.</li>
+<li>Be able to interpret a histogram.</li>
+<li>Understand the difference between a skewed and symmetric distribution.</li>
+<li>Know how to measure the center of data using either a mean or median.</li>
 </ul>
 </section>
-<section id="recall-1" class="slide level2 center">
-<h2>Recall…</h2>
-<ul>
-<li><p>Goal: Generaliztion</p>
-<ul>
-<li><p>Describe the sample</p></li>
-<li><p>Extend to a larger population</p></li>
-</ul></li>
-</ul>
+<section id="section" class="slide level2 center" style="font-size: 72px;">
+<h2></h2>
+<div class="r-stack">
+<p><strong>What do you think of when you hear the word “statistics”?</strong></p>
+</div>
+</section>
+<section id="anecdotal-evidence" class="slide level2">
+<h2>Anecdotal Evidence</h2>
+<p>“I will never start jogging because my friend’s dad jogged his whole life, but he died at age 46 from a heart attack.” <br><br> “Don’t get your child vaccinated. I had my child vaccinated and now he is autistic.” <br><br> “My friend tried a new diet and lost weight so quickly- that diet must work really well.”</p>
+</section>
+<section id="section-1" class="slide level2 center" style="font-size: 72px;">
+<h2></h2>
+<p><strong>Statistics</strong> allow us to estimate something about a broad population.</p>
+</section>
+<section id="helper-vs.-hinderer" class="slide level2">
+<h2>Helper vs.&nbsp;Hinderer</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<p><br> <img data-src="images/baby.png" alt="Angry baby"></p>
+<p><a href="https://www.youtube.com/watch?v=HBW5vdhr_PA">Link to Helper vs Hinderer Video</a></p>
+</div><div class="column" style="font-size: 32px">
+<p>In a study reported in a November 2007 issue of Nature, researchers investigated whether infants take into account an individual’s actions towards others in evaluating that individual as appealing or aversive, perhaps laying the foundation for social interaction (Hamlin, Wynn, and Bloom, 2007).</p>
+<p>The video describes the study that was done to test this theory, using “helper” and “hinderer” toys.</p>
+</div></div>
 </section>
 <section>
-<section id="sampling" class="title-slide slide level1 center">
-<h1>Sampling</h1>
+<section id="p.1-introduction-to-the-six-step-method" class="title-slide slide level1 center">
+<h1>P.1: Introduction to the Six-Step Method</h1>
 
 </section>
-<section id="representative-sample" class="slide level2 center">
-<h2>Representative Sample</h2>
-<p>A sample that is similar to or representative of a larger population.</p>
+<section id="the-six-step-method-overview" class="slide level2 center">
+<h2>The Six-Step Method Overview</h2>
+<ol type="1">
+<li>Ask a research question</li>
+<li>Design a study and collect data</li>
+<li>Explore the data</li>
+<li>Draw inferences beyond the data</li>
+<li>Formulate conclusions</li>
+<li>Look back and ahead</li>
+</ol>
+</section>
+<section id="ask-a-research-question" class="slide level2 center">
+<h2>1. Ask a research question</h2>
 <ul>
-<li>Ex: Would our class data be representative of all UNL students?</li>
+<li>What do you want to know or investigate?</li>
+<li>It does not have to be super specific</li>
 </ul>
-</section>
-<section id="bias" class="slide level2 center">
-<h2>Bias</h2>
-<p>A sample that consistently underestimates or overestimates a population parameter of interest</p>
+<p>Helper vs.&nbsp;Hinderer example:</p>
 <ul>
-<li>Ex: Would the UNL volleyball team be representative of the average height of all female UNL students?</li>
-</ul>
-</section>
-<section id="visual-of-population-vs.-sample" class="slide level2">
-<h2>Visual of Population vs.&nbsp;Sample</h2>
-
-<img data-src="images/1_popvsamp.png" class="quarto-figure quarto-figure-center r-stretch" alt="asdf"></section>
-<section id="how-should-we-sample" class="slide level2 center">
-<h2>How should we sample?</h2>
-</section>
-<section id="convenience-sampling" class="slide level2 center">
-<h2>Convenience Sampling ❌</h2>
+<li><p>Do babies show a preference for the helper toy or the hinderer toy after being shown a puppet show?</p>
 <ul>
-<li><p>Not a good method</p></li>
-<li><p>“Hand picking” a sample</p></li>
-<li><p>Creates bias</p></li>
-<li><p>Ex: Interested in all Nebraska adults but only taking a sample of those living in Lincoln.</p></li>
-</ul>
-</section>
-<section id="simple-random-sampling" class="slide level2 center">
-<h2>Simple Random Sampling ✅</h2>
-<ul>
-<li><p>Every population member has an equal chance to be chosen</p></li>
-<li><p>Can generalize our results to entire population</p></li>
-<li><p>Choose from a sampling frame</p></li>
-<li><p><u><strong>Sampling frame:</strong></u> a list of all individuals in a population of interest</p>
-<ul>
-<li>Ex: List of all students from UNL registrar</li>
+<li>We’re REALLY investigating nature vs.&nbsp;nurture</li>
 </ul></li>
 </ul>
 </section>
-<section id="more-symbols" class="slide level2 center">
-<h2>More Symbols!</h2>
-<p>In some situations, we are interested in the <strong>long run average</strong></p>
+<section id="design-a-study-and-collect-data" class="slide level2 center">
+<h2>2. Design a study and collect data</h2>
 <ul>
-<li>As opposed to the <strong>long run proportion</strong>, in the last chapter</li>
+<li>How will you test for your question?</li>
+<li>What kind of data should be collected?</li>
+</ul>
+<p>Helper vs.&nbsp;Hinderer example:</p>
+<ul>
+<li>Recruit babies</li>
+<li>Show each baby the puppet show</li>
+<li>Record which toy the baby chooses</li>
 </ul>
 </section>
-<section id="more-symbols-1" class="slide level2 center">
-<h2>More Symbols!</h2>
+<section id="explore-the-data" class="slide level2 center">
+<h2>3. Explore the data</h2>
 <ul>
-<li>Sample mean: <span class="math inline">\(\bar{x}\)</span></li>
-<li>Sample Standard Deviation: <span class="math inline">\(s\)</span></li>
-<li>Population Mean: <span class="math inline">\(\mu\)</span></li>
-<li>Population Standard Deviation: <span class="math inline">\(\sigma\)</span></li>
+<li><strong>Visually:</strong> Create boxplots, histograms, other graphs/charts</li>
+<li><strong>Numerically:</strong> Compute a number</li>
+</ul>
+<p>Helper vs.&nbsp;Hinderer example:</p>
+<ul>
+<li><p>14 picked the helper, 2 picked the hinderer</p>
+<ul>
+<li>Proportionally: 14/16 = 0.875</li>
+</ul></li>
 </ul>
 </section>
-<section id="symbol-comparison" class="slide level2 center">
-<h2>Symbol Comparison</h2>
-<p><br> Symbols we use depend on our variable type:</p>
+<section id="draw-inferences-beyond-the-data" class="slide level2 center">
+<h2>4. Draw inferences beyond the data</h2>
+<ul>
+<li>What might our results imply?</li>
+<li>Did our data result from chance alone?</li>
+<li>Is there an underlying cause?</li>
+</ul>
+<p>Helper vs.&nbsp;Hinderer example:</p>
+<ul>
+<li><p>Is 14/16 large enough to conclude babies prefer the helper toy?</p></li>
+<li><p>Did 14 choose the helper by chance?</p>
+<ul>
+<li>Perhaps the puppet show had an influence.</li>
+</ul></li>
+</ul>
+</section>
+<section id="formulate-conclusions" class="slide level2 center">
+<h2>5. Formulate conclusions</h2>
+<ul>
+<li>Strong evidence = form a conclusion</li>
+<li>Weak evidence = data was inconclusive</li>
+<li>Can often generalize to a population</li>
+</ul>
+<p>Helper vs.&nbsp;Hinderer example</p>
+<ul>
+<li>Conclusion: Babies preferred the helper toy over the hinderer toy, when shown the puppet show.</li>
+<li>Can we say this about all babies?</li>
+</ul>
+</section>
+<section id="look-back-and-ahead" class="slide level2 center">
+<h2>6. Look back and ahead</h2>
+<ul>
+<li>What was good about the experiment?</li>
+<li>What could be improved?</li>
+<li>Future research?</li>
+</ul>
+<p>Helper vs.&nbsp;Hinderer example:</p>
+<ul>
+<li>Recruit more babies</li>
+</ul>
+</section>
+<section id="four-pillars-of-statistical-evidence" class="slide level2 center">
+<h2>Four Pillars of Statistical Evidence</h2>
+<ol type="1">
+<li><strong>Significance:</strong> How strong is the evidence of an effect?</li>
+<li><strong>Estimation:</strong> What is the size of the effect?</li>
+<li><strong>Generalization:</strong> How broadly do conclusions apply?</li>
+<li><strong>Causation:</strong> Can we say what caused the observed difference?</li>
+</ol>
+<div class="fragment">
+<p><strong>Typically, the pillars apply during step 4 or 5 of the six-step process.</strong></p>
+</div>
+</section>
+<section id="basic-definitions" class="slide level2 center">
+<h2>Basic Definitions</h2>
+</section>
+<section id="data" class="slide level2 center">
+<h2>Data</h2>
+<p>Values measured or categories recorded on individual entities of interest.</p>
+</section>
+<section id="observational-units" class="slide level2 center">
+<h2>Observational Units</h2>
+<p>The individual entities on which the data is recorded.</p>
+</section>
+<section id="variables" class="slide level2 center">
+<h2>Variables</h2>
+<p>The recorded characteristics of the observational units.</p>
+</section>
+<section id="quantitative-or-numerical-data" class="slide level2 center">
+<h2>Quantitative (or Numerical) Data</h2>
+<p>Variables which take on numerical values</p>
+<ul>
+<li>Ex: Height, age, number of pets, 40-yard dash time</li>
+</ul>
+</section>
+<section id="qualitative-or-categorical-data" class="slide level2 center">
+<h2>Qualitative (or Categorical) Data</h2>
+<p>Variables which take on category designations</p>
+<ul>
+<li>Ex: Hair color, marital status, selecting A, B, or C on a multiple-choice question</li>
+</ul>
+</section>
+<section id="helper-vs.-hinderer-example" class="slide level2">
+<h2>Helper vs.&nbsp;Hinderer Example</h2>
+<ul>
+<li>What were the observational units?</li>
+</ul>
+<p><span class="fragment"><strong>Each baby</strong></span></p>
+<ul>
+<li>What variable was being observed?</li>
+</ul>
+<p><span class="fragment"><strong>Whether the baby chose the helper or hinderer</strong></span></p>
+<ul>
+<li>Was the variable numerical or categorical?</li>
+</ul>
+<p><span class="fragment"><strong>Categorical</strong></span></p>
+</section></section>
+<section>
+<section id="p.2-exploring-data" class="title-slide slide level1 center">
+<h1>P.2: Exploring Data</h1>
+
+</section>
+<section id="describing-data" class="slide level2 center">
+<h2>Describing Data</h2>
+</section>
+<section id="distribution" class="slide level2 center">
+<h2>Distribution</h2>
+<p>Describes the pattern of value/category outcomes for a variable.</p>
+<aside class="notes">
+<p>Six-sided die example with 3 sides being 3, 2 being two and 1 being one.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="describing-a-distribution" class="slide level2 center">
+<h2>Describing a Distribution</h2>
+</section>
+<section id="shape" class="slide level2 center">
+<h2>Shape</h2>
+<p>Symmetric, mound-shaped, skewed? How many ”peaks”?</p>
+</section>
+<section id="center" class="slide level2 center">
+<h2>Center</h2>
+<p>Where does the center of the pattern appear?</p>
+<ul>
+<li>Generally refers to mean or median</li>
+</ul>
+</section>
+<section id="variability" class="slide level2 center">
+<h2>Variability</h2>
+<p>How spread out is the distribution?</p>
+<ul>
+<li>Generally described in terms of <u><strong>standard deviation</strong></u></li>
+<li>Variability will be a big topic in this class!</li>
+</ul>
+</section>
+<section id="unusual-data" class="slide level2 center">
+<h2>Unusual Data</h2>
+<ul>
+<li>Outliers</li>
+<li>Outliers can affect results- so we need to be aware of them.</li>
+</ul>
+</section>
+<section id="national-anthem-example" class="slide level2" style="font-size: 30px;">
+<h2>National Anthem Example</h2>
 <table class="caption-top">
-<colgroup>
-<col style="width: 23%">
-<col style="width: 37%">
-<col style="width: 39%">
-</colgroup>
+<thead>
+<tr class="header">
+<th>Year</th>
+<th>Super Bowl</th>
+<th>Performer</th>
+<th>Genre</th>
+<th>Time (sec)</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
-<td></td>
-<td style="text-align: center;"><strong>Categorical Variable</strong></td>
-<td style="text-align: center;"><strong>Quantitative Variable</strong></td>
+<td>2019</td>
+<td>53</td>
+<td>Gladys Knight</td>
+<td>R&amp;B/Soul</td>
+<td>121</td>
 </tr>
 <tr class="even">
-<td><strong>Population</strong></td>
-<td style="text-align: center;"><span class="math inline">\(\pi\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\mu\)</span></td>
+<td>2018</td>
+<td>52</td>
+<td>Pink</td>
+<td>Pop</td>
+<td>113</td>
 </tr>
 <tr class="odd">
-<td><strong>Sample</strong></td>
-<td style="text-align: center;"><span class="math inline">\(\hat{p}\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\bar{x}\)</span></td>
+<td>2017</td>
+<td>51</td>
+<td>Luke Bryant</td>
+<td>Country</td>
+<td>124</td>
+</tr>
+<tr class="even">
+<td>2016</td>
+<td>50</td>
+<td>Lady Gaga</td>
+<td>Pop</td>
+<td>129</td>
+</tr>
+<tr class="odd">
+<td>2015</td>
+<td>49</td>
+<td>Idina Menzel</td>
+<td>Pop</td>
+<td>124</td>
+</tr>
+<tr class="even">
+<td>2014</td>
+<td>48</td>
+<td>Renee Fleming</td>
+<td>Opera</td>
+<td>114</td>
+</tr>
+<tr class="odd">
+<td>2013</td>
+<td>47</td>
+<td>Alicia Keys</td>
+<td>Pop</td>
+<td>155</td>
+</tr>
+<tr class="even">
+<td>2012</td>
+<td>46</td>
+<td>Kelly Clarkson</td>
+<td>Pop</td>
+<td>94</td>
+</tr>
+<tr class="odd">
+<td>2011</td>
+<td>45</td>
+<td>Christina Aguilera</td>
+<td>Pop</td>
+<td>114</td>
+</tr>
+<tr class="even">
+<td>2010</td>
+<td>44</td>
+<td>Carrie Underwood</td>
+<td>Country</td>
+<td>107</td>
 </tr>
 </tbody>
 </table>
-<div class="fragment">
-<p><br></p>
-<p>Note: We only use sample standard deviation and standard deviation symbols (<span class="math inline">\(s\)</span>, <span class="math inline">\(\sigma\)</span>) when we are dealing with <strong>quantitative variables.</strong></p>
+</section>
+<section id="national-anthem-example-cont." class="slide level2 center">
+<h2>National Anthem Example (cont.)</h2>
+<p>Dot plot of National Anthem length:</p>
+
+<img data-src="images/nadotplot.png" alt="Dot plot of National Anthem length in seconds. Outliers include a dot at 64 seconds and dots at 154 and 156 seconds." class="r-stretch"></section>
+<section id="national-anthem-example-cont.-1" class="slide level2" style="font-size: 32px">
+<h2>National Anthem Example (cont.)</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>How would you describe the distribution?</p>
+<ul>
+<li>Shape:</li>
+<li>Center:</li>
+<li>Variability:</li>
+<li>Standard Deviation:</li>
+<li>Outliers:</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/nahist.png" alt="Histogram of National Anthem length in seconds. Outliers are Neil Diamond between 60 and 70 seconds, and Natalie Cole and Alicia Keys between 150 and 160 seconds. The mean is 108.03 seconds with a standard deviation of 19.17 seconds."></p>
+<figcaption>Histogram of song length</figcaption>
+</figure>
 </div>
+</div></div>
 </section></section>
 <section>
-<section id="examples" class="title-slide slide level1 center">
-<h1>Examples</h1>
+<section id="p.3-exploring-random-processes" class="title-slide slide level1 center">
+<h1>P.3: Exploring Random Processes</h1>
 
 </section>
-<section id="example-1" class="slide level2 center" style="font-size: 32px">
-<h2>Example 1</h2>
+<section id="in-the-long-run" class="slide level2 center">
+<h2>In the long run…</h2>
+<ul>
+<li>Beneficial to run many experiments</li>
+<li>Simulations come in handy</li>
+<li>Can observe long term patterns or “behavior”</li>
+<li>Interest in long-run (long term) probability of an outcome</li>
+</ul>
+</section>
+<section id="cars-vs.-goats-exploration" class="slide level2 center" style="font-size: 35px">
+<h2>Cars vs.&nbsp;Goats Exploration</h2>
 <div class="columns">
-<div class="column" style="width:55%;">
+<div class="column" style="width:60%;">
 <ul>
-<li><p>Population:</p></li>
-<li><p>Sample:</p></li>
-<li><p>Biased or Representative?</p></li>
-<li><p>Variable of interest?</p></li>
-<li><p>Categorical or quantitative?</p></li>
-<li><p>Population symbol:</p></li>
-<li><p>Sample symbol:</p></li>
+<li>Inspired by the classic Monty Hall problem from Let’s Make a Deal!</li>
+<li>Three doors; two goats, one car</li>
+<li>After one door is revealed, should you switch or stay with your choice?</li>
+<li>Goal: Use simulation to determine a long-run trend</li>
+<li><a href="https://www.isi-stats.com/isi2nd/ISIapplets2020.html">Monty Hall Applet</a> demo</li>
 </ul>
-</div><div class="column" style="width:45%;">
-<table class="caption-top">
-<colgroup>
-<col style="width: 100%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Scenario</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">Suppose you want to investigate the long run proportion of students at UNL who are morning people. You ask everyone in your 8am class if they are a morning or night person.</td>
-</tr>
-</tbody>
-</table>
-</div></div>
-</section>
-<section id="example-1-1" class="slide level2 center">
-<h2>Example 1</h2>
-<ul>
-<li><p>Population: <span class="fragment"><strong>All UNL students</strong></span></p></li>
-<li><p>Sample: <span class="fragment"><strong>Students in your 8am class</strong></span></p></li>
-<li><p>Biased or Representative? <span class="fragment"><strong>Biased</strong></span></p></li>
-<li><p>Variable of interest? <span class="fragment"><strong>Morning or night person</strong></span></p></li>
-<li><p>Categorical or quantitative? <span class="fragment"><strong>Categorical</strong></span></p></li>
-<li><p>Population symbol: <span class="fragment"><span class="math inline">\(\pi\)</span></span></p></li>
-<li><p>Sample symbol: <span class="fragment"><span class="math inline">\(\hat{p}\)</span></span></p></li>
-</ul>
-</section>
-<section id="example-2" class="slide level2 center" style="font-size: 32px">
-<h2>Example 2</h2>
-<div class="columns">
-<div class="column" style="width:55%;">
-<ul>
-<li><p>Population:</p></li>
-<li><p>Sample:</p></li>
-<li><p>Biased or Representative?</p></li>
-<li><p>Variable of interest?</p></li>
-<li><p>Categorical or quantitative?</p></li>
-<li><p>Population symbol:</p></li>
-<li><p>Sample symbol:</p></li>
-</ul>
-</div><div class="column" style="width:45%;">
-<table class="caption-top">
-<colgroup>
-<col style="width: 100%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Scenario</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">A researcher wants to investigate the average lifespan of a new fish, of which only three schools are known to exist. From the three schools, she randomly selects 30 fish to track the lifespans of.</td>
-</tr>
-</tbody>
-</table>
-</div></div>
-</section>
-<section id="example-2-1" class="slide level2 center">
-<h2>Example 2</h2>
-<ul>
-<li><p>Population: <span class="fragment"><strong>All of the known schools of fish</strong></span></p></li>
-<li><p>Sample: <span class="fragment"><strong>The 30 selected fish</strong></span></p></li>
-<li><p>Biased or Representative? <span class="fragment"><strong>Representative</strong></span></p></li>
-<li><p>Variable of interest? <span class="fragment"><strong>Lifespan</strong></span></p></li>
-<li><p>Categorical or quantitative? <span class="fragment"><strong>Numerical</strong></span></p></li>
-<li><p>Population symbol: <span class="fragment"><span class="math inline">\(\mu\)</span></span></p></li>
-<li><p>Sample symbol: <span class="fragment"><span class="math inline">\(\bar{x}\)</span></span></p></li>
-</ul>
-</section></section>
-<section>
-<section id="exploration-sampling-words" class="title-slide slide level1 center">
-<h1>Exploration: Sampling Words</h1>
-
-</section>
-<section id="section" class="slide level2 center">
-<h2></h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><br> <br></p>
-<ul>
-<li><p>Complete the “Sampling Words” exploration</p></li>
-<li><p>Submit to Canvas when done</p></li>
-<li><p>Extra time can be used for homework</p></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/1_gettys.png" alt="Gettysburg Address with a picture of Abraham Lincoln."></p>
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/goat.jpg" style="width:110.0%;height:110.0%" alt="Goat lying down with caption 'Don't worry you goat this.'"></p>
 </div></div>
 
 <div class="quarto-auto-generated-content">
@@ -752,7 +911,7 @@
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],

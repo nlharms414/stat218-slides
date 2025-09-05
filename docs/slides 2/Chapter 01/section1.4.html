@@ -10,7 +10,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.56">
 
-  <title>STAT 218 – Section 4.3</title>
+  <title>STAT 218 – Section 1.4</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -327,14 +327,151 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Section 4.3</h1>
+  <h1 class="title">Section 1.4</h1>
+  <p class="subtitle">What impacts strength of evidence?</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section class="slide level2">
+<section id="section-1.4-learning-objectives" class="slide level2 center">
+<h2>Section 1.4 Learning Objectives</h2>
+<ul>
+<li><p>Understand how and why certain factors affect the p-value.</p></li>
+<li><p>Recognize when to use a two-sided hypothesis test.</p></li>
+</ul>
+</section>
+<section id="hypothesis-testing-review" class="slide level2">
+<h2>Hypothesis Testing Review</h2>
+<ul>
+<li><p>Hypotheses refine our research question</p></li>
+<li><p>We have two hypotheses:</p>
+<ul>
+<li>Null hypothesis = what is believed to be true</li>
+<li>Alternative hypothesis = what we think is <em>actually</em> true</li>
+</ul></li>
+<li><p>Notation:</p>
+<ul>
+<li><span class="math inline">\(H_{0}: \pi = hypothesized\: value\)</span></li>
+<li><span class="math inline">\(H_{A}: \pi &gt;,&lt;,≠ hypothesized\: value\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="p-value-review" class="slide level2 center">
+<h2>P-value Review</h2>
+<ul>
+<li>Tests for evidence in favor of <span class="math inline">\(H_{A}\)</span></li>
+<li>Gives probability of observed statistic (<span class="math inline">\(\hat{p}\)</span>) under null hypothesis</li>
+<li>Calculating the p-value:
+<ul>
+<li>Count the # of simulated statistics as or more extreme than <span class="math inline">\(\hat{p}\)</span> in the direction of the null hypothesis</li>
+<li>Divide by total number of simulated statistics</li>
+</ul></li>
+</ul>
+</section>
+<section id="p-value-review-1" class="slide level2 center">
+<h2>P-value Review</h2>
+<ul>
+<li>If p-value &gt; .05, fail to reject the null</li>
+<li>If p-value ≤ .05, reject the null, accept alternative</li>
+<li>Interpret based on context</li>
+</ul>
+</section>
+<section id="standardized-statistic-review" class="slide level2 center">
+<h2>Standardized Statistic Review</h2>
+<ul>
+<li>Another way to test for strength of evidence in favor of <span class="math inline">\(H_{A}\)</span></li>
+<li>Obtain the standard deviation (SD)</li>
+<li>Calculate the standardized statistic (<span class="math inline">\(z\)</span>) by:</li>
+</ul>
+<p><span class="math display">\[z=\frac{Observed\: Statistic - Hypothesized\: Value}{Standard\: Deviation\: under\: the\: null}\]</span></p>
+</section>
+<section id="standardized-statistic-review-1" class="slide level2 center">
+<h2>Standardized Statistic Review</h2>
+<ul>
+<li>If <span class="math inline">\(z\)</span> &gt; 2 or <span class="math inline">\(z\)</span> &lt; -2, reject the null, accept alternative</li>
+<li>Interpret based on context of the problem</li>
+</ul>
+</section>
+<section>
+<section id="what-can-impact-strength-of-evidence" class="title-slide slide level1 center">
+<h1>What can impact strength of evidence?</h1>
 
+</section>
+<section id="section" class="slide level2 center">
+<h2></h2>
+<ul>
+<li>We always want stronger evidence against the null</li>
+<li>Smaller p-value = stronger evidence</li>
+<li>Larger standardized statistic absolute value = stronger evidence</li>
+</ul>
+</section>
+<section id="factors-that-impact-evidence-strength" class="slide level2 center">
+<h2>Factors that impact evidence strength</h2>
+<ol type="1">
+<li>Distance between observed statistic &amp; null value</li>
+<li>Sample size (n)</li>
+<li>One-sided or two-sided hypothesis test</li>
+</ol>
+</section>
+<section id="distance-from-the-null-value" class="slide level2 center">
+<h2>1. Distance from the null value</h2>
+<p><strong>Recall:</strong> The null value is what we expect based on chance alone</p>
+<ul>
+<li>Is the center of the null distribution</li>
+</ul>
+</section>
+<section id="distance-from-the-null-value-1" class="slide level2 center">
+<h2>1. Distance from the null value</h2>
+<p>Consider <span class="math inline">\(\hat{p}\)</span>.</p>
+<ul>
+<li>Further from null value = less likely null value is plausible
+<ul>
+<li>P-value is smaller, standardized statistic absolute value is larger</li>
+</ul></li>
+<li>Closer to the null value = more likely null value is plausible
+<ul>
+<li>P-value is larger, standardized statistic absolute value is smaller</li>
+</ul></li>
+</ul>
+</section>
+<section id="distance-from-the-null-value-2" class="slide level2 center">
+<h2>1. Distance from the null value</h2>
+
+<img data-src="images/4_distfromnull.png" class="quarto-figure quarto-figure-center r-stretch" alt="Two null distributions with different values for p-hat. P-hat on the right is closer to the null, resulting in a larger p-value."></section>
+<section id="sample-size" class="slide level2 center">
+<h2>2. Sample Size</h2>
+<ul>
+<li>Increasing sample size increases strength of evidence</li>
+<li>Decreasing sample size decreases strength of evidence</li>
+</ul>
+</section>
+<section id="sample-size-1" class="slide level2 center">
+<h2>2. Sample Size</h2>
+
+<img data-src="images/4_samplesize.png" class="quarto-figure quarto-figure-center r-stretch" alt="Distributions with different sample sizes and values indicating more strength of evidence as sample size increases."></section>
+<section id="one-sided-or-two-sided-hypothesis-test" class="slide level2 center">
+<h2>3. One-sided or two-sided hypothesis test</h2>
+<p>One-sided test:</p>
+<ul>
+<li>Researchers think observed data will be greater than/less than the null model</li>
+</ul>
+<p>Two-sided test:</p>
+<ul>
+<li>Researchers don’t know; just looking for a difference</li>
+</ul>
+</section>
+<section id="one-sided-or-two-sided-hypothesis-test-1" class="slide level2">
+<h2>3. One-sided or two-sided hypothesis test</h2>
+<p>One-sided or two-sided refers to the form <span class="math inline">\(H_{A}\)</span> takes.</p>
+<ul>
+<li>One-sided test takes the form:</li>
+</ul>
+<p><span class="math display">\[H_{A}: \pi &gt; OR &lt; hypothesized\: value\]</span></p>
+<ul>
+<li>Two-sided test takes the form:</li>
+</ul>
+<p><span class="math display">\[H_{A}: \pi ≠ hypothesized\: value\]</span></p>
 
 <div class="quarto-auto-generated-content">
 <p><img src="logo.jpg" class="slide-logo"></p>
@@ -342,7 +479,7 @@
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 

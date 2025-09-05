@@ -10,7 +10,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.56">
 
-  <title>STAT 218 – Section 4.1</title>
+  <title>STAT 218 – Section 3.3</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -327,19 +327,17 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Section 4.1</h1>
-  <p class="subtitle">Association and Confounding</p>
+  <h1 class="title">Section 3.3</h1>
+  <p class="subtitle">2SD and Theory-Based Confidence Intervals for a Single Mean</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="section-4.1-learning-objectives" class="slide level2 center">
-<h2>Section 4.1 Learning Objectives</h2>
+<section id="section-3.3-learning-objectives" class="slide level2 center">
+<h2>Section 3.3 Learning Objectives</h2>
 <ul>
-<li><p>Understand and be able to calculate conditional proportions.</p></li>
-<li><p>Be able to determine which variable is the explanatory variable and which is the response variable in a given context.</p></li>
-<li><p>Understand what a confounding variable is and how it can affect association assumptions.</p></li>
+<li>Calculate a confidence interval for a single mean using the 2SD method and the theory-based approach.</li>
 </ul>
 </section>
 <section>
@@ -347,222 +345,126 @@
 <h1>Review</h1>
 
 </section>
-<section id="recap" class="slide level2 center">
-<h2>Recap</h2>
+<section id="confidence-intervals" class="slide level2 center">
+<h2>Confidence Intervals</h2>
 <ul>
-<li><p>Chapters P-3: Is there an effect? How big is the effect?</p></li>
-<li><p>We do this by:</p>
-<ol type="1">
-<li>Asking a research question.</li>
-<li>Setting up a hypothesis test.</li>
-<li>Testing our hypothesis for <strong>significance of evidence by</strong>:
+<li><p>Gives us range of <strong>plausible values</strong> for our parameter of interest</p>
 <ul>
-<li>P-value</li>
-<li>Standardized statistic</li>
-<li>Confidence intervals</li>
+<li>Either <span class="math inline">\(\mu\)</span> or <span class="math inline">\(\pi\)</span></li>
 </ul></li>
-</ol></li>
+</ul>
+</section>
+<section id="confidence-intervals-general-form" class="slide level2 center" style="text-align: center;">
+<h2>Confidence Intervals: General Form</h2>
+<p><br> Confidence Interval (CI) = (Lower Bound, Upper Bound)</p>
+<p>= Observed statistic ± margin of error</p>
+<ul>
+<li>Margin of Error = Multiplier * Standard Error</li>
+</ul>
+</section>
+<section id="sd-95-confidence-interval-for-proportions" class="slide level2 center">
+<h2>2SD (95%) Confidence Interval for Proportions</h2>
+<p><span class="math display">\[CI=\hat{p}±2*\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}\]</span></p>
+<p><span class="math display">\[=(Lower\:Bound,Upper\:Bound)\]</span></p>
+<div class="fragment">
+<p>What do you think changes if we’re dealing with a mean rather than a proportion?</p>
+</div>
+</section></section>
+<section>
+<section id="confidence-intervals-for-single-means" class="title-slide slide level1 center">
+<h1>Confidence Intervals for Single Means</h1>
+
+</section>
+<section id="formulas" class="slide level2 center">
+<h2>Formulas</h2>
+<p>Standard error for means:</p>
+<p><span class="math display">\[SE=\frac{s}{\sqrt{n}}\]</span></p>
+<p>2SD (95%) Confidence Interval for Means:</p>
+<p><span class="math display">\[CI=\bar{x}±2*\frac{s}{\sqrt{n}}\]</span></p>
+<div class="fragment">
+<p>Why does it make sense that we use <span class="math inline">\(\bar{x}\)</span> now?</p>
+</div>
+</section>
+<section id="validity-conditions-for-single-mean" class="slide level2 center">
+<h2>Validity Conditions for Single Mean</h2>
+<p>We must meet the validity conditions for the theory-based approach:</p>
+<ul>
+<li><p>Sample size ≥ 20</p></li>
+<li><p>Distribution not strongly skewed</p></li>
 </ul>
 </section></section>
 <section>
-<section id="comparing-two-groups" class="title-slide slide level1 center">
-<h1>Comparing Two Groups</h1>
+<section id="example" class="title-slide slide level1 center">
+<h1>Example</h1>
 
 </section>
-<section id="overview" class="slide level2 center">
-<h2>Overview</h2>
-<p>Previously, research questions focused on one proportion or mean</p>
-<ul>
-<li><p>What proportion of the time did Buzz choose the right button?</p></li>
-<li><p>What is the average time of an Olympic bobsleigh team?</p></li>
-</ul>
-</section>
-<section id="overview-1" class="slide level2 center">
-<h2>Overview</h2>
-<p>Now, we want to compare two groups</p>
-<ul>
-<li><p>Are smokers more likely than nonsmokers to develop lung cancer?</p></li>
-<li><p>Are children who used night lights as infants more likely to need glasses than those who didn’t use night lights?</p></li>
-</ul>
-</section></section>
-<section>
-<section id="variable-types" class="title-slide slide level1 center">
-<h1>Variable Types</h1>
-
-</section>
-<section id="explanatory-variable-independent-variable" class="slide level2 center">
-<h2>Explanatory Variable (Independent Variable)</h2>
-<p>Variable we think is “explaining” the response variable.</p>
-<ul>
-<li>Researchers manipulate this variable</li>
-</ul>
-</section>
-<section id="response-variable-dependent-variable" class="slide level2 center">
-<h2>Response Variable (Dependent Variable)</h2>
-<p>Variable that is being impacted or changed by the explanatory variable.</p>
-<ul>
-<li>“Depends on” or “responds to” the explanatory variable</li>
-</ul>
-</section>
-<section id="example" class="slide level2 center">
-<h2>Example</h2>
-<p>We may think that if we eat and apple a day (explanatory variable) then we’ll have to go to the doctor (response variable) less!</p>
-</section>
-<section id="role-of-variables-activity" class="slide level2 center">
-<h2>Role of Variables Activity</h2>
-<p>For each of the variable pairs, identify which you think is the explanatory and which is the response</p>
-<ul>
-<li><p>Smoking and lung cancer</p></li>
-<li><p>Heart disease and diet</p></li>
-<li><p>Exam score and hours studied</p></li>
-<li><p>Vitamin C and colds</p></li>
-<li><p>Hair color and eye color</p></li>
-</ul>
-</section>
-<section id="associated-variables" class="slide level2 center">
-<h2>Associated Variables</h2>
-<p><u><strong>Associated:</strong></u> When one variable gives valuable information about the other</p>
-<p>Ex:</p>
-<ul>
-<li><p>Hours of studying before an exam could give information on how well you’ll do</p></li>
-<li><p>How many apples you eat could give information about how often you’ll go to the doctor</p></li>
-</ul>
-</section>
-<section id="cause-and-effect" class="slide level2 center">
-<h2>Cause and effect?</h2>
-<p>But, can we say that our explanatory variable <em>causes</em> our response variable? No!</p>
-<ul>
-<li><strong>Association does NOT mean causation</strong></li>
-<li>If you remember anything from this class, let it be this!!</li>
-</ul>
-</section>
-<section id="confounding-variable" class="slide level2 center">
-<h2>Confounding Variable</h2>
-<p>A variable that is related to both the explanatory variable and response variable in such a way that its effects cannot be separated from the effects of the explanatory.</p>
-</section>
-<section id="using-proportions" class="slide level2 center">
-<h2>Using Proportions</h2>
-<ul>
-<li>Can we determine association using proportions?</li>
-</ul>
-<p>Example (next slide):</p>
-<ul>
-<li><p>Is political ideology associated with views on the moral acceptability of cloning animals?</p></li>
-<li><p>What about the importance of religion?</p></li>
-</ul>
-</section>
-<section id="cloning-animals" class="slide level2">
-<h2>Cloning Animals</h2>
-
-<img data-src="images/1_clone.png" alt="Graphic breaking down the proportion of different demographics that believe cloning animals is morally acceptable versus morally wrong. Demographics include gender, political ideology, and importance of religion." class="r-stretch"></section></section>
-<section>
-<section id="example-does-ice-cream-cause-drownings" class="title-slide slide level1 center">
-<h1>Example: Does ice cream cause drownings?</h1>
-
-</section>
-<section id="ice-cream-sold-vs-drownings" class="slide level2">
-<h2>Ice Cream Sold vs Drownings</h2>
-
-<img data-src="images/1_icecream1.png" class="quarto-figure quarto-figure-center r-stretch" alt="Scatter plot showing a positive trend between log ice cream production and deaths by drowning. Ice cream production is on the x axis and drownings are on the y axis."></section>
-<section id="ice-cream-sold-vs-drownings-1" class="slide level2">
-<h2>Ice Cream Sold vs Drownings</h2>
-
-<img data-src="images/1_icecream2.png" class="quarto-figure quarto-figure-center r-stretch" alt="Same figure as the previous slide, except now the dots are labeled with months, indicating that month is the confounding variable here. This is due to month having a correlation with both ice cream production and drowning deaths; more people swim during summer months, and more ice cream is bought and produced in summer months as well."></section>
-<section id="confounding-variable-month" class="slide level2">
-<h2>Confounding Variable: Month</h2>
-
-<img data-src="images/1_icecream3.png" class="quarto-figure quarto-figure-center r-stretch" alt="Line chart showing a blue line that has a positive trend between month (x axis) and units of ice cream sold, and a red line showing a positive trend between month and number of deaths from drownings."></section></section>
-<section>
-<section id="examples" class="title-slide slide level1 center">
-<h1>Examples</h1>
-
-</section>
-<section id="all-nighters-gpas" class="slide level2 center" style="font-size: 36px">
-<h2>All-Nighters &amp; GPAs</h2>
+<section id="used-hondas" class="slide level2">
+<h2>Used Hondas</h2>
 <div class="columns">
 <div class="column" style="width:60%;">
-<p>Claim:</p>
-<p>Explanatory variable:</p>
-<ul>
-<li>Categorical or quantitative?</li>
-</ul>
-<p>Response variable:</p>
-<ul>
-<li>Categorical or quantitative?</li>
-</ul>
-<p>Potential confounding variable(s):</p>
+<p><br> <img data-src="images/3_honda.jpg" alt="Histogram of price data for 102 used Honda Civics. Bins range from 2000 to 22000 and peak around 14000. The distribution is not strongly skewed."></p>
 </div><div class="column" style="width:40%;">
-<table class="caption-top">
-<colgroup>
-<col style="width: 100%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Scenario</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">Researchers found that students who claim to have never pulled an all-nighter have an average GPA of 3.1, while students who have pulled an all-nighter have an average GPA of 2.9.</td>
-</tr>
-</tbody>
-</table>
+<p>Price data from a random sample of 102 used Honda Civics for sale on the internet is displayed on the histogram. The sample mean of the data was $13,292 with a standard deviation of $4,535.</p>
 </div></div>
+<div class="fragment">
+<p>Is the criteria met to use the confidence interval approach?</p>
+</div>
 </section>
-<section id="all-nighters-gpas-1" class="slide level2 center">
-<h2>All-Nighters &amp; GPAs</h2>
+<section id="calculating-the-confidence-interval" class="slide level2 center">
+<h2>Calculating the Confidence Interval</h2>
+<div>
 <ul>
-<li><p>Claim: <span class="fragment"><strong>All-nighters cause lower GPAs.</strong></span></p></li>
-<li><p>Explanatory variable: <span class="fragment"><strong>Pulling an all-nighter or not; Categorical</strong></span></p></li>
-<li><p>Response variable: <span class="fragment"><strong>GPA; Quantitative</strong></span></p></li>
-<li><p>Potential confounding variable(s):</p></li>
+<li class="fragment"><span class="math inline">\(\bar{x}=13292\)</span></li>
+<li class="fragment"><span class="math inline">\(n=102\)</span></li>
+<li class="fragment"><span class="math inline">\(s=4535\)</span></li>
+<li class="fragment"><span class="math inline">\(SE=\frac{s}{\sqrt{n}}=\frac{4535}{\sqrt{102}}=449.03\)</span></li>
+<li class="fragment"><span class="math inline">\(CI=\bar{x}±2*SE=13292±2*449.03\)</span></li>
+<li class="fragment">Lower Bound: <span class="math inline">\(13292-2*449.03=12393.94\)</span></li>
+<li class="fragment">Upper Bound: <span class="math inline">\(13292+2*449.03=14190.06\)</span></li>
 </ul>
+</div>
 </section>
-<section id="tvs-lifespan" class="slide level2 center" style="font-size: 36px">
-<h2>TV’s &amp; Lifespan</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<p>Claim:</p>
-<p>Explanatory variable:</p>
-<ul>
-<li>Categorical or quantitative?</li>
-</ul>
-<p>Response variable:</p>
-<ul>
-<li>Categorical or quantitative?</li>
-</ul>
-<p>Potential confounding variable(s):</p>
-</div><div class="column" style="width:40%;">
-<table class="caption-top">
-<colgroup>
-<col style="width: 100%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Scenario</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">Researchers found that countries that have more TVs per 1000 people have a higher average lifespan.</td>
-</tr>
-</tbody>
-</table>
-</div></div>
+<section id="interpreting-the-confidence-interval" class="slide level2 center">
+<h2>Interpreting the Confidence Interval</h2>
+<p>“We are 95% confident that the long run mean of all used Honda Civics for sale on the internet is between $12,393.94 and $14,190.06.”</p>
 </section>
-<section id="tvs-lifespan-1" class="slide level2 center">
-<h2>TV’s &amp; Lifespan</h2>
+<section id="conclusions-from-a-confidence-interval" class="slide level2 center">
+<h2>Conclusions from a Confidence Interval</h2>
 <ul>
-<li><p>Claim: <span class="fragment"><strong>TVs increase lifespan.</strong></span></p></li>
-<li><p>Explanatory variable: <span class="fragment"><strong>Number of TVs per 1000 people; Qualitative</strong></span></p></li>
-<li><p>Response variable: <span class="fragment"><strong>Average lifespan; Quantitative</strong></span></p></li>
-<li><p>Potential confounding variable(s):</p></li>
+<li><p>If our null hypothesis value is OUTSIDE our confidence interval:</p>
+<ul>
+<li><p>Reject the null</p></li>
+<li><p>It’s not a plausible value</p></li>
+</ul></li>
+<li><p>If our null hypothesis is INSIDE the confidence interval:</p>
+<ul>
+<li><p>Fail to reject the null</p></li>
+<li><p>It’s a plausible value</p></li>
+</ul></li>
+</ul>
+<div class="fragment">
+<p>Note that this example doesn’t have a hypothesized value! We are simply interpreting the interval.</p>
+</div>
+</section>
+<section id="statistical-significance-methods" class="slide level2 center">
+<h2>Statistical Significance Methods</h2>
+<p>We can use the same three methods with a single mean:</p>
+<ol type="1">
+<li><p>P-value</p></li>
+<li><p>Standardized Statistic</p></li>
+<li><p>Confidence Interval</p></li>
+</ol>
+<div class="fragment">
+<p>Remember that all three methods will agree with each other!</p>
+<ul>
+<li>All either reject or fail to reject <span class="math inline">\(H_{0}\)</span></li>
 </ul>
 
 <div class="quarto-auto-generated-content">
 <p><img src="logo.jpg" class="slide-logo"></p>
 <div class="footer footer-default">
 
+</div>
 </div>
 </div>
 </section></section>
