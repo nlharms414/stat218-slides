@@ -274,7 +274,7 @@ What does each "X" represent?
 
 Now we'll carry out simulation using the Applet
 
--   [Applet Link]()
+-   [Applet Link](https://www.isi-stats.com/isi2nd/ISIapplets2020.html)
 
 What is our chance (null) model?
 
