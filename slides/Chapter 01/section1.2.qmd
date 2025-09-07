@@ -23,7 +23,7 @@ editor: visual
 
 -   Be able to interpret the p-value.
 
-## Rock, Paper, Scissors
+## Rock, Paper, Scissors {.center}
 
 ::::: columns
 ::: {.column width="50%"}
@@ -39,7 +39,7 @@ Consider a classic game of Rock, Paper, Scissors
 
 Let's put this to the test!
 
-## Rock, Paper, Scissors (cont.)
+## Rock, Paper, Scissors (cont.) {.center}
 
 In a game of Rock, Paper, Scissors...
 
@@ -69,7 +69,7 @@ Do we still have a binary outcome?
 
 -   Sample size (n) = 16
 
-## Rock, Paper, Scissors Activity
+## Rock, Paper, Scissors Activity {.center}
 
 With a partner, play 20 games of rock paper scissors. Identify the following:
 
@@ -230,7 +230,7 @@ In symbols:
 ## P-value Cutoffs
 
 |                      |     |                                                  |
-|------------------|------------------|-------------------------------------|
+|------------------|------------------|------------------------------------|
 | P –value \> .10      |     | Not much evidence against the null hypothesis    |
 | .05 \< p-value ≤ .10 |     | Moderate evidence against the null hypothesis    |
 | .01 \< p-value ≤ .05 |     | Strong evidence against the null hypothesis      |
