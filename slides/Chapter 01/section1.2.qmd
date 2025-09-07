@@ -195,7 +195,7 @@ In symbols:
 
 # P-value
 
-## P-value
+## P-value {.center}
 
 ::::: columns
 ::: {.column width="60%"}
@@ -209,7 +209,7 @@ In symbols:
 :::
 :::::
 
-## P-value
+## P-value {.center}
 
 ::::: columns
 ::: {.column width="50%"}
@@ -227,7 +227,7 @@ In symbols:
 :::
 :::::
 
-## P-value Cutoffs
+## P-value Cutoffs {.center}
 
 |                      |     |                                                  |
 |------------------|------------------|------------------------------------|
@@ -236,7 +236,7 @@ In symbols:
 | .01 \< p-value ≤ .05 |     | Strong evidence against the null hypothesis      |
 | .01 ≤ p-value        |     | Very strong evidence against the null hypothesis |
 
-## Hypothesis Testing and the Null Distribution
+## Hypothesis Testing and the Null Distribution {.center}
 
 The Applet generates a null distribution
 
@@ -244,9 +244,9 @@ The Applet generates a null distribution
 
 -   Will center at hypothesized value
 
-[Link to One Proportion Applet]()
+[Link to One Proportion Applet](https://www.isi-stats.com/isi2nd/ISIapplets2020.html)
 
-## Hypothesis Testing and the Null Distribution (cont.) {style="font-size: 30px"}
+## Hypothesis Testing and the Null Distribution (cont.) {.center style="font-size: 30px"}
 
 ::::: columns
 ::: {.column width="40%"}
@@ -260,11 +260,11 @@ Rock, paper, scissors simulation example
 :::
 
 ::: {.column width="60%"}
-![](images/sim_2.png){fig-alt="Screenshot of a simulation ran using the One Proportion Applet."}
+![](images/2_sim.png){fig-alt="Screenshot of a simulation ran using the One Proportion Applet."}
 :::
 :::::
 
-## Drawing Conclusions from the P-value
+## Drawing Conclusions from the P-value {.center}
 
 ::::: columns
 ::: {.column width="70%"}
