@@ -8,6 +8,7 @@ format:
     link-external-newwindow: true
     link-external-icon: true
     logo: logo.jpg 
+    slide-number: true
 editor: visual
 ---
 

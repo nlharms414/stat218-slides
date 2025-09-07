@@ -9,5 +9,6 @@ format:
     link-external-icon: true
     html-math-method: mathjax
     logo: logo.jpg
+    slide-number: true
 editor: visual
 ---
