@@ -230,7 +230,7 @@ In symbols:
 ## P-value Cutoffs {.center}
 
 |                      |     |                                                  |
-|------------------|------------------|------------------------------------|
+|------------------|------------------|-----------------------------------|
 | P –value \> .10      |     | Not much evidence against the null hypothesis    |
 | .05 \< p-value ≤ .10 |     | Moderate evidence against the null hypothesis    |
 | .01 \< p-value ≤ .05 |     | Strong evidence against the null hypothesis      |
