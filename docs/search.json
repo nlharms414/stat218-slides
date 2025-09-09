@@ -1887,7 +1887,7 @@
     "href": "slides/Chapter 01/section1.2.html#rock-paper-scissors-three-s-strategy-1",
     "title": "Section 1.2",
     "section": "Rock, Paper, Scissors: Three S Strategy",
-    "text": "Rock, Paper, Scissors: Three S Strategy\n\nSimulate: Using the Applet, simulate the chance model 1000 times.\n\nCompuare your observed statistic to the simulation."
+    "text": "Rock, Paper, Scissors: Three S Strategy\n\nSimulate: Using the Applet, simulate the chance model 1000 times.\n\nCompuare your observed statistic to the simulation.\n\n\nLink to One Proportion Applet"
   },
   {
     "objectID": "slides/Chapter 01/section1.2.html#rock-paper-scissors-three-s-strategy-2",
@@ -1915,7 +1915,7 @@
     "href": "slides/Chapter 01/section1.2.html#p-value-cutoffs",
     "title": "Section 1.2",
     "section": "P-value Cutoffs",
-    "text": "P-value Cutoffs\n\n\n\n\n\n\n\n\nP –value &gt; .10\n\nNot much evidence against the null hypothesis\n\n\n.05 &lt; p-value ≤ .10\n\nModerate evidence against the null hypothesis\n\n\n.01 &lt; p-value ≤ .05\n\nStrong evidence against the null hypothesis\n\n\n.01 ≤ p-value\n\nVery strong evidence against the null hypothesis"
+    "text": "P-value Cutoffs\n\n\n\n\n\n\n\nP –value &gt; .10\nNot much evidence against the null hypothesis\n\n\n.05 &lt; p-value ≤ .10\nModerate evidence against the null hypothesis\n\n\n.01 &lt; p-value ≤ .05\nStrong evidence against the null hypothesis\n\n\n.01 ≥ p-value\nVery strong evidence against the null hypothesis"
   },
   {
     "objectID": "slides/Chapter 01/section1.2.html#hypothesis-testing-and-the-null-distribution",
