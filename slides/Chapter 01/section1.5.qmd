@@ -140,7 +140,7 @@ Do we meet the criteria for the theory-based approach?
 
 ::: {.column width="40%"}
 | Scenario: |
-|------------------------------------------------------------------------|
+|----|
 | Researchers investigated whether children might be as tempted by toys as by candy for Halloween treats. Test households offered two plates to children: one with candy and one with a small toy. They observed the selections of 283 children that night and found that 148 of the kids chose candy. |
 |  |
 :::
