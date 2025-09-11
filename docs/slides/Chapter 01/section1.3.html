@@ -354,7 +354,7 @@
 <li><p>We collect and test our data</p></li>
 </ul>
 </section>
-<section id="hypothesis-testing-review" class="slide level2">
+<section id="hypothesis-testing-review" class="slide level2 center">
 <h2>Hypothesis Testing Review</h2>
 <ul>
 <li><p>Hypotheses refine our research question</p></li>
@@ -366,7 +366,7 @@
 </ul></li>
 </ul>
 </section>
-<section id="hypothesis-testing-review-1" class="slide level2">
+<section id="hypothesis-testing-review-1" class="slide level2 center">
 <h2>Hypothesis Testing Review</h2>
 <ul>
 <li><p>Null hypothesis (<span class="math inline">\(H_{0}\)</span>):</p>
@@ -374,15 +374,21 @@
 <li>The chance explanation.</li>
 <li>What we assume is true</li>
 </ul></li>
+</ul>
+<div class="fragment">
+<ul>
 <li><p>Alternative hypothesis (<span class="math inline">\(H_{A}\)</span>):</p>
 <ul>
 <li>What researchers think could be true.</li>
 <li>There’s an underlying cause.</li>
 </ul></li>
 </ul>
+</div>
+<div class="fragment">
 <p>We can either write our hypotheses in words or symbols.</p>
+</div>
 </section>
-<section id="p-value-review" class="slide level2">
+<section id="p-value-review" class="slide level2 center">
 <h2>P-value Review</h2>
 <p>Once we have our hypotheses, we can test them.</p>
 <ul>
@@ -425,15 +431,15 @@
 <div class="column" style="width:60%;">
 <p>Let’s identify the following:</p>
 <ul>
-<li><p>Research question:</p></li>
-<li><p>Observational units:</p></li>
-<li><p>Variable of interest:</p>
+<li><p>Research question</p></li>
+<li><p>Observational units</p></li>
+<li><p>Variable of interest</p>
 <ul>
 <li>Categorical or Numerical?</li>
 </ul></li>
-<li><p>Parameter (<span class="math inline">\(\pi\)</span>):</p></li>
-<li><p>Observed statistic (<span class="math inline">\(\hat{p}\)</span>):</p></li>
-<li><p>Hypotheses (in symbols):</p></li>
+<li><p>Parameter (<span class="math inline">\(\pi\)</span>)</p></li>
+<li><p>Observed statistic (<span class="math inline">\(\hat{p}\)</span>)</p></li>
+<li><p>Hypotheses (in symbols)</p></li>
 </ul>
 </div><div class="column" style="width:40%;">
 <table class="caption-top">
@@ -544,21 +550,21 @@
 </ul></li>
 </ul>
 </section>
-<section id="standard-deviation-s.d.-formula" class="slide level2">
+<section id="standard-deviation-s.d.-formula" class="slide level2 center">
 <h2>Standard Deviation (S.D.) Formula</h2>
 <p><span class="math display">\[\sigma = \sqrt{\frac{\sum_{i=0}^n (x_{i}-\bar{x})^2}{n}}\]</span></p>
-<p>Thankfully, you won’t need to know this formula for this course, but some of you might find it nice to know how this magical number is calculated.</p>
+<p>Thankfully, you won’t need to know this formula for this course, but some of you might find it nice to know how this number is calculated.</p>
 <ul>
 <li>Instead, we can get our s.d. using the Applet. (Phew!)</li>
 </ul>
 </section>
-<section id="obtaining-standard-deviation" class="slide level2">
+<section id="obtaining-standard-deviation" class="slide level2 center">
 <h2>Obtaining Standard Deviation</h2>
 <p>Check “summary statistics” box to obtain the S.D.</p>
 
 <img data-src="images/3_applet2.png" class="quarto-figure quarto-figure-center r-stretch" alt="Null distribution that peaks at 0.15. A red line is drawn at 0.8. 'Summary Statistics' box is checked."><p>Note: Your s.d. won’t be the same every time. How come?</p>
 </section>
-<section id="heart-transplant-example-3" class="slide level2">
+<section id="heart-transplant-example-3" class="slide level2 center">
 <h2>Heart Transplant Example</h2>
 <ul>
 <li>Observed statistic (<span class="math inline">\(\hat{p}\)</span>) = 0.8</li>
@@ -609,24 +615,32 @@
 <h2>Evidence Based on the Standardized Statistic</h2>
 
 <img data-src="images/3_normaldist.png" class="quarto-figure quarto-figure-center r-stretch" alt="Standard normal distribution with red lines at -2 and 2 on the x axis, dividing the distribution into three zones. The middle zone says 'fail to reject null' and the outer zones say 'reject null'."></section>
-<section id="heart-transplant-example-new-data" class="slide level2">
+<section id="heart-transplant-example-new-data" class="slide level2 center">
 <h2>Heart Transplant Example: New Data</h2>
 <p>Now say we collected more data.</p>
+<div>
 <ul>
-<li>New simulation:</li>
+<li class="fragment"><p>Data from 361 heart transplants</p></li>
+<li class="fragment"><p>71 people died within 30 days of surgery</p></li>
+<li class="fragment"><p><span class="math inline">\(\hat{p}=\frac{71}{361}\)</span></p></li>
 </ul>
+</div>
+</section>
+<section id="heart-transplant-example-new-data-1" class="slide level2 center">
+<h2>Heart Transplant Example: New Data</h2>
+<p>New simulation:</p>
 
 <img data-src="images/3_applet3.png" class="quarto-figure quarto-figure-center r-stretch" alt="Simulated null distribution with a red line at 0.1967 on the x axis. The distribution mean is 0.15 and standard deviation of 0.019."><p>Note that our p-value is still significant.</p>
 </section>
-<section id="heart-transplant-example-new-data-1" class="slide level2">
+<section id="heart-transplant-example-new-data-2" class="slide level2 center">
 <h2>Heart Transplant Example: New Data</h2>
 <ul>
-<li>Our new observed statistic is: (<span class="math inline">\(\hat{p}\)</span>) = 71/361 = 0.1967
+<li><p>New observed statistic: <span class="math inline">\(\hat{p}=\frac{71}{361}=0.1967\)</span></p></li>
+<li><p>Hypothesized value (<span class="math inline">\(\pi\)</span>) = 0.15</p>
 <ul>
-<li>Note the change in sample size</li>
+<li>This doesn’t change!</li>
 </ul></li>
-<li>Hypothesized value (<span class="math inline">\(\pi\)</span>) = 0.15</li>
-<li>Standard Deviation under the null = 0.019</li>
+<li><p>Standard Deviation under the null = 0.019</p></li>
 </ul>
 <p><span class="math display">\[z=\frac{0.1967 - 0.15}{0.019}=2.45\]</span></p>
 </section>
@@ -701,7 +715,7 @@
 <p>We reject the null in both scenarios, but in scenario 1 we have stronger evidence.</p>
 </div>
 </section>
-<section id="method-comparison" class="slide level2">
+<section id="method-comparison" class="slide level2 center">
 <h2>Method comparison</h2>
 <p><br></p>
 <table class="caption-top">

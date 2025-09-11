@@ -151,7 +151,7 @@
     "href": "slides/Chapter 01/section1.3.html#hypothesis-testing-review-1",
     "title": "Section 1.3",
     "section": "Hypothesis Testing Review",
-    "text": "Hypothesis Testing Review\n\nNull hypothesis (\\(H_{0}\\)):\n\nThe chance explanation.\nWhat we assume is true\n\nAlternative hypothesis (\\(H_{A}\\)):\n\nWhat researchers think could be true.\nThere’s an underlying cause.\n\n\nWe can either write our hypotheses in words or symbols."
+    "text": "Hypothesis Testing Review\n\nNull hypothesis (\\(H_{0}\\)):\n\nThe chance explanation.\nWhat we assume is true\n\n\n\n\nAlternative hypothesis (\\(H_{A}\\)):\n\nWhat researchers think could be true.\nThere’s an underlying cause.\n\n\n\n\nWe can either write our hypotheses in words or symbols."
   },
   {
     "objectID": "slides/Chapter 01/section1.3.html#p-value-review",
@@ -179,7 +179,7 @@
     "href": "slides/Chapter 01/section1.3.html#heart-transplant-example-1",
     "title": "Section 1.3",
     "section": "Heart Transplant Example",
-    "text": "Heart Transplant Example\n\n\nLet’s identify the following:\n\nResearch question:\nObservational units:\nVariable of interest:\n\nCategorical or Numerical?\n\nParameter (\\(\\pi\\)):\nObserved statistic (\\(\\hat{p}\\)):\nHypotheses (in symbols):\n\n\n\n\n\n\n\n\nKey Information\n\n\n\n\n\n80% of 10 transplants resulted in deaths within 30 days of the transplant\nHistorical data suggests a 15% mortality rate"
+    "text": "Heart Transplant Example\n\n\nLet’s identify the following:\n\nResearch question\nObservational units\nVariable of interest\n\nCategorical or Numerical?\n\nParameter (\\(\\pi\\))\nObserved statistic (\\(\\hat{p}\\))\nHypotheses (in symbols)\n\n\n\n\n\n\n\n\nKey Information\n\n\n\n\n\n80% of 10 transplants resulted in deaths within 30 days of the transplant\nHistorical data suggests a 15% mortality rate"
   },
   {
     "objectID": "slides/Chapter 01/section1.3.html#heart-transplant-example-2",
@@ -249,7 +249,7 @@
     "href": "slides/Chapter 01/section1.3.html#standard-deviation-s.d.-formula",
     "title": "Section 1.3",
     "section": "Standard Deviation (S.D.) Formula",
-    "text": "Standard Deviation (S.D.) Formula\n\\[\\sigma = \\sqrt{\\frac{\\sum_{i=0}^n (x_{i}-\\bar{x})^2}{n}}\\]\nThankfully, you won’t need to know this formula for this course, but some of you might find it nice to know how this magical number is calculated.\n\nInstead, we can get our s.d. using the Applet. (Phew!)"
+    "text": "Standard Deviation (S.D.) Formula\n\\[\\sigma = \\sqrt{\\frac{\\sum_{i=0}^n (x_{i}-\\bar{x})^2}{n}}\\]\nThankfully, you won’t need to know this formula for this course, but some of you might find it nice to know how this number is calculated.\n\nInstead, we can get our s.d. using the Applet. (Phew!)"
   },
   {
     "objectID": "slides/Chapter 01/section1.3.html#obtaining-standard-deviation",
@@ -291,14 +291,14 @@
     "href": "slides/Chapter 01/section1.3.html#heart-transplant-example-new-data",
     "title": "Section 1.3",
     "section": "Heart Transplant Example: New Data",
-    "text": "Heart Transplant Example: New Data\nNow say we collected more data.\n\nNew simulation:\n\n\nNote that our p-value is still significant."
+    "text": "Heart Transplant Example: New Data\nNow say we collected more data.\n\n\nData from 361 heart transplants\n71 people died within 30 days of surgery\n\\(\\hat{p}=\\frac{71}{361}\\)"
   },
   {
     "objectID": "slides/Chapter 01/section1.3.html#heart-transplant-example-new-data-1",
     "href": "slides/Chapter 01/section1.3.html#heart-transplant-example-new-data-1",
     "title": "Section 1.3",
     "section": "Heart Transplant Example: New Data",
-    "text": "Heart Transplant Example: New Data\n\nOur new observed statistic is: (\\(\\hat{p}\\)) = 71/361 = 0.1967\n\nNote the change in sample size\n\nHypothesized value (\\(\\pi\\)) = 0.15\nStandard Deviation under the null = 0.019\n\n\\[z=\\frac{0.1967 - 0.15}{0.019}=2.45\\]"
+    "text": "Heart Transplant Example: New Data\nNew simulation:\n\nNote that our p-value is still significant."
   },
   {
     "objectID": "slides/Chapter 01/section1.3.html#comparing-the-two-scenarios",
@@ -2308,5 +2308,12 @@
     "title": "Chapter P",
     "section": "Cars vs. Goats Exploration",
     "text": "Cars vs. Goats Exploration\n\n\n\nInspired by the classic Monty Hall problem from Let’s Make a Deal!\nThree doors; two goats, one car\nAfter one door is revealed, should you switch or stay with your choice?\nGoal: Use simulation to determine a long-run trend\nMonty Hall Applet demo"
+  },
+  {
+    "objectID": "slides/Chapter 01/section1.3.html#heart-transplant-example-new-data-2",
+    "href": "slides/Chapter 01/section1.3.html#heart-transplant-example-new-data-2",
+    "title": "Section 1.3",
+    "section": "Heart Transplant Example: New Data",
+    "text": "Heart Transplant Example: New Data\n\nNew observed statistic: \\(\\hat{p}=\\frac{71}{361}=0.1967\\)\nHypothesized value (\\(\\pi\\)) = 0.15\n\nThis doesn’t change!\n\nStandard Deviation under the null = 0.019\n\n\\[z=\\frac{0.1967 - 0.15}{0.019}=2.45\\]"
   }
 ]
