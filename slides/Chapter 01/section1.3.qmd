@@ -29,7 +29,7 @@ editor: visual
 
 -   We collect and test our data
 
-## Hypothesis Testing Review
+## Hypothesis Testing Review {.center}
 
 -   Hypotheses refine our research question
 
@@ -40,21 +40,25 @@ editor: visual
     -   Null hypothesis
     -   Alternative hypothesis
 
-## Hypothesis Testing Review
+## Hypothesis Testing Review {.center}
 
 -   Null hypothesis ($H_{0}$):
 
     -   The chance explanation.
     -   What we assume is true
 
+. . .
+
 -   Alternative hypothesis ($H_{A}$):
 
     -   What researchers think could be true.
     -   There's an underlying cause.
 
+. . .
+
 We can either write our hypotheses in words or symbols.
 
-## P-value Review
+## P-value Review {.center}
 
 Once we have our hypotheses, we can test them.
 
@@ -98,19 +102,19 @@ Then we interpret our results based on the context of the problem.
 ::: {.column width="60%"}
 Let's identify the following:
 
--   Research question:
+-   Research question
 
--   Observational units:
+-   Observational units
 
--   Variable of interest:
+-   Variable of interest
 
     -   Categorical or Numerical?
 
--   Parameter ($\pi$):
+-   Parameter ($\pi$)
 
--   Observed statistic ($\hat{p}$):
+-   Observed statistic ($\hat{p}$)
 
--   Hypotheses (in symbols):
+-   Hypotheses (in symbols)
 :::
 
 ::: {.column width="40%"}
@@ -210,15 +214,15 @@ Note: "Hypothesized value" and "mean under the null" refer to the same value
     -   Positive values stay the same
     -   Negative values become their positive counterpart
 
-## Standard Deviation (S.D.) Formula
+## Standard Deviation (S.D.) Formula {.center}
 
 $$\sigma = \sqrt{\frac{\sum_{i=0}^n (x_{i}-\bar{x})^2}{n}}$$
 
-Thankfully, you won't need to know this formula for this course, but some of you might find it nice to know how this magical number is calculated.
+Thankfully, you won't need to know this formula for this course, but some of you might find it nice to know how this number is calculated.
 
 -   Instead, we can get our s.d. using the Applet. (Phew!)
 
-## Obtaining Standard Deviation
+## Obtaining Standard Deviation {.center}
 
 Check "summary statistics" box to obtain the S.D.
 
@@ -226,7 +230,7 @@ Check "summary statistics" box to obtain the S.D.
 
 Note: Your s.d. won't be the same every time. How come?
 
-## Heart Transplant Example
+## Heart Transplant Example {.center}
 
 -   Observed statistic ($\hat{p}$) = 0.8
 -   Hypothesized value ($\pi$) = 0.15
@@ -257,21 +261,33 @@ Cool, but what does this tell us?
 
 ![](images/3_normaldist.png){fig-alt="Standard normal distribution with red lines at -2 and 2 on the x axis, dividing the distribution into three zones. The middle zone says 'fail to reject null' and the outer zones say 'reject null'." fig-align="center"}
 
-## Heart Transplant Example: New Data
+## Heart Transplant Example: New Data {.center}
 
 Now say we collected more data.
 
--   New simulation:
+::: incremental
+-   Data from 361 heart transplants
+
+-   71 people died within 30 days of surgery
+
+-   $\hat{p}=\frac{71}{361}$
+:::
+
+## Heart Transplant Example: New Data {.center}
+
+New simulation:
 
 ![](images/3_applet3.png){fig-alt="Simulated null distribution with a red line at 0.1967 on the x axis. The distribution mean is 0.15 and standard deviation of 0.019." fig-align="center"}
 
 Note that our p-value is still significant.
 
-## Heart Transplant Example: New Data
+## Heart Transplant Example: New Data {.center}
 
--   Our new observed statistic is: ($\hat{p}$) = 71/361 = 0.1967
-    -   Note the change in sample size
+-   New observed statistic: $\hat{p}=\frac{71}{361}=0.1967$
 -   Hypothesized value ($\pi$) = 0.15
+    
+    -   This doesn't change!
+    
 -   Standard Deviation under the null = 0.019
 
 $$z=\frac{0.1967 - 0.15}{0.019}=2.45$$
@@ -298,7 +314,7 @@ $$z=\frac{0.1967 - 0.15}{0.019}=2.45$$
 
 We reject the null in both scenarios, but in scenario 1 we have stronger evidence.
 
-## Method comparison
+## Method comparison {.center}
 
 <br>
 
