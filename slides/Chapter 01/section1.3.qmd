@@ -147,7 +147,7 @@ Let's identify the following:
 -   Hypotheses (in symbols):
 
     -   [$H_{0}$: $\pi$ = 0.15]{.fragment}
-    -   [$H_{A}$: $\pi$ ≠ 0.15]{.fragment}
+    -   [$H_{A}$: $\pi$ > 0.15]{.fragment}
 
 ## Heart Transplant Example: P-value
 
@@ -155,7 +155,7 @@ Let's find the p-value!
 
 -   Open up the One Proportion Applet
 
-    -   [Link to One Proportion Applet]()
+    -   [Link to One Proportion Applet](https://www.isi-stats.com/isi2nd/ISIapplets2020.html)
 
 -   Enter data from previous slides
 
