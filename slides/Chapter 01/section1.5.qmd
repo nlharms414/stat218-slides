@@ -44,27 +44,27 @@ But...
 -   Sometimes, data follows a known distribution
 -   Commonly, we assume data follows the **normal distribution**
 -   The **normal distribution** is one of many known patterns that data can follow
--   In this class, we always assume the null distribution is normally distributed
+-   We always assume the null distribution is normally distributed
 
 ## The Null Distribution (in depth!) {.center}
 
 Since we know the null distribution is normally distributed, we know the following:
 
 -   Bell shaped
--   Centered at $\pi$
+-   Centered at the hypothesized value for $\pi$
 -   Can predict standard deviation
     -   Without the Applet!
 
 ## Example Null Distribution
 
-![](5_null.png){fig-alt="Example null distribution." fig-align="center"}
+![](images/5_null.png){fig-alt="Example null distribution." fig-align="center"}
 
 ## Why does sample size matter? {.center}
 
 If sample size is too small:
 
 -   Theory-based approach will not be accurate
--   Curve might not be bell-shaped
+-   Can't tell if data is normally distributed
 
 Theory-based "rule of thumb":
 
@@ -74,11 +74,11 @@ Theory-based "rule of thumb":
 
 ::::: columns
 ::: {.column width="50%"}
-![](5_small.png){fig-alt="Normal distribution where n=30. Mound shaped with gaps." fig-align="center"}
+![](images/5_small.png){fig-alt="Null distribution where n=30. Mound shaped with gaps." fig-align="center"}
 :::
 
 ::: {.column width="50%"}
-![](5_large.png){fig-alt="Normal distribution where n=300. Mound shaped and completely filled in." fig-align="center"}
+![](images/5_large.png){fig-alt="Null distribution where n=300. Mound shaped and completely filled in." fig-align="center"}
 :::
 :::::
 
@@ -86,7 +86,7 @@ Theory-based "rule of thumb":
 -   Left graph n = 30
 -   Right graph n = 300
 
-## Central Limit Theorem
+## Central Limit Theorem {.center}
 
 -   "Backbone" of statistics
 
@@ -104,7 +104,7 @@ $$z=\frac{Observed\: Statistic - Hypothesized\: Value}{Standard\: Deviation\: un
 
 $$=\frac{\hat{p}-\pi}{\sqrt{\frac{\pi(1-\pi)}{n}}}$$
 
-## Using the Applet
+## Using the Applet {.center}
 
 We can still use the One Proportion Applet for the theory-based approach
 
@@ -115,7 +115,7 @@ In more advanced classes, we use calculus to get these values.
 
 ## Using the Applet
 
-![](5_normalapp.png){fig-alt="Screenshot of the One Proportion Applet used to find values using the theory based approach." fig-align="center"}
+![](images/5_normalapp.png){fig-alt="Screenshot of the One Proportion Applet used to find values using the theory based approach." fig-align="center"}
 
 # Example: Halloween Treats
 
@@ -125,28 +125,27 @@ In more advanced classes, we use calculus to get these values.
 ::: {.column width="60%"}
 Let's identify the following:
 
--   Sample & size:
+-   Sample & size
 
--   Variable of interest:
+-   Variable of interest
 
--   Parameter & symbol:
+-   Parameter & symbol
 
--   Observed statistic & symbol:
+-   Observed statistic & symbol
 
--   Hypotheses (in symbols):
+-   Hypotheses (in symbols)
 
 Do we meet the criteria for the theory-based approach?
 :::
 
 ::: {.column width="40%"}
 | Scenario: |
-|----|
+|:----------------------------------------------------------------------:|
 | Researchers investigated whether children might be as tempted by toys as by candy for Halloween treats. Test households offered two plates to children: one with candy and one with a small toy. They observed the selections of 283 children that night and found that 148 of the kids chose candy. |
-|  |
 :::
 :::::
 
-## Halloween Treats
+## Halloween Treats {style="font-size: 35px"}
 
 -   Sample & size: [**n = 283 kids**]{.fragment}
 

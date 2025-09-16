@@ -370,7 +370,7 @@
 <li>Sometimes, data follows a known distribution</li>
 <li>Commonly, we assume data follows the <strong>normal distribution</strong></li>
 <li>The <strong>normal distribution</strong> is one of many known patterns that data can follow</li>
-<li>In this class, we always assume the null distribution is normally distributed</li>
+<li>We always assume the null distribution is normally distributed</li>
 </ul>
 </section>
 <section id="the-null-distribution-in-depth-1" class="slide level2 center">
@@ -378,7 +378,7 @@
 <p>Since we know the null distribution is normally distributed, we know the following:</p>
 <ul>
 <li>Bell shaped</li>
-<li>Centered at <span class="math inline">\(\pi\)</span></li>
+<li>Centered at the hypothesized value for <span class="math inline">\(\pi\)</span></li>
 <li>Can predict standard deviation
 <ul>
 <li>Without the Applet!</li>
@@ -388,13 +388,13 @@
 <section id="example-null-distribution" class="slide level2">
 <h2>Example Null Distribution</h2>
 
-<img data-src="5_null.png" class="quarto-figure quarto-figure-center r-stretch" alt="Example null distribution."></section>
+<img data-src="images/5_null.png" class="quarto-figure quarto-figure-center r-stretch" alt="Example null distribution."></section>
 <section id="why-does-sample-size-matter" class="slide level2 center">
 <h2>Why does sample size matter?</h2>
 <p>If sample size is too small:</p>
 <ul>
 <li>Theory-based approach will not be accurate</li>
-<li>Curve might not be bell-shaped</li>
+<li>Can’t tell if data is normally distributed</li>
 </ul>
 <p>Theory-based “rule of thumb”:</p>
 <ul>
@@ -407,13 +407,13 @@
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="5_small.png" class="quarto-figure quarto-figure-center" alt="Normal distribution where n=30. Mound shaped with gaps."></p>
+<p><img data-src="images/5_small.png" class="quarto-figure quarto-figure-center" alt="Null distribution where n=30. Mound shaped with gaps."></p>
 </figure>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="5_large.png" class="quarto-figure quarto-figure-center" alt="Normal distribution where n=300. Mound shaped and completely filled in."></p>
+<p><img data-src="images/5_large.png" class="quarto-figure quarto-figure-center" alt="Null distribution where n=300. Mound shaped and completely filled in."></p>
 </figure>
 </div>
 </div></div>
@@ -423,7 +423,7 @@
 <li>Right graph n = 300</li>
 </ul>
 </section>
-<section id="central-limit-theorem" class="slide level2">
+<section id="central-limit-theorem" class="slide level2 center">
 <h2>Central Limit Theorem</h2>
 <ul>
 <li>“Backbone” of statistics</li>
@@ -440,7 +440,7 @@
 <p><span class="math display">\[z=\frac{Observed\: Statistic - Hypothesized\: Value}{Standard\: Deviation\: under\: the\: null}\]</span></p>
 <p><span class="math display">\[=\frac{\hat{p}-\pi}{\sqrt{\frac{\pi(1-\pi)}{n}}}\]</span></p>
 </section>
-<section id="using-the-applet" class="slide level2">
+<section id="using-the-applet" class="slide level2 center">
 <h2>Using the Applet</h2>
 <p>We can still use the One Proportion Applet for the theory-based approach</p>
 <ul>
@@ -452,7 +452,7 @@
 <section id="using-the-applet-1" class="slide level2">
 <h2>Using the Applet</h2>
 
-<img data-src="5_normalapp.png" class="quarto-figure quarto-figure-center r-stretch" alt="Screenshot of the One Proportion Applet used to find values using the theory based approach."></section>
+<img data-src="images/5_normalapp.png" class="quarto-figure quarto-figure-center r-stretch" alt="Screenshot of the One Proportion Applet used to find values using the theory based approach."></section>
 <section>
 <section id="example-halloween-treats" class="title-slide slide level1 center">
 <h1>Example: Halloween Treats</h1>
@@ -464,11 +464,11 @@
 <div class="column" style="width:60%;">
 <p>Let’s identify the following:</p>
 <ul>
-<li><p>Sample &amp; size:</p></li>
-<li><p>Variable of interest:</p></li>
-<li><p>Parameter &amp; symbol:</p></li>
-<li><p>Observed statistic &amp; symbol:</p></li>
-<li><p>Hypotheses (in symbols):</p></li>
+<li><p>Sample &amp; size</p></li>
+<li><p>Variable of interest</p></li>
+<li><p>Parameter &amp; symbol</p></li>
+<li><p>Observed statistic &amp; symbol</p></li>
+<li><p>Hypotheses (in symbols)</p></li>
 </ul>
 <p>Do we meet the criteria for the theory-based approach?</p>
 </div><div class="column" style="width:40%;">
@@ -478,21 +478,18 @@
 </colgroup>
 <thead>
 <tr class="header">
-<th>Scenario:</th>
+<th style="text-align: center;">Scenario:</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Researchers investigated whether children might be as tempted by toys as by candy for Halloween treats. Test households offered two plates to children: one with candy and one with a small toy. They observed the selections of 283 children that night and found that 148 of the kids chose candy.</td>
-</tr>
-<tr class="even">
-<td></td>
+<td style="text-align: center;">Researchers investigated whether children might be as tempted by toys as by candy for Halloween treats. Test households offered two plates to children: one with candy and one with a small toy. They observed the selections of 283 children that night and found that 148 of the kids chose candy.</td>
 </tr>
 </tbody>
 </table>
 </div></div>
 </section>
-<section id="halloween-treats-1" class="slide level2">
+<section id="halloween-treats-1" class="slide level2" style="font-size: 35px">
 <h2>Halloween Treats</h2>
 <ul>
 <li><p>Sample &amp; size: <span class="fragment"><strong>n = 283 kids</strong></span></p></li>
