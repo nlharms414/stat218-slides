@@ -41,25 +41,38 @@ Symmetric, mound-shaped, skewed? How many ”peaks”?
 
 Where does the center of the pattern appear?
 
--   Generally refers to mean or mode
+-   Generally refers to mean, median, or mode
 
 ## Variability {.center}
 
 How spread out is the distribution?
 
 -   Generally described in terms of [**standard deviation**]{.underline}
--   Variability will be a big topic in this class!
 
 ## Unusual Data {.center}
 
 -   Outliers
 -   Outliers can affect results- so we need to be aware of them.
 
-## Example Data Distribution {.center}
+## Null Distribution (Categorical Variable) {.center}
+
+![](images/2_applet.png){fig-alt="Dot plot where each dot represents one set of 16 attempts by Buzz. Dots form a mound shape between 3 and 11 that peaks between 7 and 8." fig-align="center" }
+
+Here, each dot represents a **simulated statistic.**
+
+## Data Distribution (Numerical Variable) {.center}
 
 ![](images/2_gpa.png){fig-alt="Dot plot distribution of Cumulative GPA data from a sample of size 30." fig-align="center"}
 
+Here, each dot represents a data point we collected.
+
+. . .
+
+**Data distributions** only "make sense" when we are working with a **numerical variable.**
+
 ## What's the difference? {.center}
+
+<br> We can also display distributions using a **histogram.**
 
 ::::: columns
 ::: {.column width="50%"}
@@ -70,6 +83,7 @@ How spread out is the distribution?
 ![Sampling Distribution](images/2_sdist.png){fig-alt="A centered histogram of simulated sample means with a mean of 3.285 and standard deviation of 0.104." fig-align="center"}
 :::
 :::::
+
 
 ## Data Distribution {.center}
 
@@ -97,7 +111,7 @@ How spread out is the distribution?
 :::
 
 ::: {.column width="50%"}
--   Each data point represents one simulation of our study
+-   Each data point represents one simulation (or real life sample!) of a study
 
 -   The more simulations the better!
 
@@ -113,13 +127,13 @@ Sometimes it is helpful to summarize quantitative data with numerical values
 
 Add up all the values and divide by the total number of values
 
-## Median
+## Median {.center}
 
 Half of the data is above the middle, half of the data is below the middle.
 
 -   "Middle" is found when the data is ordered from lowest to highest
 
-## Outliers
+## Outliers {.center}
 
 Unusual data points
 

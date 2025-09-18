@@ -893,14 +893,14 @@
     "href": "slides/Chapter 02/section2.2.html#center",
     "title": "Section 2.2",
     "section": "Center",
-    "text": "Center\nWhere does the center of the pattern appear?\n\nGenerally refers to mean or mode"
+    "text": "Center\nWhere does the center of the pattern appear?\n\nGenerally refers to mean, median, or mode"
   },
   {
     "objectID": "slides/Chapter 02/section2.2.html#variability",
     "href": "slides/Chapter 02/section2.2.html#variability",
     "title": "Section 2.2",
     "section": "Variability",
-    "text": "Variability\nHow spread out is the distribution?\n\nGenerally described in terms of standard deviation\nVariability will be a big topic in this class!"
+    "text": "Variability\nHow spread out is the distribution?\n\nGenerally described in terms of standard deviation"
   },
   {
     "objectID": "slides/Chapter 02/section2.2.html#unusual-data",
@@ -914,14 +914,14 @@
     "href": "slides/Chapter 02/section2.2.html#example-data-distribution",
     "title": "Section 2.2",
     "section": "Example Data Distribution",
-    "text": "Example Data Distribution"
+    "text": "Example Data Distribution\n\nHere, each dot represents a data point we collected."
   },
   {
     "objectID": "slides/Chapter 02/section2.2.html#whats-the-difference",
     "href": "slides/Chapter 02/section2.2.html#whats-the-difference",
     "title": "Section 2.2",
     "section": "What’s the difference?",
-    "text": "What’s the difference?\n\n\n\n\n\nData Distribution\n\n\n\n\n\n\nSampling Distribution"
+    "text": "What’s the difference?\n We can also display distributions using a histogram.\n\n\n\n\n\nData Distribution\n\n\n\n\n\n\nSampling Distribution"
   },
   {
     "objectID": "slides/Chapter 02/section2.2.html#data-distribution",
@@ -935,7 +935,7 @@
     "href": "slides/Chapter 02/section2.2.html#sampling-distribution",
     "title": "Section 2.2",
     "section": "Sampling Distribution",
-    "text": "Sampling Distribution\n\n\n\n\n\n\n\n\n\nEach data point represents one simulation of our study\nThe more simulations the better!\nGenerally, this is best plotted using a histogram or dot plot."
+    "text": "Sampling Distribution\n\n\n\n\n\n\n\n\n\nEach data point represents one simulation (or real life sample!) of a study\nThe more simulations the better!\nGenerally, this is best plotted using a histogram or dot plot."
   },
   {
     "objectID": "slides/Chapter 02/section2.2.html#summary-statistics",
@@ -1103,7 +1103,7 @@
     "href": "slides/Chapter 02/section2.1.html#representative-sample",
     "title": "Section 2.1",
     "section": "Representative Sample",
-    "text": "Representative Sample\nA sample that is similar to or representative of a larger population.\n\nEx: Would our class data be representative of all UNL students?"
+    "text": "Representative Sample\nA sample that is similar to or representative of a larger population.\n\nEx: Would our class’s height data be representative of all UNL students?"
   },
   {
     "objectID": "slides/Chapter 02/section2.1.html#bias",
@@ -1152,42 +1152,42 @@
     "href": "slides/Chapter 02/section2.1.html#more-symbols-1",
     "title": "Section 2.1",
     "section": "More Symbols!",
-    "text": "More Symbols!\n\nSample mean: \\(\\bar{x}\\)\nSample Standard Deviation: \\(s\\)\nPopulation Mean: \\(\\mu\\)\nPopulation Standard Deviation: \\(\\sigma\\)"
+    "text": "More Symbols!\n\nPopulation Mean (Parameter): \\(\\mu\\)\nPopulation Standard Deviation: \\(\\sigma\\)\nSample Mean (Statistic): \\(\\bar{x}\\)\nSample Standard Deviation: \\(s\\)"
   },
   {
     "objectID": "slides/Chapter 02/section2.1.html#symbol-comparison",
     "href": "slides/Chapter 02/section2.1.html#symbol-comparison",
     "title": "Section 2.1",
     "section": "Symbol Comparison",
-    "text": "Symbol Comparison\n Symbols we use depend on our variable type:\n\n\n\n\n\n\n\n\n\nCategorical Variable\nQuantitative Variable\n\n\nPopulation\n\\(\\pi\\)\n\\(\\mu\\)\n\n\nSample\n\\(\\hat{p}\\)\n\\(\\bar{x}\\)\n\n\n\n\n\nNote: We only use sample standard deviation and standard deviation symbols (\\(s\\), \\(\\sigma\\)) when we are dealing with quantitative variables."
+    "text": "Symbol Comparison\n Symbols we use depend on our variable type:\n\n\n\n\n\n\n\n\n\nCategorical Variable\nQuantitative Variable\n\n\nParameter\n\\(\\pi\\)\n\\(\\mu\\)\n\n\nStatistic\n\\(\\hat{p}\\)\n\\(\\bar{x}\\)\n\n\n\n\n\nNote: We only use sample standard deviation and standard deviation symbols (\\(s\\), \\(\\sigma\\)) when we are dealing with quantitative variables."
   },
   {
     "objectID": "slides/Chapter 02/section2.1.html#example-1",
     "href": "slides/Chapter 02/section2.1.html#example-1",
     "title": "Section 2.1",
     "section": "Example 1",
-    "text": "Example 1\n\n\n\nPopulation:\nSample:\nBiased or Representative?\nVariable of interest?\nCategorical or quantitative?\nPopulation symbol:\nSample symbol:\n\n\n\n\n\n\n\n\nScenario\n\n\n\n\nSuppose you want to investigate the long run proportion of students at UNL who are morning people. You ask everyone in your 8am class if they are a morning or night person."
+    "text": "Example 1\n\n\n\nPopulation:\nSample:\nBiased or Representative?\nVariable of interest?\nCategorical or quantitative?\nParameter symbol:\nStatistic symbol:\n\n\n\n\n\n\n\n\nScenario\n\n\n\n\nYou want to investigate the long run proportion of students at UNL who are morning people. You ask everyone in your 8am class if they are a morning or night person."
   },
   {
     "objectID": "slides/Chapter 02/section2.1.html#example-1-1",
     "href": "slides/Chapter 02/section2.1.html#example-1-1",
     "title": "Section 2.1",
     "section": "Example 1",
-    "text": "Example 1\n\nPopulation: All UNL students\nSample: Students in your 8am class\nBiased or Representative? Biased\nVariable of interest? Morning or night person\nCategorical or quantitative? Categorical\nPopulation symbol: \\(\\pi\\)\nSample symbol: \\(\\hat{p}\\)"
+    "text": "Example 1\n\nPopulation: All UNL students\nSample: Students in your 8am class\nBiased or Representative? Biased\nVariable of interest? Morning or night person\nCategorical or quantitative? Categorical\nParameter symbol: \\(\\pi\\)\nStatistic symbol: \\(\\hat{p}\\)"
   },
   {
     "objectID": "slides/Chapter 02/section2.1.html#example-2",
     "href": "slides/Chapter 02/section2.1.html#example-2",
     "title": "Section 2.1",
     "section": "Example 2",
-    "text": "Example 2\n\n\n\nPopulation:\nSample:\nBiased or Representative?\nVariable of interest?\nCategorical or quantitative?\nPopulation symbol:\nSample symbol:\n\n\n\n\n\n\n\n\nScenario\n\n\n\n\nA researcher wants to investigate the average lifespan of a new fish, of which only three schools are known to exist. From the three schools, she randomly selects 30 fish to track the lifespans of."
+    "text": "Example 2\n\n\n\nPopulation:\nSample:\nBiased or Representative?\nVariable of interest?\nCategorical or quantitative?\nParameter symbol:\nStatistic symbol:\n\n\n\n\n\n\n\n\nScenario\n\n\n\n\nA researcher wants to investigate the average lifespan of a newly discovered fish, of which only three schools are known to exist. She randomly selects 30 fish from any of the schools to track the lifespans of."
   },
   {
     "objectID": "slides/Chapter 02/section2.1.html#example-2-1",
     "href": "slides/Chapter 02/section2.1.html#example-2-1",
     "title": "Section 2.1",
     "section": "Example 2",
-    "text": "Example 2\n\nPopulation: All of the known schools of fish\nSample: The 30 selected fish\nBiased or Representative? Representative\nVariable of interest? Lifespan\nCategorical or quantitative? Numerical\nPopulation symbol: \\(\\mu\\)\nSample symbol: \\(\\bar{x}\\)"
+    "text": "Example 2\n\nPopulation: All of the known schools of fish\nSample: The 30 selected fish\nBiased or Representative? Representative\nVariable of interest? Lifespan\nCategorical or quantitative? Numerical\nParameter symbol: \\(\\mu\\)\nStatistic symbol: \\(\\bar{x}\\)"
   },
   {
     "objectID": "slides/Chapter 02/section2.1.html#section",
@@ -2315,5 +2315,26 @@
     "title": "Section 1.3",
     "section": "Heart Transplant Example: New Data",
     "text": "Heart Transplant Example: New Data\n\nNew observed statistic: \\(\\hat{p}=\\frac{71}{361}=0.1967\\)\nHypothesized value (\\(\\pi\\)) = 0.15\n\nThis doesn’t change!\n\nStandard Deviation under the null = 0.019\n\n\\[z=\\frac{0.1967 - 0.15}{0.019}=2.45\\]"
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.2.html#null-distribution",
+    "href": "slides/Chapter 02/section2.2.html#null-distribution",
+    "title": "Section 2.2",
+    "section": "Null Distribution",
+    "text": "Null Distribution\n\nHere, each dot represents a simulated statistic."
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.2.html#null-distribution-categorical-variable",
+    "href": "slides/Chapter 02/section2.2.html#null-distribution-categorical-variable",
+    "title": "Section 2.2",
+    "section": "Null Distribution (Categorical Variable)",
+    "text": "Null Distribution (Categorical Variable)\n\nHere, each dot represents a simulated statistic."
+  },
+  {
+    "objectID": "slides/Chapter 02/section2.2.html#data-distribution-numerical-variable",
+    "href": "slides/Chapter 02/section2.2.html#data-distribution-numerical-variable",
+    "title": "Section 2.2",
+    "section": "Data Distribution (Numerical Variable)",
+    "text": "Data Distribution (Numerical Variable)\n\nHere, each dot represents a data point we collected.\n\nData distributions only “make sense” when we are working with a numerical variable."
   }
 ]

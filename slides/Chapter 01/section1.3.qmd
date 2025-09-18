@@ -147,7 +147,7 @@ Let's identify the following:
 -   Hypotheses (in symbols):
 
     -   [$H_{0}$: $\pi$ = 0.15]{.fragment}
-    -   [$H_{A}$: $\pi$ > 0.15]{.fragment}
+    -   [$H_{A}$: $\pi$ \> 0.15]{.fragment}
 
 ## Heart Transplant Example: P-value
 
@@ -284,10 +284,11 @@ Note that our p-value is still significant.
 ## Heart Transplant Example: New Data {.center}
 
 -   New observed statistic: $\hat{p}=\frac{71}{361}=0.1967$
+
 -   Hypothesized value ($\pi$) = 0.15
-    
+
     -   This doesn't change!
-    
+
 -   Standard Deviation under the null = 0.019
 
 $$z=\frac{0.1967 - 0.15}{0.019}=2.45$$

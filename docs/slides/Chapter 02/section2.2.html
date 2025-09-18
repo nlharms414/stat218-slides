@@ -366,7 +366,7 @@
 <h2>Center</h2>
 <p>Where does the center of the pattern appear?</p>
 <ul>
-<li>Generally refers to mean or mode</li>
+<li>Generally refers to mean, median, or mode</li>
 </ul>
 </section>
 <section id="variability" class="slide level2 center">
@@ -374,7 +374,6 @@
 <p>How spread out is the distribution?</p>
 <ul>
 <li>Generally described in terms of <u><strong>standard deviation</strong></u></li>
-<li>Variability will be a big topic in this class!</li>
 </ul>
 </section>
 <section id="unusual-data" class="slide level2 center">
@@ -384,12 +383,22 @@
 <li>Outliers can affect results- so we need to be aware of them.</li>
 </ul>
 </section>
-<section id="example-data-distribution" class="slide level2 center">
-<h2>Example Data Distribution</h2>
+<section id="null-distribution-categorical-variable" class="slide level2 center">
+<h2>Null Distribution (Categorical Variable)</h2>
 
-<img data-src="images/2_gpa.png" class="quarto-figure quarto-figure-center r-stretch" alt="Dot plot distribution of Cumulative GPA data from a sample of size 30."></section>
+<img data-src="images/2_applet.png" class="quarto-figure quarto-figure-center r-stretch" alt="Dot plot where each dot represents one set of 16 attempts by Buzz. Dots form a mound shape between 3 and 11 that peaks between 7 and 8."><p>Here, each dot represents a <strong>simulated statistic.</strong></p>
+</section>
+<section id="data-distribution-numerical-variable" class="slide level2 center">
+<h2>Data Distribution (Numerical Variable)</h2>
+
+<img data-src="images/2_gpa.png" class="quarto-figure quarto-figure-center r-stretch" alt="Dot plot distribution of Cumulative GPA data from a sample of size 30."><p>Here, each dot represents a data point we collected.</p>
+<div class="fragment">
+<p><strong>Data distributions</strong> only “make sense” when we are working with a <strong>numerical variable.</strong></p>
+</div>
+</section>
 <section id="whats-the-difference" class="slide level2 center">
 <h2>What’s the difference?</h2>
+<p><br> We can also display distributions using a <strong>histogram.</strong></p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
@@ -438,7 +447,7 @@
 </div>
 </div><div class="column" style="width:50%;">
 <ul>
-<li><p>Each data point represents one simulation of our study</p></li>
+<li><p>Each data point represents one simulation (or real life sample!) of a study</p></li>
 <li><p>The more simulations the better!</p></li>
 <li><p>Generally, this is best plotted using a histogram or dot plot.</p></li>
 </ul>
@@ -452,14 +461,14 @@
 <h2>Mean</h2>
 <p>Add up all the values and divide by the total number of values</p>
 </section>
-<section id="median" class="slide level2">
+<section id="median" class="slide level2 center">
 <h2>Median</h2>
 <p>Half of the data is above the middle, half of the data is below the middle.</p>
 <ul>
 <li>“Middle” is found when the data is ordered from lowest to highest</li>
 </ul>
 </section>
-<section id="outliers" class="slide level2">
+<section id="outliers" class="slide level2 center">
 <h2>Outliers</h2>
 <p>Unusual data points</p>
 <ul>
@@ -723,7 +732,7 @@
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: false,
+        slideNumber: 'c/t',
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',

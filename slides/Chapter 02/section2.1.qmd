@@ -41,7 +41,7 @@ editor: visual
 
 A sample that is similar to or representative of a larger population.
 
--   Ex: Would our class data be representative of all UNL students?
+-   Ex: Would our class's height data be representative of all UNL students?
 
 ## Bias {.center}
 
@@ -51,9 +51,9 @@ A sample that consistently underestimates or overestimates a population paramete
 
 ## Visual of Population vs. Sample
 
-![](images/1_popvsamp.png){fig-alt="asdf" fig-align="center"}
+![](images/1_popvsamp.png){fig-alt="Large circle labeled 'Population' containing figures and a smaller circle labeled 'Sample' containing a subset of figures from the large circle." fig-align="center"}
 
-## How should we sample? {.center}
+# How should we sample? {.center}
 
 ## Convenience Sampling ❌ {.center}
 
@@ -85,10 +85,10 @@ In some situations, we are interested in the **long run average**
 
 ## More Symbols! {.center}
 
--   Sample mean: $\bar{x}$
--   Sample Standard Deviation: $s$
--   Population Mean: $\mu$
+-   Population Mean (Parameter): $\mu$
 -   Population Standard Deviation: $\sigma$
+-   Sample Mean (Statistic): $\bar{x}$
+-   Sample Standard Deviation: $s$
 
 ## Symbol Comparison {.center}
 
@@ -97,8 +97,8 @@ In some situations, we are interested in the **long run average**
 |                |                          |                           |
 |----------------|:------------------------:|:-------------------------:|
 |                | **Categorical Variable** | **Quantitative Variable** |
-| **Population** |          $\pi$           |           $\mu$           |
-| **Sample**     |        $\hat{p}$         |         $\bar{x}$         |
+| **Parameter** |          $\pi$           |           $\mu$           |
+| **Statistic**     |        $\hat{p}$         |         $\bar{x}$         |
 
 . . .
 
@@ -108,7 +108,7 @@ Note: We only use sample standard deviation and standard deviation symbols ($s$,
 
 # Examples
 
-## Example 1 {.center style="font-size: 32px"}
+## Example 1 {.center style="font-size: 38px"}
 
 ::::: columns
 ::: {.column width="55%"}
@@ -122,15 +122,15 @@ Note: We only use sample standard deviation and standard deviation symbols ($s$,
 
 -   Categorical or quantitative?
 
--   Population symbol:
+-   Parameter symbol:
 
--   Sample symbol:
+-   Statistic symbol:
 :::
 
 ::: {.column width="45%"}
 | Scenario |
 |:----------------------------------------------------------------------:|
-| Suppose you want to investigate the long run proportion of students at UNL who are morning people. You ask everyone in your 8am class if they are a morning or night person. |
+| You want to investigate the long run proportion of students at UNL who are morning people. You ask everyone in your 8am class if they are a morning or night person. |
 :::
 :::::
 
@@ -146,11 +146,11 @@ Note: We only use sample standard deviation and standard deviation symbols ($s$,
 
 -   Categorical or quantitative? [**Categorical**]{.fragment}
 
--   Population symbol: [$\pi$]{.fragment}
+-   Parameter symbol: [$\pi$]{.fragment}
 
--   Sample symbol: [$\hat{p}$]{.fragment}
+-   Statistic symbol: [$\hat{p}$]{.fragment}
 
-## Example 2 {.center style="font-size: 32px"}
+## Example 2 {.center style="font-size: 38px"}
 
 ::::: columns
 ::: {.column width="55%"}
@@ -164,15 +164,15 @@ Note: We only use sample standard deviation and standard deviation symbols ($s$,
 
 -   Categorical or quantitative?
 
--   Population symbol:
+-   Parameter symbol:
 
--   Sample symbol:
+-   Statistic symbol:
 :::
 
 ::: {.column width="45%"}
 | Scenario |
 |:----------------------------------------------------------------------:|
-| A researcher wants to investigate the average lifespan of a new fish, of which only three schools are known to exist. From the three schools, she randomly selects 30 fish to track the lifespans of. |
+| A researcher wants to investigate the average lifespan of a newly discovered fish, of which only three schools are known to exist. She randomly selects 30 fish from any of the schools to track the lifespans of. |
 :::
 :::::
 
@@ -188,9 +188,9 @@ Note: We only use sample standard deviation and standard deviation symbols ($s$,
 
 -   Categorical or quantitative? [**Numerical**]{.fragment}
 
--   Population symbol: [$\mu$]{.fragment}
+-   Parameter symbol: [$\mu$]{.fragment}
 
--   Sample symbol: [$\bar{x}$]{.fragment}
+-   Statistic symbol: [$\bar{x}$]{.fragment}
 
 # Exploration: Sampling Words
 
