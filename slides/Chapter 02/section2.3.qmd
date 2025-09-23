@@ -40,11 +40,11 @@ In section 2.1, we introduced some new symbols we use with numerical data:
 
 <br> Symbols we use depend on our variable type:
 
-|                |                          |                           |
-|----------------|:------------------------:|:-------------------------:|
-|                | **Categorical Variable** | **Quantitative Variable** |
-| **Population** |          $\pi$           |           $\mu$           |
-| **Sample**     |        $\hat{p}$         |         $\bar{x}$         |
+|               |                          |                           |
+|---------------|:------------------------:|:-------------------------:|
+|               | **Categorical Variable** | **Quantitative Variable** |
+| **Parameter** |          $\pi$           |           $\mu$           |
+| **Statistic** |        $\hat{p}$         |         $\bar{x}$         |
 
 . . .
 
@@ -95,7 +95,7 @@ Hypotheses in symbols:
 
 ::: {.column width="35%"}
 | Scenario |
-|:--:|
+|:----------------------------------------------------------------------:|
 | You are interested in whether the number of emails the CEO of Apple receives each day is more than 8. |
 :::
 :::::
@@ -171,7 +171,7 @@ Conclusions take the same form:
 
 ::: {.column width="45%"}
 | Scenario |
-|:--:|
+|:----------------------------------------------------------------------:|
 | You are interested in whether the number of emails the CEO of Apple receives each day is more than 8. Suppose you observe 30 days and find that the average number of emails is 10.2, with a sample S.D. of 2.091. The distribution is not strongly skewed. |
 :::
 :::::

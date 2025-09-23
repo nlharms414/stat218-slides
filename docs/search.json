@@ -1229,7 +1229,7 @@
     "href": "slides/Chapter 02/section2.3.html#symbol-comparison",
     "title": "Section 2.3",
     "section": "Symbol Comparison",
-    "text": "Symbol Comparison\n Symbols we use depend on our variable type:\n\n\n\n\n\n\n\n\n\nCategorical Variable\nQuantitative Variable\n\n\nPopulation\n\\(\\pi\\)\n\\(\\mu\\)\n\n\nSample\n\\(\\hat{p}\\)\n\\(\\bar{x}\\)\n\n\n\n\n\nNote: We only use sample standard deviation and standard deviation symbols (\\(s\\), \\(\\sigma\\)) when we are dealing with quantitative variables."
+    "text": "Symbol Comparison\n Symbols we use depend on our variable type:\n\n\n\n\nCategorical Variable\nQuantitative Variable\n\n\nParameter\n\\(\\pi\\)\n\\(\\mu\\)\n\n\nStatistic\n\\(\\hat{p}\\)\n\\(\\bar{x}\\)\n\n\n\n\n\nNote: We only use sample standard deviation and standard deviation symbols (\\(s\\), \\(\\sigma\\)) when we are dealing with quantitative variables."
   },
   {
     "objectID": "slides/Chapter 02/section2.3.html#strength-of-evidence-with-a-single-quantitative-variable",
