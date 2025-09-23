@@ -1257,7 +1257,7 @@
     "href": "slides/Chapter 02/section2.3.html#ceo-example",
     "title": "Section 2.3",
     "section": "CEO Example",
-    "text": "CEO Example\n\n\n\nVariable of interest: ** Number of emails received in a day**\nParameter: Long run average number of emails received in a day (\\(\\mu\\))\nHypotheses in symbols:\n\n\\(H_{0}\\): \\(\\mu\\) = 8\n\\(H_{A}\\): \\(\\mu\\) &gt; 8\n\n\n\n\n\n\n\n\n\nScenario\n\n\n\n\nYou are interested in whether the number of emails the CEO of Apple receives each day is more than 8."
+    "text": "CEO Example\n\n\n\nVariable of interest: Number of emails received in a day\nParameter: Long run average number of emails received in a day (\\(\\mu\\))\nHypotheses in symbols:\n\n\\(H_{0}\\): \\(\\mu\\) = 8\n\\(H_{A}\\): \\(\\mu\\) &gt; 8\n\n\n\n\n\n\n\n\n\nScenario\n\n\n\n\nYou are interested in whether the number of emails the CEO of Apple receives each day is more than 8."
   },
   {
     "objectID": "slides/Chapter 02/section2.3.html#simulation",
