@@ -352,7 +352,7 @@
 </ul>
 <p>Examples: Height, weight, time, measurement of length</p>
 </section>
-<section id="symbol-review" class="slide level2">
+<section id="symbol-review" class="slide level2 center">
 <h2>Symbol Review</h2>
 <p>In section 2.1, we introduced some new symbols we use with numerical data:</p>
 <ul>
@@ -362,7 +362,7 @@
 <li>Population Standard Deviation: <span class="math inline">\(\sigma\)</span></li>
 </ul>
 </section>
-<section id="symbol-comparison" class="slide level2">
+<section id="symbol-comparison" class="slide level2 center">
 <h2>Symbol Comparison</h2>
 <p><br> Symbols we use depend on our variable type:</p>
 <table class="caption-top">
@@ -398,7 +398,11 @@
 <h2>Strength of Evidence with a Single Quantitative Variable</h2>
 <p>Essentially the same process, but now we’re working with averages</p>
 <ul>
-<li><p><strong>Variable of Interest:</strong> some numerical measure</p></li>
+<li><p><strong>Variable of Interest:</strong> some numerical measure</p>
+<ul>
+<li>Ex: Height, weight, time, shoe size</li>
+<li>That way, we can take an average!</li>
+</ul></li>
 <li><p><strong>Parameter:</strong> The long run average (<span class="math inline">\(\mu\)</span>)</p></li>
 <li><p><strong>Observed statistic:</strong> Average calculated from the sample (<span class="math inline">\(\bar{x}\)</span>)</p></li>
 </ul>
@@ -407,16 +411,16 @@
 <h2>Strength of Evidence with a Single Quantitative Variable</h2>
 <p>Hypotheses in words:</p>
 <ul>
-<li>Null: The long run average is equal to (average in context of the problem)</li>
-<li>Alt: The long run average is (less than/greater than/not equal to the average in the context of the problem)</li>
+<li>Null: The long run average is equal to (hypothesized average)</li>
+<li>Alt: The long run average is (less than/greater than/not equal to the hypothesized average)</li>
 </ul>
 </section>
 <section id="strength-of-evidence-with-a-single-quantitative-variable-2" class="slide level2 center">
 <h2>Strength of Evidence with a Single Quantitative Variable</h2>
 <p>Hypotheses in symbols:</p>
 <ul>
-<li><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\mu\)</span> = previously known number</li>
-<li><span class="math inline">\(H_{A}\)</span>: <span class="math inline">\(\mu\)</span> &gt;,&lt;,≠ previously known number</li>
+<li><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\mu\)</span> = hypothesized average</li>
+<li><span class="math inline">\(H_{A}\)</span>: <span class="math inline">\(\mu\)</span> &gt;,&lt;,≠ hypothesized average</li>
 </ul>
 </section>
 <section id="ceo-example" class="slide level2">
@@ -424,8 +428,8 @@
 <div class="columns">
 <div class="column" style="width:65%;">
 <ul>
-<li><p>Variable of interest: <span class="fragment"># of emails in a day</span></p></li>
-<li><p>Parameter: <span class="fragment">long run average number of emails received in a day (<span class="math inline">\(\mu\)</span>)</span></p></li>
+<li><p>Variable of interest: <span class="fragment">** Number of emails received in a day**</span></p></li>
+<li><p>Parameter: <span class="fragment"><strong>Long run average number of emails received in a day (<span class="math inline">\(\mu\)</span>)</strong></span></p></li>
 <li><p>Hypotheses in symbols:</p>
 <ul>
 <li><span class="fragment"><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\mu\)</span> = 8</span></li>
@@ -475,17 +479,17 @@
 </section>
 <section id="theory-based-approach-quantitative-variable" class="slide level2 center">
 <h2>Theory Based Approach (Quantitative Variable)</h2>
-<p>Validity conditions:</p>
+<p>Validity conditions to use the theory based approach:</p>
 <ul>
-<li><p>The variable of interest should have a symmetric distribution, or,</p></li>
-<li><p>n ≥ 20 and not strongly skewed</p></li>
+<li><p>The variable of interest should have a symmetric distribution, or at least n ≥ 20</p></li>
+<li><p>Distribution should not be strongly skewed</p></li>
 </ul>
 </section>
 <section id="theory-based-approach-quantitative-variable-1" class="slide level2 center">
 <h2>Theory Based Approach (Quantitative Variable)</h2>
 <ul>
 <li><p>With numerical data, we can find <span class="math inline">\(s\)</span> (sample standard deviation)</p></li>
-<li><p>This changes our standardized statistic calculation</p></li>
+<li><p>This changes our standard error calculation</p></li>
 </ul>
 <p><span class="math display">\[SE=\frac{s}{\sqrt{n}}\]</span></p>
 </section>
@@ -617,7 +621,7 @@
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: false,
+        slideNumber: 'c/t',
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',

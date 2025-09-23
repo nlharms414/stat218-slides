@@ -27,7 +27,7 @@ editor: visual
 
 Examples: Height, weight, time, measurement of length
 
-## Symbol Review
+## Symbol Review {.center}
 
 In section 2.1, we introduced some new symbols we use with numerical data:
 
@@ -36,7 +36,7 @@ In section 2.1, we introduced some new symbols we use with numerical data:
 -   Population Mean: $\mu$
 -   Population Standard Deviation: $\sigma$
 
-## Symbol Comparison
+## Symbol Comparison {.center}
 
 <br> Symbols we use depend on our variable type:
 
@@ -56,7 +56,10 @@ Note: We only use sample standard deviation and standard deviation symbols ($s$,
 
 Essentially the same process, but now we're working with averages
 
--   **Variable of Interest:** some numerical measure
+-   **Variable of Interest:** some numerical measure 
+
+    -   Ex: Height, weight, time, shoe size
+    -   That way, we can take an average!
 
 -   **Parameter:** The long run average ($\mu$)
 
@@ -66,23 +69,23 @@ Essentially the same process, but now we're working with averages
 
 Hypotheses in words:
 
--   Null: The long run average is equal to (average in context of the problem)
--   Alt: The long run average is (less than/greater than/not equal to the average in the context of the problem)
+-   Null: The long run average is equal to (hypothesized average)
+-   Alt: The long run average is (less than/greater than/not equal to the hypothesized average)
 
 ## Strength of Evidence with a Single Quantitative Variable {.center}
 
 Hypotheses in symbols:
 
--   $H_{0}$: $\mu$ = previously known number
--   $H_{A}$: $\mu$ \>,\<,≠ previously known number
+-   $H_{0}$: $\mu$ = hypothesized average
+-   $H_{A}$: $\mu$ \>,\<,≠ hypothesized average
 
 ## CEO Example
 
 ::::: columns
 ::: {.column width="65%"}
--   Variable of interest: [\# of emails in a day]{.fragment}
+-   Variable of interest: [** Number of emails received in a day**]{.fragment}
 
--   Parameter: [long run average number of emails received in a day ($\mu$)]{.fragment}
+-   Parameter: [**Long run average number of emails received in a day ($\mu$)**]{.fragment}
 
 -   Hypotheses in symbols:
 
@@ -118,17 +121,17 @@ Hypotheses in symbols:
 
 ## Theory Based Approach (Quantitative Variable) {.center}
 
-Validity conditions:
+Validity conditions to use the theory based approach:
 
--   The variable of interest should have a symmetric distribution, or,
+-   The variable of interest should have a symmetric distribution, or at least n ≥ 20
 
--   n ≥ 20 and not strongly skewed
+-   Distribution should not be strongly skewed
 
 ## Theory Based Approach (Quantitative Variable) {.center}
 
 -   With numerical data, we can find $s$ (sample standard deviation)
 
--   This changes our standardized statistic calculation
+-   This changes our standard error calculation
 
 $$SE=\frac{s}{\sqrt{n}}$$
 

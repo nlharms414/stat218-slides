@@ -1236,28 +1236,28 @@
     "href": "slides/Chapter 02/section2.3.html#strength-of-evidence-with-a-single-quantitative-variable",
     "title": "Section 2.3",
     "section": "Strength of Evidence with a Single Quantitative Variable",
-    "text": "Strength of Evidence with a Single Quantitative Variable\nEssentially the same process, but now we’re working with averages\n\nVariable of Interest: some numerical measure\nParameter: The long run average (\\(\\mu\\))\nObserved statistic: Average calculated from the sample (\\(\\bar{x}\\))"
+    "text": "Strength of Evidence with a Single Quantitative Variable\nEssentially the same process, but now we’re working with averages\n\nVariable of Interest: some numerical measure\n\nEx: Height, weight, time, shoe size\nThat way, we can take an average!\n\nParameter: The long run average (\\(\\mu\\))\nObserved statistic: Average calculated from the sample (\\(\\bar{x}\\))"
   },
   {
     "objectID": "slides/Chapter 02/section2.3.html#strength-of-evidence-with-a-single-quantitative-variable-1",
     "href": "slides/Chapter 02/section2.3.html#strength-of-evidence-with-a-single-quantitative-variable-1",
     "title": "Section 2.3",
     "section": "Strength of Evidence with a Single Quantitative Variable",
-    "text": "Strength of Evidence with a Single Quantitative Variable\nHypotheses in words:\n\nNull: The long run average is equal to (average in context of the problem)\nAlt: The long run average is (less than/greater than/not equal to the average in the context of the problem)"
+    "text": "Strength of Evidence with a Single Quantitative Variable\nHypotheses in words:\n\nNull: The long run average is equal to (hypothesized average)\nAlt: The long run average is (less than/greater than/not equal to the hypothesized average)"
   },
   {
     "objectID": "slides/Chapter 02/section2.3.html#strength-of-evidence-with-a-single-quantitative-variable-2",
     "href": "slides/Chapter 02/section2.3.html#strength-of-evidence-with-a-single-quantitative-variable-2",
     "title": "Section 2.3",
     "section": "Strength of Evidence with a Single Quantitative Variable",
-    "text": "Strength of Evidence with a Single Quantitative Variable\nHypotheses in symbols:\n\n\\(H_{0}\\): \\(\\mu\\) = previously known number\n\\(H_{A}\\): \\(\\mu\\) &gt;,&lt;,≠ previously known number"
+    "text": "Strength of Evidence with a Single Quantitative Variable\nHypotheses in symbols:\n\n\\(H_{0}\\): \\(\\mu\\) = hypothesized average\n\\(H_{A}\\): \\(\\mu\\) &gt;,&lt;,≠ hypothesized average"
   },
   {
     "objectID": "slides/Chapter 02/section2.3.html#ceo-example",
     "href": "slides/Chapter 02/section2.3.html#ceo-example",
     "title": "Section 2.3",
     "section": "CEO Example",
-    "text": "CEO Example\n\n\n\nVariable of interest: # of emails in a day\nParameter: long run average number of emails received in a day (\\(\\mu\\))\nHypotheses in symbols:\n\n\\(H_{0}\\): \\(\\mu\\) = 8\n\\(H_{A}\\): \\(\\mu\\) &gt; 8\n\n\n\n\n\n\n\n\n\nScenario\n\n\n\n\nYou are interested in whether the number of emails the CEO of Apple receives each day is more than 8."
+    "text": "CEO Example\n\n\n\nVariable of interest: ** Number of emails received in a day**\nParameter: Long run average number of emails received in a day (\\(\\mu\\))\nHypotheses in symbols:\n\n\\(H_{0}\\): \\(\\mu\\) = 8\n\\(H_{A}\\): \\(\\mu\\) &gt; 8\n\n\n\n\n\n\n\n\n\nScenario\n\n\n\n\nYou are interested in whether the number of emails the CEO of Apple receives each day is more than 8."
   },
   {
     "objectID": "slides/Chapter 02/section2.3.html#simulation",
@@ -1278,14 +1278,14 @@
     "href": "slides/Chapter 02/section2.3.html#theory-based-approach-quantitative-variable",
     "title": "Section 2.3",
     "section": "Theory Based Approach (Quantitative Variable)",
-    "text": "Theory Based Approach (Quantitative Variable)\nValidity conditions:\n\nThe variable of interest should have a symmetric distribution, or,\nn ≥ 20 and not strongly skewed"
+    "text": "Theory Based Approach (Quantitative Variable)\nValidity conditions to use the theory based approach:\n\nThe variable of interest should have a symmetric distribution, or at least n ≥ 20\nDistribution should not be strongly skewed"
   },
   {
     "objectID": "slides/Chapter 02/section2.3.html#theory-based-approach-quantitative-variable-1",
     "href": "slides/Chapter 02/section2.3.html#theory-based-approach-quantitative-variable-1",
     "title": "Section 2.3",
     "section": "Theory Based Approach (Quantitative Variable)",
-    "text": "Theory Based Approach (Quantitative Variable)\n\nWith numerical data, we can find \\(s\\) (sample standard deviation)\nThis changes our standardized statistic calculation\n\n\\[SE=\\frac{s}{\\sqrt{n}}\\]"
+    "text": "Theory Based Approach (Quantitative Variable)\n\nWith numerical data, we can find \\(s\\) (sample standard deviation)\nThis changes our standard error calculation\n\n\\[SE=\\frac{s}{\\sqrt{n}}\\]"
   },
   {
     "objectID": "slides/Chapter 02/section2.3.html#theory-based-approach-quantitative-variable-2",
