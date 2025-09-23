@@ -56,7 +56,7 @@ Note: We only use sample standard deviation and standard deviation symbols ($s$,
 
 Essentially the same process, but now we're working with averages
 
--   **Variable of Interest:** some numerical measure 
+-   **Variable of Interest:** some numerical measure
 
     -   Ex: Height, weight, time, shoe size
     -   That way, we can take an average!
@@ -83,9 +83,9 @@ Hypotheses in symbols:
 
 ::::: columns
 ::: {.column width="65%"}
--   Variable of interest: [** Number of emails received in a day**]{.fragment}
+-   Variable of interest: [**Number of emails received in a day**]{.fragment}
 
--   Parameter: [**Long run average number of emails received in a day ($\mu$)**]{.fragment}
+-   Parameter: [**Long run average number of emails received in a day (**$\mu$)]{.fragment}
 
 -   Hypotheses in symbols:
 
@@ -95,7 +95,7 @@ Hypotheses in symbols:
 
 ::: {.column width="35%"}
 | Scenario |
-|:----------------------------------------------------------------------:|
+|:--:|
 | You are interested in whether the number of emails the CEO of Apple receives each day is more than 8. |
 :::
 :::::
@@ -171,7 +171,7 @@ Conclusions take the same form:
 
 ::: {.column width="45%"}
 | Scenario |
-|:----------------------------------------------------------------------:|
+|:--:|
 | You are interested in whether the number of emails the CEO of Apple receives each day is more than 8. Suppose you observe 30 days and find that the average number of emails is 10.2, with a sample S.D. of 2.091. The distribution is not strongly skewed. |
 :::
 :::::
