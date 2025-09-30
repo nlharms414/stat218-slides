@@ -10,7 +10,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.56">
 
-  <title>STAT 218 – Section 7.2</title>
+  <title>STAT 218 – Exam 1 Review Slides</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -327,14 +327,201 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Section 7.2</h1>
+  <h1 class="title">Exam 1 Review Slides</h1>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
+<section id="distribution" class="slide level2 center">
+<h2>Distribution</h2>
+<p>Describes the pattern of value/category outcomes for a variable or random process</p>
+</section>
+<section id="describing-a-distribution" class="slide level2 center">
+<h2>Describing a Distribution</h2>
+<ul>
+<li><p><u><strong>Shape:</strong></u> Symmetric, mound-shaped, skewed? How many “peaks”?</p></li>
+<li><p><u><strong>Center:</strong></u> Where does the center of the pattern appear? Generally refers to mean, median, or mode</p></li>
+<li><p><u><strong>Variability:</strong></u> How spread out is the distribution?</p>
+<ul>
+<li>Often described in terms of <u><strong>standard deviation</strong></u></li>
+</ul></li>
+<li><p><u><strong>Unusual data:</strong></u> Are there any outliers?</p></li>
+</ul>
+</section>
+<section id="national-anthem-example" class="slide level2 center">
+<h2>National Anthem Example</h2>
+<p>Dot plot of National Anthem length:</p>
+
+<img data-src="images/nadotplot.png" alt="Dot plot of National Anthem length in seconds. Outliers include a dot at 64 seconds and dots at 154 and 156 seconds." class="r-stretch"></section>
+<section id="basic-definitions" class="slide level2 center">
+<h2>Basic Definitions</h2>
+</section>
+<section id="data" class="slide level2 center">
+<h2>Data</h2>
+<p>Values measured or categories recorded on individual entities of interest.</p>
+</section>
+<section id="observational-units" class="slide level2 center">
+<h2>Observational Units</h2>
+<p>The individual entities on which the data is recorded.</p>
+</section>
+<section id="variables" class="slide level2 center">
+<h2>Variables</h2>
+<p>The recorded characteristics of the observational units.</p>
+</section>
+<section id="quantitative-or-numerical-data" class="slide level2 center">
+<h2>Quantitative (or Numerical) Data</h2>
+<p>Variables which take on numerical values</p>
+<ul>
+<li>Ex: Height, age, number of pets, 40-yard dash time</li>
+</ul>
+</section>
+<section id="qualitative-or-categorical-data" class="slide level2 center">
+<h2>Qualitative (or Categorical) Data</h2>
+<p>Variables which take on category designations</p>
+<ul>
+<li>Ex: Hair color, marital status, selecting A, B, or C on a multiple-choice question</li>
+</ul>
+</section>
+<section id="symbol-comparison" class="slide level2 center">
+<h2>Symbol Comparison</h2>
+<p><br> Symbols we use depend on our variable type:</p>
+<table class="caption-top">
+<tbody>
+<tr class="odd">
+<td></td>
+<td style="text-align: center;"><strong>Categorical Variable</strong></td>
+<td style="text-align: center;"><strong>Quantitative Variable</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Parameter</strong></td>
+<td style="text-align: center;"><span class="math inline">\(\pi\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\mu\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Statistic</strong></td>
+<td style="text-align: center;"><span class="math inline">\(\hat{p}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\bar{x}\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<p><br></p>
+<p>Note: We only use sample standard deviation and standard deviation symbols (<span class="math inline">\(s\)</span>, <span class="math inline">\(\sigma\)</span>) when we are dealing with <strong>quantitative variables.</strong></p>
+</div>
+</section>
+<section id="hypothesis-testing" class="slide level2 center">
+<h2>Hypothesis Testing</h2>
+<ul>
+<li><p>Two hypotheses</p></li>
+<li><p>Null hypothesis (<span class="math inline">\(H_{0}\)</span>):</p>
+<ul>
+<li>The chance explanation; what we assume is true</li>
+<li>Uses =</li>
+</ul></li>
+<li><p>Alternative hypothesis (<span class="math inline">\(H_{A}\)</span>):</p>
+<ul>
+<li>What researchers think could be true;</li>
+<li>Uses &gt;, &lt;, or ≠</li>
+</ul></li>
+</ul>
+<p>We can either write our hypotheses in words or symbols.</p>
+</section>
+<section id="strength-of-evidence" class="slide level2 center">
+<h2>Strength of Evidence</h2>
+<p>Two methods for gathering strength of evidence so far:</p>
+<ul>
+<li>P-value</li>
+<li>Standardized statistic</li>
+</ul>
+<p>We can obtain either of the above through simulation OR theory; we will mainly be using theory from here on out.</p>
+</section>
+<section id="strength-of-evidence-1" class="slide level2 center">
+<h2>Strength of Evidence</h2>
+<p>If we have strong evidence:</p>
+<ul>
+<li>P-value is less than 0.05</li>
+<li>Standardized statistic is outside the twos</li>
+<li>We reject our null hypothesis, and accept the alternative</li>
+</ul>
+</section>
+<section id="strength-of-evidence-2" class="slide level2 center">
+<h2>Strength of Evidence</h2>
+<p>If we do NOT have strong evidence:</p>
+<ul>
+<li>P-value is 0.05 or higher</li>
+<li>Standardized statistic is inside the twos</li>
+<li>We fail to null hypothesis, and cannot accept the alternative</li>
+</ul>
+</section>
+<section id="standard-error-se" class="slide level2 center">
+<h2>Standard Error (SE)</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="se-for-proportions">SE for Proportions:</h3>
+<p><span class="math display">\[SE=\sqrt{\frac{\pi(1-\pi)}{n}}\]</span></p>
+</div><div class="column" style="width:50%;">
+<h3 id="se-for-means">SE for Means:</h3>
+<p><span class="math display">\[SE=\frac{s}{\sqrt{n}}\]</span></p>
+</div></div>
+</section>
+<section id="standardized-statistic-ss" class="slide level2 center">
+<h2>Standardized Statistic (SS)</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="ss-for-proportions">SS for Proportions:</h3>
+<p><span class="math display">\[z=\frac{\hat{p}-\pi}{SE}\]</span></p>
+<p><span class="math display">\[=\frac{\hat{p}-\pi}{\sqrt{\frac{\pi(1-\pi)}{n}}}\]</span></p>
+</div><div class="column" style="width:50%;">
+<h3 id="ss-for-means">SS for Means:</h3>
+<p><span class="math display">\[t=\frac{\bar{x}-\mu}{SE}\]</span></p>
+<p><span class="math display">\[=\frac{\bar{x}-\mu}{\frac{s}{\sqrt{n}}}\]</span></p>
+</div></div>
+</section>
+<section id="factors-that-impact-evidence-strength" class="slide level2 center">
+<h2>Factors that impact evidence strength</h2>
+<ol type="1">
+<li>Distance between observed statistic &amp; null value</li>
+<li>Sample size (n)</li>
+<li>One-sided or two-sided hypothesis test</li>
+</ol>
+</section>
+<section id="distance-between-observed-statistic-null-value" class="slide level2 center">
+<h2>Distance between observed statistic &amp; null value</h2>
+<ul>
+<li><p>More distance between the observed statistic &amp; null value = stronger evidence</p></li>
+<li><p>Less distance between the observed statistic &amp; null value = weaker evidence</p></li>
+</ul>
+</section>
+<section id="sample-size" class="slide level2 center">
+<h2>2. Sample Size</h2>
+<ul>
+<li>Increasing sample size increases strength of evidence</li>
+<li>Decreasing sample size decreases strength of evidence</li>
+</ul>
+</section>
+<section id="one-sided-or-two-sided-hypothesis-test" class="slide level2 center">
+<h2>3. One-sided or two-sided hypothesis test</h2>
+<ul>
+<li>One-sided test = stronger evidence</li>
+<li>Two-sided test = weaker evidence</li>
+</ul>
+</section>
+<section id="type-i-error" class="slide level2 center">
+<h2>Type I Error</h2>
+<ul>
+<li>We reject the null hypothesis, but it is actually true</li>
+<li>“False alarm”</li>
+</ul>
+</section>
+<section id="type-ii-error" class="slide level2 center">
+<h2>Type II Error</h2>
+<ul>
+<li>We fail to reject the null hypothesis, but it is actually false</li>
+<li>“Missed opportunity”</li>
+</ul>
 
 <div class="quarto-auto-generated-content">
 <p><img src="logo.jpg" class="slide-logo"></p>

@@ -94,11 +94,11 @@ In some situations, we are interested in the **long run average**
 
 <br> Symbols we use depend on our variable type:
 
-|                |                          |                           |
-|----------------|:------------------------:|:-------------------------:|
-|                | **Categorical Variable** | **Quantitative Variable** |
+|               |                          |                           |
+|---------------|:------------------------:|:-------------------------:|
+|               | **Categorical Variable** | **Quantitative Variable** |
 | **Parameter** |          $\pi$           |           $\mu$           |
-| **Statistic**     |        $\hat{p}$         |         $\bar{x}$         |
+| **Statistic** |        $\hat{p}$         |         $\bar{x}$         |
 
 . . .
 

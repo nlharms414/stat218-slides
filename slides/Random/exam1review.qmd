@@ -1,0 +1,192 @@
+---
+title: "Exam 1 Review Slides"
+format: 
+  revealjs: 
+    chalkboard: true
+    theme: simple
+    link-external-newwindow: true
+    link-external-icon: true
+    html-math-method: mathjax
+    logo: logo.jpg
+    slide-number: true
+editor: visual
+---
+
+## Distribution {.center}
+
+Describes the pattern of value/category outcomes for a variable or random process
+
+## Describing a Distribution {.center}
+
+-   [**Shape:**]{.underline} Symmetric, mound-shaped, skewed? How many "peaks"?
+
+-   [**Center:**]{.underline} Where does the center of the pattern appear? Generally refers to mean, median, or mode
+
+-   [**Variability:**]{.underline} How spread out is the distribution?
+
+    -   Often described in terms of [**standard deviation**]{.underline}
+
+-   [**Unusual data:**]{.underline} Are there any outliers?
+
+## National Anthem Example {.center}
+
+Dot plot of National Anthem length:
+
+![](images/nadotplot.png){fig-alt="Dot plot of National Anthem length in seconds. Outliers include a dot at 64 seconds and dots at 154 and 156 seconds."}
+
+## Basic Definitions {.center}
+
+## Data {.center}
+
+Values measured or categories recorded on individual entities of interest.
+
+## Observational Units {.center}
+
+The individual entities on which the data is recorded.
+
+## Variables {.center}
+
+The recorded characteristics of the observational units.
+
+## Quantitative (or Numerical) Data {.center}
+
+Variables which take on numerical values
+
+-   Ex: Height, age, number of pets, 40-yard dash time
+
+## Qualitative (or Categorical) Data {.center}
+
+Variables which take on category designations
+
+-   Ex: Hair color, marital status, selecting A, B, or C on a multiple-choice question
+
+## Symbol Comparison {.center}
+
+<br> Symbols we use depend on our variable type:
+
+|               |                          |                           |
+|---------------|:------------------------:|:-------------------------:|
+|               | **Categorical Variable** | **Quantitative Variable** |
+| **Parameter** |          $\pi$           |           $\mu$           |
+| **Statistic** |        $\hat{p}$         |         $\bar{x}$         |
+
+. . .
+
+<br>
+
+Note: We only use sample standard deviation and standard deviation symbols ($s$, $\sigma$) when we are dealing with **quantitative variables.**
+
+## Hypothesis Testing {.center}
+
+-   Two hypotheses
+
+-   Null hypothesis ($H_{0}$):
+
+    -   The chance explanation; what we assume is true
+    -   Uses =
+
+-   Alternative hypothesis ($H_{A}$):
+
+    -   What researchers think could be true; 
+    -   Uses >, <, or ≠
+
+We can either write our hypotheses in words or symbols.
+
+## Strength of Evidence {.center}
+
+Two methods for gathering strength of evidence so far:
+
+-   P-value 
+-   Standardized statistic
+
+We can obtain either of the above through simulation OR theory; we will mainly be using theory from here on out.
+
+## Strength of Evidence {.center}
+
+If we have strong evidence:
+
+-   P-value is less than 0.05
+-   Standardized statistic is outside the twos
+-   We reject our null hypothesis, and accept the alternative
+
+## Strength of Evidence {.center}
+
+If we do NOT have strong evidence:
+
+-   P-value is 0.05 or higher
+-   Standardized statistic is inside the twos
+-   We fail to null hypothesis, and cannot accept the alternative
+
+## Standard Error (SE) {.center}
+
+<br>
+
+::::: columns
+::: {.column width="50%"}
+### SE for Proportions:
+
+$$SE=\sqrt{\frac{\pi(1-\pi)}{n}}$$
+
+:::
+
+::: {.column width="50%"}
+### SE for Means:
+
+$$SE=\frac{s}{\sqrt{n}}$$
+:::
+:::::
+
+## Standardized Statistic (SS) {.center}
+
+<br>
+
+::::: columns
+::: {.column width="50%"}
+### SS for Proportions:
+
+$$z=\frac{\hat{p}-\pi}{SE}$$
+
+$$=\frac{\hat{p}-\pi}{\sqrt{\frac{\pi(1-\pi)}{n}}}$$
+
+:::
+
+::: {.column width="50%"}
+### SS for Means:
+
+$$t=\frac{\bar{x}-\mu}{SE}$$
+
+$$=\frac{\bar{x}-\mu}{\frac{s}{\sqrt{n}}}$$
+:::
+:::::
+
+## Factors that impact evidence strength {.center}
+
+1.  Distance between observed statistic & null value
+2.  Sample size (n)
+3.  One-sided or two-sided hypothesis test
+
+## Distance between observed statistic & null value {.center}
+
+-   More distance between the observed statistic & null value = stronger evidence
+
+-   Less distance between the observed statistic & null value = weaker evidence
+
+## 2. Sample Size {.center}
+
+-   Increasing sample size increases strength of evidence
+-   Decreasing sample size decreases strength of evidence
+
+## 3.  One-sided or two-sided hypothesis test {.center}
+
+-   One-sided test = stronger evidence
+-   Two-sided test = weaker evidence
+
+## Type I Error {.center}
+
+-   We reject the null hypothesis, but it is actually true
+-   "False alarm"
+
+## Type II Error {.center}
+
+-   We fail to reject the null hypothesis, but it is actually false
+-   "Missed opportunity"

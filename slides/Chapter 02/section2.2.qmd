@@ -56,7 +56,7 @@ How spread out is the distribution?
 
 ## Null Distribution (Categorical Variable) {.center}
 
-![](images/2_applet.png){fig-alt="Dot plot where each dot represents one set of 16 attempts by Buzz. Dots form a mound shape between 3 and 11 that peaks between 7 and 8." fig-align="center" }
+![](images/2_applet.png){fig-alt="Dot plot where each dot represents one set of 16 attempts by Buzz. Dots form a mound shape between 3 and 11 that peaks between 7 and 8." fig-align="center"}
 
 Here, each dot represents a **simulated statistic.**
 
@@ -83,7 +83,6 @@ Here, each dot represents a data point we collected.
 ![Sampling Distribution](images/2_sdist.png){fig-alt="A centered histogram of simulated sample means with a mean of 3.285 and standard deviation of 0.104." fig-align="center"}
 :::
 :::::
-
 
 ## Data Distribution {.center}
 
