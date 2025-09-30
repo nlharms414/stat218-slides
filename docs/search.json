@@ -74,7 +74,7 @@
     "href": "slides/Random/exam1review.html#hypothesis-testing",
     "title": "Exam 1 Review Slides",
     "section": "Hypothesis Testing",
-    "text": "Hypothesis Testing\n\nTwo hypotheses\nNull hypothesis (\\(H_{0}\\)):\n\nThe chance explanation; what we assume is true\nUses =\n\nAlternative hypothesis (\\(H_{A}\\)):\n\nWhat researchers think could be true;\nUses &gt;, &lt;, or ≠\n\n\nWe can either write our hypotheses in words or symbols."
+    "text": "Hypothesis Testing\n\nTwo hypotheses\nNull hypothesis (\\(H_{0}\\)):\n\nThe chance explanation, what we assume is true\nUses =\n\nAlternative hypothesis (\\(H_{A}\\)):\n\nWhat researchers think could be true\nUses &gt;, &lt;, or ≠\n\n\nWe can either write our hypotheses in words or symbols."
   },
   {
     "objectID": "slides/Random/exam1review.html#strength-of-evidence",
@@ -88,14 +88,14 @@
     "href": "slides/Random/exam1review.html#strength-of-evidence-1",
     "title": "Exam 1 Review Slides",
     "section": "Strength of Evidence",
-    "text": "Strength of Evidence\nIf we have strong evidence:\n\nP-value is less than 0.05\nStandardized statistic is outside the twos\nWe reject our null hypothesis, and accept the alternative"
+    "text": "Strength of Evidence\nTwo methods for gathering strength of evidence so far:\n\nP-value\nStandardized statistic\n\nWe can obtain either of the above through simulation OR theory; we will mainly be using theory from here on out."
   },
   {
     "objectID": "slides/Random/exam1review.html#strength-of-evidence-2",
     "href": "slides/Random/exam1review.html#strength-of-evidence-2",
     "title": "Exam 1 Review Slides",
     "section": "Strength of Evidence",
-    "text": "Strength of Evidence\nIf we do NOT have strong evidence:\n\nP-value is 0.05 or higher\nStandardized statistic is inside the twos\nWe fail to null hypothesis, and cannot accept the alternative"
+    "text": "Strength of Evidence\nIf we have strong evidence:\n\nP-value is less than 0.05\nStandardized statistic is outside the twos\nWe reject our null hypothesis, and accept the alternative"
   },
   {
     "objectID": "slides/Random/exam1review.html#standard-error-se",
@@ -122,8 +122,8 @@
     "objectID": "slides/Random/exam1review.html#distance-between-observed-statistic-null-value",
     "href": "slides/Random/exam1review.html#distance-between-observed-statistic-null-value",
     "title": "Exam 1 Review Slides",
-    "section": "Distance between observed statistic & null value",
-    "text": "Distance between observed statistic & null value\n\nMore distance between the observed statistic & null value = stronger evidence\nLess distance between the observed statistic & null value = weaker evidence"
+    "section": "1. Distance between observed statistic & null value",
+    "text": "1. Distance between observed statistic & null value\n\nMore distance between the observed statistic & null value = stronger evidence\nLess distance between the observed statistic & null value = weaker evidence"
   },
   {
     "objectID": "slides/Random/exam1review.html#sample-size",
@@ -2469,5 +2469,12 @@
     "title": "Section 1.5",
     "section": "Halloween Treats Conclusion",
     "text": "Halloween Treats Conclusion\nSince our standardized statistic using either approach is not outside the twos, we conclude the following:  “We do not have enough evidence to conclude that the long-run proportion of kids who choose candy differs from 0.5.”"
+  },
+  {
+    "objectID": "slides/Random/exam1review.html#strength-of-evidence-3",
+    "href": "slides/Random/exam1review.html#strength-of-evidence-3",
+    "title": "Exam 1 Review Slides",
+    "section": "Strength of Evidence",
+    "text": "Strength of Evidence\nIf we do NOT have strong evidence:\n\nP-value is 0.05 or higher\nStandardized statistic is inside the twos\nWe fail to null hypothesis, and cannot accept the alternative"
   }
 ]
