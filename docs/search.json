@@ -858,7 +858,7 @@
     "href": "slides/Chapter 03/section3.2.html#standard-deviation-vs.-standard-error",
     "title": "Section 3.2",
     "section": "Standard Deviation vs. Standard Error",
-    "text": "Standard Deviation vs. Standard Error\n\n\n\nStandard Deviation (SD)\n\nAverage distance data points are from the mean, OR\nAverage distance sample means/proportions are from the center of the distribution\n\n\nStandard Error (SE)\n\nAn estimate of SD, based on the data\nFormula differs for numerical vs. categorical data"
+    "text": "Standard Deviation vs. Standard Error\n\nStandard deviation (SD) is how much a data point is likely to vary from the mean of the data\nWe can also obtain SD for our null distribution\n\nThis is standard error!\n\nStandard error (SE) is how much a sample proportion (or mean) is likely to vary from the true population proportion (or mean)\n\nFormulas for standard error differ for numerical vs. categorical data"
   },
   {
     "objectID": "slides/Chapter 03/section3.2.html#calculating-a-2sd-confidence-interval",
