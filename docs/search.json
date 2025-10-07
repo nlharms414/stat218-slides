@@ -1824,14 +1824,14 @@
     "href": "slides/Chapter 03/section3.1.html#recap",
     "title": "Section 3.1",
     "section": "Recap",
-    "text": "Recap\nInterested in determining if a value for the parameter is plausible.\n\nParameter = long run proportion OR long run mean\nSet up hypothesis test\nUse a method to determine strength of evidence:\n\n\nP-value\nStandardized statistic\nTheory-based approach"
+    "text": "Recap\nInterested in determining if a value for the parameter is plausible.\n\nParameter = long run proportion OR long run mean\nSet up hypothesis test\nUse a method to determine strength of evidence:\n\n\nP-value\nStandardized statistic\n\n\nCan use theory-based approach to find either"
   },
   {
     "objectID": "slides/Chapter 03/section3.1.html#recap-1",
     "href": "slides/Chapter 03/section3.1.html#recap-1",
     "title": "Section 3.1",
     "section": "Recap",
-    "text": "Recap\n\nWe don’t know our parameter\n\nDifficult or impossible to obtain\n\nGoal: know which parameter values are plausible\nNeed a range"
+    "text": "Recap\n\nWe don’t know our parameter\n\nDifficult or impossible to obtain\n\nPrevious goal: Is this specific parameter value plausible?\nNew goal: What range of parameter values are plausible?"
   },
   {
     "objectID": "slides/Chapter 03/section3.1.html#confidence-intervals",
@@ -1845,14 +1845,14 @@
     "href": "slides/Chapter 03/section3.1.html#hypothesis-testing-review",
     "title": "Section 3.1",
     "section": "Hypothesis Testing Review",
-    "text": "Hypothesis Testing Review\nExample Hypotheses:\n\n\\(H_{0}\\): \\(\\pi\\) = 0.5\n\\(H_{A}\\): \\(\\pi\\) ≠ 0.5\n\nPi is NOT actually equal to 0.5!!\n\nThis is what we hypothesize pi is based on random chance\nA confidence interval tells us if 0.5 is plausible or not"
+    "text": "Hypothesis Testing Review\nExample Hypotheses:\n\n\\(H_{0}\\): \\(\\pi\\) = 0.5\n\\(H_{A}\\): \\(\\pi\\) ≠ 0.5\n\nPi is NOT actually equal to 0.5!!\n\nThis is what we hypothesize pi is based on random chance\nWe use a p-value or standardized statistic to tell us if 0.5 is a plausible value for \\(\\pi\\) or not"
   },
   {
     "objectID": "slides/Chapter 03/section3.1.html#hypothesis-testing-review-1",
     "href": "slides/Chapter 03/section3.1.html#hypothesis-testing-review-1",
     "title": "Section 3.1",
     "section": "Hypothesis Testing Review",
-    "text": "Hypothesis Testing Review\nExample Hypotheses:\n\n\\(H_{0}\\): \\(\\pi\\) = 0.5\n\\(H_{A}\\): \\(\\pi\\) ≠ 0.5\n\nRecall:\n\n\nIf we reject \\(H_{0}\\), we’re saying pi cannot be 0.5 (not plausible)\nIf we fail to reject \\(H_{0}\\), we’re saying pi could be 0.5 (plausible)"
+    "text": "Hypothesis Testing Review\nExample Hypotheses:\n\n\\(H_{0}\\): \\(\\pi\\) = 0.5\n\\(H_{A}\\): \\(\\pi\\) ≠ 0.5\n\nInterpretation:\n\n\nIf we reject \\(H_{0}\\), we’re saying pi cannot be 0.5 (not plausible)\nIf we fail to reject \\(H_{0}\\), we’re saying pi could be 0.5 (plausible)"
   },
   {
     "objectID": "slides/Chapter 03/section3.1.html#scenario",
@@ -1866,7 +1866,7 @@
     "href": "slides/Chapter 03/section3.1.html#legalizing-medical-marijuana",
     "title": "Section 3.1",
     "section": "Legalizing Medical Marijuana",
-    "text": "Legalizing Medical Marijuana\n\nPopulation of Interest: All Minnesota adults\nParameter of Interest: \\(\\pi\\)=Long run proportion of Minnesota adults that feel marijuana should be legalized\nSample/sample size: n = 800 surveyed Minnesota adults\nObserved Statistic: \\(\\hat{p}=\\frac{408}{800}=0.51\\)\n\n\nNote: We may also refer to the observed statistic as a point estimation\n\n\nWhat if we took a different sample of 800 adults?"
+    "text": "Legalizing Medical Marijuana\n\nPopulation of Interest: All adults in Minnesota\nParameter of Interest: \\(\\pi\\)= Long run proportion of Minnesota adults that feel marijuana should be legalized\nSample/sample size: n = 800 surveyed Minnesota adults\nObserved Statistic: \\(\\hat{p}=\\frac{408}{800}=0.51\\)\n\n\nNote: We may also refer to the observed statistic as a point estimation\n\n\nWhat if we took a different sample of 800 adults?"
   },
   {
     "objectID": "slides/Chapter 03/section3.1.html#legalizing-medical-marijuana-activity",
@@ -1887,7 +1887,7 @@
     "href": "slides/Chapter 03/section3.1.html#confidence-interval-interpretation",
     "title": "Section 3.1",
     "section": "Confidence Interval Interpretation",
-    "text": "Confidence Interval Interpretation\n\n0.48 to 0.54 is also known as our confidence interval!\n\nCan be written as (0.48, 0.54)\n\nWe are 95% confident that the true value of \\(\\pi\\) is between 0.48 and 0.54\n\nThis is a general interpretation\nPut this in context of the given problem\n\n\n\n“We are 95% confident that the long-run proportion of Minnesota adults who feel medical marijuana should be legalized is between 0.48 and 0.54"
+    "text": "Confidence Interval Interpretation\n\n0.48 to 0.54 is also known as our confidence interval!\n\nCan be written as (0.48, 0.54)\n\nWe are 95% confident that the true value of \\(\\pi\\) is between 0.48 and 0.54\n\nThis is a general interpretation\nPut this in context of the given problem\n\n\n\n“We are 95% confident that the long-run proportion of Minnesota adults who feel medical marijuana should be legalized is between 0.48 and 0.54.”"
   },
   {
     "objectID": "slides/Chapter 03/section3.1.html#confidence-intervals-general-form",
@@ -1922,7 +1922,7 @@
     "href": "slides/Chapter 03/section3.1.html#common-significance-levels-alpha-0.05",
     "title": "Section 3.1",
     "section": "Common Significance Levels: \\(\\alpha\\) = 0.05",
-    "text": "Common Significance Levels: \\(\\alpha\\) = 0.05\n\n95% confidence level\nReject when p-value &lt; 0.10\nStandard Practice"
+    "text": "Common Significance Levels: \\(\\alpha\\) = 0.05\n\n95% confidence level\nReject when p-value &lt; 0.05\nStandard Practice"
   },
   {
     "objectID": "slides/Chapter 03/section3.1.html#common-significance-levels-alpha-0.01",
@@ -1943,7 +1943,7 @@
     "href": "slides/Chapter 03/section3.1.html#confidence-level-1",
     "title": "Section 3.1",
     "section": "Confidence Level",
-    "text": "Confidence Level\nEx: 95% confidence level\n\nIf we sampled from the same population 20 times, we would expect 19 samples (95%) to contain the true population parameter"
+    "text": "Confidence Level\nEx: 95% confidence level\n\nIf we sampled from the same population 20 times, we would expect 19 (95%) confidence intervals calculated based on the samples to contain the true population parameter"
   },
   {
     "objectID": "slides/Chapter 03/section3.1.html#confidence-level-2",

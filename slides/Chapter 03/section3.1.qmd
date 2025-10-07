@@ -19,7 +19,7 @@ editor: visual
 
 -   Be able to interpret a confidence interval in the context of a problem, and understand what it represents.
 
-## Recap
+## Recap {.center}
 
 Interested in determining if a value for the parameter is [plausible]{.underline}.
 
@@ -32,8 +32,8 @@ Interested in determining if a value for the parameter is [plausible]{.underline
     ::: incremental
     -   P-value
     -   Standardized statistic
-    -   Theory-based approach
     :::
+-   Can use theory-based approach to find either
 
 ## Recap {.center}
 
@@ -41,9 +41,10 @@ Interested in determining if a value for the parameter is [plausible]{.underline
 
     -   Difficult or impossible to obtain
 
--   Goal: know which parameter values are plausible
+-   Previous goal: Is this specific parameter value plausible?
 
--   Need a range
+-   New goal: *What range* of parameter values are plausible?
+
 
 # Intro to Confidence Intervals
 
@@ -66,7 +67,7 @@ Pi is **NOT** actually equal to 0.5!!
 
 -   This is what we *hypothesize* pi is based on random chance
 
--   A confidence interval tells us if 0.5 is plausible or not
+-   We use a p-value or standardized statistic to tell us if 0.5 is a plausible value for $\pi$ or not
 
 ## Hypothesis Testing Review {.center}
 
@@ -75,7 +76,7 @@ Example Hypotheses:
 -   $H_{0}$: $\pi$ = 0.5
 -   $H_{A}$: $\pi$ ≠ 0.5
 
-Recall:
+Interpretation:
 
 ::: incremental
 -   If we reject $H_{0}$, we're saying pi cannot be 0.5 (not plausible)
@@ -96,13 +97,13 @@ In February of 2014, a Star Tribune Minnesota poll asked a random sample of adul
 Write questions from the next slide on the board
 :::
 
-## Legalizing Medical Marijuana
+## Legalizing Medical Marijuana {.center}
 
--   Population of Interest: **All Minnesota adults**
+-   Population of Interest: [**All adults in Minnesota**]{.fragment}
 
--   Parameter of Interest: [$\pi$=]{.fragment}**Long run proportion of Minnesota adults that feel marijuana should be legalized**
+-   Parameter of Interest: [$\pi$= **Long run proportion of Minnesota adults that feel marijuana should be legalized**]{.fragment}
 
--   Sample/sample size: **n = 800 surveyed Minnesota adults**
+-   Sample/sample size: [**n = 800 surveyed Minnesota adults**]{.fragment}
 
 -   Observed Statistic: [$\hat{p}=\frac{408}{800}=0.51$]{.fragment}
 
@@ -114,7 +115,7 @@ Note: We may also refer to the observed statistic as a [**point estimation**]{.u
 
 **What if we took a different sample of 800 adults?**
 
-## Legalizing Medical Marijuana Activity
+## Legalizing Medical Marijuana Activity {.center}
 
 -   Use the **Theory Based Inference Applet**
 
@@ -126,7 +127,7 @@ Note: We may also refer to the observed statistic as a [**point estimation**]{.u
     2.  Should you reject (R) or fail to reject (FTR) the null hypothesis?
     3.  Is the hypothesized value for $\pi$ plausible or not?
 
-## Activity Results {style="font-size: 22px"}
+## Activity Results {style="font-size: 23px"}
 
 |  |  |  |  |  |  |  |  |  |  |  |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
@@ -162,7 +163,7 @@ Note: We may also refer to the observed statistic as a [**point estimation**]{.u
 
 . . .
 
-"We are 95% confident that the long-run proportion of Minnesota adults who feel medical marijuana should be legalized is between 0.48 and 0.54
+"We are 95% confident that the long-run proportion of Minnesota adults who feel medical marijuana should be legalized is between 0.48 and 0.54."
 
 ## Confidence Intervals: General Form {.center style="text-align: center;"}
 
@@ -176,7 +177,7 @@ Note: We may also refer to the observed statistic as a [**point estimation**]{.u
 -   CI = (0.48, 0.54)
 -   Alternatively, could write: 0.51 ± 0.03
 
-![](images/1_minnesota.png){fig-alt="Article snippet: The polly surveyed 800 Minnesota adults between Feb. 10 and 12 and has a margin of sampling error of plus or minus 3.5 percentage points." fig-align="center"}
+![](images/1_minnesota.png){fig-alt="Article snippet: The poll surveyed 800 Minnesota adults between Feb. 10 and 12 and has a margin of sampling error of plus or minus 3.5 percentage points." fig-align="center"}
 
 # Significance Levels
 
@@ -206,7 +207,7 @@ P-value cutoff for rejecting/failing to reject the null
 
 -   95% confidence level
 
--   Reject when p-value \< 0.10
+-   Reject when p-value \< 0.05
 
 -   Standard Practice
 
@@ -232,7 +233,7 @@ Percent of samples expected to generate a confidence interval containing the tru
 
 Ex: 95% confidence level
 
--   If we sampled from the same population 20 times, we would expect 19 samples (95%) to contain the true population parameter
+-   If we sampled from the same population 20 times, we would expect 19 (95%)  confidence intervals calculated based on the samples to contain the true population parameter
 
 ## Confidence Level {.center}
 

@@ -341,7 +341,7 @@
 <li><p>Be able to interpret a confidence interval in the context of a problem, and understand what it represents.</p></li>
 </ul>
 </section>
-<section id="recap" class="slide level2">
+<section id="recap" class="slide level2 center">
 <h2>Recap</h2>
 <p>Interested in determining if a value for the parameter is <u>plausible</u>.</p>
 <ul>
@@ -352,9 +352,9 @@
 <ul>
 <li class="fragment">P-value</li>
 <li class="fragment">Standardized statistic</li>
-<li class="fragment">Theory-based approach</li>
 </ul>
 </div></li>
+<li><p>Can use theory-based approach to find either</p></li>
 </ul>
 </section>
 <section id="recap-1" class="slide level2 center">
@@ -364,8 +364,8 @@
 <ul>
 <li>Difficult or impossible to obtain</li>
 </ul></li>
-<li><p>Goal: know which parameter values are plausible</p></li>
-<li><p>Need a range</p></li>
+<li><p>Previous goal: Is this specific parameter value plausible?</p></li>
+<li><p>New goal: <em>What range</em> of parameter values are plausible?</p></li>
 </ul>
 </section>
 <section>
@@ -391,7 +391,7 @@
 <p>Pi is <strong>NOT</strong> actually equal to 0.5!!</p>
 <ul>
 <li><p>This is what we <em>hypothesize</em> pi is based on random chance</p></li>
-<li><p>A confidence interval tells us if 0.5 is plausible or not</p></li>
+<li><p>We use a p-value or standardized statistic to tell us if 0.5 is a plausible value for <span class="math inline">\(\pi\)</span> or not</p></li>
 </ul>
 </section>
 <section id="hypothesis-testing-review-1" class="slide level2 center">
@@ -401,7 +401,7 @@
 <li><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\pi\)</span> = 0.5</li>
 <li><span class="math inline">\(H_{A}\)</span>: <span class="math inline">\(\pi\)</span> ≠ 0.5</li>
 </ul>
-<p>Recall:</p>
+<p>Interpretation:</p>
 <div>
 <ul>
 <li class="fragment">If we reject <span class="math inline">\(H_{0}\)</span>, we’re saying pi cannot be 0.5 (not plausible)</li>
@@ -434,12 +434,12 @@
       }</style></aside>
 </div>
 </section>
-<section id="legalizing-medical-marijuana" class="slide level2">
+<section id="legalizing-medical-marijuana" class="slide level2 center">
 <h2>Legalizing Medical Marijuana</h2>
 <ul>
-<li><p>Population of Interest: <strong>All Minnesota adults</strong></p></li>
-<li><p>Parameter of Interest: <span class="fragment"><span class="math inline">\(\pi\)</span>=</span><strong>Long run proportion of Minnesota adults that feel marijuana should be legalized</strong></p></li>
-<li><p>Sample/sample size: <strong>n = 800 surveyed Minnesota adults</strong></p></li>
+<li><p>Population of Interest: <span class="fragment"><strong>All adults in Minnesota</strong></span></p></li>
+<li><p>Parameter of Interest: <span class="fragment"><span class="math inline">\(\pi\)</span>= <strong>Long run proportion of Minnesota adults that feel marijuana should be legalized</strong></span></p></li>
+<li><p>Sample/sample size: <span class="fragment"><strong>n = 800 surveyed Minnesota adults</strong></span></p></li>
 <li><p>Observed Statistic: <span class="fragment"><span class="math inline">\(\hat{p}=\frac{408}{800}=0.51\)</span></span></p></li>
 </ul>
 <div class="fragment">
@@ -449,7 +449,7 @@
 <p><strong>What if we took a different sample of 800 adults?</strong></p>
 </div>
 </section>
-<section id="legalizing-medical-marijuana-activity" class="slide level2">
+<section id="legalizing-medical-marijuana-activity" class="slide level2 center">
 <h2>Legalizing Medical Marijuana Activity</h2>
 <ul>
 <li><p>Use the <strong>Theory Based Inference Applet</strong></p></li>
@@ -462,7 +462,7 @@
 </ol></li>
 </ul>
 </section>
-<section id="activity-results" class="slide level2" style="font-size: 22px">
+<section id="activity-results" class="slide level2" style="font-size: 23px">
 <h2>Activity Results</h2>
 <table class="caption-top">
 <colgroup>
@@ -623,7 +623,7 @@
 </ul></li>
 </ul>
 <div class="fragment">
-<p>“We are 95% confident that the long-run proportion of Minnesota adults who feel medical marijuana should be legalized is between 0.48 and 0.54</p>
+<p>“We are 95% confident that the long-run proportion of Minnesota adults who feel medical marijuana should be legalized is between 0.48 and 0.54.”</p>
 </div>
 </section>
 <section id="confidence-intervals-general-form" class="slide level2 center" style="text-align: center;">
@@ -639,7 +639,7 @@
 <li>Alternatively, could write: 0.51 ± 0.03</li>
 </ul>
 
-<img data-src="images/1_minnesota.png" class="quarto-figure quarto-figure-center r-stretch" alt="Article snippet: The polly surveyed 800 Minnesota adults between Feb. 10 and 12 and has a margin of sampling error of plus or minus 3.5 percentage points."></section></section>
+<img data-src="images/1_minnesota.png" class="quarto-figure quarto-figure-center r-stretch" alt="Article snippet: The poll surveyed 800 Minnesota adults between Feb. 10 and 12 and has a margin of sampling error of plus or minus 3.5 percentage points."></section></section>
 <section>
 <section id="significance-levels" class="title-slide slide level1 center">
 <h1>Significance Levels</h1>
@@ -668,7 +668,7 @@
 <h2>Common Significance Levels: <span class="math inline">\(\alpha\)</span> = 0.05</h2>
 <ul>
 <li><p>95% confidence level</p></li>
-<li><p>Reject when p-value &lt; 0.10</p></li>
+<li><p>Reject when p-value &lt; 0.05</p></li>
 <li><p>Standard Practice</p></li>
 </ul>
 </section>
@@ -693,7 +693,7 @@
 <h2>Confidence Level</h2>
 <p>Ex: 95% confidence level</p>
 <ul>
-<li>If we sampled from the same population 20 times, we would expect 19 samples (95%) to contain the true population parameter</li>
+<li>If we sampled from the same population 20 times, we would expect 19 (95%) confidence intervals calculated based on the samples to contain the true population parameter</li>
 </ul>
 </section>
 <section id="confidence-level-2" class="slide level2 center">
