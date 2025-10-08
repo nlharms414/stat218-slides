@@ -795,7 +795,7 @@
     "href": "slides/Chapter 03/section3.2.html#confidence-intervals-general-form",
     "title": "Section 3.2",
     "section": "Confidence Intervals: General Form",
-    "text": "Confidence Intervals: General Form\n Confidence Interval (CI) = (Lower Bound, Upper Bound)\n= Observed statistic ± margin of error\n\nMargin of Error = Multiplier * Standard Error"
+    "text": "Confidence Intervals: General Form\n Confidence Interval (CI) = (Lower Bound, Upper Bound)\n = Observed statistic ± Margin of Error\n Margin of Error = Multiplier * Standard Error"
   },
   {
     "objectID": "slides/Chapter 03/section3.2.html#null-distribution-and-hypothesis-testing",
@@ -1754,7 +1754,7 @@
     "href": "slides/Chapter 03/section3.3.html#confidence-intervals-general-form",
     "title": "Section 3.3",
     "section": "Confidence Intervals: General Form",
-    "text": "Confidence Intervals: General Form\n Confidence Interval (CI) = (Lower Bound, Upper Bound)\n= Observed statistic ± margin of error\n\nMargin of Error = Multiplier * Standard Error"
+    "text": "Confidence Intervals: General Form\n Confidence Interval (CI) = (Lower Bound, Upper Bound)\n = Observed statistic ± Margin of Error\n Margin of Error = Multiplier * Standard Error"
   },
   {
     "objectID": "slides/Chapter 03/section3.3.html#sd-95-confidence-interval-for-proportions",

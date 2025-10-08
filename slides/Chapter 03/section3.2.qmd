@@ -33,9 +33,9 @@ Give us a range of likely values for our parameter ($\mu$ or $\pi$)
 
 <br> Confidence Interval (CI) = (Lower Bound, Upper Bound)
 
-= Observed statistic ± margin of error
+<br> = Observed statistic ± Margin of Error
 
--   Margin of Error = Multiplier \* Standard Error
+<br> Margin of Error = Multiplier \* Standard Error
 
 ## Null Distribution and Hypothesis Testing {.center}
 
