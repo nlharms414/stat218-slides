@@ -508,21 +508,21 @@
     "href": "slides/Chapter 01/section1.2.html#but-first-symbols",
     "title": "Section 1.2",
     "section": "But first, symbols!",
-    "text": "But first, symbols!\n\n\\(\\pi\\) (pi) represents the parameter: The long run proportion\n\\(\\hat{p}\\) (p-hat) represents the observed statistic: The value we observe from our sample\nn is the sample size: The number of trials in an experiment (recall from last section)"
+    "text": "But first, symbols!\n\n\\pi (pi) represents the parameter: The long run proportion\n\\hat{p} (p-hat) represents the observed statistic: The value we observe from our sample\nn is the sample size: The number of trials in an experiment (recall from last section)"
   },
   {
     "objectID": "slides/Chapter 01/section1.2.html#helper-vs.-hinderer-symbols-example",
     "href": "slides/Chapter 01/section1.2.html#helper-vs.-hinderer-symbols-example",
     "title": "Section 1.2",
     "section": "Helper vs. Hinderer Symbols Example",
-    "text": "Helper vs. Hinderer Symbols Example\n\nParameter (\\(\\pi\\)) = The long run proportion of times a baby choses the helper toy.\n\nRemember, this is unknown!!\n\nObserved Statistic (\\(\\hat{p}\\)) = 14/16\nSample size (n) = 16"
+    "text": "Helper vs. Hinderer Symbols Example\n\nParameter (\\pi) = The long run proportion of times a baby choses the helper toy.\n\nRemember, this is unknown!!\n\nObserved Statistic (\\hat{p}) = 14/16\nSample size (n) = 16"
   },
   {
     "objectID": "slides/Chapter 01/section1.2.html#rock-paper-scissors-activity",
     "href": "slides/Chapter 01/section1.2.html#rock-paper-scissors-activity",
     "title": "Section 1.2",
     "section": "Rock, Paper, Scissors Activity",
-    "text": "Rock, Paper, Scissors Activity\nWith a partner, play 20 games of rock paper scissors. Identify the following:\n\nObservational units: Each game you play\nSample: Games played between you and your partner\nSample size (n): 20\nCategorical variable of interest: Scissors or not\nParameter (\\(\\pi\\)): Long run proportion of scissors\nYour observed statistic (\\(\\hat{p}\\))\nYour partner’s observed statistic (\\(\\hat{p}\\))"
+    "text": "Rock, Paper, Scissors Activity\nWith a partner, play 20 games of rock paper scissors. Identify the following:\n\nObservational units: Each game you play\nSample: Games played between you and your partner\nSample size (n): 20\nCategorical variable of interest: Scissors or not\nParameter (\\pi): Long run proportion of scissors\nYour observed statistic (\\hat{p})\nYour partner’s observed statistic (\\hat{p})"
   },
   {
     "objectID": "slides/Chapter 01/section1.2.html#rock-paper-scissors-activity-cont.",
@@ -543,7 +543,7 @@
     "href": "slides/Chapter 01/section1.2.html#hypothesis-testing-cont.",
     "title": "Section 1.2",
     "section": "Hypothesis Testing (cont.)",
-    "text": "Hypothesis Testing (cont.)\n\nTwo hypotheses\nNull hypothesis (\\(H_{0}\\)):\n\nThe chance explanation.\nWhat we assume is true\n\nAlternative hypothesis (\\(H_{A}\\)):\n\nWhat researchers think could be true.\nThere’s an underlying cause.\n\n\nWe can either write our hypotheses in words or symbols."
+    "text": "Hypothesis Testing (cont.)\n\nTwo hypotheses\nNull hypothesis (H_{0}):\n\nThe chance explanation.\nWhat we assume is true\n\nAlternative hypothesis (H_{A}):\n\nWhat researchers think could be true.\nThere’s an underlying cause.\n\n\nWe can either write our hypotheses in words or symbols."
   },
   {
     "objectID": "slides/Chapter 01/section1.2.html#hypothesis-testing-cont.-1",
@@ -557,28 +557,28 @@
     "href": "slides/Chapter 01/section1.2.html#hypothesis-testing-cont.-2",
     "title": "Section 1.2",
     "section": "Hypothesis Testing (cont.)",
-    "text": "Hypothesis Testing (cont.)\nIn symbols:\n\n\\(H_{0}\\): \\(\\pi\\) = (hypothesized proportion)\n\\(H_{A}\\): \\(\\pi\\) &gt;,&lt;,≠ (hypothesized proportion)\n\nNote that our hypothesized proportion will not be the same as our observed statistic!"
+    "text": "Hypothesis Testing (cont.)\nIn symbols:\n\nH_{0}: \\pi = (hypothesized proportion)\nH_{A}: \\pi &gt;,&lt;,≠ (hypothesized proportion)\n\nNote that our hypothesized proportion will not be the same as our observed statistic!"
   },
   {
     "objectID": "slides/Chapter 01/section1.2.html#helper-vs.-hinderer-hypothesis-testing",
     "href": "slides/Chapter 01/section1.2.html#helper-vs.-hinderer-hypothesis-testing",
     "title": "Section 1.2",
     "section": "Helper vs. Hinderer: Hypothesis Testing",
-    "text": "Helper vs. Hinderer: Hypothesis Testing\nIn words:\n\nNull: The long run proportion of times a baby chooses the helper toy is equal to 0.5\nAlternative: The long run proportion of times a baby chooses the helper toy is greater than 0.5\n\n\n\nIn symbols:\n\n\\(H_{0}\\): \\(\\pi\\) = 0.5\n\\(H_{A}\\): \\(\\pi\\) = 0.5\n\n\n  Where does 0.5 (1/2) come from?"
+    "text": "Helper vs. Hinderer: Hypothesis Testing\nIn words:\n\nNull: The long run proportion of times a baby chooses the helper toy is equal to 0.5\nAlternative: The long run proportion of times a baby chooses the helper toy is greater than 0.5\n\n\n\nIn symbols:\n\nH_{0}: \\pi = 0.5\nH_{A}: \\pi = 0.5\n\n\n  Where does 0.5 (1/2) come from?"
   },
   {
     "objectID": "slides/Chapter 01/section1.2.html#rock-paper-scissors-hypothesis-testing",
     "href": "slides/Chapter 01/section1.2.html#rock-paper-scissors-hypothesis-testing",
     "title": "Section 1.2",
     "section": "Rock, Paper, Scissors: Hypothesis Testing",
-    "text": "Rock, Paper, Scissors: Hypothesis Testing\nResearch Question: Is scissors thrown less often than rock or paper?\n\nWe’re interested in \\(\\pi\\), the long run proportion of times someone picks scissors.\nWhat might a good hypothesized value for \\(\\pi\\) be?"
+    "text": "Rock, Paper, Scissors: Hypothesis Testing\nResearch Question: Is scissors thrown less often than rock or paper?\n\nWe’re interested in \\pi, the long run proportion of times someone picks scissors.\nWhat might a good hypothesized value for \\pi be?"
   },
   {
     "objectID": "slides/Chapter 01/section1.2.html#rock-paper-scissors-hypothesis-testing-1",
     "href": "slides/Chapter 01/section1.2.html#rock-paper-scissors-hypothesis-testing-1",
     "title": "Section 1.2",
     "section": "Rock, Paper, Scissors: Hypothesis Testing",
-    "text": "Rock, Paper, Scissors: Hypothesis Testing\nIn words:\n\nNull: The long run proportion of times a person throws scissors is equal to 1/3.\nAlt: The long run proportion of times a person throws scissors is less than 1/3.\n\n\n\nIn symbols:\n\n\\(H_{0}: \\pi = \\frac{1}{3}\\)\n\\(H_{A}: \\pi &lt; \\frac{1}{3}\\)\n\n\n  Why are we using “&lt;”?"
+    "text": "Rock, Paper, Scissors: Hypothesis Testing\nIn words:\n\nNull: The long run proportion of times a person throws scissors is equal to 1/3.\nAlt: The long run proportion of times a person throws scissors is less than 1/3.\n\n\n\nIn symbols:\n\nH_{0}: \\pi = \\frac{1}{3}\nH_{A}: \\pi &lt; \\frac{1}{3}\n\n\n  Why are we using “&lt;”?"
   },
   {
     "objectID": "slides/Chapter 01/section1.2.html#rock-paper-scissors-three-s-strategy",
@@ -634,7 +634,7 @@
     "href": "slides/Chapter 01/section1.2.html#hypothesis-testing-and-the-null-distribution-cont.",
     "title": "Section 1.2",
     "section": "Hypothesis Testing and the Null Distribution (cont.)",
-    "text": "Hypothesis Testing and the Null Distribution (cont.)\n\n\nRock, paper, scissors simulation example\n\nObserved statistic (\\(\\hat{p}\\)): 2/20\nP-value = 0.02\n\nBased on this p-value, we would reject the null hypothesis."
+    "text": "Hypothesis Testing and the Null Distribution (cont.)\n\n\nRock, paper, scissors simulation example\n\nObserved statistic (\\hat{p}): 2/20\nP-value = 0.02\n\nBased on this p-value, we would reject the null hypothesis."
   },
   {
     "objectID": "slides/Chapter 01/section1.2.html#drawing-conclusions-from-the-p-value",

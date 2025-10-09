@@ -7,7 +7,7 @@ format:
     theme: simple
     link-external-newwindow: true
     link-external-icon: true
-    html-math-method: mathjax
+    html-math-method: katex
     logo: logo.jpg
     slide-number: true
 editor: visual
@@ -138,7 +138,7 @@ In words:
 In symbols:
 
 -   $H_{0}$: $\pi$ = 0.5
--   $H_{A}$: $\pi$ = 0.5
+-   $H_{A}$: $\pi$ ≠ 0.5
 :::
 
 ::: {.column width="60%"}

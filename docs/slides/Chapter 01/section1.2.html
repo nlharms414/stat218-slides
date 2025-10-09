@@ -30,6 +30,22 @@
     }
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -373,19 +389,19 @@
 <section id="but-first-symbols" class="slide level2 center">
 <h2>But first, symbols!</h2>
 <ul>
-<li><span class="math inline">\(\pi\)</span> (pi) represents the <strong>parameter</strong>: The long run <strong>proportion</strong></li>
-<li><span class="math inline">\(\hat{p}\)</span> (p-hat) represents the <strong>observed statistic</strong>: The value we observe from our <strong>sample</strong></li>
+<li><span class="math inline">\pi</span> (pi) represents the <strong>parameter</strong>: The long run <strong>proportion</strong></li>
+<li><span class="math inline">\hat{p}</span> (p-hat) represents the <strong>observed statistic</strong>: The value we observe from our <strong>sample</strong></li>
 <li><strong>n</strong> is the <strong>sample size</strong>: The number of trials in an experiment (recall from last section)</li>
 </ul>
 </section>
 <section id="helper-vs.-hinderer-symbols-example" class="slide level2 center">
 <h2>Helper vs.&nbsp;Hinderer Symbols Example</h2>
 <ul>
-<li><p>Parameter (<span class="math inline">\(\pi\)</span>) = The long run proportion of times a baby choses the helper toy.</p>
+<li><p>Parameter (<span class="math inline">\pi</span>) = The long run proportion of times a baby choses the helper toy.</p>
 <ul>
 <li>Remember, this is unknown!!</li>
 </ul></li>
-<li><p>Observed Statistic (<span class="math inline">\(\hat{p}\)</span>) = 14/16</p></li>
+<li><p>Observed Statistic (<span class="math inline">\hat{p}</span>) = 14/16</p></li>
 <li><p>Sample size (n) = 16</p></li>
 </ul>
 </section>
@@ -397,9 +413,9 @@
 <li>Sample: <span class="fragment"><strong>Games played between you and your partner</strong></span></li>
 <li>Sample size (n): <span class="fragment"><strong>20</strong></span></li>
 <li>Categorical variable of interest: <span class="fragment"><strong>Scissors or not</strong></span></li>
-<li>Parameter (<span class="math inline">\(\pi\)</span>): <span class="fragment"><strong>Long run proportion of scissors</strong></span></li>
-<li>Your observed statistic (<span class="math inline">\(\hat{p}\)</span>)</li>
-<li>Your partner’s observed statistic (<span class="math inline">\(\hat{p}\)</span>)</li>
+<li>Parameter (<span class="math inline">\pi</span>): <span class="fragment"><strong>Long run proportion of scissors</strong></span></li>
+<li>Your observed statistic (<span class="math inline">\hat{p}</span>)</li>
+<li>Your partner’s observed statistic (<span class="math inline">\hat{p}</span>)</li>
 </ul>
 </section>
 <section id="rock-paper-scissors-activity-cont." class="slide level2 center">
@@ -425,12 +441,12 @@
 <h2>Hypothesis Testing (cont.)</h2>
 <ul>
 <li><p>Two hypotheses</p></li>
-<li><p>Null hypothesis (<span class="math inline">\(H_{0}\)</span>):</p>
+<li><p>Null hypothesis (<span class="math inline">H_{0}</span>):</p>
 <ul>
 <li>The chance explanation.</li>
 <li>What we assume is true</li>
 </ul></li>
-<li><p>Alternative hypothesis (<span class="math inline">\(H_{A}\)</span>):</p>
+<li><p>Alternative hypothesis (<span class="math inline">H_{A}</span>):</p>
 <ul>
 <li>What researchers think could be true.</li>
 <li>There’s an underlying cause.</li>
@@ -450,8 +466,8 @@
 <h2>Hypothesis Testing (cont.)</h2>
 <p>In symbols:</p>
 <ul>
-<li><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\pi\)</span> = (<em>hypothesized proportion</em>)</li>
-<li><span class="math inline">\(H_{A}\)</span>: <span class="math inline">\(\pi\)</span> &gt;,&lt;,≠ (<em>hypothesized proportion</em>)</li>
+<li><span class="math inline">H_{0}</span>: <span class="math inline">\pi</span> = (<em>hypothesized proportion</em>)</li>
+<li><span class="math inline">H_{A}</span>: <span class="math inline">\pi</span> &gt;,&lt;,≠ (<em>hypothesized proportion</em>)</li>
 </ul>
 <p>Note that our hypothesized proportion <em>will not be the same as our observed statistic!</em></p>
 </section>
@@ -466,8 +482,8 @@
 <div class="column" style="width:40%;">
 <p>In symbols:</p>
 <ul>
-<li><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\pi\)</span> = 0.5</li>
-<li><span class="math inline">\(H_{A}\)</span>: <span class="math inline">\(\pi\)</span> = 0.5</li>
+<li><span class="math inline">H_{0}</span>: <span class="math inline">\pi</span> = 0.5</li>
+<li><span class="math inline">H_{A}</span>: <span class="math inline">\pi</span> = 0.5</li>
 </ul>
 </div><div class="column" style="width:60%;">
 <p><br> <br> <span class="fragment">Where does 0.5 (1/2) come from?</span></p>
@@ -477,8 +493,8 @@
 <h2>Rock, Paper, Scissors: Hypothesis Testing</h2>
 <p><strong>Research Question:</strong> Is scissors thrown less often than rock or paper?</p>
 <ul>
-<li><p>We’re interested in <span class="math inline">\(\pi\)</span>, the long run proportion of times someone picks scissors.</p></li>
-<li><p>What might a good hypothesized value for <span class="math inline">\(\pi\)</span> be?</p></li>
+<li><p>We’re interested in <span class="math inline">\pi</span>, the long run proportion of times someone picks scissors.</p></li>
+<li><p>What might a good hypothesized value for <span class="math inline">\pi</span> be?</p></li>
 </ul>
 </section>
 <section id="rock-paper-scissors-hypothesis-testing-1" class="slide level2 center">
@@ -492,8 +508,8 @@
 <div class="column" style="width:50%;">
 <p>In symbols:</p>
 <ul>
-<li><span class="math inline">\(H_{0}: \pi = \frac{1}{3}\)</span></li>
-<li><span class="math inline">\(H_{A}: \pi &lt; \frac{1}{3}\)</span></li>
+<li><span class="math inline">H_{0}: \pi = \frac{1}{3}</span></li>
+<li><span class="math inline">H_{A}: \pi &lt; \frac{1}{3}</span></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><br> <br> <span class="fragment">Why are we using “&lt;”?</span></p>
@@ -601,7 +617,7 @@
 <div class="column" style="width:40%;">
 <p>Rock, paper, scissors simulation example</p>
 <ul>
-<li><p>Observed statistic (<span class="math inline">\(\hat{p}\)</span>): 2/20</p></li>
+<li><p>Observed statistic (<span class="math inline">\hat{p}</span>): 2/20</p></li>
 <li><p>P-value = 0.02</p></li>
 </ul>
 <p><span class="fragment">Based on this p-value, we would <u>reject the null hypothesis.</u></span></p>
@@ -691,7 +707,6 @@
   <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -859,27 +874,9 @@
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom
