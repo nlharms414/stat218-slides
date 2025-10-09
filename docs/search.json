@@ -564,7 +564,7 @@
     "href": "slides/Chapter 01/section1.2.html#helper-vs.-hinderer-hypothesis-testing",
     "title": "Section 1.2",
     "section": "Helper vs. Hinderer: Hypothesis Testing",
-    "text": "Helper vs. Hinderer: Hypothesis Testing\nIn words:\n\nNull: The long run proportion of times a baby chooses the helper toy is equal to 0.5\nAlternative: The long run proportion of times a baby chooses the helper toy is greater than 0.5\n\n\n\nIn symbols:\n\nH_{0}: \\pi = 0.5\nH_{A}: \\pi = 0.5\n\n\n  Where does 0.5 (1/2) come from?"
+    "text": "Helper vs. Hinderer: Hypothesis Testing\nIn words:\n\nNull: The long run proportion of times a baby chooses the helper toy is equal to 0.5\nAlternative: The long run proportion of times a baby chooses the helper toy is greater than 0.5\n\n\n\nIn symbols:\n\nH_{0}: \\pi = 0.5\nH_{A}: \\pi ≠ 0.5\n\n\n  Where does 0.5 (1/2) come from?"
   },
   {
     "objectID": "slides/Chapter 01/section1.2.html#rock-paper-scissors-hypothesis-testing",
