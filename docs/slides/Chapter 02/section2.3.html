@@ -30,6 +30,22 @@
     }
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -356,10 +372,10 @@
 <h2>Symbol Review</h2>
 <p>In section 2.1, we introduced some new symbols we use with numerical data:</p>
 <ul>
-<li>Sample mean: <span class="math inline">\(\bar{x}\)</span></li>
-<li>Sample Standard Deviation: <span class="math inline">\(s\)</span></li>
-<li>Population Mean: <span class="math inline">\(\mu\)</span></li>
-<li>Population Standard Deviation: <span class="math inline">\(\sigma\)</span></li>
+<li>Sample mean: <span class="math inline">\bar{x}</span></li>
+<li>Sample Standard Deviation: <span class="math inline">s</span></li>
+<li>Population Mean: <span class="math inline">\mu</span></li>
+<li>Population Standard Deviation: <span class="math inline">\sigma</span></li>
 </ul>
 </section>
 <section id="symbol-comparison" class="slide level2 center">
@@ -374,19 +390,19 @@
 </tr>
 <tr class="even">
 <td><strong>Parameter</strong></td>
-<td style="text-align: center;"><span class="math inline">\(\pi\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\mu\)</span></td>
+<td style="text-align: center;"><span class="math inline">\pi</span></td>
+<td style="text-align: center;"><span class="math inline">\mu</span></td>
 </tr>
 <tr class="odd">
 <td><strong>Statistic</strong></td>
-<td style="text-align: center;"><span class="math inline">\(\hat{p}\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\bar{x}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\hat{p}</span></td>
+<td style="text-align: center;"><span class="math inline">\bar{x}</span></td>
 </tr>
 </tbody>
 </table>
 <div class="fragment">
 <p><br></p>
-<p>Note: We only use sample standard deviation and standard deviation symbols (<span class="math inline">\(s\)</span>, <span class="math inline">\(\sigma\)</span>) when we are dealing with <strong>quantitative variables.</strong></p>
+<p>Note: We only use sample standard deviation and standard deviation symbols (<span class="math inline">s</span>, <span class="math inline">\sigma</span>) when we are dealing with <strong>quantitative variables.</strong></p>
 </div>
 </section>
 <section id="strength-of-evidence-with-a-single-quantitative-variable" class="slide level2 center">
@@ -398,8 +414,8 @@
 <li>Ex: Height, weight, time, shoe size</li>
 <li>That way, we can take an average!</li>
 </ul></li>
-<li><p><strong>Parameter:</strong> The long run average (<span class="math inline">\(\mu\)</span>)</p></li>
-<li><p><strong>Observed statistic:</strong> Average calculated from the sample (<span class="math inline">\(\bar{x}\)</span>)</p></li>
+<li><p><strong>Parameter:</strong> The long run average (<span class="math inline">\mu</span>)</p></li>
+<li><p><strong>Observed statistic:</strong> Average calculated from the sample (<span class="math inline">\bar{x}</span>)</p></li>
 </ul>
 </section>
 <section id="strength-of-evidence-with-a-single-quantitative-variable-1" class="slide level2 center">
@@ -414,8 +430,8 @@
 <h2>Strength of Evidence with a Single Quantitative Variable</h2>
 <p>Hypotheses in symbols:</p>
 <ul>
-<li><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\mu\)</span> = hypothesized average</li>
-<li><span class="math inline">\(H_{A}\)</span>: <span class="math inline">\(\mu\)</span> &gt;,&lt;,≠ hypothesized average</li>
+<li><span class="math inline">H_{0}</span>: <span class="math inline">\mu</span> = hypothesized average</li>
+<li><span class="math inline">H_{A}</span>: <span class="math inline">\mu</span> &gt;,&lt;,≠ hypothesized average</li>
 </ul>
 </section>
 <section id="ceo-example" class="slide level2">
@@ -424,11 +440,11 @@
 <div class="column" style="width:65%;">
 <ul>
 <li><p>Variable of interest: <span class="fragment"><strong>Number of emails received in a day</strong></span></p></li>
-<li><p>Parameter: <span class="fragment"><strong>Long run average number of emails received in a day (</strong><span class="math inline">\(\mu\)</span>)</span></p></li>
+<li><p>Parameter: <span class="fragment"><strong>Long run average number of emails received in a day (</strong><span class="math inline">\mu</span>)</span></p></li>
 <li><p>Hypotheses in symbols:</p>
 <ul>
-<li><span class="fragment"><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\mu\)</span> = 8</span></li>
-<li><span class="fragment"><span class="math inline">\(H_{A}\)</span>: <span class="math inline">\(\mu\)</span> &gt; 8</span></li>
+<li><span class="fragment"><span class="math inline">H_{0}</span>: <span class="math inline">\mu</span> = 8</span></li>
+<li><span class="fragment"><span class="math inline">H_{A}</span>: <span class="math inline">\mu</span> &gt; 8</span></li>
 </ul></li>
 </ul>
 </div><div class="column" style="width:35%;">
@@ -483,17 +499,17 @@
 <section id="theory-based-approach-quantitative-variable-1" class="slide level2 center">
 <h2>Theory Based Approach (Quantitative Variable)</h2>
 <ul>
-<li><p>With numerical data, we can find <span class="math inline">\(s\)</span> (sample standard deviation)</p></li>
+<li><p>With numerical data, we can find <span class="math inline">s</span> (sample standard deviation)</p></li>
 <li><p>This changes our standard error calculation</p></li>
 </ul>
-<p><span class="math display">\[SE=\frac{s}{\sqrt{n}}\]</span></p>
+<p><span class="math display">SE=\frac{s}{\sqrt{n}}</span></p>
 </section>
 <section id="theory-based-approach-quantitative-variable-2" class="slide level2 center">
 <h2>Theory Based Approach (Quantitative Variable)</h2>
 <ul>
-<li>With numerical data, we use “<span class="math inline">\(t\)</span>” instead of “<span class="math inline">\(z\)</span>” to describe our standardized statistic</li>
+<li>With numerical data, we use “<span class="math inline">t</span>” instead of “<span class="math inline">z</span>” to describe our standardized statistic</li>
 </ul>
-<p><span class="math display">\[Standardized\: Statistic\:= t=\frac{\bar{x}-\mu}{SE}=\frac{\bar{x}-\mu}{\frac{s}{\sqrt{n}}}\]</span></p>
+<p><span class="math display">Standardized\: Statistic\:= t=\frac{\bar{x}-\mu}{SE}=\frac{\bar{x}-\mu}{\frac{s}{\sqrt{n}}}</span></p>
 </section>
 <section id="drawing-conclusions" class="slide level2 center">
 <h2>Drawing Conclusions</h2>
@@ -524,8 +540,8 @@
 <ul>
 <li>Sample size: <span class="fragment"><strong>n=30</strong></span></li>
 <li>Can we use the theory based approach? <span class="fragment"><strong>Yes</strong></span></li>
-<li>Observed statistic: <span class="fragment"><span class="math inline">\(\bar{x}\)</span><strong>=10.2</strong></span></li>
-<li>Sample standard deviation: <span class="fragment"><span class="math inline">\(s\)</span><strong>=2.091</strong></span></li>
+<li>Observed statistic: <span class="fragment"><span class="math inline">\bar{x}</span><strong>=10.2</strong></span></li>
+<li>Sample standard deviation: <span class="fragment"><span class="math inline">s</span><strong>=2.091</strong></span></li>
 </ul>
 </div><div class="column" style="width:45%;">
 <table class="caption-top">
@@ -548,9 +564,9 @@
 <section id="ceo-example-2" class="slide level2 center">
 <h2>CEO Example</h2>
 <p>Standard error:</p>
-<p><span class="math display">\[SE=\frac{s}{\sqrt{n}}=\frac{2.091}{\sqrt{30}}=0.38\]</span></p>
+<p><span class="math display">SE=\frac{s}{\sqrt{n}}=\frac{2.091}{\sqrt{30}}=0.38</span></p>
 <p>Standardized statistic:</p>
-<p><span class="math display">\[ t=\frac{\bar{x}-\mu}{SE}=\frac{10.2-8}{0.38}=5.78\]</span></p>
+<p><span class="math display"> t=\frac{\bar{x}-\mu}{SE}=\frac{10.2-8}{0.38}=5.78</span></p>
 </section>
 <section id="ceo-example-conclusion" class="slide level2 center">
 <h2>CEO Example Conclusion</h2>
@@ -580,7 +596,6 @@
   <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -748,27 +763,9 @@
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom

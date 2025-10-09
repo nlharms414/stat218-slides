@@ -30,6 +30,22 @@
     }
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -377,35 +393,35 @@
 <h2>Confidence Intervals</h2>
 <ul>
 <li><p><u><strong>Confidence Interval:</strong></u> A range of likely values for our parameter of interest</p></li>
-<li><p>Helps us estimate the true value of <span class="math inline">\(\mu\)</span> or <span class="math inline">\(\pi\)</span></p></li>
-<li><p>Remember: We don’t know the true value of <span class="math inline">\(\mu\)</span> or <span class="math inline">\(\pi\)</span></p></li>
+<li><p>Helps us estimate the true value of <span class="math inline">\mu</span> or <span class="math inline">\pi</span></p></li>
+<li><p>Remember: We don’t know the true value of <span class="math inline">\mu</span> or <span class="math inline">\pi</span></p></li>
 </ul>
 </section>
 <section id="hypothesis-testing-review" class="slide level2 center">
 <h2>Hypothesis Testing Review</h2>
 <p>Example Hypotheses:</p>
 <ul>
-<li><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\pi\)</span> = 0.5</li>
-<li><span class="math inline">\(H_{A}\)</span>: <span class="math inline">\(\pi\)</span> ≠ 0.5</li>
+<li><span class="math inline">H_{0}</span>: <span class="math inline">\pi</span> = 0.5</li>
+<li><span class="math inline">H_{A}</span>: <span class="math inline">\pi</span> ≠ 0.5</li>
 </ul>
 <p>Pi is <strong>NOT</strong> actually equal to 0.5!!</p>
 <ul>
 <li><p>This is what we <em>hypothesize</em> pi is based on random chance</p></li>
-<li><p>We use a p-value or standardized statistic to tell us if 0.5 is a plausible value for <span class="math inline">\(\pi\)</span> or not</p></li>
+<li><p>We use a p-value or standardized statistic to tell us if 0.5 is a plausible value for <span class="math inline">\pi</span> or not</p></li>
 </ul>
 </section>
 <section id="hypothesis-testing-review-1" class="slide level2 center">
 <h2>Hypothesis Testing Review</h2>
 <p>Example Hypotheses:</p>
 <ul>
-<li><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\pi\)</span> = 0.5</li>
-<li><span class="math inline">\(H_{A}\)</span>: <span class="math inline">\(\pi\)</span> ≠ 0.5</li>
+<li><span class="math inline">H_{0}</span>: <span class="math inline">\pi</span> = 0.5</li>
+<li><span class="math inline">H_{A}</span>: <span class="math inline">\pi</span> ≠ 0.5</li>
 </ul>
 <p>Interpretation:</p>
 <div>
 <ul>
-<li class="fragment">If we reject <span class="math inline">\(H_{0}\)</span>, we’re saying pi cannot be 0.5 (not plausible)</li>
-<li class="fragment">If we fail to reject <span class="math inline">\(H_{0}\)</span>, we’re saying pi could be 0.5 (plausible)</li>
+<li class="fragment">If we reject <span class="math inline">H_{0}</span>, we’re saying pi cannot be 0.5 (not plausible)</li>
+<li class="fragment">If we fail to reject <span class="math inline">H_{0}</span>, we’re saying pi could be 0.5 (plausible)</li>
 </ul>
 </div>
 </section></section>
@@ -438,9 +454,9 @@
 <h2>Legalizing Medical Marijuana</h2>
 <ul>
 <li><p>Population of Interest: <span class="fragment"><strong>All adults in Minnesota</strong></span></p></li>
-<li><p>Parameter of Interest: <span class="fragment"><span class="math inline">\(\pi\)</span>= <strong>Long run proportion of Minnesota adults that feel marijuana should be legalized</strong></span></p></li>
+<li><p>Parameter of Interest: <span class="fragment"><span class="math inline">\pi</span>= <strong>Long run proportion of Minnesota adults that feel marijuana should be legalized</strong></span></p></li>
 <li><p>Sample/sample size: <span class="fragment"><strong>n = 800 surveyed Minnesota adults</strong></span></p></li>
-<li><p>Observed Statistic: <span class="fragment"><span class="math inline">\(\hat{p}=\frac{408}{800}=0.51\)</span></span></p></li>
+<li><p>Observed Statistic: <span class="fragment"><span class="math inline">\hat{p}=\frac{408}{800}=0.51</span></span></p></li>
 </ul>
 <div class="fragment">
 <p>Note: We may also refer to the observed statistic as a <u><strong>point estimation</strong></u></p>
@@ -453,12 +469,12 @@
 <h2>Legalizing Medical Marijuana Activity</h2>
 <ul>
 <li><p>Use the <strong>Theory Based Inference Applet</strong></p></li>
-<li><p>Work with people around you to test different values of <span class="math inline">\(\pi\)</span></p></li>
-<li><p>For each value of <span class="math inline">\(\pi\)</span> record:</p>
+<li><p>Work with people around you to test different values of <span class="math inline">\pi</span></p></li>
+<li><p>For each value of <span class="math inline">\pi</span> record:</p>
 <ol type="1">
 <li>P-value</li>
 <li>Should you reject (R) or fail to reject (FTR) the null hypothesis?</li>
-<li>Is the hypothesized value for <span class="math inline">\(\pi\)</span> plausible or not?</li>
+<li>Is the hypothesized value for <span class="math inline">\pi</span> plausible or not?</li>
 </ol></li>
 </ul>
 </section>
@@ -480,7 +496,7 @@
 </colgroup>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><span class="math inline">\(H_{0}:\pi=\)</span></td>
+<td style="text-align: center;"><span class="math inline">H_{0}:\pi=</span></td>
 <td style="text-align: center;">0.41</td>
 <td style="text-align: center;">0.42</td>
 <td style="text-align: center;">0.43</td>
@@ -550,7 +566,7 @@
 </colgroup>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><span class="math inline">\(H_{0}:\pi=\)</span></td>
+<td style="text-align: center;"><span class="math inline">H_{0}:\pi=</span></td>
 <td style="text-align: center;">0.51</td>
 <td style="text-align: center;">0.52</td>
 <td style="text-align: center;">0.53</td>
@@ -616,7 +632,7 @@
 <ul>
 <li>Can be written as (0.48, 0.54)</li>
 </ul></li>
-<li><p>We are 95% confident that the true value of <span class="math inline">\(\pi\)</span> is between 0.48 and 0.54</p>
+<li><p>We are 95% confident that the true value of <span class="math inline">\pi</span> is between 0.48 and 0.54</p>
 <ul>
 <li>This is a general interpretation</li>
 <li>Put this in context of the given problem</li>
@@ -634,7 +650,7 @@
 <section id="medical-marijuana-example" class="slide level2 center">
 <h2>Medical Marijuana Example</h2>
 <ul>
-<li><span class="math inline">\(\hat{p}\)</span> = 0.51</li>
+<li><span class="math inline">\hat{p}</span> = 0.51</li>
 <li>CI = (0.48, 0.54)</li>
 <li>Alternatively, could write: 0.51 ± 0.03</li>
 </ul>
@@ -649,13 +665,13 @@
 <h2>Significance Level</h2>
 <p>P-value cutoff for rejecting/failing to reject the null</p>
 <ul>
-<li><p>Denoted by <span class="math inline">\(\alpha\)</span></p></li>
-<li><p>More “mathematical” reason we reject <span class="math inline">\(H_{0}\)</span> if p-value is less than 0.05</p></li>
+<li><p>Denoted by <span class="math inline">\alpha</span></p></li>
+<li><p>More “mathematical” reason we reject <span class="math inline">H_{0}</span> if p-value is less than 0.05</p></li>
 <li><p>Significance level + confidence level = 100%</p></li>
 </ul>
 </section>
 <section id="common-significance-levels-alpha-0.10" class="slide level2 center">
-<h2>Common Significance Levels: <span class="math inline">\(\alpha\)</span> = 0.10</h2>
+<h2>Common Significance Levels: <span class="math inline">\alpha</span> = 0.10</h2>
 <ul>
 <li><p>90% confidence level</p></li>
 <li><p>Reject when p-value &lt; 0.10</p></li>
@@ -665,7 +681,7 @@
 </ul>
 </section>
 <section id="common-significance-levels-alpha-0.05" class="slide level2 center">
-<h2>Common Significance Levels: <span class="math inline">\(\alpha\)</span> = 0.05</h2>
+<h2>Common Significance Levels: <span class="math inline">\alpha</span> = 0.05</h2>
 <ul>
 <li><p>95% confidence level</p></li>
 <li><p>Reject when p-value &lt; 0.05</p></li>
@@ -673,7 +689,7 @@
 </ul>
 </section>
 <section id="common-significance-levels-alpha-0.01" class="slide level2 center">
-<h2>Common Significance Levels: <span class="math inline">\(\alpha\)</span> = 0.01</h2>
+<h2>Common Significance Levels: <span class="math inline">\alpha</span> = 0.01</h2>
 <ul>
 <li><p>99% confidence level</p></li>
 <li><p>Reject when p-value &lt; 0.01</p></li>
@@ -728,7 +744,6 @@
   <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -896,27 +911,9 @@
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom

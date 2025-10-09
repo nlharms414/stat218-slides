@@ -7,7 +7,7 @@ format:
     theme: simple
     link-external-newwindow: true
     link-external-icon: true
-    html-math-method: mathjax
+    html-math-method: katex
     logo: logo.jpg
     slide-number: true
 editor: visual
@@ -33,6 +33,7 @@ Interested in determining if a value for the parameter is [plausible]{.underline
     -   P-value
     -   Standardized statistic
     :::
+
 -   Can use theory-based approach to find either
 
 ## Recap {.center}
@@ -44,7 +45,6 @@ Interested in determining if a value for the parameter is [plausible]{.underline
 -   Previous goal: Is this specific parameter value plausible?
 
 -   New goal: *What range* of parameter values are plausible?
-
 
 # Intro to Confidence Intervals
 
@@ -233,7 +233,7 @@ Percent of samples expected to generate a confidence interval containing the tru
 
 Ex: 95% confidence level
 
--   If we sampled from the same population 20 times, we would expect 19 (95%)  confidence intervals calculated based on the samples to contain the true population parameter
+-   If we sampled from the same population 20 times, we would expect 19 (95%) confidence intervals calculated based on the samples to contain the true population parameter
 
 ## Confidence Level {.center}
 

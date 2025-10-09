@@ -30,6 +30,22 @@
     }
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -369,7 +385,7 @@
 <section id="hypothesis-testing-review-1" class="slide level2 center">
 <h2>Hypothesis Testing Review</h2>
 <ul>
-<li><p>Null hypothesis (<span class="math inline">\(H_{0}\)</span>):</p>
+<li><p>Null hypothesis (<span class="math inline">H_{0}</span>):</p>
 <ul>
 <li>The chance explanation.</li>
 <li>What we assume is true</li>
@@ -377,7 +393,7 @@
 </ul>
 <div class="fragment">
 <ul>
-<li><p>Alternative hypothesis (<span class="math inline">\(H_{A}\)</span>):</p>
+<li><p>Alternative hypothesis (<span class="math inline">H_{A}</span>):</p>
 <ul>
 <li>What researchers think could be true.</li>
 <li>There’s an underlying cause.</li>
@@ -392,7 +408,7 @@
 <h2>P-value Review</h2>
 <p>Once we have our hypotheses, we can test them.</p>
 <ul>
-<li>P-value gives the probability of <span class="math inline">\(\hat{p}\)</span> occurring <em>if we assume</em> <span class="math inline">\(H_{0}\)</span> is true</li>
+<li>P-value gives the probability of <span class="math inline">\hat{p}</span> occurring <em>if we assume</em> <span class="math inline">H_{0}</span> is true</li>
 </ul>
 <div class="fragment">
 <p>We go by the following rules:</p>
@@ -437,8 +453,8 @@
 <ul>
 <li>Categorical or Numerical?</li>
 </ul></li>
-<li><p>Parameter (<span class="math inline">\(\pi\)</span>)</p></li>
-<li><p>Observed statistic (<span class="math inline">\(\hat{p}\)</span>)</p></li>
+<li><p>Parameter (<span class="math inline">\pi</span>)</p></li>
+<li><p>Observed statistic (<span class="math inline">\hat{p}</span>)</p></li>
 <li><p>Hypotheses (in symbols)</p></li>
 </ul>
 </div><div class="column" style="width:40%;">
@@ -472,12 +488,12 @@
 <ul>
 <li>Categorical or Numerical? <span class="fragment"><strong>Categorical</strong></span></li>
 </ul></li>
-<li><p>Parameter (<span class="math inline">\(\pi\)</span>): <span class="fragment"><strong>Long run proportion of patients who die within 30 days of a heart transplant at St.&nbsp;George.</strong></span></p></li>
-<li><p>Observed statistic (<span class="math inline">\(\hat{p}\)</span>): <span class="fragment"><strong>8/10 = 80%</strong></span></p></li>
+<li><p>Parameter (<span class="math inline">\pi</span>): <span class="fragment"><strong>Long run proportion of patients who die within 30 days of a heart transplant at St.&nbsp;George.</strong></span></p></li>
+<li><p>Observed statistic (<span class="math inline">\hat{p}</span>): <span class="fragment"><strong>8/10 = 80%</strong></span></p></li>
 <li><p>Hypotheses (in symbols):</p>
 <ul>
-<li><span class="fragment"><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\pi\)</span> = 0.15</span></li>
-<li><span class="fragment"><span class="math inline">\(H_{A}\)</span>: <span class="math inline">\(\pi\)</span> &gt; 0.15</span></li>
+<li><span class="fragment"><span class="math inline">H_{0}</span>: <span class="math inline">\pi</span> = 0.15</span></li>
+<li><span class="fragment"><span class="math inline">H_{A}</span>: <span class="math inline">\pi</span> &gt; 0.15</span></li>
 </ul></li>
 </ul>
 </section>
@@ -515,7 +531,7 @@
 <h2>Standardized Statistic Method</h2>
 <ul>
 <li><p>A second method for determining strength of evidence</p></li>
-<li><p>Standardizes <span class="math inline">\(\hat{p}\)</span> to a <strong>standard normal distribution</strong></p></li>
+<li><p>Standardizes <span class="math inline">\hat{p}</span> to a <strong>standard normal distribution</strong></p></li>
 <li><p><strong>Standard normal distribution</strong> = Normal distribution with mean of 0 and standard deviation of 1</p></li>
 </ul>
 </section>
@@ -525,24 +541,24 @@
 </section>
 <section id="standardized-statistic" class="slide level2 center">
 <h2>Standardized Statistic</h2>
-<p>How many standard deviations an observed statistic is from the mean of the null distribution; denoted by <span class="math inline">\(z\)</span></p>
+<p>How many standard deviations an observed statistic is from the mean of the null distribution; denoted by <span class="math inline">z</span></p>
 </section>
 <section id="calculating-the-standardized-statistic" class="slide level2 center">
 <h2>Calculating the Standardized Statistic</h2>
-<p><span class="math display">\[z=\frac{Observed\: Statistic - Hypothesized\: Value}{Standard\: Deviation\: under\: the\: null}\]</span></p>
+<p><span class="math display">z=\frac{Observed\: Statistic - Hypothesized\: Value}{Standard\: Deviation\: under\: the\: null}</span></p>
 </section>
 <section id="calculating-the-standardized-statistic-1" class="slide level2 center">
 <h2>Calculating the Standardized Statistic</h2>
 <p>Can alternatively be written as:</p>
-<p><span class="math display">\[z=\frac{Observed\: Statistic - Mean\: under\: the\: null}{Standard\: Deviation\: under\: the\: null}\]</span></p>
+<p><span class="math display">z=\frac{Observed\: Statistic - Mean\: under\: the\: null}{Standard\: Deviation\: under\: the\: null}</span></p>
 <p>Note: “Hypothesized value” and “mean under the null” refer to the same value</p>
 </section>
 <section id="standardized-statistic-1" class="slide level2 center">
 <h2>Standardized Statistic</h2>
 <ul>
-<li><span class="math inline">\(z\)</span> can be negative OR positive</li>
-<li><span class="math inline">\(z\)</span> represents the number of standard deviations the observed statistic is from the mean of the null distribution</li>
-<li>The higher the absolute value of <span class="math inline">\(z\)</span> is, the more evidence we have in favor of <span class="math inline">\(H_{A}\)</span></li>
+<li><span class="math inline">z</span> can be negative OR positive</li>
+<li><span class="math inline">z</span> represents the number of standard deviations the observed statistic is from the mean of the null distribution</li>
+<li>The higher the absolute value of <span class="math inline">z</span> is, the more evidence we have in favor of <span class="math inline">H_{A}</span></li>
 <li>Absolute value =
 <ul>
 <li>Positive values stay the same</li>
@@ -552,7 +568,7 @@
 </section>
 <section id="standard-deviation-s.d.-formula" class="slide level2 center">
 <h2>Standard Deviation (S.D.) Formula</h2>
-<p><span class="math display">\[\sigma = \sqrt{\frac{\sum_{i=0}^n (x_{i}-\bar{x})^2}{n}}\]</span></p>
+<p><span class="math display">\sigma = \sqrt{\frac{\sum_{i=0}^n (x_{i}-\bar{x})^2}{n}}</span></p>
 <p>Thankfully, you won’t need to know this formula for this course, but some of you might find it nice to know how this number is calculated.</p>
 <ul>
 <li>Instead, we can get our s.d. using the Applet. (Phew!)</li>
@@ -567,18 +583,18 @@
 <section id="heart-transplant-example-3" class="slide level2 center">
 <h2>Heart Transplant Example</h2>
 <ul>
-<li>Observed statistic (<span class="math inline">\(\hat{p}\)</span>) = 0.8</li>
-<li>Hypothesized value (<span class="math inline">\(\pi\)</span>) = 0.15</li>
+<li>Observed statistic (<span class="math inline">\hat{p}</span>) = 0.8</li>
+<li>Hypothesized value (<span class="math inline">\pi</span>) = 0.15</li>
 <li>Standard Deviation under the null = 0.116 (from previous slide)</li>
 </ul>
-<p><span class="math display">\[z=\frac{0.8 - 0.15}{0.116}=5.60\]</span></p>
+<p><span class="math display">z=\frac{0.8 - 0.15}{0.116}=5.60</span></p>
 <p>Cool, but what does this tell us?</p>
 </section>
 <section id="evidence-based-on-the-standardized-statistic" class="slide level2 center">
 <h2>Evidence Based on the Standardized Statistic</h2>
 <ul>
 <li><p>Like the p-value, we have criteria for rejecting or failing to reject the null based on the standardized statistic (s.s.)</p></li>
-<li><p>Reject <span class="math inline">\(H_{0}\)</span> when the s.s. is below -2 or above 2</p></li>
+<li><p>Reject <span class="math inline">H_{0}</span> when the s.s. is below -2 or above 2</p></li>
 <li><p>“Outside the twos”</p></li>
 </ul>
 </section>
@@ -622,7 +638,7 @@
 <ul>
 <li class="fragment"><p>Data from 361 heart transplants</p></li>
 <li class="fragment"><p>71 people died within 30 days of surgery</p></li>
-<li class="fragment"><p><span class="math inline">\(\hat{p}=\frac{71}{361}\)</span></p></li>
+<li class="fragment"><p><span class="math inline">\hat{p}=\frac{71}{361}</span></p></li>
 </ul>
 </div>
 </section>
@@ -635,14 +651,14 @@
 <section id="heart-transplant-example-new-data-2" class="slide level2 center">
 <h2>Heart Transplant Example: New Data</h2>
 <ul>
-<li><p>New observed statistic: <span class="math inline">\(\hat{p}=\frac{71}{361}=0.1967\)</span></p></li>
-<li><p>Hypothesized value (<span class="math inline">\(\pi\)</span>) = 0.15</p>
+<li><p>New observed statistic: <span class="math inline">\hat{p}=\frac{71}{361}=0.1967</span></p></li>
+<li><p>Hypothesized value (<span class="math inline">\pi</span>) = 0.15</p>
 <ul>
 <li>This doesn’t change!</li>
 </ul></li>
 <li><p>Standard Deviation under the null = 0.019</p></li>
 </ul>
-<p><span class="math display">\[z=\frac{0.1967 - 0.15}{0.019}=2.45\]</span></p>
+<p><span class="math display">z=\frac{0.1967 - 0.15}{0.019}=2.45</span></p>
 </section>
 <section id="comparing-the-two-scenarios" class="slide level2 center">
 <h2>Comparing the two scenarios</h2>
@@ -656,17 +672,17 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><span class="math inline">\(\hat{p}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\hat{p}</span></td>
 <td style="text-align: center;">0.80</td>
 <td style="text-align: center;">0.1967</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">p-value</td>
-<td style="text-align: center;"><span class="math inline">\(\approx\)</span> 0</td>
+<td style="text-align: center;"><span class="math inline">\approx</span> 0</td>
 <td style="text-align: center;">0.01</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span class="math inline">\(z\)</span></td>
+<td style="text-align: left;"><span class="math inline">z</span></td>
 <td style="text-align: center;">5.60</td>
 <td style="text-align: center;">2.45</td>
 </tr>
@@ -690,17 +706,17 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><span class="math inline">\(\hat{p}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\hat{p}</span></td>
 <td style="text-align: center;"><strong>0.80</strong></td>
 <td style="text-align: center;">0.1967</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">p-value</td>
-<td style="text-align: center;"><span class="math inline">\(\approx\)</span> <strong>0</strong></td>
+<td style="text-align: center;"><span class="math inline">\approx</span> <strong>0</strong></td>
 <td style="text-align: center;">0.01</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span class="math inline">\(z\)</span></td>
+<td style="text-align: left;"><span class="math inline">z</span></td>
 <td style="text-align: center;"><strong>5.60</strong></td>
 <td style="text-align: center;">2.45</td>
 </tr>
@@ -730,7 +746,7 @@
 </tr>
 <tr class="odd">
 <td style="text-align: center;">Standardized Statistic</td>
-<td style="text-align: center;"><span class="math inline">\(z\)</span> &gt; 2 or <span class="math inline">\(z\)</span> &lt; -2</td>
+<td style="text-align: center;"><span class="math inline">z</span> &gt; 2 or <span class="math inline">z</span> &lt; -2</td>
 </tr>
 </tbody>
 </table>
@@ -764,7 +780,6 @@
   <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -932,27 +947,9 @@
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom

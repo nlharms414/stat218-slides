@@ -30,6 +30,22 @@
     }
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -350,7 +366,7 @@
 <ul>
 <li><p>Gives us range of <strong>plausible values</strong> for our parameter of interest</p>
 <ul>
-<li>Either <span class="math inline">\(\mu\)</span> or <span class="math inline">\(\pi\)</span></li>
+<li>Either <span class="math inline">\mu</span> or <span class="math inline">\pi</span></li>
 </ul></li>
 </ul>
 </section>
@@ -362,8 +378,8 @@
 </section>
 <section id="sd-95-confidence-interval-for-proportions" class="slide level2 center">
 <h2>2SD (95%) Confidence Interval for Proportions</h2>
-<p><span class="math display">\[CI=\hat{p}±2*\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}\]</span></p>
-<p><span class="math display">\[=(Lower\:Bound,Upper\:Bound)\]</span></p>
+<p><span class="math display">CI=\hat{p}±2*\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}</span></p>
+<p><span class="math display">=(Lower\:Bound,Upper\:Bound)</span></p>
 <div class="fragment">
 <p>What do you think changes if we’re dealing with a mean rather than a proportion?</p>
 </div>
@@ -376,11 +392,11 @@
 <section id="formulas" class="slide level2 center">
 <h2>Formulas</h2>
 <p>Standard error for means:</p>
-<p><span class="math display">\[SE=\frac{s}{\sqrt{n}}\]</span></p>
+<p><span class="math display">SE=\frac{s}{\sqrt{n}}</span></p>
 <p>2SD (95%) Confidence Interval for Means:</p>
-<p><span class="math display">\[CI=\bar{x}±2*\frac{s}{\sqrt{n}}\]</span></p>
+<p><span class="math display">CI=\bar{x}±2*\frac{s}{\sqrt{n}}</span></p>
 <div class="fragment">
-<p>Why does it make sense that we use <span class="math inline">\(\bar{x}\)</span> now?</p>
+<p>Why does it make sense that we use <span class="math inline">\bar{x}</span> now?</p>
 </div>
 </section>
 <section id="validity-conditions-for-single-mean" class="slide level2 center">
@@ -412,13 +428,13 @@
 <h2>Calculating the Confidence Interval</h2>
 <div>
 <ul>
-<li class="fragment"><span class="math inline">\(\bar{x}=13292\)</span></li>
-<li class="fragment"><span class="math inline">\(n=102\)</span></li>
-<li class="fragment"><span class="math inline">\(s=4535\)</span></li>
-<li class="fragment"><span class="math inline">\(SE=\frac{s}{\sqrt{n}}=\frac{4535}{\sqrt{102}}=449.03\)</span></li>
-<li class="fragment"><span class="math inline">\(CI=\bar{x}±2*SE=13292±2*449.03\)</span></li>
-<li class="fragment">Lower Bound: <span class="math inline">\(13292-2*449.03=12393.94\)</span></li>
-<li class="fragment">Upper Bound: <span class="math inline">\(13292+2*449.03=14190.06\)</span></li>
+<li class="fragment"><span class="math inline">\bar{x}=13292</span></li>
+<li class="fragment"><span class="math inline">n=102</span></li>
+<li class="fragment"><span class="math inline">s=4535</span></li>
+<li class="fragment"><span class="math inline">SE=\frac{s}{\sqrt{n}}=\frac{4535}{\sqrt{102}}=449.03</span></li>
+<li class="fragment"><span class="math inline">CI=\bar{x}±2*SE=13292±2*449.03</span></li>
+<li class="fragment">Lower Bound: <span class="math inline">13292-2*449.03=12393.94</span></li>
+<li class="fragment">Upper Bound: <span class="math inline">13292+2*449.03=14190.06</span></li>
 </ul>
 </div>
 </section>
@@ -455,7 +471,7 @@
 <div class="fragment">
 <p>Remember that all three methods will agree with each other!</p>
 <ul>
-<li>All either reject or fail to reject <span class="math inline">\(H_{0}\)</span></li>
+<li>All either reject or fail to reject <span class="math inline">H_{0}</span></li>
 </ul>
 
 <div class="quarto-auto-generated-content">
@@ -483,7 +499,6 @@
   <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -651,27 +666,9 @@
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom

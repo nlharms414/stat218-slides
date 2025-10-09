@@ -30,6 +30,22 @@
     }
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -352,19 +368,19 @@
 </ul></li>
 <li><p>Notation:</p>
 <ul>
-<li><span class="math inline">\(H_{0}: \pi = hypothesized\: value\)</span></li>
-<li><span class="math inline">\(H_{A}: \pi &gt;,&lt;,≠ hypothesized\: value\)</span></li>
+<li><span class="math inline">H_{0}: \pi = hypothesized\: value</span></li>
+<li><span class="math inline">H_{A}: \pi &gt;,&lt;,≠ hypothesized\: value</span></li>
 </ul></li>
 </ul>
 </section>
 <section id="p-value-review" class="slide level2 center">
 <h2>P-value Review</h2>
 <ul>
-<li>Tests for evidence in favor of <span class="math inline">\(H_{A}\)</span></li>
-<li>Gives probability of observed statistic (<span class="math inline">\(\hat{p}\)</span>) under null hypothesis</li>
+<li>Tests for evidence in favor of <span class="math inline">H_{A}</span></li>
+<li>Gives probability of observed statistic (<span class="math inline">\hat{p}</span>) under null hypothesis</li>
 <li>Calculating the p-value:
 <ul>
-<li>Count the # of simulated statistics as or more extreme than <span class="math inline">\(\hat{p}\)</span> in the direction of the null hypothesis</li>
+<li>Count the # of simulated statistics as or more extreme than <span class="math inline">\hat{p}</span> in the direction of the null hypothesis</li>
 <li>Divide by total number of simulated statistics</li>
 </ul></li>
 </ul>
@@ -380,16 +396,16 @@
 <section id="standardized-statistic-review" class="slide level2 center">
 <h2>Standardized Statistic Review</h2>
 <ul>
-<li>Another way to test for strength of evidence in favor of <span class="math inline">\(H_{A}\)</span></li>
+<li>Another way to test for strength of evidence in favor of <span class="math inline">H_{A}</span></li>
 <li>Obtain the standard deviation (SD)</li>
-<li>Calculate the standardized statistic (<span class="math inline">\(z\)</span>) by:</li>
+<li>Calculate the standardized statistic (<span class="math inline">z</span>) by:</li>
 </ul>
-<p><span class="math display">\[z=\frac{Observed\: Statistic - Hypothesized\: Value}{Standard\: Deviation\: under\: the\: null}\]</span></p>
+<p><span class="math display">z=\frac{Observed\: Statistic - Hypothesized\: Value}{Standard\: Deviation\: under\: the\: null}</span></p>
 </section>
 <section id="standardized-statistic-review-1" class="slide level2 center">
 <h2>Standardized Statistic Review</h2>
 <ul>
-<li>If <span class="math inline">\(z\)</span> &gt; 2 or <span class="math inline">\(z\)</span> &lt; -2, reject the null, accept alternative</li>
+<li>If <span class="math inline">z</span> &gt; 2 or <span class="math inline">z</span> &lt; -2, reject the null, accept alternative</li>
 <li>Interpret based on context of the problem</li>
 </ul>
 </section>
@@ -423,7 +439,7 @@
 </section>
 <section id="distance-from-the-null-value-1" class="slide level2 center">
 <h2>1. Distance from the null value</h2>
-<p>Consider <span class="math inline">\(\hat{p}\)</span>.</p>
+<p>Consider <span class="math inline">\hat{p}</span>.</p>
 <ul>
 <li>Further from null value = less likely null value is plausible
 <ul>
@@ -463,15 +479,15 @@
 </section>
 <section id="one-sided-or-two-sided-hypothesis-test-1" class="slide level2">
 <h2>3. One-sided or two-sided hypothesis test</h2>
-<p>One-sided or two-sided refers to the form <span class="math inline">\(H_{A}\)</span> takes.</p>
+<p>One-sided or two-sided refers to the form <span class="math inline">H_{A}</span> takes.</p>
 <ul>
 <li>One-sided test takes the form:</li>
 </ul>
-<p><span class="math display">\[H_{A}: \pi &gt; OR &lt; hypothesized\: value\]</span></p>
+<p><span class="math display">H_{A}: \pi &gt; OR &lt; hypothesized\: value</span></p>
 <ul>
 <li>Two-sided test takes the form:</li>
 </ul>
-<p><span class="math display">\[H_{A}: \pi ≠ hypothesized\: value\]</span></p>
+<p><span class="math display">H_{A}: \pi ≠ hypothesized\: value</span></p>
 
 <div class="quarto-auto-generated-content">
 <p><img src="logo.jpg" class="slide-logo"></p>
@@ -497,7 +513,6 @@
   <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -665,27 +680,9 @@
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom

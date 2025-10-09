@@ -30,6 +30,22 @@
     }
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -378,7 +394,7 @@
 <p>Since we know the null distribution is normally distributed, we know the following:</p>
 <ul>
 <li>Bell shaped</li>
-<li>Centered at the hypothesized value for <span class="math inline">\(\pi\)</span></li>
+<li>Centered at the hypothesized value for <span class="math inline">\pi</span></li>
 <li>Can predict standard deviation
 <ul>
 <li>Without the Applet!</li>
@@ -430,15 +446,15 @@
 </ul>
 <p>Definition:</p>
 <ul>
-<li>If the sample size (n) is large enough, the distribution of the sample proportions will be bell-shaped (approximately normal), centered at the long run probability (<span class="math inline">\(\pi\)</span>), with a standard deviation:</li>
+<li>If the sample size (n) is large enough, the distribution of the sample proportions will be bell-shaped (approximately normal), centered at the long run probability (<span class="math inline">\pi</span>), with a standard deviation:</li>
 </ul>
-<p><span class="math display">\[standard\: deviation\: of\: the\: null=\sqrt{\frac{\pi(1-\pi)}{n}}\]</span></p>
+<p><span class="math display">standard\: deviation\: of\: the\: null=\sqrt{\frac{\pi(1-\pi)}{n}}</span></p>
 </section>
 <section id="using-theory-for-standardized-values" class="slide level2 center">
 <h2>Using Theory for Standardized Values</h2>
 <p>Replace S.D. with theory-based calculation</p>
-<p><span class="math display">\[z=\frac{Observed\: Statistic - Hypothesized\: Value}{Standard\: Deviation\: under\: the\: null}\]</span></p>
-<p><span class="math display">\[=\frac{\hat{p}-\pi}{\sqrt{\frac{\pi(1-\pi)}{n}}}\]</span></p>
+<p><span class="math display">z=\frac{Observed\: Statistic - Hypothesized\: Value}{Standard\: Deviation\: under\: the\: null}</span></p>
+<p><span class="math display">=\frac{\hat{p}-\pi}{\sqrt{\frac{\pi(1-\pi)}{n}}}</span></p>
 </section>
 <section id="using-the-applet" class="slide level2 center">
 <h2>Using the Applet</h2>
@@ -494,12 +510,12 @@
 <ul>
 <li><p>Sample &amp; size: <span class="fragment"><strong>n = 283 kids</strong></span></p></li>
 <li><p>Variable of interest: <span class="fragment"><strong>Chose candy or not</strong></span></p></li>
-<li><p>Parameter &amp; symbol: <span class="fragment"><span class="math inline">\(\pi\)</span> <strong>= long run proportion of kids that chose candy</strong></span></p></li>
-<li><p>Observed statistic &amp; symbol: <span class="fragment"><span class="math inline">\(\hat{p} = \frac{148}{283}\)</span></span></p></li>
+<li><p>Parameter &amp; symbol: <span class="fragment"><span class="math inline">\pi</span> <strong>= long run proportion of kids that chose candy</strong></span></p></li>
+<li><p>Observed statistic &amp; symbol: <span class="fragment"><span class="math inline">\hat{p} = \frac{148}{283}</span></span></p></li>
 <li><p>Hypotheses (in symbols):</p>
 <ul>
-<li><span class="fragment"><span class="math inline">\(H_{0}\)</span><strong>:</strong> <span class="math inline">\(\pi\)</span> <strong>= 0.5</strong></span></li>
-<li><span class="fragment"><span class="math inline">\(H_{A}\)</span><strong>:</strong> <span class="math inline">\(\pi\)</span> <strong>≠ 0.5</strong></span></li>
+<li><span class="fragment"><span class="math inline">H_{0}</span><strong>:</strong> <span class="math inline">\pi</span> <strong>= 0.5</strong></span></li>
+<li><span class="fragment"><span class="math inline">H_{A}</span><strong>:</strong> <span class="math inline">\pi</span> <strong>≠ 0.5</strong></span></li>
 </ul></li>
 </ul>
 <p>Do we meet the criteria for the theory-based approach? <span class="fragment"><strong>Yes! More than 10 failures &amp; successes.</strong></span></p>
@@ -507,18 +523,18 @@
 <section id="halloween-treats-2" class="slide level2 center">
 <h2>Halloween Treats</h2>
 <p>Standard deviation using theory:</p>
-<p><span class="math display">\[standard\: deviation\: of\: the\: null=\sqrt{\frac{\pi(1-\pi)}{n}}\]</span></p>
-<p><span class="math display">\[=\sqrt{\frac{0.5(1-0.5)}{283}}=0.0297\]</span></p>
+<p><span class="math display">standard\: deviation\: of\: the\: null=\sqrt{\frac{\pi(1-\pi)}{n}}</span></p>
+<p><span class="math display">=\sqrt{\frac{0.5(1-0.5)}{283}}=0.0297</span></p>
 </section>
 <section id="halloween-treats-3" class="slide level2 center">
 <h2>Halloween Treats</h2>
 <p>Then, we use the calculated standard deviation to obtain the standardized statistic:</p>
-<p><span class="math display">\[standardized\: statistic\: =\frac{0.523-0.5}{0.0297}=0.774\]</span></p>
+<p><span class="math display">standardized\: statistic\: =\frac{0.523-0.5}{0.0297}=0.774</span></p>
 </section>
 <section id="halloween-treats-4" class="slide level2 center">
 <h2>Halloween Treats</h2>
 <p>Now we find the standardized statistic with the simulation approach:</p>
-<p><span class="math display">\[standardized\: statistic\: =\frac{0.523-0.5}{0.02}=0.793\]</span></p>
+<p><span class="math display">standardized\: statistic\: =\frac{0.523-0.5}{0.02}=0.793</span></p>
 <p>Notice, we get nearly the same number!</p>
 </section>
 <section id="halloween-treats-conclusion" class="slide level2 center">
@@ -552,7 +568,6 @@
   <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -720,27 +735,9 @@
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom

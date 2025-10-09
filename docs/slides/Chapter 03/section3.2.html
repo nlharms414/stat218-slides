@@ -30,6 +30,22 @@
     }
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -348,7 +364,7 @@
 </section>
 <section id="confidence-intervals" class="slide level2 center">
 <h2>Confidence Intervals</h2>
-<p>Give us a range of likely values for our parameter (<span class="math inline">\(\mu\)</span> or <span class="math inline">\(\pi\)</span>)</p>
+<p>Give us a range of likely values for our parameter (<span class="math inline">\mu</span> or <span class="math inline">\pi</span>)</p>
 <ul>
 <li><p>True parameter is never known!!!</p></li>
 <li><p>But, we get an idea of what it might be</p></li>
@@ -367,12 +383,12 @@
 <ul>
 <li>What we <em>expect</em> to happen</li>
 </ul></li>
-<li><p>Center of null distribution is our hypothesized value for our parameter of interest (<span class="math inline">\(\mu\)</span> or <span class="math inline">\(\pi\)</span>)</p></li>
+<li><p>Center of null distribution is our hypothesized value for our parameter of interest (<span class="math inline">\mu</span> or <span class="math inline">\pi</span>)</p></li>
 </ul>
 <p>Example Hypotheses:</p>
 <ul>
-<li><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\pi\)</span> = 0.5</li>
-<li><span class="math inline">\(H_{A}\)</span>: <span class="math inline">\(\pi\)</span> ≠ 0.5</li>
+<li><span class="math inline">H_{0}</span>: <span class="math inline">\pi</span> = 0.5</li>
+<li><span class="math inline">H_{A}</span>: <span class="math inline">\pi</span> ≠ 0.5</li>
 </ul>
 </section>
 <section id="p-value" class="slide level2 center">
@@ -405,7 +421,7 @@
 </colgroup>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><span class="math inline">\(H_{0}:\pi=\)</span></td>
+<td style="text-align: center;"><span class="math inline">H_{0}:\pi=</span></td>
 <td style="text-align: center;">0.41</td>
 <td style="text-align: center;">0.42</td>
 <td style="text-align: center;">0.43</td>
@@ -475,7 +491,7 @@
 </colgroup>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><span class="math inline">\(H_{0}:\pi=\)</span></td>
+<td style="text-align: center;"><span class="math inline">H_{0}:\pi=</span></td>
 <td style="text-align: center;">0.51</td>
 <td style="text-align: center;">0.52</td>
 <td style="text-align: center;">0.53</td>
@@ -534,13 +550,13 @@
 <ul>
 <li><p>Essentially we ran 20 different hypothesis tests of the form:</p>
 <ul>
-<li><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\pi\)</span> = x</li>
-<li><span class="math inline">\(H_{A}\)</span>: <span class="math inline">\(\pi\)</span> ≠ x</li>
+<li><span class="math inline">H_{0}</span>: <span class="math inline">\pi</span> = x</li>
+<li><span class="math inline">H_{A}</span>: <span class="math inline">\pi</span> ≠ x</li>
 </ul></li>
-<li><p>Our confidence interval is derived based on the tests we rejected or failed to reject <span class="math inline">\(H_{0}\)</span></p>
+<li><p>Our confidence interval is derived based on the tests we rejected or failed to reject <span class="math inline">H_{0}</span></p>
 <ul>
-<li>Reject <span class="math inline">\(H_{0}\)</span> = not a plausible value for <span class="math inline">\(\pi\)</span></li>
-<li>Fail to reject <span class="math inline">\(H_{0}\)</span> = a plausible value for <span class="math inline">\(\pi\)</span></li>
+<li>Reject <span class="math inline">H_{0}</span> = not a plausible value for <span class="math inline">\pi</span></li>
+<li>Fail to reject <span class="math inline">H_{0}</span> = a plausible value for <span class="math inline">\pi</span></li>
 </ul></li>
 </ul>
 </section>
@@ -562,7 +578,7 @@
 </colgroup>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><span class="math inline">\(H_{0}:\pi=\)</span></td>
+<td style="text-align: center;"><span class="math inline">H_{0}:\pi=</span></td>
 <td style="text-align: center;">0.41</td>
 <td style="text-align: center;">0.42</td>
 <td style="text-align: center;">0.43</td>
@@ -606,7 +622,7 @@
 </colgroup>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><span class="math inline">\(H_{0}:\pi=\)</span></td>
+<td style="text-align: center;"><span class="math inline">H_{0}:\pi=</span></td>
 <td style="text-align: center;">0.51</td>
 <td style="text-align: center;">0.52</td>
 <td style="text-align: center;">0.53</td>
@@ -636,9 +652,9 @@
 <p><br></p>
 <div>
 <ul>
-<li class="fragment"><span class="math inline">\(\alpha=0.01\)</span>: CI = (0.47,0.55)</li>
-<li class="fragment"><span class="math inline">\(\alpha=0.05\)</span>: CI = (0.48,0.54)</li>
-<li class="fragment"><span class="math inline">\(\alpha=0.10\)</span>: CI = (0.49,0.53)</li>
+<li class="fragment"><span class="math inline">\alpha=0.01</span>: CI = (0.47,0.55)</li>
+<li class="fragment"><span class="math inline">\alpha=0.05</span>: CI = (0.48,0.54)</li>
+<li class="fragment"><span class="math inline">\alpha=0.10</span>: CI = (0.49,0.53)</li>
 </ul>
 </div>
 </section></section>
@@ -650,13 +666,13 @@
 <section id="sd-confidence-intervals-for-proportions" class="slide level2 center">
 <h2>2SD Confidence Intervals for Proportions</h2>
 <p>Standard error for proportions:</p>
-<p><span class="math display">\[SE=\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}\]</span> For a 95% confidence interval, multiplier = 2</p>
+<p><span class="math display">SE=\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}</span> For a 95% confidence interval, multiplier = 2</p>
 </section>
 <section id="sd-confidence-intervals-for-proportions-1" class="slide level2 center">
 <h2>2SD Confidence Intervals for Proportions</h2>
 <p>By plugging those values into our general confidence interval formula, we get:</p>
-<p><span class="math display">\[CI=\hat{p}±2*\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}\]</span></p>
-<p><span class="math display">\[=(Lower\:Bound,Upper\:Bound)\]</span></p>
+<p><span class="math display">CI=\hat{p}±2*\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}</span></p>
+<p><span class="math display">=(Lower\:Bound,Upper\:Bound)</span></p>
 <p>Check that theory-based criteria are met:</p>
 <ul>
 <li>At least 10 successes and 10 failures</li>
@@ -685,12 +701,12 @@
 <h2>Calculating a 2SD Confidence Interval</h2>
 <div>
 <ul>
-<li class="fragment"><span class="math inline">\(\hat{p}=\frac{408}{800}=0.51\)</span></li>
-<li class="fragment"><span class="math inline">\(n=800\)</span></li>
-<li class="fragment"><span class="math inline">\(SE=\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}=\sqrt{\frac{0.51*(1-0.51)}{800}}=0.0177\)</span></li>
-<li class="fragment"><span class="math inline">\(CI=\hat{p}±2*SE=0.51±2*0.0177\)</span></li>
-<li class="fragment">Lower Bound: <span class="math inline">\(0.51-2*0.0177=0.47\)</span></li>
-<li class="fragment">Upper Bound: <span class="math inline">\(0.51+2*0.0177=0.55\)</span></li>
+<li class="fragment"><span class="math inline">\hat{p}=\frac{408}{800}=0.51</span></li>
+<li class="fragment"><span class="math inline">n=800</span></li>
+<li class="fragment"><span class="math inline">SE=\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}=\sqrt{\frac{0.51*(1-0.51)}{800}}=0.0177</span></li>
+<li class="fragment"><span class="math inline">CI=\hat{p}±2*SE=0.51±2*0.0177</span></li>
+<li class="fragment">Lower Bound: <span class="math inline">0.51-2*0.0177=0.47</span></li>
+<li class="fragment">Upper Bound: <span class="math inline">0.51+2*0.0177=0.55</span></li>
 </ul>
 </div>
 <div class="fragment">
@@ -737,8 +753,8 @@
 <h2>Legalization of Medical Marijuana</h2>
 <p>Hypotheses:</p>
 <ul>
-<li><span class="math inline">\(H_{0}\)</span>: <span class="math inline">\(\pi\)</span> = 0.5</li>
-<li><span class="math inline">\(H_{A}\)</span>: <span class="math inline">\(\pi\)</span> ≠ 0.5</li>
+<li><span class="math inline">H_{0}</span>: <span class="math inline">\pi</span> = 0.5</li>
+<li><span class="math inline">H_{A}</span>: <span class="math inline">\pi</span> ≠ 0.5</li>
 </ul>
 <p>CI = (0.47, 0.55)</p>
 <ul>
@@ -761,8 +777,8 @@
 <section id="recall" class="slide level2 center">
 <h2>Recall…</h2>
 <ul>
-<li><p><strong>Rejecting</strong> the null hypothesis means we have statistical significance in favor of <span class="math inline">\(H_{A}\)</span></p></li>
-<li><p><strong>Failing to reject</strong> the null hypothesis means we do not have statistical significance in favor of <span class="math inline">\(H_{A}\)</span></p></li>
+<li><p><strong>Rejecting</strong> the null hypothesis means we have statistical significance in favor of <span class="math inline">H_{A}</span></p></li>
+<li><p><strong>Failing to reject</strong> the null hypothesis means we do not have statistical significance in favor of <span class="math inline">H_{A}</span></p></li>
 </ul>
 </section>
 <section id="p-value-1" class="slide level2 center">
@@ -813,7 +829,6 @@
   <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -981,27 +996,9 @@
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom

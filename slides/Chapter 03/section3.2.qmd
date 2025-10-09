@@ -7,7 +7,7 @@ format:
     theme: simple
     link-external-newwindow: true
     link-external-icon: true
-    html-math-method: mathjax
+    html-math-method: katex
     logo: logo.jpg
     slide-number: true
 editor: visual
@@ -141,7 +141,7 @@ Check that theory-based criteria are met:
 -   We can also obtain SD for our null distribution
 
     -   This is standard error!
-    
+
 -   **Standard error (SE)** is how much a sample proportion (or mean) is likely to vary from the true population proportion (or mean)
 
     -   Formulas for standard error differ for numerical vs. categorical data

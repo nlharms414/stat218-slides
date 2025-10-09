@@ -30,6 +30,22 @@
     }
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -420,10 +436,10 @@
 <section id="more-symbols-1" class="slide level2 center">
 <h2>More Symbols!</h2>
 <ul>
-<li>Population Mean (Parameter): <span class="math inline">\(\mu\)</span></li>
-<li>Population Standard Deviation: <span class="math inline">\(\sigma\)</span></li>
-<li>Sample Mean (Statistic): <span class="math inline">\(\bar{x}\)</span></li>
-<li>Sample Standard Deviation: <span class="math inline">\(s\)</span></li>
+<li>Population Mean (Parameter): <span class="math inline">\mu</span></li>
+<li>Population Standard Deviation: <span class="math inline">\sigma</span></li>
+<li>Sample Mean (Statistic): <span class="math inline">\bar{x}</span></li>
+<li>Sample Standard Deviation: <span class="math inline">s</span></li>
 </ul>
 </section>
 <section id="symbol-comparison" class="slide level2 center">
@@ -438,19 +454,19 @@
 </tr>
 <tr class="even">
 <td><strong>Parameter</strong></td>
-<td style="text-align: center;"><span class="math inline">\(\pi\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\mu\)</span></td>
+<td style="text-align: center;"><span class="math inline">\pi</span></td>
+<td style="text-align: center;"><span class="math inline">\mu</span></td>
 </tr>
 <tr class="odd">
 <td><strong>Statistic</strong></td>
-<td style="text-align: center;"><span class="math inline">\(\hat{p}\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\bar{x}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\hat{p}</span></td>
+<td style="text-align: center;"><span class="math inline">\bar{x}</span></td>
 </tr>
 </tbody>
 </table>
 <div class="fragment">
 <p><br></p>
-<p>Note: We only use sample standard deviation and standard deviation symbols (<span class="math inline">\(s\)</span>, <span class="math inline">\(\sigma\)</span>) when we are dealing with <strong>quantitative variables.</strong></p>
+<p>Note: We only use sample standard deviation and standard deviation symbols (<span class="math inline">s</span>, <span class="math inline">\sigma</span>) when we are dealing with <strong>quantitative variables.</strong></p>
 </div>
 </section></section>
 <section>
@@ -497,8 +513,8 @@
 <li><p>Biased or Representative? <span class="fragment"><strong>Biased</strong></span></p></li>
 <li><p>Variable of interest? <span class="fragment"><strong>Morning or night person</strong></span></p></li>
 <li><p>Categorical or quantitative? <span class="fragment"><strong>Categorical</strong></span></p></li>
-<li><p>Parameter symbol: <span class="fragment"><span class="math inline">\(\pi\)</span></span></p></li>
-<li><p>Statistic symbol: <span class="fragment"><span class="math inline">\(\hat{p}\)</span></span></p></li>
+<li><p>Parameter symbol: <span class="fragment"><span class="math inline">\pi</span></span></p></li>
+<li><p>Statistic symbol: <span class="fragment"><span class="math inline">\hat{p}</span></span></p></li>
 </ul>
 </section>
 <section id="example-2" class="slide level2 center" style="font-size: 38px">
@@ -540,8 +556,8 @@
 <li><p>Biased or Representative? <span class="fragment"><strong>Representative</strong></span></p></li>
 <li><p>Variable of interest? <span class="fragment"><strong>Lifespan</strong></span></p></li>
 <li><p>Categorical or quantitative? <span class="fragment"><strong>Numerical</strong></span></p></li>
-<li><p>Parameter symbol: <span class="fragment"><span class="math inline">\(\mu\)</span></span></p></li>
-<li><p>Statistic symbol: <span class="fragment"><span class="math inline">\(\bar{x}\)</span></span></p></li>
+<li><p>Parameter symbol: <span class="fragment"><span class="math inline">\mu</span></span></p></li>
+<li><p>Statistic symbol: <span class="fragment"><span class="math inline">\bar{x}</span></span></p></li>
 </ul>
 </section></section>
 <section>
@@ -587,7 +603,6 @@
   <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -755,27 +770,9 @@
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom

@@ -30,6 +30,22 @@
     }
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -352,7 +368,7 @@
 <ul>
 <li><p>Gives us range of <strong>plausible values</strong> for our parameter of interest</p>
 <ul>
-<li>Either <span class="math inline">\(\mu\)</span> or <span class="math inline">\(\pi\)</span></li>
+<li>Either <span class="math inline">\mu</span> or <span class="math inline">\pi</span></li>
 </ul></li>
 </ul>
 </section>
@@ -366,13 +382,13 @@
 </section>
 <section id="sd-95-confidence-interval-for-proportions" class="slide level2 center">
 <h2>2SD (95%) Confidence Interval for Proportions</h2>
-<p><span class="math display">\[CI=\hat{p}±2*\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}\]</span></p>
-<p><span class="math display">\[=(Lower\:Bound,Upper\:Bound)\]</span></p>
+<p><span class="math display">CI=\hat{p}±2*\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}</span></p>
+<p><span class="math display">=(Lower\:Bound,Upper\:Bound)</span></p>
 </section>
 <section id="sd-95-confidence-interval-for-means" class="slide level2 center">
 <h2>2SD (95%) Confidence Interval for Means</h2>
-<p><span class="math display">\[CI=\bar{x}±2*\frac{s}{\sqrt{n}}\]</span></p>
-<p><span class="math display">\[=(Lower\:Bound,Upper\:Bound)\]</span></p>
+<p><span class="math display">CI=\bar{x}±2*\frac{s}{\sqrt{n}}</span></p>
+<p><span class="math display">=(Lower\:Bound,Upper\:Bound)</span></p>
 </section></section>
 <section>
 <section id="changing-the-width-of-a-confidence-interval" class="title-slide slide level1 center">
@@ -389,10 +405,10 @@
 </section>
 <section id="confidence-level" class="slide level2 center">
 <h2>1. Confidence Level</h2>
-<p>Recall, significance level (<span class="math inline">\(\alpha\)</span>) + confidence level = 100%</p>
+<p>Recall, significance level (<span class="math inline">\alpha</span>) + confidence level = 100%</p>
 <ul>
-<li><p><strong>Significance level (</strong><span class="math inline">\(\alpha\)</span>) = p-value threshold for rejecting/failing to reject the null hypothesis (<span class="math inline">\(H_{0}\)</span>)</p></li>
-<li><p>Common values for <span class="math inline">\(\alpha\)</span>: 0.01, 0.05, 0.10</p></li>
+<li><p><strong>Significance level (</strong><span class="math inline">\alpha</span>) = p-value threshold for rejecting/failing to reject the null hypothesis (<span class="math inline">H_{0}</span>)</p></li>
+<li><p>Common values for <span class="math inline">\alpha</span>: 0.01, 0.05, 0.10</p></li>
 <li><p>Using 0.05 is common practice</p>
 <ul>
 <li>This is generally what we will use for this class</li>
@@ -430,14 +446,14 @@
 </section>
 <section id="sample-size" class="slide level2 center">
 <h2>2. Sample Size</h2>
-<p>A larger sample size (<span class="math inline">\(n\)</span>) is ALWAYS (!!!) better!</p>
+<p>A larger sample size (<span class="math inline">n</span>) is ALWAYS (!!!) better!</p>
 <ul>
-<li><p>If <span class="math inline">\(n\)</span> increases:</p>
+<li><p>If <span class="math inline">n</span> increases:</p>
 <ul>
 <li>Generally less variability in data</li>
 <li>Smaller standard error (smaller confidence interval)</li>
 </ul></li>
-<li><p>If <span class="math inline">\(n\)</span> increases:</p>
+<li><p>If <span class="math inline">n</span> increases:</p>
 <ul>
 <li>Likely more variability in data</li>
 <li>Larger standard error (larger confidence interval)</li>
@@ -518,7 +534,6 @@
   <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -686,27 +701,9 @@
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom

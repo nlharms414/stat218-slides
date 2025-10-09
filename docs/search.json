@@ -389,14 +389,14 @@
     "href": "slides/Chapter 01/section1.4.html#hypothesis-testing-review",
     "title": "Section 1.4",
     "section": "Hypothesis Testing Review",
-    "text": "Hypothesis Testing Review\n\nHypotheses refine our research question\nWe have two hypotheses:\n\nNull hypothesis = what is believed to be true\nAlternative hypothesis = what we think is actually true\n\nNotation:\n\n\\(H_{0}: \\pi = hypothesized\\: value\\)\n\\(H_{A}: \\pi &gt;,&lt;,≠ hypothesized\\: value\\)"
+    "text": "Hypothesis Testing Review\n\nHypotheses refine our research question\nWe have two hypotheses:\n\nNull hypothesis = what is believed to be true\nAlternative hypothesis = what we think is actually true\n\nNotation:\n\nH_{0}: \\pi = hypothesized\\: value\nH_{A}: \\pi &gt;,&lt;,≠ hypothesized\\: value"
   },
   {
     "objectID": "slides/Chapter 01/section1.4.html#p-value-review",
     "href": "slides/Chapter 01/section1.4.html#p-value-review",
     "title": "Section 1.4",
     "section": "P-value Review",
-    "text": "P-value Review\n\nTests for evidence in favor of \\(H_{A}\\)\nGives probability of observed statistic (\\(\\hat{p}\\)) under null hypothesis\nCalculating the p-value:\n\nCount the # of simulated statistics as or more extreme than \\(\\hat{p}\\) in the direction of the null hypothesis\nDivide by total number of simulated statistics"
+    "text": "P-value Review\n\nTests for evidence in favor of H_{A}\nGives probability of observed statistic (\\hat{p}) under null hypothesis\nCalculating the p-value:\n\nCount the # of simulated statistics as or more extreme than \\hat{p} in the direction of the null hypothesis\nDivide by total number of simulated statistics"
   },
   {
     "objectID": "slides/Chapter 01/section1.4.html#p-value-review-1",
@@ -410,14 +410,14 @@
     "href": "slides/Chapter 01/section1.4.html#standardized-statistic-review",
     "title": "Section 1.4",
     "section": "Standardized Statistic Review",
-    "text": "Standardized Statistic Review\n\nAnother way to test for strength of evidence in favor of \\(H_{A}\\)\nObtain the standard deviation (SD)\nCalculate the standardized statistic (\\(z\\)) by:\n\n\\[z=\\frac{Observed\\: Statistic - Hypothesized\\: Value}{Standard\\: Deviation\\: under\\: the\\: null}\\]"
+    "text": "Standardized Statistic Review\n\nAnother way to test for strength of evidence in favor of H_{A}\nObtain the standard deviation (SD)\nCalculate the standardized statistic (z) by:\n\nz=\\frac{Observed\\: Statistic - Hypothesized\\: Value}{Standard\\: Deviation\\: under\\: the\\: null}"
   },
   {
     "objectID": "slides/Chapter 01/section1.4.html#standardized-statistic-review-1",
     "href": "slides/Chapter 01/section1.4.html#standardized-statistic-review-1",
     "title": "Section 1.4",
     "section": "Standardized Statistic Review",
-    "text": "Standardized Statistic Review\n\nIf \\(z\\) &gt; 2 or \\(z\\) &lt; -2, reject the null, accept alternative\nInterpret based on context of the problem"
+    "text": "Standardized Statistic Review\n\nIf z &gt; 2 or z &lt; -2, reject the null, accept alternative\nInterpret based on context of the problem"
   },
   {
     "objectID": "slides/Chapter 01/section1.4.html#section",
@@ -445,7 +445,7 @@
     "href": "slides/Chapter 01/section1.4.html#distance-from-the-null-value-1",
     "title": "Section 1.4",
     "section": "1. Distance from the null value",
-    "text": "1. Distance from the null value\nConsider \\(\\hat{p}\\).\n\nFurther from null value = less likely null value is plausible\n\nP-value is smaller, standardized statistic absolute value is larger\n\nCloser to the null value = more likely null value is plausible\n\nP-value is larger, standardized statistic absolute value is smaller"
+    "text": "1. Distance from the null value\nConsider \\hat{p}.\n\nFurther from null value = less likely null value is plausible\n\nP-value is smaller, standardized statistic absolute value is larger\n\nCloser to the null value = more likely null value is plausible\n\nP-value is larger, standardized statistic absolute value is smaller"
   },
   {
     "objectID": "slides/Chapter 01/section1.4.html#distance-from-the-null-value-2",
@@ -480,7 +480,7 @@
     "href": "slides/Chapter 01/section1.4.html#one-sided-or-two-sided-hypothesis-test-1",
     "title": "Section 1.4",
     "section": "3. One-sided or two-sided hypothesis test",
-    "text": "3. One-sided or two-sided hypothesis test\nOne-sided or two-sided refers to the form \\(H_{A}\\) takes.\n\nOne-sided test takes the form:\n\n\\[H_{A}: \\pi &gt; OR &lt; hypothesized\\: value\\]\n\nTwo-sided test takes the form:\n\n\\[H_{A}: \\pi ≠ hypothesized\\: value\\]"
+    "text": "3. One-sided or two-sided hypothesis test\nOne-sided or two-sided refers to the form H_{A} takes.\n\nOne-sided test takes the form:\n\nH_{A}: \\pi &gt; OR &lt; hypothesized\\: value\n\nTwo-sided test takes the form:\n\nH_{A}: \\pi ≠ hypothesized\\: value"
   },
   {
     "objectID": "slides/Chapter 01/section1.2.html#section-1.2-learning-objectives",
@@ -697,7 +697,7 @@
     "href": "slides/Chapter 03/section3.4.html#confidence-intervals",
     "title": "Section 3.4",
     "section": "Confidence Intervals",
-    "text": "Confidence Intervals\n\nGives us range of plausible values for our parameter of interest\n\nEither \\(\\mu\\) or \\(\\pi\\)"
+    "text": "Confidence Intervals\n\nGives us range of plausible values for our parameter of interest\n\nEither \\mu or \\pi"
   },
   {
     "objectID": "slides/Chapter 03/section3.4.html#confidence-intervals-general-form",
@@ -711,14 +711,14 @@
     "href": "slides/Chapter 03/section3.4.html#sd-95-confidence-interval-for-proportions",
     "title": "Section 3.4",
     "section": "2SD (95%) Confidence Interval for Proportions",
-    "text": "2SD (95%) Confidence Interval for Proportions\n\\[CI=\\hat{p}±2*\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}\\]\n\\[=(Lower\\:Bound,Upper\\:Bound)\\]"
+    "text": "2SD (95%) Confidence Interval for Proportions\nCI=\\hat{p}±2*\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}\n=(Lower\\:Bound,Upper\\:Bound)"
   },
   {
     "objectID": "slides/Chapter 03/section3.4.html#sd-95-confidence-interval-for-means",
     "href": "slides/Chapter 03/section3.4.html#sd-95-confidence-interval-for-means",
     "title": "Section 3.4",
     "section": "2SD (95%) Confidence Interval for Means",
-    "text": "2SD (95%) Confidence Interval for Means\n\\[CI=\\bar{x}±2*\\frac{s}{\\sqrt{n}}\\]\n\\[=(Lower\\:Bound,Upper\\:Bound)\\]"
+    "text": "2SD (95%) Confidence Interval for Means\nCI=\\bar{x}±2*\\frac{s}{\\sqrt{n}}\n=(Lower\\:Bound,Upper\\:Bound)"
   },
   {
     "objectID": "slides/Chapter 03/section3.4.html#what-factors-affect-confidence-interval-width",
@@ -732,7 +732,7 @@
     "href": "slides/Chapter 03/section3.4.html#confidence-level",
     "title": "Section 3.4",
     "section": "1. Confidence Level",
-    "text": "1. Confidence Level\nRecall, significance level (\\(\\alpha\\)) + confidence level = 100%\n\nSignificance level (\\(\\alpha\\)) = p-value threshold for rejecting/failing to reject the null hypothesis (\\(H_{0}\\))\nCommon values for \\(\\alpha\\): 0.01, 0.05, 0.10\nUsing 0.05 is common practice\n\nThis is generally what we will use for this class\n\nThus, common confidence levels are 99%, 95%, and 90%, respectively"
+    "text": "1. Confidence Level\nRecall, significance level (\\alpha) + confidence level = 100%\n\nSignificance level (\\alpha) = p-value threshold for rejecting/failing to reject the null hypothesis (H_{0})\nCommon values for \\alpha: 0.01, 0.05, 0.10\nUsing 0.05 is common practice\n\nThis is generally what we will use for this class\n\nThus, common confidence levels are 99%, 95%, and 90%, respectively"
   },
   {
     "objectID": "slides/Chapter 03/section3.4.html#confidence-level-1",
@@ -753,7 +753,7 @@
     "href": "slides/Chapter 03/section3.4.html#sample-size",
     "title": "Section 3.4",
     "section": "2. Sample Size",
-    "text": "2. Sample Size\nA larger sample size (\\(n\\)) is ALWAYS (!!!) better!\n\nIf \\(n\\) increases:\n\nGenerally less variability in data\nSmaller standard error (smaller confidence interval)\n\nIf \\(n\\) increases:\n\nLikely more variability in data\nLarger standard error (larger confidence interval)"
+    "text": "2. Sample Size\nA larger sample size (n) is ALWAYS (!!!) better!\n\nIf n increases:\n\nGenerally less variability in data\nSmaller standard error (smaller confidence interval)\n\nIf n increases:\n\nLikely more variability in data\nLarger standard error (larger confidence interval)"
   },
   {
     "objectID": "slides/Chapter 03/section3.4.html#standard-error",
@@ -788,7 +788,7 @@
     "href": "slides/Chapter 03/section3.2.html#confidence-intervals",
     "title": "Section 3.2",
     "section": "Confidence Intervals",
-    "text": "Confidence Intervals\nGive us a range of likely values for our parameter (\\(\\mu\\) or \\(\\pi\\))\n\nTrue parameter is never known!!!\nBut, we get an idea of what it might be"
+    "text": "Confidence Intervals\nGive us a range of likely values for our parameter (\\mu or \\pi)\n\nTrue parameter is never known!!!\nBut, we get an idea of what it might be"
   },
   {
     "objectID": "slides/Chapter 03/section3.2.html#confidence-intervals-general-form",
@@ -802,7 +802,7 @@
     "href": "slides/Chapter 03/section3.2.html#null-distribution-and-hypothesis-testing",
     "title": "Section 3.2",
     "section": "Null Distribution and Hypothesis Testing",
-    "text": "Null Distribution and Hypothesis Testing\n\nNull distribution: Simulated by the chance model\n\nWhat we expect to happen\n\nCenter of null distribution is our hypothesized value for our parameter of interest (\\(\\mu\\) or \\(\\pi\\))\n\nExample Hypotheses:\n\n\\(H_{0}\\): \\(\\pi\\) = 0.5\n\\(H_{A}\\): \\(\\pi\\) ≠ 0.5"
+    "text": "Null Distribution and Hypothesis Testing\n\nNull distribution: Simulated by the chance model\n\nWhat we expect to happen\n\nCenter of null distribution is our hypothesized value for our parameter of interest (\\mu or \\pi)\n\nExample Hypotheses:\n\nH_{0}: \\pi = 0.5\nH_{A}: \\pi ≠ 0.5"
   },
   {
     "objectID": "slides/Chapter 03/section3.2.html#p-value",
@@ -823,35 +823,35 @@
     "href": "slides/Chapter 03/section3.2.html#medical-marijuana-activity",
     "title": "Section 3.2",
     "section": "Medical Marijuana Activity",
-    "text": "Medical Marijuana Activity\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(H_{0}:\\pi=\\)\n0.41\n0.42\n0.43\n0.44\n0.45\n0.46\n0.47\n0.48\n0.49\n0.50\n\n\nP-value\n&gt;0.0001\n&gt;0.0001\n&gt;0.0001\n0.0001\n0.0006\n0.0045\n0.0234\n0.0894\n0.2578\n0.5716\n\n\nR/FTR\nR\nR\nR\nR\nR\nR\nR\nFTR\nFTR\nFTR\n\n\nPlausible?\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nYes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(H_{0}:\\pi=\\)\n0.51\n0.52\n0.53\n0.54\n0.55\n0.56\n0.57\n0.58\n0.59\n0.60\n\n\nP-value\n1\n0.5713\n0.2570\n0.0887\n0.0230\n0.0044\n0.0006\n0.0001\n&gt;0.0001\n&gt;0.0001\n\n\nR/FTR\nFTR\nFTR\nFTR\nFTR\nR\nR\nR\nR\nR\nR\n\n\nPlausible?\nYes\nYes\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo"
+    "text": "Medical Marijuana Activity\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nH_{0}:\\pi=\n0.41\n0.42\n0.43\n0.44\n0.45\n0.46\n0.47\n0.48\n0.49\n0.50\n\n\nP-value\n&gt;0.0001\n&gt;0.0001\n&gt;0.0001\n0.0001\n0.0006\n0.0045\n0.0234\n0.0894\n0.2578\n0.5716\n\n\nR/FTR\nR\nR\nR\nR\nR\nR\nR\nFTR\nFTR\nFTR\n\n\nPlausible?\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nYes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nH_{0}:\\pi=\n0.51\n0.52\n0.53\n0.54\n0.55\n0.56\n0.57\n0.58\n0.59\n0.60\n\n\nP-value\n1\n0.5713\n0.2570\n0.0887\n0.0230\n0.0044\n0.0006\n0.0001\n&gt;0.0001\n&gt;0.0001\n\n\nR/FTR\nFTR\nFTR\nFTR\nFTR\nR\nR\nR\nR\nR\nR\n\n\nPlausible?\nYes\nYes\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo"
   },
   {
     "objectID": "slides/Chapter 03/section3.2.html#medical-marijuana-example",
     "href": "slides/Chapter 03/section3.2.html#medical-marijuana-example",
     "title": "Section 3.2",
     "section": "Medical Marijuana Example",
-    "text": "Medical Marijuana Example\n\nEssentially we ran 20 different hypothesis tests of the form:\n\n\\(H_{0}\\): \\(\\pi\\) = x\n\\(H_{A}\\): \\(\\pi\\) ≠ x\n\nOur confidence interval is derived based on the tests we rejected or failed to reject \\(H_{0}\\)\n\nReject \\(H_{0}\\) = not a plausible value for \\(\\pi\\)\nFail to reject \\(H_{0}\\) = a plausible value for \\(\\pi\\)"
+    "text": "Medical Marijuana Example\n\nEssentially we ran 20 different hypothesis tests of the form:\n\nH_{0}: \\pi = x\nH_{A}: \\pi ≠ x\n\nOur confidence interval is derived based on the tests we rejected or failed to reject H_{0}\n\nReject H_{0} = not a plausible value for \\pi\nFail to reject H_{0} = a plausible value for \\pi"
   },
   {
     "objectID": "slides/Chapter 03/section3.2.html#how-does-significance-level-affect-things",
     "href": "slides/Chapter 03/section3.2.html#how-does-significance-level-affect-things",
     "title": "Section 3.2",
     "section": "How does significance level affect things?",
-    "text": "How does significance level affect things?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(H_{0}:\\pi=\\)\n0.41\n0.42\n0.43\n0.44\n0.45\n0.46\n0.47\n0.48\n0.49\n0.50\n\n\nP-value\n&gt;0.0001\n&gt;0.0001\n&gt;0.0001\n0.0001\n0.0006\n0.0045\n0.0234\n0.0894\n0.2578\n0.5716\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(H_{0}:\\pi=\\)\n0.51\n0.52\n0.53\n0.54\n0.55\n0.56\n0.57\n0.58\n0.59\n0.60\n\n\nP-value\n1\n0.5713\n0.2570\n0.0887\n0.0230\n0.0044\n0.0006\n0.0001\n&gt;0.0001\n&gt;0.0001\n\n\n\n\n\n\n\\(\\alpha=0.01\\): CI = (0.47,0.55)\n\\(\\alpha=0.05\\): CI = (0.48,0.54)\n\\(\\alpha=0.10\\): CI = (0.49,0.53)"
+    "text": "How does significance level affect things?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nH_{0}:\\pi=\n0.41\n0.42\n0.43\n0.44\n0.45\n0.46\n0.47\n0.48\n0.49\n0.50\n\n\nP-value\n&gt;0.0001\n&gt;0.0001\n&gt;0.0001\n0.0001\n0.0006\n0.0045\n0.0234\n0.0894\n0.2578\n0.5716\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nH_{0}:\\pi=\n0.51\n0.52\n0.53\n0.54\n0.55\n0.56\n0.57\n0.58\n0.59\n0.60\n\n\nP-value\n1\n0.5713\n0.2570\n0.0887\n0.0230\n0.0044\n0.0006\n0.0001\n&gt;0.0001\n&gt;0.0001\n\n\n\n\n\n\n\\alpha=0.01: CI = (0.47,0.55)\n\\alpha=0.05: CI = (0.48,0.54)\n\\alpha=0.10: CI = (0.49,0.53)"
   },
   {
     "objectID": "slides/Chapter 03/section3.2.html#sd-confidence-intervals-for-proportions",
     "href": "slides/Chapter 03/section3.2.html#sd-confidence-intervals-for-proportions",
     "title": "Section 3.2",
     "section": "2SD Confidence Intervals for Proportions",
-    "text": "2SD Confidence Intervals for Proportions\nStandard error for proportions:\n\\[SE=\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}\\] For a 95% confidence interval, multiplier = 2"
+    "text": "2SD Confidence Intervals for Proportions\nStandard error for proportions:\nSE=\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}} For a 95% confidence interval, multiplier = 2"
   },
   {
     "objectID": "slides/Chapter 03/section3.2.html#sd-confidence-intervals-for-proportions-1",
     "href": "slides/Chapter 03/section3.2.html#sd-confidence-intervals-for-proportions-1",
     "title": "Section 3.2",
     "section": "2SD Confidence Intervals for Proportions",
-    "text": "2SD Confidence Intervals for Proportions\nBy plugging those values into our general confidence interval formula, we get:\n\\[CI=\\hat{p}±2*\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}\\]\n\\[=(Lower\\:Bound,Upper\\:Bound)\\]\nCheck that theory-based criteria are met:\n\nAt least 10 successes and 10 failures"
+    "text": "2SD Confidence Intervals for Proportions\nBy plugging those values into our general confidence interval formula, we get:\nCI=\\hat{p}±2*\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}\n=(Lower\\:Bound,Upper\\:Bound)\nCheck that theory-based criteria are met:\n\nAt least 10 successes and 10 failures"
   },
   {
     "objectID": "slides/Chapter 03/section3.2.html#standard-deviation-vs.-standard-error",
@@ -865,7 +865,7 @@
     "href": "slides/Chapter 03/section3.2.html#calculating-a-2sd-confidence-interval",
     "title": "Section 3.2",
     "section": "Calculating a 2SD Confidence Interval",
-    "text": "Calculating a 2SD Confidence Interval\n\n\n\\(\\hat{p}=\\frac{408}{800}=0.51\\)\n\\(n=800\\)\n\\(SE=\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}=\\sqrt{\\frac{0.51*(1-0.51)}{800}}=0.0177\\)\n\\(CI=\\hat{p}±2*SE=0.51±2*0.0177\\)\nLower Bound: \\(0.51-2*0.0177=0.47\\)\nUpper Bound: \\(0.51+2*0.0177=0.55\\)\n\n\n\nNote that this is really close to what we got earlier!"
+    "text": "Calculating a 2SD Confidence Interval\n\n\n\\hat{p}=\\frac{408}{800}=0.51\nn=800\nSE=\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}=\\sqrt{\\frac{0.51*(1-0.51)}{800}}=0.0177\nCI=\\hat{p}±2*SE=0.51±2*0.0177\nLower Bound: 0.51-2*0.0177=0.47\nUpper Bound: 0.51+2*0.0177=0.55\n\n\n\nNote that this is really close to what we got earlier!"
   },
   {
     "objectID": "slides/Chapter 03/section3.2.html#interpreting-a-confidence-interval",
@@ -900,7 +900,7 @@
     "href": "slides/Chapter 03/section3.2.html#legalization-of-medical-marijuana-1",
     "title": "Section 3.2",
     "section": "Legalization of Medical Marijuana",
-    "text": "Legalization of Medical Marijuana\nHypotheses:\n\n\\(H_{0}\\): \\(\\pi\\) = 0.5\n\\(H_{A}\\): \\(\\pi\\) ≠ 0.5\n\nCI = (0.47, 0.55)\n\nFail to reject since 0.5 is in the interval"
+    "text": "Legalization of Medical Marijuana\nHypotheses:\n\nH_{0}: \\pi = 0.5\nH_{A}: \\pi ≠ 0.5\n\nCI = (0.47, 0.55)\n\nFail to reject since 0.5 is in the interval"
   },
   {
     "objectID": "slides/Chapter 03/section3.2.html#interpretation-in-context",
@@ -921,7 +921,7 @@
     "href": "slides/Chapter 03/section3.2.html#recall",
     "title": "Section 3.2",
     "section": "Recall…",
-    "text": "Recall…\n\nRejecting the null hypothesis means we have statistical significance in favor of \\(H_{A}\\)\nFailing to reject the null hypothesis means we do not have statistical significance in favor of \\(H_{A}\\)"
+    "text": "Recall…\n\nRejecting the null hypothesis means we have statistical significance in favor of H_{A}\nFailing to reject the null hypothesis means we do not have statistical significance in favor of H_{A}"
   },
   {
     "objectID": "slides/Chapter 03/section3.2.html#p-value-1",
@@ -1152,21 +1152,21 @@
     "href": "slides/Chapter 02/section2.3.html#symbol-review",
     "title": "Section 2.3",
     "section": "Symbol Review",
-    "text": "Symbol Review\nIn section 2.1, we introduced some new symbols we use with numerical data:\n\nSample mean: \\(\\bar{x}\\)\nSample Standard Deviation: \\(s\\)\nPopulation Mean: \\(\\mu\\)\nPopulation Standard Deviation: \\(\\sigma\\)"
+    "text": "Symbol Review\nIn section 2.1, we introduced some new symbols we use with numerical data:\n\nSample mean: \\bar{x}\nSample Standard Deviation: s\nPopulation Mean: \\mu\nPopulation Standard Deviation: \\sigma"
   },
   {
     "objectID": "slides/Chapter 02/section2.3.html#symbol-comparison",
     "href": "slides/Chapter 02/section2.3.html#symbol-comparison",
     "title": "Section 2.3",
     "section": "Symbol Comparison",
-    "text": "Symbol Comparison\n Symbols we use depend on our variable type:\n\n\n\n\nCategorical Variable\nQuantitative Variable\n\n\nParameter\n\\(\\pi\\)\n\\(\\mu\\)\n\n\nStatistic\n\\(\\hat{p}\\)\n\\(\\bar{x}\\)\n\n\n\n\n\nNote: We only use sample standard deviation and standard deviation symbols (\\(s\\), \\(\\sigma\\)) when we are dealing with quantitative variables."
+    "text": "Symbol Comparison\n Symbols we use depend on our variable type:\n\n\n\n\nCategorical Variable\nQuantitative Variable\n\n\nParameter\n\\pi\n\\mu\n\n\nStatistic\n\\hat{p}\n\\bar{x}\n\n\n\n\n\nNote: We only use sample standard deviation and standard deviation symbols (s, \\sigma) when we are dealing with quantitative variables."
   },
   {
     "objectID": "slides/Chapter 02/section2.3.html#strength-of-evidence-with-a-single-quantitative-variable",
     "href": "slides/Chapter 02/section2.3.html#strength-of-evidence-with-a-single-quantitative-variable",
     "title": "Section 2.3",
     "section": "Strength of Evidence with a Single Quantitative Variable",
-    "text": "Strength of Evidence with a Single Quantitative Variable\nEssentially the same process, but now we’re working with averages\n\nVariable of Interest: some numerical measure\n\nEx: Height, weight, time, shoe size\nThat way, we can take an average!\n\nParameter: The long run average (\\(\\mu\\))\nObserved statistic: Average calculated from the sample (\\(\\bar{x}\\))"
+    "text": "Strength of Evidence with a Single Quantitative Variable\nEssentially the same process, but now we’re working with averages\n\nVariable of Interest: some numerical measure\n\nEx: Height, weight, time, shoe size\nThat way, we can take an average!\n\nParameter: The long run average (\\mu)\nObserved statistic: Average calculated from the sample (\\bar{x})"
   },
   {
     "objectID": "slides/Chapter 02/section2.3.html#strength-of-evidence-with-a-single-quantitative-variable-1",
@@ -1180,14 +1180,14 @@
     "href": "slides/Chapter 02/section2.3.html#strength-of-evidence-with-a-single-quantitative-variable-2",
     "title": "Section 2.3",
     "section": "Strength of Evidence with a Single Quantitative Variable",
-    "text": "Strength of Evidence with a Single Quantitative Variable\nHypotheses in symbols:\n\n\\(H_{0}\\): \\(\\mu\\) = hypothesized average\n\\(H_{A}\\): \\(\\mu\\) &gt;,&lt;,≠ hypothesized average"
+    "text": "Strength of Evidence with a Single Quantitative Variable\nHypotheses in symbols:\n\nH_{0}: \\mu = hypothesized average\nH_{A}: \\mu &gt;,&lt;,≠ hypothesized average"
   },
   {
     "objectID": "slides/Chapter 02/section2.3.html#ceo-example",
     "href": "slides/Chapter 02/section2.3.html#ceo-example",
     "title": "Section 2.3",
     "section": "CEO Example",
-    "text": "CEO Example\n\n\n\nVariable of interest: Number of emails received in a day\nParameter: Long run average number of emails received in a day (\\(\\mu\\))\nHypotheses in symbols:\n\n\\(H_{0}\\): \\(\\mu\\) = 8\n\\(H_{A}\\): \\(\\mu\\) &gt; 8\n\n\n\n\n\n\n\n\n\nScenario\n\n\n\n\nYou are interested in whether the number of emails the CEO of Apple receives each day is more than 8."
+    "text": "CEO Example\n\n\n\nVariable of interest: Number of emails received in a day\nParameter: Long run average number of emails received in a day (\\mu)\nHypotheses in symbols:\n\nH_{0}: \\mu = 8\nH_{A}: \\mu &gt; 8\n\n\n\n\n\n\n\n\n\nScenario\n\n\n\n\nYou are interested in whether the number of emails the CEO of Apple receives each day is more than 8."
   },
   {
     "objectID": "slides/Chapter 02/section2.3.html#simulation",
@@ -1215,14 +1215,14 @@
     "href": "slides/Chapter 02/section2.3.html#theory-based-approach-quantitative-variable-1",
     "title": "Section 2.3",
     "section": "Theory Based Approach (Quantitative Variable)",
-    "text": "Theory Based Approach (Quantitative Variable)\n\nWith numerical data, we can find \\(s\\) (sample standard deviation)\nThis changes our standard error calculation\n\n\\[SE=\\frac{s}{\\sqrt{n}}\\]"
+    "text": "Theory Based Approach (Quantitative Variable)\n\nWith numerical data, we can find s (sample standard deviation)\nThis changes our standard error calculation\n\nSE=\\frac{s}{\\sqrt{n}}"
   },
   {
     "objectID": "slides/Chapter 02/section2.3.html#theory-based-approach-quantitative-variable-2",
     "href": "slides/Chapter 02/section2.3.html#theory-based-approach-quantitative-variable-2",
     "title": "Section 2.3",
     "section": "Theory Based Approach (Quantitative Variable)",
-    "text": "Theory Based Approach (Quantitative Variable)\n\nWith numerical data, we use “\\(t\\)” instead of “\\(z\\)” to describe our standardized statistic\n\n\\[Standardized\\: Statistic\\:= t=\\frac{\\bar{x}-\\mu}{SE}=\\frac{\\bar{x}-\\mu}{\\frac{s}{\\sqrt{n}}}\\]"
+    "text": "Theory Based Approach (Quantitative Variable)\n\nWith numerical data, we use “t” instead of “z” to describe our standardized statistic\n\nStandardized\\: Statistic\\:= t=\\frac{\\bar{x}-\\mu}{SE}=\\frac{\\bar{x}-\\mu}{\\frac{s}{\\sqrt{n}}}"
   },
   {
     "objectID": "slides/Chapter 02/section2.3.html#drawing-conclusions",
@@ -1243,14 +1243,14 @@
     "href": "slides/Chapter 02/section2.3.html#ceo-example-1",
     "title": "Section 2.3",
     "section": "CEO Example",
-    "text": "CEO Example\n\n\n\n\nSample size: n=30\nCan we use the theory based approach? Yes\nObserved statistic: \\(\\bar{x}\\)=10.2\nSample standard deviation: \\(s\\)=2.091\n\n\n\n\n\n\n\n\nScenario\n\n\n\n\nYou are interested in whether the number of emails the CEO of Apple receives each day is more than 8. Suppose you observe 30 days and find that the average number of emails is 10.2, with a sample S.D. of 2.091. The distribution is not strongly skewed."
+    "text": "CEO Example\n\n\n\n\nSample size: n=30\nCan we use the theory based approach? Yes\nObserved statistic: \\bar{x}=10.2\nSample standard deviation: s=2.091\n\n\n\n\n\n\n\n\nScenario\n\n\n\n\nYou are interested in whether the number of emails the CEO of Apple receives each day is more than 8. Suppose you observe 30 days and find that the average number of emails is 10.2, with a sample S.D. of 2.091. The distribution is not strongly skewed."
   },
   {
     "objectID": "slides/Chapter 02/section2.3.html#ceo-example-2",
     "href": "slides/Chapter 02/section2.3.html#ceo-example-2",
     "title": "Section 2.3",
     "section": "CEO Example",
-    "text": "CEO Example\nStandard error:\n\\[SE=\\frac{s}{\\sqrt{n}}=\\frac{2.091}{\\sqrt{30}}=0.38\\]\nStandardized statistic:\n\\[ t=\\frac{\\bar{x}-\\mu}{SE}=\\frac{10.2-8}{0.38}=5.78\\]"
+    "text": "CEO Example\nStandard error:\nSE=\\frac{s}{\\sqrt{n}}=\\frac{2.091}{\\sqrt{30}}=0.38\nStandardized statistic:\n t=\\frac{\\bar{x}-\\mu}{SE}=\\frac{10.2-8}{0.38}=5.78"
   },
   {
     "objectID": "slides/Chapter 02/section2.3.html#ceo-example-conclusion",
@@ -1334,14 +1334,14 @@
     "href": "slides/Chapter 02/section2.1.html#more-symbols-1",
     "title": "Section 2.1",
     "section": "More Symbols!",
-    "text": "More Symbols!\n\nPopulation Mean (Parameter): \\(\\mu\\)\nPopulation Standard Deviation: \\(\\sigma\\)\nSample Mean (Statistic): \\(\\bar{x}\\)\nSample Standard Deviation: \\(s\\)"
+    "text": "More Symbols!\n\nPopulation Mean (Parameter): \\mu\nPopulation Standard Deviation: \\sigma\nSample Mean (Statistic): \\bar{x}\nSample Standard Deviation: s"
   },
   {
     "objectID": "slides/Chapter 02/section2.1.html#symbol-comparison",
     "href": "slides/Chapter 02/section2.1.html#symbol-comparison",
     "title": "Section 2.1",
     "section": "Symbol Comparison",
-    "text": "Symbol Comparison\n Symbols we use depend on our variable type:\n\n\n\n\nCategorical Variable\nQuantitative Variable\n\n\nParameter\n\\(\\pi\\)\n\\(\\mu\\)\n\n\nStatistic\n\\(\\hat{p}\\)\n\\(\\bar{x}\\)\n\n\n\n\n\nNote: We only use sample standard deviation and standard deviation symbols (\\(s\\), \\(\\sigma\\)) when we are dealing with quantitative variables."
+    "text": "Symbol Comparison\n Symbols we use depend on our variable type:\n\n\n\n\nCategorical Variable\nQuantitative Variable\n\n\nParameter\n\\pi\n\\mu\n\n\nStatistic\n\\hat{p}\n\\bar{x}\n\n\n\n\n\nNote: We only use sample standard deviation and standard deviation symbols (s, \\sigma) when we are dealing with quantitative variables."
   },
   {
     "objectID": "slides/Chapter 02/section2.1.html#example-1",
@@ -1355,7 +1355,7 @@
     "href": "slides/Chapter 02/section2.1.html#example-1-1",
     "title": "Section 2.1",
     "section": "Example 1",
-    "text": "Example 1\n\nPopulation: All UNL students\nSample: Students in your 8am class\nBiased or Representative? Biased\nVariable of interest? Morning or night person\nCategorical or quantitative? Categorical\nParameter symbol: \\(\\pi\\)\nStatistic symbol: \\(\\hat{p}\\)"
+    "text": "Example 1\n\nPopulation: All UNL students\nSample: Students in your 8am class\nBiased or Representative? Biased\nVariable of interest? Morning or night person\nCategorical or quantitative? Categorical\nParameter symbol: \\pi\nStatistic symbol: \\hat{p}"
   },
   {
     "objectID": "slides/Chapter 02/section2.1.html#example-2",
@@ -1369,7 +1369,7 @@
     "href": "slides/Chapter 02/section2.1.html#example-2-1",
     "title": "Section 2.1",
     "section": "Example 2",
-    "text": "Example 2\n\nPopulation: All of the known schools of fish\nSample: The 30 selected fish\nBiased or Representative? Representative\nVariable of interest? Lifespan\nCategorical or quantitative? Numerical\nParameter symbol: \\(\\mu\\)\nStatistic symbol: \\(\\bar{x}\\)"
+    "text": "Example 2\n\nPopulation: All of the known schools of fish\nSample: The 30 selected fish\nBiased or Representative? Representative\nVariable of interest? Lifespan\nCategorical or quantitative? Numerical\nParameter symbol: \\mu\nStatistic symbol: \\bar{x}"
   },
   {
     "objectID": "slides/Chapter 02/section2.1.html#section",
@@ -1495,14 +1495,14 @@
     "href": "slides/Chapter 02/section2.2.html#time-for-a-detour",
     "title": "Section 2.2",
     "section": "Time for a detour…",
-    "text": "Time for a detour…\nRecall our hypotheses\n\n\\(H_{0}\\): What’s expected to happen; chance explanation\n\\(H_{A}\\): Wait, something different happened!"
+    "text": "Time for a detour…\nRecall our hypotheses\n\nH_{0}: What’s expected to happen; chance explanation\nH_{A}: Wait, something different happened!"
   },
   {
     "objectID": "slides/Chapter 02/section2.2.html#time-for-a-detour-1",
     "href": "slides/Chapter 02/section2.2.html#time-for-a-detour-1",
     "title": "Section 2.2",
     "section": "Time for a detour…",
-    "text": "Time for a detour…\nWe want strength of evidence in favor of \\(H_{A}\\)\n\nSo far, we have two methods to obtain strength of evidence:\n\nStandardized statistic\nP-value\n\n\nBut, what happens if these methods are wrong?"
+    "text": "Time for a detour…\nWe want strength of evidence in favor of H_{A}\n\nSo far, we have two methods to obtain strength of evidence:\n\nStandardized statistic\nP-value\n\n\nBut, what happens if these methods are wrong?"
   },
   {
     "objectID": "slides/Chapter 02/section2.2.html#time-for-a-detour-2",
@@ -1747,7 +1747,7 @@
     "href": "slides/Chapter 03/section3.3.html#confidence-intervals",
     "title": "Section 3.3",
     "section": "Confidence Intervals",
-    "text": "Confidence Intervals\n\nGives us range of plausible values for our parameter of interest\n\nEither \\(\\mu\\) or \\(\\pi\\)"
+    "text": "Confidence Intervals\n\nGives us range of plausible values for our parameter of interest\n\nEither \\mu or \\pi"
   },
   {
     "objectID": "slides/Chapter 03/section3.3.html#confidence-intervals-general-form",
@@ -1761,14 +1761,14 @@
     "href": "slides/Chapter 03/section3.3.html#sd-95-confidence-interval-for-proportions",
     "title": "Section 3.3",
     "section": "2SD (95%) Confidence Interval for Proportions",
-    "text": "2SD (95%) Confidence Interval for Proportions\n\\[CI=\\hat{p}±2*\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}\\]\n\\[=(Lower\\:Bound,Upper\\:Bound)\\]\n\nWhat do you think changes if we’re dealing with a mean rather than a proportion?"
+    "text": "2SD (95%) Confidence Interval for Proportions\nCI=\\hat{p}±2*\\sqrt{\\frac{\\hat{p}*(1-\\hat{p})}{n}}\n=(Lower\\:Bound,Upper\\:Bound)\n\nWhat do you think changes if we’re dealing with a mean rather than a proportion?"
   },
   {
     "objectID": "slides/Chapter 03/section3.3.html#formulas",
     "href": "slides/Chapter 03/section3.3.html#formulas",
     "title": "Section 3.3",
     "section": "Formulas",
-    "text": "Formulas\nStandard error for means:\n\\[SE=\\frac{s}{\\sqrt{n}}\\]\n2SD (95%) Confidence Interval for Means:\n\\[CI=\\bar{x}±2*\\frac{s}{\\sqrt{n}}\\]\n\nWhy does it make sense that we use \\(\\bar{x}\\) now?"
+    "text": "Formulas\nStandard error for means:\nSE=\\frac{s}{\\sqrt{n}}\n2SD (95%) Confidence Interval for Means:\nCI=\\bar{x}±2*\\frac{s}{\\sqrt{n}}\n\nWhy does it make sense that we use \\bar{x} now?"
   },
   {
     "objectID": "slides/Chapter 03/section3.3.html#validity-conditions-for-single-mean",
@@ -1789,7 +1789,7 @@
     "href": "slides/Chapter 03/section3.3.html#calculating-the-confidence-interval",
     "title": "Section 3.3",
     "section": "Calculating the Confidence Interval",
-    "text": "Calculating the Confidence Interval\n\n\n\\(\\bar{x}=13292\\)\n\\(n=102\\)\n\\(s=4535\\)\n\\(SE=\\frac{s}{\\sqrt{n}}=\\frac{4535}{\\sqrt{102}}=449.03\\)\n\\(CI=\\bar{x}±2*SE=13292±2*449.03\\)\nLower Bound: \\(13292-2*449.03=12393.94\\)\nUpper Bound: \\(13292+2*449.03=14190.06\\)"
+    "text": "Calculating the Confidence Interval\n\n\n\\bar{x}=13292\nn=102\ns=4535\nSE=\\frac{s}{\\sqrt{n}}=\\frac{4535}{\\sqrt{102}}=449.03\nCI=\\bar{x}±2*SE=13292±2*449.03\nLower Bound: 13292-2*449.03=12393.94\nUpper Bound: 13292+2*449.03=14190.06"
   },
   {
     "objectID": "slides/Chapter 03/section3.3.html#interpreting-the-confidence-interval",
@@ -1810,7 +1810,7 @@
     "href": "slides/Chapter 03/section3.3.html#statistical-significance-methods",
     "title": "Section 3.3",
     "section": "Statistical Significance Methods",
-    "text": "Statistical Significance Methods\nWe can use the same three methods with a single mean:\n\nP-value\nStandardized Statistic\nConfidence Interval\n\n\nRemember that all three methods will agree with each other!\n\nAll either reject or fail to reject \\(H_{0}\\)"
+    "text": "Statistical Significance Methods\nWe can use the same three methods with a single mean:\n\nP-value\nStandardized Statistic\nConfidence Interval\n\n\nRemember that all three methods will agree with each other!\n\nAll either reject or fail to reject H_{0}"
   },
   {
     "objectID": "slides/Chapter 03/section3.1.html#section-3.1-learning-objectives",
@@ -1838,21 +1838,21 @@
     "href": "slides/Chapter 03/section3.1.html#confidence-intervals",
     "title": "Section 3.1",
     "section": "Confidence Intervals",
-    "text": "Confidence Intervals\n\nConfidence Interval: A range of likely values for our parameter of interest\nHelps us estimate the true value of \\(\\mu\\) or \\(\\pi\\)\nRemember: We don’t know the true value of \\(\\mu\\) or \\(\\pi\\)"
+    "text": "Confidence Intervals\n\nConfidence Interval: A range of likely values for our parameter of interest\nHelps us estimate the true value of \\mu or \\pi\nRemember: We don’t know the true value of \\mu or \\pi"
   },
   {
     "objectID": "slides/Chapter 03/section3.1.html#hypothesis-testing-review",
     "href": "slides/Chapter 03/section3.1.html#hypothesis-testing-review",
     "title": "Section 3.1",
     "section": "Hypothesis Testing Review",
-    "text": "Hypothesis Testing Review\nExample Hypotheses:\n\n\\(H_{0}\\): \\(\\pi\\) = 0.5\n\\(H_{A}\\): \\(\\pi\\) ≠ 0.5\n\nPi is NOT actually equal to 0.5!!\n\nThis is what we hypothesize pi is based on random chance\nWe use a p-value or standardized statistic to tell us if 0.5 is a plausible value for \\(\\pi\\) or not"
+    "text": "Hypothesis Testing Review\nExample Hypotheses:\n\nH_{0}: \\pi = 0.5\nH_{A}: \\pi ≠ 0.5\n\nPi is NOT actually equal to 0.5!!\n\nThis is what we hypothesize pi is based on random chance\nWe use a p-value or standardized statistic to tell us if 0.5 is a plausible value for \\pi or not"
   },
   {
     "objectID": "slides/Chapter 03/section3.1.html#hypothesis-testing-review-1",
     "href": "slides/Chapter 03/section3.1.html#hypothesis-testing-review-1",
     "title": "Section 3.1",
     "section": "Hypothesis Testing Review",
-    "text": "Hypothesis Testing Review\nExample Hypotheses:\n\n\\(H_{0}\\): \\(\\pi\\) = 0.5\n\\(H_{A}\\): \\(\\pi\\) ≠ 0.5\n\nInterpretation:\n\n\nIf we reject \\(H_{0}\\), we’re saying pi cannot be 0.5 (not plausible)\nIf we fail to reject \\(H_{0}\\), we’re saying pi could be 0.5 (plausible)"
+    "text": "Hypothesis Testing Review\nExample Hypotheses:\n\nH_{0}: \\pi = 0.5\nH_{A}: \\pi ≠ 0.5\n\nInterpretation:\n\n\nIf we reject H_{0}, we’re saying pi cannot be 0.5 (not plausible)\nIf we fail to reject H_{0}, we’re saying pi could be 0.5 (plausible)"
   },
   {
     "objectID": "slides/Chapter 03/section3.1.html#scenario",
@@ -1866,28 +1866,28 @@
     "href": "slides/Chapter 03/section3.1.html#legalizing-medical-marijuana",
     "title": "Section 3.1",
     "section": "Legalizing Medical Marijuana",
-    "text": "Legalizing Medical Marijuana\n\nPopulation of Interest: All adults in Minnesota\nParameter of Interest: \\(\\pi\\)= Long run proportion of Minnesota adults that feel marijuana should be legalized\nSample/sample size: n = 800 surveyed Minnesota adults\nObserved Statistic: \\(\\hat{p}=\\frac{408}{800}=0.51\\)\n\n\nNote: We may also refer to the observed statistic as a point estimation\n\n\nWhat if we took a different sample of 800 adults?"
+    "text": "Legalizing Medical Marijuana\n\nPopulation of Interest: All adults in Minnesota\nParameter of Interest: \\pi= Long run proportion of Minnesota adults that feel marijuana should be legalized\nSample/sample size: n = 800 surveyed Minnesota adults\nObserved Statistic: \\hat{p}=\\frac{408}{800}=0.51\n\n\nNote: We may also refer to the observed statistic as a point estimation\n\n\nWhat if we took a different sample of 800 adults?"
   },
   {
     "objectID": "slides/Chapter 03/section3.1.html#legalizing-medical-marijuana-activity",
     "href": "slides/Chapter 03/section3.1.html#legalizing-medical-marijuana-activity",
     "title": "Section 3.1",
     "section": "Legalizing Medical Marijuana Activity",
-    "text": "Legalizing Medical Marijuana Activity\n\nUse the Theory Based Inference Applet\nWork with people around you to test different values of \\(\\pi\\)\nFor each value of \\(\\pi\\) record:\n\nP-value\nShould you reject (R) or fail to reject (FTR) the null hypothesis?\nIs the hypothesized value for \\(\\pi\\) plausible or not?"
+    "text": "Legalizing Medical Marijuana Activity\n\nUse the Theory Based Inference Applet\nWork with people around you to test different values of \\pi\nFor each value of \\pi record:\n\nP-value\nShould you reject (R) or fail to reject (FTR) the null hypothesis?\nIs the hypothesized value for \\pi plausible or not?"
   },
   {
     "objectID": "slides/Chapter 03/section3.1.html#activity-results",
     "href": "slides/Chapter 03/section3.1.html#activity-results",
     "title": "Section 3.1",
     "section": "Activity Results",
-    "text": "Activity Results\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(H_{0}:\\pi=\\)\n0.41\n0.42\n0.43\n0.44\n0.45\n0.46\n0.47\n0.48\n0.49\n0.50\n\n\nP-value\n&gt;0.0001\n&gt;0.0001\n&gt;0.0001\n0.0001\n0.0006\n0.0045\n0.0234\n0.0894\n0.2578\n0.5716\n\n\nR/FTR\nR\nR\nR\nR\nR\nR\nR\nFTR\nFTR\nFTR\n\n\nPlausible?\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nYes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(H_{0}:\\pi=\\)\n0.51\n0.52\n0.53\n0.54\n0.55\n0.56\n0.57\n0.58\n0.59\n0.60\n\n\nP-value\n1\n0.5713\n0.2570\n0.0887\n0.0230\n0.0044\n0.0006\n0.0001\n&gt;0.0001\n&gt;0.0001\n\n\nR/FTR\nFTR\nFTR\nFTR\nFTR\nR\nR\nR\nR\nR\nR\n\n\nPlausible?\nYes\nYes\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\n\n\n\n\n\nWhat trends do you notice?\nWhat is our range of plausible values?"
+    "text": "Activity Results\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nH_{0}:\\pi=\n0.41\n0.42\n0.43\n0.44\n0.45\n0.46\n0.47\n0.48\n0.49\n0.50\n\n\nP-value\n&gt;0.0001\n&gt;0.0001\n&gt;0.0001\n0.0001\n0.0006\n0.0045\n0.0234\n0.0894\n0.2578\n0.5716\n\n\nR/FTR\nR\nR\nR\nR\nR\nR\nR\nFTR\nFTR\nFTR\n\n\nPlausible?\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nYes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nH_{0}:\\pi=\n0.51\n0.52\n0.53\n0.54\n0.55\n0.56\n0.57\n0.58\n0.59\n0.60\n\n\nP-value\n1\n0.5713\n0.2570\n0.0887\n0.0230\n0.0044\n0.0006\n0.0001\n&gt;0.0001\n&gt;0.0001\n\n\nR/FTR\nFTR\nFTR\nFTR\nFTR\nR\nR\nR\nR\nR\nR\n\n\nPlausible?\nYes\nYes\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\n\n\n\n\n\nWhat trends do you notice?\nWhat is our range of plausible values?"
   },
   {
     "objectID": "slides/Chapter 03/section3.1.html#confidence-interval-interpretation",
     "href": "slides/Chapter 03/section3.1.html#confidence-interval-interpretation",
     "title": "Section 3.1",
     "section": "Confidence Interval Interpretation",
-    "text": "Confidence Interval Interpretation\n\n0.48 to 0.54 is also known as our confidence interval!\n\nCan be written as (0.48, 0.54)\n\nWe are 95% confident that the true value of \\(\\pi\\) is between 0.48 and 0.54\n\nThis is a general interpretation\nPut this in context of the given problem\n\n\n\n“We are 95% confident that the long-run proportion of Minnesota adults who feel medical marijuana should be legalized is between 0.48 and 0.54.”"
+    "text": "Confidence Interval Interpretation\n\n0.48 to 0.54 is also known as our confidence interval!\n\nCan be written as (0.48, 0.54)\n\nWe are 95% confident that the true value of \\pi is between 0.48 and 0.54\n\nThis is a general interpretation\nPut this in context of the given problem\n\n\n\n“We are 95% confident that the long-run proportion of Minnesota adults who feel medical marijuana should be legalized is between 0.48 and 0.54.”"
   },
   {
     "objectID": "slides/Chapter 03/section3.1.html#confidence-intervals-general-form",
@@ -1901,35 +1901,35 @@
     "href": "slides/Chapter 03/section3.1.html#medical-marijuana-example",
     "title": "Section 3.1",
     "section": "Medical Marijuana Example",
-    "text": "Medical Marijuana Example\n\n\\(\\hat{p}\\) = 0.51\nCI = (0.48, 0.54)\nAlternatively, could write: 0.51 ± 0.03"
+    "text": "Medical Marijuana Example\n\n\\hat{p} = 0.51\nCI = (0.48, 0.54)\nAlternatively, could write: 0.51 ± 0.03"
   },
   {
     "objectID": "slides/Chapter 03/section3.1.html#significance-level",
     "href": "slides/Chapter 03/section3.1.html#significance-level",
     "title": "Section 3.1",
     "section": "Significance Level",
-    "text": "Significance Level\nP-value cutoff for rejecting/failing to reject the null\n\nDenoted by \\(\\alpha\\)\nMore “mathematical” reason we reject \\(H_{0}\\) if p-value is less than 0.05\nSignificance level + confidence level = 100%"
+    "text": "Significance Level\nP-value cutoff for rejecting/failing to reject the null\n\nDenoted by \\alpha\nMore “mathematical” reason we reject H_{0} if p-value is less than 0.05\nSignificance level + confidence level = 100%"
   },
   {
     "objectID": "slides/Chapter 03/section3.1.html#common-significance-levels-alpha-0.10",
     "href": "slides/Chapter 03/section3.1.html#common-significance-levels-alpha-0.10",
     "title": "Section 3.1",
-    "section": "Common Significance Levels: \\(\\alpha\\) = 0.10",
-    "text": "Common Significance Levels: \\(\\alpha\\) = 0.10\n\n90% confidence level\nReject when p-value &lt; 0.10\nReject null more often\nNarrower confidence interval\nMore Type I errors, less Type II errors"
+    "section": "Common Significance Levels: \\alpha = 0.10",
+    "text": "Common Significance Levels: \\alpha = 0.10\n\n90% confidence level\nReject when p-value &lt; 0.10\nReject null more often\nNarrower confidence interval\nMore Type I errors, less Type II errors"
   },
   {
     "objectID": "slides/Chapter 03/section3.1.html#common-significance-levels-alpha-0.05",
     "href": "slides/Chapter 03/section3.1.html#common-significance-levels-alpha-0.05",
     "title": "Section 3.1",
-    "section": "Common Significance Levels: \\(\\alpha\\) = 0.05",
-    "text": "Common Significance Levels: \\(\\alpha\\) = 0.05\n\n95% confidence level\nReject when p-value &lt; 0.05\nStandard Practice"
+    "section": "Common Significance Levels: \\alpha = 0.05",
+    "text": "Common Significance Levels: \\alpha = 0.05\n\n95% confidence level\nReject when p-value &lt; 0.05\nStandard Practice"
   },
   {
     "objectID": "slides/Chapter 03/section3.1.html#common-significance-levels-alpha-0.01",
     "href": "slides/Chapter 03/section3.1.html#common-significance-levels-alpha-0.01",
     "title": "Section 3.1",
-    "section": "Common Significance Levels: \\(\\alpha\\) = 0.01",
-    "text": "Common Significance Levels: \\(\\alpha\\) = 0.01\n\n99% confidence level\nReject when p-value &lt; 0.01\nReject null less often\nWider confidence interval\nLess Type I errors, more Type II errors"
+    "section": "Common Significance Levels: \\alpha = 0.01",
+    "text": "Common Significance Levels: \\alpha = 0.01\n\n99% confidence level\nReject when p-value &lt; 0.01\nReject null less often\nWider confidence interval\nLess Type I errors, more Type II errors"
   },
   {
     "objectID": "slides/Chapter 03/section3.1.html#confidence-level",
@@ -2167,14 +2167,14 @@
     "href": "slides/Chapter 01/section1.3.html#hypothesis-testing-review-1",
     "title": "Section 1.3",
     "section": "Hypothesis Testing Review",
-    "text": "Hypothesis Testing Review\n\nNull hypothesis (\\(H_{0}\\)):\n\nThe chance explanation.\nWhat we assume is true\n\n\n\n\nAlternative hypothesis (\\(H_{A}\\)):\n\nWhat researchers think could be true.\nThere’s an underlying cause.\n\n\n\n\nWe can either write our hypotheses in words or symbols."
+    "text": "Hypothesis Testing Review\n\nNull hypothesis (H_{0}):\n\nThe chance explanation.\nWhat we assume is true\n\n\n\n\nAlternative hypothesis (H_{A}):\n\nWhat researchers think could be true.\nThere’s an underlying cause.\n\n\n\n\nWe can either write our hypotheses in words or symbols."
   },
   {
     "objectID": "slides/Chapter 01/section1.3.html#p-value-review",
     "href": "slides/Chapter 01/section1.3.html#p-value-review",
     "title": "Section 1.3",
     "section": "P-value Review",
-    "text": "P-value Review\nOnce we have our hypotheses, we can test them.\n\nP-value gives the probability of \\(\\hat{p}\\) occurring if we assume \\(H_{0}\\) is true\n\n\nWe go by the following rules:\n\nIf p-value &gt; .05, fail to reject the null\nIf p-value ≤ .05, reject the null, accept alternative\n\nThen we interpret our results based on the context of the problem."
+    "text": "P-value Review\nOnce we have our hypotheses, we can test them.\n\nP-value gives the probability of \\hat{p} occurring if we assume H_{0} is true\n\n\nWe go by the following rules:\n\nIf p-value &gt; .05, fail to reject the null\nIf p-value ≤ .05, reject the null, accept alternative\n\nThen we interpret our results based on the context of the problem."
   },
   {
     "objectID": "slides/Chapter 01/section1.3.html#however-p-values-are-just-one-way-we-can-test-for-statistical-significance",
@@ -2195,14 +2195,14 @@
     "href": "slides/Chapter 01/section1.3.html#heart-transplant-example-1",
     "title": "Section 1.3",
     "section": "Heart Transplant Example",
-    "text": "Heart Transplant Example\n\n\nLet’s identify the following:\n\nResearch question\nObservational units\nVariable of interest\n\nCategorical or Numerical?\n\nParameter (\\(\\pi\\))\nObserved statistic (\\(\\hat{p}\\))\nHypotheses (in symbols)\n\n\n\n\n\n\n\n\nKey Information\n\n\n\n\n\n80% of 10 transplants resulted in deaths within 30 days of the transplant\nHistorical data suggests a 15% mortality rate"
+    "text": "Heart Transplant Example\n\n\nLet’s identify the following:\n\nResearch question\nObservational units\nVariable of interest\n\nCategorical or Numerical?\n\nParameter (\\pi)\nObserved statistic (\\hat{p})\nHypotheses (in symbols)\n\n\n\n\n\n\n\n\nKey Information\n\n\n\n\n\n80% of 10 transplants resulted in deaths within 30 days of the transplant\nHistorical data suggests a 15% mortality rate"
   },
   {
     "objectID": "slides/Chapter 01/section1.3.html#heart-transplant-example-2",
     "href": "slides/Chapter 01/section1.3.html#heart-transplant-example-2",
     "title": "Section 1.3",
     "section": "Heart Transplant Example",
-    "text": "Heart Transplant Example\nLet’s identify the following:\n\nResearch question: Is St. George’s mortality rate for heart transplants higher than the national average?\nObservational units: Each heart transplant (n=10)\nVariable of interest: Live or die\n\nCategorical or Numerical? Categorical\n\nParameter (\\(\\pi\\)): Long run proportion of patients who die within 30 days of a heart transplant at St. George.\nObserved statistic (\\(\\hat{p}\\)): 8/10 = 80%\nHypotheses (in symbols):\n\n\\(H_{0}\\): \\(\\pi\\) = 0.15\n\\(H_{A}\\): \\(\\pi\\) &gt; 0.15"
+    "text": "Heart Transplant Example\nLet’s identify the following:\n\nResearch question: Is St. George’s mortality rate for heart transplants higher than the national average?\nObservational units: Each heart transplant (n=10)\nVariable of interest: Live or die\n\nCategorical or Numerical? Categorical\n\nParameter (\\pi): Long run proportion of patients who die within 30 days of a heart transplant at St. George.\nObserved statistic (\\hat{p}): 8/10 = 80%\nHypotheses (in symbols):\n\nH_{0}: \\pi = 0.15\nH_{A}: \\pi &gt; 0.15"
   },
   {
     "objectID": "slides/Chapter 01/section1.3.html#heart-transplant-example-p-value",
@@ -2223,7 +2223,7 @@
     "href": "slides/Chapter 01/section1.3.html#standardized-statistic-method-1",
     "title": "Section 1.3",
     "section": "Standardized Statistic Method",
-    "text": "Standardized Statistic Method\n\nA second method for determining strength of evidence\nStandardizes \\(\\hat{p}\\) to a standard normal distribution\nStandard normal distribution = Normal distribution with mean of 0 and standard deviation of 1"
+    "text": "Standardized Statistic Method\n\nA second method for determining strength of evidence\nStandardizes \\hat{p} to a standard normal distribution\nStandard normal distribution = Normal distribution with mean of 0 and standard deviation of 1"
   },
   {
     "objectID": "slides/Chapter 01/section1.3.html#standard-deviation",
@@ -2237,35 +2237,35 @@
     "href": "slides/Chapter 01/section1.3.html#standardized-statistic",
     "title": "Section 1.3",
     "section": "Standardized Statistic",
-    "text": "Standardized Statistic\nHow many standard deviations an observed statistic is from the mean of the null distribution; denoted by \\(z\\)"
+    "text": "Standardized Statistic\nHow many standard deviations an observed statistic is from the mean of the null distribution; denoted by z"
   },
   {
     "objectID": "slides/Chapter 01/section1.3.html#calculating-the-standardized-statistic",
     "href": "slides/Chapter 01/section1.3.html#calculating-the-standardized-statistic",
     "title": "Section 1.3",
     "section": "Calculating the Standardized Statistic",
-    "text": "Calculating the Standardized Statistic\n\\[z=\\frac{Observed\\: Statistic - Hypothesized\\: Value}{Standard\\: Deviation\\: under\\: the\\: null}\\]"
+    "text": "Calculating the Standardized Statistic\nz=\\frac{Observed\\: Statistic - Hypothesized\\: Value}{Standard\\: Deviation\\: under\\: the\\: null}"
   },
   {
     "objectID": "slides/Chapter 01/section1.3.html#calculating-the-standardized-statistic-1",
     "href": "slides/Chapter 01/section1.3.html#calculating-the-standardized-statistic-1",
     "title": "Section 1.3",
     "section": "Calculating the Standardized Statistic",
-    "text": "Calculating the Standardized Statistic\nCan alternatively be written as:\n\\[z=\\frac{Observed\\: Statistic - Mean\\: under\\: the\\: null}{Standard\\: Deviation\\: under\\: the\\: null}\\]\nNote: “Hypothesized value” and “mean under the null” refer to the same value"
+    "text": "Calculating the Standardized Statistic\nCan alternatively be written as:\nz=\\frac{Observed\\: Statistic - Mean\\: under\\: the\\: null}{Standard\\: Deviation\\: under\\: the\\: null}\nNote: “Hypothesized value” and “mean under the null” refer to the same value"
   },
   {
     "objectID": "slides/Chapter 01/section1.3.html#standardized-statistic-1",
     "href": "slides/Chapter 01/section1.3.html#standardized-statistic-1",
     "title": "Section 1.3",
     "section": "Standardized Statistic",
-    "text": "Standardized Statistic\n\n\\(z\\) can be negative OR positive\n\\(z\\) represents the number of standard deviations the observed statistic is from the mean of the null distribution\nThe higher the absolute value of \\(z\\) is, the more evidence we have in favor of \\(H_{A}\\)\nAbsolute value =\n\nPositive values stay the same\nNegative values become their positive counterpart"
+    "text": "Standardized Statistic\n\nz can be negative OR positive\nz represents the number of standard deviations the observed statistic is from the mean of the null distribution\nThe higher the absolute value of z is, the more evidence we have in favor of H_{A}\nAbsolute value =\n\nPositive values stay the same\nNegative values become their positive counterpart"
   },
   {
     "objectID": "slides/Chapter 01/section1.3.html#standard-deviation-s.d.-formula",
     "href": "slides/Chapter 01/section1.3.html#standard-deviation-s.d.-formula",
     "title": "Section 1.3",
     "section": "Standard Deviation (S.D.) Formula",
-    "text": "Standard Deviation (S.D.) Formula\n\\[\\sigma = \\sqrt{\\frac{\\sum_{i=0}^n (x_{i}-\\bar{x})^2}{n}}\\]\nThankfully, you won’t need to know this formula for this course, but some of you might find it nice to know how this number is calculated.\n\nInstead, we can get our s.d. using the Applet. (Phew!)"
+    "text": "Standard Deviation (S.D.) Formula\n\\sigma = \\sqrt{\\frac{\\sum_{i=0}^n (x_{i}-\\bar{x})^2}{n}}\nThankfully, you won’t need to know this formula for this course, but some of you might find it nice to know how this number is calculated.\n\nInstead, we can get our s.d. using the Applet. (Phew!)"
   },
   {
     "objectID": "slides/Chapter 01/section1.3.html#obtaining-standard-deviation",
@@ -2279,14 +2279,14 @@
     "href": "slides/Chapter 01/section1.3.html#heart-transplant-example-3",
     "title": "Section 1.3",
     "section": "Heart Transplant Example",
-    "text": "Heart Transplant Example\n\nObserved statistic (\\(\\hat{p}\\)) = 0.8\nHypothesized value (\\(\\pi\\)) = 0.15\nStandard Deviation under the null = 0.116 (from previous slide)\n\n\\[z=\\frac{0.8 - 0.15}{0.116}=5.60\\]\nCool, but what does this tell us?"
+    "text": "Heart Transplant Example\n\nObserved statistic (\\hat{p}) = 0.8\nHypothesized value (\\pi) = 0.15\nStandard Deviation under the null = 0.116 (from previous slide)\n\nz=\\frac{0.8 - 0.15}{0.116}=5.60\nCool, but what does this tell us?"
   },
   {
     "objectID": "slides/Chapter 01/section1.3.html#evidence-based-on-the-standardized-statistic",
     "href": "slides/Chapter 01/section1.3.html#evidence-based-on-the-standardized-statistic",
     "title": "Section 1.3",
     "section": "Evidence Based on the Standardized Statistic",
-    "text": "Evidence Based on the Standardized Statistic\n\nLike the p-value, we have criteria for rejecting or failing to reject the null based on the standardized statistic (s.s.)\nReject \\(H_{0}\\) when the s.s. is below -2 or above 2\n“Outside the twos”"
+    "text": "Evidence Based on the Standardized Statistic\n\nLike the p-value, we have criteria for rejecting or failing to reject the null based on the standardized statistic (s.s.)\nReject H_{0} when the s.s. is below -2 or above 2\n“Outside the twos”"
   },
   {
     "objectID": "slides/Chapter 01/section1.3.html#evidence-based-on-the-standardized-statistic-1",
@@ -2307,7 +2307,7 @@
     "href": "slides/Chapter 01/section1.3.html#heart-transplant-example-new-data",
     "title": "Section 1.3",
     "section": "Heart Transplant Example: New Data",
-    "text": "Heart Transplant Example: New Data\nNow say we collected more data.\n\n\nData from 361 heart transplants\n71 people died within 30 days of surgery\n\\(\\hat{p}=\\frac{71}{361}\\)"
+    "text": "Heart Transplant Example: New Data\nNow say we collected more data.\n\n\nData from 361 heart transplants\n71 people died within 30 days of surgery\n\\hat{p}=\\frac{71}{361}"
   },
   {
     "objectID": "slides/Chapter 01/section1.3.html#heart-transplant-example-new-data-1",
@@ -2321,28 +2321,28 @@
     "href": "slides/Chapter 01/section1.3.html#heart-transplant-example-new-data-2",
     "title": "Section 1.3",
     "section": "Heart Transplant Example: New Data",
-    "text": "Heart Transplant Example: New Data\n\nNew observed statistic: \\(\\hat{p}=\\frac{71}{361}=0.1967\\)\nHypothesized value (\\(\\pi\\)) = 0.15\n\nThis doesn’t change!\n\nStandard Deviation under the null = 0.019\n\n\\[z=\\frac{0.1967 - 0.15}{0.019}=2.45\\]"
+    "text": "Heart Transplant Example: New Data\n\nNew observed statistic: \\hat{p}=\\frac{71}{361}=0.1967\nHypothesized value (\\pi) = 0.15\n\nThis doesn’t change!\n\nStandard Deviation under the null = 0.019\n\nz=\\frac{0.1967 - 0.15}{0.019}=2.45"
   },
   {
     "objectID": "slides/Chapter 01/section1.3.html#comparing-the-two-scenarios",
     "href": "slides/Chapter 01/section1.3.html#comparing-the-two-scenarios",
     "title": "Section 1.3",
     "section": "Comparing the two scenarios",
-    "text": "Comparing the two scenarios\n\n\n\n\nScenario 1\nScenario 2\n\n\n\n\n\\(\\hat{p}\\)\n0.80\n0.1967\n\n\np-value\n\\(\\approx\\) 0\n0.01\n\n\n\\(z\\)\n5.60\n2.45\n\n\nOutcome\nReject null\nReject null"
+    "text": "Comparing the two scenarios\n\n\n\n\nScenario 1\nScenario 2\n\n\n\n\n\\hat{p}\n0.80\n0.1967\n\n\np-value\n\\approx 0\n0.01\n\n\nz\n5.60\n2.45\n\n\nOutcome\nReject null\nReject null"
   },
   {
     "objectID": "slides/Chapter 01/section1.3.html#comparing-the-two-scenarios-1",
     "href": "slides/Chapter 01/section1.3.html#comparing-the-two-scenarios-1",
     "title": "Section 1.3",
     "section": "Comparing the two scenarios",
-    "text": "Comparing the two scenarios\n\n\n\n\nScenario 1\nScenario 2\n\n\n\n\n\\(\\hat{p}\\)\n0.80\n0.1967\n\n\np-value\n\\(\\approx\\) 0\n0.01\n\n\n\\(z\\)\n5.60\n2.45\n\n\nOutcome\nReject null\nReject null\n\n\n\n\nWe reject the null in both scenarios, but in scenario 1 we have stronger evidence."
+    "text": "Comparing the two scenarios\n\n\n\n\nScenario 1\nScenario 2\n\n\n\n\n\\hat{p}\n0.80\n0.1967\n\n\np-value\n\\approx 0\n0.01\n\n\nz\n5.60\n2.45\n\n\nOutcome\nReject null\nReject null\n\n\n\n\nWe reject the null in both scenarios, but in scenario 1 we have stronger evidence."
   },
   {
     "objectID": "slides/Chapter 01/section1.3.html#method-comparison",
     "href": "slides/Chapter 01/section1.3.html#method-comparison",
     "title": "Section 1.3",
     "section": "Method comparison",
-    "text": "Method comparison\n\n\n\n\nMethod\nWhen to Reject Null\n\n\nP-value\np-value ≤ 0.05\n\n\nStandardized Statistic\n\\(z\\) &gt; 2 or \\(z\\) &lt; -2\n\n\n\n\n\nReject null = evidence to conclude alternative\nOtherwise, we fail to reject the null"
+    "text": "Method comparison\n\n\n\n\nMethod\nWhen to Reject Null\n\n\nP-value\np-value ≤ 0.05\n\n\nStandardized Statistic\nz &gt; 2 or z &lt; -2\n\n\n\n\n\nReject null = evidence to conclude alternative\nOtherwise, we fail to reject the null"
   },
   {
     "objectID": "slides/Chapter 01/section1.5.html#section-1.5-learning-objectives",
@@ -2377,7 +2377,7 @@
     "href": "slides/Chapter 01/section1.5.html#the-null-distribution-in-depth-1",
     "title": "Section 1.5",
     "section": "The Null Distribution (in depth!)",
-    "text": "The Null Distribution (in depth!)\nSince we know the null distribution is normally distributed, we know the following:\n\nBell shaped\nCentered at the hypothesized value for \\(\\pi\\)\nCan predict standard deviation\n\nWithout the Applet!"
+    "text": "The Null Distribution (in depth!)\nSince we know the null distribution is normally distributed, we know the following:\n\nBell shaped\nCentered at the hypothesized value for \\pi\nCan predict standard deviation\n\nWithout the Applet!"
   },
   {
     "objectID": "slides/Chapter 01/section1.5.html#example-null-distribution",
@@ -2405,14 +2405,14 @@
     "href": "slides/Chapter 01/section1.5.html#central-limit-theorem",
     "title": "Section 1.5",
     "section": "Central Limit Theorem",
-    "text": "Central Limit Theorem\n\n“Backbone” of statistics\n\nDefinition:\n\nIf the sample size (n) is large enough, the distribution of the sample proportions will be bell-shaped (approximately normal), centered at the long run probability (\\(\\pi\\)), with a standard deviation:\n\n\\[standard\\: deviation\\: of\\: the\\: null=\\sqrt{\\frac{\\pi(1-\\pi)}{n}}\\]"
+    "text": "Central Limit Theorem\n\n“Backbone” of statistics\n\nDefinition:\n\nIf the sample size (n) is large enough, the distribution of the sample proportions will be bell-shaped (approximately normal), centered at the long run probability (\\pi), with a standard deviation:\n\nstandard\\: deviation\\: of\\: the\\: null=\\sqrt{\\frac{\\pi(1-\\pi)}{n}}"
   },
   {
     "objectID": "slides/Chapter 01/section1.5.html#using-theory-for-standardized-values",
     "href": "slides/Chapter 01/section1.5.html#using-theory-for-standardized-values",
     "title": "Section 1.5",
     "section": "Using Theory for Standardized Values",
-    "text": "Using Theory for Standardized Values\nReplace S.D. with theory-based calculation\n\\[z=\\frac{Observed\\: Statistic - Hypothesized\\: Value}{Standard\\: Deviation\\: under\\: the\\: null}\\]\n\\[=\\frac{\\hat{p}-\\pi}{\\sqrt{\\frac{\\pi(1-\\pi)}{n}}}\\]"
+    "text": "Using Theory for Standardized Values\nReplace S.D. with theory-based calculation\nz=\\frac{Observed\\: Statistic - Hypothesized\\: Value}{Standard\\: Deviation\\: under\\: the\\: null}\n=\\frac{\\hat{p}-\\pi}{\\sqrt{\\frac{\\pi(1-\\pi)}{n}}}"
   },
   {
     "objectID": "slides/Chapter 01/section1.5.html#using-the-applet",
@@ -2440,28 +2440,28 @@
     "href": "slides/Chapter 01/section1.5.html#halloween-treats-1",
     "title": "Section 1.5",
     "section": "Halloween Treats",
-    "text": "Halloween Treats\n\nSample & size: n = 283 kids\nVariable of interest: Chose candy or not\nParameter & symbol: \\(\\pi\\) = long run proportion of kids that chose candy\nObserved statistic & symbol: \\(\\hat{p} = \\frac{148}{283}\\)\nHypotheses (in symbols):\n\n\\(H_{0}\\): \\(\\pi\\) = 0.5\n\\(H_{A}\\): \\(\\pi\\) ≠ 0.5\n\n\nDo we meet the criteria for the theory-based approach? Yes! More than 10 failures & successes."
+    "text": "Halloween Treats\n\nSample & size: n = 283 kids\nVariable of interest: Chose candy or not\nParameter & symbol: \\pi = long run proportion of kids that chose candy\nObserved statistic & symbol: \\hat{p} = \\frac{148}{283}\nHypotheses (in symbols):\n\nH_{0}: \\pi = 0.5\nH_{A}: \\pi ≠ 0.5\n\n\nDo we meet the criteria for the theory-based approach? Yes! More than 10 failures & successes."
   },
   {
     "objectID": "slides/Chapter 01/section1.5.html#halloween-treats-2",
     "href": "slides/Chapter 01/section1.5.html#halloween-treats-2",
     "title": "Section 1.5",
     "section": "Halloween Treats",
-    "text": "Halloween Treats\nStandard deviation using theory:\n\\[standard\\: deviation\\: of\\: the\\: null=\\sqrt{\\frac{\\pi(1-\\pi)}{n}}\\]\n\\[=\\sqrt{\\frac{0.5(1-0.5)}{283}}=0.0297\\]"
+    "text": "Halloween Treats\nStandard deviation using theory:\nstandard\\: deviation\\: of\\: the\\: null=\\sqrt{\\frac{\\pi(1-\\pi)}{n}}\n=\\sqrt{\\frac{0.5(1-0.5)}{283}}=0.0297"
   },
   {
     "objectID": "slides/Chapter 01/section1.5.html#halloween-treats-3",
     "href": "slides/Chapter 01/section1.5.html#halloween-treats-3",
     "title": "Section 1.5",
     "section": "Halloween Treats",
-    "text": "Halloween Treats\nThen, we use the calculated standard deviation to obtain the standardized statistic:\n\\[standardized\\: statistic\\: =\\frac{0.523-0.5}{0.0297}=0.774\\]"
+    "text": "Halloween Treats\nThen, we use the calculated standard deviation to obtain the standardized statistic:\nstandardized\\: statistic\\: =\\frac{0.523-0.5}{0.0297}=0.774"
   },
   {
     "objectID": "slides/Chapter 01/section1.5.html#halloween-treats-4",
     "href": "slides/Chapter 01/section1.5.html#halloween-treats-4",
     "title": "Section 1.5",
     "section": "Halloween Treats",
-    "text": "Halloween Treats\nNow we find the standardized statistic with the simulation approach:\n\\[standardized\\: statistic\\: =\\frac{0.523-0.5}{0.02}=0.793\\]\nNotice, we get nearly the same number!"
+    "text": "Halloween Treats\nNow we find the standardized statistic with the simulation approach:\nstandardized\\: statistic\\: =\\frac{0.523-0.5}{0.02}=0.793\nNotice, we get nearly the same number!"
   },
   {
     "objectID": "slides/Chapter 01/section1.5.html#halloween-treats-conclusion",
