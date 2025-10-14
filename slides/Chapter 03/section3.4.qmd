@@ -33,9 +33,9 @@ editor: visual
 
 <br> Confidence Interval (CI) = (Lower Bound, Upper Bound)
 
-= Observed statistic ± margin of error
+<br> = Observed statistic ± margin of error
 
--   Margin of Error = Multiplier \* Standard Error
+<br> -   Margin of Error = Multiplier \* Standard Error
 
 ## 2SD (95%) Confidence Interval for Proportions {.center}
 
@@ -144,3 +144,5 @@ As standard error [**decreases:**]{.underline}
 | Confidence level decreases | Confidence level increases |
 |   Sample size increases    |   Sample size decreases    |
 |  Standard error decreases  |  Standard error increases  |
+
+
