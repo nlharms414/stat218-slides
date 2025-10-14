@@ -144,6 +144,3 @@ As standard error [**decreases:**]{.underline}
 | Confidence level decreases | Confidence level increases |
 |   Sample size increases    |   Sample size decreases    |
 |  Standard error decreases  |  Standard error increases  |
-
-
-## Test
