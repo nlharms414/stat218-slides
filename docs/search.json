@@ -2476,5 +2476,12 @@
     "title": "Exam 1 Review",
     "section": "Strength of Evidence",
     "text": "Strength of Evidence\nIf we do NOT have strong evidence:\n\nP-value is 0.05 or higher\nStandardized statistic is inside the twos\nWe fail to null hypothesis, and cannot accept the alternative"
+  },
+  {
+    "objectID": "slides/Chapter 03/section3.4.html#test",
+    "href": "slides/Chapter 03/section3.4.html#test",
+    "title": "Section 3.4",
+    "section": "Test",
+    "text": "Test"
   }
 ]
