@@ -35,7 +35,7 @@ editor: visual
 
 <br> = Observed statistic ± margin of error
 
-<br> -   Margin of Error = Multiplier \* Standard Error
+<br> Margin of Error = Multiplier \* Standard Error
 
 ## 2SD (95%) Confidence Interval for Proportions {.center}
 
@@ -106,7 +106,7 @@ A larger sample size ($n$) is ALWAYS (!!!) better!
     -   Generally less variability in data
     -   Smaller standard error (smaller confidence interval)
 
--   If $n$ increases:
+-   If $n$ decreases:
 
     -   Likely more variability in data
     -   Larger standard error (larger confidence interval)

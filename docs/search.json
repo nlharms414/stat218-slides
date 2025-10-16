@@ -704,7 +704,7 @@
     "href": "slides/Chapter 03/section3.4.html#confidence-intervals-general-form",
     "title": "Section 3.4",
     "section": "Confidence Intervals: General Form",
-    "text": "Confidence Intervals: General Form\n Confidence Interval (CI) = (Lower Bound, Upper Bound)\n = Observed statistic ± margin of error\n - Margin of Error = Multiplier * Standard Error"
+    "text": "Confidence Intervals: General Form\n Confidence Interval (CI) = (Lower Bound, Upper Bound)\n = Observed statistic ± margin of error\n Margin of Error = Multiplier * Standard Error"
   },
   {
     "objectID": "slides/Chapter 03/section3.4.html#sd-95-confidence-interval-for-proportions",
@@ -753,7 +753,7 @@
     "href": "slides/Chapter 03/section3.4.html#sample-size",
     "title": "Section 3.4",
     "section": "2. Sample Size",
-    "text": "2. Sample Size\nA larger sample size (n) is ALWAYS (!!!) better!\n\nIf n increases:\n\nGenerally less variability in data\nSmaller standard error (smaller confidence interval)\n\nIf n increases:\n\nLikely more variability in data\nLarger standard error (larger confidence interval)"
+    "text": "2. Sample Size\nA larger sample size (n) is ALWAYS (!!!) better!\n\nIf n increases:\n\nGenerally less variability in data\nSmaller standard error (smaller confidence interval)\n\nIf n decreases:\n\nLikely more variability in data\nLarger standard error (larger confidence interval)"
   },
   {
     "objectID": "slides/Chapter 03/section3.4.html#standard-error",

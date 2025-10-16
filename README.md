@@ -4,7 +4,7 @@ As of April 2024, a rule under Title II of the Americans with Disabilities Act (
 
 A big part of making materials accessible lies in the underlying code. Good coding allows devices like screen readers and other assistive technologies to be effective. Thus, creating accessible web-based materials for the Statistics Department was the main focus of this project.
 
-Ultimately, this project resulted in HTML-based slides for the Stat 218 class at UNL. A website containing all slide decks was generated that students can easily access.
+Ultimately, this project resulted in HTML-based slides for the Stat 218 class at UNL. Each slide deck was created in a Quarto markdown file that renders to a Reveal.js presentation. A website containing all slide decks was generated that students can easily access.
 
 ## Create your own slides website!
 
