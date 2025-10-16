@@ -2,13 +2,13 @@
 
 As of April 2024, a rule under Title II of the Americans with Disabilities Act (ADA) requires that all web content and mobile applications become compliant with the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA. More simply put, this requires public institutions (like UNL) to ensure all web content and mobile applications can be accessed by anybody- though the main focus is ensuring that individuals with disabilities can freely access any of the previously mentioned materials. Materials meeting these guidelines are often referred to as "accessible materials".
 
-The goal of this project is create accessible materials for the Statistics Department. Specifically, any materials in HTML, PDF, or other online formats will be the main focus. This could include materials and/or templates for any statistics classes, or general department materials, such as Help Desk materials.
+A big part of making materials accessible lies in the underlying code. Good coding allows devices like screen readers and other assistive technologies to be effective. Thus, creating accessible web-based materials for the Statistics Department was the main focus of this project.
 
-A big part of making materials accessible lies in the underlying code. Good coding allows devices like screen readers and other assistive technologies to be effective. This project will primarily make use of Pandoc and Quarto to convert LaTeX to HTML and PDF outputs that are easily accessible by assistive technologies.
+Ultimately, this project resulted in HTML-based slides for the Stat 218 class at UNL. A website containing all slide decks was generated that students can easily access.
 
 ## Create your own slides website!
 
-If you'd like to customize slide decks by creating your own website, follow the steps below to use this repository as a template.
+If you'd like to customize slide decks by creating your own website, follow the steps to use this repository as a template.
 
 \*\*Note that instructions are for use in R Studio
 
