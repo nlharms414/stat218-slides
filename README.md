@@ -32,8 +32,10 @@ Congrats! Your website is now deployed. New changes will automatically be deploy
 
 ### Some housekeeping items
 
--   Any changes to .qmd files will need to be rendered before the changes are committed and pushed. Otherwise, the changes will not be displayed on the website.
+-   Any changes to `.qmd` files will need to be rendered before the changes are committed and pushed. Otherwise, the changes will not be displayed on the website.
 
--   If you create a new .qmd file, you'll need to click "Render Website" in the 'Build' pane before rendering your changes, or the new slide deck won't show up on the website.
+-   If you create a new `.qmd` file, you'll need to click "Render Website" in the 'Build' pane before rendering your changes, or the new slide deck won't show up on the website.
 
--   If a .qmd file is created within a subfolder (or new subfolder) of the `slides` folder, it will automatically display on the website. If you wish to create a new .qmd file in a different sublevel (or entirely new folder outside the slides folder), the `index.qmd` will need to be updated to include files from that new folder.
+-   If a `.qmd` file is created within a subfolder (or new subfolder) of the `slides` folder, it will automatically display on the website. If you wish to create a new `.qmd` file in a different sublevel (or entirely new folder outside the slides folder), the `index.qmd` will need to be updated to include files from that new folder.
+
+-   Website layout and themes can be changed from the `index.qmd` and `_quarto.yml` files, respectively.
