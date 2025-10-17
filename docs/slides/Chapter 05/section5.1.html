@@ -30,6 +30,22 @@
     }
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -328,13 +344,201 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Section 5.1</h1>
+  <p class="subtitle">Comparing Two Groups: Categorical Response</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
+<section id="section-5.1-learning-objectives" class="slide level2 center">
+<h2>Section 5.1 Learning Objectives</h2>
+<ul>
+<li><p>Understand how a two-way table works.</p></li>
+<li><p>Be able to calculate conditional probability for different levels of the categorical variables.</p></li>
+<li><p>Determine whether or not there may be association based on the conditional probabilities that have been calculated.</p></li>
+<li><p>Understand and be able to calculate relative risk.</p></li>
+</ul>
+</section>
+<section>
+<section id="review" class="title-slide slide level1 center">
+<h1>Review</h1>
+
+</section>
+<section id="variable-types" class="slide level2 center">
+<h2>Variable Types</h2>
+<ul>
+<li><p>Explanatory (independent) variable</p>
+<ul>
+<li>“Explains” (“independent of”) the response variable</li>
+</ul></li>
+<li><p>Response (dependent) variable</p>
+<ul>
+<li>“Responds to” (“depends on”) the explanatory variable</li>
+</ul></li>
+</ul>
+</section>
+<section id="variable-types-1" class="slide level2 center">
+<h2>Variable Types</h2>
+<ul>
+<li><p>Confounding variable</p>
+<ul>
+<li>Related to both</li>
+</ul></li>
+<li><p>Association does <strong>NOT</strong> mean causation!</p>
+<ul>
+<li>We could always potentially have a confounding variable</li>
+</ul></li>
+</ul>
+</section>
+<section id="design-types" class="slide level2 center">
+<h2>Design Types</h2>
+<ul>
+<li><p>Observational study vs.&nbsp;experiment</p></li>
+<li><p>Random sample vs.&nbsp;random assignment</p></li>
+</ul>
+</section>
+<section id="random-vs.-random" class="slide level2 center">
+<h2>Random vs.&nbsp;Random</h2>
+<ul>
+<li><p>Random sampling = can generalize results</p></li>
+<li><p>No random sampling = cannot generalize results</p></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><p>Random assignment = can draw cause and effect conclusion (experiment)</p></li>
+<li><p>No random assignment = can only draw association conclusion (observational)</p></li>
+</ul>
+</div>
+</section>
+<section id="comparing-two-groups" class="slide level2 center">
+<h2>Comparing Two Groups</h2>
+<ul>
+<li><p>New research question: Are these two groups different?</p></li>
+<li><p>Compare using explanatory and repsonse variables</p></li>
+<li><p>We can still use our same strength of evidence methods!</p>
+<div>
+<ul>
+<li class="fragment"><p>P-value</p></li>
+<li class="fragment"><p>Standardized statistic</p></li>
+<li class="fragment"><p>Confidence intervals</p></li>
+</ul>
+</div></li>
+</ul>
+</section></section>
+<section>
+<section id="example" class="title-slide slide level1 center">
+<h1>Example</h1>
+
+</section>
+<section id="murderous-nurse" class="slide level2 center" style="font-size: 37px">
+<h2>Murderous Nurse</h2>
+<p>For several years in the 1990s, Kristen Gilbert worked as a nurse in the intensive care unit (ICU) of the Veterans Administration Hospital in Northampton, Massachusetts. Over the course of her time there, other nurses came to suspect that she was killing patients by injecting them with the heart stimulant epinephrine. Gilbert was eventually arrested and charged with these murders. Part of the evidence presented against Gilbert at her murder trial was a statistical analysis of <u><strong>1,641 eight-hour shifts during the time Gilbert worked in the ICU</strong>.</u> For each of these shifts, <u><strong>researchers recorded two variables:whether Gilbert worked on the shift and whether at least one patient died during the shift.</strong></u></p>
+</section>
+<section id="murderous-nurse-1" class="slide level2 center" style="font-size: 38px">
+<h2>Murderous Nurse</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Let’s identify the following:</p>
+<ul>
+<li><p>Obsevational units</p></li>
+<li><p>Explanatory variable</p></li>
+<li><p>Response variable</p></li>
+<li><p>Observational study or experiment? Why?</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Key Info</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><ul>
+<li><p>1,641 shifts during Gilbert’s time at ICU were analyzed</p></li>
+<li><p>For each shift it was recorded if:</p>
+<ul>
+<li><p>Gilbert worked the shift</p></li>
+<li><p>If at least one person died</p></li>
+</ul></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</section>
+<section id="murderous-nurse-2" class="slide level2 center">
+<h2>Murderous Nurse</h2>
+<p>It was found that Gilbert worked 257 of the 1,641 shifts, and at least one person died during 74 of the 1,641 shifts.</p>
+<div class="fragment">
+<ul>
+<li><p>Does this tell us much about an association between Gilbert working and patients dying?</p></li>
+<li><p>Why or why not?</p></li>
+</ul>
+</div>
+</section>
+<section id="murderous-nurse-3" class="slide level2 center">
+<h2>Murderous Nurse</h2>
+<p>Now, out of the 74 shifts where at least one person died, we find that 40 were shifts Gilbert worked, and 34 were not.</p>
+<div class="fragment">
+<ul>
+<li><p>Now does this seem like more reasonable evidence?</p></li>
+<li><p>Can we simply compare the numbers 34 and 40?</p></li>
+</ul>
+</div>
+</section>
+<section id="two-way-table" class="slide level2 center">
+<h2>Two Way Table</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>Gilbert worked the shift</strong></td>
+<td style="text-align: center;"><strong>Gilbert did not work the shift</strong></td>
+<td style="text-align: center;"><strong>Total shifts</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>At least one person died during the shift</strong></td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">34</td>
+<td style="text-align: center;">74</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>No patient died during the shift</strong></td>
+<td style="text-align: center;">217</td>
+<td style="text-align: center;">1350</td>
+<td style="text-align: center;">1567</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Total shifts</strong></td>
+<td style="text-align: center;">257</td>
+<td style="text-align: center;">1384</td>
+<td style="text-align: center;">1641</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="observed-statistic" class="slide level2 center">
+<h2>Observed statistic?</h2>
+<ul>
+<li>In a normal scenario, our observed statistic would be:</li>
+</ul>
+<p><span class="math display">\hat{p}=\frac{74}{1641}</span></p>
+<p>AKA:</p>
+<p><span class="math display">\hat{p}=\frac{Total\:shifts\:a\:patient\:died}{Total\:sample\:size}</span></p>
+<p>But, this isn’t super helpful!</p>
+</section>
+<section id="conditional-proportions" class="slide level2 center">
+<h2>Conditional Proportions</h2>
 
 <div class="quarto-auto-generated-content">
 <p><img src="logo.jpg" class="slide-logo"></p>
@@ -342,7 +546,7 @@
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
@@ -360,7 +564,6 @@
   <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -528,27 +731,9 @@
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom

@@ -2483,5 +2483,103 @@
     "title": "Section 3.4",
     "section": "Test",
     "text": "Test"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#section-5.1-learning-objectives",
+    "href": "slides/Chapter 05/section5.1.html#section-5.1-learning-objectives",
+    "title": "Section 5.1",
+    "section": "Section 5.1 Learning Objectives",
+    "text": "Section 5.1 Learning Objectives\n\nUnderstand how a two-way table works.\nBe able to calculate conditional probability for different levels of the categorical variables.\nDetermine whether or not there may be association based on the conditional probabilities that have been calculated.\nUnderstand and be able to calculate relative risk."
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#variable-types",
+    "href": "slides/Chapter 05/section5.1.html#variable-types",
+    "title": "Section 5.1",
+    "section": "Variable Types",
+    "text": "Variable Types\n\nExplanatory (independent) variable\n\n“Explains” (“independent of”) the response variable\n\nResponse (dependent) variable\n\n“Responds to” (“depends on”) the explanatory variable"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#variable-types-1",
+    "href": "slides/Chapter 05/section5.1.html#variable-types-1",
+    "title": "Section 5.1",
+    "section": "Variable Types",
+    "text": "Variable Types\n\nConfounding variable\n\nRelated to both\n\nAssociation does NOT mean causation!\n\nWe could always potentially have a confounding variable"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#design-types",
+    "href": "slides/Chapter 05/section5.1.html#design-types",
+    "title": "Section 5.1",
+    "section": "Design Types",
+    "text": "Design Types\n\nObservational study vs. experiment\nRandom sample vs. random assignment"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#random-vs.-random",
+    "href": "slides/Chapter 05/section5.1.html#random-vs.-random",
+    "title": "Section 5.1",
+    "section": "Random vs. Random",
+    "text": "Random vs. Random\n\nRandom sampling = can generalize results\nNo random sampling = cannot generalize results\n\n\n\nRandom assignment = can draw cause and effect conclusion (experiment)\nNo random assignment = can only draw association conclusion (observational)"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#comparing-two-groups",
+    "href": "slides/Chapter 05/section5.1.html#comparing-two-groups",
+    "title": "Section 5.1",
+    "section": "Comparing Two Groups",
+    "text": "Comparing Two Groups\n\nNew research question: Are these two groups different?\nCompare using explanatory and repsonse variables\nWe can still use our same strength of evidence methods!\n\n\nP-value\nStandardized statistic\nConfidence intervals"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#murderous-nurse",
+    "href": "slides/Chapter 05/section5.1.html#murderous-nurse",
+    "title": "Section 5.1",
+    "section": "Murderous Nurse",
+    "text": "Murderous Nurse\nFor several years in the 1990s, Kristen Gilbert worked as a nurse in the intensive care unit (ICU) of the Veterans Administration Hospital in Northampton, Massachusetts. Over the course of her time there, other nurses came to suspect that she was killing patients by injecting them with the heart stimulant epinephrine. Gilbert was eventually arrested and charged with these murders. Part of the evidence presented against Gilbert at her murder trial was a statistical analysis of 1,641 eight-hour shifts during the time Gilbert worked in the ICU. For each of these shifts, researchers recorded two variables:whether Gilbert worked on the shift and whether at least one patient died during the shift."
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#example-2",
+    "href": "slides/Chapter 05/section5.1.html#example-2",
+    "title": "Section 5.1",
+    "section": "Example 2",
+    "text": "Example 2\n\n\nLet’s identify the following:\n\nObsevational units\nExplanatory variable\nResponse variable\nObservational study or experiment? Why?\n\n\n\n\n\n\n\n\nKey Info\n\n\n\n\n\n1,641 shifts during Gilbert’s time at ICU were analyzed\nFor each shift it was recorded if:\n\nGilbert worked the shift\nIf at least one person died"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#murderous-nurse-1",
+    "href": "slides/Chapter 05/section5.1.html#murderous-nurse-1",
+    "title": "Section 5.1",
+    "section": "Murderous Nurse",
+    "text": "Murderous Nurse\n\n\nLet’s identify the following:\n\nObsevational units\nExplanatory variable\nResponse variable\nObservational study or experiment? Why?\n\n\n\n\n\n\n\n\nKey Info\n\n\n\n\n\n1,641 shifts during Gilbert’s time at ICU were analyzed\nFor each shift it was recorded if:\n\nGilbert worked the shift\nIf at least one person died"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#murderous-nurse-2",
+    "href": "slides/Chapter 05/section5.1.html#murderous-nurse-2",
+    "title": "Section 5.1",
+    "section": "Murderous Nurse",
+    "text": "Murderous Nurse\nIt was found that Gilbert worked 257 of the 1,641 shifts, and at least one person died during 74 of the 1,641 shifts.\n\n\nDoes this tell us much about an association between Gilbert working and patients dying?\nWhy or why not?"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#murderous-nurse-3",
+    "href": "slides/Chapter 05/section5.1.html#murderous-nurse-3",
+    "title": "Section 5.1",
+    "section": "Murderous Nurse",
+    "text": "Murderous Nurse\nNow, out of the 74 shifts where at least one person died, we find that 40 were shifts Gilbert worked, and 34 were not.\n\n\nNow does this seem like more reasonable evidence?\nCan we simply compare the numbers 34 and 40?"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#two-way-table",
+    "href": "slides/Chapter 05/section5.1.html#two-way-table",
+    "title": "Section 5.1",
+    "section": "Two Way Table",
+    "text": "Two Way Table\n\n\n\n\n\n\n\n\n\n\nGilbert worked the shift\nGilbert did not work the shift\nTotal shifts\n\n\nAt least one person died during the shift\n40\n34\n74\n\n\nNo patient died during the shift\n217\n1350\n1567\n\n\nTotal shifts\n257\n1384\n1641"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#observed-statistic",
+    "href": "slides/Chapter 05/section5.1.html#observed-statistic",
+    "title": "Section 5.1",
+    "section": "Observed statistic?",
+    "text": "Observed statistic?\n\nIn a normal scenario, our observed statistic would be:\n\n\\hat{p}=\\frac{74}{1641}\nAKA:\n\\hat{p}=\\frac{Total\\:shifts\\:a\\:patient\\:died}{Total\\:sample\\:size}\nBut, this isn’t super helpful!"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#conditional-proportions",
+    "href": "slides/Chapter 05/section5.1.html#conditional-proportions",
+    "title": "Section 5.1",
+    "section": "Conditional Proportions",
+    "text": "Conditional Proportions"
   }
 ]
