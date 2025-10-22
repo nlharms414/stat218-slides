@@ -553,14 +553,88 @@
 <p></p><figure class=""><p></p>
 <div>
 <pre class="mermaid mermaid-js">flowchart LR
-  A(Population: All 8-hr shifts) --&gt; B(Sample: n=1,641 observed shifts)
-  B --&gt; C("$$n=5$$")
+  A(Population: All 8-hr shifts) --&gt; B(Sample: 
+                                       n = 1,641 observed shifts)
+  B --&gt;|"$${n}_G=257$$"| C("$$\hat{p}_G=\frac{40}{257}=0.156$$")
+  B --&gt;|"$${n}_{NG}=1384$$"| D("$$\hat{p}_{NG}=\frac{34}{1384}=0.025$$")
 </pre>
 </div>
 <p></p></figure><p></p>
 </div>
 </div>
 </div>
+<ul>
+<li>“G” = Gilbert shift</li>
+<li>“NG” = Non-Gilbert shift</li>
+</ul>
+</section>
+<section id="conditional-proportions-1" class="slide level2 center">
+<h2>Conditional Proportions</h2>
+<p><span class="math display">\hat{p}_G=\frac{Patient\: died\: a\: shift\: Gilbert\: worked}{Total\: shifts\: Gilbert\: worked}</span> <span class="math display">=\frac{40}{257}</span> <span class="math display">=0.156</span></p>
+</section>
+<section id="conditional-proportions-2" class="slide level2 center">
+<h2>Conditional Proportions</h2>
+<p><span class="math display">\hat{p}_{NG}=\frac{Patient\: died\: a\: shift\: Gilbert\: did\: not\: work}{Total\: shifts\: Gilbert\: did\: not\: work}</span> <span class="math display">=\frac{34}{1384}</span> <span class="math display">=0.025</span></p>
+</section>
+<section id="a-new-observed-statistic" class="slide level2 center">
+<h2>A new observed statistic</h2>
+<p>What to do with two p-hats? Take the difference!</p>
+<ul>
+<li><span class="math inline">\hat{p}_G = \frac{40}{257} = 0.156</span></li>
+<li><span class="math inline">\hat{p}_{NG} = \frac{34}{1384} = 0.025</span></li>
+</ul>
+<p>New observed statistic:</p>
+<p><span class="math display">\hat{p}_G - \hat{p}_{NG} = 0.156-0.025 = 0.131</span></p>
+<div class="fragment">
+<p>Note: The order in which the p-hats are subtracted does not matter- but it will affect your interpretation</p>
+</div>
+</section>
+<section id="interpreting-the-new-p-hat" class="slide level2 center">
+<h2>Interpreting the new p-hat</h2>
+<div>
+<ul>
+<li class="fragment"><p><span class="math inline">\hat{p}_G - \hat{p}_{NG} = 0.131</span>: “The proportion of deaths was 13.1% higher when Gilbert was working than when she was not working”</p></li>
+<li class="fragment"><p><span class="math inline">\hat{p}_{NG} - \hat{p}_{G} = -0.131</span>: “The proportion of deaths was 13.1% lower when Gilbert was not working than when she was working”</p></li>
+</ul>
+</div>
+</section>
+<section id="relative-risk" class="slide level2 center">
+<h2>Relative Risk</h2>
+<p>The ratio between two conditional proportions</p>
+<ul>
+<li>“How many times as large is the risk of an outcome for one group comparted to another?”</li>
+</ul>
+</section>
+<section id="relative-risk-1" class="slide level2 center">
+<h2>Relative Risk</h2>
+<p>To calculate relative risk, divide the conditional proportions</p>
+<p><span class="math display">\frac{\hat{p}_G}{\hat{p}_{NG}} = \frac{0.15}{0.025} = 7.5</span></p>
+<p>“The proportion of deaths during a Gilbert shift is 7.5 times larger than during a non-Gilbert shift.”</p>
+<div class="fragment">
+<p>What would we expect relative risk to be if there is no difference between the two groups?</p>
+</div>
+</section>
+<section id="drawing-conclusions" class="slide level2 center">
+<h2>Drawing Conclusions</h2>
+<ul>
+<li><p>Was the difference in proportions surprising?</p></li>
+<li><p>How about relative risk?</p></li>
+<li><p>What do they tell us in this scenario?</p></li>
+<li><p>What might you report to the jury?</p></li>
+</ul>
+<div class="fragment">
+<p>“She appears guilty, the difference in proportions was not zero, and the relative risk was higher than 1.”</p>
+</div>
+</section>
+<section id="drawing-conclusions-1" class="slide level2 center">
+<h2>Drawing Conclusions</h2>
+<ul>
+<li><p>Given the scenario, can we say Gilbert <em>caused</em> the deaths?</p>
+<ul>
+<li>Hint: Think back to chapter 4!</li>
+</ul></li>
+<li><p>Come up with an alternative explanation for the difference in proportion between the two groups</p></li>
+</ul>
 
 <div class="quarto-auto-generated-content">
 <p><img src="logo.jpg" class="slide-logo"></p>

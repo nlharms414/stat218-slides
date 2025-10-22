@@ -167,7 +167,86 @@ Calculates the probability of success within each [explanatory variable group]{.
 
 ```{mermaid}
 flowchart LR
-  A(Population: All 8-hr shifts) --> B(Sample: n=1,641 observed shifts)
-  B --> C("$$n=5$$")
+  A(Population: All 8-hr shifts) --> B(Sample: 
+                                       n = 1,641 observed shifts)
+  B -->|"$${n}_G=257$$"| C("$$\hat{p}_G=\frac{40}{257}=0.156$$")
+  B -->|"$${n}_{NG}=1384$$"| D("$$\hat{p}_{NG}=\frac{34}{1384}=0.025$$")
 ```
 
+-   "G" = Gilbert shift
+-   "NG" = Non-Gilbert shift
+
+## Conditional Proportions {.center}
+
+$$\hat{p}_G=\frac{Patient\: died\: a\: shift\: Gilbert\: worked}{Total\: shifts\: Gilbert\: worked}$$
+$$=\frac{40}{257}$$
+$$=0.156$$
+
+## Conditional Proportions {.center}
+
+$$\hat{p}_{NG}=\frac{Patient\: died\: a\: shift\: Gilbert\: did\: not\: work}{Total\: shifts\: Gilbert\: did\: not\: work}$$
+$$=\frac{34}{1384}$$
+$$=0.025$$
+
+## A new observed statistic {.center}
+
+What to do with two p-hats? Take the difference!
+
+-   $\hat{p}_G = \frac{40}{257} = 0.156$
+-   $\hat{p}_{NG} = \frac{34}{1384} = 0.025$
+
+New observed statistic:
+
+$$\hat{p}_G - \hat{p}_{NG} = 0.156-0.025 = 0.131$$
+
+. . . 
+
+Note: The order in which the p-hats are subtracted does not matter- but it will affect your interpretation
+
+## Interpreting the new p-hat {.center}
+
+::: incremental
+-   $\hat{p}_G - \hat{p}_{NG} = 0.131$: "The proportion of deaths was 13.1% higher when Gilbert was working than when she was not working"
+
+-   $\hat{p}_{NG} - \hat{p}_{G} = -0.131$: "The proportion of deaths was 13.1% lower when Gilbert was not working than when she was working"
+:::
+
+## Relative Risk {.center}
+
+The ratio between two conditional proportions
+
+-   "How many times as large is the risk of an outcome for one group comparted to another?"
+
+## Relative Risk {.center}
+
+To calculate relative risk, divide the conditional proportions
+
+$$\frac{\hat{p}_G}{\hat{p}_{NG}} = \frac{0.15}{0.025} = 7.5$$
+
+"The proportion of deaths during a Gilbert shift is 7.5 times larger than during a non-Gilbert shift."
+
+. . .
+
+What would we expect relative risk to be if there is no difference between the two groups?
+
+## Drawing Conclusions {.center}
+
+-   Was the difference in proportions surprising? 
+
+-   How about relative risk?
+
+-   What do they tell us in this scenario?
+
+-   What might you report to the jury? 
+
+. . .
+
+"She appears guilty, the difference in proportions was not zero, and the relative risk was higher than 1."
+
+## Drawing Conclusions {.center}
+
+-   Given the scenario, can we say Gilbert *caused* the deaths?
+
+    -   Hint: Think back to chapter 4!
+    
+-   Come up with an alternative explanation for the difference in proportion between the two groups
