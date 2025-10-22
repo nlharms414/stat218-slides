@@ -2580,6 +2580,13 @@
     "href": "slides/Chapter 05/section5.1.html#conditional-proportions",
     "title": "Section 5.1",
     "section": "Conditional Proportions",
-    "text": "Conditional Proportions"
+    "text": "Conditional Proportions\n\n\n\n\n\nflowchart LR\n  A(Population: All 8-hr shifts) --&gt; B(Sample: n=1,641 observed shifts)\n  B --&gt; C(\"$$n=5$$\")"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#conditional-proportion",
+    "href": "slides/Chapter 05/section5.1.html#conditional-proportion",
+    "title": "Section 5.1",
+    "section": "Conditional Proportion",
+    "text": "Conditional Proportion\nCalculates the probability of success within each explanatory variable group"
   }
 ]

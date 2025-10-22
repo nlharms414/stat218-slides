@@ -337,6 +337,10 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11.12.0/dist/mermaid.min.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -537,8 +541,26 @@
 <p><span class="math display">\hat{p}=\frac{Total\:shifts\:a\:patient\:died}{Total\:sample\:size}</span></p>
 <p>But, this isn’t super helpful!</p>
 </section>
+<section id="conditional-proportion" class="slide level2 center">
+<h2>Conditional Proportion</h2>
+<p>Calculates the probability of success within each <span class="center">explanatory variable group</span></p>
+</section>
 <section id="conditional-proportions" class="slide level2 center">
 <h2>Conditional Proportions</h2>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  A(Population: All 8-hr shifts) --&gt; B(Sample: n=1,641 observed shifts)
+  B --&gt; C("$$n=5$$")
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 
 <div class="quarto-auto-generated-content">
 <p><img src="logo.jpg" class="slide-logo"></p>

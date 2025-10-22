@@ -10,6 +10,9 @@ format:
     html-math-method: katex
     logo: logo.jpg
     slide-number: true
+    include-in-header:
+      text: |
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@11.12.0/dist/mermaid.min.js"></script>
 editor: visual
 ---
 
@@ -156,5 +159,15 @@ $$\hat{p}=\frac{Total\:shifts\:a\:patient\:died}{Total\:sample\:size}$$
 
 But, this isn't super helpful!
 
+## Conditional Proportion {.center}
+
+Calculates the probability of success within each [explanatory variable group]{.center}
+
 ## Conditional Proportions {.center}
+
+```{mermaid}
+flowchart LR
+  A(Population: All 8-hr shifts) --> B(Sample: n=1,641 observed shifts)
+  B --> C("$$n=5$$")
+```
 
