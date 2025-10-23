@@ -253,7 +253,7 @@ No random assignment:
 
 -   Observational study
 
--   Can only determine causation
+-   Can only determine association
 :::
 :::::
 
@@ -261,7 +261,7 @@ No random assignment:
 
 ![](images/2_diagram.png){fig-alt="Diagram that combines the 'random assignment visual\" and \"random sample visual\". Graphic explains that if sampling is random then you can generalize your results to the population. If assignment is random, then causation can be determined. Otherwise, only association can be determined." fig-align="center"}
 
-## Summary Table {.center style="font-size: 32px"}
+## Summary Table {.center style="font-size: 31px"}
 
 |  |  |  |
 |:----------------------:|:----------------------:|:----------------------:|
