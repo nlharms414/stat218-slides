@@ -288,7 +288,11 @@ $$=(0.109,0.825)$$
 
 "We are 95% confident that the long run difference in proportions of people with improved depression symptoms between the dolphin group and the control group is between 0.109 and 0.825."
 
-## Is Yawning Contaigous? {.center}
+# Is Yawning Contaigous? {.center}
+
+-   Work through question 9 with a partner/group
+
+-   We will work through the questions that use the Applet together
 
 
 
