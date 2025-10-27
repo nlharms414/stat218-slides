@@ -12,3 +12,9 @@ format:
     slide-number: true
 editor: visual
 ---
+
+## Section 5.3 Learning Objectives {.center}
+
+-   Identify when a theory-based approach can be used to find a p-value or confidence interval when comparing two categorical variables.
+
+-   Understand how confidence level and sample size impact the confidence interval for the difference between two proportions.

@@ -30,6 +30,22 @@
     }
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -328,13 +344,288 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Section 5.2</h1>
+  <p class="subtitle">Comparing Two Groups: Categorical Response</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
+<section id="section-5.2-learning-objectives" class="slide level2 center">
+<h2>Section 5.2 Learning Objectives</h2>
+<ul>
+<li><p>Know how to set up a null and alternative hypothesis comparing two levels of an explanatory variable when comparing two categorical variables</p></li>
+<li><p>Find and interpret the standardized statistic and the p-value for a test of two proportions.</p></li>
+<li><p>Use the 2SD method to calculate a 95% confidence interval for a difference in the long-run proportion of success for two treatment groups, and interpret what the interval means in the context of the problem.</p></li>
+</ul>
+</section>
+<section id="s-strategy-statistic" class="slide level2 center">
+<h2>3S Strategy: Statistic</h2>
+<p>First, we need a statistic. What is it that we’re interested in?</p>
+<ul>
+<li><p><u><strong>Parameter:</strong></u> The difference in long run proportions between two groups</p>
+<ul>
+<li><span class="math inline">\mu_{Group\:1} - \mu_{Group\:2}</span></li>
+</ul></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><p><u><strong>Observed Statistic:</strong></u> The difference in conditional proportions</p>
+<ul>
+<li><span class="math inline">\hat{p}_{Group\:1} - \hat{p}_{Group\:2}</span></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="s-strategy-simulate-strength-of-evidence" class="slide level2 center">
+<h2>3S Strategy: Simulate &amp; Strength of Evidence</h2>
+<p>Next, we simulate to gather strength of evidence in favor of <span class="math inline">H_A</span></p>
+<ul>
+<li><p>Null Hypothesis: There is no difference between the long run proportions of two groups</p></li>
+<li><p>Alt. Hypothesis: There is a difference between the long run proportions of two groups</p></li>
+</ul>
+</section>
+<section id="s-strategy-simulate-strength-of-evidence-1" class="slide level2 center">
+<h2>3S Strategy: Simulate &amp; Strength of Evidence</h2>
+<p>In symbols:</p>
+<ul>
+<li><p><span class="math inline">H_0: \mu_{Group\:1} - \mu_{Group\:2} = 0</span></p></li>
+<li><p><span class="math inline">H_A: \mu_{Group\:1} - \mu_{Group\:2} &gt;,&lt;,\neq 0</span></p></li>
+</ul>
+</section>
+<section>
+<section id="example" class="title-slide slide level1 center">
+<h1>Example</h1>
+
+</section>
+<section id="swimming-with-dolphins" class="slide level2 center">
+<h2>Swimming with Dolphins</h2>
+<p>Researchers wanted to study the effects of dolphins on people with depression. 30 participants were split into two groups: a group that swam with dolphins, and another group that swam without. Afterwards it was recorded whether or not each person noticed an improvement in their depression symptoms.</p>
+</section>
+<section id="swimming-with-dolphins-1" class="slide level2 center">
+<h2>Swimming with Dolphins</h2>
+<ul>
+<li><p>What’s the research question? <span class="fragment"><strong>Do dolphins help improve depression symptoms?</strong></span></p></li>
+<li><p>What’s the explanatory variable? <span class="fragment"><strong>Swimming with or without dolphins</strong></span></p></li>
+<li><p>Whats the response variable? <span class="fragment"><strong>Improvement in depression symptoms or not</strong></span></p></li>
+</ul>
+</section>
+<section id="swimming-with-dolphins-2" class="slide level2 center">
+<h2>Swimming with Dolphins</h2>
+<p><span class="math inline">\pi =</span> The long run proportion of people who see an improvement in their depression symptoms</p>
+<ul>
+<li>Each group in the study has a <span class="math inline">\pi</span></li>
+</ul>
+<div>
+<ul>
+<li class="fragment"><p><span class="math inline">\pi_{Dolphin}=</span> Long run proportion of people who swam with dolphins that saw an improvement in their depression symptoms</p></li>
+<li class="fragment"><p><span class="math inline">\pi_{Control}=</span> Long run proportion of people who did not swim with dolphins that saw an improvement in their depression symptoms</p></li>
+</ul>
+</div>
+</section>
+<section id="swimming-with-dolphins-3" class="slide level2 center">
+<h2>Swimming with Dolphins</h2>
+<p>We’re interested in the <em>difference</em> between those two proportions.</p>
+<ul>
+<li><p>Parameter: <span class="math inline">\pi_d - \pi_c</span></p></li>
+<li><p>The <em>difference in long run proportions of improved depression symptoms</em> between those who swam with dolphins and those who didn’t</p></li>
+</ul>
+</section>
+<section id="swimming-with-dolphins-4" class="slide level2 center">
+<h2>Swimming with Dolphins</h2>
+<p>Hypotheses:</p>
+<ul>
+<li><p><span class="math inline">H_0: \pi_d - \pi_c = 0</span></p></li>
+<li><p><span class="math inline">H_A: \pi_d - \pi_c &gt; 0</span></p></li>
+</ul>
+<div class="fragment">
+<p>Technically, we could also write <span class="math inline">H_A</span> as: <span class="math inline">H_A: \pi_c - \pi_d &lt; 0</span>. Why?</p>
+</div>
+</section>
+<section id="p-value" class="slide level2 center">
+<h2>P-value</h2>
+<p>Our p-value definition gets modified slightly, but the overall concept is the same:</p>
+<div class="fragment">
+<ul>
+<li><u><strong>P-value:</strong></u> How likely we are to observe a difference in conditional proportions <strong>as or more extreme</strong> than the one we saw in the data, <strong>assuming the null distribution is true</strong></li>
+</ul>
+</div>
+</section>
+<section id="p-value-1" class="slide level2 center">
+<h2>P-value</h2>
+<p>The same rules apply for rejecting/failing to reject the null</p>
+<ul>
+<li><p>If p-value is less than the significance level (<span class="math inline">\alpha</span>), reject <span class="math inline">H_0</span></p></li>
+<li><p>If p-value is greater than the significance level, fail to reject <span class="math inline">H_0</span></p></li>
+</ul>
+</section></section>
+<section>
+<section id="strength-of-evidence" class="title-slide slide level1 center">
+<h1>Strength of Evidence</h1>
+
+</section>
+<section id="finding-strength-of-evidence-3-methods" class="slide level2">
+<h2>Finding Strength of Evidence (3 Methods)</h2>
+<ul>
+<li><p>Same three methods to find strength of evidence</p></li>
+<li><p>Minor changes, but the concepts are the same</p></li>
+<li><p>Three methods:</p>
+<ul>
+<li><p>P-value</p></li>
+<li><p>Standardized statistic (SS)</p></li>
+<li><p>Confidence intervals (CI)</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="two-proportion-applet" class="slide level2 center">
+<h2>Two Proportion Applet</h2>
+<p>We’ve got yet another applet: <a href="https://www.isi-stats.com/isi2nd/ISIapplets2020.html">Two Proportion Applet</a></p>
+<ul>
+<li><p>This applet is similar to the One Proportion Applet</p></li>
+<li><p>We will use it to:</p>
+<ul>
+<li><p>Simulate a null distribution for the difference in two proportions</p></li>
+<li><p>Find a p-value</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="two-proportion-applet-1" class="slide level2 center">
+<h2>Two Proportion Applet</h2>
+<div class="columns">
+<div class="column" style="width:62%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/2_applet.png" class="quarto-figure quarto-figure-center" alt="Two proportion applet. On the left, a two-way table is used to input data from a given problem. On the right, the data is displayed in a bar-graph format. Below the bar graph, another two-way table displays the conditional proportions for each group (0.667 for group A and 0.2 for group B). At the bottom right, the difference between the observed proportions is given (0.467)."></p>
+</figure>
+</div>
+</div><div class="column" style="width:38%;">
+<p><br><br></p>
+<ul>
+<li><p><span class="math inline">\hat{p}_D=\frac{10}{15}=0.667</span></p></li>
+<li><p><span class="math inline">\hat{p}_C=\frac{3}{15}=0.2</span></p></li>
+</ul>
+</div></div>
+</section>
+<section id="simulating-a-null-distribution" class="slide level2 center">
+<h2>Simulating a Null Distribution</h2>
+
+<img data-src="images/2_appletnull.png" class="quarto-figure quarto-figure-center r-stretch" alt="Screen shot of two proportion applet. The left side of the image displays an option for the number of shuffles (experiment repetitions) using the provided data. On the right, a null distribution is shown which displays the simulated difference in conditional proportions for each shuffle. A mean and standard deviation is also given."></section>
+<section id="finding-the-p-value" class="slide level2 center">
+<h2>Finding the P-value</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/2_appletpval.png" class="quarto-figure quarto-figure-center" alt="The same null distribution as the previous slide. A p-value is calculated based on the observed statistic (0.467), by counting how many of the simulated observed statistics are equal to or more extreme than the actual observed statistic. The p-value is calculated as 0.0099."></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<p><br><br><br></p>
+<p>Given our observed statistic, how many simulated values are as or more extreme?</p>
+</div></div>
+</section>
+<section id="finding-the-p-value-1" class="slide level2 center">
+<h2>Finding the P-value</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/2_appletpval.png" class="quarto-figure quarto-figure-center" alt="The same null distribution as the previous slide. A p-value is calculated based on the observed statistic (0.467), by counting how many of the simulated observed statistics are equal to or more extreme than the actual observed statistic. The p-value is calculated as 0.0099."></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<p>Observed statistic:</p>
+<p><span class="math display">\hat{p}_D-\hat{p}_C</span> <span class="math display">= 0.667-0.2</span> <span class="math display">=0.467</span></p>
+<p>At a significance level of 0.05, reject <span class="math inline">H_0</span></p>
+</div></div>
+</section>
+<section id="standardized-statistic-ss" class="slide level2 center">
+<h2>Standardized Statistic (SS)</h2>
+<p>General form:</p>
+<p><span class="math display">SS=\frac{Observed\: Statistic - Hypothesized\: Value}{Standard\: Deviation\: under\: the\: null}</span></p>
+<p><span class="math display">=\frac{(\hat{p}_1-\hat{p}_2)-0}{SD\: from\: Applet}</span></p>
+</section>
+<section id="standardized-statistic-ss-1" class="slide level2 center">
+<h2>Standardized Statistic (SS)</h2>
+<p>Same conclusions as before</p>
+<ul>
+<li><p>Outside the 2s, reject the null (strong evidence)</p></li>
+<li><p>Inside the 2s, fail to reject the null (weak evidence)</p></li>
+</ul>
+</section>
+<section id="conclusion" class="slide level2 center">
+<h2>Conclusion</h2>
+<p>“We (<strong>do/do not</strong>) have strong evidence to conclude that the long run difference in proportions of (<strong>context</strong>) between group 1 and group 2 is (<strong>less than/greater than/not equal to</strong>) zero.”</p>
+</section>
+<section id="using-the-applet-for-ss" class="slide level2 center">
+<h2>Using the Applet for SS</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/2_appletpval.png" class="quarto-figure quarto-figure-center" alt="The same null distribution as the previous slide. A p-value is calculated based on the observed statistic (0.467), by counting how many of the simulated observed statistics are equal to or more extreme than the actual observed statistic. The p-value is calculated as 0.0099."></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<p><br><br></p>
+<p><span class="math display">SS = \frac{\hat{p}_D-\hat{p}_C-0}{SD\: from\: Applet}</span> <span class="math display">=\frac{0.467}{0.179}</span> <span class="math display">=2.61</span></p>
+</div></div>
+</section>
+<section id="confidence-intervals-ci" class="slide level2 center">
+<h2>Confidence Intervals (CI)</h2>
+<p>2SD Confidence Interval:</p>
+<p><span class="math display">CI=(Lower\: Bound,\: Upper\: Bound)</span></p>
+<p><span class="math display">=Observed\: Statistic\: ± Margin\: of\: Error</span></p>
+<p><span class="math display">CI = (\hat{p}_1-\hat{p}_2) ± 2*(SD\: from\: Applet)</span></p>
+</section>
+<section id="sd-ci-interpretation" class="slide level2 center">
+<h2>2SD CI Interpretation</h2>
+<p>“We are 95% confident that the long run difference in proportion of (<strong>context</strong>) between group 1 and group 2 is between (<strong>lower bound</strong>) and (<strong>upper bound</strong>).”</p>
+</section>
+<section id="conclusions-based-on-ci" class="slide level2 center">
+<h2>Conclusions based on CI</h2>
+<p>Recall previously:</p>
+<ul>
+<li><p>If the hypothesized parameter value is IN the confidence interval, fail to reject <span class="math inline">H_0</span></p></li>
+<li><p>If the hypothesized parameter value is OUTSIDE the confidence interval, fail to reject <span class="math inline">H_0</span></p></li>
+</ul>
+</section>
+<section id="conclusions-based-on-ci-1" class="slide level2 center">
+<h2>Conclusions based on CI</h2>
+<p>Our hypothesized parameter value is <em>always</em> zero, therefore…</p>
+<ul>
+<li><p>If 0 is IN the interval, fail to reject <span class="math inline">H_0</span></p>
+<ul>
+<li>It’s possible the groups are the same</li>
+</ul></li>
+</ul>
+</section>
+<section id="conclusions-based-on-ci-2" class="slide level2 center">
+<h2>Conclusions based on CI</h2>
+<p>Our hypothesized parameter value is <em>always</em> zero, therefore…</p>
+<ul>
+<li><p>If 0 is OUTSIDE the interval, reject <span class="math inline">H_0</span></p>
+<ul>
+<li>The groups are different</li>
+</ul></li>
+</ul>
+</section>
+<section id="swimming-with-dolphins-5" class="slide level2 center">
+<h2>Swimming with Dolphins</h2>
+<ul>
+<li><p>Observed statistic: <span class="math inline">\hat{p}_D-\hat{p}_C=0.467</span></p></li>
+<li><p>Simulated SD = <span class="math inline">0.179</span></p></li>
+<li><p>Confidence interval:</p></li>
+</ul>
+<p><span class="math display">(\hat{p}_1-\hat{p}_2) ± 2*(SD\: from\: Applet)</span></p>
+<p><span class="math display">(0.467) ± 2*(0.179)</span></p>
+<p><span class="math display">=(0.109,0.825)</span></p>
+</section>
+<section id="conclusion-in-context" class="slide level2 center">
+<h2>Conclusion in Context</h2>
+<p>“We are 95% confident that the long run difference in proportions of people with improved depression symptoms between the dolphin group and the control group is between 0.109 and 0.825.”</p>
+</section>
+<section id="is-yawning-contaigous" class="slide level2 center">
+<h2>Is Yawning Contaigous?</h2>
 
 <div class="quarto-auto-generated-content">
 <p><img src="logo.jpg" class="slide-logo"></p>
@@ -342,7 +633,7 @@
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
@@ -360,7 +651,6 @@
   <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -528,27 +818,9 @@
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom

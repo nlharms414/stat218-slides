@@ -2644,5 +2644,215 @@
     "title": "Section 5.1",
     "section": "Drawing Conclusions",
     "text": "Drawing Conclusions\n\nGiven the scenario, can we say Gilbert caused the deaths?\n\nHint: Think back to chapter 4!\n\nCome up with an alternative explanation for the difference in proportion between the two groups"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#section-5.2-learning-objectives",
+    "href": "slides/Chapter 05/section5.2.html#section-5.2-learning-objectives",
+    "title": "Section 5.2",
+    "section": "Section 5.2 Learning Objectives",
+    "text": "Section 5.2 Learning Objectives\n\nKnow how to set up a null and alternative hypothesis comparing two levels of an explanatory variable when comparing two categorical variables\nFind and interpret the standardized statistic and the p-value for a test of two proportions.\nUse the 2SD method to calculate a 95% confidence interval for a difference in the long-run proportion of success for two treatment groups, and interpret what the interval means in the context of the problem."
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#s-strategy-statistic",
+    "href": "slides/Chapter 05/section5.2.html#s-strategy-statistic",
+    "title": "Section 5.2",
+    "section": "3S Strategy: Statistic",
+    "text": "3S Strategy: Statistic\nFirst, we need a statistic. What is it that we’re interested in?\n\nParameter: The difference in long run proportions between two groups\n\n\\mu_{Group\\:1} - \\mu_{Group\\:2}\n\n\n\n\nObserved Statistic: The difference in conditional proportions\n\n\\hat{p}_{Group\\:1} - \\hat{p}_{Group\\:2}"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#s-strategy-simulate-strength-of-evidence",
+    "href": "slides/Chapter 05/section5.2.html#s-strategy-simulate-strength-of-evidence",
+    "title": "Section 5.2",
+    "section": "3S Strategy: Simulate & Strength of Evidence",
+    "text": "3S Strategy: Simulate & Strength of Evidence\nNext, we simulate to gather strength of evidence in favor of H_A\n\nNull Hypothesis: There is no difference between the long run proportions of two groups\nAlt. Hypothesis: There is a difference between the long run proportions of two groups"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#s-strategy-simulate-strength-of-evidence-1",
+    "href": "slides/Chapter 05/section5.2.html#s-strategy-simulate-strength-of-evidence-1",
+    "title": "Section 5.2",
+    "section": "3S Strategy: Simulate & Strength of Evidence",
+    "text": "3S Strategy: Simulate & Strength of Evidence\nIn symbols:\n\nH_0: \\mu_{Group\\:1} - \\mu_{Group\\:2} = 0\nH_A: \\mu_{Group\\:1} - \\mu_{Group\\:2} &gt;,&lt;,\\neq 0"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#swimming-with-dolphins",
+    "href": "slides/Chapter 05/section5.2.html#swimming-with-dolphins",
+    "title": "Section 5.2",
+    "section": "Swimming with Dolphins",
+    "text": "Swimming with Dolphins\nResearchers wanted to study the effects of dolphins on people with depression. 30 participants were split into two groups: a group that swam with dolphins, and another group that swam without. Afterwards it was recorded whether or not each person noticed an improvement in their depression symptoms."
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-1",
+    "href": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-1",
+    "title": "Section 5.2",
+    "section": "Swimming with Dolphins",
+    "text": "Swimming with Dolphins\n\nWhat’s the research question? Do dolphins help improve depression symptoms?\nWhat’s the explanatory variable? Swimming with or without dolphins\nWhats the response variable? Improvement in depression symptoms or not"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-2",
+    "href": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-2",
+    "title": "Section 5.2",
+    "section": "Swimming with Dolphins",
+    "text": "Swimming with Dolphins\n\\pi = The long run proportion of people who see an improvement in their depression symptoms\n\nEach group in the study has a \\pi\n\n\n\n\\pi_{Dolphin}= Long run proportion of people who swam with dolphins that saw an improvement in their depression symptoms\n\\pi_{Control}= Long run proportion of people who did not swim with dolphins that saw an improvement in their depression symptoms"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-3",
+    "href": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-3",
+    "title": "Section 5.2",
+    "section": "Swimming with Dolphins",
+    "text": "Swimming with Dolphins\nWe’re interested in the difference between those two proportions.\n\nParameter: \\pi_d - \\pi_c\nThe difference in long run proportions of improved depression symptoms between those who swam with dolphins and those who didn’t"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-4",
+    "href": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-4",
+    "title": "Section 5.2",
+    "section": "Swimming with Dolphins",
+    "text": "Swimming with Dolphins\nHypotheses:\n\nH_0: \\pi_d - \\pi_c = 0\nH_A: \\pi_d - \\pi_c &gt; 0\n\n\nTechnically, we could also write H_A as: H_A: \\pi_c - \\pi_d &lt; 0. Why?"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#p-value",
+    "href": "slides/Chapter 05/section5.2.html#p-value",
+    "title": "Section 5.2",
+    "section": "P-value",
+    "text": "P-value\nOur p-value definition gets modified slightly, but the overall concept is the same:\n\n\nP-value: How likely we are to observe a difference in conditional proportions as or more extreme than the one we saw in the data, assuming the null distribution is true"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#p-value-1",
+    "href": "slides/Chapter 05/section5.2.html#p-value-1",
+    "title": "Section 5.2",
+    "section": "P-value",
+    "text": "P-value\nThe same rules apply for rejecting/failing to reject the null\n\nIf p-value is less than the significance level (\\alpha), reject H_0\nIf p-value is greater than the significance level, fail to reject H_0"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#two-proportion-applet",
+    "href": "slides/Chapter 05/section5.2.html#two-proportion-applet",
+    "title": "Section 5.2",
+    "section": "Two Proportion Applet",
+    "text": "Two Proportion Applet\nWe’ve got yet another applet: Two Proportion Applet\n\nThis applet is similar to the One Proportion Applet\nWe will use it to:\n\nSimulate a null distribution for the difference in two proportions\nFind a p-value"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#two-proportion-applet-1",
+    "href": "slides/Chapter 05/section5.2.html#two-proportion-applet-1",
+    "title": "Section 5.2",
+    "section": "Two Proportion Applet",
+    "text": "Two Proportion Applet\n\n\n\n\n\n\n\n\n\n\n\\hat{p}_D=\\frac{10}{15}=0.667\n\\hat{p}_C=\\frac{3}{15}=0.2"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#simulating-a-null-distribution",
+    "href": "slides/Chapter 05/section5.2.html#simulating-a-null-distribution",
+    "title": "Section 5.2",
+    "section": "Simulating a Null Distribution",
+    "text": "Simulating a Null Distribution"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#finding-the-p-value",
+    "href": "slides/Chapter 05/section5.2.html#finding-the-p-value",
+    "title": "Section 5.2",
+    "section": "Finding the P-value",
+    "text": "Finding the P-value\n\n\n\n\n\n\n\n\n\nGiven our observed statistic, how many simulated values are as or more extreme?"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#finding-the-p-value-1",
+    "href": "slides/Chapter 05/section5.2.html#finding-the-p-value-1",
+    "title": "Section 5.2",
+    "section": "Finding the P-value",
+    "text": "Finding the P-value\n\n\n\n\n\n\n\n\nObserved statistic:\n\\hat{p}_D-\\hat{p}_C = 0.667-0.2 =0.467\nAt a significance level of 0.05, reject H_0"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#standardized-statistic-ss",
+    "href": "slides/Chapter 05/section5.2.html#standardized-statistic-ss",
+    "title": "Section 5.2",
+    "section": "Standardized Statistic (SS)",
+    "text": "Standardized Statistic (SS)\nGeneral form:\nSS=\\frac{Observed\\: Statistic - Hypothesized\\: Value}{Standard\\: Deviation\\: under\\: the\\: null}\n=\\frac{(\\hat{p}_1-\\hat{p}_2)-0}{SD\\: from\\: Applet}"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#standardized-statistic-ss-1",
+    "href": "slides/Chapter 05/section5.2.html#standardized-statistic-ss-1",
+    "title": "Section 5.2",
+    "section": "Standardized Statistic (SS)",
+    "text": "Standardized Statistic (SS)\nSame conclusions as before\n\nOutside the 2s, reject the null (strong evidence)\nInside the 2s, fail to reject the null (weak evidence)"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#conclusion",
+    "href": "slides/Chapter 05/section5.2.html#conclusion",
+    "title": "Section 5.2",
+    "section": "Conclusion",
+    "text": "Conclusion\n“We (do/do not) have strong evidence to conclude that the long run difference in proportions of (context) between group 1 and group 2 is (less than/greater than/not equal to) zero.”"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#using-the-applet-for-ss",
+    "href": "slides/Chapter 05/section5.2.html#using-the-applet-for-ss",
+    "title": "Section 5.2",
+    "section": "Using the Applet for SS",
+    "text": "Using the Applet for SS\n\n\n\n\n\n\n\n\n\nSS = \\frac{\\hat{p}_D-\\hat{p}_C-0}{SD\\: from\\: Applet} =\\frac{0.467}{0.179} =2.61"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#finding-strength-of-evidence-3-methods",
+    "href": "slides/Chapter 05/section5.2.html#finding-strength-of-evidence-3-methods",
+    "title": "Section 5.2",
+    "section": "Finding Strength of Evidence (3 Methods)",
+    "text": "Finding Strength of Evidence (3 Methods)\n\nSame three methods to find strength of evidence\nMinor changes, but the concepts are the same\nThree methods:\n\nP-value\nStandardized statistic (SS)\nConfidence intervals (CI)"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#confidence-intervals-ci",
+    "href": "slides/Chapter 05/section5.2.html#confidence-intervals-ci",
+    "title": "Section 5.2",
+    "section": "Confidence Intervals (CI)",
+    "text": "Confidence Intervals (CI)\n2SD Confidence Interval:\nCI=(Lower\\: Bound,\\: Upper\\: Bound)\n=Observed\\: Statistic\\: ± Margin\\: of\\: Error\nCI = (\\hat{p}_1-\\hat{p}_2) ± 2*(SD\\: from\\: Applet)"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#confidence-intervals-ci-for-two-proportions",
+    "href": "slides/Chapter 05/section5.2.html#confidence-intervals-ci-for-two-proportions",
+    "title": "Section 5.2",
+    "section": "Confidence Intervals (CI) for Two Proportions",
+    "text": "Confidence Intervals (CI) for Two Proportions\nCI = (\\hat{p}_1-\\hat{p}_2) ± 2*(SD\\: from\\: Applet)"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#sd-ci-interpretation",
+    "href": "slides/Chapter 05/section5.2.html#sd-ci-interpretation",
+    "title": "Section 5.2",
+    "section": "2SD CI Interpretation",
+    "text": "2SD CI Interpretation\n“We are 95% confident that the long run difference in proportion of (context) between group 1 and group 2 is between (lower bound) and (upper bound).”"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#conclusions-based-on-ci",
+    "href": "slides/Chapter 05/section5.2.html#conclusions-based-on-ci",
+    "title": "Section 5.2",
+    "section": "Conclusions based on CI",
+    "text": "Conclusions based on CI\nRecall previously:\n\nIf the hypothesized parameter value is IN the confidence interval, fail to reject H_0\nIf the hypothesized parameter value is OUTSIDE the confidence interval, fail to reject H_0"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#conclusions-based-on-ci-1",
+    "href": "slides/Chapter 05/section5.2.html#conclusions-based-on-ci-1",
+    "title": "Section 5.2",
+    "section": "Conclusions based on CI",
+    "text": "Conclusions based on CI\nOur hypothesized parameter value is always zero, therefore…\n\nIf 0 is IN the interval, fail to reject H_0\n\nIt’s possible the groups are the same"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#conclusions-based-on-ci-2",
+    "href": "slides/Chapter 05/section5.2.html#conclusions-based-on-ci-2",
+    "title": "Section 5.2",
+    "section": "Conclusions based on CI",
+    "text": "Conclusions based on CI\nOur hypothesized parameter value is always zero, therefore…\n\nIf 0 is OUTSIDE the interval, reject H_0\n\nThe groups are different"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-5",
+    "href": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-5",
+    "title": "Section 5.2",
+    "section": "Swimming with Dolphins",
+    "text": "Swimming with Dolphins\n\nObserved statistic: \\hat{p}_D-\\hat{p}_C=0.467\nSimulated SD = 0.179\nConfidence interval:\n\n(\\hat{p}_1-\\hat{p}_2) ± 2*(SD\\: from\\: Applet)\n(0.467) ± 2*(0.179)\n=(0.109,0.825)"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#conclusion-in-context",
+    "href": "slides/Chapter 05/section5.2.html#conclusion-in-context",
+    "title": "Section 5.2",
+    "section": "Conclusion in Context",
+    "text": "Conclusion in Context\n“We are 95% confident that the long run difference in proportions of people with improved depression symptoms between the dolphin group and the control group is between 0.109 and 0.825.”"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#is-yawning-contaigous",
+    "href": "slides/Chapter 05/section5.2.html#is-yawning-contaigous",
+    "title": "Section 5.2",
+    "section": "Is Yawning Contaigous?",
+    "text": "Is Yawning Contaigous?"
   }
 ]
