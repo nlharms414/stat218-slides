@@ -134,8 +134,6 @@ It was found that Gilbert worked 257 of the 1,641 shifts, and at least one perso
 
 Now, out of the 74 shifts where at least one person died, we find that 40 were shifts Gilbert worked, and 34 were not.
 
-. . .
-
 -   Now does this seem like more reasonable evidence?
 
 -   Can we simply compare the numbers 34 and 40?
