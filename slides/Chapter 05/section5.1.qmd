@@ -92,6 +92,8 @@ For several years in the 1990s, Kristen Gilbert worked as a nurse in the intensi
 
 ::::: columns
 ::: {.column width="50%"}
+<br><br>
+
 Let's identify the following:
 
 -   Obsevational units
