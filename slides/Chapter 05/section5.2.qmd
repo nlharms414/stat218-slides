@@ -1,6 +1,6 @@
 ---
 title: "Section 5.2"
-subtitle: "Comparing Two Groups: Categorical Response"
+subtitle: "Comparing Two Proportions: Simulation-Based Approach"
 format: 
   revealjs: 
     chalkboard: true
