@@ -463,7 +463,7 @@
 <h1>Strength of Evidence</h1>
 
 </section>
-<section id="finding-strength-of-evidence-3-methods" class="slide level2">
+<section id="finding-strength-of-evidence-3-methods" class="slide level2 center">
 <h2>Finding Strength of Evidence (3 Methods)</h2>
 <ul>
 <li><p>Same three methods to find strength of evidence</p></li>
@@ -485,8 +485,61 @@
 <ul>
 <li><p>Simulate a null distribution for the difference in two proportions</p></li>
 <li><p>Find a p-value</p></li>
+<li><p>Obtain a standard deviation for calculations</p></li>
 </ul></li>
 </ul>
+</section>
+<section id="strength-of-evidence-using-simulation" class="slide level2 center">
+<h2>Strength of Evidence Using Simulation</h2>
+<p>For two groups, the Applet does the following to simulate:</p>
+<ul>
+<li><p>Study data is input</p></li>
+<li><p>All responses (success/failure) from the study are put on “cards”</p></li>
+<li><p>For one study simulation, cards are randomly split into the two explanatory groups</p></li>
+<li><p>Conditional proportions are calculated for each group</p></li>
+</ul>
+</section>
+<section id="strength-of-evidence-using-simulation-1" class="slide level2 center">
+<h2>Strength of Evidence Using Simulation</h2>
+<p>Consider the data from the Murderous Nurse example.</p>
+<ul>
+<li><p>1,641 total shifts were analyzed</p></li>
+<li><p>74 of the total shifts at least one person died</p></li>
+<li><p>Gilbert worked 257 of the total shifts, and did not work 1384 of them</p></li>
+</ul>
+</section>
+<section id="strength-of-evidence-using-simulation-2" class="slide level2 center">
+<h2>Strength of Evidence Using Simulation</h2>
+<p>To simulate this, we would:</p>
+<div>
+<ol type="1">
+<li class="fragment"><p>Get 1641 cards</p></li>
+<li class="fragment"><p>74 of the cards would have the response that at least one person died</p>
+<ul>
+<li class="fragment">The remaining 1567 would have the response that no one died</li>
+</ul></li>
+<li class="fragment"><p>To simulate one “trial” the cards would be shuffled and randomly split into two groups of 257 and 1384</p>
+<ul>
+<li class="fragment">These groups represent Gilbert/Non-Gilbert shifts!</li>
+</ul></li>
+</ol>
+</div>
+</section>
+<section id="strength-of-evidence-using-simulation-3" class="slide level2 center">
+<h2>Strength of Evidence Using Simulation</h2>
+<div>
+<ol start="4" type="1">
+<li class="fragment"><p>Calculate conditional proportions for each group</p>
+<ul>
+<li class="fragment">Proportion of times at least one person died</li>
+</ul></li>
+<li class="fragment"><p>Take the difference between the conditional proportions and plot on the null distribution</p></li>
+<li class="fragment"><p>Repeat lots of times!</p></li>
+</ol>
+</div>
+<div class="fragment">
+<p>Then, we compare our actual observed statistic to the null distribution.</p>
+</div>
 </section>
 <section id="two-proportion-applet-1" class="slide level2 center">
 <h2>Two Proportion Applet</h2>

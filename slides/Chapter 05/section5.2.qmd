@@ -115,7 +115,7 @@ The same rules apply for rejecting/failing to reject the null
 
 # Strength of Evidence
 
-## Finding Strength of Evidence (3 Methods)
+## Finding Strength of Evidence (3 Methods) {.center}
 
 -   Same three methods to find strength of evidence
 
@@ -140,6 +140,62 @@ We've got yet another applet: [Two Proportion Applet](https://www.isi-stats.com/
     -   Simulate a null distribution for the difference in two proportions
 
     -   Find a p-value
+    
+    -   Obtain a standard deviation for calculations
+
+## Strength of Evidence Using Simulation {.center}
+
+For two groups, the Applet does the following to simulate:
+
+-   Study data is input
+
+-   All responses (success/failure) from the study are put on "cards"
+
+-   For one study simulation, cards are randomly split into the two explanatory groups
+
+-   Conditional proportions are calculated for each group
+
+## Strength of Evidence Using Simulation {.center}
+
+Consider the data from the Murderous Nurse example.
+
+-   1,641 total shifts were analyzed
+
+-   74 of the total shifts at least one person died
+
+-   Gilbert worked 257 of the total shifts, and did not work 1384 of them
+
+## Strength of Evidence Using Simulation {.center}
+
+To simulate this, we would:
+
+::: incremental
+1.  Get 1641 cards
+
+2.  74 of the cards would have the response that at least one person died
+
+    -   The remaining 1567 would have the response that no one died
+
+3.  To simulate one "trial" the cards would be shuffled and randomly split into two groups of 257 and 1384
+
+    -   These groups represent Gilbert/Non-Gilbert shifts!
+:::
+
+## Strength of Evidence Using Simulation {.center}
+
+::: incremental
+4.  Calculate conditional proportions for each group
+
+    -   Proportion of times at least one person died
+
+5.  Take the difference between the conditional proportions and plot on the null distribution
+
+6.  Repeat lots of times!
+:::
+
+. . .
+
+Then, we compare our actual observed statistic to the null distribution.
 
 ## Two Proportion Applet {.center}
 

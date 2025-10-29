@@ -2727,7 +2727,7 @@
     "href": "slides/Chapter 05/section5.2.html#two-proportion-applet",
     "title": "Section 5.2",
     "section": "Two Proportion Applet",
-    "text": "Two Proportion Applet\nWe’ve got yet another applet: Two Proportion Applet\n\nThis applet is similar to the One Proportion Applet\nWe will use it to:\n\nSimulate a null distribution for the difference in two proportions\nFind a p-value"
+    "text": "Two Proportion Applet\nWe’ve got yet another applet: Two Proportion Applet\n\nThis applet is similar to the One Proportion Applet\nWe will use it to:\n\nSimulate a null distribution for the difference in two proportions\nFind a p-value\nObtain a standard deviation for calculations"
   },
   {
     "objectID": "slides/Chapter 05/section5.2.html#two-proportion-applet-1",
@@ -3064,5 +3064,33 @@
     "title": "Section 5.3",
     "section": "Setting up the hypotheses",
     "text": "Setting up the hypotheses\n\nH_0: \\pi_D-\\pi_L=0\nH_A: \\pi_D-\\pi_L &lt; 0\n\nHere, we use “less than” since we hypothesize that kids who slept in darkness have a lower rate of myopia.\n\nEquivalent to: H_A: \\pi_D&lt;\\pi_L"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation",
+    "href": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation",
+    "title": "Section 5.2",
+    "section": "Strength of Evidence Using Simulation",
+    "text": "Strength of Evidence Using Simulation\nFor two groups, the Applet does the following to simulate:\n\nStudy data is input\nAll responses (success/failure) from the study are put on “cards”\nFor one study simulation, cards are randomly split into the two explanatory groups\nConditional proportions are calculated for each group"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation-1",
+    "href": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation-1",
+    "title": "Section 5.2",
+    "section": "Strength of Evidence Using Simulation",
+    "text": "Strength of Evidence Using Simulation\nConsider the data from the Murderous Nurse example.\n\n1,641 total shifts were analyzed\n74 of the total shifts at least one person died\nGilbert worked 257 of the total shifts, and did not work 1384 of them"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation-2",
+    "href": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation-2",
+    "title": "Section 5.2",
+    "section": "Strength of Evidence Using Simulation",
+    "text": "Strength of Evidence Using Simulation\nTo simulate this, we would:\n\n\nGet 1641 cards\n74 of the cards would have the response that at least one person died\n\nThe remaining 1567 would have the response that no one died\n\nTo simulate one “trial” the cards would be shuffled and randomly split into two groups of 257 and 1384\n\nThese groups represent Gilbert/Non-Gilbert shifts!"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation-3",
+    "href": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation-3",
+    "title": "Section 5.2",
+    "section": "Strength of Evidence Using Simulation",
+    "text": "Strength of Evidence Using Simulation\n\n\nCalculate conditional proportions for each group\n\nProportion of times at least one person died\n\nTake the difference between the conditional proportions and plot on the null distribution\nRepeat lots of times!\n\n\n\nThen, we compare our actual observed statistic to the null distribution."
   }
 ]
