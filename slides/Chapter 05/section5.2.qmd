@@ -27,7 +27,7 @@ First, we need a statistic. What is it that we're interested in?
 
 -   [**Parameter:**]{.underline} The difference in long run proportions between two groups
 
-    -   $\mu_{Group\:1} - \mu_{Group\:2}$
+    -   $\pi_{Group\:1} - \pi_{Group\:2}$
 
 . . .
 
@@ -47,9 +47,9 @@ Next, we simulate to gather strength of evidence in favor of $H_A$
 
 In symbols:
 
--   $H_0: \mu_{Group\:1} - \mu_{Group\:2} = 0$
+-   $H_0: \pi_{Group\:1} - \pi_{Group\:2} = 0$
 
--   $H_A: \mu_{Group\:1} - \mu_{Group\:2} >,<,\neq 0$
+-   $H_A: \pi_{Group\:1} - \pi_{Group\:2} >,<,\neq 0$
 
 # Example
 

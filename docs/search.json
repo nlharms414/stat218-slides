@@ -2657,7 +2657,7 @@
     "href": "slides/Chapter 05/section5.2.html#s-strategy-statistic",
     "title": "Section 5.2",
     "section": "3S Strategy: Statistic",
-    "text": "3S Strategy: Statistic\nFirst, we need a statistic. What is it that we’re interested in?\n\nParameter: The difference in long run proportions between two groups\n\n\\mu_{Group\\:1} - \\mu_{Group\\:2}\n\n\n\n\nObserved Statistic: The difference in conditional proportions\n\n\\hat{p}_{Group\\:1} - \\hat{p}_{Group\\:2}"
+    "text": "3S Strategy: Statistic\nFirst, we need a statistic. What is it that we’re interested in?\n\nParameter: The difference in long run proportions between two groups\n\n\\pi_{Group\\:1} - \\pi_{Group\\:2}\n\n\n\n\nObserved Statistic: The difference in conditional proportions\n\n\\hat{p}_{Group\\:1} - \\hat{p}_{Group\\:2}"
   },
   {
     "objectID": "slides/Chapter 05/section5.2.html#s-strategy-simulate-strength-of-evidence",
@@ -2671,7 +2671,7 @@
     "href": "slides/Chapter 05/section5.2.html#s-strategy-simulate-strength-of-evidence-1",
     "title": "Section 5.2",
     "section": "3S Strategy: Simulate & Strength of Evidence",
-    "text": "3S Strategy: Simulate & Strength of Evidence\nIn symbols:\n\nH_0: \\mu_{Group\\:1} - \\mu_{Group\\:2} = 0\nH_A: \\mu_{Group\\:1} - \\mu_{Group\\:2} &gt;,&lt;,\\neq 0"
+    "text": "3S Strategy: Simulate & Strength of Evidence\nIn symbols:\n\nH_0: \\pi_{Group\\:1} - \\pi_{Group\\:2} = 0\nH_A: \\pi_{Group\\:1} - \\pi_{Group\\:2} &gt;,&lt;,\\neq 0"
   },
   {
     "objectID": "slides/Chapter 05/section5.2.html#swimming-with-dolphins",
