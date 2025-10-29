@@ -2979,6 +2979,90 @@
     "href": "slides/Chapter 05/section5.3.html#yawning-data-two-way-table",
     "title": "Section 5.3",
     "section": "Yawning Data Two-Way Table",
-    "text": "Yawning Data Two-Way Table\n\n\n\n\n\n\n\n\n\n\nYawn seed\nNo yawn seed\nTotal\n\n\n\n\nYawned\n11\n3\n14\n\n\nDid not yawn\n23\n13\n36\n\n\nTotal\n34\n16\n50"
+    "text": "Yawning Data Two-Way Table\n\n\n\n\n\n\n\n\n\n\nYawn seed\nNo yawn seed\nTotal\n\n\n\n\nYawned\n11\n3\n14\n\n\nDid not yawn\n23\n13\n36\n\n\nTotal\n34\n16\n50\n\n\n\n\n\n\n\n\nDo we meet the criteria to use the theory-based approach?"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#near-sightedness-example",
+    "href": "slides/Chapter 05/section5.3.html#near-sightedness-example",
+    "title": "Section 5.3",
+    "section": "Near-Sightedness Example",
+    "text": "Near-Sightedness Example\n\nThought to be an association between myopia (near-sightedness) and use of nightlights as a child\n479 children were observed\nFor each child, two questions were recorded:\n\nDid the child sleep with light in the room or total darkness before the age of 2?\nAt the child’s most recent eye exam, were they near-sighted or not?"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#near-sightedness-example-1",
+    "href": "slides/Chapter 05/section5.3.html#near-sightedness-example-1",
+    "title": "Section 5.3",
+    "section": "Near-Sightedness Example",
+    "text": "Near-Sightedness Example\n\nExplanatory variable: Sleeping with light or not as a child\nResponse variable: Near-sighted or not\nParameter of interest: Difference in long run proportions of near-sightedness between kids who slept in total darkness and those who slept with a light before the age of 2. (\\pi_D-\\pi_L)"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#near-sightedness-example-2",
+    "href": "slides/Chapter 05/section5.3.html#near-sightedness-example-2",
+    "title": "Section 5.3",
+    "section": "Near-Sightedness Example",
+    "text": "Near-Sightedness Example\nTwo-Way Table:\n\n\n\n\n\n\n\n\n\nDark\nLight\nTotal\n\n\n\n\nNear-sighted\n18\n119\n137\n\n\nNot near-sighted\n154\n188\n342\n\n\nTotal\n172\n307\n479"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#near-sightedness-two-way-table",
+    "href": "slides/Chapter 05/section5.3.html#near-sightedness-two-way-table",
+    "title": "Section 5.3",
+    "section": "Near-Sightedness Two-Way Table",
+    "text": "Near-Sightedness Two-Way Table\n\n\n\n\n\n\n\n\n\n\nDark\nLight\nTotal\n\n\n\n\nNear-sighted\n18\n119\n137\n\n\nNot near-sighted\n154\n188\n342\n\n\nTotal\n172\n307\n479\n\n\n\n\n\n\n\n\nDo we meet the criteria for using the theory-based approach?"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#calculating-the-standardized-statistic",
+    "href": "slides/Chapter 05/section5.3.html#calculating-the-standardized-statistic",
+    "title": "Section 5.3",
+    "section": "Calculating the Standardized Statistic",
+    "text": "Calculating the Standardized Statistic\n\n\n\n\n\n\n\n\n\n\n\n\nDark\nLight\nTotal\n\n\n\n\nNear-sighted\n18\n119\n137\n\n\nNot near-sighted\n154\n188\n342\n\n\nTotal\n172\n307\n479\n\n\n\n\n\n\n\n\n\nn_D=172\nn_L=307\n\\hat{p}=\\frac{137}{479}=0.29\n\\hat{p}_D=\\frac{18}{172}=0.10\n\\hat{p}_L=\\frac{119}{307}=0.39"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#calculating-the-standardized-statistic-1",
+    "href": "slides/Chapter 05/section5.3.html#calculating-the-standardized-statistic-1",
+    "title": "Section 5.3",
+    "section": "Calculating the Standardized Statistic",
+    "text": "Calculating the Standardized Statistic\nz=\\frac{\\hat{p}_{D} - \\hat{p}_{L}}{\\sqrt{\\hat{p}(1-\\hat{p})(\\frac{1}{n_D}+\\frac{1}{n_L})}}\n=\\frac{0.10 - 0.39}{\\sqrt{0.29(1-0.29)(\\frac{1}{172}+\\frac{1}{307})}}\n=-6.71"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#calculating-the-confidence-interval",
+    "href": "slides/Chapter 05/section5.3.html#calculating-the-confidence-interval",
+    "title": "Section 5.3",
+    "section": "Calculating the Confidence Interval",
+    "text": "Calculating the Confidence Interval\nCI=(\\hat{p}_D-\\hat{p}_L)±2*\\sqrt{\\frac{\\hat{p}_D(1-\\hat{p}_D)}{n_D}+\\frac{\\hat{p}_L(1-\\hat{p}_L)}{n_L}}\n=(0.10-0.39)±2*\\sqrt{\\frac{0.10*0.90}{172}+\\frac{0.39*0.61}{307}}\n=(-0.362,-0.218)"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#interpreting-the-confidence-interval",
+    "href": "slides/Chapter 05/section5.3.html#interpreting-the-confidence-interval",
+    "title": "Section 5.3",
+    "section": "Interpreting the Confidence Interval",
+    "text": "Interpreting the Confidence Interval\n“We are 95% confident that the long run difference in proportions of near-sightedness between children who slept in darkness and children who slept with light is between -0.362 and -0.218.”"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#interpreting-the-confidence-interval-1",
+    "href": "slides/Chapter 05/section5.3.html#interpreting-the-confidence-interval-1",
+    "title": "Section 5.3",
+    "section": "Interpreting the Confidence Interval",
+    "text": "Interpreting the Confidence Interval\nAlternatively, we could also say:\n\n“We are 95% confident that the true proportion of near-sightedness in children who slept in darkness is 0.218 to 0.362 lower than the true proportion of near-sightedness in children who slept with a light.”"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#drawing-conclusions",
+    "href": "slides/Chapter 05/section5.3.html#drawing-conclusions",
+    "title": "Section 5.3",
+    "section": "Drawing Conclusions",
+    "text": "Drawing Conclusions\nRecall our hypotheses:\n\nH_0: \\pi_D-\\pi_L=0\nH_A: \\pi_D-\\pi_L&lt;0\n\n\nStandardized statistic and confidence interval:\n\nz=-6.71\nCI=(-0.362,-0.218)\nNote that both point to the same conclusion: reject H_0"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#drawing-conclusions-1",
+    "href": "slides/Chapter 05/section5.3.html#drawing-conclusions-1",
+    "title": "Section 5.3",
+    "section": "Drawing Conclusions",
+    "text": "Drawing Conclusions\n“We have strong evidence to conclude that the long run difference in proportions of near-sightedness between kids who slept in a dark room is lower than that for kids who slept with a light in their room.”"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#setting-up-the-hypotheses",
+    "href": "slides/Chapter 05/section5.3.html#setting-up-the-hypotheses",
+    "title": "Section 5.3",
+    "section": "Setting up the hypotheses",
+    "text": "Setting up the hypotheses\n\nH_0: \\pi_D-\\pi_L=0\nH_A: \\pi_D-\\pi_L &lt; 0\n\nHere, we use “less than” since we hypothesize that kids who slept in darkness have a lower rate of myopia.\n\nEquivalent to: H_A: \\pi_D&lt;\\pi_L"
   }
 ]

@@ -34,7 +34,7 @@ We estimate the parameter using:
 -   [**Observed Statistic:**]{.underline} The difference in conditional proportions
 
     -   $\hat{p}_{Group\:1} - \hat{p}_{Group\:2}$
-    
+
 ## Hypotheses for Two Groups {.center}
 
 -   Null Hypothesis: There is no difference between the long run proportions of two groups
@@ -103,11 +103,11 @@ Consider the data from the Murderous Nurse example.
 
 To simulate this, we would:
 
-::: incremental 
+::: incremental
 1.  Get 1641 cards
 
 2.  74 of the cards would have the response that at least one person died
-    
+
     -   The remaining 1567 would have the response that no one died
 
 3.  To simulate one "trial" the cards would be shuffled and randomly split into two groups of 257 and 1384
@@ -121,7 +121,7 @@ To simulate this, we would:
 4.  Calculate conditional proportions for each group
 
     -   Proportion of times at least one person died
-    
+
 5.  Take the difference between the conditional proportions and plot on the null distribution
 
 6.  Repeat lots of times!
@@ -138,9 +138,9 @@ Then, we compare our actual observed statistic to the null distribution.
 -   Using theory we can obtain:
 
     -   P-value (still use the Applet)
-    
+
     -   Standardized statistic
-    
+
     -   Confidence interval
 
 ## Validity Conditions for Theory-Based Approach {.center}
@@ -152,7 +152,7 @@ To use the theory-based approach for two groups:
 -   This means each explanatory group needs at least 10 successes and 10 failures
 
     -   Similar condition to one proportion
-    
+
 ## Standardized Statistic for Two Groups {.center}
 
 General standardized statistic (SS) formula:
@@ -177,7 +177,7 @@ Under the null, we assume $\hat{p}_1=\hat{p}_2$, so we estimate with $\hat{p}$, 
 
 -   Interpretation remains essentially the same
 
--   "$\hat{p}_1$ is ___ standard deviations away from $\hat{p}_2$"
+-   "$\hat{p}_1$ is \_\_\_ standard deviations away from $\hat{p}_2$"
 
 ## Confidence Interval for Two Groups {.center}
 
@@ -207,7 +207,7 @@ Alternatively, we can say:
 
 -   "We're 95% confident that the true proportion of **context** in **group 1** is **lower bound** to **upper bound** **more/less** than the true proportion of **context** in **group 2**."
 
-# Example: Is Yawning Contagious?
+# Examples
 
 ## Yawning Data Two-Way Table {.center}
 
@@ -239,10 +239,162 @@ twoway %>% gt() %>%
             locations = cells_body(everything())) %>%
   opt_table_font(size = px(40)) %>%
   tab_options(table.width = pct(80))
-  
 ```
 
+. . .
 
+Do we meet the criteria to use the theory-based approach?
 
+## Near-Sightedness Example {.center}
+
+-   Thought to be an association between myopia (near-sightedness) and use of nightlights as a child
+
+-   479 children were observed
+
+-   For each child, two questions were recorded:
+
+    -   Did the child sleep with light in the room or total darkness before the age of 2?
+
+    -   At the child's most recent eye exam, were they near-sighted or not?
+
+## Near-Sightedness Example {.center}
+
+-   Explanatory variable: [**Sleeping with light or not as a child**]{.fragment}
+
+-   Response variable: [**Near-sighted or not**]{.fragment}
+
+-   Parameter of interest: [**Difference in long run proportions of near-sightedness between kids who slept in total darkness and those who slept with a light before the age of 2. (**$\pi_D-\pi_L$**)**]{.fragment}
+
+## Setting up the hypotheses {.center}
+
+-   $H_0: \pi_D-\pi_L=0$
+
+-   $H_A: \pi_D-\pi_L < 0$
+
+Here, we use "less than" since we hypothesize that kids who slept in darkness have a lower rate of myopia.
+
+-   Equivalent to: $H_A: \pi_D<\pi_L$
+
+## Near-Sightedness Two-Way Table {.center}
+
+<br>
+
+```{r message=FALSE, fig.align="center"}
+myopia <- data.frame(
+  exp = c(rep("Dark",172),rep("Light",307)),
+  res = c(rep("Near-sighted",18),
+           rep("Not near-sighted",154),
+           rep("Near-sighted",119),
+           rep("Not near-sighted",188))
+)
+
+myopia$exp <- factor(myopia$exp, levels = c("Dark","Light"))
+myopia$res <- factor(myopia$res, levels = c("Near-sighted","Not near-sighted"))
+
+twoway <- tabyl(myopia,res,exp) %>% adorn_totals(c("row","col"))
+twoway %>% gt() %>%
+  cols_label(res = " ") %>%
+  opt_stylize(style=6) %>%
+  cols_align(align = "center",
+             columns = everything()) %>%
+  tab_style(style = cell_borders(sides = "all"),
+            locations = cells_body(everything())) %>%
+  opt_table_font(size = px(40)) %>%
+  tab_options(table.width = pct(80))
+```
+
+. . .
+
+Do we meet the criteria for using the theory-based approach?
+
+## Calculating the Standardized Statistic {.center}
+
+::::: columns
+:::{.column width="60%"}
+<br>
+
+```{r message=FALSE, fig.align="center"}
+myopia <- data.frame(
+  exp = c(rep("Dark",172),rep("Light",307)),
+  res = c(rep("Near-sighted",18),
+           rep("Not near-sighted",154),
+           rep("Near-sighted",119),
+           rep("Not near-sighted",188))
+)
+
+myopia$exp <- factor(myopia$exp, levels = c("Dark","Light"))
+myopia$res <- factor(myopia$res, levels = c("Near-sighted","Not near-sighted"))
+
+twoway <- tabyl(myopia,res,exp) %>% adorn_totals(c("row","col"))
+twoway %>% gt() %>%
+  cols_label(res = " ") %>%
+  opt_stylize(style=6) %>%
+  cols_align(align = "center",
+             columns = everything()) %>%
+  tab_style(style = cell_borders(sides = "all"),
+            locations = cells_body(everything())) %>%
+  opt_table_font(size = px(32)) %>%
+  tab_options(table.width = pct(80))
+```
+:::
+
+:::{.column width="40%"}
+-   $n_D=172$
+-   $n_L=307$
+-   $\hat{p}=\frac{137}{479}=0.29$
+-   $\hat{p}_D=\frac{18}{172}=0.10$
+-   $\hat{p}_L=\frac{119}{307}=0.39$
+:::
+:::::
+
+## Calculating the Standardized Statistic {.center}
+
+$$z=\frac{\hat{p}_{D} - \hat{p}_{L}}{\sqrt{\hat{p}(1-\hat{p})(\frac{1}{n_D}+\frac{1}{n_L})}}$$
+
+$$=\frac{0.10 - 0.39}{\sqrt{0.29(1-0.29)(\frac{1}{172}+\frac{1}{307})}}$$
+
+$$=-6.71$$
+
+## Calculating the Confidence Interval {.center}
+
+$$CI=(\hat{p}_D-\hat{p}_L)±2*\sqrt{\frac{\hat{p}_D(1-\hat{p}_D)}{n_D}+\frac{\hat{p}_L(1-\hat{p}_L)}{n_L}}$$
+
+$$=(0.10-0.39)±2*\sqrt{\frac{0.10*0.90}{172}+\frac{0.39*0.61}{307}}$$
+
+$$=(-0.362,-0.218)$$
+
+## Interpreting the Confidence Interval {.center}
+
+"We are 95% confident that the long run difference in proportions of near-sightedness between children who slept in darkness and children who slept with light is between -0.362 and -0.218."
+
+## Interpreting the Confidence Interval {.center}
+
+Alternatively, we could also say: 
+
+<br>
+
+"We are 95% confident that the true proportion of near-sightedness in children who slept in darkness is 0.218 to 0.362 lower than the true proportion of near-sightedness in children who slept with a light."
+
+## Drawing Conclusions {.center}
+
+Recall our hypotheses:
+
+-   $H_0: \pi_D-\pi_L=0$
+
+-   $H_A: \pi_D-\pi_L<0$
+
+. . .
+
+Standardized statistic and confidence interval:
+
+-   $z=-6.71$
+
+-   $CI=(-0.362,-0.218)$
+
+-   Note that both point to the same conclusion: reject $H_0$
+
+## Drawing Conclusions {.center}
+
+"We have strong evidence to conclude that the long run difference in proportions of near-sightedness between kids who slept in a dark room is lower than that for kids who slept with a light in their room."
 
 
