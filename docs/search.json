@@ -2566,7 +2566,7 @@
     "href": "slides/Chapter 05/section5.1.html#two-way-table",
     "title": "Section 5.1",
     "section": "Two Way Table",
-    "text": "Two Way Table\n\n\n\n\n\n\n\n\n\n\nGilbert worked the shift\nGilbert did not work the shift\nTotal shifts\n\n\nAt least one person died during the shift\n40\n34\n74\n\n\nNo patient died during the shift\n217\n1350\n1567\n\n\nTotal shifts\n257\n1384\n1641"
+    "text": "Two Way Table\n\n\n\n\n\n\n\n\n\nGilbert shift\nNon-Gilbert shift\nTotal\n\n\n\n\nSomeone died\n40\n34\n74\n\n\nNo one died\n217\n1350\n1567\n\n\nTotal\n257\n1384\n1641"
   },
   {
     "objectID": "slides/Chapter 05/section5.1.html#observed-statistic",

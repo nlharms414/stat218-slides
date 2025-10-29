@@ -140,12 +140,33 @@ Now, out of the 74 shifts where at least one person died, we find that 40 were s
 
 ## Two Way Table {.center}
 
-|  |  |  |  |
-|:--:|:--:|:--:|:--:|
-|  | **Gilbert worked the shift** | **Gilbert did not work the shift** | **Total shifts** |
-| **At least one person died during the shift** | 40 | 34 | 74 |
-| **No patient died during the shift** | 217 | 1350 | 1567 |
-| **Total shifts** | 257 | 1384 | 1641 |
+```{r message=FALSE, fig.align="center"}
+library(gt)
+library(janitor)
+library(dplyr)
+
+df <- data.frame(
+  exp = c(rep("Gilbert shift",257),rep("Non-Gilbert shift",1384)),
+  res = c(rep("Someone died",40),
+           rep("No one died",217),
+           rep("Someone died",34),
+           rep("No one died",1350))
+)
+
+df$exp <- factor(df$exp, levels = c("Gilbert shift","Non-Gilbert shift"))
+df$res <- factor(df$res, levels = c("Someone died","No one died"))
+
+twoway <- tabyl(df,res,exp) %>% adorn_totals(c("row","col"))
+twoway %>% gt() %>%
+  cols_label(res = " ") %>%
+  opt_stylize(style=6) %>%
+  cols_align(align = "center",
+             columns = everything()) %>%
+  tab_style(style = cell_borders(sides = "all"),
+            locations = cells_body(everything())) %>%
+  opt_table_font(size = px(40)) %>%
+  tab_options(table.width = pct(90))
+```
 
 ## Observed statistic? {.center}
 
@@ -178,15 +199,11 @@ flowchart LR
 
 ## Conditional Proportions {.center}
 
-$$\hat{p}_G=\frac{Patient\: died\: a\: shift\: Gilbert\: worked}{Total\: shifts\: Gilbert\: worked}$$
-$$=\frac{40}{257}$$
-$$=0.156$$
+$$\hat{p}_G=\frac{Patient\: died\: a\: shift\: Gilbert\: worked}{Total\: shifts\: Gilbert\: worked}$$ $$=\frac{40}{257}$$ $$=0.156$$
 
 ## Conditional Proportions {.center}
 
-$$\hat{p}_{NG}=\frac{Patient\: died\: a\: shift\: Gilbert\: did\: not\: work}{Total\: shifts\: Gilbert\: did\: not\: work}$$
-$$=\frac{34}{1384}$$
-$$=0.025$$
+$$\hat{p}_{NG}=\frac{Patient\: died\: a\: shift\: Gilbert\: did\: not\: work}{Total\: shifts\: Gilbert\: did\: not\: work}$$ $$=\frac{34}{1384}$$ $$=0.025$$
 
 ## A new observed statistic {.center}
 
@@ -199,7 +216,7 @@ New observed statistic:
 
 $$\hat{p}_G - \hat{p}_{NG} = 0.156-0.025 = 0.131$$
 
-. . . 
+. . .
 
 Note: The order in which the p-hats are subtracted does not matter- but it will affect your interpretation
 
@@ -231,13 +248,13 @@ What would we expect relative risk to be if there is no difference between the t
 
 ## Drawing Conclusions {.center}
 
--   Was the difference in proportions surprising? 
+-   Was the difference in proportions surprising?
 
 -   How about relative risk?
 
 -   What do they tell us in this scenario?
 
--   What might you report to the jury? 
+-   What might you report to the jury?
 
 . . .
 
@@ -248,5 +265,5 @@ What would we expect relative risk to be if there is no difference between the t
 -   Given the scenario, can we say Gilbert *caused* the deaths?
 
     -   Hint: Think back to chapter 4!
-    
+
 -   Come up with an alternative explanation for the difference in proportion between the two groups
