@@ -1,13 +1,13 @@
 ---
 title: "Section 5.3"
-subtitle: ""
+subtitle: "Comparing Two Groups: Theory-Based Approach"
 format: 
   revealjs: 
     chalkboard: true
     theme: simple
     link-external-newwindow: true
     link-external-icon: true
-    html-math-method: mathjax
+    html-math-method: katex
     logo: logo.jpg
     slide-number: true
 editor: visual
@@ -18,3 +18,231 @@ editor: visual
 -   Identify when a theory-based approach can be used to find a p-value or confidence interval when comparing two categorical variables.
 
 -   Understand how confidence level and sample size impact the confidence interval for the difference between two proportions.
+
+# Recap
+
+## Comparing Two Groups {.center}
+
+What are we interested in?
+
+-   [**Parameter:**]{.underline} The difference in long run proportions between two groups
+
+    -   $\pi_{Group\:1} - \pi_{Group\:2}$
+
+We estimate the parameter using:
+
+-   [**Observed Statistic:**]{.underline} The difference in conditional proportions
+
+    -   $\hat{p}_{Group\:1} - \hat{p}_{Group\:2}$
+    
+## Hypotheses for Two Groups {.center}
+
+-   Null Hypothesis: There is no difference between the long run proportions of two groups
+
+-   Alt. Hypothesis: There is a difference between the long run proportions of two groups
+
+    -   Difference can be greater than, less than, or not equal to
+
+## Hypotheses for Two Groups {.center}
+
+In symbols:
+
+-   $H_0: \pi_{Group\:1} - \pi_{Group\:2} = 0$
+
+-   $H_A: \pi_{Group\:1} - \pi_{Group\:2} >,<,\neq 0$
+
+. . .
+
+Equivalently, we could also write:
+
+-   $H_0: \pi_{Group\:1}=\pi_{Group\:2}$
+
+-   $H_A: \pi_{Group\:1}>,<,\neq\pi_{Group\:2}$
+
+# Strength of Evidence
+
+## Determining Strength of Evidence
+
+Two broad ways to get strength of evidence:
+
+-   Simulation
+
+-   Theory-based approach
+
+Through either of the above two can find:
+
+-   P-value
+
+-   Standardized statistic
+
+-   Confidence interval
+
+## Strength of Evidence Using Simulation {.center}
+
+For two groups, the Applet does the following to simulate:
+
+-   Study data is input
+
+-   All responses (success/failure) from the study are put on "cards"
+
+-   For one study simulation, cards are randomly split into the two explanatory groups
+
+-   Conditional proportions are calculated for each group
+
+## Strength of Evidence Using Simulation {.center}
+
+Consider the data from the Murderous Nurse example.
+
+-   1,641 total shifts were analyzed
+
+-   74 of the total shifts at least one person died
+
+-   Gilbert worked 257 of the total shifts, and did not work 1384 of them
+
+## Strength of Evidence Using Simulation {.center}
+
+To simulate this, we would:
+
+::: incremental 
+1.  Get 1641 cards
+
+2.  74 of the cards would have the response that at least one person died
+    
+    -   The remaining 1567 would have the response that no one died
+
+3.  To simulate one "trial" the cards would be shuffled and randomly split into two groups of 257 and 1384
+
+    -   These groups represent Gilbert/Non-Gilbert shifts!
+:::
+
+## Strength of Evidence Using Simulation {.center}
+
+::: incremental
+4.  Calculate conditional proportions for each group
+
+    -   Proportion of times at least one person died
+    
+5.  Take the difference between the conditional proportions and plot on the null distribution
+
+6.  Repeat lots of times!
+:::
+
+. . .
+
+Then, we compare our actual observed statistic to the null distribution.
+
+## Strength of Evidence Using Theory-Based Approach {.center}
+
+-   If we meet validity conditions, we can use theory
+
+-   Using theory we can obtain:
+
+    -   P-value (still use the Applet)
+    
+    -   Standardized statistic
+    
+    -   Confidence interval
+
+## Validity Conditions for Theory-Based Approach {.center}
+
+To use the theory-based approach for two groups:
+
+-   Each box in the two-way table needs at least 10 observations
+
+-   This means each explanatory group needs at least 10 successes and 10 failures
+
+    -   Similar condition to one proportion
+    
+## Standardized Statistic for Two Groups {.center}
+
+General standardized statistic (SS) formula:
+
+$$SS=\frac{Observed\: Statistic - Hypothesized\: Value}{Standard\: Error\: under\: the\: null}$$
+
+When comparing two groups:
+
+$$z=\frac{(\hat{p}_{1} - \hat{p}_{2})-0}{\sqrt{\hat{p}(1-\hat{p})(\frac{1}{n_1}+\frac{1}{n_2})}}$$
+
+## Standardized Statistic for Two Groups {.center}
+
+Note that the standard error for the previous statistic uses the combined proportion of success ($\hat{p}$)
+
+$$\sqrt{\hat{p}(1-\hat{p})(\frac{1}{n_1}+\frac{1}{n_2})}$$
+
+Under the null, we assume $\hat{p}_1=\hat{p}_2$, so we estimate with $\hat{p}$, the pooled proportion of success
+
+-   This is also referred to as *pooled standard error*
+
+## Standardized Statistic Interpretation {.center}
+
+-   Interpretation remains essentially the same
+
+-   "$\hat{p}_1$ is ___ standard deviations away from $\hat{p}_2$"
+
+## Confidence Interval for Two Groups {.center}
+
+General confidence interval formula:
+
+$$CI=Observed\: Statistic\: ± Multiplier*SE$$
+
+When comparing two groups:
+
+$$CI=(\hat{p}_1-\hat{p}_2)±2*\sqrt{\frac{\hat{p}_1(1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2(1-\hat{p}_2)}{n_2}}$$
+
+## Confidence Interval for Two Groups {.center}
+
+Notice that our SE formula differs slightly
+
+$$\sqrt{\frac{\hat{p}_1(1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2(1-\hat{p}_2)}{n_2}}$$
+
+Now, we are assuming that $\hat{p}_1≠\hat{p}_2$, so we no longer use the pooled standard error.
+
+## Confidence Interval Interpretation {.center}
+
+-   "We are 95% confident that the long run difference in proportion of **context** between **group 1** and **group 2** falls between **lower bound** and **upper bound**."
+
+. . .
+
+Alternatively, we can say:
+
+-   "We're 95% confident that the true proportion of **context** in **group 1** is **lower bound** to **upper bound** **more/less** than the true proportion of **context** in **group 2**."
+
+# Example: Is Yawning Contagious?
+
+## Yawning Data Two-Way Table {.center}
+
+<br>
+
+```{r message=FALSE, fig.align="center"}
+library(gt)
+library(janitor)
+library(dplyr)
+
+df <- data.frame(
+  exp = c(rep("Yawn seed",34),rep("No yawn seed",16)),
+  res = c(rep("Yawned",11),
+           rep("Did not yawn",23),
+           rep("Yawned",3),
+           rep("Did not yawn",13))
+)
+
+df$exp <- factor(df$exp, levels = c("Yawn seed","No yawn seed"))
+df$res <- factor(df$res, levels = c("Yawned","Did not yawn"))
+
+twoway <- tabyl(df,res,exp) %>% adorn_totals(c("row","col"))
+twoway %>% gt() %>%
+  cols_label(res = " ") %>%
+  opt_stylize(style=6) %>%
+  cols_align(align = "center",
+             columns = everything()) %>%
+  tab_style(style = cell_borders(sides = "all"),
+            locations = cells_body(everything())) %>%
+  opt_table_font(size = px(40)) %>%
+  tab_options(table.width = pct(80))
+  
+```
+
+
+
+
+

@@ -30,6 +30,22 @@
     }
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -328,13 +344,702 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Section 5.3</h1>
+  <p class="subtitle">Comparing Two Groups: Theory-Based Approach</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section class="slide level2">
+<section id="section-5.3-learning-objectives" class="slide level2 center">
+<h2>Section 5.3 Learning Objectives</h2>
+<ul>
+<li><p>Identify when a theory-based approach can be used to find a p-value or confidence interval when comparing two categorical variables.</p></li>
+<li><p>Understand how confidence level and sample size impact the confidence interval for the difference between two proportions.</p></li>
+</ul>
+</section>
+<section>
+<section id="recap" class="title-slide slide level1 center">
+<h1>Recap</h1>
 
+</section>
+<section id="comparing-two-groups" class="slide level2 center">
+<h2>Comparing Two Groups</h2>
+<p>What are we interested in?</p>
+<ul>
+<li><p><u><strong>Parameter:</strong></u> The difference in long run proportions between two groups</p>
+<ul>
+<li><span class="math inline">\pi_{Group\:1} - \pi_{Group\:2}</span></li>
+</ul></li>
+</ul>
+<p>We estimate the parameter using:</p>
+<ul>
+<li><p><u><strong>Observed Statistic:</strong></u> The difference in conditional proportions</p>
+<ul>
+<li><span class="math inline">\hat{p}_{Group\:1} - \hat{p}_{Group\:2}</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="hypotheses-for-two-groups" class="slide level2 center">
+<h2>Hypotheses for Two Groups</h2>
+<ul>
+<li><p>Null Hypothesis: There is no difference between the long run proportions of two groups</p></li>
+<li><p>Alt. Hypothesis: There is a difference between the long run proportions of two groups</p>
+<ul>
+<li>Difference can be greater than, less than, or not equal to</li>
+</ul></li>
+</ul>
+</section>
+<section id="hypotheses-for-two-groups-1" class="slide level2 center">
+<h2>Hypotheses for Two Groups</h2>
+<p>In symbols:</p>
+<ul>
+<li><p><span class="math inline">H_0: \pi_{Group\:1} - \pi_{Group\:2} = 0</span></p></li>
+<li><p><span class="math inline">H_A: \pi_{Group\:1} - \pi_{Group\:2} &gt;,&lt;,\neq 0</span></p></li>
+</ul>
+<div class="fragment">
+<p>Equivalently, we could also write:</p>
+<ul>
+<li><p><span class="math inline">H_0: \pi_{Group\:1}=\pi_{Group\:2}</span></p></li>
+<li><p><span class="math inline">H_A: \pi_{Group\:1}&gt;,&lt;,\neq\pi_{Group\:2}</span></p></li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="strength-of-evidence" class="title-slide slide level1 center">
+<h1>Strength of Evidence</h1>
+
+</section>
+<section id="determining-strength-of-evidence" class="slide level2">
+<h2>Determining Strength of Evidence</h2>
+<p>Two broad ways to get strength of evidence:</p>
+<ul>
+<li><p>Simulation</p></li>
+<li><p>Theory-based approach</p></li>
+</ul>
+<p>Through either of the above two can find:</p>
+<ul>
+<li><p>P-value</p></li>
+<li><p>Standardized statistic</p></li>
+<li><p>Confidence interval</p></li>
+</ul>
+</section>
+<section id="strength-of-evidence-using-simulation" class="slide level2 center">
+<h2>Strength of Evidence Using Simulation</h2>
+<p>For two groups, the Applet does the following to simulate:</p>
+<ul>
+<li><p>Study data is input</p></li>
+<li><p>All responses (success/failure) from the study are put on “cards”</p></li>
+<li><p>For one study simulation, cards are randomly split into the two explanatory groups</p></li>
+<li><p>Conditional proportions are calculated for each group</p></li>
+</ul>
+</section>
+<section id="strength-of-evidence-using-simulation-1" class="slide level2 center">
+<h2>Strength of Evidence Using Simulation</h2>
+<p>Consider the data from the Murderous Nurse example.</p>
+<ul>
+<li><p>1,641 total shifts were analyzed</p></li>
+<li><p>74 of the total shifts at least one person died</p></li>
+<li><p>Gilbert worked 257 of the total shifts, and did not work 1384 of them</p></li>
+</ul>
+</section>
+<section id="strength-of-evidence-using-simulation-2" class="slide level2 center">
+<h2>Strength of Evidence Using Simulation</h2>
+<p>To simulate this, we would:</p>
+<div>
+<ol type="1">
+<li class="fragment"><p>Get 1641 cards</p></li>
+<li class="fragment"><p>74 of the cards would have the response that at least one person died</p>
+<ul>
+<li class="fragment">The remaining 1567 would have the response that no one died</li>
+</ul></li>
+<li class="fragment"><p>To simulate one “trial” the cards would be shuffled and randomly split into two groups of 257 and 1384</p>
+<ul>
+<li class="fragment">These groups represent Gilbert/Non-Gilbert shifts!</li>
+</ul></li>
+</ol>
+</div>
+</section>
+<section id="strength-of-evidence-using-simulation-3" class="slide level2 center">
+<h2>Strength of Evidence Using Simulation</h2>
+<div>
+<ol start="4" type="1">
+<li class="fragment"><p>Calculate conditional proportions for each group</p>
+<ul>
+<li class="fragment">Proportion of times at least one person died</li>
+</ul></li>
+<li class="fragment"><p>Take the difference between the conditional proportions and plot on the null distribution</p></li>
+<li class="fragment"><p>Repeat lots of times!</p></li>
+</ol>
+</div>
+<div class="fragment">
+<p>Then, we compare our actual observed statistic to the null distribution.</p>
+</div>
+</section>
+<section id="strength-of-evidence-using-theory-based-approach" class="slide level2 center">
+<h2>Strength of Evidence Using Theory-Based Approach</h2>
+<ul>
+<li><p>If we meet validity conditions, we can use theory</p></li>
+<li><p>Using theory we can obtain:</p>
+<ul>
+<li><p>P-value (still use the Applet)</p></li>
+<li><p>Standardized statistic</p></li>
+<li><p>Confidence interval</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="validity-conditions-for-theory-based-approach" class="slide level2 center">
+<h2>Validity Conditions for Theory-Based Approach</h2>
+<p>To use the theory-based approach for two groups:</p>
+<ul>
+<li><p>Each box in the two-way table needs at least 10 observations</p></li>
+<li><p>This means each explanatory group needs at least 10 successes and 10 failures</p>
+<ul>
+<li>Similar condition to one proportion</li>
+</ul></li>
+</ul>
+</section>
+<section id="standardized-statistic-for-two-groups" class="slide level2 center">
+<h2>Standardized Statistic for Two Groups</h2>
+<p>General standardized statistic (SS) formula:</p>
+<p><span class="math display">SS=\frac{Observed\: Statistic - Hypothesized\: Value}{Standard\: Error\: under\: the\: null}</span></p>
+<p>When comparing two groups:</p>
+<p><span class="math display">z=\frac{(\hat{p}_{1} - \hat{p}_{2})-0}{\sqrt{\hat{p}(1-\hat{p})(\frac{1}{n_1}+\frac{1}{n_2})}}</span></p>
+</section>
+<section id="standardized-statistic-for-two-groups-1" class="slide level2 center">
+<h2>Standardized Statistic for Two Groups</h2>
+<p>Note that the standard error for the previous statistic uses the combined proportion of success (<span class="math inline">\hat{p}</span>)</p>
+<p><span class="math display">\sqrt{\hat{p}(1-\hat{p})(\frac{1}{n_1}+\frac{1}{n_2})}</span></p>
+<p>Under the null, we assume <span class="math inline">\hat{p}_1=\hat{p}_2</span>, so we estimate with <span class="math inline">\hat{p}</span>, the pooled proportion of success</p>
+<ul>
+<li>This is also referred to as <em>pooled standard error</em></li>
+</ul>
+</section>
+<section id="standardized-statistic-interpretation" class="slide level2 center">
+<h2>Standardized Statistic Interpretation</h2>
+<ul>
+<li><p>Interpretation remains essentially the same</p></li>
+<li><p>“<span class="math inline">\hat{p}_1</span> is ___ standard deviations away from <span class="math inline">\hat{p}_2</span>”</p></li>
+</ul>
+</section>
+<section id="confidence-interval-for-two-groups" class="slide level2 center">
+<h2>Confidence Interval for Two Groups</h2>
+<p>General confidence interval formula:</p>
+<p><span class="math display">CI=Observed\: Statistic\: ± Multiplier*SE</span></p>
+<p>When comparing two groups:</p>
+<p><span class="math display">CI=(\hat{p}_1-\hat{p}_2)±2*\sqrt{\frac{\hat{p}_1(1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2(1-\hat{p}_2)}{n_2}}</span></p>
+</section>
+<section id="confidence-interval-for-two-groups-1" class="slide level2 center">
+<h2>Confidence Interval for Two Groups</h2>
+<p>Notice that our SE formula differs slightly</p>
+<p><span class="math display">\sqrt{\frac{\hat{p}_1(1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2(1-\hat{p}_2)}{n_2}}</span></p>
+<p>Now, we are assuming that <span class="math inline">\hat{p}_1≠\hat{p}_2</span>, so we no longer use the pooled standard error.</p>
+</section>
+<section id="confidence-interval-interpretation" class="slide level2 center">
+<h2>Confidence Interval Interpretation</h2>
+<ul>
+<li>“We are 95% confident that the long run difference in proportion of <strong>context</strong> between <strong>group 1</strong> and <strong>group 2</strong> falls between <strong>lower bound</strong> and <strong>upper bound</strong>.”</li>
+</ul>
+<div class="fragment">
+<p>Alternatively, we can say:</p>
+<ul>
+<li>“We’re 95% confident that the true proportion of <strong>context</strong> in <strong>group 1</strong> is <strong>lower bound</strong> to <strong>upper bound</strong> <strong>more/less</strong> than the true proportion of <strong>context</strong> in <strong>group 2</strong>.”</li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="example-is-yawning-contagious" class="title-slide slide level1 center">
+<h1>Example: Is Yawning Contagious?</h1>
+
+</section>
+<section id="yawning-data-two-way-table" class="slide level2 center">
+<h2>Yawning Data Two-Way Table</h2>
+<p><br></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="cpcqwbtgkm" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#cpcqwbtgkm table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#cpcqwbtgkm thead, #cpcqwbtgkm tbody, #cpcqwbtgkm tfoot, #cpcqwbtgkm tr, #cpcqwbtgkm td, #cpcqwbtgkm th {
+  border-style: none;
+}
+
+#cpcqwbtgkm p {
+  margin: 0;
+  padding: 0;
+}
+
+#cpcqwbtgkm .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 40px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: 80%;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#cpcqwbtgkm .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#cpcqwbtgkm .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#cpcqwbtgkm .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#cpcqwbtgkm .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#cpcqwbtgkm .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+}
+
+#cpcqwbtgkm .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#cpcqwbtgkm .gt_col_heading {
+  color: #FFFFFF;
+  background-color: #0076BA;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#cpcqwbtgkm .gt_column_spanner_outer {
+  color: #FFFFFF;
+  background-color: #0076BA;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#cpcqwbtgkm .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#cpcqwbtgkm .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#cpcqwbtgkm .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#cpcqwbtgkm .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#cpcqwbtgkm .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#cpcqwbtgkm .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  vertical-align: middle;
+}
+
+#cpcqwbtgkm .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#cpcqwbtgkm .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#cpcqwbtgkm .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: none;
+  border-top-width: 1px;
+  border-top-color: #D5D5D5;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D5D5D5;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D5D5D5;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#cpcqwbtgkm .gt_stub {
+  color: #333333;
+  background-color: #89D3FE;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D5D5D5;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cpcqwbtgkm .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#cpcqwbtgkm .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#cpcqwbtgkm .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#cpcqwbtgkm .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cpcqwbtgkm .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #5F5F5F;
+}
+
+#cpcqwbtgkm .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#cpcqwbtgkm .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+}
+
+#cpcqwbtgkm .gt_grand_summary_row {
+  color: #333333;
+  background-color: #D5D5D5;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cpcqwbtgkm .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #5F5F5F;
+}
+
+#cpcqwbtgkm .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #5F5F5F;
+}
+
+#cpcqwbtgkm .gt_striped {
+  background-color: #EDF7FC;
+}
+
+#cpcqwbtgkm .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+}
+
+#cpcqwbtgkm .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#cpcqwbtgkm .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cpcqwbtgkm .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#cpcqwbtgkm .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cpcqwbtgkm .gt_left {
+  text-align: left;
+}
+
+#cpcqwbtgkm .gt_center {
+  text-align: center;
+}
+
+#cpcqwbtgkm .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#cpcqwbtgkm .gt_font_normal {
+  font-weight: normal;
+}
+
+#cpcqwbtgkm .gt_font_bold {
+  font-weight: bold;
+}
+
+#cpcqwbtgkm .gt_font_italic {
+  font-style: italic;
+}
+
+#cpcqwbtgkm .gt_super {
+  font-size: 65%;
+}
+
+#cpcqwbtgkm .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#cpcqwbtgkm .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#cpcqwbtgkm .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#cpcqwbtgkm .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#cpcqwbtgkm .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#cpcqwbtgkm .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#cpcqwbtgkm .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#cpcqwbtgkm .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#cpcqwbtgkm div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_col_headings">
+<th id="res" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="Yawn-seed" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Yawn seed</th>
+<th id="No-yawn-seed" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">No yawn seed</th>
+<th id="Total" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Total</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_center" headers="res" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">Yawned</td>
+<td class="gt_row gt_center" headers="Yawn seed" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">11</td>
+<td class="gt_row gt_center" headers="No yawn seed" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">3</td>
+<td class="gt_row gt_center" headers="Total" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">14</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center gt_striped" headers="res" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">Did not yawn</td>
+<td class="gt_row gt_center gt_striped" headers="Yawn seed" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">23</td>
+<td class="gt_row gt_center gt_striped" headers="No yawn seed" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">13</td>
+<td class="gt_row gt_center gt_striped" headers="Total" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">36</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="res" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">Total</td>
+<td class="gt_row gt_center" headers="Yawn seed" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">34</td>
+<td class="gt_row gt_center" headers="No yawn seed" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">16</td>
+<td class="gt_row gt_center" headers="Total" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">50</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
 
 <div class="quarto-auto-generated-content">
 <p><img src="logo.jpg" class="slide-logo"></p>
@@ -342,7 +1047,7 @@
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
@@ -360,7 +1065,6 @@
   <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -528,33 +1232,53 @@
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

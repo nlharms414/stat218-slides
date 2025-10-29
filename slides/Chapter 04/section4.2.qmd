@@ -264,7 +264,7 @@ No random assignment:
 ## Summary Table {.center style="font-size: 31px"}
 
 |  |  |  |
-|:----------------------:|:----------------------:|:----------------------:|
+|:--:|:--:|:--:|
 |  | **Random Assignment** | **No Random Assignment** |
 | **Random Sampling** | Random sample from a population that is randomly assigned to groups (ideal!) | Random sample from a population that are already in pre-existing groups. (Smokers vs non-smokers survey.) |
 | **No Random Sampling** | A group of study units is selected non-randomly from a population and randomly assigned to groups. (Splitting our class into random groups.) | Collections of available units from two distinct groups are examined. (Splitting our class into male and female groups.) |
@@ -272,7 +272,7 @@ No random assignment:
 ## Summary Table {.center style="font-size: 32px"}
 
 |  |  |  |
-|:----------------------:|:----------------------:|:----------------------:|
+|:--:|:--:|:--:|
 |  | **Random Assignment** | **No Random Assignment** |
 | **Random Sampling** | Can generalize to the population; Causation conclusion | Can generalize to the population; Association conclusion |
 | **No Random Sampling** | Cannot generalize to the population; Causation conclusion | Cannot generalize to the population; Association conclusion |

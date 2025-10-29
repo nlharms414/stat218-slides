@@ -124,9 +124,9 @@ The same rules apply for rejecting/failing to reject the null
 -   Three methods:
 
     -   P-value
-    
+
     -   Standardized statistic (SS)
-    
+
     -   Confidence intervals (CI)
 
 ## Two Proportion Applet {.center}
@@ -172,7 +172,6 @@ We've got yet another applet: [Two Proportion Applet](https://www.isi-stats.com/
 <br><br><br>
 
 Given our observed statistic, how many simulated values are as or more extreme?
-
 :::
 :::::
 
@@ -184,13 +183,10 @@ Given our observed statistic, how many simulated values are as or more extreme?
 :::
 
 ::: {.column width="50%"}
+Observed statistic:
 
-Observed statistic: 
+$$\hat{p}_D-\hat{p}_C$$ $$= 0.667-0.2$$ $$=0.467$$
 
-$$\hat{p}_D-\hat{p}_C$$
-$$= 0.667-0.2$$
-$$=0.467$$
-    
 At a significance level of 0.05, reject $H_0$
 :::
 :::::
@@ -225,10 +221,7 @@ Same conclusions as before
 ::: {.column width="50%"}
 <br><br>
 
-$$SS = \frac{\hat{p}_D-\hat{p}_C-0}{SD\: from\: Applet}$$
-$$=\frac{0.467}{0.179}$$
-$$=2.61$$
-
+$$SS = \frac{\hat{p}_D-\hat{p}_C-0}{SD\: from\: Applet}$$ $$=\frac{0.467}{0.179}$$ $$=2.61$$
 :::
 :::::
 
@@ -248,7 +241,7 @@ $$CI = (\hat{p}_1-\hat{p}_2) ± 2*(SD\: from\: Applet)$$
 
 ## Conclusions based on CI {.center}
 
-Recall previously: 
+Recall previously:
 
 -   If the hypothesized parameter value is IN the confidence interval, fail to reject $H_0$
 
@@ -261,7 +254,7 @@ Our hypothesized parameter value is *always* zero, therefore...
 -   If 0 is IN the interval, fail to reject $H_0$
 
     -   It's possible the groups are the same
-    
+
 ## Conclusions based on CI {.center}
 
 Our hypothesized parameter value is *always* zero, therefore...
@@ -269,7 +262,7 @@ Our hypothesized parameter value is *always* zero, therefore...
 -   If 0 is OUTSIDE the interval, reject $H_0$
 
     -   The groups are different
-    
+
 ## Swimming with Dolphins {.center}
 
 -   Observed statistic: $\hat{p}_D-\hat{p}_C=0.467$
@@ -293,8 +286,3 @@ $$=(0.109,0.825)$$
 -   Work through question 9 with a partner/group
 
 -   We will work through the questions that use the Applet together
-
-
-
-
-
