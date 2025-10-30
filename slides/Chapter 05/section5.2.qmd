@@ -140,7 +140,7 @@ We've got yet another applet: [Two Proportion Applet](https://www.isi-stats.com/
     -   Simulate a null distribution for the difference in two proportions
 
     -   Find a p-value
-    
+
     -   Obtain a standard deviation for calculations
 
 ## Strength of Evidence Using Simulation {.center}
@@ -251,7 +251,7 @@ At a significance level of 0.05, reject $H_0$
 
 General form:
 
-$$SS=\frac{Observed\: Statistic - Hypothesized\: Value}{Standard\: Deviation\: under\: the\: null}$$
+$$z=\frac{Observed\: Statistic - Hypothesized\: Value}{Standard\: Deviation\: under\: the\: null}$$
 
 $$=\frac{(\hat{p}_1-\hat{p}_2)-0}{SD\: from\: Applet}$$
 
@@ -301,7 +301,7 @@ Recall previously:
 
 -   If the hypothesized parameter value is IN the confidence interval, fail to reject $H_0$
 
--   If the hypothesized parameter value is OUTSIDE the confidence interval, fail to reject $H_0$
+-   If the hypothesized parameter value is OUTSIDE the confidence interval, reject $H_0$
 
 ## Conclusions based on CI {.center}
 

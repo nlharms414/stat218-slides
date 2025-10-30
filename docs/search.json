@@ -2762,7 +2762,7 @@
     "href": "slides/Chapter 05/section5.2.html#standardized-statistic-ss",
     "title": "Section 5.2",
     "section": "Standardized Statistic (SS)",
-    "text": "Standardized Statistic (SS)\nGeneral form:\nSS=\\frac{Observed\\: Statistic - Hypothesized\\: Value}{Standard\\: Deviation\\: under\\: the\\: null}\n=\\frac{(\\hat{p}_1-\\hat{p}_2)-0}{SD\\: from\\: Applet}"
+    "text": "Standardized Statistic (SS)\nGeneral form:\nz=\\frac{Observed\\: Statistic - Hypothesized\\: Value}{Standard\\: Deviation\\: under\\: the\\: null}\n=\\frac{(\\hat{p}_1-\\hat{p}_2)-0}{SD\\: from\\: Applet}"
   },
   {
     "objectID": "slides/Chapter 05/section5.2.html#standardized-statistic-ss-1",
@@ -2818,7 +2818,7 @@
     "href": "slides/Chapter 05/section5.2.html#conclusions-based-on-ci",
     "title": "Section 5.2",
     "section": "Conclusions based on CI",
-    "text": "Conclusions based on CI\nRecall previously:\n\nIf the hypothesized parameter value is IN the confidence interval, fail to reject H_0\nIf the hypothesized parameter value is OUTSIDE the confidence interval, fail to reject H_0"
+    "text": "Conclusions based on CI\nRecall previously:\n\nIf the hypothesized parameter value is IN the confidence interval, fail to reject H_0\nIf the hypothesized parameter value is OUTSIDE the confidence interval, reject H_0"
   },
   {
     "objectID": "slides/Chapter 05/section5.2.html#conclusions-based-on-ci-1",
