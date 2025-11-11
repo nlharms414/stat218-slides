@@ -3092,5 +3092,110 @@
     "title": "Section 5.2",
     "section": "Strength of Evidence Using Simulation",
     "text": "Strength of Evidence Using Simulation\n\n\nCalculate conditional proportions for each group\n\nProportion of times at least one person died\n\nTake the difference between the conditional proportions and plot on the null distribution\nRepeat lots of times!\n\n\n\nThen, we compare our actual observed statistic to the null distribution."
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#section-6.1-learning-objectives",
+    "href": "slides/Chapter 06/section6.1.html#section-6.1-learning-objectives",
+    "title": "Section 6.1",
+    "section": "Section 6.1 Learning Objectives",
+    "text": "Section 6.1 Learning Objectives\n\nCalculate or estimate the mean, median, quartiles, five number summary, and interquartile range from a dataset and understand what these are measuring.\nWhen comparing two quantitative distributions, identify which has the larger mean, median, standard deviation, and inter-quartile range.\nIdentify whether there is likely an association between a binary categorical variable and a quantitative response variable."
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#recap",
+    "href": "slides/Chapter 06/section6.1.html#recap",
+    "title": "Section 6.1",
+    "section": "Recap",
+    "text": "Recap\n\nWhen comparing two groups, we’ve had…\n\nA categorical explanatory variable\nA categorical response variable\n\nResearch question: Are these two explanatory groups different?\nWhat changes when our response is numerical?"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#recap-1",
+    "href": "slides/Chapter 06/section6.1.html#recap-1",
+    "title": "Section 6.1",
+    "section": "Recap",
+    "text": "Recap\nStandard Error for Two Proportions:\n\\[SE_p=\\sqrt{\\hat{p}(1-\\hat{p})(\\frac{1}{n_1}+\\frac{1}{n_2})}\\]\n\\[OR\\]\n\\[SE=\\sqrt{\\frac{\\hat{p}_1(1-\\hat{p}_1)}{n_1}+\\frac{\\hat{p}_2(1-\\hat{p}_2)}{n_2}}\\]"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#standarized-statistic-for-two-proportions",
+    "href": "slides/Chapter 06/section6.1.html#standarized-statistic-for-two-proportions",
+    "title": "Section 6.1",
+    "section": "Standarized Statistic for Two Proportions",
+    "text": "Standarized Statistic for Two Proportions\n\\[z=\\frac{(\\hat{p}_{1} - \\hat{p}_{2})-0}{\\sqrt{\\hat{p}(1-\\hat{p})(\\frac{1}{n_1}+\\frac{1}{n_2})}}\\]\nHere, we use the pooled standard error since we assume \\(\\hat{p}_1=\\hat{p}_2\\)."
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#confidence-interval-for-two-proportions",
+    "href": "slides/Chapter 06/section6.1.html#confidence-interval-for-two-proportions",
+    "title": "Section 6.1",
+    "section": "Confidence Interval for Two Proportions",
+    "text": "Confidence Interval for Two Proportions\n\\[CI=(\\hat{p}_1-\\hat{p}_2)±2*\\sqrt{\\frac{\\hat{p}_1(1-\\hat{p}_1)}{n_1}+\\frac{\\hat{p}_2(1-\\hat{p}_2)}{n_2}}\\]\nHere, our SE is NOT pooled, since we assume \\(\\hat{p}_1≠\\hat{p}_2\\)"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#overview",
+    "href": "slides/Chapter 06/section6.1.html#overview",
+    "title": "Section 6.1",
+    "section": "Overview",
+    "text": "Overview\nHow did we summarize categorical data?\n\nSegmented bar graphs\nTwo-way tables\nDifference in proportions\nRelative risk\n\n\nWe’ll need different methods for numerical data."
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#overview-1",
+    "href": "slides/Chapter 06/section6.1.html#overview-1",
+    "title": "Section 6.1",
+    "section": "Overview",
+    "text": "Overview\nTo summarize numerical data, we use:\n\nDot plots\nFive number summaries\nBoxplots\nDifference in averages"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#old-faithful-geyser",
+    "href": "slides/Chapter 06/section6.1.html#old-faithful-geyser",
+    "title": "Section 6.1",
+    "section": "Old Faithful Geyser",
+    "text": "Old Faithful Geyser\n\nWant to look at difference in eruption patterns between 1978 and 2003\n\nSpecifically, if average time between eruptions has changed\n\n107 eruptions in 1978 were examined\n95 eruptions in 2003 were examined"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#old-faithful-geyeser",
+    "href": "slides/Chapter 06/section6.1.html#old-faithful-geyeser",
+    "title": "Section 6.1",
+    "section": "Old Faithful Geyeser",
+    "text": "Old Faithful Geyeser\n\nWhat is the explanatory variable? Year observed\n\nIs it categorical or numerical? Categorical\n\nWhat is the response variable? Average time between eruptions\n\nIs it categorical or numerical? Numerical"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#geyser-data-distribution",
+    "href": "slides/Chapter 06/section6.1.html#geyser-data-distribution",
+    "title": "Section 6.1",
+    "section": "Geyser Data Distribution",
+    "text": "Geyser Data Distribution\nLet’s compare the distributions of the two years:\n\n\nHow can we describe the data using shape, spread, center, and outliers?"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#five-number-summary-1",
+    "href": "slides/Chapter 06/section6.1.html#five-number-summary-1",
+    "title": "Section 6.1",
+    "section": "Five Number Summary",
+    "text": "Five Number Summary\nThe five number summary consists of:\n\nMinimum value\nMaximum value\nLower quartile (Q1)\nMedian\nUpper quartile (Q2)"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#median-lower-quartile-upper-quartile",
+    "href": "slides/Chapter 06/section6.1.html#median-lower-quartile-upper-quartile",
+    "title": "Section 6.1",
+    "section": "Median, Lower Quartile & Upper Quartile",
+    "text": "Median, Lower Quartile & Upper Quartile\nRecall, the median is calculated by ordering the data and determining the midpoint (50%).\n\nThe process is the same for the lower quartile (Q1) and upper quartile (Q3)\nQ1: Value for which 25% of the data falls below\nQ3: Value for which 75% of the data falls below"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#displaying-the-five-number-summary",
+    "href": "slides/Chapter 06/section6.1.html#displaying-the-five-number-summary",
+    "title": "Section 6.1",
+    "section": "Displaying the Five Number Summary",
+    "text": "Displaying the Five Number Summary\nA boxplot can display all five number summary values.\n\nQ3 minus Q1 gives the interquartile range."
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#geyser-data",
+    "href": "slides/Chapter 06/section6.1.html#geyser-data",
+    "title": "Section 6.1",
+    "section": "Geyser Data",
+    "text": "Geyser Data\nThe five number summary for both years:\n\n\n\n\n\n\n\n\nYear\nMinimum\nQ1\nMedian\nQ3\nMaximum\nAverage\n\n\n\n\n1978\n42\n58\n75\n81\n95\n71.1\n\n\n2003\n56\n87\n91\n98\n110\n91.2"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#geyser-example-boxplots",
+    "href": "slides/Chapter 06/section6.1.html#geyser-example-boxplots",
+    "title": "Section 6.1",
+    "section": "Geyser Example Boxplots",
+    "text": "Geyser Example Boxplots"
   }
 ]

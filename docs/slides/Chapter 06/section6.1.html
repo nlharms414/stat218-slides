@@ -328,13 +328,645 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Section 6.1</h1>
+  <p class="subtitle">Comparing Two Groups: Quantitative Response</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
+<section id="section-6.1-learning-objectives" class="slide level2 center">
+<h2>Section 6.1 Learning Objectives</h2>
+<ul>
+<li><p>Calculate or estimate the mean, median, quartiles, five number summary, and interquartile range from a dataset and understand what these are measuring.</p></li>
+<li><p>When comparing two quantitative distributions, identify which has the larger mean, median, standard deviation, and inter-quartile range.</p></li>
+<li><p>Identify whether there is likely an association between a binary categorical variable and a quantitative response variable.</p></li>
+</ul>
+</section>
+<section id="recap" class="slide level2 center">
+<h2>Recap</h2>
+<ul>
+<li><p>When comparing two groups, we’ve had…</p>
+<ul>
+<li>A categorical explanatory variable</li>
+<li>A categorical response variable</li>
+</ul></li>
+<li><p>Research question: Are these two explanatory groups different?</p></li>
+<li><p>What changes when our response is numerical?</p></li>
+</ul>
+</section>
+<section id="recap-1" class="slide level2 center">
+<h2>Recap</h2>
+<p>Standard Error for Two Proportions:</p>
+<p><span class="math display">\[SE_p=\sqrt{\hat{p}(1-\hat{p})(\frac{1}{n_1}+\frac{1}{n_2})}\]</span></p>
+<p><span class="math display">\[OR\]</span></p>
+<p><span class="math display">\[SE=\sqrt{\frac{\hat{p}_1(1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2(1-\hat{p}_2)}{n_2}}\]</span></p>
+</section>
+<section id="standarized-statistic-for-two-proportions" class="slide level2 center">
+<h2>Standarized Statistic for Two Proportions</h2>
+<p><span class="math display">\[z=\frac{(\hat{p}_{1} - \hat{p}_{2})-0}{\sqrt{\hat{p}(1-\hat{p})(\frac{1}{n_1}+\frac{1}{n_2})}}\]</span></p>
+<p>Here, we use the pooled standard error since we assume <span class="math inline">\(\hat{p}_1=\hat{p}_2\)</span>.</p>
+</section>
+<section id="confidence-interval-for-two-proportions" class="slide level2 center">
+<h2>Confidence Interval for Two Proportions</h2>
+<p><span class="math display">\[CI=(\hat{p}_1-\hat{p}_2)±2*\sqrt{\frac{\hat{p}_1(1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2(1-\hat{p}_2)}{n_2}}\]</span></p>
+<p>Here, our SE is NOT pooled, since we assume <span class="math inline">\(\hat{p}_1≠\hat{p}_2\)</span></p>
+</section>
+<section>
+<section id="summarizing-numerical-data" class="title-slide slide level1 center">
+<h1>Summarizing Numerical Data</h1>
+
+</section>
+<section id="overview" class="slide level2 center">
+<h2>Overview</h2>
+<p>How did we summarize categorical data?</p>
+<ul>
+<li><p>Segmented bar graphs</p></li>
+<li><p>Two-way tables</p></li>
+<li><p>Difference in proportions</p></li>
+<li><p>Relative risk</p></li>
+</ul>
+<div class="fragment">
+<p>We’ll need different methods for numerical data.</p>
+</div>
+</section>
+<section id="overview-1" class="slide level2 center">
+<h2>Overview</h2>
+<p>To summarize numerical data, we use:</p>
+<ul>
+<li><p>Dot plots</p></li>
+<li><p>Five number summaries</p></li>
+<li><p>Boxplots</p></li>
+<li><p>Difference in averages</p></li>
+</ul>
+</section></section>
+<section>
+<section id="geyser-example" class="title-slide slide level1 center">
+<h1>Geyser Example</h1>
+
+</section>
+<section id="old-faithful-geyser" class="slide level2 center">
+<h2>Old Faithful Geyser</h2>
+<ul>
+<li><p>Want to look at difference in eruption patterns between 1978 and 2003</p>
+<ul>
+<li>Specifically, if average time between eruptions has changed</li>
+</ul></li>
+<li><p>107 eruptions in 1978 were examined</p></li>
+<li><p>95 eruptions in 2003 were examined</p></li>
+</ul>
+</section>
+<section id="old-faithful-geyeser" class="slide level2 center">
+<h2>Old Faithful Geyeser</h2>
+<ul>
+<li><p>What is the explanatory variable? <span class="fragment"><strong>Year observed</strong></span></p>
+<ul>
+<li>Is it categorical or numerical? <span class="fragment"><strong>Categorical</strong></span></li>
+</ul></li>
+<li><p>What is the response variable? <span class="fragment"><strong>Average time between eruptions</strong></span></p>
+<ul>
+<li>Is it categorical or numerical? <span class="fragment"><strong>Numerical</strong></span></li>
+</ul></li>
+</ul>
+</section>
+<section id="geyser-data-distribution" class="slide level2 center">
+<h2>Geyser Data Distribution</h2>
+<p>Let’s compare the distributions of the two years:</p>
+
+<img data-src="images/1_eruptdot.png" class="quarto-figure quarto-figure-center r-stretch" alt="Two dotplots (one on top of the other) displaying data for time between geyser eruptions. The top dotplot is data from 1978 and the bottom dotplot is data from 2003. The 1978 data has two mounds and the average eruption time appears around 70. The 2003 data has one distinct mound with an average that appears around 90."><div class="fragment">
+<p>How can we describe the data using shape, spread, center, and outliers?</p>
+</div>
+</section></section>
+<section>
+<section id="five-number-summary" class="title-slide slide level1 center">
+<h1>Five Number Summary</h1>
+
+</section>
+<section id="five-number-summary-1" class="slide level2 center">
+<h2>Five Number Summary</h2>
+<p>The five number summary consists of:</p>
+<ul>
+<li>Minimum value</li>
+<li>Maximum value</li>
+<li>Lower quartile (Q1)</li>
+<li>Median</li>
+<li>Upper quartile (Q2)</li>
+</ul>
+</section>
+<section id="median-lower-quartile-upper-quartile" class="slide level2 center">
+<h2>Median, Lower Quartile &amp; Upper Quartile</h2>
+<p>Recall, the <strong>median</strong> is calculated by ordering the data and determining the midpoint (50%).</p>
+<ul>
+<li><p>The process is the same for the lower quartile (Q1) and upper quartile (Q3)</p></li>
+<li><p><strong>Q1</strong>: Value for which 25% of the data falls below</p></li>
+<li><p><strong>Q3</strong>: Value for which 75% of the data falls below</p></li>
+</ul>
+</section>
+<section id="displaying-the-five-number-summary" class="slide level2 center">
+<h2>Displaying the Five Number Summary</h2>
+<p>A <strong>boxplot</strong> can display all five number summary values.</p>
+
+<img data-src="images/1_boxplot.png" class="quarto-figure quarto-figure-center r-stretch" alt="Example boxplot with the outliers, lower whisker, lower quartile, median, upper quartile, and upper whisker labeled."><p>Q3 minus Q1 gives the <strong>interquartile range</strong>.</p>
+</section>
+<section id="geyser-data" class="slide level2 center">
+<h2>Geyser Data</h2>
+<p>The five number summary for both years:</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="bsjlkyjdex" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#bsjlkyjdex table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#bsjlkyjdex thead, #bsjlkyjdex tbody, #bsjlkyjdex tfoot, #bsjlkyjdex tr, #bsjlkyjdex td, #bsjlkyjdex th {
+  border-style: none;
+}
+
+#bsjlkyjdex p {
+  margin: 0;
+  padding: 0;
+}
+
+#bsjlkyjdex .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 34px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: 100%;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#bsjlkyjdex .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#bsjlkyjdex .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#bsjlkyjdex .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#bsjlkyjdex .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#bsjlkyjdex .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+}
+
+#bsjlkyjdex .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#bsjlkyjdex .gt_col_heading {
+  color: #FFFFFF;
+  background-color: #0076BA;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#bsjlkyjdex .gt_column_spanner_outer {
+  color: #FFFFFF;
+  background-color: #0076BA;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#bsjlkyjdex .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#bsjlkyjdex .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#bsjlkyjdex .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#bsjlkyjdex .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#bsjlkyjdex .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#bsjlkyjdex .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  vertical-align: middle;
+}
+
+#bsjlkyjdex .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#bsjlkyjdex .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#bsjlkyjdex .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: none;
+  border-top-width: 1px;
+  border-top-color: #D5D5D5;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D5D5D5;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D5D5D5;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#bsjlkyjdex .gt_stub {
+  color: #333333;
+  background-color: #89D3FE;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D5D5D5;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bsjlkyjdex .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#bsjlkyjdex .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#bsjlkyjdex .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#bsjlkyjdex .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bsjlkyjdex .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #5F5F5F;
+}
+
+#bsjlkyjdex .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#bsjlkyjdex .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+}
+
+#bsjlkyjdex .gt_grand_summary_row {
+  color: #333333;
+  background-color: #D5D5D5;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bsjlkyjdex .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #5F5F5F;
+}
+
+#bsjlkyjdex .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #5F5F5F;
+}
+
+#bsjlkyjdex .gt_striped {
+  background-color: #EDF7FC;
+}
+
+#bsjlkyjdex .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+}
+
+#bsjlkyjdex .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#bsjlkyjdex .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bsjlkyjdex .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#bsjlkyjdex .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bsjlkyjdex .gt_left {
+  text-align: left;
+}
+
+#bsjlkyjdex .gt_center {
+  text-align: center;
+}
+
+#bsjlkyjdex .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#bsjlkyjdex .gt_font_normal {
+  font-weight: normal;
+}
+
+#bsjlkyjdex .gt_font_bold {
+  font-weight: bold;
+}
+
+#bsjlkyjdex .gt_font_italic {
+  font-style: italic;
+}
+
+#bsjlkyjdex .gt_super {
+  font-size: 65%;
+}
+
+#bsjlkyjdex .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#bsjlkyjdex .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#bsjlkyjdex .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#bsjlkyjdex .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#bsjlkyjdex .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#bsjlkyjdex .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#bsjlkyjdex .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#bsjlkyjdex .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#bsjlkyjdex div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top" data-quarto-postprocess="true" style="table-layout:fixed;width:100%;" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_col_headings">
+<th id="Year" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Year</th>
+<th id="Minimum" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Minimum</th>
+<th id="Q1" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Q1</th>
+<th id="Median" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Median</th>
+<th id="Q3" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Q3</th>
+<th id="Maximum" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Maximum</th>
+<th id="Average" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Average</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_center" headers="Year" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">1978</td>
+<td class="gt_row gt_center" headers="Minimum" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">42</td>
+<td class="gt_row gt_center" headers="Q1" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">58</td>
+<td class="gt_row gt_center" headers="Median" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">75</td>
+<td class="gt_row gt_center" headers="Q3" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">81</td>
+<td class="gt_row gt_center" headers="Maximum" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">95</td>
+<td class="gt_row gt_center" headers="Average" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">71.1</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center gt_striped" headers="Year" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">2003</td>
+<td class="gt_row gt_center gt_striped" headers="Minimum" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">56</td>
+<td class="gt_row gt_center gt_striped" headers="Q1" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">87</td>
+<td class="gt_row gt_center gt_striped" headers="Median" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">91</td>
+<td class="gt_row gt_center gt_striped" headers="Q3" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">98</td>
+<td class="gt_row gt_center gt_striped" headers="Maximum" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">110</td>
+<td class="gt_row gt_center gt_striped" headers="Average" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">91.2</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="geyser-example-boxplots" class="slide level2 center">
+<h2>Geyser Example Boxplots</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/1_eruptbox.png" class="quarto-figure quarto-figure-center" alt="Two stacked boxplots displaying the geyser data for each year. The boxplot for 1978 has a lower median than the boxplot for 2003. The 2003 boxplot also has two outliers."></p>
+</figure>
+</div>
 
 <div class="quarto-auto-generated-content">
 <p><img src="logo.jpg" class="slide-logo"></p>
@@ -342,7 +974,7 @@
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
@@ -555,6 +1187,44 @@
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
