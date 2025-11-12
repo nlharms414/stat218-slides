@@ -30,6 +30,22 @@
     }
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -357,19 +373,19 @@
 <section id="recap-1" class="slide level2 center">
 <h2>Recap</h2>
 <p>Standard Error for Two Proportions:</p>
-<p><span class="math display">\[SE_p=\sqrt{\hat{p}(1-\hat{p})(\frac{1}{n_1}+\frac{1}{n_2})}\]</span></p>
-<p><span class="math display">\[OR\]</span></p>
-<p><span class="math display">\[SE=\sqrt{\frac{\hat{p}_1(1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2(1-\hat{p}_2)}{n_2}}\]</span></p>
+<p><span class="math display">SE_p=\sqrt{\hat{p}(1-\hat{p})(\frac{1}{n_1}+\frac{1}{n_2})}</span></p>
+<p><span class="math display">OR</span></p>
+<p><span class="math display">SE=\sqrt{\frac{\hat{p}_1(1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2(1-\hat{p}_2)}{n_2}}</span></p>
 </section>
 <section id="standarized-statistic-for-two-proportions" class="slide level2 center">
 <h2>Standarized Statistic for Two Proportions</h2>
-<p><span class="math display">\[z=\frac{(\hat{p}_{1} - \hat{p}_{2})-0}{\sqrt{\hat{p}(1-\hat{p})(\frac{1}{n_1}+\frac{1}{n_2})}}\]</span></p>
-<p>Here, we use the pooled standard error since we assume <span class="math inline">\(\hat{p}_1=\hat{p}_2\)</span>.</p>
+<p><span class="math display">z=\frac{(\hat{p}_{1} - \hat{p}_{2})-0}{\sqrt{\hat{p}(1-\hat{p})(\frac{1}{n_1}+\frac{1}{n_2})}}</span></p>
+<p>Here, we use the pooled standard error since we assume <span class="math inline">\hat{p}_1=\hat{p}_2</span>.</p>
 </section>
 <section id="confidence-interval-for-two-proportions" class="slide level2 center">
 <h2>Confidence Interval for Two Proportions</h2>
-<p><span class="math display">\[CI=(\hat{p}_1-\hat{p}_2)±2*\sqrt{\frac{\hat{p}_1(1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2(1-\hat{p}_2)}{n_2}}\]</span></p>
-<p>Here, our SE is NOT pooled, since we assume <span class="math inline">\(\hat{p}_1≠\hat{p}_2\)</span></p>
+<p><span class="math display">CI=(\hat{p}_1-\hat{p}_2)±2*\sqrt{\frac{\hat{p}_1(1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2(1-\hat{p}_2)}{n_2}}</span></p>
+<p>Here, our SE is NOT pooled, since we assume <span class="math inline">\hat{p}_1≠\hat{p}_2</span></p>
 </section>
 <section>
 <section id="summarizing-numerical-data" class="title-slide slide level1 center">
@@ -472,23 +488,23 @@
 <p>The five number summary for both years:</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="bsjlkyjdex" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#bsjlkyjdex table {
+<div id="uextblxpar" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#uextblxpar table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#bsjlkyjdex thead, #bsjlkyjdex tbody, #bsjlkyjdex tfoot, #bsjlkyjdex tr, #bsjlkyjdex td, #bsjlkyjdex th {
+#uextblxpar thead, #uextblxpar tbody, #uextblxpar tfoot, #uextblxpar tr, #uextblxpar td, #uextblxpar th {
   border-style: none;
 }
 
-#bsjlkyjdex p {
+#uextblxpar p {
   margin: 0;
   padding: 0;
 }
 
-#bsjlkyjdex .gt_table {
+#uextblxpar .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -514,12 +530,12 @@
   border-left-color: #D3D3D3;
 }
 
-#bsjlkyjdex .gt_caption {
+#uextblxpar .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#bsjlkyjdex .gt_title {
+#uextblxpar .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -531,7 +547,7 @@
   border-bottom-width: 0;
 }
 
-#bsjlkyjdex .gt_subtitle {
+#uextblxpar .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -543,7 +559,7 @@
   border-top-width: 0;
 }
 
-#bsjlkyjdex .gt_heading {
+#uextblxpar .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -555,13 +571,13 @@
   border-right-color: #D3D3D3;
 }
 
-#bsjlkyjdex .gt_bottom_border {
+#uextblxpar .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #5F5F5F;
 }
 
-#bsjlkyjdex .gt_col_headings {
+#uextblxpar .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #5F5F5F;
@@ -576,7 +592,7 @@
   border-right-color: #D3D3D3;
 }
 
-#bsjlkyjdex .gt_col_heading {
+#uextblxpar .gt_col_heading {
   color: #FFFFFF;
   background-color: #0076BA;
   font-size: 100%;
@@ -596,7 +612,7 @@
   overflow-x: hidden;
 }
 
-#bsjlkyjdex .gt_column_spanner_outer {
+#uextblxpar .gt_column_spanner_outer {
   color: #FFFFFF;
   background-color: #0076BA;
   font-size: 100%;
@@ -608,15 +624,15 @@
   padding-right: 4px;
 }
 
-#bsjlkyjdex .gt_column_spanner_outer:first-child {
+#uextblxpar .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#bsjlkyjdex .gt_column_spanner_outer:last-child {
+#uextblxpar .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#bsjlkyjdex .gt_column_spanner {
+#uextblxpar .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #5F5F5F;
@@ -628,11 +644,11 @@
   width: 100%;
 }
 
-#bsjlkyjdex .gt_spanner_row {
+#uextblxpar .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#bsjlkyjdex .gt_group_heading {
+#uextblxpar .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -658,7 +674,7 @@
   text-align: left;
 }
 
-#bsjlkyjdex .gt_empty_group_heading {
+#uextblxpar .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -673,15 +689,15 @@
   vertical-align: middle;
 }
 
-#bsjlkyjdex .gt_from_md > :first-child {
+#uextblxpar .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#bsjlkyjdex .gt_from_md > :last-child {
+#uextblxpar .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#bsjlkyjdex .gt_row {
+#uextblxpar .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -700,7 +716,7 @@
   overflow-x: hidden;
 }
 
-#bsjlkyjdex .gt_stub {
+#uextblxpar .gt_stub {
   color: #333333;
   background-color: #89D3FE;
   font-size: 100%;
@@ -713,7 +729,7 @@
   padding-right: 5px;
 }
 
-#bsjlkyjdex .gt_stub_row_group {
+#uextblxpar .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -727,15 +743,15 @@
   vertical-align: top;
 }
 
-#bsjlkyjdex .gt_row_group_first td {
+#uextblxpar .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#bsjlkyjdex .gt_row_group_first th {
+#uextblxpar .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#bsjlkyjdex .gt_summary_row {
+#uextblxpar .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -745,16 +761,16 @@
   padding-right: 5px;
 }
 
-#bsjlkyjdex .gt_first_summary_row {
+#uextblxpar .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #5F5F5F;
 }
 
-#bsjlkyjdex .gt_first_summary_row.thick {
+#uextblxpar .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#bsjlkyjdex .gt_last_summary_row {
+#uextblxpar .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -764,7 +780,7 @@
   border-bottom-color: #5F5F5F;
 }
 
-#bsjlkyjdex .gt_grand_summary_row {
+#uextblxpar .gt_grand_summary_row {
   color: #333333;
   background-color: #D5D5D5;
   text-transform: inherit;
@@ -774,7 +790,7 @@
   padding-right: 5px;
 }
 
-#bsjlkyjdex .gt_first_grand_summary_row {
+#uextblxpar .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -784,7 +800,7 @@
   border-top-color: #5F5F5F;
 }
 
-#bsjlkyjdex .gt_last_grand_summary_row_top {
+#uextblxpar .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -794,11 +810,11 @@
   border-bottom-color: #5F5F5F;
 }
 
-#bsjlkyjdex .gt_striped {
+#uextblxpar .gt_striped {
   background-color: #EDF7FC;
 }
 
-#bsjlkyjdex .gt_table_body {
+#uextblxpar .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #5F5F5F;
@@ -807,7 +823,7 @@
   border-bottom-color: #5F5F5F;
 }
 
-#bsjlkyjdex .gt_footnotes {
+#uextblxpar .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -821,7 +837,7 @@
   border-right-color: #D3D3D3;
 }
 
-#bsjlkyjdex .gt_footnote {
+#uextblxpar .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -830,7 +846,7 @@
   padding-right: 5px;
 }
 
-#bsjlkyjdex .gt_sourcenotes {
+#uextblxpar .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -844,7 +860,7 @@
   border-right-color: #D3D3D3;
 }
 
-#bsjlkyjdex .gt_sourcenote {
+#uextblxpar .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -852,72 +868,72 @@
   padding-right: 5px;
 }
 
-#bsjlkyjdex .gt_left {
+#uextblxpar .gt_left {
   text-align: left;
 }
 
-#bsjlkyjdex .gt_center {
+#uextblxpar .gt_center {
   text-align: center;
 }
 
-#bsjlkyjdex .gt_right {
+#uextblxpar .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#bsjlkyjdex .gt_font_normal {
+#uextblxpar .gt_font_normal {
   font-weight: normal;
 }
 
-#bsjlkyjdex .gt_font_bold {
+#uextblxpar .gt_font_bold {
   font-weight: bold;
 }
 
-#bsjlkyjdex .gt_font_italic {
+#uextblxpar .gt_font_italic {
   font-style: italic;
 }
 
-#bsjlkyjdex .gt_super {
+#uextblxpar .gt_super {
   font-size: 65%;
 }
 
-#bsjlkyjdex .gt_footnote_marks {
+#uextblxpar .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#bsjlkyjdex .gt_asterisk {
+#uextblxpar .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#bsjlkyjdex .gt_indent_1 {
+#uextblxpar .gt_indent_1 {
   text-indent: 5px;
 }
 
-#bsjlkyjdex .gt_indent_2 {
+#uextblxpar .gt_indent_2 {
   text-indent: 10px;
 }
 
-#bsjlkyjdex .gt_indent_3 {
+#uextblxpar .gt_indent_3 {
   text-indent: 15px;
 }
 
-#bsjlkyjdex .gt_indent_4 {
+#uextblxpar .gt_indent_4 {
   text-indent: 20px;
 }
 
-#bsjlkyjdex .gt_indent_5 {
+#uextblxpar .gt_indent_5 {
   text-indent: 25px;
 }
 
-#bsjlkyjdex .katex-display {
+#uextblxpar .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#bsjlkyjdex div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#uextblxpar div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -992,7 +1008,6 @@
   <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -1160,27 +1175,9 @@
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom

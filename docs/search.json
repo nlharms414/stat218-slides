@@ -3112,21 +3112,21 @@
     "href": "slides/Chapter 06/section6.1.html#recap-1",
     "title": "Section 6.1",
     "section": "Recap",
-    "text": "Recap\nStandard Error for Two Proportions:\n\\[SE_p=\\sqrt{\\hat{p}(1-\\hat{p})(\\frac{1}{n_1}+\\frac{1}{n_2})}\\]\n\\[OR\\]\n\\[SE=\\sqrt{\\frac{\\hat{p}_1(1-\\hat{p}_1)}{n_1}+\\frac{\\hat{p}_2(1-\\hat{p}_2)}{n_2}}\\]"
+    "text": "Recap\nStandard Error for Two Proportions:\nSE_p=\\sqrt{\\hat{p}(1-\\hat{p})(\\frac{1}{n_1}+\\frac{1}{n_2})}\nOR\nSE=\\sqrt{\\frac{\\hat{p}_1(1-\\hat{p}_1)}{n_1}+\\frac{\\hat{p}_2(1-\\hat{p}_2)}{n_2}}"
   },
   {
     "objectID": "slides/Chapter 06/section6.1.html#standarized-statistic-for-two-proportions",
     "href": "slides/Chapter 06/section6.1.html#standarized-statistic-for-two-proportions",
     "title": "Section 6.1",
     "section": "Standarized Statistic for Two Proportions",
-    "text": "Standarized Statistic for Two Proportions\n\\[z=\\frac{(\\hat{p}_{1} - \\hat{p}_{2})-0}{\\sqrt{\\hat{p}(1-\\hat{p})(\\frac{1}{n_1}+\\frac{1}{n_2})}}\\]\nHere, we use the pooled standard error since we assume \\(\\hat{p}_1=\\hat{p}_2\\)."
+    "text": "Standarized Statistic for Two Proportions\nz=\\frac{(\\hat{p}_{1} - \\hat{p}_{2})-0}{\\sqrt{\\hat{p}(1-\\hat{p})(\\frac{1}{n_1}+\\frac{1}{n_2})}}\nHere, we use the pooled standard error since we assume \\hat{p}_1=\\hat{p}_2."
   },
   {
     "objectID": "slides/Chapter 06/section6.1.html#confidence-interval-for-two-proportions",
     "href": "slides/Chapter 06/section6.1.html#confidence-interval-for-two-proportions",
     "title": "Section 6.1",
     "section": "Confidence Interval for Two Proportions",
-    "text": "Confidence Interval for Two Proportions\n\\[CI=(\\hat{p}_1-\\hat{p}_2)±2*\\sqrt{\\frac{\\hat{p}_1(1-\\hat{p}_1)}{n_1}+\\frac{\\hat{p}_2(1-\\hat{p}_2)}{n_2}}\\]\nHere, our SE is NOT pooled, since we assume \\(\\hat{p}_1≠\\hat{p}_2\\)"
+    "text": "Confidence Interval for Two Proportions\nCI=(\\hat{p}_1-\\hat{p}_2)±2*\\sqrt{\\frac{\\hat{p}_1(1-\\hat{p}_1)}{n_1}+\\frac{\\hat{p}_2(1-\\hat{p}_2)}{n_2}}\nHere, our SE is NOT pooled, since we assume \\hat{p}_1≠\\hat{p}_2"
   },
   {
     "objectID": "slides/Chapter 06/section6.1.html#overview",
@@ -3197,5 +3197,222 @@
     "title": "Section 6.1",
     "section": "Geyser Example Boxplots",
     "text": "Geyser Example Boxplots"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#section-6.2-learning-objectives",
+    "href": "slides/Chapter 06/section6.2.html#section-6.2-learning-objectives",
+    "title": "Section 6.2",
+    "section": "Section 6.2 Learning Objectives",
+    "text": "Section 6.2 Learning Objectives\n\nGive the null and alternative hypothesis that compares two categories for a categorical explanatory variable and the means of a numerical response variable.\nFind and interpret the standardized statistic and the p-value for a test of two means.\nUse the 2SD method to find a 95% confidence interval for the difference in population means for two “treatment” groups, and interpret the interval in the context of the study, specifically when it contains zero.\nState a complete conclusion in the context of a scenario about the null and alternative hypotheses based on the p-value/standardized statistic."
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#s-strategy-statistic",
+    "href": "slides/Chapter 06/section6.2.html#s-strategy-statistic",
+    "title": "Section 6.2",
+    "section": "3S Strategy: Statistic",
+    "text": "3S Strategy: Statistic\nWith numerical variables, now we’re focused on averages.\n\nParameter: The difference in long run averages between two groups\n\n\\mu_{Group\\:1} - \\mu_{Group\\:2}\n\n\n\n\nObserved Statistic: The difference in conditional averages\n\n\\bar{x}_{Group\\:1} - \\bar{x}_{Group\\:2}"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#s-strategy-simulate-strength-of-evidence",
+    "href": "slides/Chapter 06/section6.2.html#s-strategy-simulate-strength-of-evidence",
+    "title": "Section 6.2",
+    "section": "3S Strategy: Simulate & Strength of Evidence",
+    "text": "3S Strategy: Simulate & Strength of Evidence\nNext, we simulate to gather strength of evidence in favor of H_A\n\nNull Hypothesis: There is no difference between the long run averages of two groups\nAlt. Hypothesis: There is a difference between the long run averages of two groups"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#s-strategy-simulate-strength-of-evidence-1",
+    "href": "slides/Chapter 06/section6.2.html#s-strategy-simulate-strength-of-evidence-1",
+    "title": "Section 6.2",
+    "section": "3S Strategy: Simulate & Strength of Evidence",
+    "text": "3S Strategy: Simulate & Strength of Evidence\nIn symbols:\n\nH_0: \\mu_{Group\\:1} - \\mu_{Group\\:2} = 0\nH_A: \\mu_{Group\\:1} - \\mu_{Group\\:2} &gt;,&lt;,\\neq 0"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#s-strategy-simulate-strength-of-evidence-2",
+    "href": "slides/Chapter 06/section6.2.html#s-strategy-simulate-strength-of-evidence-2",
+    "title": "Section 6.2",
+    "section": "3S Strategy: Simulate & Strength of Evidence",
+    "text": "3S Strategy: Simulate & Strength of Evidence\nRecall, we can alternatively write our hypotheses as:\n\nH_0: \\mu_{Group\\:1} = \\mu_{Group\\:2}\nH_A: \\mu_{Group\\:1} &gt;,&lt;,\\neq \\mu_{Group\\:2}"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#recall-symbol-comparison-for-one-meanproportion",
+    "href": "slides/Chapter 06/section6.2.html#recall-symbol-comparison-for-one-meanproportion",
+    "title": "Section 6.2",
+    "section": "Recall: Symbol Comparison for ONE Mean/Proportion",
+    "text": "Recall: Symbol Comparison for ONE Mean/Proportion\n\n\n\n\n\n\n\n\n\nCategorical Variable\nNumerical Variable\n\n\nParameter of Interest\n                       \n                             \\pi                       \n                             \n                     \n                                                        \\mu                     \n                                                        \n\n\nObserved Statistic\n                       \n                             \\hat{p}                   \n                             \n                     \n                                                        \\bar{x}"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#recall-symbol-comparison-for-one-proportionmean",
+    "href": "slides/Chapter 06/section6.2.html#recall-symbol-comparison-for-one-proportionmean",
+    "title": "Section 6.2",
+    "section": "Recall: Symbol Comparison for ONE Proportion/Mean",
+    "text": "Recall: Symbol Comparison for ONE Proportion/Mean\n\n\n\n\n\n\n\n\n\nCategorical Variable\nNumerical Variable\n\n\nParameter of Interest\n                       \n                             \\pi                       \n                             \n                     \n                                                        \\mu                     \n                                                        \n\n\nObserved Statistic\n                       \n                             \\hat{p}                   \n                             \n                     \n                                                        \\bar{x}"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#symbol-comparison-for-two-proportionsmeans",
+    "href": "slides/Chapter 06/section6.2.html#symbol-comparison-for-two-proportionsmeans",
+    "title": "Section 6.2",
+    "section": "Symbol Comparison for TWO Proportions/Means",
+    "text": "Symbol Comparison for TWO Proportions/Means\n\n\n\n\n\n\n\n\n\nCategorical Response Variable\nNumerical Response Variable\n\n\nParameter of Interest\n                       \n                             \\pi_1-\\pi_2                       \n                             \n                     \n                                                        \\mu_1-\\mu_2                     \n                                                        \n\n\nObserved Statistic\n                       \n                             \\hat{p}_1-\\hat{p}_2                   \n                             \n                     \n                                                        \\bar{x}_1-\\bar{x} _2                \n                                                        \n\n\n\n\nNotice the pattern here!"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#dung-beetles",
+    "href": "slides/Chapter 06/section6.2.html#dung-beetles",
+    "title": "Section 6.2",
+    "section": "Dung Beetles",
+    "text": "Dung Beetles\n\nResearchers want to investigate if a certain type of dung beetle can navigate using the stars\n18 total beetles\nProcess:\n\n\nPlace all 18 beetles on a platform on a moonless night\n9 receive a black cap to obstruct their sight; the other 9 receive a clear cap as a placebo\nThe time taken for each beetle to reach the edge of the platform is recorded"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#dung-beetles-1",
+    "href": "slides/Chapter 06/section6.2.html#dung-beetles-1",
+    "title": "Section 6.2",
+    "section": "Dung Beetles",
+    "text": "Dung Beetles\n\nExplanatory variable: Black cap or clear cap\n\nCategorical or numerical? Categorical\n\nResponse variable: Time taken to reach the edge\n\nCategorical or numerical? Numerical"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#dung-beetles-2",
+    "href": "slides/Chapter 06/section6.2.html#dung-beetles-2",
+    "title": "Section 6.2",
+    "section": "Dung Beetles",
+    "text": "Dung Beetles\n\\mu = long run average time it takes to reach the edge of the platform\n\n\\mu_b = Long run average time for beetles with the black cap\n\\mu_c = Long run average time for beetles with the clear cap"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#dung-beetles-3",
+    "href": "slides/Chapter 06/section6.2.html#dung-beetles-3",
+    "title": "Section 6.2",
+    "section": "Dung Beetles",
+    "text": "Dung Beetles\nIf dung beetles can navigate using the stars, we would expect \\mu_b to be larger (longer time).\n\nParameter: \\mu_b - \\mu_c\n“The difference in long run average time to get to the edge of the platform between the beetles with the black cap and beetles with the clear cap.”"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#dung-beetles-4",
+    "href": "slides/Chapter 06/section6.2.html#dung-beetles-4",
+    "title": "Section 6.2",
+    "section": "Dung Beetles",
+    "text": "Dung Beetles\nHypotheses:\n\nNull: There is no difference in average time taken to get to the edge between the two groups\nAlt: The average time for the group with the black cap is longer\n\nIn symbols:\n\nH_0: \\mu_b - \\mu_c = 0\nH_0: \\mu_b - \\mu_c &gt; 0"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#p-values",
+    "href": "slides/Chapter 06/section6.2.html#p-values",
+    "title": "Section 6.2",
+    "section": "P-values",
+    "text": "P-values\n\nP-value: how likely we are to observe a difference in sample means as or more extreme than the one we saw in the data, based on the null distribution.\nP-value &lt; significance level, reject the null\n\nStrong evidence that the two groups are different\n\nP-value ≥ significance level, fail to reject the null\n\nNo evidence that the groups are different from each other"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#null-distribution",
+    "href": "slides/Chapter 06/section6.2.html#null-distribution",
+    "title": "Section 6.2",
+    "section": "Null Distribution",
+    "text": "Null Distribution"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#null-distribution-1",
+    "href": "slides/Chapter 06/section6.2.html#null-distribution-1",
+    "title": "Section 6.2",
+    "section": "Null Distribution",
+    "text": "Null Distribution\nThe null distribution is simulated assuming: H_0: \\mu_b - \\mu_c = 0\n\nAs with proportions, the middle of the null distribution is zero"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#multiple-means-applet",
+    "href": "slides/Chapter 06/section6.2.html#multiple-means-applet",
+    "title": "Section 6.2",
+    "section": "Multiple Means Applet",
+    "text": "Multiple Means Applet"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#observed-statistic",
+    "href": "slides/Chapter 06/section6.2.html#observed-statistic",
+    "title": "Section 6.2",
+    "section": "Observed Statistic",
+    "text": "Observed Statistic\nSimilar to proportions, the observed statistic is just the observed difference in means between the two groups.\n\n\\bar{x}_b - \\bar{x}_c=126.55-42.78=83.768"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#finding-the-p-value",
+    "href": "slides/Chapter 06/section6.2.html#finding-the-p-value",
+    "title": "Section 6.2",
+    "section": "Finding the P-value",
+    "text": "Finding the P-value"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#finding-the-p-value-1",
+    "href": "slides/Chapter 06/section6.2.html#finding-the-p-value-1",
+    "title": "Section 6.2",
+    "section": "Finding the P-value",
+    "text": "Finding the P-value\nWe find the p-value the same way as before.\n\nGiven our observed statistic, how many simulated values are as or more extreme?\nOn the previous slide, p-value = 0/1000\n\nThis is less than 0.05, reject H_A"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#standardized-statistic-ss",
+    "href": "slides/Chapter 06/section6.2.html#standardized-statistic-ss",
+    "title": "Section 6.2",
+    "section": "Standardized Statistic (SS)",
+    "text": "Standardized Statistic (SS)\nGeneral form:\nt=\\frac{Observed\\: Statistic - Hypothesized\\: Value}{Standard\\: Deviation\\: under\\: the\\: null}\n=\\frac{(\\bar{x}_1-\\bar{x}_2)-0}{SD\\: from\\: Applet}"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#standardized-statistic-ss-1",
+    "href": "slides/Chapter 06/section6.2.html#standardized-statistic-ss-1",
+    "title": "Section 6.2",
+    "section": "Standardized Statistic (SS)",
+    "text": "Standardized Statistic (SS)\nSame conclusions as before\n\nOutside the 2s, reject the null (strong evidence)\nInside the 2s, fail to reject the null (weak evidence)"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#conclusion",
+    "href": "slides/Chapter 06/section6.2.html#conclusion",
+    "title": "Section 6.2",
+    "section": "Conclusion",
+    "text": "Conclusion\n“We (do/do not) have strong evidence to conclude that the long run difference in averages of (context) between group 1 and group 2 is (less than/greater than/not equal to) zero.”"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#dung-beetle-standardized-statistic",
+    "href": "slides/Chapter 06/section6.2.html#dung-beetle-standardized-statistic",
+    "title": "Section 6.2",
+    "section": "Dung Beetle Standardized Statistic",
+    "text": "Dung Beetle Standardized Statistic\nt=\\frac{\\bar{x}_b-\\bar{x}_c}{SD\\: from\\: Applet}=\\frac{83.768}{21.526}=3.89\n\nThis is outside the twos, so we reject H_A"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#confidence-intervals-ci",
+    "href": "slides/Chapter 06/section6.2.html#confidence-intervals-ci",
+    "title": "Section 6.2",
+    "section": "Confidence Intervals (CI)",
+    "text": "Confidence Intervals (CI)\n2SD Confidence Interval:\nCI=(Lower\\: Bound,\\: Upper\\: Bound)\n=Observed\\: Statistic\\: ± Margin\\: of\\: Error\nCI = (\\bar{x}_1-\\bar{x}_2) ± 2*(SD\\: from\\: Applet)"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#sd-ci-interpretation",
+    "href": "slides/Chapter 06/section6.2.html#sd-ci-interpretation",
+    "title": "Section 6.2",
+    "section": "2SD CI Interpretation",
+    "text": "2SD CI Interpretation\n“We are 95% confident that the long run difference in averages of (context) between group 1 and group 2 is between (lower bound) and (upper bound).”"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#conclusions-based-on-ci",
+    "href": "slides/Chapter 06/section6.2.html#conclusions-based-on-ci",
+    "title": "Section 6.2",
+    "section": "Conclusions based on CI",
+    "text": "Conclusions based on CI\nOur hypothesized parameter value is always zero, therefore…\n\nIf 0 is IN the interval, fail to reject H_0\n\nIt’s possible the groups are the same"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#conclusions-based-on-ci-1",
+    "href": "slides/Chapter 06/section6.2.html#conclusions-based-on-ci-1",
+    "title": "Section 6.2",
+    "section": "Conclusions based on CI",
+    "text": "Conclusions based on CI\nOur hypothesized parameter value is always zero, therefore…\n\nIf 0 is OUTSIDE the interval, reject H_0\n\nThe groups are different"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#dung-beetle-ci",
+    "href": "slides/Chapter 06/section6.2.html#dung-beetle-ci",
+    "title": "Section 6.2",
+    "section": "Dung Beetle CI",
+    "text": "Dung Beetle CI\nCI = (\\bar{x}_b-\\bar{x}_c) ± 2*(SD\\: from\\: Applet)\n= 83.768 ± 2*21.526\n= (40.72,126.82)"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#interpretation",
+    "href": "slides/Chapter 06/section6.2.html#interpretation",
+    "title": "Section 6.2",
+    "section": "Interpretation",
+    "text": "Interpretation\n“We are 95% confident that the long run average time for the black cap group is 40.72 to 126.82 seconds longer than the long run average time for the clear cap group.”"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#conclusions",
+    "href": "slides/Chapter 06/section6.2.html#conclusions",
+    "title": "Section 6.2",
+    "section": "Conclusions",
+    "text": "Conclusions\n\nBecause zero is not in the interval, we reject H_A\nNotice, the conclusions we draw from our p-value, standardized statistic, and confidence interval all match!\n\n\nWe have strong evidence to conclude that the dung beetles do navigate by the stars."
   }
 ]

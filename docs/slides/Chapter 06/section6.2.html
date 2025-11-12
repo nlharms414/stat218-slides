@@ -30,6 +30,22 @@
     }
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -328,13 +344,323 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Section 6.2</h1>
+  <p class="subtitle">Comparing Two Means: Simulation Based Approach</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
+<section id="section-6.2-learning-objectives" class="slide level2 center" style="font-size: 35px">
+<h2>Section 6.2 Learning Objectives</h2>
+<ul>
+<li><p>Give the null and alternative hypothesis that compares two categories for a categorical explanatory variable and the means of a numerical response variable.</p></li>
+<li><p>Find and interpret the standardized statistic and the p-value for a test of two means.</p></li>
+<li><p>Use the 2SD method to find a 95% confidence interval for the difference in population means for two “treatment” groups, and interpret the interval in the context of the study, specifically when it contains zero.</p></li>
+<li><p>State a complete conclusion in the context of a scenario about the null and alternative hypotheses based on the p-value/standardized statistic.</p></li>
+</ul>
+</section>
+<section id="s-strategy-statistic" class="slide level2 center">
+<h2>3S Strategy: Statistic</h2>
+<p>With numerical variables, now we’re focused on <em>averages</em>.</p>
+<ul>
+<li><p><u><strong>Parameter:</strong></u> The difference in long run averages between two groups</p>
+<ul>
+<li><span class="math inline">\mu_{Group\:1} - \mu_{Group\:2}</span></li>
+</ul></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><p><u><strong>Observed Statistic:</strong></u> The difference in conditional averages</p>
+<ul>
+<li><span class="math inline">\bar{x}_{Group\:1} - \bar{x}_{Group\:2}</span></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="s-strategy-simulate-strength-of-evidence" class="slide level2 center">
+<h2>3S Strategy: Simulate &amp; Strength of Evidence</h2>
+<p>Next, we simulate to gather strength of evidence in favor of <span class="math inline">H_A</span></p>
+<ul>
+<li><p>Null Hypothesis: There is no difference between the long run averages of two groups</p></li>
+<li><p>Alt. Hypothesis: There is a difference between the long run averages of two groups</p></li>
+</ul>
+</section>
+<section id="s-strategy-simulate-strength-of-evidence-1" class="slide level2 center">
+<h2>3S Strategy: Simulate &amp; Strength of Evidence</h2>
+<p>In symbols:</p>
+<ul>
+<li><p><span class="math inline">H_0: \mu_{Group\:1} - \mu_{Group\:2} = 0</span></p></li>
+<li><p><span class="math inline">H_A: \mu_{Group\:1} - \mu_{Group\:2} &gt;,&lt;,\neq 0</span></p></li>
+</ul>
+</section>
+<section id="s-strategy-simulate-strength-of-evidence-2" class="slide level2 center">
+<h2>3S Strategy: Simulate &amp; Strength of Evidence</h2>
+<p>Recall, we can alternatively write our hypotheses as:</p>
+<ul>
+<li><p><span class="math inline">H_0: \mu_{Group\:1} = \mu_{Group\:2}</span></p></li>
+<li><p><span class="math inline">H_A: \mu_{Group\:1} &gt;,&lt;,\neq \mu_{Group\:2}</span></p></li>
+</ul>
+</section>
+<section id="recall-symbol-comparison-for-one-proportionmean" class="slide level2 center">
+<h2>Recall: Symbol Comparison for ONE Proportion/Mean</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 33%">
+<col style="width: 31%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td></td>
+<td style="text-align: center;"><strong>Categorical Variable</strong></td>
+<td style="text-align: center;"><strong>Numerical Variable</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Parameter of Interest</strong></td>
+<td style="text-align: center;"><span class="math display">                       
+                             \pi                       
+                             </span></td>
+<td style="text-align: center;"><span class="math display">                     
+                                                        \mu                     
+                                                        </span></td>
+</tr>
+<tr class="odd">
+<td><strong>Observed Statistic</strong></td>
+<td style="text-align: center;"><span class="math display">                       
+                             \hat{p}                   
+                             </span></td>
+<td style="text-align: center;"><span class="math display">                     
+                                                        \bar{x}                 
+                                                        </span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="symbol-comparison-for-two-proportionsmeans" class="slide level2 center">
+<h2>Symbol Comparison for TWO Proportions/Means</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 33%">
+<col style="width: 31%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td></td>
+<td style="text-align: center;"><strong>Categorical Response Variable</strong></td>
+<td style="text-align: center;"><strong>Numerical Response Variable</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Parameter of Interest</strong></td>
+<td style="text-align: center;"><span class="math display">                       
+                             \pi_1-\pi_2                       
+                             </span></td>
+<td style="text-align: center;"><span class="math display">                     
+                                                        \mu_1-\mu_2                     
+                                                        </span></td>
+</tr>
+<tr class="odd">
+<td><strong>Observed Statistic</strong></td>
+<td style="text-align: center;"><span class="math display">                       
+                             \hat{p}_1-\hat{p}_2                   
+                             </span></td>
+<td style="text-align: center;"><span class="math display">                     
+                                                        \bar{x}_1-\bar{x} _2                
+                                                        </span></td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<p>Notice the pattern here!</p>
+</div>
+</section>
+<section>
+<section id="dung-beetle-example" class="title-slide slide level1 center">
+<h1>Dung Beetle Example</h1>
+
+</section>
+<section id="dung-beetles" class="slide level2 center">
+<h2>Dung Beetles</h2>
+<ul>
+<li><p>Researchers want to investigate if a certain type of dung beetle can navigate using the stars</p></li>
+<li><p>18 total beetles</p></li>
+<li><p>Process:</p>
+<div>
+<ul>
+<li class="fragment">Place all 18 beetles on a platform on a moonless night</li>
+<li class="fragment">9 receive a black cap to obstruct their sight; the other 9 receive a clear cap as a placebo</li>
+<li class="fragment">The time taken for each beetle to reach the edge of the platform is recorded</li>
+</ul>
+</div></li>
+</ul>
+</section>
+<section id="dung-beetles-1" class="slide level2 center">
+<h2>Dung Beetles</h2>
+<ul>
+<li><p>Explanatory variable: <span class="fragment"><strong>Black cap or clear cap</strong></span></p>
+<ul>
+<li>Categorical or numerical? <span class="fragment"><strong>Categorical</strong></span></li>
+</ul></li>
+<li><p>Response variable: <span class="fragment"><strong>Time taken to reach the edge</strong></span></p>
+<ul>
+<li>Categorical or numerical? <span class="fragment"><strong>Numerical</strong></span></li>
+</ul></li>
+</ul>
+</section>
+<section id="dung-beetles-2" class="slide level2 center">
+<h2>Dung Beetles</h2>
+<p><span class="math inline">\mu</span> = long run average time it takes to reach the edge of the platform</p>
+<ul>
+<li><p><span class="math inline">\mu_b</span> = Long run average time for beetles with the black cap</p></li>
+<li><p><span class="math inline">\mu_c</span> = Long run average time for beetles with the clear cap</p></li>
+</ul>
+</section>
+<section id="dung-beetles-3" class="slide level2 center">
+<h2>Dung Beetles</h2>
+<p>If dung beetles can navigate using the stars, we would expect <span class="math inline">\mu_b</span> to be larger (longer time).</p>
+<ul>
+<li><p>Parameter: <span class="math inline">\mu_b - \mu_c</span></p></li>
+<li><p>“The difference in long run average time to get to the edge of the platform between the beetles with the black cap and beetles with the clear cap.”</p></li>
+</ul>
+</section>
+<section id="dung-beetles-4" class="slide level2 center">
+<h2>Dung Beetles</h2>
+<p>Hypotheses:</p>
+<ul>
+<li><p>Null: There is no difference in average time taken to get to the edge between the two groups</p></li>
+<li><p>Alt: The average time for the group with the black cap is longer</p></li>
+</ul>
+<p>In symbols:</p>
+<ul>
+<li><p><span class="math inline">H_0: \mu_b - \mu_c = 0</span></p></li>
+<li><p><span class="math inline">H_0: \mu_b - \mu_c &gt; 0</span></p></li>
+</ul>
+</section>
+<section id="p-values" class="slide level2 center">
+<h2>P-values</h2>
+<ul>
+<li><p>P-value: how likely we are to observe a difference in sample means as or more extreme than the one we saw in the data, based on the null distribution.</p></li>
+<li><p>P-value &lt; significance level, reject the null</p>
+<ul>
+<li>Strong evidence that the two groups are different</li>
+</ul></li>
+<li><p>P-value ≥ significance level, fail to reject the null</p>
+<ul>
+<li>No evidence that the groups are different from each other</li>
+</ul></li>
+</ul>
+</section>
+<section id="null-distribution" class="slide level2 center">
+<h2>Null Distribution</h2>
+
+<img data-src="images/2_nulldist.png" class="quarto-figure quarto-figure-center r-stretch" alt="Simulated null distributions for the difference between two means. The distribution is normal-looking and centered at zero."></section>
+<section id="null-distribution-1" class="slide level2 center">
+<h2>Null Distribution</h2>
+<p>The null distribution is simulated assuming: <span class="math inline">H_0: \mu_b - \mu_c = 0</span></p>
+<ul>
+<li>As with proportions, the middle of the null distribution is zero</li>
+</ul>
+</section>
+<section id="multiple-means-applet" class="slide level2 center">
+<h2>Multiple Means Applet</h2>
+
+<img data-src="images/2_simbox.png" class="quarto-figure quarto-figure-center r-stretch" alt="Screenshot of multiple means applet. On the left panel, the time and treatment (black or clear cap) is given for the data set. Boxplots displaying the data for each group are shown on the right. Summary statistics are given below the boxplot panel." width="600"></section>
+<section id="observed-statistic" class="slide level2 center">
+<h2>Observed Statistic</h2>
+<p>Similar to proportions, the observed statistic is just the observed difference in means between the two groups.</p>
+<ul>
+<li><span class="math inline">\bar{x}_b - \bar{x}_c=126.55-42.78=83.768</span></li>
+</ul>
+</section>
+<section id="finding-the-p-value" class="slide level2 center">
+<h2>Finding the P-value</h2>
+
+<img data-src="images/2_pval.png" class="quarto-figure quarto-figure-center r-stretch" alt="Screenshot of the multiple means applet. The simulated data outcome and summary statistics are shown on the left. On the right, there is a null distribution with a red line drawn where the observed statistic lies. The p-value is 0/1000."></section>
+<section id="finding-the-p-value-1" class="slide level2 center">
+<h2>Finding the P-value</h2>
+<p>We find the p-value the same way as before.</p>
+<ul>
+<li><p>Given our observed statistic, how many <em>simulated</em> values are as or more extreme?</p></li>
+<li><p>On the previous slide, p-value = 0/1000</p>
+<ul>
+<li>This is less than 0.05, reject <span class="math inline">H_A</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="standardized-statistic-ss" class="slide level2 center">
+<h2>Standardized Statistic (SS)</h2>
+<p>General form:</p>
+<p><span class="math display">t=\frac{Observed\: Statistic - Hypothesized\: Value}{Standard\: Deviation\: under\: the\: null}</span></p>
+<p><span class="math display">=\frac{(\bar{x}_1-\bar{x}_2)-0}{SD\: from\: Applet}</span></p>
+</section>
+<section id="standardized-statistic-ss-1" class="slide level2 center">
+<h2>Standardized Statistic (SS)</h2>
+<p>Same conclusions as before</p>
+<ul>
+<li><p>Outside the 2s, reject the null (strong evidence)</p></li>
+<li><p>Inside the 2s, fail to reject the null (weak evidence)</p></li>
+</ul>
+</section>
+<section id="conclusion" class="slide level2 center">
+<h2>Conclusion</h2>
+<p>“We (<strong>do/do not</strong>) have strong evidence to conclude that the long run difference in averages of (<strong>context</strong>) between group 1 and group 2 is (<strong>less than/greater than/not equal to</strong>) zero.”</p>
+</section>
+<section id="dung-beetle-standardized-statistic" class="slide level2 center">
+<h2>Dung Beetle Standardized Statistic</h2>
+<p><span class="math display">t=\frac{\bar{x}_b-\bar{x}_c}{SD\: from\: Applet}=\frac{83.768}{21.526}=3.89</span></p>
+<div class="fragment">
+<p>This is outside the twos, so we reject <span class="math inline">H_A</span></p>
+</div>
+</section>
+<section id="confidence-intervals-ci" class="slide level2 center">
+<h2>Confidence Intervals (CI)</h2>
+<p>2SD Confidence Interval:</p>
+<p><span class="math display">CI=(Lower\: Bound,\: Upper\: Bound)</span></p>
+<p><span class="math display">=Observed\: Statistic\: ± Margin\: of\: Error</span></p>
+<p><span class="math display">CI = (\bar{x}_1-\bar{x}_2) ± 2*(SD\: from\: Applet)</span></p>
+</section>
+<section id="sd-ci-interpretation" class="slide level2 center">
+<h2>2SD CI Interpretation</h2>
+<p>“We are 95% confident that the long run difference in averages of (<strong>context</strong>) between group 1 and group 2 is between (<strong>lower bound</strong>) and (<strong>upper bound</strong>).”</p>
+</section>
+<section id="conclusions-based-on-ci" class="slide level2 center">
+<h2>Conclusions based on CI</h2>
+<p>Our hypothesized parameter value is <em>always</em> zero, therefore…</p>
+<ul>
+<li><p>If 0 is IN the interval, fail to reject <span class="math inline">H_0</span></p>
+<ul>
+<li>It’s possible the groups are the same</li>
+</ul></li>
+</ul>
+</section>
+<section id="conclusions-based-on-ci-1" class="slide level2 center">
+<h2>Conclusions based on CI</h2>
+<p>Our hypothesized parameter value is <em>always</em> zero, therefore…</p>
+<ul>
+<li><p>If 0 is OUTSIDE the interval, reject <span class="math inline">H_0</span></p>
+<ul>
+<li>The groups are different</li>
+</ul></li>
+</ul>
+</section>
+<section id="dung-beetle-ci" class="slide level2 center">
+<h2>Dung Beetle CI</h2>
+<p><span class="math display">CI = (\bar{x}_b-\bar{x}_c) ± 2*(SD\: from\: Applet)</span></p>
+<p><span class="math display">= 83.768 ± 2*21.526</span></p>
+<p><span class="math display">= (40.72,126.82)</span></p>
+</section>
+<section id="interpretation" class="slide level2 center">
+<h2>Interpretation</h2>
+<p>“We are 95% confident that the long run average time for the black cap group is 40.72 to 126.82 seconds longer than the long run average time for the clear cap group.”</p>
+</section>
+<section id="conclusions" class="slide level2 center">
+<h2>Conclusions</h2>
+<ul>
+<li><p>Because zero is not in the interval, we reject <span class="math inline">H_A</span></p></li>
+<li><p>Notice, the conclusions we draw from our p-value, standardized statistic, and confidence interval all match!</p></li>
+</ul>
+<div class="fragment">
+<p>We have strong evidence to conclude that the dung beetles do navigate by the stars.</p>
 
 <div class="quarto-auto-generated-content">
 <p><img src="logo.jpg" class="slide-logo"></p>
@@ -342,7 +668,8 @@
 
 </div>
 </div>
-</section>
+</div>
+</section></section>
     </div>
   </div>
 
@@ -360,7 +687,6 @@
   <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -528,27 +854,9 @@
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom
