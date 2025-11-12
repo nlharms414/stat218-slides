@@ -153,6 +153,8 @@ In symbols:
 
 -   $H_0: \mu_b - \mu_c > 0$
 
+# Strength of Evidence
+
 ## P-values {.center}
 
 -   P-value: how likely we are to observe a difference in sample means as or more extreme than the one we saw in the data, based on the null distribution.
