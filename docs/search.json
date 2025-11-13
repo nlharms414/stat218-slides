@@ -21,13 +21,6 @@
     "text": "National Anthem Example\nDot plot of National Anthem length:"
   },
   {
-    "objectID": "slides/Random/exam1review.html#basic-definitions",
-    "href": "slides/Random/exam1review.html#basic-definitions",
-    "title": "Exam 1 Review Slides",
-    "section": "Basic Definitions",
-    "text": "Basic Definitions"
-  },
-  {
     "objectID": "slides/Random/exam1review.html#data",
     "href": "slides/Random/exam1review.html#data",
     "title": "Exam 1 Review",
@@ -77,13 +70,6 @@
     "text": "Hypothesis Testing\n\nTwo hypotheses\nNull hypothesis (\\(H_{0}\\)):\n\nThe chance explanation, what we assume is true\nUses =\n\nAlternative hypothesis (\\(H_{A}\\)):\n\nWhat researchers think could be true\nUses &gt;, &lt;, or ≠\n\n\nWe can either write our hypotheses in words or symbols."
   },
   {
-    "objectID": "slides/Random/exam1review.html#strength-of-evidence",
-    "href": "slides/Random/exam1review.html#strength-of-evidence",
-    "title": "Exam 1 Review Slides",
-    "section": "Strength of Evidence",
-    "text": "Strength of Evidence\nTwo methods for gathering strength of evidence so far:\n\nP-value\nStandardized statistic\n\nWe can obtain either of the above through simulation OR theory; we will mainly be using theory from here on out."
-  },
-  {
     "objectID": "slides/Random/exam1review.html#strength-of-evidence-1",
     "href": "slides/Random/exam1review.html#strength-of-evidence-1",
     "title": "Exam 1 Review",
@@ -96,6 +82,13 @@
     "title": "Exam 1 Review",
     "section": "Strength of Evidence",
     "text": "Strength of Evidence\nIf we have strong evidence:\n\nP-value is less than 0.05\nStandardized statistic is outside the twos\nWe reject our null hypothesis, and accept the alternative"
+  },
+  {
+    "objectID": "slides/Random/exam1review.html#strength-of-evidence-3",
+    "href": "slides/Random/exam1review.html#strength-of-evidence-3",
+    "title": "Exam 1 Review",
+    "section": "Strength of Evidence",
+    "text": "Strength of Evidence\nIf we do NOT have strong evidence:\n\nP-value is 0.05 or higher\nStandardized statistic is inside the twos\nWe fail to null hypothesis, and cannot accept the alternative"
   },
   {
     "objectID": "slides/Random/exam1review.html#standard-error-se",
@@ -686,6 +679,321 @@
     "text": "Rock, Paper, Scissors Conclusion\nWill conclude one of the following:\n\n“We have enough evidence to conclude that the long run proportion of people who chose scissors is less than 1/3.”\n“We do not have enough evidence to conclude that the long run proportion of people who chose scissors is less than 1/3.”"
   },
   {
+    "objectID": "slides/Chapter 06/section6.1.html#section-6.1-learning-objectives",
+    "href": "slides/Chapter 06/section6.1.html#section-6.1-learning-objectives",
+    "title": "Section 6.1",
+    "section": "Section 6.1 Learning Objectives",
+    "text": "Section 6.1 Learning Objectives\n\nCalculate or estimate the mean, median, quartiles, five number summary, and interquartile range from a dataset and understand what these are measuring.\nWhen comparing two quantitative distributions, identify which has the larger mean, median, standard deviation, and inter-quartile range.\nIdentify whether there is likely an association between a binary categorical variable and a quantitative response variable."
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#recap",
+    "href": "slides/Chapter 06/section6.1.html#recap",
+    "title": "Section 6.1",
+    "section": "Recap",
+    "text": "Recap\n\nWhen comparing two groups, we’ve had…\n\nA categorical explanatory variable\nA categorical response variable\n\nResearch question: Are these two explanatory groups different?\nWhat changes when our response is numerical?"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#recap-1",
+    "href": "slides/Chapter 06/section6.1.html#recap-1",
+    "title": "Section 6.1",
+    "section": "Recap",
+    "text": "Recap\nStandard Error for Two Proportions:\nSE_p=\\sqrt{\\hat{p}(1-\\hat{p})(\\frac{1}{n_1}+\\frac{1}{n_2})}\nOR\nSE=\\sqrt{\\frac{\\hat{p}_1(1-\\hat{p}_1)}{n_1}+\\frac{\\hat{p}_2(1-\\hat{p}_2)}{n_2}}"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#standarized-statistic-for-two-proportions",
+    "href": "slides/Chapter 06/section6.1.html#standarized-statistic-for-two-proportions",
+    "title": "Section 6.1",
+    "section": "Standarized Statistic for Two Proportions",
+    "text": "Standarized Statistic for Two Proportions\nz=\\frac{(\\hat{p}_{1} - \\hat{p}_{2})-0}{\\sqrt{\\hat{p}(1-\\hat{p})(\\frac{1}{n_1}+\\frac{1}{n_2})}}\nHere, we use the pooled standard error since we assume \\hat{p}_1=\\hat{p}_2."
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#confidence-interval-for-two-proportions",
+    "href": "slides/Chapter 06/section6.1.html#confidence-interval-for-two-proportions",
+    "title": "Section 6.1",
+    "section": "Confidence Interval for Two Proportions",
+    "text": "Confidence Interval for Two Proportions\nCI=(\\hat{p}_1-\\hat{p}_2)±2*\\sqrt{\\frac{\\hat{p}_1(1-\\hat{p}_1)}{n_1}+\\frac{\\hat{p}_2(1-\\hat{p}_2)}{n_2}}\nHere, our SE is NOT pooled, since we assume \\hat{p}_1≠\\hat{p}_2"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#overview",
+    "href": "slides/Chapter 06/section6.1.html#overview",
+    "title": "Section 6.1",
+    "section": "Overview",
+    "text": "Overview\nHow did we summarize categorical data?\n\nSegmented bar graphs\nTwo-way tables\nDifference in proportions\nRelative risk\n\n\nWe’ll need different methods for numerical data."
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#overview-1",
+    "href": "slides/Chapter 06/section6.1.html#overview-1",
+    "title": "Section 6.1",
+    "section": "Overview",
+    "text": "Overview\nTo summarize numerical data, we use:\n\nDot plots\nFive number summaries\nBoxplots\nDifference in averages"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#old-faithful-geyser",
+    "href": "slides/Chapter 06/section6.1.html#old-faithful-geyser",
+    "title": "Section 6.1",
+    "section": "Old Faithful Geyser",
+    "text": "Old Faithful Geyser\n\nWant to look at difference in eruption patterns between 1978 and 2003\n\nSpecifically, if average time between eruptions has changed\n\n107 eruptions in 1978 were examined\n95 eruptions in 2003 were examined"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#old-faithful-geyeser",
+    "href": "slides/Chapter 06/section6.1.html#old-faithful-geyeser",
+    "title": "Section 6.1",
+    "section": "Old Faithful Geyeser",
+    "text": "Old Faithful Geyeser\n\nWhat is the explanatory variable? Year observed\n\nIs it categorical or numerical? Categorical\n\nWhat is the response variable? Average time between eruptions\n\nIs it categorical or numerical? Numerical"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#geyser-data-distribution",
+    "href": "slides/Chapter 06/section6.1.html#geyser-data-distribution",
+    "title": "Section 6.1",
+    "section": "Geyser Data Distribution",
+    "text": "Geyser Data Distribution\nLet’s compare the distributions of the two years:\n\n\nHow can we describe the data using shape, spread, center, and outliers?"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#five-number-summary-1",
+    "href": "slides/Chapter 06/section6.1.html#five-number-summary-1",
+    "title": "Section 6.1",
+    "section": "Five Number Summary",
+    "text": "Five Number Summary\nThe five number summary consists of:\n\nMinimum value\nMaximum value\nLower quartile (Q1)\nMedian\nUpper quartile (Q2)"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#median-lower-quartile-upper-quartile",
+    "href": "slides/Chapter 06/section6.1.html#median-lower-quartile-upper-quartile",
+    "title": "Section 6.1",
+    "section": "Median, Lower Quartile & Upper Quartile",
+    "text": "Median, Lower Quartile & Upper Quartile\nRecall, the median is calculated by ordering the data and determining the midpoint (50%).\n\nThe process is the same for the lower quartile (Q1) and upper quartile (Q3)\nQ1: Value for which 25% of the data falls below\nQ3: Value for which 75% of the data falls below"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#displaying-the-five-number-summary",
+    "href": "slides/Chapter 06/section6.1.html#displaying-the-five-number-summary",
+    "title": "Section 6.1",
+    "section": "Displaying the Five Number Summary",
+    "text": "Displaying the Five Number Summary\nA boxplot can display all five number summary values.\n\nQ3 minus Q1 gives the interquartile range."
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#geyser-data",
+    "href": "slides/Chapter 06/section6.1.html#geyser-data",
+    "title": "Section 6.1",
+    "section": "Geyser Data",
+    "text": "Geyser Data\nThe five number summary for both years:\n\n\n\n\n\n\n\n\nYear\nMinimum\nQ1\nMedian\nQ3\nMaximum\nAverage\n\n\n\n\n1978\n42\n58\n75\n81\n95\n71.1\n\n\n2003\n56\n87\n91\n98\n110\n91.2"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.1.html#geyser-example-boxplots",
+    "href": "slides/Chapter 06/section6.1.html#geyser-example-boxplots",
+    "title": "Section 6.1",
+    "section": "Geyser Example Boxplots",
+    "text": "Geyser Example Boxplots"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#section-6.2-learning-objectives",
+    "href": "slides/Chapter 06/section6.2.html#section-6.2-learning-objectives",
+    "title": "Section 6.2",
+    "section": "Section 6.2 Learning Objectives",
+    "text": "Section 6.2 Learning Objectives\n\nGive the null and alternative hypothesis that compares two categories for a categorical explanatory variable and the means of a numerical response variable.\nFind and interpret the standardized statistic and the p-value for a test of two means.\nUse the 2SD method to find a 95% confidence interval for the difference in population means for two “treatment” groups, and interpret the interval in the context of the study, specifically when it contains zero.\nState a complete conclusion in the context of a scenario about the null and alternative hypotheses based on the p-value/standardized statistic."
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#s-strategy-statistic",
+    "href": "slides/Chapter 06/section6.2.html#s-strategy-statistic",
+    "title": "Section 6.2",
+    "section": "3S Strategy: Statistic",
+    "text": "3S Strategy: Statistic\nWith numerical variables, now we’re focused on averages.\n\nParameter: The difference in long run averages between two groups\n\n\\mu_{Group\\:1} - \\mu_{Group\\:2}\n\n\n\n\nObserved Statistic: The difference in conditional averages\n\n\\bar{x}_{Group\\:1} - \\bar{x}_{Group\\:2}"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#s-strategy-simulate-strength-of-evidence",
+    "href": "slides/Chapter 06/section6.2.html#s-strategy-simulate-strength-of-evidence",
+    "title": "Section 6.2",
+    "section": "3S Strategy: Simulate & Strength of Evidence",
+    "text": "3S Strategy: Simulate & Strength of Evidence\nNext, we simulate to gather strength of evidence in favor of H_A\n\nNull Hypothesis: There is no difference between the long run averages of two groups\nAlt. Hypothesis: There is a difference between the long run averages of two groups"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#s-strategy-simulate-strength-of-evidence-1",
+    "href": "slides/Chapter 06/section6.2.html#s-strategy-simulate-strength-of-evidence-1",
+    "title": "Section 6.2",
+    "section": "3S Strategy: Simulate & Strength of Evidence",
+    "text": "3S Strategy: Simulate & Strength of Evidence\nIn symbols:\n\nH_0: \\mu_{Group\\:1} - \\mu_{Group\\:2} = 0\nH_A: \\mu_{Group\\:1} - \\mu_{Group\\:2} &gt;,&lt;,\\neq 0"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#s-strategy-simulate-strength-of-evidence-2",
+    "href": "slides/Chapter 06/section6.2.html#s-strategy-simulate-strength-of-evidence-2",
+    "title": "Section 6.2",
+    "section": "3S Strategy: Simulate & Strength of Evidence",
+    "text": "3S Strategy: Simulate & Strength of Evidence\nRecall, we can alternatively write our hypotheses as:\n\nH_0: \\mu_{Group\\:1} = \\mu_{Group\\:2}\nH_A: \\mu_{Group\\:1} &gt;,&lt;,\\neq \\mu_{Group\\:2}"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#recall-symbol-comparison-for-one-proportionmean",
+    "href": "slides/Chapter 06/section6.2.html#recall-symbol-comparison-for-one-proportionmean",
+    "title": "Section 6.2",
+    "section": "Recall: Symbol Comparison for ONE Proportion/Mean",
+    "text": "Recall: Symbol Comparison for ONE Proportion/Mean\n\n\n\n\n\n\n\n\n\nCategorical Variable\nNumerical Variable\n\n\nParameter of Interest\n                       \n                             \\pi                       \n                             \n                     \n                                                        \\mu                     \n                                                        \n\n\nObserved Statistic\n                       \n                             \\hat{p}                   \n                             \n                     \n                                                        \\bar{x}"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#symbol-comparison-for-two-proportionsmeans",
+    "href": "slides/Chapter 06/section6.2.html#symbol-comparison-for-two-proportionsmeans",
+    "title": "Section 6.2",
+    "section": "Symbol Comparison for TWO Proportions/Means",
+    "text": "Symbol Comparison for TWO Proportions/Means\n\n\n\n\n\n\n\n\n\nCategorical Response Variable\nNumerical Response Variable\n\n\nParameter of Interest\n                       \n                             \\pi_1-\\pi_2                       \n                             \n                     \n                                                        \\mu_1-\\mu_2                     \n                                                        \n\n\nObserved Statistic\n                       \n                             \\hat{p}_1-\\hat{p}_2                   \n                             \n                     \n                                                        \\bar{x}_1-\\bar{x} _2                \n                                                        \n\n\n\n\nNotice the pattern here!"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#dung-beetles",
+    "href": "slides/Chapter 06/section6.2.html#dung-beetles",
+    "title": "Section 6.2",
+    "section": "Dung Beetles",
+    "text": "Dung Beetles\n\nResearchers want to investigate if a certain type of dung beetle can navigate using the stars\n18 total beetles\nProcess:\n\n\nPlace all 18 beetles on a platform on a moonless night\n9 receive a black cap to obstruct their sight; the other 9 receive a clear cap as a placebo\nThe time taken for each beetle to reach the edge of the platform is recorded"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#dung-beetles-1",
+    "href": "slides/Chapter 06/section6.2.html#dung-beetles-1",
+    "title": "Section 6.2",
+    "section": "Dung Beetles",
+    "text": "Dung Beetles\n\nExplanatory variable: Black cap or clear cap\n\nCategorical or numerical? Categorical\n\nResponse variable: Time taken to reach the edge\n\nCategorical or numerical? Numerical"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#dung-beetles-2",
+    "href": "slides/Chapter 06/section6.2.html#dung-beetles-2",
+    "title": "Section 6.2",
+    "section": "Dung Beetles",
+    "text": "Dung Beetles\n\\mu = long run average time it takes to reach the edge of the platform\n\n\\mu_b = Long run average time for beetles with the black cap\n\\mu_c = Long run average time for beetles with the clear cap"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#dung-beetles-3",
+    "href": "slides/Chapter 06/section6.2.html#dung-beetles-3",
+    "title": "Section 6.2",
+    "section": "Dung Beetles",
+    "text": "Dung Beetles\nIf dung beetles can navigate using the stars, we would expect \\mu_b to be larger (longer time).\n\nParameter: \\mu_b - \\mu_c\n“The difference in long run average time to get to the edge of the platform between the beetles with the black cap and beetles with the clear cap.”"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#dung-beetles-4",
+    "href": "slides/Chapter 06/section6.2.html#dung-beetles-4",
+    "title": "Section 6.2",
+    "section": "Dung Beetles",
+    "text": "Dung Beetles\nHypotheses:\n\nNull: There is no difference in average time taken to get to the edge between the two groups\nAlt: The average time for the group with the black cap is longer\n\nIn symbols:\n\nH_0: \\mu_b - \\mu_c = 0\nH_0: \\mu_b - \\mu_c &gt; 0"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#p-values",
+    "href": "slides/Chapter 06/section6.2.html#p-values",
+    "title": "Section 6.2",
+    "section": "P-values",
+    "text": "P-values\n\nP-value: how likely we are to observe a difference in sample means as or more extreme than the one we saw in the data, based on the null distribution.\nP-value &lt; significance level, reject the null\n\nStrong evidence that the two groups are different\n\nP-value ≥ significance level, fail to reject the null\n\nNo evidence that the groups are different from each other"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#null-distribution",
+    "href": "slides/Chapter 06/section6.2.html#null-distribution",
+    "title": "Section 6.2",
+    "section": "Null Distribution",
+    "text": "Null Distribution"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#null-distribution-1",
+    "href": "slides/Chapter 06/section6.2.html#null-distribution-1",
+    "title": "Section 6.2",
+    "section": "Null Distribution",
+    "text": "Null Distribution\nThe null distribution is simulated assuming: H_0: \\mu_b - \\mu_c = 0\n\nAs with proportions, the middle of the null distribution is zero"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#multiple-means-applet",
+    "href": "slides/Chapter 06/section6.2.html#multiple-means-applet",
+    "title": "Section 6.2",
+    "section": "Multiple Means Applet",
+    "text": "Multiple Means Applet"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#observed-statistic",
+    "href": "slides/Chapter 06/section6.2.html#observed-statistic",
+    "title": "Section 6.2",
+    "section": "Observed Statistic",
+    "text": "Observed Statistic\nSimilar to proportions, the observed statistic is just the observed difference in means between the two groups.\n\n\\bar{x}_b - \\bar{x}_c=126.55-42.78=83.768"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#finding-the-p-value",
+    "href": "slides/Chapter 06/section6.2.html#finding-the-p-value",
+    "title": "Section 6.2",
+    "section": "Finding the P-value",
+    "text": "Finding the P-value"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#finding-the-p-value-1",
+    "href": "slides/Chapter 06/section6.2.html#finding-the-p-value-1",
+    "title": "Section 6.2",
+    "section": "Finding the P-value",
+    "text": "Finding the P-value\nWe find the p-value the same way as before.\n\nGiven our observed statistic, how many simulated values are as or more extreme?\nOn the previous slide, p-value = 0/1000\n\nThis is less than 0.05, reject H_A"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#standardized-statistic-ss",
+    "href": "slides/Chapter 06/section6.2.html#standardized-statistic-ss",
+    "title": "Section 6.2",
+    "section": "Standardized Statistic (SS)",
+    "text": "Standardized Statistic (SS)\nGeneral form:\nt=\\frac{Observed\\: Statistic - Hypothesized\\: Value}{Standard\\: Deviation\\: under\\: the\\: null}\n=\\frac{(\\bar{x}_1-\\bar{x}_2)-0}{SD\\: from\\: Applet}"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#standardized-statistic-ss-1",
+    "href": "slides/Chapter 06/section6.2.html#standardized-statistic-ss-1",
+    "title": "Section 6.2",
+    "section": "Standardized Statistic (SS)",
+    "text": "Standardized Statistic (SS)\nSame conclusions as before\n\nOutside the 2s, reject the null (strong evidence)\nInside the 2s, fail to reject the null (weak evidence)"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#conclusion",
+    "href": "slides/Chapter 06/section6.2.html#conclusion",
+    "title": "Section 6.2",
+    "section": "Conclusion",
+    "text": "Conclusion\n“We (do/do not) have strong evidence to conclude that the long run difference in averages of (context) between group 1 and group 2 is (less than/greater than/not equal to) zero.”"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#dung-beetle-standardized-statistic",
+    "href": "slides/Chapter 06/section6.2.html#dung-beetle-standardized-statistic",
+    "title": "Section 6.2",
+    "section": "Dung Beetle Standardized Statistic",
+    "text": "Dung Beetle Standardized Statistic\nt=\\frac{\\bar{x}_b-\\bar{x}_c}{SD\\: from\\: Applet}=\\frac{83.768}{21.526}=3.89\n\nThis is outside the twos, so we reject H_A"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#confidence-intervals-ci",
+    "href": "slides/Chapter 06/section6.2.html#confidence-intervals-ci",
+    "title": "Section 6.2",
+    "section": "Confidence Intervals (CI)",
+    "text": "Confidence Intervals (CI)\n2SD Confidence Interval:\nCI=(Lower\\: Bound,\\: Upper\\: Bound)\n=Observed\\: Statistic\\: ± Margin\\: of\\: Error\nCI = (\\bar{x}_1-\\bar{x}_2) ± 2*(SD\\: from\\: Applet)"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#sd-ci-interpretation",
+    "href": "slides/Chapter 06/section6.2.html#sd-ci-interpretation",
+    "title": "Section 6.2",
+    "section": "2SD CI Interpretation",
+    "text": "2SD CI Interpretation\n“We are 95% confident that the long run difference in averages of (context) between group 1 and group 2 is between (lower bound) and (upper bound).”"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#conclusions-based-on-ci",
+    "href": "slides/Chapter 06/section6.2.html#conclusions-based-on-ci",
+    "title": "Section 6.2",
+    "section": "Conclusions based on CI",
+    "text": "Conclusions based on CI\nOur hypothesized parameter value is always zero, therefore…\n\nIf 0 is IN the interval, fail to reject H_0\n\nIt’s possible the groups are the same"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#conclusions-based-on-ci-1",
+    "href": "slides/Chapter 06/section6.2.html#conclusions-based-on-ci-1",
+    "title": "Section 6.2",
+    "section": "Conclusions based on CI",
+    "text": "Conclusions based on CI\nOur hypothesized parameter value is always zero, therefore…\n\nIf 0 is OUTSIDE the interval, reject H_0\n\nThe groups are different"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#dung-beetle-ci",
+    "href": "slides/Chapter 06/section6.2.html#dung-beetle-ci",
+    "title": "Section 6.2",
+    "section": "Dung Beetle CI",
+    "text": "Dung Beetle CI\nCI = (\\bar{x}_b-\\bar{x}_c) ± 2*(SD\\: from\\: Applet)\n= 83.768 ± 2*21.526\n= (40.72,126.82)"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#interpretation",
+    "href": "slides/Chapter 06/section6.2.html#interpretation",
+    "title": "Section 6.2",
+    "section": "Interpretation",
+    "text": "Interpretation\n“We are 95% confident that the long run average time for the black cap group is 40.72 to 126.82 seconds longer than the long run average time for the clear cap group.”"
+  },
+  {
+    "objectID": "slides/Chapter 06/section6.2.html#conclusions",
+    "href": "slides/Chapter 06/section6.2.html#conclusions",
+    "title": "Section 6.2",
+    "section": "Conclusions",
+    "text": "Conclusions\n\nBecause zero is not in the interval, we reject H_A\nNotice, the conclusions we draw from our p-value, standardized statistic, and confidence interval all match!\n\n\nWe have strong evidence to conclude that the dung beetles do navigate by the stars."
+  },
+  {
     "objectID": "slides/Chapter 03/section3.4.html#section-3.4-learning-objectives",
     "href": "slides/Chapter 03/section3.4.html#section-3.4-learning-objectives",
     "title": "Section 3.4",
@@ -1134,6 +1442,342 @@
     "text": "Summary Table\n\n\n\n\n\n\n\n\n\nRandom Assignment\nNo Random Assignment\n\n\nRandom Sampling\nCan generalize to the population; Causation conclusion\nCan generalize to the population; Association conclusion\n\n\nNo Random Sampling\nCannot generalize to the population; Causation conclusion\nCannot generalize to the population; Association conclusion"
   },
   {
+    "objectID": "slides/Chapter 05/section5.1.html#section-5.1-learning-objectives",
+    "href": "slides/Chapter 05/section5.1.html#section-5.1-learning-objectives",
+    "title": "Section 5.1",
+    "section": "Section 5.1 Learning Objectives",
+    "text": "Section 5.1 Learning Objectives\n\nUnderstand how a two-way table works.\nBe able to calculate conditional probability for different levels of the categorical variables.\nDetermine whether or not there may be association based on the conditional probabilities that have been calculated.\nUnderstand and be able to calculate relative risk."
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#variable-types",
+    "href": "slides/Chapter 05/section5.1.html#variable-types",
+    "title": "Section 5.1",
+    "section": "Variable Types",
+    "text": "Variable Types\n\nExplanatory (independent) variable\n\n“Explains” (“independent of”) the response variable\n\nResponse (dependent) variable\n\n“Responds to” (“depends on”) the explanatory variable"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#variable-types-1",
+    "href": "slides/Chapter 05/section5.1.html#variable-types-1",
+    "title": "Section 5.1",
+    "section": "Variable Types",
+    "text": "Variable Types\n\nConfounding variable\n\nRelated to both\n\nAssociation does NOT mean causation!\n\nWe could always potentially have a confounding variable"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#design-types",
+    "href": "slides/Chapter 05/section5.1.html#design-types",
+    "title": "Section 5.1",
+    "section": "Design Types",
+    "text": "Design Types\n\nObservational study vs. experiment\nRandom sample vs. random assignment"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#random-vs.-random",
+    "href": "slides/Chapter 05/section5.1.html#random-vs.-random",
+    "title": "Section 5.1",
+    "section": "Random vs. Random",
+    "text": "Random vs. Random\n\nRandom sampling = can generalize results\nNo random sampling = cannot generalize results\n\n\n\nRandom assignment = can draw cause and effect conclusion (experiment)\nNo random assignment = can only draw association conclusion (observational)"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#comparing-two-groups",
+    "href": "slides/Chapter 05/section5.1.html#comparing-two-groups",
+    "title": "Section 5.1",
+    "section": "Comparing Two Groups",
+    "text": "Comparing Two Groups\n\nNew research question: Are these two groups different?\nCompare using explanatory and repsonse variables\nWe can still use our same strength of evidence methods!\n\n\nP-value\nStandardized statistic\nConfidence intervals"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#murderous-nurse",
+    "href": "slides/Chapter 05/section5.1.html#murderous-nurse",
+    "title": "Section 5.1",
+    "section": "Murderous Nurse",
+    "text": "Murderous Nurse\nFor several years in the 1990s, Kristen Gilbert worked as a nurse in the intensive care unit (ICU) of the Veterans Administration Hospital in Northampton, Massachusetts. Over the course of her time there, other nurses came to suspect that she was killing patients by injecting them with the heart stimulant epinephrine. Gilbert was eventually arrested and charged with these murders. Part of the evidence presented against Gilbert at her murder trial was a statistical analysis of 1,641 eight-hour shifts during the time Gilbert worked in the ICU. For each of these shifts, researchers recorded two variables:whether Gilbert worked on the shift and whether at least one patient died during the shift."
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#murderous-nurse-1",
+    "href": "slides/Chapter 05/section5.1.html#murderous-nurse-1",
+    "title": "Section 5.1",
+    "section": "Murderous Nurse",
+    "text": "Murderous Nurse\n\n\n\nLet’s identify the following:\n\nObsevational units\nExplanatory variable\nResponse variable\nObservational study or experiment? Why?\n\n\n\n\n\n\n\n\nKey Info\n\n\n\n\n\n1,641 shifts during Gilbert’s time at ICU were analyzed\nFor each shift it was recorded if:\n\nGilbert worked the shift\nIf at least one person died"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#murderous-nurse-2",
+    "href": "slides/Chapter 05/section5.1.html#murderous-nurse-2",
+    "title": "Section 5.1",
+    "section": "Murderous Nurse",
+    "text": "Murderous Nurse\nIt was found that Gilbert worked 257 of the 1,641 shifts, and at least one person died during 74 of the 1,641 shifts.\n\n\nDoes this tell us much about an association between Gilbert working and patients dying?\nWhy or why not?"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#murderous-nurse-3",
+    "href": "slides/Chapter 05/section5.1.html#murderous-nurse-3",
+    "title": "Section 5.1",
+    "section": "Murderous Nurse",
+    "text": "Murderous Nurse\nNow, out of the 74 shifts where at least one person died, we find that 40 were shifts Gilbert worked, and 34 were not.\n\nNow does this seem like more reasonable evidence?\nCan we simply compare the numbers 34 and 40?"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#two-way-table",
+    "href": "slides/Chapter 05/section5.1.html#two-way-table",
+    "title": "Section 5.1",
+    "section": "Two Way Table",
+    "text": "Two Way Table\n\n\n\n\n\n\n\n\n\nGilbert shift\nNon-Gilbert shift\nTotal\n\n\n\n\nSomeone died\n40\n34\n74\n\n\nNo one died\n217\n1350\n1567\n\n\nTotal\n257\n1384\n1641"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#observed-statistic",
+    "href": "slides/Chapter 05/section5.1.html#observed-statistic",
+    "title": "Section 5.1",
+    "section": "Observed statistic?",
+    "text": "Observed statistic?\n\nIn a normal scenario, our observed statistic would be:\n\n\\hat{p}=\\frac{74}{1641}\nAKA:\n\\hat{p}=\\frac{Total\\:shifts\\:a\\:patient\\:died}{Total\\:sample\\:size}\nBut, this isn’t super helpful!"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#conditional-proportion",
+    "href": "slides/Chapter 05/section5.1.html#conditional-proportion",
+    "title": "Section 5.1",
+    "section": "Conditional Proportion",
+    "text": "Conditional Proportion\nCalculates the probability of success within each explanatory variable group"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#conditional-proportions",
+    "href": "slides/Chapter 05/section5.1.html#conditional-proportions",
+    "title": "Section 5.1",
+    "section": "Conditional Proportions",
+    "text": "Conditional Proportions\n\n\n\n\n\nflowchart LR\n  A(Population: All 8-hr shifts) --&gt; B(Sample: \n                                       n = 1,641 observed shifts)\n  B --&gt;|\"$${n}_G=257$$\"| C(\"$$\\hat{p}_G=\\frac{40}{257}=0.156$$\")\n  B --&gt;|\"$${n}_{NG}=1384$$\"| D(\"$$\\hat{p}_{NG}=\\frac{34}{1384}=0.025$$\")\n\n\n\n\n\n\n\n“G” = Gilbert shift\n“NG” = Non-Gilbert shift"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#conditional-proportions-1",
+    "href": "slides/Chapter 05/section5.1.html#conditional-proportions-1",
+    "title": "Section 5.1",
+    "section": "Conditional Proportions",
+    "text": "Conditional Proportions\n\\hat{p}_G=\\frac{Patient\\: died\\: a\\: shift\\: Gilbert\\: worked}{Total\\: shifts\\: Gilbert\\: worked} =\\frac{40}{257} =0.156"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#conditional-proportions-2",
+    "href": "slides/Chapter 05/section5.1.html#conditional-proportions-2",
+    "title": "Section 5.1",
+    "section": "Conditional Proportions",
+    "text": "Conditional Proportions\n\\hat{p}_{NG}=\\frac{Patient\\: died\\: a\\: shift\\: Gilbert\\: did\\: not\\: work}{Total\\: shifts\\: Gilbert\\: did\\: not\\: work} =\\frac{34}{1384} =0.025"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#a-new-observed-statistic",
+    "href": "slides/Chapter 05/section5.1.html#a-new-observed-statistic",
+    "title": "Section 5.1",
+    "section": "A new observed statistic",
+    "text": "A new observed statistic\nWhat to do with two p-hats? Take the difference!\n\n\\hat{p}_G = \\frac{40}{257} = 0.156\n\\hat{p}_{NG} = \\frac{34}{1384} = 0.025\n\nNew observed statistic:\n\\hat{p}_G - \\hat{p}_{NG} = 0.156-0.025 = 0.131\n\nNote: The order in which the p-hats are subtracted does not matter- but it will affect your interpretation"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#interpreting-the-new-p-hat",
+    "href": "slides/Chapter 05/section5.1.html#interpreting-the-new-p-hat",
+    "title": "Section 5.1",
+    "section": "Interpreting the new p-hat",
+    "text": "Interpreting the new p-hat\n\n\n\\hat{p}_G - \\hat{p}_{NG} = 0.131: “The proportion of deaths was 13.1% higher when Gilbert was working than when she was not working”\n\\hat{p}_{NG} - \\hat{p}_{G} = -0.131: “The proportion of deaths was 13.1% lower when Gilbert was not working than when she was working”"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#relative-risk",
+    "href": "slides/Chapter 05/section5.1.html#relative-risk",
+    "title": "Section 5.1",
+    "section": "Relative Risk",
+    "text": "Relative Risk\nThe ratio between two conditional proportions\n\n“How many times as large is the risk of an outcome for one group comparted to another?”"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#relative-risk-1",
+    "href": "slides/Chapter 05/section5.1.html#relative-risk-1",
+    "title": "Section 5.1",
+    "section": "Relative Risk",
+    "text": "Relative Risk\nTo calculate relative risk, divide the conditional proportions\n\\frac{\\hat{p}_G}{\\hat{p}_{NG}} = \\frac{0.15}{0.025} = 7.5\n“The proportion of deaths during a Gilbert shift is 7.5 times larger than during a non-Gilbert shift.”\n\nWhat would we expect relative risk to be if there is no difference between the two groups?"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#drawing-conclusions",
+    "href": "slides/Chapter 05/section5.1.html#drawing-conclusions",
+    "title": "Section 5.1",
+    "section": "Drawing Conclusions",
+    "text": "Drawing Conclusions\n\nWas the difference in proportions surprising?\nHow about relative risk?\nWhat do they tell us in this scenario?\nWhat might you report to the jury?\n\n\n“She appears guilty, the difference in proportions was not zero, and the relative risk was higher than 1.”"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.1.html#drawing-conclusions-1",
+    "href": "slides/Chapter 05/section5.1.html#drawing-conclusions-1",
+    "title": "Section 5.1",
+    "section": "Drawing Conclusions",
+    "text": "Drawing Conclusions\n\nGiven the scenario, can we say Gilbert caused the deaths?\n\nHint: Think back to chapter 4!\n\nCome up with an alternative explanation for the difference in proportion between the two groups"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#section-5.3-learning-objectives",
+    "href": "slides/Chapter 05/section5.3.html#section-5.3-learning-objectives",
+    "title": "Section 5.3",
+    "section": "Section 5.3 Learning Objectives",
+    "text": "Section 5.3 Learning Objectives\n\nIdentify when a theory-based approach can be used to find a p-value or confidence interval when comparing two categorical variables.\nUnderstand how confidence level and sample size impact the confidence interval for the difference between two proportions."
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#comparing-two-groups",
+    "href": "slides/Chapter 05/section5.3.html#comparing-two-groups",
+    "title": "Section 5.3",
+    "section": "Comparing Two Groups",
+    "text": "Comparing Two Groups\nWhat are we interested in?\n\nParameter: The difference in long run proportions between two groups\n\n\\pi_{Group\\:1} - \\pi_{Group\\:2}\n\n\nWe estimate the parameter using:\n\nObserved Statistic: The difference in conditional proportions\n\n\\hat{p}_{Group\\:1} - \\hat{p}_{Group\\:2}"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#hypotheses-for-two-groups",
+    "href": "slides/Chapter 05/section5.3.html#hypotheses-for-two-groups",
+    "title": "Section 5.3",
+    "section": "Hypotheses for Two Groups",
+    "text": "Hypotheses for Two Groups\n\nNull Hypothesis: There is no difference between the long run proportions of two groups\nAlt. Hypothesis: There is a difference between the long run proportions of two groups\n\nDifference can be greater than, less than, or not equal to"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#hypotheses-for-two-groups-1",
+    "href": "slides/Chapter 05/section5.3.html#hypotheses-for-two-groups-1",
+    "title": "Section 5.3",
+    "section": "Hypotheses for Two Groups",
+    "text": "Hypotheses for Two Groups\nIn symbols:\n\nH_0: \\pi_{Group\\:1} - \\pi_{Group\\:2} = 0\nH_A: \\pi_{Group\\:1} - \\pi_{Group\\:2} &gt;,&lt;,\\neq 0\n\n\nEquivalently, we could also write:\n\nH_0: \\pi_{Group\\:1}=\\pi_{Group\\:2}\nH_A: \\pi_{Group\\:1}&gt;,&lt;,\\neq\\pi_{Group\\:2}"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#determining-strength-of-evidence",
+    "href": "slides/Chapter 05/section5.3.html#determining-strength-of-evidence",
+    "title": "Section 5.3",
+    "section": "Determining Strength of Evidence",
+    "text": "Determining Strength of Evidence\nTwo broad ways to get strength of evidence:\n\nSimulation\nTheory-based approach\n\nThrough either of the above two can find:\n\nP-value\nStandardized statistic\nConfidence interval"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#strength-of-evidence-using-simulation",
+    "href": "slides/Chapter 05/section5.3.html#strength-of-evidence-using-simulation",
+    "title": "Section 5.3",
+    "section": "Strength of Evidence Using Simulation",
+    "text": "Strength of Evidence Using Simulation\nFor two groups, the Applet does the following to simulate:\n\nStudy data is input\nAll responses (success/failure) from the study are put on “cards”\nFor one study simulation, cards are randomly split into the two explanatory groups\nConditional proportions are calculated for each group"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#strength-of-evidence-using-theory-based-approach",
+    "href": "slides/Chapter 05/section5.3.html#strength-of-evidence-using-theory-based-approach",
+    "title": "Section 5.3",
+    "section": "Strength of Evidence Using Theory-Based Approach",
+    "text": "Strength of Evidence Using Theory-Based Approach\n\nIf we meet validity conditions, we can use theory\nUsing theory we can obtain:\n\nP-value (still use the Applet)\nStandardized statistic\nConfidence interval"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#validity-conditions-for-theory-based-approach",
+    "href": "slides/Chapter 05/section5.3.html#validity-conditions-for-theory-based-approach",
+    "title": "Section 5.3",
+    "section": "Validity Conditions for Theory-Based Approach",
+    "text": "Validity Conditions for Theory-Based Approach\nTo use the theory-based approach for two groups:\n\nEach box in the two-way table needs at least 10 observations\nThis means each explanatory group needs at least 10 successes and 10 failures\n\nSimilar condition to one proportion"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#standardized-statistic-for-two-groups",
+    "href": "slides/Chapter 05/section5.3.html#standardized-statistic-for-two-groups",
+    "title": "Section 5.3",
+    "section": "Standardized Statistic for Two Groups",
+    "text": "Standardized Statistic for Two Groups\nGeneral standardized statistic (SS) formula:\nSS=\\frac{Observed\\: Statistic - Hypothesized\\: Value}{Standard\\: Error\\: under\\: the\\: null}\nWhen comparing two groups:\nz=\\frac{(\\hat{p}_{1} - \\hat{p}_{2})-0}{\\sqrt{\\hat{p}(1-\\hat{p})(\\frac{1}{n_1}+\\frac{1}{n_2})}}"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#standardized-statistic-for-two-groups-1",
+    "href": "slides/Chapter 05/section5.3.html#standardized-statistic-for-two-groups-1",
+    "title": "Section 5.3",
+    "section": "Standardized Statistic for Two Groups",
+    "text": "Standardized Statistic for Two Groups\nNote that the standard error for the previous statistic uses the combined proportion of success (\\hat{p})\n\\sqrt{\\hat{p}(1-\\hat{p})(\\frac{1}{n_1}+\\frac{1}{n_2})}\nUnder the null, we assume \\hat{p}_1=\\hat{p}_2, so we estimate with \\hat{p}, the pooled proportion of success\n\nThis is also referred to as pooled standard error"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#standardized-statistic-interpretation",
+    "href": "slides/Chapter 05/section5.3.html#standardized-statistic-interpretation",
+    "title": "Section 5.3",
+    "section": "Standardized Statistic Interpretation",
+    "text": "Standardized Statistic Interpretation\n\nInterpretation remains essentially the same\n“\\hat{p}_1 is ___ standard deviations away from \\hat{p}_2”"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#confidence-interval-for-two-groups",
+    "href": "slides/Chapter 05/section5.3.html#confidence-interval-for-two-groups",
+    "title": "Section 5.3",
+    "section": "Confidence Interval for Two Groups",
+    "text": "Confidence Interval for Two Groups\nGeneral confidence interval formula:\nCI=Observed\\: Statistic\\: ± Multiplier*SE\nWhen comparing two groups:\nCI=(\\hat{p}_1-\\hat{p}_2)±2*\\sqrt{\\frac{\\hat{p}_1(1-\\hat{p}_1)}{n_1}+\\frac{\\hat{p}_2(1-\\hat{p}_2)}{n_2}}"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#confidence-interval-for-two-groups-1",
+    "href": "slides/Chapter 05/section5.3.html#confidence-interval-for-two-groups-1",
+    "title": "Section 5.3",
+    "section": "Confidence Interval for Two Groups",
+    "text": "Confidence Interval for Two Groups\nNotice that our SE formula differs slightly\n\\sqrt{\\frac{\\hat{p}_1(1-\\hat{p}_1)}{n_1}+\\frac{\\hat{p}_2(1-\\hat{p}_2)}{n_2}}\nNow, we are assuming that \\hat{p}_1≠\\hat{p}_2, so we no longer use the pooled standard error."
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#confidence-interval-interpretation",
+    "href": "slides/Chapter 05/section5.3.html#confidence-interval-interpretation",
+    "title": "Section 5.3",
+    "section": "Confidence Interval Interpretation",
+    "text": "Confidence Interval Interpretation\n\n“We are 95% confident that the long run difference in proportion of context between group 1 and group 2 falls between lower bound and upper bound.”\n\n\nAlternatively, we can say:\n\n“We’re 95% confident that the true proportion of context in group 1 is lower bound to upper bound more/less than the true proportion of context in group 2.”"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#yawning-data-two-way-table",
+    "href": "slides/Chapter 05/section5.3.html#yawning-data-two-way-table",
+    "title": "Section 5.3",
+    "section": "Yawning Data Two-Way Table",
+    "text": "Yawning Data Two-Way Table\n\n\n\n\n\n\n\n\n\n\nYawn seed\nNo yawn seed\nTotal\n\n\n\n\nYawned\n11\n3\n14\n\n\nDid not yawn\n23\n13\n36\n\n\nTotal\n34\n16\n50\n\n\n\n\n\n\n\n\nDo we meet the criteria to use the theory-based approach?"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#near-sightedness-example",
+    "href": "slides/Chapter 05/section5.3.html#near-sightedness-example",
+    "title": "Section 5.3",
+    "section": "Near-Sightedness Example",
+    "text": "Near-Sightedness Example\n\nThought to be an association between myopia (near-sightedness) and use of nightlights as a child\n479 children were observed\nFor each child, two questions were recorded:\n\nDid the child sleep with light in the room or total darkness before the age of 2?\nAt the child’s most recent eye exam, were they near-sighted or not?"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#near-sightedness-example-1",
+    "href": "slides/Chapter 05/section5.3.html#near-sightedness-example-1",
+    "title": "Section 5.3",
+    "section": "Near-Sightedness Example",
+    "text": "Near-Sightedness Example\n\nExplanatory variable: Sleeping with light or not as a child\nResponse variable: Near-sighted or not\nParameter of interest: Difference in long run proportions of near-sightedness between kids who slept in total darkness and those who slept with a light before the age of 2. (\\pi_D-\\pi_L)"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#setting-up-the-hypotheses",
+    "href": "slides/Chapter 05/section5.3.html#setting-up-the-hypotheses",
+    "title": "Section 5.3",
+    "section": "Setting up the hypotheses",
+    "text": "Setting up the hypotheses\n\nH_0: \\pi_D-\\pi_L=0\nH_A: \\pi_D-\\pi_L &lt; 0\n\nHere, we use “less than” since we hypothesize that kids who slept in darkness have a lower rate of myopia.\n\nEquivalent to: H_A: \\pi_D&lt;\\pi_L"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#near-sightedness-two-way-table",
+    "href": "slides/Chapter 05/section5.3.html#near-sightedness-two-way-table",
+    "title": "Section 5.3",
+    "section": "Near-Sightedness Two-Way Table",
+    "text": "Near-Sightedness Two-Way Table\n\n\n\n\n\n\n\n\n\n\nDark\nLight\nTotal\n\n\n\n\nNear-sighted\n18\n119\n137\n\n\nNot near-sighted\n154\n188\n342\n\n\nTotal\n172\n307\n479\n\n\n\n\n\n\n\n\nDo we meet the criteria for using the theory-based approach?"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#calculating-the-standardized-statistic",
+    "href": "slides/Chapter 05/section5.3.html#calculating-the-standardized-statistic",
+    "title": "Section 5.3",
+    "section": "Calculating the Standardized Statistic",
+    "text": "Calculating the Standardized Statistic\n\n\n\n\n\n\n\n\n\n\n\n\nDark\nLight\nTotal\n\n\n\n\nNear-sighted\n18\n119\n137\n\n\nNot near-sighted\n154\n188\n342\n\n\nTotal\n172\n307\n479\n\n\n\n\n\n\n\n\n\nn_D=172\nn_L=307\n\\hat{p}=\\frac{137}{479}=0.29\n\\hat{p}_D=\\frac{18}{172}=0.10\n\\hat{p}_L=\\frac{119}{307}=0.39"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#calculating-the-standardized-statistic-1",
+    "href": "slides/Chapter 05/section5.3.html#calculating-the-standardized-statistic-1",
+    "title": "Section 5.3",
+    "section": "Calculating the Standardized Statistic",
+    "text": "Calculating the Standardized Statistic\nz=\\frac{\\hat{p}_{D} - \\hat{p}_{L}}{\\sqrt{\\hat{p}(1-\\hat{p})(\\frac{1}{n_D}+\\frac{1}{n_L})}}\n=\\frac{0.10 - 0.39}{\\sqrt{0.29(1-0.29)(\\frac{1}{172}+\\frac{1}{307})}}\n=-6.71"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#calculating-the-confidence-interval",
+    "href": "slides/Chapter 05/section5.3.html#calculating-the-confidence-interval",
+    "title": "Section 5.3",
+    "section": "Calculating the Confidence Interval",
+    "text": "Calculating the Confidence Interval\nCI=(\\hat{p}_D-\\hat{p}_L)±2*\\sqrt{\\frac{\\hat{p}_D(1-\\hat{p}_D)}{n_D}+\\frac{\\hat{p}_L(1-\\hat{p}_L)}{n_L}}\n=(0.10-0.39)±2*\\sqrt{\\frac{0.10*0.90}{172}+\\frac{0.39*0.61}{307}}\n=(-0.362,-0.218)"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#interpreting-the-confidence-interval",
+    "href": "slides/Chapter 05/section5.3.html#interpreting-the-confidence-interval",
+    "title": "Section 5.3",
+    "section": "Interpreting the Confidence Interval",
+    "text": "Interpreting the Confidence Interval\n“We are 95% confident that the long run difference in proportions of near-sightedness between children who slept in darkness and children who slept with light is between -0.362 and -0.218.”"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#interpreting-the-confidence-interval-1",
+    "href": "slides/Chapter 05/section5.3.html#interpreting-the-confidence-interval-1",
+    "title": "Section 5.3",
+    "section": "Interpreting the Confidence Interval",
+    "text": "Interpreting the Confidence Interval\nAlternatively, we could also say:\n\n“We are 95% confident that the true proportion of near-sightedness in children who slept in darkness is 0.218 to 0.362 lower than the true proportion of near-sightedness in children who slept with a light.”"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#drawing-conclusions",
+    "href": "slides/Chapter 05/section5.3.html#drawing-conclusions",
+    "title": "Section 5.3",
+    "section": "Drawing Conclusions",
+    "text": "Drawing Conclusions\nRecall our hypotheses:\n\nH_0: \\pi_D-\\pi_L=0\nH_A: \\pi_D-\\pi_L&lt;0\n\n\nStandardized statistic and confidence interval:\n\nz=-6.71\nCI=(-0.362,-0.218)\nNote that both point to the same conclusion: reject H_0"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.3.html#drawing-conclusions-1",
+    "href": "slides/Chapter 05/section5.3.html#drawing-conclusions-1",
+    "title": "Section 5.3",
+    "section": "Drawing Conclusions",
+    "text": "Drawing Conclusions\n“We have strong evidence to conclude that the long run difference in proportions of near-sightedness between kids who slept in a dark room is lower than that for kids who slept with a light in their room.”"
+  },
+  {
     "objectID": "slides/Chapter 02/section2.3.html#section-2.3-learning-objectives",
     "href": "slides/Chapter 02/section2.3.html#section-2.3-learning-objectives",
     "title": "Section 2.3",
@@ -1264,7 +1908,7 @@
     "href": "index.html",
     "title": "STAT 218 Slides",
     "section": "",
-    "text": "Chapter P\n\n\n\n\n\n\n\n\n\n\n\nExam 1 Review\n\n\n\n\n\n\n\n\n\n\n\nSection 1.1\n\n\n\n\n\n\n\n\n\n\n\nSection 1.2\n\n\n\n\n\n\n\n\n\n\n\nSection 1.3\n\n\n\n\n\n\n\n\n\n\n\nSection 1.4\n\n\n\n\n\n\n\n\n\n\n\nSection 1.5\n\n\n\n\n\n\n\n\n\n\n\nSection 11.1\n\n\n\n\n\n\n\n\n\n\n\nSection 11.2\n\n\n\n\n\n\n\n\n\n\n\nSection 11.3\n\n\n\n\n\n\n\n\n\n\n\nSection 2.1\n\n\n\n\n\n\n\n\n\n\n\nSection 2.2\n\n\n\n\n\n\n\n\n\n\n\nSection 2.3\n\n\n\n\n\n\n\n\n\n\n\nSection 3.1\n\n\n\n\n\n\n\n\n\n\n\nSection 3.2\n\n\n\n\n\n\n\n\n\n\n\nSection 3.3\n\n\n\n\n\n\n\n\n\n\n\nSection 3.4\n\n\n\n\n\n\n\n\n\n\n\nSection 4.1\n\n\n\n\n\n\n\n\n\n\n\nSection 4.2\n\n\n\n\n\n\n\n\n\n\n\nSection 5.1\n\n\n\n\n\n\n\n\n\n\n\nSection 5.2\n\n\n\n\n\n\n\n\n\n\n\nSection 5.3\n\n\n\n\n\n\n\n\n\n\n\nSection 6.1\n\n\n\n\n\n\n\n\n\n\n\nSection 6.2\n\n\n\n\n\n\n\n\n\n\n\nSection 6.3\n\n\n\n\n\n\n\n\n\n\n\nSection 7.1\n\n\n\n\n\n\n\n\n\n\n\nSection 7.2\n\n\n\n\n\n\n\n\n\n\n\nSection 7.3\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Chapter P\n\n\n\n\n\n\n\n\n\n\n\nExam 1 Review\n\n\n\n\n\n\n\n\n\n\n\nSection 1.1\n\n\n\n\n\n\n\n\n\n\n\nSection 1.2\n\n\n\n\n\n\n\n\n\n\n\nSection 1.3\n\n\n\n\n\n\n\n\n\n\n\nSection 1.4\n\n\n\n\n\n\n\n\n\n\n\nSection 1.5\n\n\n\n\n\n\n\n\n\n\n\nSection 11.1\n\n\n\n\n\n\n\n\n\n\n\nSection 11.2\n\n\n\n\n\n\n\n\n\n\n\nSection 11.3\n\n\n\n\n\n\n\n\n\n\n\nSection 2.1\n\n\n\n\n\n\n\n\n\n\n\nSection 2.2\n\n\n\n\n\n\n\n\n\n\n\nSection 2.3\n\n\n\n\n\n\n\n\n\n\n\nSection 3.1\n\n\n\n\n\n\n\n\n\n\n\nSection 3.2\n\n\n\n\n\n\n\n\n\n\n\nSection 3.3\n\n\n\n\n\n\n\n\n\n\n\nSection 3.4\n\n\n\n\n\n\n\n\n\n\n\nSection 4.1\n\n\n\n\n\n\n\n\n\n\n\nSection 4.2\n\n\n\n\n\n\n\n\n\n\n\nSection 5.1\n\n\n\n\n\n\n\n\n\n\n\nSection 5.2\n\n\n\n\n\n\n\n\n\n\n\nSection 5.3\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 6.1\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 6.2\n\n\n\n\n\n\n\n\n\n\n\nSection 6.3\n\n\n\n\n\n\n\n\n\n\n\nSection 7.1\n\n\n\n\n\n\n\n\n\n\n\nSection 7.2\n\n\n\n\n\n\n\n\n\n\n\nSection 7.3\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/Chapter 02/section2.1.html#section-2.1-learning-objectives",
@@ -1594,6 +2238,230 @@
     "title": "Section 2.2",
     "section": "Heart Transplant Example",
     "text": "Heart Transplant Example\n\n\nWhat is the consequence of a Type I Error?\nWhat is the consequence of a Type II Error?"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#section-5.2-learning-objectives",
+    "href": "slides/Chapter 05/section5.2.html#section-5.2-learning-objectives",
+    "title": "Section 5.2",
+    "section": "Section 5.2 Learning Objectives",
+    "text": "Section 5.2 Learning Objectives\n\nKnow how to set up a null and alternative hypothesis comparing two levels of an explanatory variable when comparing two categorical variables\nFind and interpret the standardized statistic and the p-value for a test of two proportions.\nUse the 2SD method to calculate a 95% confidence interval for a difference in the long-run proportion of success for two treatment groups, and interpret what the interval means in the context of the problem."
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#s-strategy-statistic",
+    "href": "slides/Chapter 05/section5.2.html#s-strategy-statistic",
+    "title": "Section 5.2",
+    "section": "3S Strategy: Statistic",
+    "text": "3S Strategy: Statistic\nFirst, we need a statistic. What is it that we’re interested in?\n\nParameter: The difference in long run proportions between two groups\n\n\\pi_{Group\\:1} - \\pi_{Group\\:2}\n\n\n\n\nObserved Statistic: The difference in conditional proportions\n\n\\hat{p}_{Group\\:1} - \\hat{p}_{Group\\:2}"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#s-strategy-simulate-strength-of-evidence",
+    "href": "slides/Chapter 05/section5.2.html#s-strategy-simulate-strength-of-evidence",
+    "title": "Section 5.2",
+    "section": "3S Strategy: Simulate & Strength of Evidence",
+    "text": "3S Strategy: Simulate & Strength of Evidence\nNext, we simulate to gather strength of evidence in favor of H_A\n\nNull Hypothesis: There is no difference between the long run proportions of two groups\nAlt. Hypothesis: There is a difference between the long run proportions of two groups"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#s-strategy-simulate-strength-of-evidence-1",
+    "href": "slides/Chapter 05/section5.2.html#s-strategy-simulate-strength-of-evidence-1",
+    "title": "Section 5.2",
+    "section": "3S Strategy: Simulate & Strength of Evidence",
+    "text": "3S Strategy: Simulate & Strength of Evidence\nIn symbols:\n\nH_0: \\pi_{Group\\:1} - \\pi_{Group\\:2} = 0\nH_A: \\pi_{Group\\:1} - \\pi_{Group\\:2} &gt;,&lt;,\\neq 0"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#swimming-with-dolphins",
+    "href": "slides/Chapter 05/section5.2.html#swimming-with-dolphins",
+    "title": "Section 5.2",
+    "section": "Swimming with Dolphins",
+    "text": "Swimming with Dolphins\nResearchers wanted to study the effects of dolphins on people with depression. 30 participants were split into two groups: a group that swam with dolphins, and another group that swam without. Afterwards it was recorded whether or not each person noticed an improvement in their depression symptoms."
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-1",
+    "href": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-1",
+    "title": "Section 5.2",
+    "section": "Swimming with Dolphins",
+    "text": "Swimming with Dolphins\n\nWhat’s the research question? Do dolphins help improve depression symptoms?\nWhat’s the explanatory variable? Swimming with or without dolphins\nWhats the response variable? Improvement in depression symptoms or not"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-2",
+    "href": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-2",
+    "title": "Section 5.2",
+    "section": "Swimming with Dolphins",
+    "text": "Swimming with Dolphins\n\\pi = The long run proportion of people who see an improvement in their depression symptoms\n\nEach group in the study has a \\pi\n\n\n\n\\pi_{Dolphin}= Long run proportion of people who swam with dolphins that saw an improvement in their depression symptoms\n\\pi_{Control}= Long run proportion of people who did not swim with dolphins that saw an improvement in their depression symptoms"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-3",
+    "href": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-3",
+    "title": "Section 5.2",
+    "section": "Swimming with Dolphins",
+    "text": "Swimming with Dolphins\nWe’re interested in the difference between those two proportions.\n\nParameter: \\pi_d - \\pi_c\nThe difference in long run proportions of improved depression symptoms between those who swam with dolphins and those who didn’t"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-4",
+    "href": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-4",
+    "title": "Section 5.2",
+    "section": "Swimming with Dolphins",
+    "text": "Swimming with Dolphins\nHypotheses:\n\nH_0: \\pi_d - \\pi_c = 0\nH_A: \\pi_d - \\pi_c &gt; 0\n\n\nTechnically, we could also write H_A as: H_A: \\pi_c - \\pi_d &lt; 0. Why?"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#p-value",
+    "href": "slides/Chapter 05/section5.2.html#p-value",
+    "title": "Section 5.2",
+    "section": "P-value",
+    "text": "P-value\nOur p-value definition gets modified slightly, but the overall concept is the same:\n\n\nP-value: How likely we are to observe a difference in conditional proportions as or more extreme than the one we saw in the data, assuming the null distribution is true"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#p-value-1",
+    "href": "slides/Chapter 05/section5.2.html#p-value-1",
+    "title": "Section 5.2",
+    "section": "P-value",
+    "text": "P-value\nThe same rules apply for rejecting/failing to reject the null\n\nIf p-value is less than the significance level (\\alpha), reject H_0\nIf p-value is greater than the significance level, fail to reject H_0"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#finding-strength-of-evidence-3-methods",
+    "href": "slides/Chapter 05/section5.2.html#finding-strength-of-evidence-3-methods",
+    "title": "Section 5.2",
+    "section": "Finding Strength of Evidence (3 Methods)",
+    "text": "Finding Strength of Evidence (3 Methods)\n\nSame three methods to find strength of evidence\nMinor changes, but the concepts are the same\nThree methods:\n\nP-value\nStandardized statistic (SS)\nConfidence intervals (CI)"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#two-proportion-applet",
+    "href": "slides/Chapter 05/section5.2.html#two-proportion-applet",
+    "title": "Section 5.2",
+    "section": "Two Proportion Applet",
+    "text": "Two Proportion Applet\nWe’ve got yet another applet: Two Proportion Applet\n\nThis applet is similar to the One Proportion Applet\nWe will use it to:\n\nSimulate a null distribution for the difference in two proportions\nFind a p-value\nObtain a standard deviation for calculations"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation",
+    "href": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation",
+    "title": "Section 5.2",
+    "section": "Strength of Evidence Using Simulation",
+    "text": "Strength of Evidence Using Simulation\nFor two groups, the Applet does the following to simulate:\n\nStudy data is input\nAll responses (success/failure) from the study are put on “cards”\nFor one study simulation, cards are randomly split into the two explanatory groups\nConditional proportions are calculated for each group"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation-1",
+    "href": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation-1",
+    "title": "Section 5.2",
+    "section": "Strength of Evidence Using Simulation",
+    "text": "Strength of Evidence Using Simulation\nConsider the data from the Murderous Nurse example.\n\n1,641 total shifts were analyzed\n74 of the total shifts at least one person died\nGilbert worked 257 of the total shifts, and did not work 1384 of them"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation-2",
+    "href": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation-2",
+    "title": "Section 5.2",
+    "section": "Strength of Evidence Using Simulation",
+    "text": "Strength of Evidence Using Simulation\nTo simulate this, we would:\n\n\nGet 1641 cards\n74 of the cards would have the response that at least one person died\n\nThe remaining 1567 would have the response that no one died\n\nTo simulate one “trial” the cards would be shuffled and randomly split into two groups of 257 and 1384\n\nThese groups represent Gilbert/Non-Gilbert shifts!"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation-3",
+    "href": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation-3",
+    "title": "Section 5.2",
+    "section": "Strength of Evidence Using Simulation",
+    "text": "Strength of Evidence Using Simulation\n\n\nCalculate conditional proportions for each group\n\nProportion of times at least one person died\n\nTake the difference between the conditional proportions and plot on the null distribution\nRepeat lots of times!\n\n\n\nThen, we compare our actual observed statistic to the null distribution."
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#two-proportion-applet-1",
+    "href": "slides/Chapter 05/section5.2.html#two-proportion-applet-1",
+    "title": "Section 5.2",
+    "section": "Two Proportion Applet",
+    "text": "Two Proportion Applet\n\n\n\n\n\n\n\n\n\n\n\\hat{p}_D=\\frac{10}{15}=0.667\n\\hat{p}_C=\\frac{3}{15}=0.2"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#simulating-a-null-distribution",
+    "href": "slides/Chapter 05/section5.2.html#simulating-a-null-distribution",
+    "title": "Section 5.2",
+    "section": "Simulating a Null Distribution",
+    "text": "Simulating a Null Distribution"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#finding-the-p-value",
+    "href": "slides/Chapter 05/section5.2.html#finding-the-p-value",
+    "title": "Section 5.2",
+    "section": "Finding the P-value",
+    "text": "Finding the P-value\n\n\n\n\n\n\n\n\n\nGiven our observed statistic, how many simulated values are as or more extreme?"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#finding-the-p-value-1",
+    "href": "slides/Chapter 05/section5.2.html#finding-the-p-value-1",
+    "title": "Section 5.2",
+    "section": "Finding the P-value",
+    "text": "Finding the P-value\n\n\n\n\n\n\n\n\nObserved statistic:\n\\hat{p}_D-\\hat{p}_C = 0.667-0.2 =0.467\nAt a significance level of 0.05, reject H_0"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#standardized-statistic-ss",
+    "href": "slides/Chapter 05/section5.2.html#standardized-statistic-ss",
+    "title": "Section 5.2",
+    "section": "Standardized Statistic (SS)",
+    "text": "Standardized Statistic (SS)\nGeneral form:\nz=\\frac{Observed\\: Statistic - Hypothesized\\: Value}{Standard\\: Deviation\\: under\\: the\\: null}\n=\\frac{(\\hat{p}_1-\\hat{p}_2)-0}{SD\\: from\\: Applet}"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#standardized-statistic-ss-1",
+    "href": "slides/Chapter 05/section5.2.html#standardized-statistic-ss-1",
+    "title": "Section 5.2",
+    "section": "Standardized Statistic (SS)",
+    "text": "Standardized Statistic (SS)\nSame conclusions as before\n\nOutside the 2s, reject the null (strong evidence)\nInside the 2s, fail to reject the null (weak evidence)"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#conclusion",
+    "href": "slides/Chapter 05/section5.2.html#conclusion",
+    "title": "Section 5.2",
+    "section": "Conclusion",
+    "text": "Conclusion\n“We (do/do not) have strong evidence to conclude that the long run difference in proportions of (context) between group 1 and group 2 is (less than/greater than/not equal to) zero.”"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#using-the-applet-for-ss",
+    "href": "slides/Chapter 05/section5.2.html#using-the-applet-for-ss",
+    "title": "Section 5.2",
+    "section": "Using the Applet for SS",
+    "text": "Using the Applet for SS\n\n\n\n\n\n\n\n\n\nSS = \\frac{\\hat{p}_D-\\hat{p}_C-0}{SD\\: from\\: Applet} =\\frac{0.467}{0.179} =2.61"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#confidence-intervals-ci",
+    "href": "slides/Chapter 05/section5.2.html#confidence-intervals-ci",
+    "title": "Section 5.2",
+    "section": "Confidence Intervals (CI)",
+    "text": "Confidence Intervals (CI)\n2SD Confidence Interval:\nCI=(Lower\\: Bound,\\: Upper\\: Bound)\n=Observed\\: Statistic\\: ± Margin\\: of\\: Error\nCI = (\\hat{p}_1-\\hat{p}_2) ± 2*(SD\\: from\\: Applet)"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#sd-ci-interpretation",
+    "href": "slides/Chapter 05/section5.2.html#sd-ci-interpretation",
+    "title": "Section 5.2",
+    "section": "2SD CI Interpretation",
+    "text": "2SD CI Interpretation\n“We are 95% confident that the long run difference in proportion of (context) between group 1 and group 2 is between (lower bound) and (upper bound).”"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#conclusions-based-on-ci",
+    "href": "slides/Chapter 05/section5.2.html#conclusions-based-on-ci",
+    "title": "Section 5.2",
+    "section": "Conclusions based on CI",
+    "text": "Conclusions based on CI\nRecall previously:\n\nIf the hypothesized parameter value is IN the confidence interval, fail to reject H_0\nIf the hypothesized parameter value is OUTSIDE the confidence interval, reject H_0"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#conclusions-based-on-ci-1",
+    "href": "slides/Chapter 05/section5.2.html#conclusions-based-on-ci-1",
+    "title": "Section 5.2",
+    "section": "Conclusions based on CI",
+    "text": "Conclusions based on CI\nOur hypothesized parameter value is always zero, therefore…\n\nIf 0 is IN the interval, fail to reject H_0\n\nIt’s possible the groups are the same"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#conclusions-based-on-ci-2",
+    "href": "slides/Chapter 05/section5.2.html#conclusions-based-on-ci-2",
+    "title": "Section 5.2",
+    "section": "Conclusions based on CI",
+    "text": "Conclusions based on CI\nOur hypothesized parameter value is always zero, therefore…\n\nIf 0 is OUTSIDE the interval, reject H_0\n\nThe groups are different"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-5",
+    "href": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-5",
+    "title": "Section 5.2",
+    "section": "Swimming with Dolphins",
+    "text": "Swimming with Dolphins\n\nObserved statistic: \\hat{p}_D-\\hat{p}_C=0.467\nSimulated SD = 0.179\nConfidence interval:\n\n(\\hat{p}_1-\\hat{p}_2) ± 2*(SD\\: from\\: Applet)\n(0.467) ± 2*(0.179)\n=(0.109,0.825)"
+  },
+  {
+    "objectID": "slides/Chapter 05/section5.2.html#conclusion-in-context",
+    "href": "slides/Chapter 05/section5.2.html#conclusion-in-context",
+    "title": "Section 5.2",
+    "section": "Conclusion in Context",
+    "text": "Conclusion in Context\n“We are 95% confident that the long run difference in proportions of people with improved depression symptoms between the dolphin group and the control group is between 0.109 and 0.825.”"
   },
   {
     "objectID": "slides/Chapter 04/section4.1.html#section-4.1-learning-objectives",
@@ -2471,948 +3339,164 @@
     "text": "Halloween Treats Conclusion\nSince our standardized statistic using either approach is not outside the twos, we conclude the following:  “We do not have enough evidence to conclude that the long-run proportion of kids who choose candy differs from 0.5.”"
   },
   {
-    "objectID": "slides/Random/exam1review.html#strength-of-evidence-3",
-    "href": "slides/Random/exam1review.html#strength-of-evidence-3",
-    "title": "Exam 1 Review",
-    "section": "Strength of Evidence",
-    "text": "Strength of Evidence\nIf we do NOT have strong evidence:\n\nP-value is 0.05 or higher\nStandardized statistic is inside the twos\nWe fail to null hypothesis, and cannot accept the alternative"
+    "objectID": "slides/Chapter 06/section6.3.html#section-6.3-learning-objectives",
+    "href": "slides/Chapter 06/section6.3.html#section-6.3-learning-objectives",
+    "title": "Section 6.3",
+    "section": "Section 6.3 Learning Objectives",
+    "text": "Section 6.3 Learning Objectives\n\nIdentify when a theory-based approach would be valid to find the p-value, standardized statistic, or a confidence interval when evaluating the relationship between one binary and one quantitative variable."
   },
   {
-    "objectID": "slides/Chapter 03/section3.4.html#test",
-    "href": "slides/Chapter 03/section3.4.html#test",
-    "title": "Section 3.4",
-    "section": "Test",
-    "text": "Test"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.1.html#section-5.1-learning-objectives",
-    "href": "slides/Chapter 05/section5.1.html#section-5.1-learning-objectives",
-    "title": "Section 5.1",
-    "section": "Section 5.1 Learning Objectives",
-    "text": "Section 5.1 Learning Objectives\n\nUnderstand how a two-way table works.\nBe able to calculate conditional probability for different levels of the categorical variables.\nDetermine whether or not there may be association based on the conditional probabilities that have been calculated.\nUnderstand and be able to calculate relative risk."
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.1.html#variable-types",
-    "href": "slides/Chapter 05/section5.1.html#variable-types",
-    "title": "Section 5.1",
-    "section": "Variable Types",
-    "text": "Variable Types\n\nExplanatory (independent) variable\n\n“Explains” (“independent of”) the response variable\n\nResponse (dependent) variable\n\n“Responds to” (“depends on”) the explanatory variable"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.1.html#variable-types-1",
-    "href": "slides/Chapter 05/section5.1.html#variable-types-1",
-    "title": "Section 5.1",
-    "section": "Variable Types",
-    "text": "Variable Types\n\nConfounding variable\n\nRelated to both\n\nAssociation does NOT mean causation!\n\nWe could always potentially have a confounding variable"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.1.html#design-types",
-    "href": "slides/Chapter 05/section5.1.html#design-types",
-    "title": "Section 5.1",
-    "section": "Design Types",
-    "text": "Design Types\n\nObservational study vs. experiment\nRandom sample vs. random assignment"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.1.html#random-vs.-random",
-    "href": "slides/Chapter 05/section5.1.html#random-vs.-random",
-    "title": "Section 5.1",
-    "section": "Random vs. Random",
-    "text": "Random vs. Random\n\nRandom sampling = can generalize results\nNo random sampling = cannot generalize results\n\n\n\nRandom assignment = can draw cause and effect conclusion (experiment)\nNo random assignment = can only draw association conclusion (observational)"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.1.html#comparing-two-groups",
-    "href": "slides/Chapter 05/section5.1.html#comparing-two-groups",
-    "title": "Section 5.1",
+    "objectID": "slides/Chapter 06/section6.3.html#comparing-two-groups",
+    "href": "slides/Chapter 06/section6.3.html#comparing-two-groups",
+    "title": "Section 6.3",
     "section": "Comparing Two Groups",
-    "text": "Comparing Two Groups\n\nNew research question: Are these two groups different?\nCompare using explanatory and repsonse variables\nWe can still use our same strength of evidence methods!\n\n\nP-value\nStandardized statistic\nConfidence intervals"
+    "text": "Comparing Two Groups\nWhat are we interested in?\n\nParameter: The difference in long run proportions between two groups\n\n\\mu_{Group\\:1} - \\mu_{Group\\:2}\n\n\nWe estimate the parameter using:\n\nObserved Statistic: The difference in conditional proportions\n\n\\bar{x}_{Group\\:1} - \\bar{x}_{Group\\:2}"
   },
   {
-    "objectID": "slides/Chapter 05/section5.1.html#murderous-nurse",
-    "href": "slides/Chapter 05/section5.1.html#murderous-nurse",
-    "title": "Section 5.1",
-    "section": "Murderous Nurse",
-    "text": "Murderous Nurse\nFor several years in the 1990s, Kristen Gilbert worked as a nurse in the intensive care unit (ICU) of the Veterans Administration Hospital in Northampton, Massachusetts. Over the course of her time there, other nurses came to suspect that she was killing patients by injecting them with the heart stimulant epinephrine. Gilbert was eventually arrested and charged with these murders. Part of the evidence presented against Gilbert at her murder trial was a statistical analysis of 1,641 eight-hour shifts during the time Gilbert worked in the ICU. For each of these shifts, researchers recorded two variables:whether Gilbert worked on the shift and whether at least one patient died during the shift."
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.1.html#example-2",
-    "href": "slides/Chapter 05/section5.1.html#example-2",
-    "title": "Section 5.1",
-    "section": "Example 2",
-    "text": "Example 2\n\n\nLet’s identify the following:\n\nObsevational units\nExplanatory variable\nResponse variable\nObservational study or experiment? Why?\n\n\n\n\n\n\n\n\nKey Info\n\n\n\n\n\n1,641 shifts during Gilbert’s time at ICU were analyzed\nFor each shift it was recorded if:\n\nGilbert worked the shift\nIf at least one person died"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.1.html#murderous-nurse-1",
-    "href": "slides/Chapter 05/section5.1.html#murderous-nurse-1",
-    "title": "Section 5.1",
-    "section": "Murderous Nurse",
-    "text": "Murderous Nurse\n\n\n\nLet’s identify the following:\n\nObsevational units\nExplanatory variable\nResponse variable\nObservational study or experiment? Why?\n\n\n\n\n\n\n\n\nKey Info\n\n\n\n\n\n1,641 shifts during Gilbert’s time at ICU were analyzed\nFor each shift it was recorded if:\n\nGilbert worked the shift\nIf at least one person died"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.1.html#murderous-nurse-2",
-    "href": "slides/Chapter 05/section5.1.html#murderous-nurse-2",
-    "title": "Section 5.1",
-    "section": "Murderous Nurse",
-    "text": "Murderous Nurse\nIt was found that Gilbert worked 257 of the 1,641 shifts, and at least one person died during 74 of the 1,641 shifts.\n\n\nDoes this tell us much about an association between Gilbert working and patients dying?\nWhy or why not?"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.1.html#murderous-nurse-3",
-    "href": "slides/Chapter 05/section5.1.html#murderous-nurse-3",
-    "title": "Section 5.1",
-    "section": "Murderous Nurse",
-    "text": "Murderous Nurse\nNow, out of the 74 shifts where at least one person died, we find that 40 were shifts Gilbert worked, and 34 were not.\n\nNow does this seem like more reasonable evidence?\nCan we simply compare the numbers 34 and 40?"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.1.html#two-way-table",
-    "href": "slides/Chapter 05/section5.1.html#two-way-table",
-    "title": "Section 5.1",
-    "section": "Two Way Table",
-    "text": "Two Way Table\n\n\n\n\n\n\n\n\n\nGilbert shift\nNon-Gilbert shift\nTotal\n\n\n\n\nSomeone died\n40\n34\n74\n\n\nNo one died\n217\n1350\n1567\n\n\nTotal\n257\n1384\n1641"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.1.html#observed-statistic",
-    "href": "slides/Chapter 05/section5.1.html#observed-statistic",
-    "title": "Section 5.1",
-    "section": "Observed statistic?",
-    "text": "Observed statistic?\n\nIn a normal scenario, our observed statistic would be:\n\n\\hat{p}=\\frac{74}{1641}\nAKA:\n\\hat{p}=\\frac{Total\\:shifts\\:a\\:patient\\:died}{Total\\:sample\\:size}\nBut, this isn’t super helpful!"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.1.html#conditional-proportions",
-    "href": "slides/Chapter 05/section5.1.html#conditional-proportions",
-    "title": "Section 5.1",
-    "section": "Conditional Proportions",
-    "text": "Conditional Proportions\n\n\n\n\n\nflowchart LR\n  A(Population: All 8-hr shifts) --&gt; B(Sample: \n                                       n = 1,641 observed shifts)\n  B --&gt;|\"$${n}_G=257$$\"| C(\"$$\\hat{p}_G=\\frac{40}{257}=0.156$$\")\n  B --&gt;|\"$${n}_{NG}=1384$$\"| D(\"$$\\hat{p}_{NG}=\\frac{34}{1384}=0.025$$\")\n\n\n\n\n\n\n\n“G” = Gilbert shift\n“NG” = Non-Gilbert shift"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.1.html#conditional-proportion",
-    "href": "slides/Chapter 05/section5.1.html#conditional-proportion",
-    "title": "Section 5.1",
-    "section": "Conditional Proportion",
-    "text": "Conditional Proportion\nCalculates the probability of success within each explanatory variable group"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.1.html#conditional-proportions-1",
-    "href": "slides/Chapter 05/section5.1.html#conditional-proportions-1",
-    "title": "Section 5.1",
-    "section": "Conditional Proportions",
-    "text": "Conditional Proportions\n\\hat{p}_G=\\frac{Patient\\: died\\: a\\: shift\\: Gilbert\\: worked}{Total\\: shifts\\: Gilbert\\: worked} =\\frac{40}{257} =0.156"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.1.html#conditional-proportions-2",
-    "href": "slides/Chapter 05/section5.1.html#conditional-proportions-2",
-    "title": "Section 5.1",
-    "section": "Conditional Proportions",
-    "text": "Conditional Proportions\n\\hat{p}_{NG}=\\frac{Patient\\: died\\: a\\: shift\\: Gilbert\\: did\\: not\\: work}{Total\\: shifts\\: Gilbert\\: did\\: not\\: work} =\\frac{34}{1384} =0.025"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.1.html#a-new-observed-statistic",
-    "href": "slides/Chapter 05/section5.1.html#a-new-observed-statistic",
-    "title": "Section 5.1",
-    "section": "A new observed statistic",
-    "text": "A new observed statistic\nWhat to do with two p-hats? Take the difference!\n\n\\hat{p}_G = \\frac{40}{257} = 0.156\n\\hat{p}_{NG} = \\frac{34}{1384} = 0.025\n\nNew observed statistic:\n\\hat{p}_G - \\hat{p}_{NG} = 0.156-0.025 = 0.131\n\nNote: The order in which the p-hats are subtracted does not matter- but it will affect your interpretation"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.1.html#interpreting-the-new-p-hat",
-    "href": "slides/Chapter 05/section5.1.html#interpreting-the-new-p-hat",
-    "title": "Section 5.1",
-    "section": "Interpreting the new p-hat",
-    "text": "Interpreting the new p-hat\n\n\n\\hat{p}_G - \\hat{p}_{NG} = 0.131: “The proportion of deaths was 13.1% higher when Gilbert was working than when she was not working”\n\\hat{p}_{NG} - \\hat{p}_{G} = -0.131: “The proportion of deaths was 13.1% lower when Gilbert was not working than when she was working”"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.1.html#relative-risk",
-    "href": "slides/Chapter 05/section5.1.html#relative-risk",
-    "title": "Section 5.1",
-    "section": "Relative Risk",
-    "text": "Relative Risk\nThe ratio between two conditional proportions\n\n“How many times as large is the risk of an outcome for one group comparted to another?”"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.1.html#relative-risk-1",
-    "href": "slides/Chapter 05/section5.1.html#relative-risk-1",
-    "title": "Section 5.1",
-    "section": "Relative Risk",
-    "text": "Relative Risk\nTo calculate relative risk, divide the conditional proportions\n\\frac{\\hat{p}_G}{\\hat{p}_{NG}} = \\frac{0.15}{0.025} = 7.5\n“The proportion of deaths during a Gilbert shift is 7.5 times larger than during a non-Gilbert shift.”\n\nWhat would we expect relative risk to be if there is no difference between the two groups?"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.1.html#drawing-conclusions",
-    "href": "slides/Chapter 05/section5.1.html#drawing-conclusions",
-    "title": "Section 5.1",
-    "section": "Drawing Conclusions",
-    "text": "Drawing Conclusions\n\nWas the difference in proportions surprising?\nHow about relative risk?\nWhat do they tell us in this scenario?\nWhat might you report to the jury?\n\n\n“She appears guilty, the difference in proportions was not zero, and the relative risk was higher than 1.”"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.1.html#drawing-conclusions-1",
-    "href": "slides/Chapter 05/section5.1.html#drawing-conclusions-1",
-    "title": "Section 5.1",
-    "section": "Drawing Conclusions",
-    "text": "Drawing Conclusions\n\nGiven the scenario, can we say Gilbert caused the deaths?\n\nHint: Think back to chapter 4!\n\nCome up with an alternative explanation for the difference in proportion between the two groups"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#section-5.2-learning-objectives",
-    "href": "slides/Chapter 05/section5.2.html#section-5.2-learning-objectives",
-    "title": "Section 5.2",
-    "section": "Section 5.2 Learning Objectives",
-    "text": "Section 5.2 Learning Objectives\n\nKnow how to set up a null and alternative hypothesis comparing two levels of an explanatory variable when comparing two categorical variables\nFind and interpret the standardized statistic and the p-value for a test of two proportions.\nUse the 2SD method to calculate a 95% confidence interval for a difference in the long-run proportion of success for two treatment groups, and interpret what the interval means in the context of the problem."
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#s-strategy-statistic",
-    "href": "slides/Chapter 05/section5.2.html#s-strategy-statistic",
-    "title": "Section 5.2",
-    "section": "3S Strategy: Statistic",
-    "text": "3S Strategy: Statistic\nFirst, we need a statistic. What is it that we’re interested in?\n\nParameter: The difference in long run proportions between two groups\n\n\\pi_{Group\\:1} - \\pi_{Group\\:2}\n\n\n\n\nObserved Statistic: The difference in conditional proportions\n\n\\hat{p}_{Group\\:1} - \\hat{p}_{Group\\:2}"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#s-strategy-simulate-strength-of-evidence",
-    "href": "slides/Chapter 05/section5.2.html#s-strategy-simulate-strength-of-evidence",
-    "title": "Section 5.2",
-    "section": "3S Strategy: Simulate & Strength of Evidence",
-    "text": "3S Strategy: Simulate & Strength of Evidence\nNext, we simulate to gather strength of evidence in favor of H_A\n\nNull Hypothesis: There is no difference between the long run proportions of two groups\nAlt. Hypothesis: There is a difference between the long run proportions of two groups"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#s-strategy-simulate-strength-of-evidence-1",
-    "href": "slides/Chapter 05/section5.2.html#s-strategy-simulate-strength-of-evidence-1",
-    "title": "Section 5.2",
-    "section": "3S Strategy: Simulate & Strength of Evidence",
-    "text": "3S Strategy: Simulate & Strength of Evidence\nIn symbols:\n\nH_0: \\pi_{Group\\:1} - \\pi_{Group\\:2} = 0\nH_A: \\pi_{Group\\:1} - \\pi_{Group\\:2} &gt;,&lt;,\\neq 0"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#swimming-with-dolphins",
-    "href": "slides/Chapter 05/section5.2.html#swimming-with-dolphins",
-    "title": "Section 5.2",
-    "section": "Swimming with Dolphins",
-    "text": "Swimming with Dolphins\nResearchers wanted to study the effects of dolphins on people with depression. 30 participants were split into two groups: a group that swam with dolphins, and another group that swam without. Afterwards it was recorded whether or not each person noticed an improvement in their depression symptoms."
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-1",
-    "href": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-1",
-    "title": "Section 5.2",
-    "section": "Swimming with Dolphins",
-    "text": "Swimming with Dolphins\n\nWhat’s the research question? Do dolphins help improve depression symptoms?\nWhat’s the explanatory variable? Swimming with or without dolphins\nWhats the response variable? Improvement in depression symptoms or not"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-2",
-    "href": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-2",
-    "title": "Section 5.2",
-    "section": "Swimming with Dolphins",
-    "text": "Swimming with Dolphins\n\\pi = The long run proportion of people who see an improvement in their depression symptoms\n\nEach group in the study has a \\pi\n\n\n\n\\pi_{Dolphin}= Long run proportion of people who swam with dolphins that saw an improvement in their depression symptoms\n\\pi_{Control}= Long run proportion of people who did not swim with dolphins that saw an improvement in their depression symptoms"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-3",
-    "href": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-3",
-    "title": "Section 5.2",
-    "section": "Swimming with Dolphins",
-    "text": "Swimming with Dolphins\nWe’re interested in the difference between those two proportions.\n\nParameter: \\pi_d - \\pi_c\nThe difference in long run proportions of improved depression symptoms between those who swam with dolphins and those who didn’t"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-4",
-    "href": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-4",
-    "title": "Section 5.2",
-    "section": "Swimming with Dolphins",
-    "text": "Swimming with Dolphins\nHypotheses:\n\nH_0: \\pi_d - \\pi_c = 0\nH_A: \\pi_d - \\pi_c &gt; 0\n\n\nTechnically, we could also write H_A as: H_A: \\pi_c - \\pi_d &lt; 0. Why?"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#p-value",
-    "href": "slides/Chapter 05/section5.2.html#p-value",
-    "title": "Section 5.2",
-    "section": "P-value",
-    "text": "P-value\nOur p-value definition gets modified slightly, but the overall concept is the same:\n\n\nP-value: How likely we are to observe a difference in conditional proportions as or more extreme than the one we saw in the data, assuming the null distribution is true"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#p-value-1",
-    "href": "slides/Chapter 05/section5.2.html#p-value-1",
-    "title": "Section 5.2",
-    "section": "P-value",
-    "text": "P-value\nThe same rules apply for rejecting/failing to reject the null\n\nIf p-value is less than the significance level (\\alpha), reject H_0\nIf p-value is greater than the significance level, fail to reject H_0"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#two-proportion-applet",
-    "href": "slides/Chapter 05/section5.2.html#two-proportion-applet",
-    "title": "Section 5.2",
-    "section": "Two Proportion Applet",
-    "text": "Two Proportion Applet\nWe’ve got yet another applet: Two Proportion Applet\n\nThis applet is similar to the One Proportion Applet\nWe will use it to:\n\nSimulate a null distribution for the difference in two proportions\nFind a p-value\nObtain a standard deviation for calculations"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#two-proportion-applet-1",
-    "href": "slides/Chapter 05/section5.2.html#two-proportion-applet-1",
-    "title": "Section 5.2",
-    "section": "Two Proportion Applet",
-    "text": "Two Proportion Applet\n\n\n\n\n\n\n\n\n\n\n\\hat{p}_D=\\frac{10}{15}=0.667\n\\hat{p}_C=\\frac{3}{15}=0.2"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#simulating-a-null-distribution",
-    "href": "slides/Chapter 05/section5.2.html#simulating-a-null-distribution",
-    "title": "Section 5.2",
-    "section": "Simulating a Null Distribution",
-    "text": "Simulating a Null Distribution"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#finding-the-p-value",
-    "href": "slides/Chapter 05/section5.2.html#finding-the-p-value",
-    "title": "Section 5.2",
-    "section": "Finding the P-value",
-    "text": "Finding the P-value\n\n\n\n\n\n\n\n\n\nGiven our observed statistic, how many simulated values are as or more extreme?"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#finding-the-p-value-1",
-    "href": "slides/Chapter 05/section5.2.html#finding-the-p-value-1",
-    "title": "Section 5.2",
-    "section": "Finding the P-value",
-    "text": "Finding the P-value\n\n\n\n\n\n\n\n\nObserved statistic:\n\\hat{p}_D-\\hat{p}_C = 0.667-0.2 =0.467\nAt a significance level of 0.05, reject H_0"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#standardized-statistic-ss",
-    "href": "slides/Chapter 05/section5.2.html#standardized-statistic-ss",
-    "title": "Section 5.2",
-    "section": "Standardized Statistic (SS)",
-    "text": "Standardized Statistic (SS)\nGeneral form:\nz=\\frac{Observed\\: Statistic - Hypothesized\\: Value}{Standard\\: Deviation\\: under\\: the\\: null}\n=\\frac{(\\hat{p}_1-\\hat{p}_2)-0}{SD\\: from\\: Applet}"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#standardized-statistic-ss-1",
-    "href": "slides/Chapter 05/section5.2.html#standardized-statistic-ss-1",
-    "title": "Section 5.2",
-    "section": "Standardized Statistic (SS)",
-    "text": "Standardized Statistic (SS)\nSame conclusions as before\n\nOutside the 2s, reject the null (strong evidence)\nInside the 2s, fail to reject the null (weak evidence)"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#conclusion",
-    "href": "slides/Chapter 05/section5.2.html#conclusion",
-    "title": "Section 5.2",
-    "section": "Conclusion",
-    "text": "Conclusion\n“We (do/do not) have strong evidence to conclude that the long run difference in proportions of (context) between group 1 and group 2 is (less than/greater than/not equal to) zero.”"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#using-the-applet-for-ss",
-    "href": "slides/Chapter 05/section5.2.html#using-the-applet-for-ss",
-    "title": "Section 5.2",
-    "section": "Using the Applet for SS",
-    "text": "Using the Applet for SS\n\n\n\n\n\n\n\n\n\nSS = \\frac{\\hat{p}_D-\\hat{p}_C-0}{SD\\: from\\: Applet} =\\frac{0.467}{0.179} =2.61"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#finding-strength-of-evidence-3-methods",
-    "href": "slides/Chapter 05/section5.2.html#finding-strength-of-evidence-3-methods",
-    "title": "Section 5.2",
-    "section": "Finding Strength of Evidence (3 Methods)",
-    "text": "Finding Strength of Evidence (3 Methods)\n\nSame three methods to find strength of evidence\nMinor changes, but the concepts are the same\nThree methods:\n\nP-value\nStandardized statistic (SS)\nConfidence intervals (CI)"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#confidence-intervals-ci",
-    "href": "slides/Chapter 05/section5.2.html#confidence-intervals-ci",
-    "title": "Section 5.2",
-    "section": "Confidence Intervals (CI)",
-    "text": "Confidence Intervals (CI)\n2SD Confidence Interval:\nCI=(Lower\\: Bound,\\: Upper\\: Bound)\n=Observed\\: Statistic\\: ± Margin\\: of\\: Error\nCI = (\\hat{p}_1-\\hat{p}_2) ± 2*(SD\\: from\\: Applet)"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#confidence-intervals-ci-for-two-proportions",
-    "href": "slides/Chapter 05/section5.2.html#confidence-intervals-ci-for-two-proportions",
-    "title": "Section 5.2",
-    "section": "Confidence Intervals (CI) for Two Proportions",
-    "text": "Confidence Intervals (CI) for Two Proportions\nCI = (\\hat{p}_1-\\hat{p}_2) ± 2*(SD\\: from\\: Applet)"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#sd-ci-interpretation",
-    "href": "slides/Chapter 05/section5.2.html#sd-ci-interpretation",
-    "title": "Section 5.2",
-    "section": "2SD CI Interpretation",
-    "text": "2SD CI Interpretation\n“We are 95% confident that the long run difference in proportion of (context) between group 1 and group 2 is between (lower bound) and (upper bound).”"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#conclusions-based-on-ci",
-    "href": "slides/Chapter 05/section5.2.html#conclusions-based-on-ci",
-    "title": "Section 5.2",
-    "section": "Conclusions based on CI",
-    "text": "Conclusions based on CI\nRecall previously:\n\nIf the hypothesized parameter value is IN the confidence interval, fail to reject H_0\nIf the hypothesized parameter value is OUTSIDE the confidence interval, reject H_0"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#conclusions-based-on-ci-1",
-    "href": "slides/Chapter 05/section5.2.html#conclusions-based-on-ci-1",
-    "title": "Section 5.2",
-    "section": "Conclusions based on CI",
-    "text": "Conclusions based on CI\nOur hypothesized parameter value is always zero, therefore…\n\nIf 0 is IN the interval, fail to reject H_0\n\nIt’s possible the groups are the same"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#conclusions-based-on-ci-2",
-    "href": "slides/Chapter 05/section5.2.html#conclusions-based-on-ci-2",
-    "title": "Section 5.2",
-    "section": "Conclusions based on CI",
-    "text": "Conclusions based on CI\nOur hypothesized parameter value is always zero, therefore…\n\nIf 0 is OUTSIDE the interval, reject H_0\n\nThe groups are different"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-5",
-    "href": "slides/Chapter 05/section5.2.html#swimming-with-dolphins-5",
-    "title": "Section 5.2",
-    "section": "Swimming with Dolphins",
-    "text": "Swimming with Dolphins\n\nObserved statistic: \\hat{p}_D-\\hat{p}_C=0.467\nSimulated SD = 0.179\nConfidence interval:\n\n(\\hat{p}_1-\\hat{p}_2) ± 2*(SD\\: from\\: Applet)\n(0.467) ± 2*(0.179)\n=(0.109,0.825)"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#conclusion-in-context",
-    "href": "slides/Chapter 05/section5.2.html#conclusion-in-context",
-    "title": "Section 5.2",
-    "section": "Conclusion in Context",
-    "text": "Conclusion in Context\n“We are 95% confident that the long run difference in proportions of people with improved depression symptoms between the dolphin group and the control group is between 0.109 and 0.825.”"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.2.html#is-yawning-contaigous",
-    "href": "slides/Chapter 05/section5.2.html#is-yawning-contaigous",
-    "title": "Section 5.2",
-    "section": "Is Yawning Contaigous?",
-    "text": "Is Yawning Contaigous?"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.3.html#section-5.3-learning-objectives",
-    "href": "slides/Chapter 05/section5.3.html#section-5.3-learning-objectives",
-    "title": "Section 5.3",
-    "section": "Section 5.3 Learning Objectives",
-    "text": "Section 5.3 Learning Objectives\n\nIdentify when a theory-based approach can be used to find a p-value or confidence interval when comparing two categorical variables.\nUnderstand how confidence level and sample size impact the confidence interval for the difference between two proportions."
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.3.html#comparing-two-groups",
-    "href": "slides/Chapter 05/section5.3.html#comparing-two-groups",
-    "title": "Section 5.3",
-    "section": "Comparing Two Groups",
-    "text": "Comparing Two Groups\nWhat are we interested in?\n\nParameter: The difference in long run proportions between two groups\n\n\\pi_{Group\\:1} - \\pi_{Group\\:2}\n\n\nWe estimate the parameter using:\n\nObserved Statistic: The difference in conditional proportions\n\n\\hat{p}_{Group\\:1} - \\hat{p}_{Group\\:2}"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.3.html#hypotheses-for-two-groups",
-    "href": "slides/Chapter 05/section5.3.html#hypotheses-for-two-groups",
-    "title": "Section 5.3",
+    "objectID": "slides/Chapter 06/section6.3.html#hypotheses-for-two-groups",
+    "href": "slides/Chapter 06/section6.3.html#hypotheses-for-two-groups",
+    "title": "Section 6.3",
     "section": "Hypotheses for Two Groups",
-    "text": "Hypotheses for Two Groups\n\nNull Hypothesis: There is no difference between the long run proportions of two groups\nAlt. Hypothesis: There is a difference between the long run proportions of two groups\n\nDifference can be greater than, less than, or not equal to"
+    "text": "Hypotheses for Two Groups\n\nNull Hypothesis: There is no difference between the long run averages of two groups\nAlt. Hypothesis: There is a difference between the long run averages of two groups\n\nDifference can be greater than, less than, or not equal to"
   },
   {
-    "objectID": "slides/Chapter 05/section5.3.html#hypotheses-for-two-groups-1",
-    "href": "slides/Chapter 05/section5.3.html#hypotheses-for-two-groups-1",
-    "title": "Section 5.3",
+    "objectID": "slides/Chapter 06/section6.3.html#hypotheses-for-two-groups-1",
+    "href": "slides/Chapter 06/section6.3.html#hypotheses-for-two-groups-1",
+    "title": "Section 6.3",
     "section": "Hypotheses for Two Groups",
-    "text": "Hypotheses for Two Groups\nIn symbols:\n\nH_0: \\pi_{Group\\:1} - \\pi_{Group\\:2} = 0\nH_A: \\pi_{Group\\:1} - \\pi_{Group\\:2} &gt;,&lt;,\\neq 0\n\n\nEquivalently, we could also write:\n\nH_0: \\pi_{Group\\:1}=\\pi_{Group\\:2}\nH_A: \\pi_{Group\\:1}&gt;,&lt;,\\neq\\pi_{Group\\:2}"
+    "text": "Hypotheses for Two Groups\nIn symbols:\n\nH_0: \\mu_{Group\\:1} - \\mu_{Group\\:2} = 0\nH_A: \\mu_{Group\\:1} - \\mu_{Group\\:2} &gt;,&lt;,\\neq 0\n\n\nEquivalently, we could also write:\n\nH_0: \\mu_{Group\\:1}=\\mu_{Group\\:2}\nH_A: \\mu_{Group\\:1}&gt;,&lt;,\\neq\\mu_{Group\\:2}"
   },
   {
-    "objectID": "slides/Chapter 05/section5.3.html#determining-strength-of-evidence",
-    "href": "slides/Chapter 05/section5.3.html#determining-strength-of-evidence",
-    "title": "Section 5.3",
+    "objectID": "slides/Chapter 06/section6.3.html#determining-strength-of-evidence",
+    "href": "slides/Chapter 06/section6.3.html#determining-strength-of-evidence",
+    "title": "Section 6.3",
     "section": "Determining Strength of Evidence",
-    "text": "Determining Strength of Evidence\nTwo broad ways to get strength of evidence:\n\nSimulation\nTheory-based approach\n\nThrough either of the above two can find:\n\nP-value\nStandardized statistic\nConfidence interval"
+    "text": "Determining Strength of Evidence\nSimilar to previous chapters, we first find strength of evidence using simulation.\n\nNow, we want to use the theory-based approach to find:\n\nP-value\nStandardized statistic\nConfidence interval"
   },
   {
-    "objectID": "slides/Chapter 05/section5.3.html#strength-of-evidence-using-simulation",
-    "href": "slides/Chapter 05/section5.3.html#strength-of-evidence-using-simulation",
-    "title": "Section 5.3",
+    "objectID": "slides/Chapter 06/section6.3.html#strength-of-evidence-using-simulation",
+    "href": "slides/Chapter 06/section6.3.html#strength-of-evidence-using-simulation",
+    "title": "Section 6.3",
     "section": "Strength of Evidence Using Simulation",
-    "text": "Strength of Evidence Using Simulation\nFor two groups, the Applet does the following to simulate:\n\nStudy data is input\nAll responses (success/failure) from the study are put on “cards”\nFor one study simulation, cards are randomly split into the two explanatory groups\nConditional proportions are calculated for each group"
+    "text": "Strength of Evidence Using Simulation\nFor two groups, the Applet does the following to simulate:\n\nStudy data is input\nAll responses (some numerical value) from the study are put on “cards”\nFor one study simulation, cards are randomly split into the two explanatory groups\nSample averages (${x}) are calculated for each group"
   },
   {
-    "objectID": "slides/Chapter 05/section5.3.html#strength-of-evidence-using-simulation-1",
-    "href": "slides/Chapter 05/section5.3.html#strength-of-evidence-using-simulation-1",
-    "title": "Section 5.3",
-    "section": "Strength of Evidence Using Simulation",
-    "text": "Strength of Evidence Using Simulation\nConsider the data from the Murderous Nurse example.\n\n1,641 total shifts were analyzed\n74 of the total shifts at least one person died\nGilbert worked 257 of the total shifts, and did not work 1384 of them"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.3.html#strength-of-evidence-using-simulation-2",
-    "href": "slides/Chapter 05/section5.3.html#strength-of-evidence-using-simulation-2",
-    "title": "Section 5.3",
-    "section": "Strength of Evidence Using Simulation",
-    "text": "Strength of Evidence Using Simulation\nTo simulate this, we would:\n\n\nGet 1641 cards\n74 of the cards would have the response that at least one person died\n\nThe remaining 1567 would have the response that no one died\n\nTo simulate one “trial” the cards would be shuffled and randomly split into two groups of 257 and 1384\n\nThese groups represent Gilbert/Non-Gilbert shifts!"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.3.html#strength-of-evidence-using-simulation-3",
-    "href": "slides/Chapter 05/section5.3.html#strength-of-evidence-using-simulation-3",
-    "title": "Section 5.3",
-    "section": "Strength of Evidence Using Simulation",
-    "text": "Strength of Evidence Using Simulation\n\n\nCalculate conditional proportions for each group\n\nProportion of times at least one person died\n\nTake the difference between the conditional proportions and plot on the null distribution\nRepeat lots of times!\n\n\n\nThen, we compare our actual observed statistic to the null distribution."
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.3.html#strength-of-evidence-using-theory-based-approach",
-    "href": "slides/Chapter 05/section5.3.html#strength-of-evidence-using-theory-based-approach",
-    "title": "Section 5.3",
-    "section": "Strength of Evidence Using Theory-Based Approach",
-    "text": "Strength of Evidence Using Theory-Based Approach\n\nIf we meet validity conditions, we can use theory\nUsing theory we can obtain:\n\nP-value (still use the Applet)\nStandardized statistic\nConfidence interval"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.3.html#validity-conditions-for-theory-based-approach",
-    "href": "slides/Chapter 05/section5.3.html#validity-conditions-for-theory-based-approach",
-    "title": "Section 5.3",
+    "objectID": "slides/Chapter 06/section6.3.html#validity-conditions-for-theory-based-approach",
+    "href": "slides/Chapter 06/section6.3.html#validity-conditions-for-theory-based-approach",
+    "title": "Section 6.3",
     "section": "Validity Conditions for Theory-Based Approach",
-    "text": "Validity Conditions for Theory-Based Approach\nTo use the theory-based approach for two groups:\n\nEach box in the two-way table needs at least 10 observations\nThis means each explanatory group needs at least 10 successes and 10 failures\n\nSimilar condition to one proportion"
+    "text": "Validity Conditions for Theory-Based Approach\nTo use the theory-based approach for two groups (with a numerical response variable):\n\nEach group needs at least 20 observations\nDistributions must not be strongly skewed\n\nCan look at distributions via a boxplot, dotplot, etc."
   },
   {
-    "objectID": "slides/Chapter 05/section5.3.html#standardized-statistic-for-two-groups",
-    "href": "slides/Chapter 05/section5.3.html#standardized-statistic-for-two-groups",
-    "title": "Section 5.3",
-    "section": "Standardized Statistic for Two Groups",
-    "text": "Standardized Statistic for Two Groups\nGeneral standardized statistic (SS) formula:\nSS=\\frac{Observed\\: Statistic - Hypothesized\\: Value}{Standard\\: Error\\: under\\: the\\: null}\nWhen comparing two groups:\nz=\\frac{(\\hat{p}_{1} - \\hat{p}_{2})-0}{\\sqrt{\\hat{p}(1-\\hat{p})(\\frac{1}{n_1}+\\frac{1}{n_2})}}"
+    "objectID": "slides/Chapter 06/section6.3.html#standard-error-formula-for-two-means",
+    "href": "slides/Chapter 06/section6.3.html#standard-error-formula-for-two-means",
+    "title": "Section 6.3",
+    "section": "Standard Error Formula for Two Means",
+    "text": "Standard Error Formula for Two Means\nSE=\\sqrt{\\frac{s_{1}^{2}}{n_1}+\\frac{s_{2}^{2}}{n_2}}\nWe use the same formula for both confidence intervals and standardized statistics! (No “pooled” SE.)"
   },
   {
-    "objectID": "slides/Chapter 05/section5.3.html#standardized-statistic-for-two-groups-1",
-    "href": "slides/Chapter 05/section5.3.html#standardized-statistic-for-two-groups-1",
-    "title": "Section 5.3",
-    "section": "Standardized Statistic for Two Groups",
-    "text": "Standardized Statistic for Two Groups\nNote that the standard error for the previous statistic uses the combined proportion of success (\\hat{p})\n\\sqrt{\\hat{p}(1-\\hat{p})(\\frac{1}{n_1}+\\frac{1}{n_2})}\nUnder the null, we assume \\hat{p}_1=\\hat{p}_2, so we estimate with \\hat{p}, the pooled proportion of success\n\nThis is also referred to as pooled standard error"
+    "objectID": "slides/Chapter 06/section6.3.html#two-sample-t-test",
+    "href": "slides/Chapter 06/section6.3.html#two-sample-t-test",
+    "title": "Section 6.3",
+    "section": "Two Sample T-Test",
+    "text": "Two Sample T-Test\nGeneral standardized statistic (SS) formula:\nSS=\\frac{Observed\\: Statistic - Hypothesized\\: Value}{Standard\\: Error\\: under\\: the\\: null}\nWhen comparing two groups:\nt=\\frac{(\\bar{x}_{1} - \\bar{x}_{2})-0}{\\sqrt{\\frac{s_{1}^{2}}{n_1}+\\frac{s_{2}^{2}}{n_2}}}"
   },
   {
-    "objectID": "slides/Chapter 05/section5.3.html#confidence-interval-for-two-groups",
-    "href": "slides/Chapter 05/section5.3.html#confidence-interval-for-two-groups",
-    "title": "Section 5.3",
-    "section": "Confidence Interval for Two Groups",
-    "text": "Confidence Interval for Two Groups\nGeneral confidence interval formula:\nCI=Observed\\: Statistic\\: ± Multiplier*SE\nWhen comparing two groups:\nCI=(\\hat{p}_1-\\hat{p}_2)±2*\\sqrt{\\frac{\\hat{p}_1(1-\\hat{p}_1)}{n_1}+\\frac{\\hat{p}_2(1-\\hat{p}_2)}{n_2}}"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.3.html#standardized-statistic-interpretation",
-    "href": "slides/Chapter 05/section5.3.html#standardized-statistic-interpretation",
-    "title": "Section 5.3",
+    "objectID": "slides/Chapter 06/section6.3.html#standardized-statistic-interpretation",
+    "href": "slides/Chapter 06/section6.3.html#standardized-statistic-interpretation",
+    "title": "Section 6.3",
     "section": "Standardized Statistic Interpretation",
-    "text": "Standardized Statistic Interpretation\n\nInterpretation remains essentially the same\n“\\hat{p}_1 is ___ standard deviations away from \\hat{p}_2”"
+    "text": "Standardized Statistic Interpretation\n\nInterpretation remains essentially the same\n“\\bar{x}_1 is ___ standard deviations away from \\bar{x}_2”"
   },
   {
-    "objectID": "slides/Chapter 05/section5.3.html#confidence-interval-for-two-groups-1",
-    "href": "slides/Chapter 05/section5.3.html#confidence-interval-for-two-groups-1",
-    "title": "Section 5.3",
+    "objectID": "slides/Chapter 06/section6.3.html#confidence-interval-for-two-groups",
+    "href": "slides/Chapter 06/section6.3.html#confidence-interval-for-two-groups",
+    "title": "Section 6.3",
     "section": "Confidence Interval for Two Groups",
-    "text": "Confidence Interval for Two Groups\nNotice that our SE formula differs slightly\n\\sqrt{\\frac{\\hat{p}_1(1-\\hat{p}_1)}{n_1}+\\frac{\\hat{p}_2(1-\\hat{p}_2)}{n_2}}\nNow, we are assuming that \\hat{p}_1≠\\hat{p}_2, so we no longer use the pooled standard error."
+    "text": "Confidence Interval for Two Groups\nGeneral confidence interval formula:\nCI=Observed\\: Statistic\\: ± Multiplier*SE\nWhen comparing two groups:\nCI=(\\bar{x}_{1} - \\bar{x}_{2})±2*\\sqrt{\\frac{s_{1}^{2}}{n_1}+\\frac{s_{2}^{2}}{n_2}}"
   },
   {
-    "objectID": "slides/Chapter 05/section5.3.html#confidence-interval-interpretation",
-    "href": "slides/Chapter 05/section5.3.html#confidence-interval-interpretation",
-    "title": "Section 5.3",
+    "objectID": "slides/Chapter 06/section6.3.html#confidence-interval-interpretation",
+    "href": "slides/Chapter 06/section6.3.html#confidence-interval-interpretation",
+    "title": "Section 6.3",
     "section": "Confidence Interval Interpretation",
-    "text": "Confidence Interval Interpretation\n\n“We are 95% confident that the long run difference in proportion of context between group 1 and group 2 falls between lower bound and upper bound.”\n\n\nAlternatively, we can say:\n\n“We’re 95% confident that the true proportion of context in group 1 is lower bound to upper bound more/less than the true proportion of context in group 2.”"
+    "text": "Confidence Interval Interpretation\n\n“We are 95% confident that the long run difference in averages of context between group 1 and group 2 falls between lower bound and upper bound.”\n\n\nAlternatively, we can say:\n\n“We’re 95% confident that the true average of context in group 1 is lower bound to upper bound more/less than the true average of context in group 2.”"
   },
   {
-    "objectID": "slides/Chapter 05/section5.3.html#yawning-data-two-way-table",
-    "href": "slides/Chapter 05/section5.3.html#yawning-data-two-way-table",
-    "title": "Section 5.3",
-    "section": "Yawning Data Two-Way Table",
-    "text": "Yawning Data Two-Way Table\n\n\n\n\n\n\n\n\n\n\nYawn seed\nNo yawn seed\nTotal\n\n\n\n\nYawned\n11\n3\n14\n\n\nDid not yawn\n23\n13\n36\n\n\nTotal\n34\n16\n50\n\n\n\n\n\n\n\n\nDo we meet the criteria to use the theory-based approach?"
+    "objectID": "slides/Chapter 06/section6.3.html#nfl-referees",
+    "href": "slides/Chapter 06/section6.3.html#nfl-referees",
+    "title": "Section 6.3",
+    "section": "NFL Referees",
+    "text": "NFL Referees\n\nIn 2012, the first three weeks of NFL play were refereed by replacement referees\nWant to examine data to determine if games were longer or shorter when refereed by the replacements\nThree weeks of games were observed for each set of referees (replacement and regular)"
   },
   {
-    "objectID": "slides/Chapter 05/section5.3.html#near-sightedness-example",
-    "href": "slides/Chapter 05/section5.3.html#near-sightedness-example",
-    "title": "Section 5.3",
-    "section": "Near-Sightedness Example",
-    "text": "Near-Sightedness Example\n\nThought to be an association between myopia (near-sightedness) and use of nightlights as a child\n479 children were observed\nFor each child, two questions were recorded:\n\nDid the child sleep with light in the room or total darkness before the age of 2?\nAt the child’s most recent eye exam, were they near-sighted or not?"
+    "objectID": "slides/Chapter 06/section6.3.html#referee-data",
+    "href": "slides/Chapter 06/section6.3.html#referee-data",
+    "title": "Section 6.3",
+    "section": "Referee Data",
+    "text": "Referee Data\n\n\n\n\n\n\n\n\nGroup\nn\nMean\nSD\n\n\n\n\nRegular Refs\n43\n188.47\n12.73\n\n\nReplacement Refs\n48\n196.50\n15.86\n\n\nPooled\n91\n192.70\n14.47\n\n\n\n\n\n\n\nThe distributions are not strongly skewed.\n\nCan we use the theory-based approach here?"
   },
   {
-    "objectID": "slides/Chapter 05/section5.3.html#near-sightedness-example-1",
-    "href": "slides/Chapter 05/section5.3.html#near-sightedness-example-1",
-    "title": "Section 5.3",
-    "section": "Near-Sightedness Example",
-    "text": "Near-Sightedness Example\n\nExplanatory variable: Sleeping with light or not as a child\nResponse variable: Near-sighted or not\nParameter of interest: Difference in long run proportions of near-sightedness between kids who slept in total darkness and those who slept with a light before the age of 2. (\\pi_D-\\pi_L)"
+    "objectID": "slides/Chapter 06/section6.3.html#nfl-referees-1",
+    "href": "slides/Chapter 06/section6.3.html#nfl-referees-1",
+    "title": "Section 6.3",
+    "section": "NFL Referees",
+    "text": "NFL Referees\n\nExplanatory variable: Regular refs or replacement refs\nResponse variable: Length of game that was reffed\nParameter of interest: Difference in long run average game time between games reffed by replacement refs versus regular refs. (\\mu_{rep}-\\mu_{reg})"
   },
   {
-    "objectID": "slides/Chapter 05/section5.3.html#near-sightedness-example-2",
-    "href": "slides/Chapter 05/section5.3.html#near-sightedness-example-2",
-    "title": "Section 5.3",
-    "section": "Near-Sightedness Example",
-    "text": "Near-Sightedness Example\nTwo-Way Table:\n\n\n\n\n\n\n\n\n\nDark\nLight\nTotal\n\n\n\n\nNear-sighted\n18\n119\n137\n\n\nNot near-sighted\n154\n188\n342\n\n\nTotal\n172\n307\n479"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.3.html#near-sightedness-two-way-table",
-    "href": "slides/Chapter 05/section5.3.html#near-sightedness-two-way-table",
-    "title": "Section 5.3",
-    "section": "Near-Sightedness Two-Way Table",
-    "text": "Near-Sightedness Two-Way Table\n\n\n\n\n\n\n\n\n\n\nDark\nLight\nTotal\n\n\n\n\nNear-sighted\n18\n119\n137\n\n\nNot near-sighted\n154\n188\n342\n\n\nTotal\n172\n307\n479\n\n\n\n\n\n\n\n\nDo we meet the criteria for using the theory-based approach?"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.3.html#calculating-the-standardized-statistic",
-    "href": "slides/Chapter 05/section5.3.html#calculating-the-standardized-statistic",
-    "title": "Section 5.3",
-    "section": "Calculating the Standardized Statistic",
-    "text": "Calculating the Standardized Statistic\n\n\n\n\n\n\n\n\n\n\n\n\nDark\nLight\nTotal\n\n\n\n\nNear-sighted\n18\n119\n137\n\n\nNot near-sighted\n154\n188\n342\n\n\nTotal\n172\n307\n479\n\n\n\n\n\n\n\n\n\nn_D=172\nn_L=307\n\\hat{p}=\\frac{137}{479}=0.29\n\\hat{p}_D=\\frac{18}{172}=0.10\n\\hat{p}_L=\\frac{119}{307}=0.39"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.3.html#calculating-the-standardized-statistic-1",
-    "href": "slides/Chapter 05/section5.3.html#calculating-the-standardized-statistic-1",
-    "title": "Section 5.3",
-    "section": "Calculating the Standardized Statistic",
-    "text": "Calculating the Standardized Statistic\nz=\\frac{\\hat{p}_{D} - \\hat{p}_{L}}{\\sqrt{\\hat{p}(1-\\hat{p})(\\frac{1}{n_D}+\\frac{1}{n_L})}}\n=\\frac{0.10 - 0.39}{\\sqrt{0.29(1-0.29)(\\frac{1}{172}+\\frac{1}{307})}}\n=-6.71"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.3.html#calculating-the-confidence-interval",
-    "href": "slides/Chapter 05/section5.3.html#calculating-the-confidence-interval",
-    "title": "Section 5.3",
-    "section": "Calculating the Confidence Interval",
-    "text": "Calculating the Confidence Interval\nCI=(\\hat{p}_D-\\hat{p}_L)±2*\\sqrt{\\frac{\\hat{p}_D(1-\\hat{p}_D)}{n_D}+\\frac{\\hat{p}_L(1-\\hat{p}_L)}{n_L}}\n=(0.10-0.39)±2*\\sqrt{\\frac{0.10*0.90}{172}+\\frac{0.39*0.61}{307}}\n=(-0.362,-0.218)"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.3.html#interpreting-the-confidence-interval",
-    "href": "slides/Chapter 05/section5.3.html#interpreting-the-confidence-interval",
-    "title": "Section 5.3",
-    "section": "Interpreting the Confidence Interval",
-    "text": "Interpreting the Confidence Interval\n“We are 95% confident that the long run difference in proportions of near-sightedness between children who slept in darkness and children who slept with light is between -0.362 and -0.218.”"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.3.html#interpreting-the-confidence-interval-1",
-    "href": "slides/Chapter 05/section5.3.html#interpreting-the-confidence-interval-1",
-    "title": "Section 5.3",
-    "section": "Interpreting the Confidence Interval",
-    "text": "Interpreting the Confidence Interval\nAlternatively, we could also say:\n\n“We are 95% confident that the true proportion of near-sightedness in children who slept in darkness is 0.218 to 0.362 lower than the true proportion of near-sightedness in children who slept with a light.”"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.3.html#drawing-conclusions",
-    "href": "slides/Chapter 05/section5.3.html#drawing-conclusions",
-    "title": "Section 5.3",
-    "section": "Drawing Conclusions",
-    "text": "Drawing Conclusions\nRecall our hypotheses:\n\nH_0: \\pi_D-\\pi_L=0\nH_A: \\pi_D-\\pi_L&lt;0\n\n\nStandardized statistic and confidence interval:\n\nz=-6.71\nCI=(-0.362,-0.218)\nNote that both point to the same conclusion: reject H_0"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.3.html#drawing-conclusions-1",
-    "href": "slides/Chapter 05/section5.3.html#drawing-conclusions-1",
-    "title": "Section 5.3",
-    "section": "Drawing Conclusions",
-    "text": "Drawing Conclusions\n“We have strong evidence to conclude that the long run difference in proportions of near-sightedness between kids who slept in a dark room is lower than that for kids who slept with a light in their room.”"
-  },
-  {
-    "objectID": "slides/Chapter 05/section5.3.html#setting-up-the-hypotheses",
-    "href": "slides/Chapter 05/section5.3.html#setting-up-the-hypotheses",
-    "title": "Section 5.3",
+    "objectID": "slides/Chapter 06/section6.3.html#setting-up-the-hypotheses",
+    "href": "slides/Chapter 06/section6.3.html#setting-up-the-hypotheses",
+    "title": "Section 6.3",
     "section": "Setting up the hypotheses",
-    "text": "Setting up the hypotheses\n\nH_0: \\pi_D-\\pi_L=0\nH_A: \\pi_D-\\pi_L &lt; 0\n\nHere, we use “less than” since we hypothesize that kids who slept in darkness have a lower rate of myopia.\n\nEquivalent to: H_A: \\pi_D&lt;\\pi_L"
+    "text": "Setting up the hypotheses\n\nH_0: \\mu_{rep}-\\mu_{reg}=0\nH_A: \\mu_{rep}-\\mu_{reg} \\neq 0\n\nHere, we are just looking for a difference, so we use \\neq.\n\nEquivalent to: H_A: \\mu_{rep}\\neq\\mu_{reg}"
   },
   {
-    "objectID": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation",
-    "href": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation",
-    "title": "Section 5.2",
-    "section": "Strength of Evidence Using Simulation",
-    "text": "Strength of Evidence Using Simulation\nFor two groups, the Applet does the following to simulate:\n\nStudy data is input\nAll responses (success/failure) from the study are put on “cards”\nFor one study simulation, cards are randomly split into the two explanatory groups\nConditional proportions are calculated for each group"
+    "objectID": "slides/Chapter 06/section6.3.html#calculating-the-standardized-statistic",
+    "href": "slides/Chapter 06/section6.3.html#calculating-the-standardized-statistic",
+    "title": "Section 6.3",
+    "section": "Calculating the Standardized Statistic",
+    "text": "Calculating the Standardized Statistic\n\n\n\n\n\n\n\n\n\n\n\nGroup\nn\nMean\nSD\n\n\n\n\nRegular Refs\n43\n188.47\n12.73\n\n\nReplacement Refs\n48\n196.50\n15.86\n\n\nPooled\n91\n192.70\n14.47\n\n\n\n\n\n\n\n\n\nn_{reg}=43\nn_{rep}=48\n\\bar{x}_{reg}=188.47\n\\bar{x}_{rep}=196.50\ns_{reg}=12.73\ns_{rep}=15.86"
   },
   {
-    "objectID": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation-1",
-    "href": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation-1",
-    "title": "Section 5.2",
-    "section": "Strength of Evidence Using Simulation",
-    "text": "Strength of Evidence Using Simulation\nConsider the data from the Murderous Nurse example.\n\n1,641 total shifts were analyzed\n74 of the total shifts at least one person died\nGilbert worked 257 of the total shifts, and did not work 1384 of them"
+    "objectID": "slides/Chapter 06/section6.3.html#calculating-the-standardized-statistic-1",
+    "href": "slides/Chapter 06/section6.3.html#calculating-the-standardized-statistic-1",
+    "title": "Section 6.3",
+    "section": "Calculating the Standardized Statistic",
+    "text": "Calculating the Standardized Statistic\nt=\\frac{(\\bar{x}_{rep} - \\bar{x}_{reg})-0}{\\sqrt{\\frac{s_{rep}^{2}}{n_{rep}}+\\frac{s_{reg}^{2}}{n_{reg}}}}\n=\\frac{196.50-188.47}{\\sqrt{\\frac{15.86^{2}}{48}+\\frac{12.73^{2}}{43}}}\n=2.63"
   },
   {
-    "objectID": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation-2",
-    "href": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation-2",
-    "title": "Section 5.2",
-    "section": "Strength of Evidence Using Simulation",
-    "text": "Strength of Evidence Using Simulation\nTo simulate this, we would:\n\n\nGet 1641 cards\n74 of the cards would have the response that at least one person died\n\nThe remaining 1567 would have the response that no one died\n\nTo simulate one “trial” the cards would be shuffled and randomly split into two groups of 257 and 1384\n\nThese groups represent Gilbert/Non-Gilbert shifts!"
+    "objectID": "slides/Chapter 06/section6.3.html#calculating-the-confidence-interval",
+    "href": "slides/Chapter 06/section6.3.html#calculating-the-confidence-interval",
+    "title": "Section 6.3",
+    "section": "Calculating the Confidence Interval",
+    "text": "Calculating the Confidence Interval\nCI=(\\bar{x}_{rep} - \\bar{x}_{reg})±2*\\sqrt{\\frac{s_{rep}^{2}}{n_{rep}}+\\frac{s_{reg}^{2}}{n_{reg}}}\nCI=(196.50-188.47)±2*\\sqrt{\\frac{15.86^{2}}{48}+\\frac{12.73^{2}}{43}}\n=8.03±2*2.98=(2.07,13.99)"
   },
   {
-    "objectID": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation-3",
-    "href": "slides/Chapter 05/section5.2.html#strength-of-evidence-using-simulation-3",
-    "title": "Section 5.2",
-    "section": "Strength of Evidence Using Simulation",
-    "text": "Strength of Evidence Using Simulation\n\n\nCalculate conditional proportions for each group\n\nProportion of times at least one person died\n\nTake the difference between the conditional proportions and plot on the null distribution\nRepeat lots of times!\n\n\n\nThen, we compare our actual observed statistic to the null distribution."
+    "objectID": "slides/Chapter 06/section6.3.html#drawing-conclusions",
+    "href": "slides/Chapter 06/section6.3.html#drawing-conclusions",
+    "title": "Section 6.3",
+    "section": "Drawing Conclusions",
+    "text": "Drawing Conclusions\nStandardized statistic and confidence interval:\n\nz=2.63\n\nOutside the twos\n\nCI=(2.07,13.99)\n\nZero is not in the confidence interval\n\nP-value = 0.0089 &lt; 0.05\nNote that all three methods point to the same conclusion: reject H_0"
   },
   {
-    "objectID": "slides/Chapter 06/section6.1.html#section-6.1-learning-objectives",
-    "href": "slides/Chapter 06/section6.1.html#section-6.1-learning-objectives",
-    "title": "Section 6.1",
-    "section": "Section 6.1 Learning Objectives",
-    "text": "Section 6.1 Learning Objectives\n\nCalculate or estimate the mean, median, quartiles, five number summary, and interquartile range from a dataset and understand what these are measuring.\nWhen comparing two quantitative distributions, identify which has the larger mean, median, standard deviation, and inter-quartile range.\nIdentify whether there is likely an association between a binary categorical variable and a quantitative response variable."
+    "objectID": "slides/Chapter 06/section6.3.html#drawing-conclusions-1",
+    "href": "slides/Chapter 06/section6.3.html#drawing-conclusions-1",
+    "title": "Section 6.3",
+    "section": "Drawing Conclusions",
+    "text": "Drawing Conclusions\n“We have strong evidence to conclude that NFL games reffed by replacement referees last longer than games that are reffed by the regular referees.”"
   },
   {
-    "objectID": "slides/Chapter 06/section6.1.html#recap",
-    "href": "slides/Chapter 06/section6.1.html#recap",
-    "title": "Section 6.1",
-    "section": "Recap",
-    "text": "Recap\n\nWhen comparing two groups, we’ve had…\n\nA categorical explanatory variable\nA categorical response variable\n\nResearch question: Are these two explanatory groups different?\nWhat changes when our response is numerical?"
+    "objectID": "slides/Chapter 06/section6.3.html#interpreting-the-confidence-interval",
+    "href": "slides/Chapter 06/section6.3.html#interpreting-the-confidence-interval",
+    "title": "Section 6.3",
+    "section": "Interpreting the Confidence Interval",
+    "text": "Interpreting the Confidence Interval\n“We are 95% confident that games reffed by the replacement referees differ by 2.07 to 13.99 minutes from games reffed by the regular referees.”"
   },
   {
-    "objectID": "slides/Chapter 06/section6.1.html#recap-1",
-    "href": "slides/Chapter 06/section6.1.html#recap-1",
-    "title": "Section 6.1",
-    "section": "Recap",
-    "text": "Recap\nStandard Error for Two Proportions:\nSE_p=\\sqrt{\\hat{p}(1-\\hat{p})(\\frac{1}{n_1}+\\frac{1}{n_2})}\nOR\nSE=\\sqrt{\\frac{\\hat{p}_1(1-\\hat{p}_1)}{n_1}+\\frac{\\hat{p}_2(1-\\hat{p}_2)}{n_2}}"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.1.html#standarized-statistic-for-two-proportions",
-    "href": "slides/Chapter 06/section6.1.html#standarized-statistic-for-two-proportions",
-    "title": "Section 6.1",
-    "section": "Standarized Statistic for Two Proportions",
-    "text": "Standarized Statistic for Two Proportions\nz=\\frac{(\\hat{p}_{1} - \\hat{p}_{2})-0}{\\sqrt{\\hat{p}(1-\\hat{p})(\\frac{1}{n_1}+\\frac{1}{n_2})}}\nHere, we use the pooled standard error since we assume \\hat{p}_1=\\hat{p}_2."
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.1.html#confidence-interval-for-two-proportions",
-    "href": "slides/Chapter 06/section6.1.html#confidence-interval-for-two-proportions",
-    "title": "Section 6.1",
-    "section": "Confidence Interval for Two Proportions",
-    "text": "Confidence Interval for Two Proportions\nCI=(\\hat{p}_1-\\hat{p}_2)±2*\\sqrt{\\frac{\\hat{p}_1(1-\\hat{p}_1)}{n_1}+\\frac{\\hat{p}_2(1-\\hat{p}_2)}{n_2}}\nHere, our SE is NOT pooled, since we assume \\hat{p}_1≠\\hat{p}_2"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.1.html#overview",
-    "href": "slides/Chapter 06/section6.1.html#overview",
-    "title": "Section 6.1",
-    "section": "Overview",
-    "text": "Overview\nHow did we summarize categorical data?\n\nSegmented bar graphs\nTwo-way tables\nDifference in proportions\nRelative risk\n\n\nWe’ll need different methods for numerical data."
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.1.html#overview-1",
-    "href": "slides/Chapter 06/section6.1.html#overview-1",
-    "title": "Section 6.1",
-    "section": "Overview",
-    "text": "Overview\nTo summarize numerical data, we use:\n\nDot plots\nFive number summaries\nBoxplots\nDifference in averages"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.1.html#old-faithful-geyser",
-    "href": "slides/Chapter 06/section6.1.html#old-faithful-geyser",
-    "title": "Section 6.1",
-    "section": "Old Faithful Geyser",
-    "text": "Old Faithful Geyser\n\nWant to look at difference in eruption patterns between 1978 and 2003\n\nSpecifically, if average time between eruptions has changed\n\n107 eruptions in 1978 were examined\n95 eruptions in 2003 were examined"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.1.html#old-faithful-geyeser",
-    "href": "slides/Chapter 06/section6.1.html#old-faithful-geyeser",
-    "title": "Section 6.1",
-    "section": "Old Faithful Geyeser",
-    "text": "Old Faithful Geyeser\n\nWhat is the explanatory variable? Year observed\n\nIs it categorical or numerical? Categorical\n\nWhat is the response variable? Average time between eruptions\n\nIs it categorical or numerical? Numerical"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.1.html#geyser-data-distribution",
-    "href": "slides/Chapter 06/section6.1.html#geyser-data-distribution",
-    "title": "Section 6.1",
-    "section": "Geyser Data Distribution",
-    "text": "Geyser Data Distribution\nLet’s compare the distributions of the two years:\n\n\nHow can we describe the data using shape, spread, center, and outliers?"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.1.html#five-number-summary-1",
-    "href": "slides/Chapter 06/section6.1.html#five-number-summary-1",
-    "title": "Section 6.1",
-    "section": "Five Number Summary",
-    "text": "Five Number Summary\nThe five number summary consists of:\n\nMinimum value\nMaximum value\nLower quartile (Q1)\nMedian\nUpper quartile (Q2)"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.1.html#median-lower-quartile-upper-quartile",
-    "href": "slides/Chapter 06/section6.1.html#median-lower-quartile-upper-quartile",
-    "title": "Section 6.1",
-    "section": "Median, Lower Quartile & Upper Quartile",
-    "text": "Median, Lower Quartile & Upper Quartile\nRecall, the median is calculated by ordering the data and determining the midpoint (50%).\n\nThe process is the same for the lower quartile (Q1) and upper quartile (Q3)\nQ1: Value for which 25% of the data falls below\nQ3: Value for which 75% of the data falls below"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.1.html#displaying-the-five-number-summary",
-    "href": "slides/Chapter 06/section6.1.html#displaying-the-five-number-summary",
-    "title": "Section 6.1",
-    "section": "Displaying the Five Number Summary",
-    "text": "Displaying the Five Number Summary\nA boxplot can display all five number summary values.\n\nQ3 minus Q1 gives the interquartile range."
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.1.html#geyser-data",
-    "href": "slides/Chapter 06/section6.1.html#geyser-data",
-    "title": "Section 6.1",
-    "section": "Geyser Data",
-    "text": "Geyser Data\nThe five number summary for both years:\n\n\n\n\n\n\n\n\nYear\nMinimum\nQ1\nMedian\nQ3\nMaximum\nAverage\n\n\n\n\n1978\n42\n58\n75\n81\n95\n71.1\n\n\n2003\n56\n87\n91\n98\n110\n91.2"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.1.html#geyser-example-boxplots",
-    "href": "slides/Chapter 06/section6.1.html#geyser-example-boxplots",
-    "title": "Section 6.1",
-    "section": "Geyser Example Boxplots",
-    "text": "Geyser Example Boxplots"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#section-6.2-learning-objectives",
-    "href": "slides/Chapter 06/section6.2.html#section-6.2-learning-objectives",
-    "title": "Section 6.2",
-    "section": "Section 6.2 Learning Objectives",
-    "text": "Section 6.2 Learning Objectives\n\nGive the null and alternative hypothesis that compares two categories for a categorical explanatory variable and the means of a numerical response variable.\nFind and interpret the standardized statistic and the p-value for a test of two means.\nUse the 2SD method to find a 95% confidence interval for the difference in population means for two “treatment” groups, and interpret the interval in the context of the study, specifically when it contains zero.\nState a complete conclusion in the context of a scenario about the null and alternative hypotheses based on the p-value/standardized statistic."
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#s-strategy-statistic",
-    "href": "slides/Chapter 06/section6.2.html#s-strategy-statistic",
-    "title": "Section 6.2",
-    "section": "3S Strategy: Statistic",
-    "text": "3S Strategy: Statistic\nWith numerical variables, now we’re focused on averages.\n\nParameter: The difference in long run averages between two groups\n\n\\mu_{Group\\:1} - \\mu_{Group\\:2}\n\n\n\n\nObserved Statistic: The difference in conditional averages\n\n\\bar{x}_{Group\\:1} - \\bar{x}_{Group\\:2}"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#s-strategy-simulate-strength-of-evidence",
-    "href": "slides/Chapter 06/section6.2.html#s-strategy-simulate-strength-of-evidence",
-    "title": "Section 6.2",
-    "section": "3S Strategy: Simulate & Strength of Evidence",
-    "text": "3S Strategy: Simulate & Strength of Evidence\nNext, we simulate to gather strength of evidence in favor of H_A\n\nNull Hypothesis: There is no difference between the long run averages of two groups\nAlt. Hypothesis: There is a difference between the long run averages of two groups"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#s-strategy-simulate-strength-of-evidence-1",
-    "href": "slides/Chapter 06/section6.2.html#s-strategy-simulate-strength-of-evidence-1",
-    "title": "Section 6.2",
-    "section": "3S Strategy: Simulate & Strength of Evidence",
-    "text": "3S Strategy: Simulate & Strength of Evidence\nIn symbols:\n\nH_0: \\mu_{Group\\:1} - \\mu_{Group\\:2} = 0\nH_A: \\mu_{Group\\:1} - \\mu_{Group\\:2} &gt;,&lt;,\\neq 0"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#s-strategy-simulate-strength-of-evidence-2",
-    "href": "slides/Chapter 06/section6.2.html#s-strategy-simulate-strength-of-evidence-2",
-    "title": "Section 6.2",
-    "section": "3S Strategy: Simulate & Strength of Evidence",
-    "text": "3S Strategy: Simulate & Strength of Evidence\nRecall, we can alternatively write our hypotheses as:\n\nH_0: \\mu_{Group\\:1} = \\mu_{Group\\:2}\nH_A: \\mu_{Group\\:1} &gt;,&lt;,\\neq \\mu_{Group\\:2}"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#recall-symbol-comparison-for-one-meanproportion",
-    "href": "slides/Chapter 06/section6.2.html#recall-symbol-comparison-for-one-meanproportion",
-    "title": "Section 6.2",
-    "section": "Recall: Symbol Comparison for ONE Mean/Proportion",
-    "text": "Recall: Symbol Comparison for ONE Mean/Proportion\n\n\n\n\n\n\n\n\n\nCategorical Variable\nNumerical Variable\n\n\nParameter of Interest\n                       \n                             \\pi                       \n                             \n                     \n                                                        \\mu                     \n                                                        \n\n\nObserved Statistic\n                       \n                             \\hat{p}                   \n                             \n                     \n                                                        \\bar{x}"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#recall-symbol-comparison-for-one-proportionmean",
-    "href": "slides/Chapter 06/section6.2.html#recall-symbol-comparison-for-one-proportionmean",
-    "title": "Section 6.2",
-    "section": "Recall: Symbol Comparison for ONE Proportion/Mean",
-    "text": "Recall: Symbol Comparison for ONE Proportion/Mean\n\n\n\n\n\n\n\n\n\nCategorical Variable\nNumerical Variable\n\n\nParameter of Interest\n                       \n                             \\pi                       \n                             \n                     \n                                                        \\mu                     \n                                                        \n\n\nObserved Statistic\n                       \n                             \\hat{p}                   \n                             \n                     \n                                                        \\bar{x}"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#symbol-comparison-for-two-proportionsmeans",
-    "href": "slides/Chapter 06/section6.2.html#symbol-comparison-for-two-proportionsmeans",
-    "title": "Section 6.2",
-    "section": "Symbol Comparison for TWO Proportions/Means",
-    "text": "Symbol Comparison for TWO Proportions/Means\n\n\n\n\n\n\n\n\n\nCategorical Response Variable\nNumerical Response Variable\n\n\nParameter of Interest\n                       \n                             \\pi_1-\\pi_2                       \n                             \n                     \n                                                        \\mu_1-\\mu_2                     \n                                                        \n\n\nObserved Statistic\n                       \n                             \\hat{p}_1-\\hat{p}_2                   \n                             \n                     \n                                                        \\bar{x}_1-\\bar{x} _2                \n                                                        \n\n\n\n\nNotice the pattern here!"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#dung-beetles",
-    "href": "slides/Chapter 06/section6.2.html#dung-beetles",
-    "title": "Section 6.2",
-    "section": "Dung Beetles",
-    "text": "Dung Beetles\n\nResearchers want to investigate if a certain type of dung beetle can navigate using the stars\n18 total beetles\nProcess:\n\n\nPlace all 18 beetles on a platform on a moonless night\n9 receive a black cap to obstruct their sight; the other 9 receive a clear cap as a placebo\nThe time taken for each beetle to reach the edge of the platform is recorded"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#dung-beetles-1",
-    "href": "slides/Chapter 06/section6.2.html#dung-beetles-1",
-    "title": "Section 6.2",
-    "section": "Dung Beetles",
-    "text": "Dung Beetles\n\nExplanatory variable: Black cap or clear cap\n\nCategorical or numerical? Categorical\n\nResponse variable: Time taken to reach the edge\n\nCategorical or numerical? Numerical"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#dung-beetles-2",
-    "href": "slides/Chapter 06/section6.2.html#dung-beetles-2",
-    "title": "Section 6.2",
-    "section": "Dung Beetles",
-    "text": "Dung Beetles\n\\mu = long run average time it takes to reach the edge of the platform\n\n\\mu_b = Long run average time for beetles with the black cap\n\\mu_c = Long run average time for beetles with the clear cap"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#dung-beetles-3",
-    "href": "slides/Chapter 06/section6.2.html#dung-beetles-3",
-    "title": "Section 6.2",
-    "section": "Dung Beetles",
-    "text": "Dung Beetles\nIf dung beetles can navigate using the stars, we would expect \\mu_b to be larger (longer time).\n\nParameter: \\mu_b - \\mu_c\n“The difference in long run average time to get to the edge of the platform between the beetles with the black cap and beetles with the clear cap.”"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#dung-beetles-4",
-    "href": "slides/Chapter 06/section6.2.html#dung-beetles-4",
-    "title": "Section 6.2",
-    "section": "Dung Beetles",
-    "text": "Dung Beetles\nHypotheses:\n\nNull: There is no difference in average time taken to get to the edge between the two groups\nAlt: The average time for the group with the black cap is longer\n\nIn symbols:\n\nH_0: \\mu_b - \\mu_c = 0\nH_0: \\mu_b - \\mu_c &gt; 0"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#p-values",
-    "href": "slides/Chapter 06/section6.2.html#p-values",
-    "title": "Section 6.2",
-    "section": "P-values",
-    "text": "P-values\n\nP-value: how likely we are to observe a difference in sample means as or more extreme than the one we saw in the data, based on the null distribution.\nP-value &lt; significance level, reject the null\n\nStrong evidence that the two groups are different\n\nP-value ≥ significance level, fail to reject the null\n\nNo evidence that the groups are different from each other"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#null-distribution",
-    "href": "slides/Chapter 06/section6.2.html#null-distribution",
-    "title": "Section 6.2",
-    "section": "Null Distribution",
-    "text": "Null Distribution"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#null-distribution-1",
-    "href": "slides/Chapter 06/section6.2.html#null-distribution-1",
-    "title": "Section 6.2",
-    "section": "Null Distribution",
-    "text": "Null Distribution\nThe null distribution is simulated assuming: H_0: \\mu_b - \\mu_c = 0\n\nAs with proportions, the middle of the null distribution is zero"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#multiple-means-applet",
-    "href": "slides/Chapter 06/section6.2.html#multiple-means-applet",
-    "title": "Section 6.2",
-    "section": "Multiple Means Applet",
-    "text": "Multiple Means Applet"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#observed-statistic",
-    "href": "slides/Chapter 06/section6.2.html#observed-statistic",
-    "title": "Section 6.2",
-    "section": "Observed Statistic",
-    "text": "Observed Statistic\nSimilar to proportions, the observed statistic is just the observed difference in means between the two groups.\n\n\\bar{x}_b - \\bar{x}_c=126.55-42.78=83.768"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#finding-the-p-value",
-    "href": "slides/Chapter 06/section6.2.html#finding-the-p-value",
-    "title": "Section 6.2",
-    "section": "Finding the P-value",
-    "text": "Finding the P-value"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#finding-the-p-value-1",
-    "href": "slides/Chapter 06/section6.2.html#finding-the-p-value-1",
-    "title": "Section 6.2",
-    "section": "Finding the P-value",
-    "text": "Finding the P-value\nWe find the p-value the same way as before.\n\nGiven our observed statistic, how many simulated values are as or more extreme?\nOn the previous slide, p-value = 0/1000\n\nThis is less than 0.05, reject H_A"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#standardized-statistic-ss",
-    "href": "slides/Chapter 06/section6.2.html#standardized-statistic-ss",
-    "title": "Section 6.2",
-    "section": "Standardized Statistic (SS)",
-    "text": "Standardized Statistic (SS)\nGeneral form:\nt=\\frac{Observed\\: Statistic - Hypothesized\\: Value}{Standard\\: Deviation\\: under\\: the\\: null}\n=\\frac{(\\bar{x}_1-\\bar{x}_2)-0}{SD\\: from\\: Applet}"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#standardized-statistic-ss-1",
-    "href": "slides/Chapter 06/section6.2.html#standardized-statistic-ss-1",
-    "title": "Section 6.2",
-    "section": "Standardized Statistic (SS)",
-    "text": "Standardized Statistic (SS)\nSame conclusions as before\n\nOutside the 2s, reject the null (strong evidence)\nInside the 2s, fail to reject the null (weak evidence)"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#conclusion",
-    "href": "slides/Chapter 06/section6.2.html#conclusion",
-    "title": "Section 6.2",
-    "section": "Conclusion",
-    "text": "Conclusion\n“We (do/do not) have strong evidence to conclude that the long run difference in averages of (context) between group 1 and group 2 is (less than/greater than/not equal to) zero.”"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#dung-beetle-standardized-statistic",
-    "href": "slides/Chapter 06/section6.2.html#dung-beetle-standardized-statistic",
-    "title": "Section 6.2",
-    "section": "Dung Beetle Standardized Statistic",
-    "text": "Dung Beetle Standardized Statistic\nt=\\frac{\\bar{x}_b-\\bar{x}_c}{SD\\: from\\: Applet}=\\frac{83.768}{21.526}=3.89\n\nThis is outside the twos, so we reject H_A"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#confidence-intervals-ci",
-    "href": "slides/Chapter 06/section6.2.html#confidence-intervals-ci",
-    "title": "Section 6.2",
-    "section": "Confidence Intervals (CI)",
-    "text": "Confidence Intervals (CI)\n2SD Confidence Interval:\nCI=(Lower\\: Bound,\\: Upper\\: Bound)\n=Observed\\: Statistic\\: ± Margin\\: of\\: Error\nCI = (\\bar{x}_1-\\bar{x}_2) ± 2*(SD\\: from\\: Applet)"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#sd-ci-interpretation",
-    "href": "slides/Chapter 06/section6.2.html#sd-ci-interpretation",
-    "title": "Section 6.2",
-    "section": "2SD CI Interpretation",
-    "text": "2SD CI Interpretation\n“We are 95% confident that the long run difference in averages of (context) between group 1 and group 2 is between (lower bound) and (upper bound).”"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#conclusions-based-on-ci",
-    "href": "slides/Chapter 06/section6.2.html#conclusions-based-on-ci",
-    "title": "Section 6.2",
-    "section": "Conclusions based on CI",
-    "text": "Conclusions based on CI\nOur hypothesized parameter value is always zero, therefore…\n\nIf 0 is IN the interval, fail to reject H_0\n\nIt’s possible the groups are the same"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#conclusions-based-on-ci-1",
-    "href": "slides/Chapter 06/section6.2.html#conclusions-based-on-ci-1",
-    "title": "Section 6.2",
-    "section": "Conclusions based on CI",
-    "text": "Conclusions based on CI\nOur hypothesized parameter value is always zero, therefore…\n\nIf 0 is OUTSIDE the interval, reject H_0\n\nThe groups are different"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#dung-beetle-ci",
-    "href": "slides/Chapter 06/section6.2.html#dung-beetle-ci",
-    "title": "Section 6.2",
-    "section": "Dung Beetle CI",
-    "text": "Dung Beetle CI\nCI = (\\bar{x}_b-\\bar{x}_c) ± 2*(SD\\: from\\: Applet)\n= 83.768 ± 2*21.526\n= (40.72,126.82)"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#interpretation",
-    "href": "slides/Chapter 06/section6.2.html#interpretation",
-    "title": "Section 6.2",
-    "section": "Interpretation",
-    "text": "Interpretation\n“We are 95% confident that the long run average time for the black cap group is 40.72 to 126.82 seconds longer than the long run average time for the clear cap group.”"
-  },
-  {
-    "objectID": "slides/Chapter 06/section6.2.html#conclusions",
-    "href": "slides/Chapter 06/section6.2.html#conclusions",
-    "title": "Section 6.2",
-    "section": "Conclusions",
-    "text": "Conclusions\n\nBecause zero is not in the interval, we reject H_A\nNotice, the conclusions we draw from our p-value, standardized statistic, and confidence interval all match!\n\n\nWe have strong evidence to conclude that the dung beetles do navigate by the stars."
+    "objectID": "slides/Chapter 06/section6.3.html#theory-based-inference-applet",
+    "href": "slides/Chapter 06/section6.3.html#theory-based-inference-applet",
+    "title": "Section 6.3",
+    "section": "Theory-Based Inference Applet",
+    "text": "Theory-Based Inference Applet\n\nTheory-Based Inference Applet"
   }
 ]

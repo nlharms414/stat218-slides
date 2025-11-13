@@ -1,6 +1,7 @@
 ---
 title: "Section 6.2"
 subtitle: "Comparing Two Means: Simulation Based Approach"
+image: "6.2image.png"
 format: 
   revealjs: 
     chalkboard: true

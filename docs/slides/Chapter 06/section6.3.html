@@ -30,6 +30,22 @@
     }
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -328,13 +344,1208 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Section 6.3</h1>
+  <p class="subtitle">Comparing Two Means: Theory-Based Approach</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section class="slide level2">
+<section id="section-6.3-learning-objectives" class="slide level2 center">
+<h2>Section 6.3 Learning Objectives</h2>
+<ul>
+<li>Identify when a theory-based approach would be valid to find the p-value, standardized statistic, or a confidence interval when evaluating the relationship between one binary and one quantitative variable.</li>
+</ul>
+</section>
+<section>
+<section id="recap" class="title-slide slide level1 center">
+<h1>Recap</h1>
 
+</section>
+<section id="comparing-two-groups" class="slide level2 center">
+<h2>Comparing Two Groups</h2>
+<p>What are we interested in?</p>
+<ul>
+<li><p><u><strong>Parameter:</strong></u> The difference in long run proportions between two groups</p>
+<ul>
+<li><span class="math inline">\mu_{Group\:1} - \mu_{Group\:2}</span></li>
+</ul></li>
+</ul>
+<p>We estimate the parameter using:</p>
+<ul>
+<li><p><u><strong>Observed Statistic:</strong></u> The difference in conditional proportions</p>
+<ul>
+<li><span class="math inline">\bar{x}_{Group\:1} - \bar{x}_{Group\:2}</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="hypotheses-for-two-groups" class="slide level2 center">
+<h2>Hypotheses for Two Groups</h2>
+<ul>
+<li><p>Null Hypothesis: There is no difference between the long run averages of two groups</p></li>
+<li><p>Alt. Hypothesis: There is a difference between the long run averages of two groups</p>
+<ul>
+<li>Difference can be greater than, less than, or not equal to</li>
+</ul></li>
+</ul>
+</section>
+<section id="hypotheses-for-two-groups-1" class="slide level2 center">
+<h2>Hypotheses for Two Groups</h2>
+<p>In symbols:</p>
+<ul>
+<li><p><span class="math inline">H_0: \mu_{Group\:1} - \mu_{Group\:2} = 0</span></p></li>
+<li><p><span class="math inline">H_A: \mu_{Group\:1} - \mu_{Group\:2} &gt;,&lt;,\neq 0</span></p></li>
+</ul>
+<div class="fragment">
+<p>Equivalently, we could also write:</p>
+<ul>
+<li><p><span class="math inline">H_0: \mu_{Group\:1}=\mu_{Group\:2}</span></p></li>
+<li><p><span class="math inline">H_A: \mu_{Group\:1}&gt;,&lt;,\neq\mu_{Group\:2}</span></p></li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="strength-of-evidence" class="title-slide slide level1 center">
+<h1>Strength of Evidence</h1>
+
+</section>
+<section id="determining-strength-of-evidence" class="slide level2 center">
+<h2>Determining Strength of Evidence</h2>
+<p>Similar to previous chapters, we first find strength of evidence using <em>simulation</em>.</p>
+<ul>
+<li><p>Now, we want to use the theory-based approach to find:</p>
+<ul>
+<li><p>P-value</p></li>
+<li><p>Standardized statistic</p></li>
+<li><p>Confidence interval</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="strength-of-evidence-using-simulation" class="slide level2 center">
+<h2>Strength of Evidence Using Simulation</h2>
+<p>For two groups, the Applet does the following to simulate:</p>
+<ul>
+<li><p>Study data is input</p></li>
+<li><p>All responses (some numerical value) from the study are put on “cards”</p></li>
+<li><p>For one study simulation, cards are randomly split into the two explanatory groups</p></li>
+<li><p>Sample averages (${x}) are calculated for each group</p></li>
+</ul>
+</section>
+<section id="validity-conditions-for-theory-based-approach" class="slide level2 center">
+<h2>Validity Conditions for Theory-Based Approach</h2>
+<p>To use the theory-based approach for two groups (with a numerical response variable):</p>
+<ul>
+<li><p>Each group needs at least 20 observations</p></li>
+<li><p>Distributions must not be strongly skewed</p>
+<ul>
+<li>Can look at distributions via a boxplot, dotplot, etc.</li>
+</ul></li>
+</ul>
+</section>
+<section id="standard-error-formula-for-two-means" class="slide level2 center">
+<h2>Standard Error Formula for Two Means</h2>
+<p><span class="math display">SE=\sqrt{\frac{s_{1}^{2}}{n_1}+\frac{s_{2}^{2}}{n_2}}</span></p>
+<p>We use the same formula for both confidence intervals and standardized statistics! (No “pooled” SE.)</p>
+</section>
+<section id="two-sample-t-test" class="slide level2 center">
+<h2>Two Sample T-Test</h2>
+<p>General standardized statistic (SS) formula:</p>
+<p><span class="math display">SS=\frac{Observed\: Statistic - Hypothesized\: Value}{Standard\: Error\: under\: the\: null}</span></p>
+<p>When comparing two groups:</p>
+<p><span class="math display">t=\frac{(\bar{x}_{1} - \bar{x}_{2})-0}{\sqrt{\frac{s_{1}^{2}}{n_1}+\frac{s_{2}^{2}}{n_2}}}</span></p>
+</section>
+<section id="standardized-statistic-interpretation" class="slide level2 center">
+<h2>Standardized Statistic Interpretation</h2>
+<ul>
+<li><p>Interpretation remains essentially the same</p></li>
+<li><p>“<span class="math inline">\bar{x}_1</span> is ___ standard deviations away from <span class="math inline">\bar{x}_2</span>”</p></li>
+</ul>
+</section>
+<section id="confidence-interval-for-two-groups" class="slide level2 center">
+<h2>Confidence Interval for Two Groups</h2>
+<p>General confidence interval formula:</p>
+<p><span class="math display">CI=Observed\: Statistic\: ± Multiplier*SE</span></p>
+<p>When comparing two groups:</p>
+<p><span class="math display">CI=(\bar{x}_{1} - \bar{x}_{2})±2*\sqrt{\frac{s_{1}^{2}}{n_1}+\frac{s_{2}^{2}}{n_2}}</span></p>
+</section>
+<section id="confidence-interval-interpretation" class="slide level2 center">
+<h2>Confidence Interval Interpretation</h2>
+<ul>
+<li>“We are 95% confident that the long run difference in averages of <strong>context</strong> between <strong>group 1</strong> and <strong>group 2</strong> falls between <strong>lower bound</strong> and <strong>upper bound</strong>.”</li>
+</ul>
+<div class="fragment">
+<p>Alternatively, we can say:</p>
+<ul>
+<li>“We’re 95% confident that the true average of <strong>context</strong> in <strong>group 1</strong> is <strong>lower bound</strong> to <strong>upper bound</strong> <strong>more/less</strong> than the true average of <strong>context</strong> in <strong>group 2</strong>.”</li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="example" class="title-slide slide level1 center">
+<h1>Example</h1>
+
+</section>
+<section id="nfl-referees" class="slide level2 center">
+<h2>NFL Referees</h2>
+<ul>
+<li><p>In 2012, the first three weeks of NFL play were refereed by replacement referees</p></li>
+<li><p>Want to examine data to determine if games were longer or shorter when refereed by the replacements</p></li>
+<li><p>Three weeks of games were observed for each set of referees (replacement and regular)</p></li>
+</ul>
+</section>
+<section id="referee-data" class="slide level2 center">
+<h2>Referee Data</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="itzgwjtnpv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#itzgwjtnpv table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#itzgwjtnpv thead, #itzgwjtnpv tbody, #itzgwjtnpv tfoot, #itzgwjtnpv tr, #itzgwjtnpv td, #itzgwjtnpv th {
+  border-style: none;
+}
+
+#itzgwjtnpv p {
+  margin: 0;
+  padding: 0;
+}
+
+#itzgwjtnpv .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 34px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: 100%;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#itzgwjtnpv .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#itzgwjtnpv .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#itzgwjtnpv .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#itzgwjtnpv .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#itzgwjtnpv .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+}
+
+#itzgwjtnpv .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#itzgwjtnpv .gt_col_heading {
+  color: #FFFFFF;
+  background-color: #0076BA;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#itzgwjtnpv .gt_column_spanner_outer {
+  color: #FFFFFF;
+  background-color: #0076BA;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#itzgwjtnpv .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#itzgwjtnpv .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#itzgwjtnpv .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#itzgwjtnpv .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#itzgwjtnpv .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#itzgwjtnpv .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  vertical-align: middle;
+}
+
+#itzgwjtnpv .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#itzgwjtnpv .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#itzgwjtnpv .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: none;
+  border-top-width: 1px;
+  border-top-color: #D5D5D5;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D5D5D5;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D5D5D5;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#itzgwjtnpv .gt_stub {
+  color: #333333;
+  background-color: #89D3FE;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D5D5D5;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#itzgwjtnpv .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#itzgwjtnpv .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#itzgwjtnpv .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#itzgwjtnpv .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#itzgwjtnpv .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #5F5F5F;
+}
+
+#itzgwjtnpv .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#itzgwjtnpv .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+}
+
+#itzgwjtnpv .gt_grand_summary_row {
+  color: #333333;
+  background-color: #D5D5D5;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#itzgwjtnpv .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #5F5F5F;
+}
+
+#itzgwjtnpv .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #5F5F5F;
+}
+
+#itzgwjtnpv .gt_striped {
+  background-color: #EDF7FC;
+}
+
+#itzgwjtnpv .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+}
+
+#itzgwjtnpv .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#itzgwjtnpv .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#itzgwjtnpv .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#itzgwjtnpv .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#itzgwjtnpv .gt_left {
+  text-align: left;
+}
+
+#itzgwjtnpv .gt_center {
+  text-align: center;
+}
+
+#itzgwjtnpv .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#itzgwjtnpv .gt_font_normal {
+  font-weight: normal;
+}
+
+#itzgwjtnpv .gt_font_bold {
+  font-weight: bold;
+}
+
+#itzgwjtnpv .gt_font_italic {
+  font-style: italic;
+}
+
+#itzgwjtnpv .gt_super {
+  font-size: 65%;
+}
+
+#itzgwjtnpv .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#itzgwjtnpv .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#itzgwjtnpv .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#itzgwjtnpv .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#itzgwjtnpv .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#itzgwjtnpv .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#itzgwjtnpv .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#itzgwjtnpv .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#itzgwjtnpv div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top" data-quarto-postprocess="true" style="table-layout:fixed;width:100%;" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_col_headings">
+<th id="Group" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Group</th>
+<th id="n" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">n</th>
+<th id="Mean" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Mean</th>
+<th id="SD" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">SD</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_center" headers="Group" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">Regular Refs</td>
+<td class="gt_row gt_center" headers="n" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">43</td>
+<td class="gt_row gt_center" headers="Mean" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">188.47</td>
+<td class="gt_row gt_center" headers="SD" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">12.73</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center gt_striped" headers="Group" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">Replacement Refs</td>
+<td class="gt_row gt_center gt_striped" headers="n" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">48</td>
+<td class="gt_row gt_center gt_striped" headers="Mean" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">196.50</td>
+<td class="gt_row gt_center gt_striped" headers="SD" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">15.86</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="Group" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">Pooled</td>
+<td class="gt_row gt_center" headers="n" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">91</td>
+<td class="gt_row gt_center" headers="Mean" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">192.70</td>
+<td class="gt_row gt_center" headers="SD" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">14.47</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>The distributions are not strongly skewed.</p>
+<div class="fragment">
+<p>Can we use the theory-based approach here?</p>
+</div>
+</section>
+<section id="nfl-referees-1" class="slide level2 center">
+<h2>NFL Referees</h2>
+<ul>
+<li><p>Explanatory variable: <span class="fragment"><strong>Regular refs or replacement refs</strong></span></p></li>
+<li><p>Response variable: <span class="fragment"><strong>Length of game that was reffed</strong></span></p></li>
+<li><p>Parameter of interest: <span class="fragment"><strong>Difference in long run average game time between games reffed by replacement refs versus regular refs. (</strong><span class="math inline">\mu_{rep}-\mu_{reg}</span><strong>)</strong></span></p></li>
+</ul>
+</section>
+<section id="setting-up-the-hypotheses" class="slide level2 center">
+<h2>Setting up the hypotheses</h2>
+<ul>
+<li><p><span class="math inline">H_0: \mu_{rep}-\mu_{reg}=0</span></p></li>
+<li><p><span class="math inline">H_A: \mu_{rep}-\mu_{reg} \neq 0</span></p></li>
+</ul>
+<p>Here, we are just looking for a difference, so we use <span class="math inline">\neq</span>.</p>
+<ul>
+<li>Equivalent to: <span class="math inline">H_A: \mu_{rep}\neq\mu_{reg}</span></li>
+</ul>
+</section>
+<section id="calculating-the-standardized-statistic" class="slide level2 center">
+<h2>Calculating the Standardized Statistic</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><br></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="obkyvylrwo" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#obkyvylrwo table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#obkyvylrwo thead, #obkyvylrwo tbody, #obkyvylrwo tfoot, #obkyvylrwo tr, #obkyvylrwo td, #obkyvylrwo th {
+  border-style: none;
+}
+
+#obkyvylrwo p {
+  margin: 0;
+  padding: 0;
+}
+
+#obkyvylrwo .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 32px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: 80%;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#obkyvylrwo .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#obkyvylrwo .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#obkyvylrwo .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#obkyvylrwo .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#obkyvylrwo .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+}
+
+#obkyvylrwo .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#obkyvylrwo .gt_col_heading {
+  color: #FFFFFF;
+  background-color: #0076BA;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#obkyvylrwo .gt_column_spanner_outer {
+  color: #FFFFFF;
+  background-color: #0076BA;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#obkyvylrwo .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#obkyvylrwo .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#obkyvylrwo .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#obkyvylrwo .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#obkyvylrwo .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#obkyvylrwo .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  vertical-align: middle;
+}
+
+#obkyvylrwo .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#obkyvylrwo .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#obkyvylrwo .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: none;
+  border-top-width: 1px;
+  border-top-color: #D5D5D5;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D5D5D5;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D5D5D5;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#obkyvylrwo .gt_stub {
+  color: #333333;
+  background-color: #89D3FE;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D5D5D5;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#obkyvylrwo .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#obkyvylrwo .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#obkyvylrwo .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#obkyvylrwo .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#obkyvylrwo .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #5F5F5F;
+}
+
+#obkyvylrwo .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#obkyvylrwo .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+}
+
+#obkyvylrwo .gt_grand_summary_row {
+  color: #333333;
+  background-color: #D5D5D5;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#obkyvylrwo .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #5F5F5F;
+}
+
+#obkyvylrwo .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #5F5F5F;
+}
+
+#obkyvylrwo .gt_striped {
+  background-color: #EDF7FC;
+}
+
+#obkyvylrwo .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+}
+
+#obkyvylrwo .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#obkyvylrwo .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#obkyvylrwo .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#obkyvylrwo .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#obkyvylrwo .gt_left {
+  text-align: left;
+}
+
+#obkyvylrwo .gt_center {
+  text-align: center;
+}
+
+#obkyvylrwo .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#obkyvylrwo .gt_font_normal {
+  font-weight: normal;
+}
+
+#obkyvylrwo .gt_font_bold {
+  font-weight: bold;
+}
+
+#obkyvylrwo .gt_font_italic {
+  font-style: italic;
+}
+
+#obkyvylrwo .gt_super {
+  font-size: 65%;
+}
+
+#obkyvylrwo .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#obkyvylrwo .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#obkyvylrwo .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#obkyvylrwo .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#obkyvylrwo .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#obkyvylrwo .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#obkyvylrwo .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#obkyvylrwo .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#obkyvylrwo div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_col_headings">
+<th id="Group" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Group</th>
+<th id="n" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">n</th>
+<th id="Mean" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Mean</th>
+<th id="SD" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">SD</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_center" headers="Group" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">Regular Refs</td>
+<td class="gt_row gt_center" headers="n" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">43</td>
+<td class="gt_row gt_center" headers="Mean" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">188.47</td>
+<td class="gt_row gt_center" headers="SD" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">12.73</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center gt_striped" headers="Group" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">Replacement Refs</td>
+<td class="gt_row gt_center gt_striped" headers="n" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">48</td>
+<td class="gt_row gt_center gt_striped" headers="Mean" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">196.50</td>
+<td class="gt_row gt_center gt_striped" headers="SD" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">15.86</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="Group" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">Pooled</td>
+<td class="gt_row gt_center" headers="n" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">91</td>
+<td class="gt_row gt_center" headers="Mean" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">192.70</td>
+<td class="gt_row gt_center" headers="SD" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">14.47</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div><div class="column" style="width:40%;">
+<ul>
+<li><span class="math inline">n_{reg}=43</span></li>
+<li><span class="math inline">n_{rep}=48</span></li>
+<li><span class="math inline">\bar{x}_{reg}=188.47</span></li>
+<li><span class="math inline">\bar{x}_{rep}=196.50</span></li>
+<li><span class="math inline">s_{reg}=12.73</span></li>
+<li><span class="math inline">s_{rep}=15.86</span></li>
+</ul>
+</div></div>
+</section>
+<section id="calculating-the-standardized-statistic-1" class="slide level2 center">
+<h2>Calculating the Standardized Statistic</h2>
+<p><span class="math display">t=\frac{(\bar{x}_{rep} - \bar{x}_{reg})-0}{\sqrt{\frac{s_{rep}^{2}}{n_{rep}}+\frac{s_{reg}^{2}}{n_{reg}}}}</span></p>
+<p><span class="math display">=\frac{196.50-188.47}{\sqrt{\frac{15.86^{2}}{48}+\frac{12.73^{2}}{43}}}</span></p>
+<p><span class="math display">=2.63</span></p>
+</section>
+<section id="calculating-the-confidence-interval" class="slide level2 center">
+<h2>Calculating the Confidence Interval</h2>
+<p><span class="math display">CI=(\bar{x}_{rep} - \bar{x}_{reg})±2*\sqrt{\frac{s_{rep}^{2}}{n_{rep}}+\frac{s_{reg}^{2}}{n_{reg}}}</span></p>
+<p><span class="math display">CI=(196.50-188.47)±2*\sqrt{\frac{15.86^{2}}{48}+\frac{12.73^{2}}{43}}</span></p>
+<p><span class="math display">=8.03±2*2.98=(2.07,13.99)</span></p>
+</section>
+<section id="interpreting-the-confidence-interval" class="slide level2 center">
+<h2>Interpreting the Confidence Interval</h2>
+<p>“We are 95% confident that games reffed by the replacement referees differ by 2.07 to 13.99 minutes from games reffed by the regular referees.”</p>
+</section>
+<section id="theory-based-inference-applet" class="slide level2 center">
+<h2>Theory-Based Inference Applet</h2>
+
+<img data-src="images/3_theoryapp.png" class="quarto-figure quarto-figure-center r-stretch" alt="Screenshot of the theory based inference applet. On the left side, data for each group is entered (sample size, sample mean, and sample standard deviation). At the bottom left, the confidence interval is calculated. On the right, the normal distribution is shown and gives the standardized statistic and p-value."><p><a href="https://www.isi-stats.com/isi2nd/ISIapplets2020.html">Theory-Based Inference Applet</a></p>
+</section>
+<section id="drawing-conclusions" class="slide level2 center">
+<h2>Drawing Conclusions</h2>
+<p>Standardized statistic and confidence interval:</p>
+<ul>
+<li><p><span class="math inline">z=2.63</span></p>
+<ul>
+<li>Outside the twos</li>
+</ul></li>
+<li><p><span class="math inline">CI=(2.07,13.99)</span></p>
+<ul>
+<li>Zero is not in the confidence interval</li>
+</ul></li>
+<li><p>P-value = 0.0089 &lt; 0.05</p></li>
+<li><p>Note that all three methods point to the same conclusion: reject <span class="math inline">H_0</span></p></li>
+</ul>
+</section>
+<section id="drawing-conclusions-1" class="slide level2 center">
+<h2>Drawing Conclusions</h2>
+<p>“We have strong evidence to conclude that NFL games reffed by replacement referees last longer than games that are reffed by the regular referees.”</p>
 
 <div class="quarto-auto-generated-content">
 <p><img src="logo.jpg" class="slide-logo"></p>
@@ -342,7 +1553,7 @@
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
@@ -360,7 +1571,6 @@
   <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -528,33 +1738,53 @@
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
