@@ -2,6 +2,7 @@
 title: "Section 2.1"
 subtitle: "Generalization: How broadly do the results apply?"
 image: "images/image2.1.png"
+description: "02.1" 
 format: 
   revealjs: 
     chalkboard: true

@@ -2,6 +2,7 @@
 title: "Section 4.1"
 subtitle: "Association and Confounding"
 image: "images/image4.1.png"
+description: "04.1" 
 format: 
   revealjs: 
     chalkboard: true

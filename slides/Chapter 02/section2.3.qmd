@@ -2,6 +2,7 @@
 title: "Section 2.3"
 subtitle: "Inference for a Single Quantitative Variable"
 image: "images/image2.3.png"
+description: "02.3" 
 format: 
   revealjs: 
     chalkboard: true

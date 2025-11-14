@@ -2,6 +2,7 @@
 title: "Section 5.2"
 subtitle: "Comparing Two Proportions: Simulation-Based Approach"
 image: "images/image5.2.png"
+description: "05.2" 
 format: 
   revealjs: 
     chalkboard: true

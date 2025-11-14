@@ -7,5 +7,6 @@ listing:
   contents: 
     - "slides/*/*.qmd"
   type: grid
+  sort: "description"
   fields: [image, title]
 ---

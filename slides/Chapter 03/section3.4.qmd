@@ -2,6 +2,7 @@
 title: "Section 3.4"
 subtitle: "Factors that Affect the Width of a Confidence Interval"
 image: "images/image3.4.png"
+description: "03.4" 
 format: 
   revealjs: 
     chalkboard: true

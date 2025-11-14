@@ -2,6 +2,7 @@
 title: "Section 4.2"
 subtitle: "Observational Studies vs Experiments"
 image: "images/image4.2.png"
+description: "04.2" 
 format: 
   revealjs: 
     chalkboard: true

@@ -3,15 +3,11 @@
     "listing": "/index.html",
     "items": [
       "/slides/Chapter 00/chapterP.html",
-      "/slides/Random/exam1review.html",
       "/slides/Chapter 01/section1.1.html",
       "/slides/Chapter 01/section1.2.html",
       "/slides/Chapter 01/section1.3.html",
       "/slides/Chapter 01/section1.4.html",
       "/slides/Chapter 01/section1.5.html",
-      "/slides/Chapter 11/section11.1.html",
-      "/slides/Chapter 11/section11.2.html",
-      "/slides/Chapter 11/section11.3.html",
       "/slides/Chapter 02/section2.1.html",
       "/slides/Chapter 02/section2.2.html",
       "/slides/Chapter 02/section2.3.html",
@@ -29,7 +25,11 @@
       "/slides/Chapter 06/section6.3.html",
       "/slides/Chapter 07/section7.1.html",
       "/slides/Chapter 07/section7.2.html",
-      "/slides/Chapter 07/section7.3.html"
+      "/slides/Chapter 07/section7.3.html",
+      "/slides/Chapter 11/section11.1.html",
+      "/slides/Chapter 11/section11.2.html",
+      "/slides/Chapter 11/section11.3.html",
+      "/slides/Random/exam1review.html"
     ]
   }
 ]

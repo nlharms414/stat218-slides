@@ -2,6 +2,7 @@
 title: "Section 7.2"
 subtitle: "Simulation-Based Approach to Analyzing Paired Data"
 image: "images/image7.2.png"
+description: "07.2" 
 format: 
   revealjs: 
     chalkboard: true

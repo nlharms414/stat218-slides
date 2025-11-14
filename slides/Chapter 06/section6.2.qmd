@@ -2,6 +2,7 @@
 title: "Section 6.2"
 subtitle: "Comparing Two Means: Simulation Based Approach"
 image: "images/image6.2.png"
+description: "06.2" 
 format: 
   revealjs: 
     chalkboard: true
@@ -201,7 +202,7 @@ We find the p-value the same way as before.
 -   On the previous slide, p-value = 0/1000
 
     -   This is less than 0.05, reject $H_A$
-    
+
 ## Standardized Statistic (SS) {.center}
 
 General form:
@@ -259,7 +260,7 @@ Our hypothesized parameter value is *always* zero, therefore...
 -   If 0 is OUTSIDE the interval, reject $H_0$
 
     -   The groups are different
-    
+
 ## Dung Beetle CI {.center}
 
 $$CI = (\bar{x}_b-\bar{x}_c) ± 2*(SD\: from\: Applet)$$

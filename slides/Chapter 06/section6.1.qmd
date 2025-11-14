@@ -2,6 +2,7 @@
 title: "Section 6.1"
 subtitle: "Comparing Two Groups: Quantitative Response"
 image: "images/image6.1.png"
+description: "06.1" 
 format: 
   revealjs: 
     chalkboard: true
@@ -180,5 +181,3 @@ geyser %>% gt() %>%
 ## Geyser Example Boxplots {.center}
 
 ![](images/1_eruptbox.png){fig-alt="Two stacked boxplots displaying the geyser data for each year. The boxplot for 1978 has a lower median than the boxplot for 2003. The 2003 boxplot also has two outliers." fig-align="center"}
-
-

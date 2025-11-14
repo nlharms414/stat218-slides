@@ -2,6 +2,7 @@
 title: "Chapter P"
 subtitle: "The Preliminaries"
 image: "chPimage.png"
+description: "00.0" 
 format: 
   revealjs: 
     chalkboard: true

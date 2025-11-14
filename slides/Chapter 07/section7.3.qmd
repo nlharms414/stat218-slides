@@ -2,6 +2,7 @@
 title: "Section 7.3"
 subtitle: "Theory-Based Approach to Analyzing Data from Paired Samples"
 image: "images/image7.3.png"
+description: "07.3" 
 format: 
   revealjs: 
     chalkboard: true

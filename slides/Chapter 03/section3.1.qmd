@@ -2,6 +2,7 @@
 title: "Section 3.1"
 subtitle: "Statistical Inference: Confidence Intervals"
 image: "images/image3.1.png"
+description: "03.1" 
 format: 
   revealjs: 
     chalkboard: true

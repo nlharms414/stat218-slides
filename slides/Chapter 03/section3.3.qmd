@@ -2,6 +2,7 @@
 title: "Section 3.3"
 subtitle: "2SD and Theory-Based Confidence Intervals for a Single Mean"
 image: "images/image3.3.png"
+description: "03.3" 
 format: 
   revealjs: 
     chalkboard: true
