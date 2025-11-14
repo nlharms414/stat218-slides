@@ -1,6 +1,7 @@
 ---
 title: "Section 1.2"
 subtitle: "Measuring the Strength of Evidence"
+image: "images/image1.2.png"
 format: 
   revealjs: 
     chalkboard: true

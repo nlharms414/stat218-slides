@@ -1,6 +1,7 @@
 ---
 title: "Section 11.3"
-subtitle: ""
+subtitle: "Conditional Probability and Independence"
+image: "images/image11.3.png"
 format: 
   revealjs: 
     chalkboard: true

@@ -1,6 +1,7 @@
 ---
 title: "Section 1.3"
 subtitle: "Alternative Measure of Strength of Evidence"
+image: "images/image1.3.png"
 format: 
   revealjs: 
     chalkboard: true

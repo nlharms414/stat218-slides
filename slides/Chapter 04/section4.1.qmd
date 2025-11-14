@@ -1,6 +1,7 @@
 ---
 title: "Section 4.1"
 subtitle: "Association and Confounding"
+image: "images/image4.1.png"
 format: 
   revealjs: 
     chalkboard: true
@@ -156,7 +157,7 @@ Potential confounding variable(s):
 
 ::: {.column width="40%"}
 | Scenario |
-|:--:|
+|:----------------------------------------------------------------------:|
 | Researchers found that students who claim to have never pulled an all-nighter have an average GPA of 3.1, while students who have pulled an all-nighter have an average GPA of 2.9. |
 :::
 :::::
@@ -190,7 +191,7 @@ Potential confounding variable(s):
 
 ::: {.column width="40%"}
 | Scenario |
-|:--:|
+|:----------------------------------------------------------------------:|
 | Researchers found that countries that have more TVs per 1000 people have a higher average lifespan. |
 :::
 :::::

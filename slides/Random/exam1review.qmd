@@ -1,5 +1,6 @@
 ---
 title: "Exam 1 Review"
+image: "images/imageE1.png"
 format: 
   revealjs: 
     chalkboard: true

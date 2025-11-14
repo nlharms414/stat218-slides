@@ -1,6 +1,7 @@
 ---
 title: "Section 2.1"
 subtitle: "Generalization: How broadly do the results apply?"
+image: "images/image2.1.png"
 format: 
   revealjs: 
     chalkboard: true
@@ -129,7 +130,7 @@ Note: We only use sample standard deviation and standard deviation symbols ($s$,
 
 ::: {.column width="45%"}
 | Scenario |
-|:--:|
+|:----------------------------------------------------------------------:|
 | You want to investigate the long run proportion of students at UNL who are morning people. You ask everyone in your 8am class if they are a morning or night person. |
 :::
 :::::
@@ -171,7 +172,7 @@ Note: We only use sample standard deviation and standard deviation symbols ($s$,
 
 ::: {.column width="45%"}
 | Scenario |
-|:--:|
+|:----------------------------------------------------------------------:|
 | A researcher wants to investigate the average lifespan of a newly discovered fish, of which only three schools are known to exist. She randomly selects 30 fish from any of the schools to track the lifespans of. |
 :::
 :::::

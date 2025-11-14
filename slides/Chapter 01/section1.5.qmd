@@ -1,6 +1,7 @@
 ---
 title: "Section 1.5"
 subtitle: "Theory Based Approach"
+image: "images/image1.5.png"
 format: 
   revealjs: 
     chalkboard: true
