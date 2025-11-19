@@ -30,6 +30,22 @@
     }
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -334,8 +350,221 @@
 </div>
 
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
+<section id="section-7.1-learning-objectives" class="slide level2 center">
+<h2>Section 7.1 Learning Objectives</h2>
+<ul>
+<li><p>Identify a study design as having pairing or independent groups.</p></li>
+<li><p>Identify a study design as paired using repeated measures or paired using matching.</p></li>
+</ul>
+</section>
+<section>
+<section id="review" class="title-slide slide level1 center">
+<h1>Review</h1>
+
+</section>
+<section id="chapter-5-recap" class="slide level2 center">
+<h2>Chapter 5 Recap</h2>
+<p>Comparing two proportions:</p>
+<ul>
+<li><p><u><strong>Parameter:</strong></u> <span class="math inline">\pi_{Group\:1} - \pi_{Group\:2}</span></p></li>
+<li><p><u><strong>Observed Statistic:</strong></u> <span class="math inline">\hat{p}_{Group\:1} - \hat{p}_{Group\:2}</span></p></li>
+</ul>
+<p>Hypotheses:</p>
+<ul>
+<li><p><span class="math inline">H_0: \pi_{Group\:1} - \pi_{Group\:2} = 0</span></p></li>
+<li><p><span class="math inline">H_A: \pi_{Group\:1} - \pi_{Group\:2} &gt;,&lt;,\neq 0</span></p></li>
+</ul>
+</section>
+<section id="chapter-6-recap" class="slide level2 center">
+<h2>Chapter 6 Recap</h2>
+<p>Comparing two means:</p>
+<ul>
+<li><p><u><strong>Parameter:</strong></u> <span class="math inline">\mu_{Group\:1} - \mu_{Group\:2}</span></p></li>
+<li><p><u><strong>Observed Statistic:</strong></u> <span class="math inline">\bar{x}_{Group\:1} - \bar{x}_{Group\:2}</span></p></li>
+</ul>
+<p>Hypotheses:</p>
+<ul>
+<li><p><span class="math inline">H_0: \mu_{Group\:1} - \mu_{Group\:2} = 0</span></p></li>
+<li><p><span class="math inline">H_A: \mu_{Group\:1} - \mu_{Group\:2} &gt;,&lt;,\neq 0</span></p></li>
+</ul>
+</section>
+<section id="comparing-two-groups" class="slide level2 center">
+<h2>Comparing Two Groups</h2>
+<ul>
+<li><p>Comparing two proportions/means directly is just ONE way of comparing two groups</p></li>
+<li><p>Can use paired design:</p>
+<ul>
+<li><p>Repeated measures</p></li>
+<li><p>Matched pairs</p></li>
+</ul></li>
+<li><p>Either way, we must add “randomness”</p></li>
+</ul>
+</section></section>
+<section>
+<section id="example-can-you-study-with-music-blaring" class="title-slide slide level1 center">
+<h1>Example: Can you study with music blaring?</h1>
+
+</section>
+<section id="research-question" class="slide level2 center">
+<h2>Research Question</h2>
+<p>Does music with lyrics affect a student’s ability to memorize words as opposed to music without lyrics?</p>
+</section>
+<section id="experiment-setup" class="slide level2 center">
+<h2>Experiment Setup</h2>
+<div>
+<ul>
+<li class="fragment"><p>28 students selected to participate</p></li>
+<li class="fragment"><p>Each student given a list of 5-letter words with 90 seconds to memorize as many as possible</p></li>
+<li class="fragment"><p>Students either listen to music with OR without lyrics while doing so</p></li>
+<li class="fragment"><p>Students write down as many words as they can remember</p></li>
+</ul>
+</div>
+</section>
+<section id="experiment-setup-1" class="slide level2 center">
+<h2>Experiment Setup</h2>
+<ul>
+<li><p>Explanatory variable: <span class="fragment"><strong>Music with or without lyrics</strong></span></p></li>
+<li><p>Response variable: <span class="fragment"><strong>Number of words memorized</strong></span></p></li>
+</ul>
+<div class="fragment">
+<p>We will look at three different ways of designing this study.</p>
+</div>
+</section>
+<section id="independent-design" class="slide level2 center">
+<h2>1. Independent Design</h2>
+<p>How we would design the experiment in chapter 6:</p>
+<ul>
+<li><p>Randomly assign…</p>
+<ul>
+<li><p>14 students to listen to lyrics</p></li>
+<li><p>14 to listen to music with no lyrics</p></li>
+<li><p>This is how we add “randomness”</p></li>
+</ul></li>
+<li><p>Then run the experiment</p></li>
+</ul>
+</section>
+<section id="independent-design-1" class="slide level2 center">
+<h2>1. Independent Design</h2>
+<p>We refer to this as an <strong>independent</strong> design.</p>
+<ul>
+<li><p>Individuals are independent from each other</p></li>
+<li><p>Subjects can (and will) vary amongst each other</p>
+<ul>
+<li>No two individuals are exactly the same!</li>
+</ul></li>
+</ul>
+</section>
+<section id="repeated-measures-design" class="slide level2 center">
+<h2>2. Repeated Measures Design</h2>
+<p>Design setup:</p>
+<ul>
+<li><p>Each person listens to each kind of music</p>
+<ul>
+<li><p>First trial with one type of music</p></li>
+<li><p>Second trial with the other</p></li>
+</ul></li>
+<li><p>Adding “randomness”:</p>
+<ul>
+<li>It is randomly decided if a person listens to lyrics/no lyrics first</li>
+</ul></li>
+</ul>
+</section>
+<section id="repeated-measures-design-1" class="slide level2 center">
+<h2>2. Repeated Measures Design</h2>
+<p>Now, variability is reduced!</p>
+<ul>
+<li><p>Each person has been tested under each explanatory group</p></li>
+<li><p>No subject to subject variability</p></li>
+</ul>
+</section>
+<section id="matched-pairs-design" class="slide level2 center">
+<h2>3. Matched Pairs Design</h2>
+<ul>
+<li><p>Have students take a pre-test</p></li>
+<li><p>Pair students basd on similar scores</p></li>
+<li><p>One from each pair is assigned to lyrics; the other to no lyrics</p></li>
+<li><p>Adding “randomness”:</p>
+<ul>
+<li>It is randomly decided which person listens to which kind of music</li>
+</ul></li>
+<li><p>Variability has been reduced by pairing like-individuals</p></li>
+</ul>
+</section>
+<section id="why-is-randomness-so-important" class="slide level2 center">
+<h2>Why is “randomness” so important?</h2>
+<p>Randomness allows us to account for confounding variables!</p>
+<ul>
+<li><p>Think back to chapter 4</p></li>
+<li><p>These are different methods of <strong>random assignment</strong></p></li>
+</ul>
+</section></section>
+<section>
+<section id="paired-designs" class="title-slide slide level1 center">
+<h1>Paired Designs</h1>
+
+</section>
+<section id="paired-designs-1" class="slide level2 center">
+<h2>Paired Designs</h2>
+<p>Response variables come in pairs, with one response value in the pair belonging to each explanatory variable group.</p>
+<ul>
+<li>Two types of paired designs</li>
+</ul>
+</section>
+<section id="types-of-paired-designs" class="slide level2 center">
+<h2>Types of Paired Designs</h2>
+<p>Repeated measures:</p>
+<ul>
+<li>Measuring the same individual twice (once for each explanatory group)</li>
+</ul>
+<p>Matched pairs:</p>
+<ul>
+<li><p>Pairing two individuals based on similarities</p></li>
+<li><p>One from each pair is assigned to each explanatory group</p></li>
+</ul>
+</section>
+<section id="paired-vs.-independent-design" class="slide level2 center">
+<h2>Paired vs.&nbsp;Independent Design</h2>
+<p>Both attempt to answer the same research question</p>
+<ul>
+<li><p>Independent design:</p>
+<ul>
+<li><p>Each individual is unrelated to others in the study</p></li>
+<li><p>Each observational/experimental unit gives only one response/doesn’t have a counterpart</p></li>
+<li><p>Analyzing a difference in means</p></li>
+</ul></li>
+<li><p>Paired design: Analyzing a mean difference</p></li>
+</ul>
+</section>
+<section id="examples" class="slide level2 center">
+<h2>Examples</h2>
+<p>Discuss with people around you if you think the designs are independent or paired</p>
+<ol type="1">
+<li><p>Reaction times for students taken at 8 am compared to reaction times taken for the same students at 10 pm</p></li>
+<li><p>Change in weight for those on the Atkins Diet compared to change in weight for those on the Paleo Diet</p></li>
+<li><p>Time for skiers to complete a downhill race course on skis treated with wax A compared to skiers completing the same course on skis treated with wax B</p></li>
+</ol>
+</section>
+<section id="why-matched-pairs" class="slide level2 center">
+<h2>Why matched pairs?</h2>
+<p>Can get more informative results</p>
+<ul>
+<li><p>By minimizing unit to unit difference, we can focus on <strong>explanatory group</strong> differences</p></li>
+<li><p>Concept of “blocking” (beyond the scope of this class)</p></li>
+<li><p>Must make sure design is correctly identified!</p>
+<ul>
+<li>Otherwise, analysis can be incorrect</li>
+</ul></li>
+</ul>
+</section>
+<section id="teaching-with-technology" class="slide level2 center" style="font-size: 32px">
+<h2>Teaching with Technology</h2>
+<p>Which example is an example of a paired design? Why?</p>
+<ol type="1">
+<li><p>A teacher taught one class a lesson using technology and a different class a lesson without technology and then compared their quiz scores.</p></li>
+<li><p>A teacher taught a lesson using technology and then compared class scores to the national average score.</p></li>
+<li><p>A teacher teaches a lesson using technology and then gives her students a quiz and then compares those quiz scores to those from her class from the previous year.</p></li>
+<li><p>Pairs of students are matched by similar IQs. One in each pair is taught a lesson using technology and the other is taught without technology. Their quiz scores are compared.</p></li>
+</ol>
 
 <div class="quarto-auto-generated-content">
 <p><img src="logo.jpg" class="slide-logo"></p>
@@ -343,7 +572,7 @@
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 

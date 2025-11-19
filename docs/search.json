@@ -914,7 +914,7 @@
     "href": "slides/Chapter 06/section6.2.html#finding-the-p-value-1",
     "title": "Section 6.2",
     "section": "Finding the P-value",
-    "text": "Finding the P-value\nWe find the p-value the same way as before.\n\nGiven our observed statistic, how many simulated values are as or more extreme?\nOn the previous slide, p-value = 0/1000\n\nThis is less than 0.05, reject H_A"
+    "text": "Finding the P-value\nWe find the p-value the same way as before.\n\nGiven our observed statistic, how many simulated values are as or more extreme?\nOn the previous slide, p-value = 0/1000\n\nThis is less than 0.05, reject H_0"
   },
   {
     "objectID": "slides/Chapter 06/section6.2.html#standardized-statistic-ss",
@@ -991,7 +991,7 @@
     "href": "slides/Chapter 06/section6.2.html#conclusions",
     "title": "Section 6.2",
     "section": "Conclusions",
-    "text": "Conclusions\n\nBecause zero is not in the interval, we reject H_A\nNotice, the conclusions we draw from our p-value, standardized statistic, and confidence interval all match!\n\n\nWe have strong evidence to conclude that the dung beetles do navigate by the stars."
+    "text": "Conclusions\n\nBecause zero is not in the interval, we reject H_0 (accept H_A)\nNotice, the conclusions we draw from our p-value, standardized statistic, and confidence interval all match!\n\n\nWe have strong evidence to conclude that the dung beetles do navigate by the stars."
   },
   {
     "objectID": "slides/Chapter 03/section3.4.html#section-3.4-learning-objectives",
@@ -1908,7 +1908,7 @@
     "href": "index.html",
     "title": "STAT 218 Slides",
     "section": "",
-    "text": "Chapter P\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 1.1\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 1.2\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 1.3\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 1.4\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 1.5\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 2.1\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 2.2\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 2.3\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 3.1\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 3.2\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 3.3\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 3.4\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 4.1\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 4.2\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 5.1\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 5.2\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 5.3\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 6.1\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 6.2\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 7.1\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 7.2\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 7.3\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 11.1\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 11.2\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 11.3\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 6.3\n\n\n\n\n\n\n\n\n\n\n\n\n\nExam 1 Review\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Chapter P\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 1.1\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 1.2\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 1.3\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 1.4\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 1.5\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 2.1\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 2.2\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 2.3\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 3.1\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 3.2\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 3.3\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 3.4\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 4.1\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 4.2\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 5.1\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 5.2\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 5.3\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 6.1\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 6.2\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 6.3\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 7.1\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 7.2\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 7.3\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 11.1\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 11.2\n\n\n\n\n\n\n\n\n\n\n\n\n\nSection 11.3\n\n\n\n\n\n\n\n\n\n\n\n\n\nExam 1 Review\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/Chapter 02/section2.1.html#section-2.1-learning-objectives",
@@ -2839,7 +2839,7 @@
     "href": "slides/Chapter 06/section6.3.html#comparing-two-groups",
     "title": "Section 6.3",
     "section": "Comparing Two Groups",
-    "text": "Comparing Two Groups\nWhat are we interested in?\n\nParameter: The difference in long run proportions between two groups\n\n\\mu_{Group\\:1} - \\mu_{Group\\:2}\n\n\nWe estimate the parameter using:\n\nObserved Statistic: The difference in conditional proportions\n\n\\bar{x}_{Group\\:1} - \\bar{x}_{Group\\:2}"
+    "text": "Comparing Two Groups\nWhat are we interested in?\n\nParameter: The difference in long run averages between two groups\n\n\\mu_{Group\\:1} - \\mu_{Group\\:2}\n\n\nWe estimate the parameter using:\n\nObserved Statistic: The difference in conditional averages\n\n\\bar{x}_{Group\\:1} - \\bar{x}_{Group\\:2}"
   },
   {
     "objectID": "slides/Chapter 06/section6.3.html#hypotheses-for-two-groups",
@@ -2867,7 +2867,7 @@
     "href": "slides/Chapter 06/section6.3.html#strength-of-evidence-using-simulation",
     "title": "Section 6.3",
     "section": "Strength of Evidence Using Simulation",
-    "text": "Strength of Evidence Using Simulation\nFor two groups, the Applet does the following to simulate:\n\nStudy data is input\nAll responses (some numerical value) from the study are put on “cards”\nFor one study simulation, cards are randomly split into the two explanatory groups\nSample averages (${x}) are calculated for each group"
+    "text": "Strength of Evidence Using Simulation\nFor two groups, the Applet does the following to simulate:\n\nStudy data is input\nAll responses (some numerical value) from the study are put on “cards”\nFor one study simulation, cards are randomly split into the two explanatory groups\nSample averages (\\bar{x}) are calculated for each group"
   },
   {
     "objectID": "slides/Chapter 06/section6.3.html#validity-conditions-for-theory-based-approach",
@@ -3498,5 +3498,145 @@
     "title": "Section 1.5",
     "section": "Halloween Treats Conclusion",
     "text": "Halloween Treats Conclusion\nSince our standardized statistic using either approach is not outside the twos, we conclude the following:  “We do not have enough evidence to conclude that the long-run proportion of kids who choose candy differs from 0.5.”"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.1.html#section-7.1-learning-objectives",
+    "href": "slides/Chapter 07/section7.1.html#section-7.1-learning-objectives",
+    "title": "Section 7.1",
+    "section": "Section 7.1 Learning Objectives",
+    "text": "Section 7.1 Learning Objectives\n\nIdentify a study design as having pairing or independent groups.\nIdentify a study design as paired using repeated measures or paired using matching."
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.1.html#chapter-5-recap",
+    "href": "slides/Chapter 07/section7.1.html#chapter-5-recap",
+    "title": "Section 7.1",
+    "section": "Chapter 5 Recap",
+    "text": "Chapter 5 Recap\nComparing two proportions:\n\nParameter: \\pi_{Group\\:1} - \\pi_{Group\\:2}\nObserved Statistic: \\hat{p}_{Group\\:1} - \\hat{p}_{Group\\:2}\n\nHypotheses:\n\nH_0: \\pi_{Group\\:1} - \\pi_{Group\\:2} = 0\nH_A: \\pi_{Group\\:1} - \\pi_{Group\\:2} &gt;,&lt;,\\neq 0"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.1.html#chapter-6-recap",
+    "href": "slides/Chapter 07/section7.1.html#chapter-6-recap",
+    "title": "Section 7.1",
+    "section": "Chapter 6 Recap",
+    "text": "Chapter 6 Recap\nComparing two means:\n\nParameter: \\mu_{Group\\:1} - \\mu_{Group\\:2}\nObserved Statistic: \\bar{x}_{Group\\:1} - \\bar{x}_{Group\\:2}\n\nHypotheses:\n\nH_0: \\mu_{Group\\:1} - \\mu_{Group\\:2} = 0\nH_A: \\mu_{Group\\:1} - \\mu_{Group\\:2} &gt;,&lt;,\\neq 0"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.1.html#comparing-two-groups",
+    "href": "slides/Chapter 07/section7.1.html#comparing-two-groups",
+    "title": "Section 7.1",
+    "section": "Comparing Two Groups",
+    "text": "Comparing Two Groups\n\nComparing two proportions/means directly is just ONE way of comparing two groups\nCan use paired design:\n\nRepeated measures\nMatched pairs\n\nEither way, we must add “randomness”"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.1.html#research-question",
+    "href": "slides/Chapter 07/section7.1.html#research-question",
+    "title": "Section 7.1",
+    "section": "Research Question",
+    "text": "Research Question\nDoes music with lyrics affect a student’s ability to memorize words as opposed to music without lyrics?"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.1.html#experiment-setup",
+    "href": "slides/Chapter 07/section7.1.html#experiment-setup",
+    "title": "Section 7.1",
+    "section": "Experiment Setup",
+    "text": "Experiment Setup\n\n\n28 students selected to participate\nEach student given a list of 5-letter words with 90 seconds to memorize as many as possible\nStudents either listen to music with OR without lyrics while doing so\nStudents write down as many words as they can remember"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.1.html#experiment-setup-1",
+    "href": "slides/Chapter 07/section7.1.html#experiment-setup-1",
+    "title": "Section 7.1",
+    "section": "Experiment Setup",
+    "text": "Experiment Setup\n\nExplanatory variable: Music with or without lyrics\nResponse variable: Number of words memorized\n\n\nWe will look at three different ways of designing this study."
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.1.html#independent-design",
+    "href": "slides/Chapter 07/section7.1.html#independent-design",
+    "title": "Section 7.1",
+    "section": "1. Independent Design",
+    "text": "1. Independent Design\nHow we would design the experiment in chapter 6:\n\nRandomly assign…\n\n14 students to listen to lyrics\n14 to listen to music with no lyrics\nThis is how we add “randomness”\n\nThen run the experiment"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.1.html#independent-design-1",
+    "href": "slides/Chapter 07/section7.1.html#independent-design-1",
+    "title": "Section 7.1",
+    "section": "1. Independent Design",
+    "text": "1. Independent Design\nWe refer to this as an independent design.\n\nIndividuals are independent from each other\nSubjects can (and will) vary amongst each other\n\nNo two individuals are exactly the same!"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.1.html#repeated-measures-design",
+    "href": "slides/Chapter 07/section7.1.html#repeated-measures-design",
+    "title": "Section 7.1",
+    "section": "2. Repeated Measures Design",
+    "text": "2. Repeated Measures Design\nDesign setup:\n\nEach person listens to each kind of music\n\nFirst trial with one type of music\nSecond trial with the other\n\nAdding “randomness”:\n\nIt is randomly decided if a person listens to lyrics/no lyrics first"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.1.html#repeated-measures-design-1",
+    "href": "slides/Chapter 07/section7.1.html#repeated-measures-design-1",
+    "title": "Section 7.1",
+    "section": "2. Repeated Measures Design",
+    "text": "2. Repeated Measures Design\nNow, variability is reduced!\n\nEach person has been tested under each explanatory group\nNo subject to subject variability"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.1.html#matched-pairs-design",
+    "href": "slides/Chapter 07/section7.1.html#matched-pairs-design",
+    "title": "Section 7.1",
+    "section": "3. Matched Pairs Design",
+    "text": "3. Matched Pairs Design\n\nHave students take a pre-test\nPair students basd on similar scores\nOne from each pair is assigned to lyrics; the other to no lyrics\nAdding “randomness”:\n\nIt is randomly decided which person listens to which kind of music\n\nVariability has been reduced by pairing like-individuals"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.1.html#why-is-randomness-so-important",
+    "href": "slides/Chapter 07/section7.1.html#why-is-randomness-so-important",
+    "title": "Section 7.1",
+    "section": "Why is “randomness” so important?",
+    "text": "Why is “randomness” so important?\nRandomness allows us to account for confounding variables!\n\nThink back to chapter 4\nThese are different methods of random assignment"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.1.html#paired-designs-1",
+    "href": "slides/Chapter 07/section7.1.html#paired-designs-1",
+    "title": "Section 7.1",
+    "section": "Paired Designs",
+    "text": "Paired Designs\nResponse variables come in pairs, with one response value in the pair belonging to each explanatory variable group.\n\nTwo types of paired designs"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.1.html#types-of-paired-designs",
+    "href": "slides/Chapter 07/section7.1.html#types-of-paired-designs",
+    "title": "Section 7.1",
+    "section": "Types of Paired Designs",
+    "text": "Types of Paired Designs\nRepeated measures:\n\nMeasuring the same individual twice (once for each explanatory group)\n\nMatched pairs:\n\nPairing two individuals based on similarities\nOne from each pair is assigned to each explanatory group"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.1.html#paired-vs.-independent-design",
+    "href": "slides/Chapter 07/section7.1.html#paired-vs.-independent-design",
+    "title": "Section 7.1",
+    "section": "Paired vs. Independent Design",
+    "text": "Paired vs. Independent Design\nBoth attempt to answer the same research question\n\nIndependent design:\n\nEach individual is unrelated to others in the study\nEach observational/experimental unit gives only one response/doesn’t have a counterpart\nAnalyzing a difference in means\n\nPaired design: Analyzing a mean difference"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.1.html#examples",
+    "href": "slides/Chapter 07/section7.1.html#examples",
+    "title": "Section 7.1",
+    "section": "Examples",
+    "text": "Examples\nDiscuss with people around you if you think the designs are independent or paired\n\nReaction times for students taken at 8 am compared to reaction times taken for the same students at 10 pm\nChange in weight for those on the Atkins Diet compared to change in weight for those on the Paleo Diet\nTime for skiers to complete a downhill race course on skis treated with wax A compared to skiers completing the same course on skis treated with wax B"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.1.html#why-matched-pairs",
+    "href": "slides/Chapter 07/section7.1.html#why-matched-pairs",
+    "title": "Section 7.1",
+    "section": "Why matched pairs?",
+    "text": "Why matched pairs?\nCan get more informative results\n\nBy minimizing unit to unit difference, we can focus on explanatory group differences\nConcept of “blocking” (beyond the scope of this class)\nMust make sure design is correctly identified!\n\nOtherwise, analysis can be incorrect"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.1.html#why-matched-pairs-1",
+    "href": "slides/Chapter 07/section7.1.html#why-matched-pairs-1",
+    "title": "Section 7.1",
+    "section": "Why matched pairs?",
+    "text": "Why matched pairs?"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.1.html#teaching-with-technology",
+    "href": "slides/Chapter 07/section7.1.html#teaching-with-technology",
+    "title": "Section 7.1",
+    "section": "Teaching with Technology",
+    "text": "Teaching with Technology\nWhich example is an example of a paired design? Why?\n\nA teacher taught one class a lesson using technology and a different class a lesson without technology and then compared their quiz scores.\nA teacher taught a lesson using technology and then compared class scores to the national average score.\nA teacher teaches a lesson using technology and then gives her students a quiz and then compares those quiz scores to those from her class from the previous year.\nPairs of students are matched by similar IQs. One in each pair is taught a lesson using technology and the other is taught without technology. Their quiz scores are compared."
   }
 ]

@@ -15,4 +15,220 @@ format:
 editor: visual
 ---
 
-## 
+## Section 7.1 Learning Objectives {.center}
+
+-   Identify a study design as having pairing or independent groups.
+
+-   Identify a study design as paired using repeated measures or paired using matching.
+
+# Review
+
+## Chapter 5 Recap {.center}
+
+Comparing two proportions:
+
+-   [**Parameter:**]{.underline}  $\pi_{Group\:1} - \pi_{Group\:2}$
+
+-   [**Observed Statistic:**]{.underline}  $\hat{p}_{Group\:1} - \hat{p}_{Group\:2}$
+
+Hypotheses:
+
+-   $H_0: \pi_{Group\:1} - \pi_{Group\:2} = 0$
+
+-   $H_A: \pi_{Group\:1} - \pi_{Group\:2} >,<,\neq 0$
+
+## Chapter 6 Recap {.center}
+
+Comparing two means:
+
+-   [**Parameter:**]{.underline}  $\mu_{Group\:1} - \mu_{Group\:2}$
+
+-   [**Observed Statistic:**]{.underline}  $\bar{x}_{Group\:1} - \bar{x}_{Group\:2}$
+
+Hypotheses:
+
+-   $H_0: \mu_{Group\:1} - \mu_{Group\:2} = 0$
+
+-   $H_A: \mu_{Group\:1} - \mu_{Group\:2} >,<,\neq 0$
+
+## Comparing Two Groups {.center}
+
+-   Comparing two proportions/means directly is just ONE way of comparing two groups
+
+-   Can use paired design:
+
+    -   Repeated measures
+    
+    -   Matched pairs
+    
+-   Either way, we must add "randomness"
+    
+# Example: Can you study with music blaring?
+
+## Research Question {.center}
+
+Does music with lyrics affect a student's ability to memorize words as opposed to music without lyrics?
+
+## Experiment Setup {.center}
+
+::: incremental
+-   28 students selected to participate
+
+-   Each student given a list of 5-letter words with 90 seconds to memorize as many as possible
+
+-   Students either listen to music with OR without lyrics while doing so
+
+-   Students write down as many words as they can remember
+:::
+
+## Experiment Setup {.center}
+
+-   Explanatory variable: [**Music with or without lyrics**]{.fragment}
+
+-   Response variable: [**Number of words memorized**]{.fragment}
+
+. . .
+
+We will look at three different ways of designing this study.
+
+## 1. Independent Design {.center}
+
+How we would design the experiment in chapter 6:
+
+-   Randomly assign...
+
+    -   14 students to listen to lyrics
+    
+    -   14 to listen to music with no lyrics
+    
+    -   This is how we add "randomness"
+
+-   Then run the experiment
+
+## 1. Independent Design {.center}
+
+We refer to this as an **independent** design.
+
+-   Individuals are independent from each other
+
+-   Subjects can (and will) vary amongst each other
+
+    -   No two individuals are exactly the same!
+    
+## 2. Repeated Measures Design {.center}
+
+Design setup:
+
+-   Each person listens to each kind of music
+
+    -   First trial with one type of music
+    
+    -   Second trial with the other
+    
+-   Adding "randomness":
+
+    -   It is randomly decided if a person listens to lyrics/no lyrics first
+    
+## 2. Repeated Measures Design {.center}
+
+Now, variability is reduced!
+
+-   Each person has been tested under each explanatory group
+
+-   No subject to subject variability
+
+## 3. Matched Pairs Design {.center}
+
+-   Have students take a pre-test
+
+-   Pair students basd on similar scores
+
+-   One from each pair is assigned to lyrics; the other to no lyrics
+
+-   Adding "randomness":
+
+    -   It is randomly decided which person listens to which kind of music
+    
+-   Variability has been reduced by pairing like-individuals
+
+## Why is "randomness" so important? {.center}
+
+Randomness allows us to account for confounding variables!
+
+-   Think back to chapter 4
+
+-   These are different methods of **random assignment**
+
+# Paired Designs
+
+## Paired Designs {.center}
+
+Response variables come in pairs, with one response value in the pair belonging to each explanatory variable group.
+
+-   Two types of paired designs
+
+## Types of Paired Designs {.center}
+
+Repeated measures:
+
+-   Measuring the same individual twice (once for each explanatory group)
+
+Matched pairs:
+
+-   Pairing two individuals based on similarities
+
+-   One from each pair is assigned to each explanatory group
+
+## Paired vs. Independent Design {.center}
+
+Both attempt to answer the same research question
+
+-   Independent design:
+
+    -   Each individual is unrelated to others in the study
+    
+    -   Each observational/experimental unit gives only one response/doesn't have a counterpart
+    
+    -   Analyzing a difference in means
+
+-   Paired design: Analyzing a mean difference
+
+## Examples {.center}
+
+Discuss with people around you if you think the designs are independent or paired
+
+1.  Reaction times for students taken at 8 am compared to reaction times taken for the same students at 10 pm
+
+2.  Change in weight for those on the Atkins Diet compared to change in weight for those on the Paleo Diet
+
+3.  Time for skiers to complete a downhill race course on skis treated with wax A compared to skiers completing the same course on skis treated with wax B
+    
+## Why matched pairs? {.center}
+
+Can get more informative results
+
+-   By minimizing unit to unit difference, we can focus on **explanatory group** differences
+
+-   Concept of "blocking" (beyond the scope of this class)
+
+-   Must make sure design is correctly identified!
+
+    -   Otherwise, analysis can be incorrect
+
+## Teaching with Technology {.center style="font-size: 32px"}
+
+Which example is an example of a paired design? Why?
+
+1.  A teacher taught one class a lesson using technology and a different class a lesson without technology and then compared their quiz scores.
+
+2.  A teacher taught a lesson using technology and then compared class scores to the national average score.
+
+3.  A teacher teaches a lesson using technology and then gives her students a quiz and then compares those quiz scores to those from her class from the previous year.
+
+4.  Pairs of students are matched by similar IQs. One in each pair is taught a lesson using technology and the other is taught without technology. Their quiz scores are compared.
+
+
+    
+
+
+

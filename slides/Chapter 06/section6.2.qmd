@@ -66,7 +66,7 @@ Recall, we can alternatively write our hypotheses as:
 ## Recall: Symbol Comparison for ONE Proportion/Mean {.center}
 
 |  |  |  |
-|-------------------------|:----------------------:|:---------------------:|
+|------------------------|:----------------------:|:----------------------:|
 |  | **Categorical Variable** | **Numerical Variable** |
 | **Parameter of Interest** | $$                       
                              \pi                       
@@ -82,7 +82,7 @@ Recall, we can alternatively write our hypotheses as:
 ## Symbol Comparison for TWO Proportions/Means {.center}
 
 |  |  |  |
-|-------------------------|:----------------------:|:---------------------:|
+|------------------------|:----------------------:|:----------------------:|
 |  | **Categorical Response Variable** | **Numerical Response Variable** |
 | **Parameter of Interest** | $$                       
                              \pi_1-\pi_2                       
@@ -201,7 +201,7 @@ We find the p-value the same way as before.
 
 -   On the previous slide, p-value = 0/1000
 
-    -   This is less than 0.05, reject $H_A$
+    -   This is less than 0.05, reject $H_0$
 
 ## Standardized Statistic (SS) {.center}
 
@@ -275,7 +275,7 @@ $$= (40.72,126.82)$$
 
 ## Conclusions {.center}
 
--   Because zero is not in the interval, we reject $H_A$
+-   Because zero is not in the interval, we reject $H_0$ (accept $H_A$)
 
 -   Notice, the conclusions we draw from our p-value, standardized statistic, and confidence interval all match!
 

@@ -2,6 +2,7 @@
 title: "Section 6.3"
 subtitle: "Comparing Two Means: Theory-Based Approach"
 image: "images/image6.3.png"
+description: "06.3"
 format: 
   revealjs: 
     chalkboard: true
@@ -24,13 +25,13 @@ editor: visual
 
 What are we interested in?
 
--   [**Parameter:**]{.underline} The difference in long run proportions between two groups
+-   [**Parameter:**]{.underline} The difference in long run averages between two groups
 
     -   $\mu_{Group\:1} - \mu_{Group\:2}$
 
 We estimate the parameter using:
 
--   [**Observed Statistic:**]{.underline} The difference in conditional proportions
+-   [**Observed Statistic:**]{.underline} The difference in conditional averages
 
     -   $\bar{x}_{Group\:1} - \bar{x}_{Group\:2}$
 
@@ -82,7 +83,7 @@ For two groups, the Applet does the following to simulate:
 
 -   For one study simulation, cards are randomly split into the two explanatory groups
 
--   Sample averages (\$\bar{x}) are calculated for each group
+-   Sample averages ($\bar{x}$) are calculated for each group
 
 ## Validity Conditions for Theory-Based Approach {.center}
 
