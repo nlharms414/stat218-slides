@@ -3638,5 +3638,145 @@
     "title": "Section 7.1",
     "section": "Teaching with Technology",
     "text": "Teaching with Technology\nWhich example is an example of a paired design? Why?\n\nA teacher taught one class a lesson using technology and a different class a lesson without technology and then compared their quiz scores.\nA teacher taught a lesson using technology and then compared class scores to the national average score.\nA teacher teaches a lesson using technology and then gives her students a quiz and then compares those quiz scores to those from her class from the previous year.\nPairs of students are matched by similar IQs. One in each pair is taught a lesson using technology and the other is taught without technology. Their quiz scores are compared."
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.2.html#section-7.2-learning-objectives",
+    "href": "slides/Chapter 07/section7.2.html#section-7.2-learning-objectives",
+    "title": "Section 7.2",
+    "section": "Section 7.2 Learning Objectives",
+    "text": "Section 7.2 Learning Objectives\n\nUnderstand the difference between independent samples and paired samples in terms of the study design and how variability can be lower in a paired design and how this can influence the strength of evidence.\nComplete a simulation-based test of significance of a paired design by writing out the hypothesis, determining the observed statistic, computing the p-value, and writing out an appropriate conclusion."
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.2.html#rounding-first-base",
+    "href": "slides/Chapter 07/section7.2.html#rounding-first-base",
+    "title": "Section 7.2",
+    "section": "Rounding First Base",
+    "text": "Rounding First Base"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.2.html#the-setup",
+    "href": "slides/Chapter 07/section7.2.html#the-setup",
+    "title": "Section 7.2",
+    "section": "The Setup",
+    "text": "The Setup\n\n22 baseball players\nPlayers were to round first base\n\nTimed from 35 feet past home to 15 feet before second base\n\nTwo strategies implemented:\n\nWide path\nNarrow path"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.2.html#the-setup-1",
+    "href": "slides/Chapter 07/section7.2.html#the-setup-1",
+    "title": "Section 7.2",
+    "section": "The Setup",
+    "text": "The Setup\n\nEach player ran both paths\nEach player had adequate rest in between runs\nRandom assignment determined which path a runner ran first\n\n\nWhat type of design is this? (Independent, matched pairs, or repeated measures?)"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.2.html#determining-variables",
+    "href": "slides/Chapter 07/section7.2.html#determining-variables",
+    "title": "Section 7.2",
+    "section": "Determining Variables",
+    "text": "Determining Variables\n\nExplanatory variable? Categorical or numerical?\nResponse variable? Categorical or numerical?\nObservational study or experiment?"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.2.html#study-data",
+    "href": "slides/Chapter 07/section7.2.html#study-data",
+    "title": "Section 7.2",
+    "section": "Study Data",
+    "text": "Study Data\n\n\n\n\n\n\n\n\nSubject\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nX\n\n\n\n\nNarrow\n5.50\n5.70\n5.60\n5.50\n5.85\n5.55\n5.40\n5.50\n5.15\n5.80\n...\n\n\nWide\n5.55\n5.75\n5.50\n5.40\n5.70\n5.60\n5.35\n5.35\n5.00\n5.70\n..."
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.2.html#data-plot",
+    "href": "slides/Chapter 07/section7.2.html#data-plot",
+    "title": "Section 7.2",
+    "section": "Data Plot",
+    "text": "Data Plot"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.2.html#paired-design-setup",
+    "href": "slides/Chapter 07/section7.2.html#paired-design-setup",
+    "title": "Section 7.2",
+    "section": "Paired Design Setup",
+    "text": "Paired Design Setup\nParameter: The long run average difference of ____ between group 1 and group 2.\n\nSymbol: \\mu_d\nThis is different from \\mu_1-\\mu_2\n\nObserved statistic: \\bar{x}_d"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.2.html#paired-design-hypotheses",
+    "href": "slides/Chapter 07/section7.2.html#paired-design-hypotheses",
+    "title": "Section 7.2",
+    "section": "Paired Design Hypotheses",
+    "text": "Paired Design Hypotheses\nIn words:\n\nNull: The long run average difference of ___ between group 1 and group 2 is zero.\nAlt: The long run average difference of ___ between group 1 and group 2 is (not equal to, greater than, less than) zero.\n\n\nSymbols:\n\nH_0: \\mu_d = 0\nH_A: \\mu_d &gt;,&lt;,\\neq 0"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.2.html#mean-difference-vs.-difference-in-means",
+    "href": "slides/Chapter 07/section7.2.html#mean-difference-vs.-difference-in-means",
+    "title": "Section 7.2",
+    "section": "Mean Difference vs. Difference in Means",
+    "text": "Mean Difference vs. Difference in Means\n\n\n\n\n\n\n\n\nGroup 1\nGroup 2\n\n\n\n\n4\n2\n\n\n7\n4\n\n\n1\n3"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.2.html#mean-difference",
+    "href": "slides/Chapter 07/section7.2.html#mean-difference",
+    "title": "Section 7.2",
+    "section": "Mean Difference",
+    "text": "Mean Difference\n\nPaired design\nTake the difference between the two groups for each observation, then take the mean of the differences\nParameter: \\mu_d"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.2.html#difference-in-means",
+    "href": "slides/Chapter 07/section7.2.html#difference-in-means",
+    "title": "Section 7.2",
+    "section": "Difference in Means",
+    "text": "Difference in Means\n\nIndependent design\nTake the group means, then take the difference between them\nParameter \\mu_1-\\mu_2"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.2.html#rounding-first-base-1",
+    "href": "slides/Chapter 07/section7.2.html#rounding-first-base-1",
+    "title": "Section 7.2",
+    "section": "Rounding First Base",
+    "text": "Rounding First Base\n\nParameter: Long run average difference in running times for runners using the narrow path vs. the wide path (\\mu_d)\n\nHypotheses:\n\nH_0: \\mu_d = 0\nH_A: \\neq 0"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.2.html#study-data-1",
+    "href": "slides/Chapter 07/section7.2.html#study-data-1",
+    "title": "Section 7.2",
+    "section": "Study Data",
+    "text": "Study Data\n\n\n\n\n\n\n\n\nSubject\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nX\n\n\n\n\nNarrow\n5.50\n5.70\n5.60\n5.50\n5.85\n5.55\n5.40\n5.50\n5.15\n5.80\n...\n\n\nWide\n5.55\n5.75\n5.50\n5.40\n5.70\n5.60\n5.35\n5.35\n5.00\n5.70\n...\n\n\nDifference\n-0.05\n-0.05\n0.10\n0.10\n0.15\n-0.05\n0.05\n0.15\n0.15\n0.10\n..."
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.2.html#finding-strength-of-evidence",
+    "href": "slides/Chapter 07/section7.2.html#finding-strength-of-evidence",
+    "title": "Section 7.2",
+    "section": "Finding Strength of Evidence",
+    "text": "Finding Strength of Evidence\nObserved statistic: \\bar{x}_d=0.075\n\nThis isn’t zero, but is it enough evidence to conclude the two strategies are truly different?\n\nWe can use simulation to obtain:\n\nP-value\nStandardized statistic\nConfidence interval"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.2.html#simulation",
+    "href": "slides/Chapter 07/section7.2.html#simulation",
+    "title": "Section 7.2",
+    "section": "Simulation",
+    "text": "Simulation\n\nSimulate using a coin flip\nHeads = flip the sign (positive or negative)\nTails = sign remains the same\nDo this for all n=22 differences (observations)\nCalculate and record a new \\bar{x}_d\nRepeat many times"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.2.html#simulation-example",
+    "href": "slides/Chapter 07/section7.2.html#simulation-example",
+    "title": "Section 7.2",
+    "section": "Simulation Example",
+    "text": "Simulation Example\n\n\n\n\n\n\n\n\nSubject\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nX\n\n\n\n\nNarrow\n5.50\n5.70\n5.60\n5.50\n5.85\n5.55\n5.40\n5.50\n5.15\n5.80\n...\n\n\nWide\n5.55\n5.75\n5.50\n5.40\n5.70\n5.60\n5.35\n5.35\n5.00\n5.70\n...\n\n\nDifference\n-0.05\n-0.05\n0.10\n0.10\n0.15\n-0.05\n0.05\n0.15\n0.15\n0.10\n...\n\n\nCoin Flip\nH\nT\nH\nT\nT\nT\nT\nH\nH\nH\n...\n\n\nSim. Diff.\n0.05\n-0.05\n-0.10\n0.10\n0.15\n-0.05\n0.05\n-0.15\n-0.15\n-0.10\n...\n\n\n\n\n\n\n\nSimulated average: \\bar{x}_d=0.011"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.2.html#simulating-the-null-distribution",
+    "href": "slides/Chapter 07/section7.2.html#simulating-the-null-distribution",
+    "title": "Section 7.2",
+    "section": "Simulating the Null Distribution",
+    "text": "Simulating the Null Distribution\n\nBased on this null distribution, only 1/1000 simulated values were as or more extreme than 0.075.\n\nP-value = 0.001 &lt; 0.05"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.2.html#standardized-statistic",
+    "href": "slides/Chapter 07/section7.2.html#standardized-statistic",
+    "title": "Section 7.2",
+    "section": "Standardized Statistic",
+    "text": "Standardized Statistic\n\n\nz=\\frac{\\bar{x}_d}{SD}\n=\\frac{0.075}{0.024}\n=3.125\nOutside 2s, reject H_0"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.2.html#confidence-interval",
+    "href": "slides/Chapter 07/section7.2.html#confidence-interval",
+    "title": "Section 7.2",
+    "section": "95% Confidence Interval",
+    "text": "95% Confidence Interval\n\n\nCI=\\bar{x}_d±2*SD\n=0.075±2*0.024\n=(0.027,0.124)\nZero is not in the interval, reject H_0"
   }
 ]
