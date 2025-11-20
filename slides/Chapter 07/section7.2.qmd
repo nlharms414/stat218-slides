@@ -115,14 +115,6 @@ Symbols:
 
 -   $H_A: \mu_d >,<,\neq 0$
 
-## Mean Difference {.center}
-
--   Paired design
-
--   Take the difference between the two groups for each observation, then take the mean of the differences
-
--   Parameter: $\mu_d$
-
 ## Difference in Means {.center}
 
 -   Independent design
@@ -130,6 +122,14 @@ Symbols:
 -   Take the group means, then take the difference between them
 
 -   Parameter $\mu_1-\mu_2$
+
+## Mean Difference {.center}
+
+-   Paired design
+
+-   Take the difference between the two groups for each observation, then take the mean of the differences
+
+-   Parameter: $\mu_d$
 
 ## Mean Difference vs. Difference in Means {.center}
 

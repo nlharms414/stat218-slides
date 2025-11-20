@@ -27,9 +27,9 @@ editor: visual
 
 Comparing two proportions:
 
--   [**Parameter:**]{.underline}  $\pi_{Group\:1} - \pi_{Group\:2}$
+-   [**Parameter:**]{.underline} $\pi_{Group\:1} - \pi_{Group\:2}$
 
--   [**Observed Statistic:**]{.underline}  $\hat{p}_{Group\:1} - \hat{p}_{Group\:2}$
+-   [**Observed Statistic:**]{.underline} $\hat{p}_{Group\:1} - \hat{p}_{Group\:2}$
 
 Hypotheses:
 
@@ -41,9 +41,9 @@ Hypotheses:
 
 Comparing two means:
 
--   [**Parameter:**]{.underline}  $\mu_{Group\:1} - \mu_{Group\:2}$
+-   [**Parameter:**]{.underline} $\mu_{Group\:1} - \mu_{Group\:2}$
 
--   [**Observed Statistic:**]{.underline}  $\bar{x}_{Group\:1} - \bar{x}_{Group\:2}$
+-   [**Observed Statistic:**]{.underline} $\bar{x}_{Group\:1} - \bar{x}_{Group\:2}$
 
 Hypotheses:
 
@@ -58,11 +58,11 @@ Hypotheses:
 -   Can use paired design:
 
     -   Repeated measures
-    
+
     -   Matched pairs
-    
+
 -   Either way, we must add "randomness"
-    
+
 # Example: Can you study with music blaring?
 
 ## Research Question {.center}
@@ -98,9 +98,9 @@ How we would design the experiment in chapter 6:
 -   Randomly assign...
 
     -   14 students to listen to lyrics
-    
+
     -   14 to listen to music with no lyrics
-    
+
     -   This is how we add "randomness"
 
 -   Then run the experiment
@@ -114,7 +114,7 @@ We refer to this as an **independent** design.
 -   Subjects can (and will) vary amongst each other
 
     -   No two individuals are exactly the same!
-    
+
 ## 2. Repeated Measures Design {.center}
 
 Design setup:
@@ -122,13 +122,13 @@ Design setup:
 -   Each person listens to each kind of music
 
     -   First trial with one type of music
-    
+
     -   Second trial with the other
-    
+
 -   Adding "randomness":
 
     -   It is randomly decided if a person listens to lyrics/no lyrics first
-    
+
 ## 2. Repeated Measures Design {.center}
 
 Now, variability is reduced!
@@ -148,7 +148,7 @@ Now, variability is reduced!
 -   Adding "randomness":
 
     -   It is randomly decided which person listens to which kind of music
-    
+
 -   Variability has been reduced by pairing like-individuals
 
 ## Why is "randomness" so important? {.center}
@@ -186,9 +186,9 @@ Both attempt to answer the same research question
 -   Independent design:
 
     -   Each individual is unrelated to others in the study
-    
+
     -   Each observational/experimental unit gives only one response/doesn't have a counterpart
-    
+
     -   Analyzing a difference in means
 
 -   Paired design: Analyzing a mean difference
@@ -202,7 +202,7 @@ Discuss with people around you if you think the designs are independent or paire
 2.  Change in weight for those on the Atkins Diet compared to change in weight for those on the Paleo Diet
 
 3.  Time for skiers to complete a downhill race course on skis treated with wax A compared to skiers completing the same course on skis treated with wax B
-    
+
 ## Why matched pairs? {.center}
 
 Can get more informative results
@@ -226,9 +226,3 @@ Which example is an example of a paired design? Why?
 3.  A teacher teaches a lesson using technology and then gives her students a quiz and then compares those quiz scores to those from her class from the previous year.
 
 4.  Pairs of students are matched by similar IQs. One in each pair is taught a lesson using technology and the other is taught without technology. Their quiz scores are compared.
-
-
-    
-
-
-

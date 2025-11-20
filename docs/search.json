@@ -3778,5 +3778,117 @@
     "title": "Section 7.2",
     "section": "95% Confidence Interval",
     "text": "95% Confidence Interval\n\n\nCI=\\bar{x}_d±2*SD\n=0.075±2*0.024\n=(0.027,0.124)\nZero is not in the interval, reject H_0"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.3.html#section-7.3-learning-objectves",
+    "href": "slides/Chapter 07/section7.3.html#section-7.3-learning-objectves",
+    "title": "Section 7.3",
+    "section": "Section 7.3 Learning Objectves",
+    "text": "Section 7.3 Learning Objectves\n\nIdentify when a theory-based approach would be valid to find the p-value, standardized statistic, or a confidence interval for paired data."
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.3.html#recap-paired-design-setup",
+    "href": "slides/Chapter 07/section7.3.html#recap-paired-design-setup",
+    "title": "Section 7.3",
+    "section": "Recap: Paired Design Setup",
+    "text": "Recap: Paired Design Setup\nParameter: The long run average difference of ____ between group 1 and group 2.\n\nSymbol: \\mu_d\nThis is different from \\mu_1-\\mu_2\n\nObserved statistic: \\bar{x}_d"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.3.html#recap-paired-design-hypotheses",
+    "href": "slides/Chapter 07/section7.3.html#recap-paired-design-hypotheses",
+    "title": "Section 7.3",
+    "section": "Recap: Paired Design Hypotheses",
+    "text": "Recap: Paired Design Hypotheses\nIn words:\n\nNull: The long run average difference of ___ between group 1 and group 2 is zero.\nAlt: The long run average difference of ___ between group 1 and group 2 is (not equal to, greater than, less than) zero.\n\n\nSymbols:\n\nH_0: \\mu_d = 0\nH_A: \\mu_d &gt;,&lt;,\\neq 0"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.3.html#difference-in-means",
+    "href": "slides/Chapter 07/section7.3.html#difference-in-means",
+    "title": "Section 7.3",
+    "section": "Difference in Means",
+    "text": "Difference in Means\n\nIndependent design\nTake the group means, then take the difference between them\nParameter \\mu_1-\\mu_2"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.3.html#mean-difference",
+    "href": "slides/Chapter 07/section7.3.html#mean-difference",
+    "title": "Section 7.3",
+    "section": "Mean Difference",
+    "text": "Mean Difference\n\nPaired design\nTake the difference between the two groups for each observation, then take the mean of the differences\nParameter: \\mu_d"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.3.html#theory-based-approach-for-paired-designs",
+    "href": "slides/Chapter 07/section7.3.html#theory-based-approach-for-paired-designs",
+    "title": "Section 7.3",
+    "section": "Theory-Based Approach for Paired Designs",
+    "text": "Theory-Based Approach for Paired Designs\nValidity conditions:\n\nAt least 20 differences\nLittle to no skewness\n\nThis theory-based approach is very similar to that of one mean (Chapter 2)."
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.3.html#setup",
+    "href": "slides/Chapter 07/section7.3.html#setup",
+    "title": "Section 7.3",
+    "section": "Setup",
+    "text": "Setup\nWe’ll revisit the example from section 7.1\n\nEach student given a list of 5-letter words with 90 seconds to memorize as many as possible\nStudents either listen to music with OR without lyrics while doing so\nStudents write down as many words as they can remember"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.3.html#hypotheses",
+    "href": "slides/Chapter 07/section7.3.html#hypotheses",
+    "title": "Section 7.3",
+    "section": "Hypotheses",
+    "text": "Hypotheses\n\nNull: A student’s ability to memorize words is not affected by whether they listen to music with lyrics or no lyrics.\n\nAlt: A student’s ability to memorize words is affected by whether they listen to music with lyrics versus no lyrics."
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.3.html#study-data",
+    "href": "slides/Chapter 07/section7.3.html#study-data",
+    "title": "Section 7.3",
+    "section": "Study Data",
+    "text": "Study Data\n\n\n\n\n\n\n\n\n\nSample Size\nSample Average\nSample Standard Deviation\n\n\n\n\nLyrics\n40\n10.28\n4.3\n\n\nNo Lyrics\n40\n15.30\n4.1\n\n\nDifference\n40\n-5.01\n3.1\n\n\n\n\n\n\n\n\nSince n=40, we can use the theory based approach. (We are also told data is not strongly skewed.)"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.3.html#setup-1",
+    "href": "slides/Chapter 07/section7.3.html#setup-1",
+    "title": "Section 7.3",
+    "section": "Setup",
+    "text": "Setup\n\nThis time, 40 students participate\nEach student does the test twice (with a different word list the second time)\n\nOnce with lyrics, once without\nRandomly decided what music they listen to first\n\n\nIs this matched pairs or repeated measures?"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.3.html#standardized-statistic",
+    "href": "slides/Chapter 07/section7.3.html#standardized-statistic",
+    "title": "Section 7.3",
+    "section": "Standardized Statistic",
+    "text": "Standardized Statistic\n\n\\bar{x}_d=-5.02\nn_d=40\ns_d=3.1\n\n\nSE=\\frac{s_d}{\\sqrt{n_d}}=\\frac{3.1}{\\sqrt{40}}=0.49\n\n\nt=\\frac{\\bar{x}_d-0}{SE}=\\frac{-5.02}{0.49}=-10.24"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.3.html#standard-error",
+    "href": "slides/Chapter 07/section7.3.html#standard-error",
+    "title": "Section 7.3",
+    "section": "Standard Error",
+    "text": "Standard Error\n\n\\bar{x}_d=-5.02\nn_d=40\ns_d=3.1\n\nSE=\\frac{s_d}{\\sqrt{n_d}}=\\frac{3.1}{\\sqrt{40}}=0.49\n\nt=\\frac{\\bar{x}_d-0}{SE}=\\frac{-5.02}{0.49}=-10.24"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.3.html#confidence-interval",
+    "href": "slides/Chapter 07/section7.3.html#confidence-interval",
+    "title": "Section 7.3",
+    "section": "Confidence Interval",
+    "text": "Confidence Interval\n\n\\bar{x}_d=-5.02\nn_d=40\ns_d=3.1\n\n\nCI=\\bar{x}_d±2*\\frac{s_d}{\\sqrt{n_d}}\n\n\nCI=-5.02±2*0.49=(-6,-4.04)"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.3.html#drawing-conclusions",
+    "href": "slides/Chapter 07/section7.3.html#drawing-conclusions",
+    "title": "Section 7.3",
+    "section": "Drawing Conclusions",
+    "text": "Drawing Conclusions\n\nt is WAY outside the twos\nZero is not in the confidence interval\nReject H_0 in favor of H_A\n\n\n“We have significant evidence to conclude that a student’s ability to memorize words is affected by whether they listen to music with lyrics or no lyrics.”"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.3.html#type-i-and-type-ii-error-recap",
+    "href": "slides/Chapter 07/section7.3.html#type-i-and-type-ii-error-recap",
+    "title": "Section 7.3",
+    "section": "Type I and Type II Error Recap",
+    "text": "Type I and Type II Error Recap\nType I Error:\n\nWhen we fail to reject the null hypothesis (H_0) but it is actually false.\n“Missed opportunity”\n\nType II Error:\n\nWhen we reject H_0 but it is actually true\n“False alarm”"
+  },
+  {
+    "objectID": "slides/Chapter 07/section7.3.html#lyrics-vs.-no-lyrics",
+    "href": "slides/Chapter 07/section7.3.html#lyrics-vs.-no-lyrics",
+    "title": "Section 7.3",
+    "section": "Lyrics vs. No Lyrics",
+    "text": "Lyrics vs. No Lyrics\nDiscuss with people around you:\n\nWhat error is it possible that we made?\nWhat could an implication of that error be?"
   }
 ]

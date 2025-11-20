@@ -30,6 +30,22 @@
     }
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -334,8 +350,645 @@
 </div>
 
 </section>
-<section class="slide level2">
+<section id="section-7.3-learning-objectves" class="slide level2 center">
+<h2>Section 7.3 Learning Objectves</h2>
+<ul>
+<li>Identify when a theory-based approach would be valid to find the p-value, standardized statistic, or a confidence interval for paired data.</li>
+</ul>
+</section>
+<section id="recap-paired-design-setup" class="slide level2 center">
+<h2>Recap: Paired Design Setup</h2>
+<p><strong>Parameter:</strong> The long run average difference of ____ between group 1 and group 2.</p>
+<ul>
+<li><p>Symbol: <span class="math inline">\mu_d</span></p></li>
+<li><p>This is different from <span class="math inline">\mu_1-\mu_2</span></p></li>
+</ul>
+<p><strong>Observed statistic:</strong> <span class="math inline">\bar{x}_d</span></p>
+</section>
+<section id="recap-paired-design-hypotheses" class="slide level2 center">
+<h2>Recap: Paired Design Hypotheses</h2>
+<p>In words:</p>
+<ul>
+<li><p>Null: The long run average difference of ___ between group 1 and group 2 is zero.</p></li>
+<li><p>Alt: The long run average difference of ___ between group 1 and group 2 is (not equal to, greater than, less than) zero.</p></li>
+</ul>
+<div class="fragment">
+<p>Symbols:</p>
+<ul>
+<li><p><span class="math inline">H_0: \mu_d = 0</span></p></li>
+<li><p><span class="math inline">H_A: \mu_d &gt;,&lt;,\neq 0</span></p></li>
+</ul>
+</div>
+</section>
+<section id="difference-in-means" class="slide level2 center">
+<h2>Difference in Means</h2>
+<ul>
+<li><p>Independent design</p></li>
+<li><p>Take the group means, then take the difference between them</p></li>
+<li><p>Parameter <span class="math inline">\mu_1-\mu_2</span></p></li>
+</ul>
+</section>
+<section id="mean-difference" class="slide level2 center">
+<h2>Mean Difference</h2>
+<ul>
+<li><p>Paired design</p></li>
+<li><p>Take the difference between the two groups for each observation, then take the mean of the differences</p></li>
+<li><p>Parameter: <span class="math inline">\mu_d</span></p></li>
+</ul>
+</section>
+<section id="theory-based-approach-for-paired-designs" class="slide level2 center">
+<h2>Theory-Based Approach for Paired Designs</h2>
+<p>Validity conditions:</p>
+<ul>
+<li><p>At least 20 differences</p></li>
+<li><p>Little to no skewness</p></li>
+</ul>
+<p>This theory-based approach is very similar to that of one mean (Chapter 2).</p>
+</section>
+<section>
+<section id="example-can-you-study-with-music-blaring" class="title-slide slide level1 center">
+<h1>Example: Can you study with music blaring?</h1>
 
+</section>
+<section id="setup" class="slide level2 center">
+<h2>Setup</h2>
+<p>We’ll revisit the example from section 7.1</p>
+<ul>
+<li><p>Each student given a list of 5-letter words with 90 seconds to memorize as many as possible</p></li>
+<li><p>Students either listen to music with OR without lyrics while doing so</p></li>
+<li><p>Students write down as many words as they can remember</p></li>
+</ul>
+</section>
+<section id="setup-1" class="slide level2 center">
+<h2>Setup</h2>
+<ul>
+<li><p>This time, 40 students participate</p></li>
+<li><p>Each student does the test twice (with a different word list the second time)</p>
+<ul>
+<li><p>Once with lyrics, once without</p></li>
+<li><p>Randomly decided what music they listen to first</p></li>
+</ul></li>
+</ul>
+<p>Is this matched pairs or repeated measures?</p>
+</section>
+<section id="hypotheses" class="slide level2 center">
+<h2>Hypotheses</h2>
+<p><br></p>
+<p>Null: A student’s ability to memorize words is not affected by whether they listen to music with lyrics or no lyrics.</p>
+<p><br></p>
+<p>Alt: A student’s ability to memorize words is affected by whether they listen to music with lyrics versus no lyrics.</p>
+</section>
+<section id="study-data" class="slide level2 center">
+<h2>Study Data</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="qluknevkld" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#qluknevkld table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#qluknevkld thead, #qluknevkld tbody, #qluknevkld tfoot, #qluknevkld tr, #qluknevkld td, #qluknevkld th {
+  border-style: none;
+}
+
+#qluknevkld p {
+  margin: 0;
+  padding: 0;
+}
+
+#qluknevkld .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 34px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: 100%;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#qluknevkld .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#qluknevkld .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#qluknevkld .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#qluknevkld .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qluknevkld .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+}
+
+#qluknevkld .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qluknevkld .gt_col_heading {
+  color: #FFFFFF;
+  background-color: #0076BA;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#qluknevkld .gt_column_spanner_outer {
+  color: #FFFFFF;
+  background-color: #0076BA;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#qluknevkld .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#qluknevkld .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#qluknevkld .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#qluknevkld .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#qluknevkld .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#qluknevkld .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+  vertical-align: middle;
+}
+
+#qluknevkld .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#qluknevkld .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#qluknevkld .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: none;
+  border-top-width: 1px;
+  border-top-color: #D5D5D5;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D5D5D5;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D5D5D5;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#qluknevkld .gt_stub {
+  color: #333333;
+  background-color: #89D3FE;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D5D5D5;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qluknevkld .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#qluknevkld .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#qluknevkld .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#qluknevkld .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qluknevkld .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #5F5F5F;
+}
+
+#qluknevkld .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#qluknevkld .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+}
+
+#qluknevkld .gt_grand_summary_row {
+  color: #333333;
+  background-color: #D5D5D5;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qluknevkld .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #5F5F5F;
+}
+
+#qluknevkld .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #5F5F5F;
+}
+
+#qluknevkld .gt_striped {
+  background-color: #EDF7FC;
+}
+
+#qluknevkld .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #5F5F5F;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #5F5F5F;
+}
+
+#qluknevkld .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qluknevkld .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qluknevkld .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qluknevkld .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qluknevkld .gt_left {
+  text-align: left;
+}
+
+#qluknevkld .gt_center {
+  text-align: center;
+}
+
+#qluknevkld .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#qluknevkld .gt_font_normal {
+  font-weight: normal;
+}
+
+#qluknevkld .gt_font_bold {
+  font-weight: bold;
+}
+
+#qluknevkld .gt_font_italic {
+  font-style: italic;
+}
+
+#qluknevkld .gt_super {
+  font-size: 65%;
+}
+
+#qluknevkld .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#qluknevkld .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#qluknevkld .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#qluknevkld .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#qluknevkld .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#qluknevkld .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#qluknevkld .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#qluknevkld .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#qluknevkld div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top" data-quarto-postprocess="true" style="table-layout:fixed;width:100%;" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_col_headings">
+<th id="a-" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="Sample-Size" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Sample Size</th>
+<th id="Sample-Average" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Sample Average</th>
+<th id="Sample-Standard-Deviation" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Sample Standard Deviation</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_center" headers=" " style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">Lyrics</td>
+<td class="gt_row gt_center" headers="Sample Size" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">40</td>
+<td class="gt_row gt_center" headers="Sample Average" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">10.28</td>
+<td class="gt_row gt_center" headers="Sample Standard Deviation" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">4.3</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center gt_striped" headers=" " style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">No Lyrics</td>
+<td class="gt_row gt_center gt_striped" headers="Sample Size" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">40</td>
+<td class="gt_row gt_center gt_striped" headers="Sample Average" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">15.30</td>
+<td class="gt_row gt_center gt_striped" headers="Sample Standard Deviation" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">4.1</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers=" " style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">Difference</td>
+<td class="gt_row gt_center" headers="Sample Size" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">40</td>
+<td class="gt_row gt_center" headers="Sample Average" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">-5.01</td>
+<td class="gt_row gt_center" headers="Sample Standard Deviation" style="border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000">3.1</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="fragment">
+<p>Since n=40, we can use the theory based approach. (We are also told data is not strongly skewed.)</p>
+</div>
+</section>
+<section id="standardized-statistic" class="slide level2 center">
+<h2>Standardized Statistic</h2>
+<ul>
+<li><span class="math inline">\bar{x}_d=-5.02</span></li>
+<li><span class="math inline">n_d=40</span></li>
+<li><span class="math inline">s_d=3.1</span></li>
+</ul>
+<div class="fragment">
+<p><span class="math display">SE=\frac{s_d}{\sqrt{n_d}}=\frac{3.1}{\sqrt{40}}=0.49</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">t=\frac{\bar{x}_d-0}{SE}=\frac{-5.02}{0.49}=-10.24</span></p>
+</div>
+</section>
+<section id="confidence-interval" class="slide level2 center">
+<h2>Confidence Interval</h2>
+<ul>
+<li><span class="math inline">\bar{x}_d=-5.02</span></li>
+<li><span class="math inline">n_d=40</span></li>
+<li><span class="math inline">s_d=3.1</span></li>
+</ul>
+<div class="fragment">
+<p><span class="math display">CI=\bar{x}_d±2*\frac{s_d}{\sqrt{n_d}}</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">CI=-5.02±2*0.49=(-6,-4.04)</span></p>
+</div>
+</section>
+<section id="drawing-conclusions" class="slide level2 center">
+<h2>Drawing Conclusions</h2>
+<ul>
+<li><p><span class="math inline">t</span> is WAY outside the twos</p></li>
+<li><p>Zero is not in the confidence interval</p></li>
+<li><p>Reject <span class="math inline">H_0</span> in favor of <span class="math inline">H_A</span></p></li>
+</ul>
+<div class="fragment">
+<p>“We have significant evidence to conclude that a student’s ability to memorize words is affected by whether they listen to music with lyrics or no lyrics.”</p>
+</div>
+</section>
+<section id="type-i-and-type-ii-error-recap" class="slide level2 center">
+<h2>Type I and Type II Error Recap</h2>
+<p>Type I Error:</p>
+<ul>
+<li><p>When we <u>fail to reject</u> the null hypothesis (<span class="math inline">H_0</span>) but it is actually false.</p></li>
+<li><p>“Missed opportunity”</p></li>
+</ul>
+<p>Type II Error:</p>
+<ul>
+<li><p>When we <u>reject</u> <span class="math inline">H_0</span> but it is actually true</p></li>
+<li><p>“False alarm”</p></li>
+</ul>
+</section>
+<section id="lyrics-vs.-no-lyrics" class="slide level2 center">
+<h2>Lyrics vs.&nbsp;No Lyrics</h2>
+<p>Discuss with people around you:</p>
+<ul>
+<li><p>What error is it possible that we made?</p></li>
+<li><p>What could an implication of that error be?</p></li>
+</ul>
 
 <div class="quarto-auto-generated-content">
 <p><img src="logo.jpg" class="slide-logo"></p>
@@ -343,7 +996,7 @@
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
@@ -537,6 +1190,44 @@
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
