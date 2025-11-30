@@ -3890,5 +3890,124 @@
     "title": "Section 7.3",
     "section": "Lyrics vs. No Lyrics",
     "text": "Lyrics vs. No Lyrics\nDiscuss with people around you:\n\nWhat error is it possible that we made?\nWhat could an implication of that error be?"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.1.html#section-11.1-learning-objectives",
+    "href": "slides/Chapter 11/section11.1.html#section-11.1-learning-objectives",
+    "title": "Section 11.1",
+    "section": "Section 11.1 Learning Objectives",
+    "text": "Section 11.1 Learning Objectives\n\nDescribe how to conduct simulation analyses of random processes.\nList outcomes in the sample space of a random process.\nDetermine whether outcomes of a random process are equally likely.\nCalculate probabilities for random processes with equally likely outcomes.\nInterpret a calculated probability and explain how it depends on assumptions made."
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.1.html#simulating-probability",
+    "href": "slides/Chapter 11/section11.1.html#simulating-probability",
+    "title": "Section 11.1",
+    "section": "Simulating Probability",
+    "text": "Simulating Probability\n\nBack in P.3, we simulated probability\nSimulation models a random process\n\nGives us an estimate for probability\n\nGoals:\n\n\nSee how probability changes when a random process is modified\nLearn how to get exact probabilities using a mathematical approach"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.1.html#recall-cars-vs.-goats",
+    "href": "slides/Chapter 11/section11.1.html#recall-cars-vs.-goats",
+    "title": "Section 11.1",
+    "section": "Recall: Cars vs. Goats",
+    "text": "Recall: Cars vs. Goats\n\n\n\nInspired by the classic Monty Hall problem from Let’s Make a Deal!\nThree doors: two goats, one car\nAfter one door is revealed, should you…\n\nStay with your choice\nChoose the other door\n\nGoal: Use simulation to determine a long-run trend\n\nAKA: Long run probability"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.1.html#the-scenario",
+    "href": "slides/Chapter 11/section11.1.html#the-scenario",
+    "title": "Section 11.1",
+    "section": "The Scenario",
+    "text": "The Scenario\nAn ice cream shop offers the following promotion:\n\nThe price of an ice cream cone is decided by rolling two six-sided dice\nThe price, in cents, is the larger number followed by the smaller one\n\n\nIf you walked into the store with $.50, what is the probability you could pay for your cone?"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.1.html#the-scenario-1",
+    "href": "slides/Chapter 11/section11.1.html#the-scenario-1",
+    "title": "Section 11.1",
+    "section": "The Scenario",
+    "text": "The Scenario\n\nWhat is the most you could pay?\nWhat is the least you could pay?\n\n\nDo you think the probability you could afford the ice cream is more or less than 0.50?"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.1.html#simulating-probability-1",
+    "href": "slides/Chapter 11/section11.1.html#simulating-probability-1",
+    "title": "Section 11.1",
+    "section": "Simulating Probability",
+    "text": "Simulating Probability\n\n\n1,000,000 rolls were simulated under the ice cream shop scenario  Based on the histogram:\n\nWhat is the mean?\nWhat is the standard deviation?\nWhat are the short bars?"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.1.html#simulating-probability-2",
+    "href": "slides/Chapter 11/section11.1.html#simulating-probability-2",
+    "title": "Section 11.1",
+    "section": "Simulating Probability",
+    "text": "Simulating Probability\n\n\nTo answer the bigger question, how many simulated rolls were $.50 or less?\n\n444,991/1,000,000 = 0.445\n\nHow could we find this without simulation?"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.1.html#sample-space",
+    "href": "slides/Chapter 11/section11.1.html#sample-space",
+    "title": "Section 11.1",
+    "section": "Sample Space",
+    "text": "Sample Space\nA list of all possible outcomes for a random process.\n\nProbabilities of all outcomes in a sample space must add up to 1 (100%)"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.1.html#ice-cream-example-sample-space",
+    "href": "slides/Chapter 11/section11.1.html#ice-cream-example-sample-space",
+    "title": "Section 11.1",
+    "section": "Ice Cream Example Sample Space",
+    "text": "Ice Cream Example Sample Space\nSample space: all combinations of rolling two dice\n\n\n\n\n\n\n\n\n(1,1)\n(1,2)\n(1,3)\n(1,4)\n(1,5)\n(1,6)\n\n\n(2,1)\n(2,2)\n(2,3)\n(2,4)\n(2,5)\n(2,6)\n\n\n(3,1)\n(3,2)\n(3,3)\n(3,4)\n(3,5)\n(3,6)\n\n\n(4,1)\n(4,2)\n(4,3)\n(4,4)\n(4,5)\n(4,6)\n\n\n(5,1)\n(5,2)\n(5,3)\n(5,4)\n(5,5)\n(5,6)\n\n\n(6,1)\n(6,2)\n(6,3)\n(6,4)\n(6,5)\n(6,6)"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.1.html#sample-space-activity",
+    "href": "slides/Chapter 11/section11.1.html#sample-space-activity",
+    "title": "Section 11.1",
+    "section": "Sample Space Activity",
+    "text": "Sample Space Activity\nFor both of the following, write down what you think the sample space is.\n\nTossing two coins\nSpinning two spinners that each have letters A, B, and C as outcomes"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.1.html#event",
+    "href": "slides/Chapter 11/section11.1.html#event",
+    "title": "Section 11.1",
+    "section": "Event",
+    "text": "Event\nA collection or (or subset) of outcomes from a sample space.\n\nThis subset of events may also be referred to as event space"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.1.html#ice-cream-example-event-space",
+    "href": "slides/Chapter 11/section11.1.html#ice-cream-example-event-space",
+    "title": "Section 11.1",
+    "section": "Ice Cream Example Event Space",
+    "text": "Ice Cream Example Event Space\nHow many outcomes in the sample space fit our criteria for being $.50 or less?\n\n\n\n\n\n\n\n\n(1,1)=$.11\n(1,2)=$.21\n(1,3)=$.31\n(1,4)=$.41\n(1,5)=$.51\n(1,6)=$.61\n\n\n(2,1)=$.21\n(2,2)=$.22\n(2,3)=$.32\n(2,4)=$.42\n(2,5)=$.52\n(2,6)=$.62\n\n\n(3,1)=$.31\n(3,2)=$.32\n(3,3)=$.33\n(3,4)=$.43\n(3,5)=$.53\n(3,6)=$.63\n\n\n(4,1)=$.41\n(4,2)=$.42\n(4,3)=$.43\n(4,4)=$.44\n(4,5)=$.54\n(4,6)=$.64\n\n\n(5,1)=$.51\n(5,2)=$.52\n(5,3)=$.53\n(5,4)=$.54\n(5,5)=$.55\n(5,6)=$.65\n\n\n(6,1)=$.61\n(6,2)=$.62\n(6,3)=$.63\n(6,4)=$.64\n(6,5)=$.65\n(6,6)=$.66"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.1.html#event-space-activity",
+    "href": "slides/Chapter 11/section11.1.html#event-space-activity",
+    "title": "Section 11.1",
+    "section": "Event Space Activity",
+    "text": "Event Space Activity\nNow for the given event, what is the event space?\n\nTossing two coins\n\nEvent: Getting at least one tail\n\nSpinning two spinners that each have letters A, B, and C as outcomes\n\nEvent: At least one spinner lands on C"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.1.html#ice-cream-example-event-space-1",
+    "href": "slides/Chapter 11/section11.1.html#ice-cream-example-event-space-1",
+    "title": "Section 11.1",
+    "section": "Ice Cream Example Event Space",
+    "text": "Ice Cream Example Event Space\n\n36 total outcomes\nProbability of affording ice cream: 16/36 = 0.444\n\n\n\n\n\n\n\n\n\n(1,1)=$.11\n(1,2)=$.21\n(1,3)=$.31\n(1,4)=$.41\n(1,5)=$.51\n(1,6)=$.61\n\n\n(2,1)=$.21\n(2,2)=$.22\n(2,3)=$.32\n(2,4)=$.42\n(2,5)=$.52\n(2,6)=$.62\n\n\n(3,1)=$.31\n(3,2)=$.32\n(3,3)=$.33\n(3,4)=$.43\n(3,5)=$.53\n(3,6)=$.63\n\n\n(4,1)=$.41\n(4,2)=$.42\n(4,3)=$.43\n(4,4)=$.44\n(4,5)=$.54\n(4,6)=$.64\n\n\n(5,1)=$.51\n(5,2)=$.52\n(5,3)=$.53\n(5,4)=$.54\n(5,5)=$.55\n(5,6)=$.65\n\n\n(6,1)=$.61\n(6,2)=$.62\n(6,3)=$.63\n(6,4)=$.64\n(6,5)=$.65\n(6,6)=$.66"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.1.html#new-event",
+    "href": "slides/Chapter 11/section11.1.html#new-event",
+    "title": "Section 11.1",
+    "section": "New Event",
+    "text": "New Event\nNow suppose your friend will pay for the cone if the price is odd\n\nWhat’s the probability that the price would be odd?\nOdd = 21/36 = 0.583\n\n\n\n\n\n\n\n\n\n(1,1)=$.11\n(1,2)=$.21\n(1,3)=$.31\n(1,4)=$.41\n(1,5)=$.51\n(1,6)=$.61\n\n\n(2,1)=$.21\n(2,2)=$.22\n(2,3)=$.32\n(2,4)=$.42\n(2,5)=$.52\n(2,6)=$.62\n\n\n(3,1)=$.31\n(3,2)=$.32\n(3,3)=$.33\n(3,4)=$.43\n(3,5)=$.53\n(3,6)=$.63\n\n\n(4,1)=$.41\n(4,2)=$.42\n(4,3)=$.43\n(4,4)=$.44\n(4,5)=$.54\n(4,6)=$.64\n\n\n(5,1)=$.51\n(5,2)=$.52\n(5,3)=$.53\n(5,4)=$.54\n(5,5)=$.55\n(5,6)=$.65\n\n\n(6,1)=$.61\n(6,2)=$.62\n(6,3)=$.63\n(6,4)=$.64\n(6,5)=$.65\n(6,6)=$.66"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.1.html#new-event-1",
+    "href": "slides/Chapter 11/section11.1.html#new-event-1",
+    "title": "Section 11.1",
+    "section": "New Event",
+    "text": "New Event\n\nNow, what is the probability that the price is odd or less than $.50?\nProbability = 27/36 = 0.75\n\n\n\n\n\n\n\n\n\n(1,1)=$.11\n(1,2)=$.21\n(1,3)=$.31\n(1,4)=$.41\n(1,5)=$.51\n(1,6)=$.61\n\n\n(2,1)=$.21\n(2,2)=$.22\n(2,3)=$.32\n(2,4)=$.42\n(2,5)=$.52\n(2,6)=$.62\n\n\n(3,1)=$.31\n(3,2)=$.32\n(3,3)=$.33\n(3,4)=$.43\n(3,5)=$.53\n(3,6)=$.63\n\n\n(4,1)=$.41\n(4,2)=$.42\n(4,3)=$.43\n(4,4)=$.44\n(4,5)=$.54\n(4,6)=$.64\n\n\n(5,1)=$.51\n(5,2)=$.52\n(5,3)=$.53\n(5,4)=$.54\n(5,5)=$.55\n(5,6)=$.65\n\n\n(6,1)=$.61\n(6,2)=$.62\n(6,3)=$.63\n(6,4)=$.64\n(6,5)=$.65\n(6,6)=$.66"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.1.html#changing-a-random-process",
+    "href": "slides/Chapter 11/section11.1.html#changing-a-random-process",
+    "title": "Section 11.1",
+    "section": "Changing a Random Process",
+    "text": "Changing a Random Process\nMain idea: probability changes as a random process (event) does"
   }
 ]
