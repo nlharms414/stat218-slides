@@ -4009,5 +4009,187 @@
     "title": "Section 11.1",
     "section": "Changing a Random Process",
     "text": "Changing a Random Process\nMain idea: probability changes as a random process (event) does"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#section-11.2-learning-objectives",
+    "href": "slides/Chapter 11/section11.2.html#section-11.2-learning-objectives",
+    "title": "Section 11.2",
+    "section": "Section 11.2 Learning Objectives",
+    "text": "Section 11.2 Learning Objectives\n\nExpress events using set notation.\nUse the complement rule and addition rule to calculate probabilities of events.\nUse probability tables and Venn diagrams to calculate probabilities of events.\nDetermine whether events are mutually exclusive."
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#probability-introduction",
+    "href": "slides/Chapter 11/section11.2.html#probability-introduction",
+    "title": "Section 11.2",
+    "section": "Probability Introduction",
+    "text": "Probability Introduction\n\nProbability can be approximated through simulation\n\nEx: Cars vs. Goats\n\nA mathematical approach is more practical, convenient, and accurate"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#probability-introduction-1",
+    "href": "slides/Chapter 11/section11.2.html#probability-introduction-1",
+    "title": "Section 11.2",
+    "section": "Probability Introduction",
+    "text": "Probability Introduction\n\nSample space: A collection of all possible events for a random process\nEvent space: A subset of events in the sample space that we are interested in\n\nGenerally we are interested in a specific event (some random process)\n\nAs an event changes, so will probability!\n\nIce cream example"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#probability-rules-1",
+    "href": "slides/Chapter 11/section11.2.html#probability-rules-1",
+    "title": "Section 11.2",
+    "section": "Probability Rules",
+    "text": "Probability Rules\n\nProbability rules make mathematical probability calculations easier.\nWe’ll look at three main rules:\n\nComplement rule\nIntersection rule\nUnion rule (addition rule)\n\n\n\nFirst, let’s cover some probability basics."
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#probability-basics",
+    "href": "slides/Chapter 11/section11.2.html#probability-basics",
+    "title": "Section 11.2",
+    "section": "Probability Basics",
+    "text": "Probability Basics\n\nFor some event “A”, the probability that that event occurs is denoted by P(A)\n“A” can be anything!\n\nEx: Rolling an odd number on a die, flipping tails on a coin\n\nAny capital letter can be used to represent an event\nProbability MUST be between 0 and 1 (inclusive)\n\n0≤P(A)≤1"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#probability-basics-1",
+    "href": "slides/Chapter 11/section11.2.html#probability-basics-1",
+    "title": "Section 11.2",
+    "section": "Probability Basics",
+    "text": "Probability Basics\nWe can relate this back to sample & event space\n\nSample space contains all possible outcomes\nEvent space contains only the outcomes in sample space that meet the criteria for a specific event\nThus:\n\n\nP(Event) = \\frac{Number \\: of \\: outcomes \\: in \\: Event \\: Space}{Number \\: of \\: outcomes \\: in \\: Sample \\: Space}"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#sample-space-vs.-event-space",
+    "href": "slides/Chapter 11/section11.2.html#sample-space-vs.-event-space",
+    "title": "Section 11.2",
+    "section": "Sample Space vs. Event Space",
+    "text": "Sample Space vs. Event Space"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#rule-1-compliment",
+    "href": "slides/Chapter 11/section11.2.html#rule-1-compliment",
+    "title": "Section 11.2",
+    "section": "Rule 1: Compliment",
+    "text": "Rule 1: Compliment\n\nThe compliment of an event A, denoted by A^c, is the probability that event A does not occur.\n\n“Not A”\n\nRecall that the probability of all outcomes in sample space must sum to 1\nThus: P(A^c)=1-P(A)"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#rule-2-intersection",
+    "href": "slides/Chapter 11/section11.2.html#rule-2-intersection",
+    "title": "Section 11.2",
+    "section": "Rule 2: Intersection",
+    "text": "Rule 2: Intersection\n\nThe intersection of events A & B is when both events occur at the same time\n\nWe denote this with \\cap\nA \\cap B = “A intersect B” or “A and B”\n\nProbability of A and B is denoted by P(A \\cap B)\nNo formula; just observe where event spaces for A and B intersect"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#ice-cream-shop-example",
+    "href": "slides/Chapter 11/section11.2.html#ice-cream-shop-example",
+    "title": "Section 11.2",
+    "section": "Ice Cream Shop Example",
+    "text": "Ice Cream Shop Example\n\nA = Event that the price is less than 50¢\nB = Event that the price is odd\n\n\n\n\n\n\n\n\n\n(1,1) 11¢\n(1,2) 21¢\n(1,3) 31¢\n(1,4) 41¢\n(1,5) 51¢\n(1,6) 61¢\n\n\n(2,1) 21¢\n(2,2) 22¢\n(2,3) 32¢\n(2,4) 42¢\n(2,5) 52¢\n(2,6) 62¢\n\n\n(3,1) 31¢\n(3,2) 32¢\n(3,3) 33¢\n(3,4) 43¢\n(3,5) 53¢\n(3,6) 63¢\n\n\n(4,1) 41¢\n(4,2) 42¢\n(4,3) 43¢\n(4,4) 44¢\n(4,5) 54¢\n(4,6) 64¢\n\n\n(5,1) 51¢\n(5,2) 52¢\n(5,3) 53¢\n(5,4) 54¢\n(5,5) 55¢\n(5,6) 65¢\n\n\n(6,1) 61¢\n(6,2) 62¢\n(6,3) 63¢\n(6,4) 64¢\n(6,5) 65¢\n(6,6) 66¢"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#rule-3-union",
+    "href": "slides/Chapter 11/section11.2.html#rule-3-union",
+    "title": "Section 11.2",
+    "section": "Rule 3: Union",
+    "text": "Rule 3: Union\n\nThe union of two events A and B is when either A, or B, or both occur\n\nWe denote a union with \\cup\nA \\cup B = “A union B” or “A or B”\n\nProbability of A \\cup B is denoted by P(A \\cup B)"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#rule-3-union-1",
+    "href": "slides/Chapter 11/section11.2.html#rule-3-union-1",
+    "title": "Section 11.2",
+    "section": "Rule 3: Union",
+    "text": "Rule 3: Union\n\nTo calculate P(A \\cup B), we need a formula\n\nWe cannot simply add P(A) and P(B)\nThis will count their intersection twice!\n\nP(A \\cup B) = P(A) + P(B) - P(A \\cap B)\nCan also use the compliment rule, but this is trickier"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#intersection-ice-cream-example",
+    "href": "slides/Chapter 11/section11.2.html#intersection-ice-cream-example",
+    "title": "Section 11.2",
+    "section": "Intersection: Ice Cream Example",
+    "text": "Intersection: Ice Cream Example\n\nA = Event that the price is less than 50¢\nB = Event that the price is odd\n\n\n\n\n\n\n\n\n\n(1,1) 11¢\n(1,2) 21¢\n(1,3) 31¢\n(1,4) 41¢\n(1,5) 51¢\n(1,6) 61¢\n\n\n(2,1) 21¢\n(2,2) 22¢\n(2,3) 32¢\n(2,4) 42¢\n(2,5) 52¢\n(2,6) 62¢\n\n\n(3,1) 31¢\n(3,2) 32¢\n(3,3) 33¢\n(3,4) 43¢\n(3,5) 53¢\n(3,6) 63¢\n\n\n(4,1) 41¢\n(4,2) 42¢\n(4,3) 43¢\n(4,4) 44¢\n(4,5) 54¢\n(4,6) 64¢\n\n\n(5,1) 51¢\n(5,2) 52¢\n(5,3) 53¢\n(5,4) 54¢\n(5,5) 55¢\n(5,6) 65¢\n\n\n(6,1) 61¢\n(6,2) 62¢\n(6,3) 63¢\n(6,4) 64¢\n(6,5) 65¢\n(6,6) 66¢"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#union-ice-cream-example",
+    "href": "slides/Chapter 11/section11.2.html#union-ice-cream-example",
+    "title": "Section 11.2",
+    "section": "Union: Ice Cream Example",
+    "text": "Union: Ice Cream Example\n\n\n\n\n\n\n\n\n(1,1) 11¢\n(1,2) 21¢\n(1,3) 31¢\n(1,4) 41¢\n(1,5) 51¢\n(1,6) 61¢\n\n\n(2,1) 21¢\n(2,2) 22¢\n(2,3) 32¢\n(2,4) 42¢\n(2,5) 52¢\n(2,6) 62¢\n\n\n(3,1) 31¢\n(3,2) 32¢\n(3,3) 33¢\n(3,4) 43¢\n(3,5) 53¢\n(3,6) 63¢\n\n\n(4,1) 41¢\n(4,2) 42¢\n(4,3) 43¢\n(4,4) 44¢\n(4,5) 54¢\n(4,6) 64¢\n\n\n(5,1) 51¢\n(5,2) 52¢\n(5,3) 53¢\n(5,4) 54¢\n(5,5) 55¢\n(5,6) 65¢\n\n\n(6,1) 61¢\n(6,2) 62¢\n(6,3) 63¢\n(6,4) 64¢\n(6,5) 65¢\n(6,6) 66¢"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#mutually-exclusive-events",
+    "href": "slides/Chapter 11/section11.2.html#mutually-exclusive-events",
+    "title": "Section 11.2",
+    "section": "Mutually Exclusive Events",
+    "text": "Mutually Exclusive Events\n\nTwo events are mutually exclusive if they cannot occur at the same time\nIf two events are mutually exclusive:\n\nP(A \\cup B) = P(A) + P(B)"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#ways-of-displaying-probability",
+    "href": "slides/Chapter 11/section11.2.html#ways-of-displaying-probability",
+    "title": "Section 11.2",
+    "section": "Ways of Displaying Probability",
+    "text": "Ways of Displaying Probability"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#watching-films",
+    "href": "slides/Chapter 11/section11.2.html#watching-films",
+    "title": "Section 11.2",
+    "section": "Watching Films",
+    "text": "Watching Films\n\nIn 2007, the American Film Institute created a list of top 100 American films ever made\nTwo people, Allan and Beth classified each film based on whether they had seen it or not\n\n\n\n\n\n\n\n\n\n\nBeth Yes\nBeth No\nTotal\n\n\n\n\nAllen Yes\n42\n6\n48\n\n\nAllen No\n17\n35\n52\n\n\nTotal\n59\n41\n100"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#watching-films-1",
+    "href": "slides/Chapter 11/section11.2.html#watching-films-1",
+    "title": "Section 11.2",
+    "section": "Watching Films",
+    "text": "Watching Films\n\nA = Event that Allan has seen the movie\n\nP(A)=\\frac{48}{100}=0.48\n\nB = Event that Beth has seen the movie\n\nP(B)=\\frac{59}{100}=0.59\n\n\n\n\n\n\n\n\n\n\n\nBeth Yes\nBeth No\nTotal\n\n\n\n\nAllen Yes\n42\n6\n48\n\n\nAllen No\n17\n35\n52\n\n\nTotal\n59\n41\n100"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#watching-films-compliment",
+    "href": "slides/Chapter 11/section11.2.html#watching-films-compliment",
+    "title": "Section 11.2",
+    "section": "Watching Films: Compliment",
+    "text": "Watching Films: Compliment\n\nCompliment formula: P(Event^c)=1-P(Event)\nProbability that Allan has not seen the film:\n\nP(A^c)=1-P(A)=1-0.48=0.52\n\nProbability that Beth has not seen the film:\n\nP(B^c)=1-P(B)=1-0.59=0.41"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#watching-films-intersection",
+    "href": "slides/Chapter 11/section11.2.html#watching-films-intersection",
+    "title": "Section 11.2",
+    "section": "Watching Films: Intersection",
+    "text": "Watching Films: Intersection\n\nEvent Allan and Beth have both seen the film =P(A \\cap B)\nCan just use the table\nP(A \\cap B)=\\frac{42}{100}=0.42\n\n\n\n\n\n\n\n\n\n\nBeth Yes\nBeth No\nTotal\n\n\n\n\nAllen Yes\n42\n6\n48\n\n\nAllen No\n17\n35\n52\n\n\nTotal\n59\n41\n100"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#watching-films-union",
+    "href": "slides/Chapter 11/section11.2.html#watching-films-union",
+    "title": "Section 11.2",
+    "section": "Watching Films: Union",
+    "text": "Watching Films: Union\n\nEvent that either Allan or Beth or both have seen a film =P(A \\cup B)\nUsing the formula we obtain:\n\nP(A \\cup B) = P(A) + P(B) - P(A \\cap B)\n=.48+.59-.42=.65"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#watching-films-alternately-obtaining-the-intersection",
+    "href": "slides/Chapter 11/section11.2.html#watching-films-alternately-obtaining-the-intersection",
+    "title": "Section 11.2",
+    "section": "Watching Films: Alternately Obtaining the Intersection",
+    "text": "Watching Films: Alternately Obtaining the Intersection\n\nIf we know the individual probabilities and the union probability, we can calculate the intersection\n\n\nP(A \\cup B) = P(A) + P(B) - P(A \\cap B)\nCan be rearranged to this:\n\n\nP(A \\cap B) = P(A) + P(B) - P(A \\cup B)\n0.42 = 0.48 + 0.59 - 0.65"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#alternately-obtaining-the-intersection",
+    "href": "slides/Chapter 11/section11.2.html#alternately-obtaining-the-intersection",
+    "title": "Section 11.2",
+    "section": "Alternately Obtaining the Intersection",
+    "text": "Alternately Obtaining the Intersection\n\nIf we know the individual probabilities and the union probability, we can calculate the intersection\n\n\nP(A \\cup B) = P(A) + P(B) - P(A \\cap B)\nCan be rearranged to this:\n\n\nP(A \\cap B) = P(A) + P(B) - P(A \\cup B)\n0.42 = 0.48 + 0.59 - 0.65"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#watching-films-mutually-exclusive",
+    "href": "slides/Chapter 11/section11.2.html#watching-films-mutually-exclusive",
+    "title": "Section 11.2",
+    "section": "Watching Films: Mutually Exclusive?",
+    "text": "Watching Films: Mutually Exclusive?\n\nNote that A and B are NOT mutually exclusive\nWe know because:\n\nP(A \\cap B) \\neq 0\nP(A \\cup B) \\neq P(A) + P(B)\n\nNote: P(A) + P(B) = 0.48 + 0.59 = 1.07\n\nProbability cannot be greater than 1!"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#watching-films-venn-diagram",
+    "href": "slides/Chapter 11/section11.2.html#watching-films-venn-diagram",
+    "title": "Section 11.2",
+    "section": "Watching Films: Venn Diagram",
+    "text": "Watching Films: Venn Diagram"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.2.html#watching-films-probability-table",
+    "href": "slides/Chapter 11/section11.2.html#watching-films-probability-table",
+    "title": "Section 11.2",
+    "section": "Watching Films: Probability Table",
+    "text": "Watching Films: Probability Table\n\nA probability table contains the probabilities for events, rather than the count data\n\n\n\n\n\n\n\n\n\n\nBeth Yes\nBeth No\nTotal\n\n\n\n\nAllen Yes\n0.42\n0.06\n0.48\n\n\nAllen No\n0.17\n0.35\n0.52\n\n\nTotal\n0.59\n0.41\n1"
   }
 ]

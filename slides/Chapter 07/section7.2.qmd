@@ -272,7 +272,6 @@ $$=\frac{0.075}{0.024}$$
 $$=3.125$$
 
 Outside 2s, reject $H_0$
-
 :::
 
 ::: {.column width="70%"}
@@ -293,7 +292,6 @@ $$=0.075±2*0.024$$
 $$=(0.027,0.124)$$
 
 Zero is not in the interval, reject $H_0$
-
 :::
 
 ::: {.column width="70%"}
