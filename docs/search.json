@@ -4191,5 +4191,138 @@
     "title": "Section 11.2",
     "section": "Watching Films: Probability Table",
     "text": "Watching Films: Probability Table\n\nA probability table contains the probabilities for events, rather than the count data\n\n\n\n\n\n\n\n\n\n\nBeth Yes\nBeth No\nTotal\n\n\n\n\nAllen Yes\n0.42\n0.06\n0.48\n\n\nAllen No\n0.17\n0.35\n0.52\n\n\nTotal\n0.59\n0.41\n1"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.3.html#section-11.3-learning-objectives",
+    "href": "slides/Chapter 11/section11.3.html#section-11.3-learning-objectives",
+    "title": "Section 11.3",
+    "section": "Section 11.3 Learning Objectives",
+    "text": "Section 11.3 Learning Objectives\n\nCalculate conditional probabilities from a table and from the definition.\nDetermine whether events are independent.\nUse the general multiplication rule to calculate probabilities.\nUse the multiplication rule to calculate probabilities for independent events.\nUse tree diagrams to represent and calculate probabilities."
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.3.html#recap",
+    "href": "slides/Chapter 11/section11.3.html#recap",
+    "title": "Section 11.3",
+    "section": "Recap",
+    "text": "Recap\n\nProbability rules make calculations easier & precise\nProbability basics:\n\nAn event can be denoted with any capital letter\nThe probability is denoted by P(Event)\n\nNote: Event ≠ P(Event)!\n\nProbability must be between 0 and 1!\n\n0 ≤ P(Event) ≤ 1"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.3.html#recap-1",
+    "href": "slides/Chapter 11/section11.3.html#recap-1",
+    "title": "Section 11.3",
+    "section": "Recap",
+    "text": "Recap\nProbability rules:\n\n\nCompliment rule: P(A^c)=1-P(A) = probability that “not A” occurs\nIntersection: P(A \\cap B) = probability and both events A and B occur\nUnion: P(A \\cup B) = probability that A or B or both occur\n\nP(A \\cup B)=P(A) + P(B) - P(A \\cap B)\nIf A and B are mutually exlusive: P(A \\cup B)=P(A) + P(B)"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.3.html#probability-rules",
+    "href": "slides/Chapter 11/section11.3.html#probability-rules",
+    "title": "Section 11.3",
+    "section": "Probability Rules",
+    "text": "Probability Rules\n\n\nCompliment rule: P(A^c)=1-P(A) = probability that “not A” occurs\nIntersection: P(A \\cap B) = probability and both events A and B occur\nUnion: P(A \\cup B) = probability that A or B or both occur\n\nP(A \\cup B)=P(A) + P(B) - P(A \\cap B)\nIf A and B are mutually exlusive: P(A \\cup B)=P(A) + P(B)"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.3.html#displaying-probability",
+    "href": "slides/Chapter 11/section11.3.html#displaying-probability",
+    "title": "Section 11.3",
+    "section": "Displaying Probability",
+    "text": "Displaying Probability\nTwo primary ways of displaying probability:\n\nVenn Diagram\nProbability table\n\nSimilar to a two way table from previous chapters"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.3.html#intro",
+    "href": "slides/Chapter 11/section11.3.html#intro",
+    "title": "Section 11.3",
+    "section": "Intro",
+    "text": "Intro\n\nSometimes, one event may be dependent on another\n\nThis is called conditional probability\n\nIn Ch. 4 and Ch. 5, we used conditional proportions\n\nProportions were conditional on groups\n\nWe can also use conditional probability to tell if two events are independent"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.3.html#watching-films",
+    "href": "slides/Chapter 11/section11.3.html#watching-films",
+    "title": "Section 11.3",
+    "section": "Watching Films",
+    "text": "Watching Films\n\nIn 2007, the American Film Institute created a list of top 100 American films ever made\nTwo people, Allan and Beth classified each film based on whether they had seen it or not\n\n\n\n\n\n\n\n\n\n\nBeth Yes\nBeth No\nTotal\n\n\n\n\nAllen Yes\n42\n6\n48\n\n\nAllen No\n17\n35\n52\n\n\nTotal\n59\n41\n100"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.3.html#watching-films-1",
+    "href": "slides/Chapter 11/section11.3.html#watching-films-1",
+    "title": "Section 11.3",
+    "section": "Watching Films",
+    "text": "Watching Films\n\nA = Event that Allan has seen the movie\n\nP(A)=\\frac{48}{100}=0.48\n\nB = Event that Beth has seen the movie\n\nP(B)=\\frac{59}{100}=0.59\n\n\n\n\n\n\n\n\n\n\n\nBeth Yes\nBeth No\nTotal\n\n\n\n\nAllen Yes\n42\n6\n48\n\n\nAllen No\n17\n35\n52\n\n\nTotal\n59\n41\n100"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.3.html#watching-films-2",
+    "href": "slides/Chapter 11/section11.3.html#watching-films-2",
+    "title": "Section 11.3",
+    "section": "Watching Films",
+    "text": "Watching Films\n\nP(B)=\\frac{59}{100}=0.59\nIf we know Allan has seen the movie, does Beth’s probability of having seen the movie change?\n\nThis is **conditional probability!*\n\n\n\n\n\n\n\n\n\n\n\nBeth Yes\nBeth No\nTotal\n\n\n\n\nAllen Yes\n42\n6\n48\n\n\nAllen No\n17\n35\n52\n\n\nTotal\n59\n41\n100"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.3.html#conditional-probability",
+    "href": "slides/Chapter 11/section11.3.html#conditional-probability",
+    "title": "Section 11.3",
+    "section": "Conditional Probability",
+    "text": "Conditional Probability\n\nP(B|A) is the conditional probability of event B, given that event A has occurred\n\nP(A|B) would be event A given B\n\n\n\nFormula:\nP(B|A)=\\frac{P(A \\cap B)}{P(A)}"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.3.html#watching-films-3",
+    "href": "slides/Chapter 11/section11.3.html#watching-films-3",
+    "title": "Section 11.3",
+    "section": "Watching Films",
+    "text": "Watching Films\nProbability that Beth has seen a movie, given that Allan has seen the movie.\nP(B|A)=\\frac{P(A \\cap B)}{P(A)}\n=\\frac{42/100}{48/100}=\\frac{42}{48}=0.875\n\nThis is higher than P(B)=0.59."
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.3.html#independent-events",
+    "href": "slides/Chapter 11/section11.3.html#independent-events",
+    "title": "Section 11.3",
+    "section": "Independent Events",
+    "text": "Independent Events\n\nEvents A & B are said to be independent events if P(B|A)=P(B)\n\nLikewise, if P(A|B)=P(A)\n\nEssentially, one event having happened does not affect the probability of another event\nEvents that are not independent are referred to as dependent events"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.3.html#watching-films-4",
+    "href": "slides/Chapter 11/section11.3.html#watching-films-4",
+    "title": "Section 11.3",
+    "section": "Watching Films",
+    "text": "Watching Films\n\nP(B)=0.59\nP(B|A)=0.875\n0.59\\neq 0.875, so Allan having seen a movie and Beth having seen a movie are not independent events."
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.3.html#multiplication-rule",
+    "href": "slides/Chapter 11/section11.3.html#multiplication-rule",
+    "title": "Section 11.3",
+    "section": "Multiplication Rule",
+    "text": "Multiplication Rule\n\nIf we know P(B|A) (or P(A|B)), we can use it to find P(A \\cap B)\nMultiplication rule formula:\n\nP(A \\cap B)=P(B|A)*P(A)=P(A|B)*P(B)\n\nNote, this is the conditional probability formula rearranged!"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.3.html#multiplication-rule-with-indpendent-events",
+    "href": "slides/Chapter 11/section11.3.html#multiplication-rule-with-indpendent-events",
+    "title": "Section 11.3",
+    "section": "Multiplication Rule with Indpendent Events",
+    "text": "Multiplication Rule with Indpendent Events\nIf A and B are independent, the multiplication rule simplifies to:\nP(A \\cap B)=P(A)*P(B)\n\nIs is because for independent events, P(A|B)=P(A) (and P(B|A)=P(B))."
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.3.html#mutually-exclusive-events",
+    "href": "slides/Chapter 11/section11.3.html#mutually-exclusive-events",
+    "title": "Section 11.3",
+    "section": "Mutually Exclusive Events",
+    "text": "Mutually Exclusive Events\n\nRecall: Mutually exclusive events are two events that cannot occur at the same time\n\nP(A \\cap B)=0\n\nRule: Two events that are mutually exclusive can NOT be independent (and vice versa)"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.3.html#example",
+    "href": "slides/Chapter 11/section11.3.html#example",
+    "title": "Section 11.3",
+    "section": "Example",
+    "text": "Example\nLet P(A)=0.5 and P(B)=0.3, where A and B are mutually exclusive.\n\n\nThis means that P(A \\cap B)=0\nThis implies that P(B|A)*P(A)=0\nSince we know that P(A)=0.5, then P(B|A)=0\nThen P(B|A)=P(B), so A & B are not independent."
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.3.html#tree-diagram",
+    "href": "slides/Chapter 11/section11.3.html#tree-diagram",
+    "title": "Section 11.3",
+    "section": "Tree Diagram",
+    "text": "Tree Diagram\n\nTree diagrams are useful ways to display conditional probabilities"
+  },
+  {
+    "objectID": "slides/Chapter 11/section11.3.html#tree-diagram-activity",
+    "href": "slides/Chapter 11/section11.3.html#tree-diagram-activity",
+    "title": "Section 11.3",
+    "section": "Tree Diagram Activity",
+    "text": "Tree Diagram Activity\nUsing the data below, sketch a tree diagram where event D is the first set of branches.\n\n\n\n\n\n\n\n\n\nD\nD'\nTotal\n\n\n\n\nC\n28\n10\n38\n\n\nC'\n26\n36\n62\n\n\nTotal\n54\n46\n100"
   }
 ]
