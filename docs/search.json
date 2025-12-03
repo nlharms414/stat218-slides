@@ -4253,7 +4253,7 @@
     "href": "slides/Chapter 11/section11.3.html#watching-films-2",
     "title": "Section 11.3",
     "section": "Watching Films",
-    "text": "Watching Films\n\nP(B)=\\frac{59}{100}=0.59\nIf we know Allan has seen the movie, does Beth’s probability of having seen the movie change?\n\nThis is **conditional probability!*\n\n\n\n\n\n\n\n\n\n\n\nBeth Yes\nBeth No\nTotal\n\n\n\n\nAllen Yes\n42\n6\n48\n\n\nAllen No\n17\n35\n52\n\n\nTotal\n59\n41\n100"
+    "text": "Watching Films\n\nP(B)=\\frac{59}{100}=0.59\nIf we know Allan has seen the movie, does Beth’s probability of having seen the movie change?\n\nThis is conditional probability!\n\n\n\n\n\n\n\n\n\n\n\nBeth Yes\nBeth No\nTotal\n\n\n\n\nAllen Yes\n42\n6\n48\n\n\nAllen No\n17\n35\n52\n\n\nTotal\n59\n41\n100"
   },
   {
     "objectID": "slides/Chapter 11/section11.3.html#conditional-probability",
@@ -4295,7 +4295,7 @@
     "href": "slides/Chapter 11/section11.3.html#multiplication-rule-with-indpendent-events",
     "title": "Section 11.3",
     "section": "Multiplication Rule with Indpendent Events",
-    "text": "Multiplication Rule with Indpendent Events\nIf A and B are independent, the multiplication rule simplifies to:\nP(A \\cap B)=P(A)*P(B)\n\nIs is because for independent events, P(A|B)=P(A) (and P(B|A)=P(B))."
+    "text": "Multiplication Rule with Indpendent Events\nIf A and B are independent, the multiplication rule simplifies to:\nP(A \\cap B)=P(A)*P(B)\n\nThis is because for independent events, P(A|B)=P(A) (and P(B|A)=P(B))."
   },
   {
     "objectID": "slides/Chapter 11/section11.3.html#mutually-exclusive-events",

@@ -159,7 +159,7 @@ film %>% gt() %>%
 
 -   If we know Allan has seen the movie, does Beth's probability of having seen the movie change?
 
-    -   This is \*\*conditional probability!\*
+    -   This is **conditional probability!**
 
 ```{r message=FALSE, fig.align="center"}
 library(dplyr)
@@ -251,7 +251,7 @@ $$P(A \cap B)=P(A)*P(B)$$
 
 . . .
 
-Is is because for independent events, $P(A|B)=P(A)$ (and $P(B|A)=P(B)$).
+This is because for independent events, $P(A|B)=P(A)$ (and $P(B|A)=P(B)$).
 
 ## Mutually Exclusive Events {.center}
 
