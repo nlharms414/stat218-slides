@@ -2,7 +2,7 @@
 
 As of April 2024, a rule under Title II of the Americans with Disabilities Act (ADA) requires that all web content and mobile applications become compliant with the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA. More simply put, this requires public institutions (like UNL) to ensure all web content and mobile applications can be accessed by anybody- though the main focus is ensuring that individuals with disabilities can freely access any of the previously mentioned materials. Materials meeting these guidelines are often referred to as "accessible materials".
 
-A big part of making materials accessible lies in the underlying code. Good coding allows devices like screen readers and other assistive technologies to be effective. Thus, creating accessible web-based materials for the Statistics Department was the main focus of this project.
+A big part of making materials accessible lies in the underlying code. Good coding and tagging allows devices like screen readers and other assistive technologies to be effective. Thus, creating accessible web-based materials for the Statistics Department was the main focus of this project.
 
 Ultimately, this project resulted in HTML-based slides for the Stat 218 class at UNL. Each slide deck was created in a Quarto markdown file that renders to a Reveal.js presentation. A website containing all slide decks was generated that students can easily access.
 
