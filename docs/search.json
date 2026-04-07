@@ -753,7 +753,7 @@
     "href": "slides/Chapter 06/section6.1.html#five-number-summary-1",
     "title": "Section 6.1",
     "section": "Five Number Summary",
-    "text": "Five Number Summary\nThe five number summary consists of:\n\nMinimum value\nMaximum value\nLower quartile (Q1)\nMedian\nUpper quartile (Q2)"
+    "text": "Five Number Summary\nThe five number summary consists of:\n\nMinimum value\nMaximum value\nLower quartile (Q1)\nMedian\nUpper quartile (Q3)"
   },
   {
     "objectID": "slides/Chapter 06/section6.1.html#median-lower-quartile-upper-quartile",

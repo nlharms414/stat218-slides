@@ -128,7 +128,7 @@ The five number summary consists of:
 -   Maximum value
 -   Lower quartile (Q1)
 -   Median
--   Upper quartile (Q2)
+-   Upper quartile (Q3)
 
 ## Median, Lower Quartile & Upper Quartile {.center}
 
