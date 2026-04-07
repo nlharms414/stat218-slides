@@ -66,7 +66,7 @@ Recall, we can alternatively write our hypotheses as:
 ## Recall: Symbol Comparison for ONE Proportion/Mean {.center}
 
 |  |  |  |
-|----|:--:|:--:|
+|------------------------|:----------------------:|:----------------------:|
 |  | **Categorical Variable** | **Numerical Variable** |
 | **Parameter of Interest** | $$                       
                              \pi                       
@@ -82,7 +82,7 @@ Recall, we can alternatively write our hypotheses as:
 ## Symbol Comparison for TWO Proportions/Means {.center}
 
 |  |  |  |
-|----|:--:|:--:|
+|------------------------|:----------------------:|:----------------------:|
 |  | **Categorical Response Variable** | **Numerical Response Variable** |
 | **Parameter of Interest** | $$                       
                              \pi_1-\pi_2                       
@@ -153,7 +153,7 @@ In symbols:
 
 -   $H_0: \mu_b - \mu_c = 0$
 
--   $H_0: \mu_b - \mu_c > 0$
+-   $H_A: \mu_b - \mu_c > 0$
 
 # Strength of Evidence
 
@@ -229,7 +229,7 @@ $$t=\frac{\bar{x}_b-\bar{x}_c}{SD\: from\: Applet}=\frac{83.768}{21.526}=3.89$$
 
 . . .
 
-This is outside the twos, so we reject $H_A$
+This is outside the twos, so we reject $H_0$
 
 ## Confidence Intervals (CI) {.center}
 

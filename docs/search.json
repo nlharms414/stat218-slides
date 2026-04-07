@@ -865,7 +865,7 @@
     "href": "slides/Chapter 06/section6.2.html#dung-beetles-4",
     "title": "Section 6.2",
     "section": "Dung Beetles",
-    "text": "Dung Beetles\nHypotheses:\n\nNull: There is no difference in average time taken to get to the edge between the two groups\nAlt: The average time for the group with the black cap is longer\n\nIn symbols:\n\nH_0: \\mu_b - \\mu_c = 0\nH_0: \\mu_b - \\mu_c &gt; 0"
+    "text": "Dung Beetles\nHypotheses:\n\nNull: There is no difference in average time taken to get to the edge between the two groups\nAlt: The average time for the group with the black cap is longer\n\nIn symbols:\n\nH_0: \\mu_b - \\mu_c = 0\nH_A: \\mu_b - \\mu_c &gt; 0"
   },
   {
     "objectID": "slides/Chapter 06/section6.2.html#p-values",
@@ -942,7 +942,7 @@
     "href": "slides/Chapter 06/section6.2.html#dung-beetle-standardized-statistic",
     "title": "Section 6.2",
     "section": "Dung Beetle Standardized Statistic",
-    "text": "Dung Beetle Standardized Statistic\nt=\\frac{\\bar{x}_b-\\bar{x}_c}{SD\\: from\\: Applet}=\\frac{83.768}{21.526}=3.89\n\nThis is outside the twos, so we reject H_A"
+    "text": "Dung Beetle Standardized Statistic\nt=\\frac{\\bar{x}_b-\\bar{x}_c}{SD\\: from\\: Applet}=\\frac{83.768}{21.526}=3.89\n\nThis is outside the twos, so we reject H_0"
   },
   {
     "objectID": "slides/Chapter 06/section6.2.html#confidence-intervals-ci",
